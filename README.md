@@ -1,64 +1,64 @@
 # Agentic RAG for Norwegian Real Estate
 
-Agentic RAG-system for analyse av norske eiendomsdokumenter. Bruker Claude (Anthropic) for LLM-analyse, Voyage AI for embeddings, og ChromaDB for vektorlagring.
+Agentic RAG system for analysing Norwegian real estate documents. Uses Claude (Anthropic) for LLM analysis, Voyage AI for embeddings, and ChromaDB for vector storage.
 
-## Forutsetninger
+## Prerequisites
 
 - **Python** >= 3.11
-- **Node.js** >= 18 og npm
-- API-nokkler: `ANTHROPIC_API_KEY` og `VOYAGE_API_KEY`
+- **Node.js** >= 18 and npm
+- API keys: `ANTHROPIC_API_KEY` and `VOYAGE_API_KEY`
 
-## Hurtigstart
+## Quick start
 
-### 1. Klon og installer
+### 1. Clone and install
 
 ```bash
 git clone <repo-url>
-cd master
+cd agentic-rag-real-estate
 
-# Python-avhengigheter
+# Python dependencies
 pip install -e ".[dev]"
 
-# Frontend-avhengigheter
+# Frontend dependencies
 cd frontend && npm install && cd ..
 ```
 
-### 2. Konfigurer miljovariabler
+### 2. Configure environment variables
 
 ```bash
 cp .env.example .env
 ```
 
-Rediger `.env` og sett inn dine API-nokkler:
+Edit `.env` and add your API keys:
 
 ```
 ANTHROPIC_API_KEY=sk-ant-...
 VOYAGE_API_KEY=pa-...
 ```
 
-### 3. Start prosjektet
+### 3. Start the project
 
-Oppstartscriptet sjekker alle krav automatisk og starter backend + frontend:
+The startup script checks all requirements automatically and starts backend + frontend:
 
 ```bash
 python -m scripts.start
 ```
 
-Scriptet gjor folgende:
-1. Verifiserer Python-versjon
-2. Sjekker Node.js og npm
-3. Validerer `.env`-fil og API-nokkler
-4. Sjekker Python-avhengigheter
-5. Sjekker frontend-avhengigheter (tilbyr `npm install` hvis mangler)
-6. Sjekker at port 8000 og 3000 er ledige
-7. Starter backend (FastAPI/Uvicorn)
-8. Starter frontend (Next.js)
+The script does the following:
+1. Verifies Python version
+2. Checks Node.js and npm
+3. Validates `.env` file and API keys
+4. Checks Python dependencies
+5. Checks frontend dependencies (offers `npm install` if missing)
+6. Checks that ports 8000 and 3000 are available
+7. Starts the backend (FastAPI/Uvicorn)
+8. Starts the frontend (Next.js)
 
-Trykk `Ctrl+C` for a stoppe begge tjenester.
+Press `Ctrl+C` to stop both services.
 
-### Manuell oppstart
+### Manual startup
 
-Hvis du foretrekker a starte tjenestene manuelt:
+If you prefer to start the services manually:
 
 ```bash
 # Terminal 1: Backend
@@ -68,47 +68,47 @@ uvicorn api.main:app --reload
 cd frontend && npm run dev
 ```
 
-## URL-er (etter oppstart)
+## URLs (after startup)
 
-| Tjeneste      | URL                          |
+| Service       | URL                          |
 |---------------|------------------------------|
 | Backend API   | http://localhost:8000        |
 | Swagger docs  | http://localhost:8000/docs   |
 | Frontend      | http://localhost:3000        |
 
-## Prosjektstruktur
+## Project structure
 
 ```
-src/            # Kjernelogikk (RAG-pipeline, embeddings, config)
+src/            # Core logic (RAG pipeline, embeddings, config)
 api/            # FastAPI backend
 frontend/       # Next.js frontend
-scripts/        # CLI-scripts (start, analyse, sammenligning)
-tests/          # Pytest-tester
-data/           # Dokumenter og ChromaDB
-experiments/    # Eksperimentresultater
+scripts/        # CLI scripts (start, analysis, comparison)
+tests/          # Pytest tests
+data/           # Documents and ChromaDB
+experiments/    # Experiment results
 ```
 
-## CLI-scripts
+## CLI scripts
 
 ```bash
-python -m scripts.start              # Start hele prosjektet
-python -m scripts.run_standard_rag   # Standard RAG-analyse
-python -m scripts.run_agentic_rag    # Agentic RAG-analyse
-python -m scripts.run_comparison     # Sammenlign standard vs agentic
-python -m scripts.run_ablation       # Ablasjonsstudie
+python -m scripts.start              # Start the whole project
+python -m scripts.run_standard_rag   # Standard RAG analysis
+python -m scripts.run_agentic_rag    # Agentic RAG analysis
+python -m scripts.run_comparison     # Compare standard vs agentic
+python -m scripts.run_ablation       # Ablation study
 ```
 
-Alle scripts stotter `--help` for mer informasjon.
+All scripts support `--help` for more information.
 
-## Utvikling
+## Development
 
 ```bash
-# Kjor tester
+# Run tests
 pytest
 
 # Lint
 ruff check .
 
-# Typesjekk
+# Type check
 mypy src/
 ```
