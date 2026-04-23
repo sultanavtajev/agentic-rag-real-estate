@@ -1,0 +1,2151 @@
+{
+  "system_results": {
+    "standard_rag": {
+      "run_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb",
+      "system_type": "standard_rag",
+      "overall_metrics": {
+        "precision": 0.16666666666666666,
+        "recall": 0.1111111111111111,
+        "f1": 0.13333333333333333,
+        "total_support": 18
+      },
+      "matched_risks": 2,
+      "unmatched_predicted": 10,
+      "unmatched_ground_truth": 16,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb_risk_000",
+            "description": "Manglende radonmåling: Selger har ikke bekreftet at radonmåling er utført. Radon er en helsefarlig gass, og manglende måling kan utgjøre en risiko for kjøper.",
+            "evidence": [
+              "21 Er det foretatt radonmåling? Nei Ja"
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_010",
+            "description": "Ingen radonmåling er utført: Selger har ikke utført radonmåling av boligen. Radon er en usynlig og luktfri gass som kan utgjøre en helserisiko ved forhøyede konsentrasjoner. Selv om det ikke er krav om radonmåling for denne boligen (ikke utleid), er det en potensiell helserisiko som kjøper bør være oppmerksom på.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              21,
+              33
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb_risk_006",
+            "description": "Risiko for at forsikring ikke trer i kraft: Boligselgerforsikringen forutsetter at tilstandsrapport foreligger i henhold til forskrift. Dersom kravene ikke er oppfylt, kan forsikringen bortfalle, noe som øker kjøpers risiko ved eventuelle mangelskrav.",
+            "evidence": [
+              "Gyldig forsikring forutsetter at det for helårs- og fritidsbolig foreligger tilstandsrapport som er i henhold til Forskrift til avhendingslova",
+              "ingsselskapet ikke har gitt skriftlig samtykke, kan erstatningen bortfalle."
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_007",
+            "description": "Selger har ikke tegnet boligselgerforsikring: Selger har valgt å ikke tegne boligselgerforsikring. Dette kan svekke kjøpers mulighet til å få dekket eventuelle krav mot selger ved skjulte feil og mangler, da selger kan ha begrenset evne til å dekke slike krav selv.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              21
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb_risk_001",
+          "description": "Usikkerhet rundt brukstillatelse eller ferdigattest: Spørsmål om manglende brukstillatelse eller ferdigattest er stilt, men svaret er ikke entydig bekreftet som 'Nei'. Dette kan indikere uavklarte forhold knyttet til lovlig bruk av eiendommen.",
+          "evidence": [
+            "22 Kjenner du til manglende brukstillatelse eller ferdigattest? Nei Ja"
+          ],
+          "source_documents": [
+            "d186_d186"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.65,
+          "details": {}
+        },
+        {
+          "risk_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb_risk_002",
+          "description": "Selgers opplysningsplikt og risiko for regress: Selger bekrefter at opplysninger er gitt etter beste skjønn, men dersom opplysningene er ufullstendige, uriktige eller misvisende, kan forsikringsselskapet søke regress. Dette utgjør en risiko for kjøper dersom selger har gitt mangelfulle opplysninger.",
+          "evidence": [
+            "Jeg bekrefter at opplysningene er gitt etter beste skjønn. Jeg er kjent med at dersom jeg har gitt ufullstendige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis"
+          ],
+          "source_documents": [
+            "d186_d186"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb_risk_003",
+          "description": "Begrenset selgeransvar ved salg 'som den er': Eiendommen selges med forbehold om avhendingsloven § 3-9, noe som begrenser selgers ansvar. Kjøper bærer dermed større risiko for skjulte feil og mangler som ikke fremkommer av tilstandsrapporten.",
+          "evidence": [
+            "selgers ansvar er begrenset til det som følger direkte av avtalen, jf. avhendingsloven § 3‑9"
+          ],
+          "source_documents": [
+            "d186_d186"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.85,
+          "details": {}
+        },
+        {
+          "risk_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb_risk_004",
+          "description": "Risiko knyttet til vannrørenes alder: Tilstandsrapporten stiller spørsmål om vannrør har nådd en alder som gir økt risiko for skader eller følgeskader. Selv om svaret er 'Nei', bør kjøper være oppmerksom på dette punktet og vurdere tilstanden nærmere.",
+          "evidence": [
+            "Har vannrør nådd en alder som gir økt risiko for skader eller følgeskader? Nei"
+          ],
+          "source_documents": [
+            "d186_d186"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.6,
+          "details": {}
+        },
+        {
+          "risk_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb_risk_005",
+          "description": "Manglende samsvarserklæring på elektriske arbeider: Det er stilt spørsmål om manglende samsvarserklæring på arbeider utført etter 01.01.1999. Selv om svaret er 'Nei', er dette et punkt som bør verifiseres, da manglende samsvarserklæring kan indikere ulovlig eller uforsvarlig elektrisk arbeid.",
+          "evidence": [
+            "Er det manglende samsvarserklæring på arbeider utført etter 01.01.1999? Nei"
+          ],
+          "source_documents": [
+            "d186_d186"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.55,
+          "details": {}
+        },
+        {
+          "risk_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb_risk_007",
+          "description": "Prioritering av bud fra ikke-forbrukere: Selger kan velge å prioritere bud fra ikke-forbrukere (profesjonelle aktører) selv om budet er lavere enn forbrukerbud. Dette kan være ugunstig for privatpersoner som ønsker å kjøpe boligen.",
+          "evidence": [
+            "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke‑forbrukere, selv om budet er lavere enn et forbrukerbud."
+          ],
+          "source_documents": [
+            "d186_d186"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.7,
+          "details": {}
+        },
+        {
+          "risk_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb_risk_008",
+          "description": "Risiko ved avbrutt oppdrag og meglers krav på vederlag: Dersom salgsoppdraget avbrytes, har megler krav på rimelig vederlag for medgått tid og utført arbeid, inkludert tilrettelegging, markedsføring og visninger. Timeprisen er satt til kr 3 500, noe som kan medføre betydelige kostnader for selger ved avbrudd.",
+          "evidence": [
+            "Dersom oppdraget sies opp eller utløper uten at salget gjennomføres, har megler krav på rimelig vederlag for medgått tid og for utført arbeid.",
+            "Timepris ved slik beregning er kr 3500."
+          ],
+          "source_documents": [
+            "d186_d186"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb_risk_009",
+          "description": "Risiko knyttet til hvitvaskingsregelverket: Dersom kjøper ikke bidrar til at megler får gjennomført kundetiltak, kan megler stanse transaksjonen. Dette kan forsinke eller hindre gjennomføring av salget og utgjøre en risiko for begge parter.",
+          "evidence": [
+            "Eiendomsmeglere er underlagt lov om hvitvasking, og er blant annet forpliktet til å gjennomføre kundetiltak av både selger og kjøper.",
+            "Hvis kjøper ikke bidrar til at megler får gjennomført kundetiltak og dette fører til at avtalen ikke kan gjennomføres eller blir forsinket, er dette et mislighold fra kjøpers side."
+          ],
+          "source_documents": [
+            "d186_d186"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.75,
+          "details": {}
+        },
+        {
+          "risk_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb_risk_010",
+          "description": "Ingen angrerett ved kjøp av fast eiendom: Kjøper har ingen angrerett etter at bud er akseptert. Dette innebærer at kjøper er bundet av avtalen og kan ikke trekke seg uten vesentlige konsekvenser.",
+          "evidence": [
+            "Det eksisterer ingen angrerett ved salg/kjøp av fast eiendom"
+          ],
+          "source_documents": [
+            "d186_d186"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.9,
+          "details": {}
+        },
+        {
+          "risk_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb_risk_011",
+          "description": "Risiko for sopp/råteskader og skjeggkre i sameiet: Selger er spurt om kjennskap til sopp/råteskader, insekter, skadedyr og skjeggkre i sameiet. Selv om svarene tilsynelatende er 'Nei', er dette forhold som kan være vanskelig å avdekke og som kan medføre betydelige kostnader.",
+          "evidence": [
+            "Kjenner du til om det er/har vært sopp/råteskader/insekter/skadedyr i sameiet/laget/selskapet (fellesareal eller i andre boliger) som rotter, mus, maur eller lignende? Nei Ja",
+            "Kjenner du til om det er/har vært skjeggkre i sameiet/laget/selskapet (fellesareal eller i andre boliger)? Nei Ja"
+          ],
+          "source_documents": [
+            "d186_d186"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.65,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d186_001",
+          "description": "Fuktproblematikk i parkeringskjelleren: Styret arbeider aktivt med fuktproblemer i parkeringskjelleren. Det er rapportert vannlekkasje i taket over parkeringsplass 33, og det er observert mugg i boder mot marka. Dette kan medføre skader på kjøretøy, boder og bygningskonstruksjonen, samt fremtidige kostnader for sameiet.",
+          "evidence": [
+            "Fuktproblematikk i parkeringskjelleren, som er under oppfølging av styret.",
+            "Vannlekkasje i taket i parkeringskjeller plass 33",
+            "Det har vært observert mugg i bodene mot marka tidligere, og vi bør derfor være varsomme med vannbruk i parkeringskjelleren generelt.",
+            "Kostnadene knyttet til dette tiltaket er lagt inn i økningen av sameiets utgifter."
+          ],
+          "source_documents": [
+            "d186.pdf"
+          ],
+          "source_pages": [
+            20,
+            43,
+            44
+          ],
+          "details": {
+            "confidence": 0.97
+          }
+        },
+        {
+          "risk_id": "gt_d186_002",
+          "description": "Negativt årsresultat i sameiet 2024: Sameiet hadde et negativt årsresultat på kr 123 106 i 2024, dekket ved overføring fra opptjent egenkapital. Driftskostnadene økte kraftig (fra kr 807 177 i 2023 til kr 1 031 913 i 2024), særlig løpende vedlikehold (fra kr 11 018 til kr 141 296). Dette kan indikere økte felleskostnader fremover.",
+          "evidence": [
+            "Sameiet hadde i 2024 samlede driftsinntekter på kr 903 890 og samlede driftskostnader på kr 1 031 913. Dette ga et negativt årsresultat på kr 123 106. Underskuddet er dekket ved overføring fra opptjent egenkapital.",
+            "ÅRSRESULTAT -123 106",
+            "Løpende vedlikehold -141 296 (mot -11 018 i 2023)",
+            "Styrehonorar -68 000 (mot -30 000 i 2023)"
+          ],
+          "source_documents": [
+            "d186.pdf"
+          ],
+          "source_pages": [
+            20,
+            44
+          ],
+          "details": {
+            "confidence": 0.97
+          }
+        },
+        {
+          "risk_id": "gt_d186_003",
+          "description": "Risiko for økte felleskostnader: Det tas eksplisitt forbehold om at felleskostnader kan øke på grunn av prisstigning og renteøkning. Budsjett 2025 viser økte driftskostnader (kr 965 720) og økte inntekter (kr 960 720), noe som gir et budsjettert underskudd på kr 5 000. Kombinert med pågående vedlikeholdsbehov i parkeringskjelleren er risikoen for ytterligere kostnadsøkninger reell.",
+          "evidence": [
+            "På grunn av prisstigning og renteøkning tas det forbehold om at felleskostnader kan øke.",
+            "Budsjett 2025: Sum driftskostnader -965 720, Sum driftsinntekter 960 720",
+            "Kostnadene knyttet til dette tiltaket er lagt inn i økningen av sameiets utgifter."
+          ],
+          "source_documents": [
+            "d186.pdf"
+          ],
+          "source_pages": [
+            17,
+            44
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d186_004",
+          "description": "Problemer med balkongdrenering: Styret har benyttet advokat for å avklare problemstillingen med utbygger angående balkonger som drenerer dårlig. Saken er fremlagt på årsmøtet for videre behandling. Dette kan medføre juridiske tvister og kostnader for sameiet.",
+          "evidence": [
+            "Vi har benyttet oss av de inkluderte timene advokat, for å avklare problemstillingen med utbygger og balkongene som virker å drenere litt dårlig. Vi fremlegger sak om dette på årsmøtet, for å se hvordan dette blir fremover.",
+            "Styret ønsker at årsmøte skal ta stilling til hva vi som sameie ønsker å gjøre med drenering og vann på balkongene."
+          ],
+          "source_documents": [
+            "d186.pdf"
+          ],
+          "source_pages": [
+            44,
+            45
+          ],
+          "details": {
+            "confidence": 0.93
+          }
+        },
+        {
+          "risk_id": "gt_d186_005",
+          "description": "Støvproblemer i parkeringskjelleren: Gulvet i parkeringskjelleren er støvete og krever behandling. Kostnadene for utbedring er estimert til mellom kr 24 500 og kr 220 500 avhengig av løsning. Sameiet har per dags dato ikke økonomi til å gjennomføre tiltaket, og det er ikke innhentet spesifikke tilbud.",
+          "evidence": [
+            "Meget støvete gulv i p-kjeller kun få dager etter spyling",
+            "Hvis vi skal gjøre noe mer med gulvet, vil det komme en kostnad på dette som vi ikke har økonomi til per dags dato. Kostnaden kan variere fra ca. 25 000 til 220 000 kr.",
+            "Problemer med støv i parkeringskjeller."
+          ],
+          "source_documents": [
+            "d186.pdf"
+          ],
+          "source_pages": [
+            20,
+            43
+          ],
+          "details": {
+            "confidence": 0.92
+          }
+        },
+        {
+          "risk_id": "gt_d186_006",
+          "description": "Boden i kjeller mangler dokumentasjon på eierskap/bruksrett: Boden som er inkludert i BRA-e og totalt BRA ligger på sameiets fellesareal, men disponeres av seksjonen. Det er ikke fremvist dokumentasjon på eierskap eller bruksrett, og sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet.",
+          "evidence": [
+            "Bod i kjeller er påvist av eier. Det er ikke fremvist dokumentasjon på eierskap eller bruksrett.",
+            "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA-e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet."
+          ],
+          "source_documents": [
+            "d186.pdf"
+          ],
+          "source_pages": [
+            19,
+            28
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d186_008",
+          "description": "Selgers egenerklæring ikke fremlagt for takstmann før befaring: Selgers egenerklæringsskjema var ikke fremvist for den bygningssakkyndige før befaringen. Dette kan bety at takstmannen ikke hadde tilgang til all relevant informasjon fra selger under sin vurdering, noe som kan ha påvirket tilstandsrapportens fullstendighet.",
+          "evidence": [
+            "Er selgers egenerklæring fremlagt og gjennomgått av bygningssakkyndig? Nei",
+            "Egenerklæring er ikke fremvist før befaring."
+          ],
+          "source_documents": [
+            "d186.pdf"
+          ],
+          "source_pages": [
+            27
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d186_009",
+          "description": "Veggen mellom vindfang og gang er fjernet uten søknad: Byggetegningene fra 2018 samsvarer med dagens bruk av boligen, med unntak av at veggen mellom vindfang og gang er fjernet. Dette er opplyst å ikke være et søknadspliktig tiltak, men avviket fra godkjente tegninger kan likevel skape usikkerhet.",
+          "evidence": [
+            "Det er mottatt byggetegninger fra kommunen, datert 2018. Disse samsvarer med dagens bruk av boligen, med unntak av at veggen mellom vindfang og gang er fjernet. Dette er ikke et søknadspliktig tiltak."
+          ],
+          "source_documents": [
+            "d186.pdf"
+          ],
+          "source_pages": [
+            18
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d186_011",
+          "description": "Overgangen mellom sameiets parkeringskjeller og naboens parkeringskjeller: Styret arbeider med problemstillingen knyttet til overgangen mellom sameiets parkeringskjeller og naboens parkeringskjeller. Detaljer om problemets omfang og potensielle kostnader er ikke fullt ut beskrevet.",
+          "evidence": [
+            "Overgangen mellom vår parkeringskjeller og naboens parkeringskjeller.",
+            "Styret arbeider for tiden med flere saker knyttet til parkeringskjelleren"
+          ],
+          "source_documents": [
+            "d186.pdf"
+          ],
+          "source_pages": [
+            20
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d186_012",
+          "description": "Bindende Telia-avtale uten mulighet for bytte: Sameiet har inngått en ny 2-årig bindende avtale med Telia for internett/TV, etter at beboere har uttrykt misnøye med leverandøren. Det er ikke mulig å bytte leverandør i avtaleperioden, noe som kan påvirke beboernes tilfredshet og fleksibilitet.",
+          "evidence": [
+            "Siden ny avtale ble inngått med Telia etter årsmøtet i fjor har vi ikke mulighet til å bytte igjen. Denne avtalen er bindende i 2 år til.",
+            "Det er også å vurdere Telia som leverandør av internett/tv. Ser ikke det som en optimal løsning."
+          ],
+          "source_documents": [
+            "d186.pdf"
+          ],
+          "source_pages": [
+            43
+          ],
+          "details": {
+            "confidence": 0.72
+          }
+        },
+        {
+          "risk_id": "gt_d186_013",
+          "description": "Adkomst via privat vei og felles parkeringskjeller med nabosameiet: Adkomst til eiendommen skjer via privat vei, og sameiere med parkering må kjøre gjennom parkeringskjeller tilhørende Sameiet Tomset Terrasse I og Sameiet Tomset Terrasse II. Dette kan medføre avhengighet av nabosameienes vedlikehold og eventuelle konflikter om bruksrett.",
+          "evidence": [
+            "Adkomst til eiendommen skjer via privat vei.",
+            "Det er felles adkomst til parkeringskjeller og sameierne som har parkering må kjøre gjennom parkeringskjeller tilhørende sameiet Tomset Terrasse I og Sameiet Tomset Terrasse II."
+          ],
+          "source_documents": [
+            "d186.pdf"
+          ],
+          "source_pages": [
+            18
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d186_014",
+          "description": "Selger har kun eid boligen i ca. 1 år: Selger kjøpte boligen i 2024 og har eid den i kun ca. 1 år og 1 måned. Kort eiertid kan bety begrenset kjennskap til boligens tilstand over tid, og selger kan ha begrenset kunnskap om eventuelle skjulte feil eller sesongbetingede problemer.",
+          "evidence": [
+            "Når kjøpte du boligen? År 2024",
+            "Hvor lenge har du eid boligen? Antall år 1, Antall måneder 1",
+            "Har du bodd i boligen siste 12 måneder? Ja"
+          ],
+          "source_documents": [
+            "d186.pdf"
+          ],
+          "source_pages": [
+            32
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        },
+        {
+          "risk_id": "gt_d186_015",
+          "description": "Manglende el-kontroll de siste 5 år: Det er ikke foretatt kontroll av det lokale el-tilsyn eller utført utvidet el-kontroll i løpet av de siste 5 år. Selv om det ikke er registrert avvik, gir manglende uavhengig kontroll en viss usikkerhet rundt det elektriske anleggets tilstand.",
+          "evidence": [
+            "Er det foretatt kontroll av det lokale el-tilsyn eller utført utvidet el-kontroll i løpet av de siste 5 år? Nei"
+          ],
+          "source_documents": [
+            "d186.pdf"
+          ],
+          "source_pages": [
+            29
+          ],
+          "details": {
+            "confidence": 0.72
+          }
+        },
+        {
+          "risk_id": "gt_d186_016",
+          "description": "Eiendommen er delvis avsatt til fremtidig bebyggelse og anlegg i kommuneplanen: Kommuneplanens arealdel 2022-2034 viser at deler av eiendommen er avsatt til 'Bebyggelse og anlegg - Framtidig' (2989,3 m²) og 'Blå/grønnstruktur - Nåværende' (3332,53 m²). Dette kan innebære fremtidige endringer i nærområdet som kan påvirke boligens omgivelser.",
+          "evidence": [
+            "Bebyggelse og anlegg - Framtidig Kommuneplanens arealdel 2022-2034 (27.3.2025) 2989.3m2",
+            "Blå/grønnstruktur - Nåværende Kommuneplanens arealdel 2022-2034 (27.3.2025) 3332.53m2"
+          ],
+          "source_documents": [
+            "d186.pdf"
+          ],
+          "source_pages": [
+            48
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d186_017",
+          "description": "Sameierens ansvar for sameiets gjeld (solidaransvar): I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk. Gitt sameiets negative årsresultat og pågående vedlikeholdsbehov, kan dette innebære en fremtidig økonomisk eksponering for kjøper.",
+          "evidence": [
+            "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.",
+            "Sameiebrøk: 62/2312"
+          ],
+          "source_documents": [
+            "d186.pdf"
+          ],
+          "source_pages": [
+            21
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d186_018",
+          "description": "Papptekking under terrassebord på balkong ikke kontrollerbar: Takstmannen kunne ikke kontrollere tettesjiktet (papptekking) under terrassebordene på balkongen. Kombinert med de kjente dreneringsproblemene på balkongene i sameiet, representerer dette en potensiell risiko for fuktskader.",
+          "evidence": [
+            "Er det ufullstendig/manglende tettesjikt ved oppkant mot vegg og dør? Ikke kontrollerbart",
+            "Papptekking under terrassebord er ikke synlig for kontroll.",
+            "balkongene som virker å drenere litt dårlig"
+          ],
+          "source_documents": [
+            "d186.pdf"
+          ],
+          "source_pages": [
+            28,
+            45
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb_risk_001",
+            "description": "Usikkerhet rundt brukstillatelse eller ferdigattest: Spørsmål om manglende brukstillatelse eller ferdigattest er stilt, men svaret er ikke entydig bekreftet som 'Nei'. Dette kan indikere uavklarte forhold knyttet til lovlig bruk av eiendommen.",
+            "evidence": [
+              "22 Kjenner du til manglende brukstillatelse eller ferdigattest? Nei Ja"
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.65,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Dokumentet bekrefter tydelig at det foreligger ferdigattest. I egenerklæringsskjemaet (spørsmål 22) er 'Nei' avkrysset for manglende brukstillatelse eller ferdigattest. I tilstandsrapporten (seksjon 5.5) fremgår det eksplisitt: 'Er det manglende ferdigattest / midlertidig brukstillatelse? Nei. FA er datert 01.04.2020.' Salgsoppgaven bekrefter også: 'Det foreligger ferdigattest for Margrethe Thomsets veg 21 og 23 som gjelder boligblokker med tilhørende anlegg, datert 01.04.2020.' Det er ingen uavklarte forhold knyttet til ferdigattest eller brukstillatelse."
+        },
+        {
+          "risk": {
+            "risk_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb_risk_002",
+            "description": "Selgers opplysningsplikt og risiko for regress: Selger bekrefter at opplysninger er gitt etter beste skjønn, men dersom opplysningene er ufullstendige, uriktige eller misvisende, kan forsikringsselskapet søke regress. Dette utgjør en risiko for kjøper dersom selger har gitt mangelfulle opplysninger.",
+            "evidence": [
+              "Jeg bekrefter at opplysningene er gitt etter beste skjønn. Jeg er kjent med at dersom jeg har gitt ufullstendige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis"
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder eksplisitt denne teksten i egenerklæringsskjemaet: 'Jeg bekrefter at opplysningene er gitt etter beste skjønn. Jeg er kjent med at dersom jeg har gitt ufullstendige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis.' Dette er en reell risiko som er direkte støttet av dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb_risk_003",
+            "description": "Begrenset selgeransvar ved salg 'som den er': Eiendommen selges med forbehold om avhendingsloven § 3-9, noe som begrenser selgers ansvar. Kjøper bærer dermed større risiko for skjulte feil og mangler som ikke fremkommer av tilstandsrapporten.",
+            "evidence": [
+              "selgers ansvar er begrenset til det som følger direkte av avtalen, jf. avhendingsloven § 3‑9"
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder følgende tekst under 'Ikke-forbruker – definisjon og vilkår': 'Ved slike kjøp selges eiendommen «som den er», og selgers ansvar er begrenset til det som følger direkte av avtalen, jf. avhendingsloven § 3‑9.' Dette er direkte støttet av dokumentteksten og utgjør en reell risiko for kjøpere som ikke er forbrukere."
+        },
+        {
+          "risk": {
+            "risk_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb_risk_004",
+            "description": "Risiko knyttet til vannrørenes alder: Tilstandsrapporten stiller spørsmål om vannrør har nådd en alder som gir økt risiko for skader eller følgeskader. Selv om svaret er 'Nei', bør kjøper være oppmerksom på dette punktet og vurdere tilstanden nærmere.",
+            "evidence": [
+              "Har vannrør nådd en alder som gir økt risiko for skader eller følgeskader? Nei"
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.6,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Dokumentet bekrefter at svaret er 'Nei' på spørsmålet om vannrør har nådd en alder som gir økt risiko for skader eller følgeskader. Tilstandsrapporten (seksjon 5.7) viser TG-1 for vannledninger og ingen avvik. Boligen er fra 2019 og er relativt ny. Det er ingen faktisk risiko knyttet til vannrørenes alder som er dokumentert – risikoen er basert på en hypotetisk bekymring til tross for at dokumentet eksplisitt avkrefter problemet."
+        },
+        {
+          "risk": {
+            "risk_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb_risk_005",
+            "description": "Manglende samsvarserklæring på elektriske arbeider: Det er stilt spørsmål om manglende samsvarserklæring på arbeider utført etter 01.01.1999. Selv om svaret er 'Nei', er dette et punkt som bør verifiseres, da manglende samsvarserklæring kan indikere ulovlig eller uforsvarlig elektrisk arbeid.",
+            "evidence": [
+              "Er det manglende samsvarserklæring på arbeider utført etter 01.01.1999? Nei"
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.55,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Dokumentet bekrefter at svaret er 'Nei' på spørsmålet om manglende samsvarserklæring på arbeider utført etter 01.01.1999. Tilstandsrapporten (seksjon 5.8) bekrefter: 'Det er fremvist dokumentasjon for anlegget fra byggeår.' Salgsoppgaven bekrefter også: 'Det fremgår av tilstandsrapporten at det foreligger samsvarserklæring for det elektriske arbeidet i boligen.' Det er ingen dokumentert risiko knyttet til manglende samsvarserklæring."
+        },
+        {
+          "risk": {
+            "risk_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb_risk_007",
+            "description": "Prioritering av bud fra ikke-forbrukere: Selger kan velge å prioritere bud fra ikke-forbrukere (profesjonelle aktører) selv om budet er lavere enn forbrukerbud. Dette kan være ugunstig for privatpersoner som ønsker å kjøpe boligen.",
+            "evidence": [
+              "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke‑forbrukere, selv om budet er lavere enn et forbrukerbud."
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder eksplisitt følgende tekst: 'På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke‑forbrukere, selv om budet er lavere enn et forbrukerbud.' Dette er direkte støttet av dokumentteksten og utgjør en reell risiko for privatpersoner (forbrukere) som ønsker å kjøpe boligen."
+        },
+        {
+          "risk": {
+            "risk_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb_risk_008",
+            "description": "Risiko ved avbrutt oppdrag og meglers krav på vederlag: Dersom salgsoppdraget avbrytes, har megler krav på rimelig vederlag for medgått tid og utført arbeid, inkludert tilrettelegging, markedsføring og visninger. Timeprisen er satt til kr 3 500, noe som kan medføre betydelige kostnader for selger ved avbrudd.",
+            "evidence": [
+              "Dersom oppdraget sies opp eller utløper uten at salget gjennomføres, har megler krav på rimelig vederlag for medgått tid og for utført arbeid.",
+              "Timepris ved slik beregning er kr 3500."
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder eksplisitt: 'Dersom oppdraget sies opp eller utløper uten at salget gjennomføres, har megler krav på rimelig vederlag for medgått tid og for utført arbeid.' og 'Timepris ved slik beregning er kr 3500.' Dette er direkte støttet av dokumentteksten og utgjør en reell risiko for selger ved avbrutt oppdrag."
+        },
+        {
+          "risk": {
+            "risk_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb_risk_009",
+            "description": "Risiko knyttet til hvitvaskingsregelverket: Dersom kjøper ikke bidrar til at megler får gjennomført kundetiltak, kan megler stanse transaksjonen. Dette kan forsinke eller hindre gjennomføring av salget og utgjøre en risiko for begge parter.",
+            "evidence": [
+              "Eiendomsmeglere er underlagt lov om hvitvasking, og er blant annet forpliktet til å gjennomføre kundetiltak av både selger og kjøper.",
+              "Hvis kjøper ikke bidrar til at megler får gjennomført kundetiltak og dette fører til at avtalen ikke kan gjennomføres eller blir forsinket, er dette et mislighold fra kjøpers side."
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder eksplisitt: 'Eiendomsmeglere er underlagt lov om hvitvasking, og er blant annet forpliktet til å gjennomføre kundetiltak av både selger og kjøper.' og 'Hvis kjøper ikke bidrar til at megler får gjennomført kundetiltak og dette fører til at avtalen ikke kan gjennomføres eller blir forsinket, er dette et mislighold fra kjøpers side.' Dette er direkte støttet av dokumentteksten og utgjør en reell risiko."
+        },
+        {
+          "risk": {
+            "risk_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb_risk_010",
+            "description": "Ingen angrerett ved kjøp av fast eiendom: Kjøper har ingen angrerett etter at bud er akseptert. Dette innebærer at kjøper er bundet av avtalen og kan ikke trekke seg uten vesentlige konsekvenser.",
+            "evidence": [
+              "Det eksisterer ingen angrerett ved salg/kjøp av fast eiendom"
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder eksplisitt under 'VIKTIGE AVTALERETTSLIGE FORHOLD': 'Det eksisterer ingen angrerett ved salg/kjøp av fast eiendom.' Dette er direkte støttet av dokumentteksten og utgjør en reell risiko for kjøper som er bundet av avtalen etter budaksept."
+        },
+        {
+          "risk": {
+            "risk_id": "a655a153-1f71-4f46-ae9e-ffeffa9587fb_risk_011",
+            "description": "Risiko for sopp/råteskader og skjeggkre i sameiet: Selger er spurt om kjennskap til sopp/råteskader, insekter, skadedyr og skjeggkre i sameiet. Selv om svarene tilsynelatende er 'Nei', er dette forhold som kan være vanskelig å avdekke og som kan medføre betydelige kostnader.",
+            "evidence": [
+              "Kjenner du til om det er/har vært sopp/råteskader/insekter/skadedyr i sameiet/laget/selskapet (fellesareal eller i andre boliger) som rotter, mus, maur eller lignende? Nei Ja",
+              "Kjenner du til om det er/har vært skjeggkre i sameiet/laget/selskapet (fellesareal eller i andre boliger)? Nei Ja"
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.65,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Dokumentet viser at selger har svart 'Nei' på begge spørsmålene om sopp/råteskader/insekter/skadedyr i sameiet (spørsmål 27) og skjeggkre i sameiet (spørsmål 28). Det er ingen dokumentert risiko knyttet til disse forholdene. Riktignok nevner årsmøtereferatet at det har vært observert mugg i boder mot marka i forbindelse med fuktproblematikk i parkeringskjelleren, men dette er ikke det samme som sopp/råteskader eller skjeggkre, og selger har ikke bekreftet kjennskap til slike forhold i egenerklæringen."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 0.3333333333333333,
+        "recall": 0.1111111111111111,
+        "f1": 0.16666666666666666,
+        "total_support": 18
+      }
+    },
+    "agentic_rag_P+T+R": {
+      "run_id": "d109f210-322b-45fd-94f9-93c2e8cdcd4d",
+      "system_type": "agentic_rag_P+T+R",
+      "overall_metrics": {
+        "precision": 0.8,
+        "recall": 0.6666666666666666,
+        "f1": 0.7272727272727272,
+        "total_support": 18
+      },
+      "matched_risks": 12,
+      "unmatched_predicted": 3,
+      "unmatched_ground_truth": 6,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "d109f210-322b-45fd-94f9-93c2e8cdcd4d_risk_000",
+            "description": "Fuktproblematikk i parkeringskjelleren under oppfølging av styret",
+            "evidence": [
+              "Fuktproblematikk i parkeringskjelleren, som er under oppfølging av styret.",
+              "Overgangen mellom vår parkeringskjeller og naboens parkeringskjeller.",
+              "Det har vært observert mugg i bodene mot marka tidligere, og vi bør derfor være varsomme med vannbruk i parkeringskjelleren generelt.",
+              "Hvis det er vannlekkasje i taket over parkeringsplass 33 må vi tilkalle fagfolk som kan se på dette."
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_001",
+            "description": "Fuktproblematikk i parkeringskjelleren: Styret arbeider aktivt med fuktproblemer i parkeringskjelleren. Det er rapportert vannlekkasje i taket over parkeringsplass 33, og det er observert mugg i boder mot marka. Dette kan medføre skader på kjøretøy, boder og bygningskonstruksjonen, samt fremtidige kostnader for sameiet.",
+            "evidence": [
+              "Fuktproblematikk i parkeringskjelleren, som er under oppfølging av styret.",
+              "Vannlekkasje i taket i parkeringskjeller plass 33",
+              "Det har vært observert mugg i bodene mot marka tidligere, og vi bør derfor være varsomme med vannbruk i parkeringskjelleren generelt.",
+              "Kostnadene knyttet til dette tiltaket er lagt inn i økningen av sameiets utgifter."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              20,
+              43,
+              44
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "d109f210-322b-45fd-94f9-93c2e8cdcd4d_risk_003",
+            "description": "Negativt årsresultat i sameiet for 2024 på kr 123 106, dekket ved overføring fra egenkapital – indikerer risiko for økte felleskostnader",
+            "evidence": [
+              "Sameiet hadde i 2024 et negativt årsresultat på kr 123 106. Underskuddet er dekket ved overføring fra opptjent egenkapital.",
+              "ÅRSRESULTAT -123 106",
+              "Overført fra annen egenkapital -123 106",
+              "DRIFTSRESULTAT -128 023"
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.93,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_002",
+            "description": "Negativt årsresultat i sameiet 2024: Sameiet hadde et negativt årsresultat på kr 123 106 i 2024, dekket ved overføring fra opptjent egenkapital. Driftskostnadene økte kraftig (fra kr 807 177 i 2023 til kr 1 031 913 i 2024), særlig løpende vedlikehold (fra kr 11 018 til kr 141 296). Dette kan indikere økte felleskostnader fremover.",
+            "evidence": [
+              "Sameiet hadde i 2024 samlede driftsinntekter på kr 903 890 og samlede driftskostnader på kr 1 031 913. Dette ga et negativt årsresultat på kr 123 106. Underskuddet er dekket ved overføring fra opptjent egenkapital.",
+              "ÅRSRESULTAT -123 106",
+              "Løpende vedlikehold -141 296 (mot -11 018 i 2023)",
+              "Styrehonorar -68 000 (mot -30 000 i 2023)"
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              20,
+              44
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "d109f210-322b-45fd-94f9-93c2e8cdcd4d_risk_004",
+            "description": "Økning i felleskostnader varslet – prisstigning og renteøkning kan medføre ytterligere økning",
+            "evidence": [
+              "På grunn av prisstigning og renteøkning tas det forbehold om at felleskostnader kan øke.",
+              "Budsjett 2025 viser økte driftskostnader sammenlignet med 2024.",
+              "Felleskostnader driftsdel budsjett 2025: 695 520 mot regnskap 2024: 646 176."
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_003",
+            "description": "Risiko for økte felleskostnader: Det tas eksplisitt forbehold om at felleskostnader kan øke på grunn av prisstigning og renteøkning. Budsjett 2025 viser økte driftskostnader (kr 965 720) og økte inntekter (kr 960 720), noe som gir et budsjettert underskudd på kr 5 000. Kombinert med pågående vedlikeholdsbehov i parkeringskjelleren er risikoen for ytterligere kostnadsøkninger reell.",
+            "evidence": [
+              "På grunn av prisstigning og renteøkning tas det forbehold om at felleskostnader kan øke.",
+              "Budsjett 2025: Sum driftskostnader -965 720, Sum driftsinntekter 960 720",
+              "Kostnadene knyttet til dette tiltaket er lagt inn i økningen av sameiets utgifter."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              17,
+              44
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "d109f210-322b-45fd-94f9-93c2e8cdcd4d_risk_002",
+            "description": "Dreneringsproblemer på balkongene – sameiet har brukt advokat for å avklare problemstillingen med utbygger",
+            "evidence": [
+              "Styret ønsker at årsmøte skal ta stilling til hva vi som sameie ønsker å gjøre med drenering og vann på balkongene.",
+              "Vi har benyttet oss av de inkluderte timene advokat, for å avklare problemstillingen med utbygger og balkongene som virker å drenere litt dårlig.",
+              "Vi fremlegger sak om dette på årsmøtet, for å se hvordan dette blir fremover."
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_004",
+            "description": "Problemer med balkongdrenering: Styret har benyttet advokat for å avklare problemstillingen med utbygger angående balkonger som drenerer dårlig. Saken er fremlagt på årsmøtet for videre behandling. Dette kan medføre juridiske tvister og kostnader for sameiet.",
+            "evidence": [
+              "Vi har benyttet oss av de inkluderte timene advokat, for å avklare problemstillingen med utbygger og balkongene som virker å drenere litt dårlig. Vi fremlegger sak om dette på årsmøtet, for å se hvordan dette blir fremover.",
+              "Styret ønsker at årsmøte skal ta stilling til hva vi som sameie ønsker å gjøre med drenering og vann på balkongene."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              44,
+              45
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "d109f210-322b-45fd-94f9-93c2e8cdcd4d_risk_001",
+            "description": "Støvproblemer i parkeringskjeller – betonggulvet er ubehandlet og krever tiltak med estimerte kostnader på 25 000–220 000 kr",
+            "evidence": [
+              "Problemer med støv i parkeringskjeller.",
+              "Behandling av betonggulvet i parkeringskjelleren. Kostnadene knyttet til dette tiltaket er lagt inn i økningen av sameiets utgifter.",
+              "Kostnaden kan variere fra ca. 25 000 til 220 000 kr. Vi har ikke innhentet spesifikke tilbud enda.",
+              "Gulvet må behandles eller gjøres noe med. Hent inn priser fra fagfolk."
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_005",
+            "description": "Støvproblemer i parkeringskjelleren: Gulvet i parkeringskjelleren er støvete og krever behandling. Kostnadene for utbedring er estimert til mellom kr 24 500 og kr 220 500 avhengig av løsning. Sameiet har per dags dato ikke økonomi til å gjennomføre tiltaket, og det er ikke innhentet spesifikke tilbud.",
+            "evidence": [
+              "Meget støvete gulv i p-kjeller kun få dager etter spyling",
+              "Hvis vi skal gjøre noe mer med gulvet, vil det komme en kostnad på dette som vi ikke har økonomi til per dags dato. Kostnaden kan variere fra ca. 25 000 til 220 000 kr.",
+              "Problemer med støv i parkeringskjeller."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              20,
+              43
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "d109f210-322b-45fd-94f9-93c2e8cdcd4d_risk_005",
+            "description": "Bod i kjeller mangler dokumentasjon på eierskap eller bruksrett – sameiet kan omdisponere arealet",
+            "evidence": [
+              "Bod i kjeller er påvist av eier. Det er ikke fremvist dokumentasjon på eierskap eller bruksrett.",
+              "Sameiet kan på et eller senere tidspunkt omdisponere bruken av dette arealet.",
+              "Leiligheten disponerer en bod i kjeller. Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA-e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen."
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_006",
+            "description": "Boden i kjeller mangler dokumentasjon på eierskap/bruksrett: Boden som er inkludert i BRA-e og totalt BRA ligger på sameiets fellesareal, men disponeres av seksjonen. Det er ikke fremvist dokumentasjon på eierskap eller bruksrett, og sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet.",
+            "evidence": [
+              "Bod i kjeller er påvist av eier. Det er ikke fremvist dokumentasjon på eierskap eller bruksrett.",
+              "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA-e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              19,
+              28
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "d109f210-322b-45fd-94f9-93c2e8cdcd4d_risk_007",
+            "description": "Veggen mellom vindfang og gang er fjernet uten at dette fremgår av byggetegningene – avvik fra godkjente tegninger",
+            "evidence": [
+              "Det er mottatt byggetegninger fra kommunen, datert 2018. Disse samsvarer med dagens bruk av boligen, med unntak av at veggen mellom vindfang og gang er fjernet."
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_009",
+            "description": "Veggen mellom vindfang og gang er fjernet uten søknad: Byggetegningene fra 2018 samsvarer med dagens bruk av boligen, med unntak av at veggen mellom vindfang og gang er fjernet. Dette er opplyst å ikke være et søknadspliktig tiltak, men avviket fra godkjente tegninger kan likevel skape usikkerhet.",
+            "evidence": [
+              "Det er mottatt byggetegninger fra kommunen, datert 2018. Disse samsvarer med dagens bruk av boligen, med unntak av at veggen mellom vindfang og gang er fjernet. Dette er ikke et søknadspliktig tiltak."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "d109f210-322b-45fd-94f9-93c2e8cdcd4d_risk_006",
+            "description": "Ingen radonmåling er utført av selger",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_010",
+            "description": "Ingen radonmåling er utført: Selger har ikke utført radonmåling av boligen. Radon er en usynlig og luktfri gass som kan utgjøre en helserisiko ved forhøyede konsentrasjoner. Selv om det ikke er krav om radonmåling for denne boligen (ikke utleid), er det en potensiell helserisiko som kjøper bør være oppmerksom på.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              21,
+              33
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "d109f210-322b-45fd-94f9-93c2e8cdcd4d_risk_012",
+            "description": "Bindende TV/internett-avtale med Telia i 2 år – kjøper kan ikke bytte leverandør i avtaleperioden",
+            "evidence": [
+              "Siden ny avtale ble inngått med Telia etter årsmøtet i fjor har vi ikke mulighet til å bytte igjen. Denne avtalen er bindende i 2 år til.",
+              "TV/Internett/Bredbånd: Det er TV og internett inkludert i felleskostnadene. Sameiet har avtale med Telia."
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_012",
+            "description": "Bindende Telia-avtale uten mulighet for bytte: Sameiet har inngått en ny 2-årig bindende avtale med Telia for internett/TV, etter at beboere har uttrykt misnøye med leverandøren. Det er ikke mulig å bytte leverandør i avtaleperioden, noe som kan påvirke beboernes tilfredshet og fleksibilitet.",
+            "evidence": [
+              "Siden ny avtale ble inngått med Telia etter årsmøtet i fjor har vi ikke mulighet til å bytte igjen. Denne avtalen er bindende i 2 år til.",
+              "Det er også å vurdere Telia som leverandør av internett/tv. Ser ikke det som en optimal løsning."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              43
+            ],
+            "details": {
+              "confidence": 0.72
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "d109f210-322b-45fd-94f9-93c2e8cdcd4d_risk_009",
+            "description": "Privat adkomstvei og private stikkledninger for vann og avløp – vedlikeholdsansvar påhviler sameiet og kan medføre fremtidige kostnader",
+            "evidence": [
+              "Adkomst til eiendommen skjer via privat vei.",
+              "Stikkledningene fra eiendommen og ut til det kommunale nettet er private, og vedlikeholdsansvaret for disse påhviler sameiet."
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_013",
+            "description": "Adkomst via privat vei og felles parkeringskjeller med nabosameiet: Adkomst til eiendommen skjer via privat vei, og sameiere med parkering må kjøre gjennom parkeringskjeller tilhørende Sameiet Tomset Terrasse I og Sameiet Tomset Terrasse II. Dette kan medføre avhengighet av nabosameienes vedlikehold og eventuelle konflikter om bruksrett.",
+            "evidence": [
+              "Adkomst til eiendommen skjer via privat vei.",
+              "Det er felles adkomst til parkeringskjeller og sameierne som har parkering må kjøre gjennom parkeringskjeller tilhørende sameiet Tomset Terrasse I og Sameiet Tomset Terrasse II."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "d109f210-322b-45fd-94f9-93c2e8cdcd4d_risk_010",
+            "description": "Sameiet har legal panterett i den enkelte eierseksjon begrenset til inntil 2 ganger folketrygdens grunnbeløp ved manglende betaling av fellesutgifter",
+            "evidence": [
+              "Ved manglende betaling av fellesutgifter har sameiet legal panterett i den enkelte eierseksjon, begrenset til inntil 2 ganger folketrygdens grunnbeløp."
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_017",
+            "description": "Sameierens ansvar for sameiets gjeld (solidaransvar): I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk. Gitt sameiets negative årsresultat og pågående vedlikeholdsbehov, kan dette innebære en fremtidig økonomisk eksponering for kjøper.",
+            "evidence": [
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.",
+              "Sameiebrøk: 62/2312"
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              21
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "d109f210-322b-45fd-94f9-93c2e8cdcd4d_risk_013",
+            "description": "Papptekking under terrassebord på balkong er ikke synlig for kontroll – tilstand er ukjent",
+            "evidence": [
+              "Balkongen fremstår med normal bruksslitasje på overflater. Papptekking under terrassebord er ikke synlig for kontroll."
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.72,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_018",
+            "description": "Papptekking under terrassebord på balkong ikke kontrollerbar: Takstmannen kunne ikke kontrollere tettesjiktet (papptekking) under terrassebordene på balkongen. Kombinert med de kjente dreneringsproblemene på balkongene i sameiet, representerer dette en potensiell risiko for fuktskader.",
+            "evidence": [
+              "Er det ufullstendig/manglende tettesjikt ved oppkant mot vegg og dør? Ikke kontrollerbart",
+              "Papptekking under terrassebord er ikke synlig for kontroll.",
+              "balkongene som virker å drenere litt dårlig"
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              28,
+              45
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "d109f210-322b-45fd-94f9-93c2e8cdcd4d_risk_008",
+          "description": "Tilstandsrapporten vurderer ikke bygningsdeler som er underlagt sameiets ansvarsområde (yttervegger, tak, drenering, grunnmur m.m.) – kjøper har begrenset informasjon om disse",
+          "evidence": [
+            "Det er ikke foretatt tilstandsvurdering av bygningsdeler som er underlagt sameiets/borettslagets ansvarsområde. Det gjelder blant annet yttervegger, takkonstruksjon, taktekking, drenering, grunnmur, grunn/fundamenter, felles trapper, felles kjeller, og felles loft."
+          ],
+          "source_documents": [
+            "d186_d186"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "d109f210-322b-45fd-94f9-93c2e8cdcd4d_risk_011",
+          "description": "Ukjent om det er manglende lufting av kloakk over tak – kan indikere luktproblemer eller tekniske avvik",
+          "evidence": [
+            "Er det manglende lufting av kloakk over tak? Ukjent"
+          ],
+          "source_documents": [
+            "d186_d186"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.65,
+          "details": {}
+        },
+        {
+          "risk_id": "d109f210-322b-45fd-94f9-93c2e8cdcd4d_risk_014",
+          "description": "Løpende vedlikehold i sameiet økte kraftig i 2024 (kr 141 296) sammenlignet med budsjett (kr 50 000) og regnskap 2023 (kr 11 018) – indikerer uforutsette vedlikeholdsbehov",
+          "evidence": [
+            "Løpende vedlikehold: Regnskap 2024: -141 296, Regnskap 2023: -11 018, Budsjett 2024: -50 000, Budsjett 2025: -65 000."
+          ],
+          "source_documents": [
+            "d186_d186"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.85,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d186_007",
+          "description": "Selger har ikke tegnet boligselgerforsikring: Selger har valgt å ikke tegne boligselgerforsikring. Dette kan svekke kjøpers mulighet til å få dekket eventuelle krav mot selger ved skjulte feil og mangler, da selger kan ha begrenset evne til å dekke slike krav selv.",
+          "evidence": [
+            "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+          ],
+          "source_documents": [
+            "d186.pdf"
+          ],
+          "source_pages": [
+            21
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d186_008",
+          "description": "Selgers egenerklæring ikke fremlagt for takstmann før befaring: Selgers egenerklæringsskjema var ikke fremvist for den bygningssakkyndige før befaringen. Dette kan bety at takstmannen ikke hadde tilgang til all relevant informasjon fra selger under sin vurdering, noe som kan ha påvirket tilstandsrapportens fullstendighet.",
+          "evidence": [
+            "Er selgers egenerklæring fremlagt og gjennomgått av bygningssakkyndig? Nei",
+            "Egenerklæring er ikke fremvist før befaring."
+          ],
+          "source_documents": [
+            "d186.pdf"
+          ],
+          "source_pages": [
+            27
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d186_011",
+          "description": "Overgangen mellom sameiets parkeringskjeller og naboens parkeringskjeller: Styret arbeider med problemstillingen knyttet til overgangen mellom sameiets parkeringskjeller og naboens parkeringskjeller. Detaljer om problemets omfang og potensielle kostnader er ikke fullt ut beskrevet.",
+          "evidence": [
+            "Overgangen mellom vår parkeringskjeller og naboens parkeringskjeller.",
+            "Styret arbeider for tiden med flere saker knyttet til parkeringskjelleren"
+          ],
+          "source_documents": [
+            "d186.pdf"
+          ],
+          "source_pages": [
+            20
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d186_014",
+          "description": "Selger har kun eid boligen i ca. 1 år: Selger kjøpte boligen i 2024 og har eid den i kun ca. 1 år og 1 måned. Kort eiertid kan bety begrenset kjennskap til boligens tilstand over tid, og selger kan ha begrenset kunnskap om eventuelle skjulte feil eller sesongbetingede problemer.",
+          "evidence": [
+            "Når kjøpte du boligen? År 2024",
+            "Hvor lenge har du eid boligen? Antall år 1, Antall måneder 1",
+            "Har du bodd i boligen siste 12 måneder? Ja"
+          ],
+          "source_documents": [
+            "d186.pdf"
+          ],
+          "source_pages": [
+            32
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        },
+        {
+          "risk_id": "gt_d186_015",
+          "description": "Manglende el-kontroll de siste 5 år: Det er ikke foretatt kontroll av det lokale el-tilsyn eller utført utvidet el-kontroll i løpet av de siste 5 år. Selv om det ikke er registrert avvik, gir manglende uavhengig kontroll en viss usikkerhet rundt det elektriske anleggets tilstand.",
+          "evidence": [
+            "Er det foretatt kontroll av det lokale el-tilsyn eller utført utvidet el-kontroll i løpet av de siste 5 år? Nei"
+          ],
+          "source_documents": [
+            "d186.pdf"
+          ],
+          "source_pages": [
+            29
+          ],
+          "details": {
+            "confidence": 0.72
+          }
+        },
+        {
+          "risk_id": "gt_d186_016",
+          "description": "Eiendommen er delvis avsatt til fremtidig bebyggelse og anlegg i kommuneplanen: Kommuneplanens arealdel 2022-2034 viser at deler av eiendommen er avsatt til 'Bebyggelse og anlegg - Framtidig' (2989,3 m²) og 'Blå/grønnstruktur - Nåværende' (3332,53 m²). Dette kan innebære fremtidige endringer i nærområdet som kan påvirke boligens omgivelser.",
+          "evidence": [
+            "Bebyggelse og anlegg - Framtidig Kommuneplanens arealdel 2022-2034 (27.3.2025) 2989.3m2",
+            "Blå/grønnstruktur - Nåværende Kommuneplanens arealdel 2022-2034 (27.3.2025) 3332.53m2"
+          ],
+          "source_documents": [
+            "d186.pdf"
+          ],
+          "source_pages": [
+            48
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "d109f210-322b-45fd-94f9-93c2e8cdcd4d_risk_008",
+            "description": "Tilstandsrapporten vurderer ikke bygningsdeler som er underlagt sameiets ansvarsområde (yttervegger, tak, drenering, grunnmur m.m.) – kjøper har begrenset informasjon om disse",
+            "evidence": [
+              "Det er ikke foretatt tilstandsvurdering av bygningsdeler som er underlagt sameiets/borettslagets ansvarsområde. Det gjelder blant annet yttervegger, takkonstruksjon, taktekking, drenering, grunnmur, grunn/fundamenter, felles trapper, felles kjeller, og felles loft."
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt denne risikoen. I tilstandsrapporten (side 27, avsnitt 'Egne premisser') står det ordrett: 'Det er ikke foretatt tilstandsvurdering av bygningsdeler som er underlagt sameiets/borettslagets ansvarsområde. Det gjelder blant annet yttervegger, takkonstruksjon, taktekking, drenering, grunnmur, grunn/fundamenter, felles trapper, felles kjeller, og felles loft.' Dette er nøyaktig det som beskrives i risikoen, og kjøper har dermed begrenset informasjon om tilstanden til disse bygningsdelene."
+        },
+        {
+          "risk": {
+            "risk_id": "d109f210-322b-45fd-94f9-93c2e8cdcd4d_risk_011",
+            "description": "Ukjent om det er manglende lufting av kloakk over tak – kan indikere luktproblemer eller tekniske avvik",
+            "evidence": [
+              "Er det manglende lufting av kloakk over tak? Ukjent"
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.65,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter denne risikoen. I tilstandsrapporten under avsnitt 5.6 om avløpsrør (side 29) er spørsmålet 'Er det manglende lufting av kloakk over tak?' besvart med 'Ukjent'. Dette er direkte sitert i risikoens bevis og indikerer at takstmannen ikke har kunnet verifisere dette forholdet, noe som utgjør en reell usikkerhet for kjøper."
+        },
+        {
+          "risk": {
+            "risk_id": "d109f210-322b-45fd-94f9-93c2e8cdcd4d_risk_014",
+            "description": "Løpende vedlikehold i sameiet økte kraftig i 2024 (kr 141 296) sammenlignet med budsjett (kr 50 000) og regnskap 2023 (kr 11 018) – indikerer uforutsette vedlikeholdsbehov",
+            "evidence": [
+              "Løpende vedlikehold: Regnskap 2024: -141 296, Regnskap 2023: -11 018, Budsjett 2024: -50 000, Budsjett 2025: -65 000."
+            ],
+            "source_documents": [
+              "d186_d186"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter denne risikoen fullt ut. I resultatregnskapet for Sameiet Utleir Park (side 44) fremgår det tydelig at løpende vedlikehold i 2024 var kr 141 296, mot kun kr 11 018 i 2023 og budsjettert kr 50 000 for 2024. Dette er en dramatisk økning som indikerer uforutsette vedlikeholdsbehov. Dokumentet forklarer delvis årsaken: det ble gjennomført vask og beising av svalganger, laget platting, diverse småforbedringer, samt kostnader knyttet til fuktproblematikk i parkeringskjelleren. Samlet ga dette et negativt årsresultat på kr 123 106 for sameiet."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "total_support": 18
+      }
+    },
+    "ground_truth": {
+      "run_id": "b7ea02b9-ea73-4c2e-ba8b-4ec40504f201_gt",
+      "system_type": "ground_truth",
+      "overall_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "total_support": 18
+      },
+      "matched_risks": 18,
+      "unmatched_predicted": 0,
+      "unmatched_ground_truth": 0,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "gt_d186_001",
+            "description": "Fuktproblematikk i parkeringskjelleren: Styret arbeider aktivt med fuktproblemer i parkeringskjelleren. Det er rapportert vannlekkasje i taket over parkeringsplass 33, og det er observert mugg i boder mot marka. Dette kan medføre skader på kjøretøy, boder og bygningskonstruksjonen, samt fremtidige kostnader for sameiet.",
+            "evidence": [
+              "Fuktproblematikk i parkeringskjelleren, som er under oppfølging av styret.",
+              "Vannlekkasje i taket i parkeringskjeller plass 33",
+              "Det har vært observert mugg i bodene mot marka tidligere, og vi bør derfor være varsomme med vannbruk i parkeringskjelleren generelt.",
+              "Kostnadene knyttet til dette tiltaket er lagt inn i økningen av sameiets utgifter."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              20,
+              43,
+              44
+            ],
+            "confidence": 0.97,
+            "details": {
+              "confidence": 0.97
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_001",
+            "description": "Fuktproblematikk i parkeringskjelleren: Styret arbeider aktivt med fuktproblemer i parkeringskjelleren. Det er rapportert vannlekkasje i taket over parkeringsplass 33, og det er observert mugg i boder mot marka. Dette kan medføre skader på kjøretøy, boder og bygningskonstruksjonen, samt fremtidige kostnader for sameiet.",
+            "evidence": [
+              "Fuktproblematikk i parkeringskjelleren, som er under oppfølging av styret.",
+              "Vannlekkasje i taket i parkeringskjeller plass 33",
+              "Det har vært observert mugg i bodene mot marka tidligere, og vi bør derfor være varsomme med vannbruk i parkeringskjelleren generelt.",
+              "Kostnadene knyttet til dette tiltaket er lagt inn i økningen av sameiets utgifter."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              20,
+              43,
+              44
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d186_002",
+            "description": "Negativt årsresultat i sameiet 2024: Sameiet hadde et negativt årsresultat på kr 123 106 i 2024, dekket ved overføring fra opptjent egenkapital. Driftskostnadene økte kraftig (fra kr 807 177 i 2023 til kr 1 031 913 i 2024), særlig løpende vedlikehold (fra kr 11 018 til kr 141 296). Dette kan indikere økte felleskostnader fremover.",
+            "evidence": [
+              "Sameiet hadde i 2024 samlede driftsinntekter på kr 903 890 og samlede driftskostnader på kr 1 031 913. Dette ga et negativt årsresultat på kr 123 106. Underskuddet er dekket ved overføring fra opptjent egenkapital.",
+              "ÅRSRESULTAT -123 106",
+              "Løpende vedlikehold -141 296 (mot -11 018 i 2023)",
+              "Styrehonorar -68 000 (mot -30 000 i 2023)"
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              20,
+              44
+            ],
+            "confidence": 0.97,
+            "details": {
+              "confidence": 0.97
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_002",
+            "description": "Negativt årsresultat i sameiet 2024: Sameiet hadde et negativt årsresultat på kr 123 106 i 2024, dekket ved overføring fra opptjent egenkapital. Driftskostnadene økte kraftig (fra kr 807 177 i 2023 til kr 1 031 913 i 2024), særlig løpende vedlikehold (fra kr 11 018 til kr 141 296). Dette kan indikere økte felleskostnader fremover.",
+            "evidence": [
+              "Sameiet hadde i 2024 samlede driftsinntekter på kr 903 890 og samlede driftskostnader på kr 1 031 913. Dette ga et negativt årsresultat på kr 123 106. Underskuddet er dekket ved overføring fra opptjent egenkapital.",
+              "ÅRSRESULTAT -123 106",
+              "Løpende vedlikehold -141 296 (mot -11 018 i 2023)",
+              "Styrehonorar -68 000 (mot -30 000 i 2023)"
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              20,
+              44
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d186_003",
+            "description": "Risiko for økte felleskostnader: Det tas eksplisitt forbehold om at felleskostnader kan øke på grunn av prisstigning og renteøkning. Budsjett 2025 viser økte driftskostnader (kr 965 720) og økte inntekter (kr 960 720), noe som gir et budsjettert underskudd på kr 5 000. Kombinert med pågående vedlikeholdsbehov i parkeringskjelleren er risikoen for ytterligere kostnadsøkninger reell.",
+            "evidence": [
+              "På grunn av prisstigning og renteøkning tas det forbehold om at felleskostnader kan øke.",
+              "Budsjett 2025: Sum driftskostnader -965 720, Sum driftsinntekter 960 720",
+              "Kostnadene knyttet til dette tiltaket er lagt inn i økningen av sameiets utgifter."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              17,
+              44
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_003",
+            "description": "Risiko for økte felleskostnader: Det tas eksplisitt forbehold om at felleskostnader kan øke på grunn av prisstigning og renteøkning. Budsjett 2025 viser økte driftskostnader (kr 965 720) og økte inntekter (kr 960 720), noe som gir et budsjettert underskudd på kr 5 000. Kombinert med pågående vedlikeholdsbehov i parkeringskjelleren er risikoen for ytterligere kostnadsøkninger reell.",
+            "evidence": [
+              "På grunn av prisstigning og renteøkning tas det forbehold om at felleskostnader kan øke.",
+              "Budsjett 2025: Sum driftskostnader -965 720, Sum driftsinntekter 960 720",
+              "Kostnadene knyttet til dette tiltaket er lagt inn i økningen av sameiets utgifter."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              17,
+              44
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d186_004",
+            "description": "Problemer med balkongdrenering: Styret har benyttet advokat for å avklare problemstillingen med utbygger angående balkonger som drenerer dårlig. Saken er fremlagt på årsmøtet for videre behandling. Dette kan medføre juridiske tvister og kostnader for sameiet.",
+            "evidence": [
+              "Vi har benyttet oss av de inkluderte timene advokat, for å avklare problemstillingen med utbygger og balkongene som virker å drenere litt dårlig. Vi fremlegger sak om dette på årsmøtet, for å se hvordan dette blir fremover.",
+              "Styret ønsker at årsmøte skal ta stilling til hva vi som sameie ønsker å gjøre med drenering og vann på balkongene."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              44,
+              45
+            ],
+            "confidence": 0.93,
+            "details": {
+              "confidence": 0.93
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_004",
+            "description": "Problemer med balkongdrenering: Styret har benyttet advokat for å avklare problemstillingen med utbygger angående balkonger som drenerer dårlig. Saken er fremlagt på årsmøtet for videre behandling. Dette kan medføre juridiske tvister og kostnader for sameiet.",
+            "evidence": [
+              "Vi har benyttet oss av de inkluderte timene advokat, for å avklare problemstillingen med utbygger og balkongene som virker å drenere litt dårlig. Vi fremlegger sak om dette på årsmøtet, for å se hvordan dette blir fremover.",
+              "Styret ønsker at årsmøte skal ta stilling til hva vi som sameie ønsker å gjøre med drenering og vann på balkongene."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              44,
+              45
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d186_005",
+            "description": "Støvproblemer i parkeringskjelleren: Gulvet i parkeringskjelleren er støvete og krever behandling. Kostnadene for utbedring er estimert til mellom kr 24 500 og kr 220 500 avhengig av løsning. Sameiet har per dags dato ikke økonomi til å gjennomføre tiltaket, og det er ikke innhentet spesifikke tilbud.",
+            "evidence": [
+              "Meget støvete gulv i p-kjeller kun få dager etter spyling",
+              "Hvis vi skal gjøre noe mer med gulvet, vil det komme en kostnad på dette som vi ikke har økonomi til per dags dato. Kostnaden kan variere fra ca. 25 000 til 220 000 kr.",
+              "Problemer med støv i parkeringskjeller."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              20,
+              43
+            ],
+            "confidence": 0.92,
+            "details": {
+              "confidence": 0.92
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_005",
+            "description": "Støvproblemer i parkeringskjelleren: Gulvet i parkeringskjelleren er støvete og krever behandling. Kostnadene for utbedring er estimert til mellom kr 24 500 og kr 220 500 avhengig av løsning. Sameiet har per dags dato ikke økonomi til å gjennomføre tiltaket, og det er ikke innhentet spesifikke tilbud.",
+            "evidence": [
+              "Meget støvete gulv i p-kjeller kun få dager etter spyling",
+              "Hvis vi skal gjøre noe mer med gulvet, vil det komme en kostnad på dette som vi ikke har økonomi til per dags dato. Kostnaden kan variere fra ca. 25 000 til 220 000 kr.",
+              "Problemer med støv i parkeringskjeller."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              20,
+              43
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d186_006",
+            "description": "Boden i kjeller mangler dokumentasjon på eierskap/bruksrett: Boden som er inkludert i BRA-e og totalt BRA ligger på sameiets fellesareal, men disponeres av seksjonen. Det er ikke fremvist dokumentasjon på eierskap eller bruksrett, og sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet.",
+            "evidence": [
+              "Bod i kjeller er påvist av eier. Det er ikke fremvist dokumentasjon på eierskap eller bruksrett.",
+              "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA-e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              19,
+              28
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_006",
+            "description": "Boden i kjeller mangler dokumentasjon på eierskap/bruksrett: Boden som er inkludert i BRA-e og totalt BRA ligger på sameiets fellesareal, men disponeres av seksjonen. Det er ikke fremvist dokumentasjon på eierskap eller bruksrett, og sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet.",
+            "evidence": [
+              "Bod i kjeller er påvist av eier. Det er ikke fremvist dokumentasjon på eierskap eller bruksrett.",
+              "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA-e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              19,
+              28
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d186_007",
+            "description": "Selger har ikke tegnet boligselgerforsikring: Selger har valgt å ikke tegne boligselgerforsikring. Dette kan svekke kjøpers mulighet til å få dekket eventuelle krav mot selger ved skjulte feil og mangler, da selger kan ha begrenset evne til å dekke slike krav selv.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              21
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_007",
+            "description": "Selger har ikke tegnet boligselgerforsikring: Selger har valgt å ikke tegne boligselgerforsikring. Dette kan svekke kjøpers mulighet til å få dekket eventuelle krav mot selger ved skjulte feil og mangler, da selger kan ha begrenset evne til å dekke slike krav selv.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              21
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d186_008",
+            "description": "Selgers egenerklæring ikke fremlagt for takstmann før befaring: Selgers egenerklæringsskjema var ikke fremvist for den bygningssakkyndige før befaringen. Dette kan bety at takstmannen ikke hadde tilgang til all relevant informasjon fra selger under sin vurdering, noe som kan ha påvirket tilstandsrapportens fullstendighet.",
+            "evidence": [
+              "Er selgers egenerklæring fremlagt og gjennomgått av bygningssakkyndig? Nei",
+              "Egenerklæring er ikke fremvist før befaring."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              27
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_008",
+            "description": "Selgers egenerklæring ikke fremlagt for takstmann før befaring: Selgers egenerklæringsskjema var ikke fremvist for den bygningssakkyndige før befaringen. Dette kan bety at takstmannen ikke hadde tilgang til all relevant informasjon fra selger under sin vurdering, noe som kan ha påvirket tilstandsrapportens fullstendighet.",
+            "evidence": [
+              "Er selgers egenerklæring fremlagt og gjennomgått av bygningssakkyndig? Nei",
+              "Egenerklæring er ikke fremvist før befaring."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              27
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d186_009",
+            "description": "Veggen mellom vindfang og gang er fjernet uten søknad: Byggetegningene fra 2018 samsvarer med dagens bruk av boligen, med unntak av at veggen mellom vindfang og gang er fjernet. Dette er opplyst å ikke være et søknadspliktig tiltak, men avviket fra godkjente tegninger kan likevel skape usikkerhet.",
+            "evidence": [
+              "Det er mottatt byggetegninger fra kommunen, datert 2018. Disse samsvarer med dagens bruk av boligen, med unntak av at veggen mellom vindfang og gang er fjernet. Dette er ikke et søknadspliktig tiltak."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_009",
+            "description": "Veggen mellom vindfang og gang er fjernet uten søknad: Byggetegningene fra 2018 samsvarer med dagens bruk av boligen, med unntak av at veggen mellom vindfang og gang er fjernet. Dette er opplyst å ikke være et søknadspliktig tiltak, men avviket fra godkjente tegninger kan likevel skape usikkerhet.",
+            "evidence": [
+              "Det er mottatt byggetegninger fra kommunen, datert 2018. Disse samsvarer med dagens bruk av boligen, med unntak av at veggen mellom vindfang og gang er fjernet. Dette er ikke et søknadspliktig tiltak."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d186_010",
+            "description": "Ingen radonmåling er utført: Selger har ikke utført radonmåling av boligen. Radon er en usynlig og luktfri gass som kan utgjøre en helserisiko ved forhøyede konsentrasjoner. Selv om det ikke er krav om radonmåling for denne boligen (ikke utleid), er det en potensiell helserisiko som kjøper bør være oppmerksom på.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              21,
+              33
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_010",
+            "description": "Ingen radonmåling er utført: Selger har ikke utført radonmåling av boligen. Radon er en usynlig og luktfri gass som kan utgjøre en helserisiko ved forhøyede konsentrasjoner. Selv om det ikke er krav om radonmåling for denne boligen (ikke utleid), er det en potensiell helserisiko som kjøper bør være oppmerksom på.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              21,
+              33
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d186_011",
+            "description": "Overgangen mellom sameiets parkeringskjeller og naboens parkeringskjeller: Styret arbeider med problemstillingen knyttet til overgangen mellom sameiets parkeringskjeller og naboens parkeringskjeller. Detaljer om problemets omfang og potensielle kostnader er ikke fullt ut beskrevet.",
+            "evidence": [
+              "Overgangen mellom vår parkeringskjeller og naboens parkeringskjeller.",
+              "Styret arbeider for tiden med flere saker knyttet til parkeringskjelleren"
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_011",
+            "description": "Overgangen mellom sameiets parkeringskjeller og naboens parkeringskjeller: Styret arbeider med problemstillingen knyttet til overgangen mellom sameiets parkeringskjeller og naboens parkeringskjeller. Detaljer om problemets omfang og potensielle kostnader er ikke fullt ut beskrevet.",
+            "evidence": [
+              "Overgangen mellom vår parkeringskjeller og naboens parkeringskjeller.",
+              "Styret arbeider for tiden med flere saker knyttet til parkeringskjelleren"
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d186_012",
+            "description": "Bindende Telia-avtale uten mulighet for bytte: Sameiet har inngått en ny 2-årig bindende avtale med Telia for internett/TV, etter at beboere har uttrykt misnøye med leverandøren. Det er ikke mulig å bytte leverandør i avtaleperioden, noe som kan påvirke beboernes tilfredshet og fleksibilitet.",
+            "evidence": [
+              "Siden ny avtale ble inngått med Telia etter årsmøtet i fjor har vi ikke mulighet til å bytte igjen. Denne avtalen er bindende i 2 år til.",
+              "Det er også å vurdere Telia som leverandør av internett/tv. Ser ikke det som en optimal løsning."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              43
+            ],
+            "confidence": 0.72,
+            "details": {
+              "confidence": 0.72
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_012",
+            "description": "Bindende Telia-avtale uten mulighet for bytte: Sameiet har inngått en ny 2-årig bindende avtale med Telia for internett/TV, etter at beboere har uttrykt misnøye med leverandøren. Det er ikke mulig å bytte leverandør i avtaleperioden, noe som kan påvirke beboernes tilfredshet og fleksibilitet.",
+            "evidence": [
+              "Siden ny avtale ble inngått med Telia etter årsmøtet i fjor har vi ikke mulighet til å bytte igjen. Denne avtalen er bindende i 2 år til.",
+              "Det er også å vurdere Telia som leverandør av internett/tv. Ser ikke det som en optimal løsning."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              43
+            ],
+            "details": {
+              "confidence": 0.72
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d186_013",
+            "description": "Adkomst via privat vei og felles parkeringskjeller med nabosameiet: Adkomst til eiendommen skjer via privat vei, og sameiere med parkering må kjøre gjennom parkeringskjeller tilhørende Sameiet Tomset Terrasse I og Sameiet Tomset Terrasse II. Dette kan medføre avhengighet av nabosameienes vedlikehold og eventuelle konflikter om bruksrett.",
+            "evidence": [
+              "Adkomst til eiendommen skjer via privat vei.",
+              "Det er felles adkomst til parkeringskjeller og sameierne som har parkering må kjøre gjennom parkeringskjeller tilhørende sameiet Tomset Terrasse I og Sameiet Tomset Terrasse II."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "confidence": 0.82,
+            "details": {
+              "confidence": 0.82
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_013",
+            "description": "Adkomst via privat vei og felles parkeringskjeller med nabosameiet: Adkomst til eiendommen skjer via privat vei, og sameiere med parkering må kjøre gjennom parkeringskjeller tilhørende Sameiet Tomset Terrasse I og Sameiet Tomset Terrasse II. Dette kan medføre avhengighet av nabosameienes vedlikehold og eventuelle konflikter om bruksrett.",
+            "evidence": [
+              "Adkomst til eiendommen skjer via privat vei.",
+              "Det er felles adkomst til parkeringskjeller og sameierne som har parkering må kjøre gjennom parkeringskjeller tilhørende sameiet Tomset Terrasse I og Sameiet Tomset Terrasse II."
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d186_014",
+            "description": "Selger har kun eid boligen i ca. 1 år: Selger kjøpte boligen i 2024 og har eid den i kun ca. 1 år og 1 måned. Kort eiertid kan bety begrenset kjennskap til boligens tilstand over tid, og selger kan ha begrenset kunnskap om eventuelle skjulte feil eller sesongbetingede problemer.",
+            "evidence": [
+              "Når kjøpte du boligen? År 2024",
+              "Hvor lenge har du eid boligen? Antall år 1, Antall måneder 1",
+              "Har du bodd i boligen siste 12 måneder? Ja"
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              32
+            ],
+            "confidence": 0.78,
+            "details": {
+              "confidence": 0.78
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_014",
+            "description": "Selger har kun eid boligen i ca. 1 år: Selger kjøpte boligen i 2024 og har eid den i kun ca. 1 år og 1 måned. Kort eiertid kan bety begrenset kjennskap til boligens tilstand over tid, og selger kan ha begrenset kunnskap om eventuelle skjulte feil eller sesongbetingede problemer.",
+            "evidence": [
+              "Når kjøpte du boligen? År 2024",
+              "Hvor lenge har du eid boligen? Antall år 1, Antall måneder 1",
+              "Har du bodd i boligen siste 12 måneder? Ja"
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              32
+            ],
+            "details": {
+              "confidence": 0.78
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d186_015",
+            "description": "Manglende el-kontroll de siste 5 år: Det er ikke foretatt kontroll av det lokale el-tilsyn eller utført utvidet el-kontroll i løpet av de siste 5 år. Selv om det ikke er registrert avvik, gir manglende uavhengig kontroll en viss usikkerhet rundt det elektriske anleggets tilstand.",
+            "evidence": [
+              "Er det foretatt kontroll av det lokale el-tilsyn eller utført utvidet el-kontroll i løpet av de siste 5 år? Nei"
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              29
+            ],
+            "confidence": 0.72,
+            "details": {
+              "confidence": 0.72
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_015",
+            "description": "Manglende el-kontroll de siste 5 år: Det er ikke foretatt kontroll av det lokale el-tilsyn eller utført utvidet el-kontroll i løpet av de siste 5 år. Selv om det ikke er registrert avvik, gir manglende uavhengig kontroll en viss usikkerhet rundt det elektriske anleggets tilstand.",
+            "evidence": [
+              "Er det foretatt kontroll av det lokale el-tilsyn eller utført utvidet el-kontroll i løpet av de siste 5 år? Nei"
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              29
+            ],
+            "details": {
+              "confidence": 0.72
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d186_016",
+            "description": "Eiendommen er delvis avsatt til fremtidig bebyggelse og anlegg i kommuneplanen: Kommuneplanens arealdel 2022-2034 viser at deler av eiendommen er avsatt til 'Bebyggelse og anlegg - Framtidig' (2989,3 m²) og 'Blå/grønnstruktur - Nåværende' (3332,53 m²). Dette kan innebære fremtidige endringer i nærområdet som kan påvirke boligens omgivelser.",
+            "evidence": [
+              "Bebyggelse og anlegg - Framtidig Kommuneplanens arealdel 2022-2034 (27.3.2025) 2989.3m2",
+              "Blå/grønnstruktur - Nåværende Kommuneplanens arealdel 2022-2034 (27.3.2025) 3332.53m2"
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              48
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_016",
+            "description": "Eiendommen er delvis avsatt til fremtidig bebyggelse og anlegg i kommuneplanen: Kommuneplanens arealdel 2022-2034 viser at deler av eiendommen er avsatt til 'Bebyggelse og anlegg - Framtidig' (2989,3 m²) og 'Blå/grønnstruktur - Nåværende' (3332,53 m²). Dette kan innebære fremtidige endringer i nærområdet som kan påvirke boligens omgivelser.",
+            "evidence": [
+              "Bebyggelse og anlegg - Framtidig Kommuneplanens arealdel 2022-2034 (27.3.2025) 2989.3m2",
+              "Blå/grønnstruktur - Nåværende Kommuneplanens arealdel 2022-2034 (27.3.2025) 3332.53m2"
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              48
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d186_017",
+            "description": "Sameierens ansvar for sameiets gjeld (solidaransvar): I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk. Gitt sameiets negative årsresultat og pågående vedlikeholdsbehov, kan dette innebære en fremtidig økonomisk eksponering for kjøper.",
+            "evidence": [
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.",
+              "Sameiebrøk: 62/2312"
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              21
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_017",
+            "description": "Sameierens ansvar for sameiets gjeld (solidaransvar): I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk. Gitt sameiets negative årsresultat og pågående vedlikeholdsbehov, kan dette innebære en fremtidig økonomisk eksponering for kjøper.",
+            "evidence": [
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.",
+              "Sameiebrøk: 62/2312"
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              21
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d186_018",
+            "description": "Papptekking under terrassebord på balkong ikke kontrollerbar: Takstmannen kunne ikke kontrollere tettesjiktet (papptekking) under terrassebordene på balkongen. Kombinert med de kjente dreneringsproblemene på balkongene i sameiet, representerer dette en potensiell risiko for fuktskader.",
+            "evidence": [
+              "Er det ufullstendig/manglende tettesjikt ved oppkant mot vegg og dør? Ikke kontrollerbart",
+              "Papptekking under terrassebord er ikke synlig for kontroll.",
+              "balkongene som virker å drenere litt dårlig"
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              28,
+              45
+            ],
+            "confidence": 0.82,
+            "details": {
+              "confidence": 0.82
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d186_018",
+            "description": "Papptekking under terrassebord på balkong ikke kontrollerbar: Takstmannen kunne ikke kontrollere tettesjiktet (papptekking) under terrassebordene på balkongen. Kombinert med de kjente dreneringsproblemene på balkongene i sameiet, representerer dette en potensiell risiko for fuktskader.",
+            "evidence": [
+              "Er det ufullstendig/manglende tettesjikt ved oppkant mot vegg og dør? Ikke kontrollerbart",
+              "Papptekking under terrassebord er ikke synlig for kontroll.",
+              "balkongene som virker å drenere litt dårlig"
+            ],
+            "source_documents": [
+              "d186.pdf"
+            ],
+            "source_pages": [
+              28,
+              45
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [],
+      "unmatched_ground_truth_risks": [],
+      "verified_unmatched": [],
+      "adjusted_metrics": null
+    }
+  },
+  "best_system": "ground_truth",
+  "statistical_tests": {
+    "standard_rag_vs_agentic_rag_P+T+R": 1.0,
+    "standard_rag_vs_ground_truth": 1.0,
+    "agentic_rag_P+T+R_vs_ground_truth": 1.0
+  },
+  "record_id": "7e0d7a4c-e4dc-4b2c-ab93-13992d27b412",
+  "query": "Identifiser risikoer i salgsoppgaven",
+  "document_set_id": "d186",
+  "timestamp": "2026-03-25T23:35:29.580930",
+  "risk_summaries": [
+    {
+      "system_type": "standard_rag",
+      "total_risks": 12,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "agentic_rag_P+T+R",
+      "total_risks": 15,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "ground_truth",
+      "total_risks": 18,
+      "risks_by_category": {}
+    }
+  ],
+  "has_ground_truth": true,
+  "overlapping_risk_count": 8,
+  "unique_to": {
+    "standard_rag": 12,
+    "agentic_rag_P+T+R": 7,
+    "ground_truth": 10
+  },
+  "record_type": "comparison"
+}

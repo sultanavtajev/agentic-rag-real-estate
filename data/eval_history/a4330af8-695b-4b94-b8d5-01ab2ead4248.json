@@ -1,0 +1,3726 @@
+{
+  "system_results": {
+    "standard_rag": {
+      "run_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769",
+      "system_type": "standard_rag",
+      "overall_metrics": {
+        "precision": 0.5625,
+        "recall": 0.2647058823529412,
+        "f1": 0.36000000000000004,
+        "total_support": 34
+      },
+      "matched_risks": 9,
+      "unmatched_predicted": 7,
+      "unmatched_ground_truth": 25,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_003",
+            "description": "Betydelige kostnader knyttet til skader/avvik: Tilstandsrapporten angir kostnadsestimater på 100 000–300 000 kr for ett avvik og 50 000–100 000 kr for et annet. Dette indikerer vesentlige utbedringsbehov som kjøper må påregne.",
+            "evidence": [
+              "Kostnadsestimat: 100 000 - 300 000",
+              "Kostnadsestimat: 50 000 - 100 000"
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.93,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_002",
+            "description": "Boligen er ikke ferdigstilt – svært store gjenstående arbeider og kostnader",
+            "evidence": [
+              "Eneboligen er påbegynt renovert og har nytt tilbygg fra 2024. Så godt som alt er revet med unntak av vegger av Siporex.",
+              "Kostnadsestimat for å ferdigstille boligens overflater med ordinært parkettgulv. Vegger og himlinger med malte plater. Kostnadsestimat: Over 300 000",
+              "Kjøkken ikke etablert. Kostnadsestimat for etablering av kjøkken med integrerte hvitevarer etter dagens standard for nybygg. Kostnadsestimat: 100 000 - 300 000",
+              "Ingen innvendige karmer/terskel eller dørblad. Kostnadsestimat for montering av komplette dører. Kostnadsestimat: 50 000 - 100 000",
+              "Tilbygg under oppføring, opprinnelig bolig under renovering/oppgradering."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              13,
+              14,
+              15,
+              24
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_002",
+            "description": "Manglende brannslukningsapparat og røykvarslere: Tilstandsrapporten avdekker at det ikke er utplassert brannslukningsapparat og at det mangler røykvarslere i boligen i henhold til forskriftskrav. Dette er et sikkerhets- og lovlighetsavvik.",
+            "evidence": [
+              "Ingen brannslukningsapparat. Ingen røykvarslere",
+              "Ingen brannslukningsapparat utplassert",
+              "Er det mangler på røykvarsler i boligen iht. forskriftskrav – Ja"
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_003",
+            "description": "Ingen brannslukningsutstyr og ingen røykvarslere montert – alvorlig sikkerhetsrisiko",
+            "evidence": [
+              "Er det mangler for brannslukningsutstyr i boligen iht. forskriftskrav på søknadstidspunktet, men minst Byggeforskrift 1985? Ja Ingen brannslukningsapparat. Ingen røykvarslere.",
+              "Er det mangler på røykvarsler i boligen iht. forskriftskrav på søknadstidspunktet, men minst Byggeforskrift 1985? Ja. Ingen monterte røykvarslere."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              30
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_001",
+            "description": "El-anlegget er ikke fullstendig kontrollert: Det er ikke fremlagt dokumentasjon på kontroll av el-anlegget, og det advares eksplisitt om at el-anlegget kan ha feil og mangler som ikke avdekkes ved en forenklet undersøkelse. Selger bekrefter ikke kjennskap til utført kontroll.",
+            "evidence": [
+              "El-anlegget kan ha feil og mangler som en slik forenklet undersøkelse ikke vil avdekke. Vær derfor oppmerksom på denne risikoen, og søk videre veiledning eller få en fullstendig kontroll utført av registrert elektrovirksomhet",
+              "Kjenner du til om det er utført kontroll av el-anlegget og/eller andre installasjoner? – Nei",
+              "Dokumentasjon er ikke fremlagt"
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_004",
+            "description": "Elektrisk anlegg ikke ferdigstilt – mangler sikringer, kontakter og brytere, samsvarserklæring ikke fremlagt",
+            "evidence": [
+              "El-anlegget er ikke ferdigstilt. Gjenstående arbeid med montering av sikringer, kontakter, brytere osv. Trekkerør og veggbokser fremstår som tilnærmet ferdigstilt.",
+              "Eksisterer det samsvarserklæring? Ukjent. El-anlegg ikke ferdigstilt.",
+              "Dokumentasjon er ikke fremlagt. Nye installasjoner er ikke tilkoblet strømnettet. Samsvarserklæringer ved ferdigstillelse må fremlegges.",
+              "Kostnadsestimat for ferdigstillelse av elektriskanlegg i boligen. Kostnadsestimat: 50 000 - 100 000"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              15,
+              30
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_000",
+            "description": "Radonrisiko: Eiendommen ligger i et område klassifisert med 'høy' eller 'særlig høy' radonkonsentrasjon ifølge NGUs radonaktsomhetskart, og det er ikke foretatt radonmålinger eller iverksatt radonreduserende tiltak. Eventuelle tiltak må bekostes og utføres av kjøper.",
+            "evidence": [
+              "Radonmålinger er ikke foretatt, heller ikke andre tiltak mot radon, eiendommen ligger i et område som i NGU Radon aktsomhetskart er definert med 'høy' eller 'særlig høy'",
+              "Radonreduserende tiltak vil måtte bekostes og utføres av kjøper"
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_005",
+            "description": "Radon – eiendommen ligger i område med høy/særlig høy aktsomhetsgrad, ingen radonmålinger foretatt og ingen radonsperre etablert",
+            "evidence": [
+              "Det er ikke foretatt radonmålinger, og bygget er heller ikke utført med radonsperre.",
+              "Radonmålinger er ikke foretatt, heller ikke andre tiltak mot radon, eiendommen ligger i et område som i NGU Radon aktsomhetskart er definert med 'høy' eller 'særlig høy' aktsomhetsgrad.",
+              "Selger har ikke foretatt radonmåling.",
+              "Er det foretatt radonmåling? Nei (egenerklæring spørsmål 21)"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              17,
+              27,
+              20
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_005",
+            "description": "Mangelfull fuktsikring og drenering: Tilstandsrapporten indikerer avvik knyttet til fuktsikring og drenering, herunder nedløp med utkast til terreng og mangelfull innfesting av nedløp. Dette kan medføre fuktskader over tid.",
+            "evidence": [
+              "Fuktsikring og drenering – Nei",
+              "Nedløp med utkast til terreng. Mangelfull innfesting av nedløp ved hjørnet mot nordøst",
+              "Nedløp/utkast ved gavl mot syd er plassert for nært terreng"
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_007",
+            "description": "Manglende og utilstrekkelig drenering og fuktsikring av grunnmur – risiko for vannansamlinger og fuktskader",
+            "evidence": [
+              "Det mangler, eller på grunn av alder er det sannsynlig at det mangler, utvendig fuktsikring av grunnmuren ved kjeller/underetasje.",
+              "Mer enn halvparten av forventet levetid på drenering er overskredet.",
+              "Det er påvist dårlig fall eller flatt terreng inn mot grunnmur og dermed muligheter for større vannansamlinger.",
+              "Deler av takvann ført til terreng med fall mot grunn/ringmurer.",
+              "Byggegrop uten etablert drenering. Takvann ført direkte til terreng."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              16,
+              30
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_006",
+            "description": "Rekkverk/sikring på forstøtningsmur mangler eller er utilstrekkelig: Tilstandsrapporten påpeker at rekkverk eller annen sikring på forstøtningsmur må settes opp, noe som er en sikkerhetsrisiko.",
+            "evidence": [
+              "Rekkverk/annen sikring på forstøtningsmur må settes"
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_013",
+            "description": "Manglende rekkverk på forstøtningsmurer – sikkerhetsrisiko",
+            "evidence": [
+              "Det mangler rekkverk/annen sikring på forstøtningsmuren(e) ut ifra dagens krav.",
+              "Rekkverkssikring ved murkant mangler, krav 90 cm over terrengnivå. Murkonstruksjon med diverse skader.",
+              "Rekkverk må etableres langs murkanter."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              15,
+              31
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_005",
+            "description": "Mangelfull fuktsikring og drenering: Tilstandsrapporten indikerer avvik knyttet til fuktsikring og drenering, herunder nedløp med utkast til terreng og mangelfull innfesting av nedløp. Dette kan medføre fuktskader over tid.",
+            "evidence": [
+              "Fuktsikring og drenering – Nei",
+              "Nedløp med utkast til terreng. Mangelfull innfesting av nedløp ved hjørnet mot nordøst",
+              "Nedløp/utkast ved gavl mot syd er plassert for nært terreng"
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_026",
+            "description": "Nedløp og beslag med avvik – utilstrekkelig bortledning av vann fra taknedløp ved grunnmur, ufagmessig utførelse",
+            "evidence": [
+              "Det er ikke tilfredsstillende bortledning av vann fra taknedløp ved grunnmur.",
+              "Det er påvist avvik i beslagløsninger.",
+              "Nedløp med utkast til terreng. Mangelfull innfesting av nedløp ved hjørnet mot nordøst. Nedløp/utkast ved gavl mot syd er plassert for nært terreng.",
+              "Utett gjæring ved beslag over gesimshjørne mot nordøst. Gesimsbeslag har enkelte deformasjoner og lokalt omfang med ufagmessig utførelse.",
+              "Kostnadsestimat: 10 000 - 50 000"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              26
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_008",
+            "description": "Heftelse/erklæring tinglyst på eiendommen: Det er tinglyst en erklæring/avtale fra 07.07.1970 (dokumentnr. 3100) som gir rettighet til Silkosfeltet friareal nr. I, samt en nyere heftelse fra 16.10.2025 (dokumentnr. 1244126) som innebærer at registerenheten ikke kan disponeres over uten samtykke fra rettighetshaver (Romerike Eiendomsmegling AS). Dette kan begrense kjøpers rådighet over eiendommen.",
+            "evidence": [
+              "07.07.1970 - Dokumentnr: 3100 - Erklæring/avtale – Rett til Silkosfeltet friareal nr. I med 1/",
+              "16.10.2025 - Dokumentnr: 1244126 - Registerenheten kan ikke disponeres over uten samtykke fra rettighetshaver",
+              "Rettighetshaver: Romerike Eiendomsmegling AS – Org.nr: 926 743 023"
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_031",
+            "description": "Tinglyst heftelse fra 2025 – eiendommen kan ikke disponeres over uten samtykke fra Romerike Eiendomsmegling AS",
+            "evidence": [
+              "16.10.2025 - Dokumentnr: 1244126 - Registerenheten kan ikke disponeres over uten samtykke fra rettighetshaver. Rettighetshaver: Romerike Eiendomsmegling AS – Org.nr: 926 743 023"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              17
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_004",
+            "description": "Ukjent isolering og fuktsperre i tilbygg: For tilbygget med støpt plate på mark er det ukjent om det er isolering under betonggulvet og om det finnes fuktsperre mot grunnen, samt ukjent om det er radonsperre. Dette representerer en potensiell fukt- og radonrisiko.",
+            "evidence": [
+              "Tilbygg med støpt plate på mark. Ukjent vedr isolering under betonggulvet og evt med fuktsperre mot grunne. Ukjent vedr radonsperre",
+              "Begrenset besiktigelse grunnet kjellernedgang"
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_033",
+            "description": "Ukjent om det er isolering og fuktsperre under betonggulv i tilbygg, samt ukjent radonsperre",
+            "evidence": [
+              "Tilbygg med støpt plate på mark. Ukjent vedr isolering under betonggulvet og evt med fuktsperre mot grunne. Ukjent vedr radonsperre.",
+              "Det er ikke utført med radonsperre."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              30
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_007",
+          "description": "Boligen selges 'som den er': Eiendommen selges etter avhendingsloven § 3-9 med 'som den er'-forbehold, noe som begrenser selgers ansvar og øker risikoen for kjøper ved eventuelle skjulte feil og mangler.",
+          "evidence": [
+            "Ved slike kjøp selges eiendommen 'som den er', og selgers ansvar er begrenset til det som følger direkte av avtalen, jf. avhendingsloven § 3-9",
+            "Selges ansvar begrenses ettersom boligen selges 'som den er'"
+          ],
+          "source_documents": [
+            "d163_d163"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.95,
+          "details": {}
+        },
+        {
+          "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_009",
+          "description": "Manglende egenerklæring fra selger innhentet av megler: Det gjøres oppmerksom på at megler ikke har innhentet egenerklæring på vanlig måte, noe som kan gi kjøper begrenset informasjon om eiendommens tilstand og historikk.",
+          "evidence": [
+            "Det gjøres oppmerksom på at megler ikke har innhentet egenerklæring"
+          ],
+          "source_documents": [
+            "d163_d163"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_010",
+          "description": "Boligen var ikke bebodd ved besiktigelse: Tilstandsrapporten indikerer at boligen ikke var bebodd på besiktigelsestidspunktet, noe som kan ha begrenset muligheten for å avdekke feil og mangler ved normal bruk.",
+          "evidence": [
+            "boligen var ikke bebodd ved"
+          ],
+          "source_documents": [
+            "d163_d163"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.82,
+          "details": {}
+        },
+        {
+          "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_011",
+          "description": "Begrenset besiktigelse av deler av eiendommen: Tilstandsrapporten opplyser om begrenset besiktigelse grunnet kjellernedgang, noe som betyr at deler av eiendommen ikke er tilstrekkelig undersøkt og skjulte feil kan foreligge.",
+          "evidence": [
+            "Begrenset besiktigelse grunnet kjellernedgang"
+          ],
+          "source_documents": [
+            "d163_d163"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.87,
+          "details": {}
+        },
+        {
+          "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_012",
+          "description": "Risiko for bortfall av boligselgerforsikring: Forsikringen kan bortfalle dersom forsikringsselskapet ikke har gitt skriftlig samtykke til visse forhold. Det er også begrensninger knyttet til hvilke salg som kan tegne boligselgerforsikring.",
+          "evidence": [
+            "Dersom forsikringsselskapet ikke har gitt skriftlig samtykke, kan erstatningen bortfalle",
+            "Det kan ikke tegnes boligselgerforsikring ved følgende salg: mellom ektefeller eller slektninger i rett oppstigende eller nedstigende linje, søsken, eller mellom personer som bor eller har bodd på boligeiendommen"
+          ],
+          "source_documents": [
+            "d163_d163"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_013",
+          "description": "Ufaglært arbeid kan ha blitt utført: Egenerklæringsskjemaet stiller spørsmål om ufaglærte har utført arbeid som normalt bør utføres av faglærte (f.eks. drenering, murerarbeid, tømrerarbeid). Svaret er ikke tydelig bekreftet som 'Nei', noe som skaper usikkerhet.",
+          "evidence": [
+            "Kjenner du til om ufaglærte har utført arbeid som normalt bør utføres av faglærte, utover det som er nevnt tidligere (f.eks. drenering, murerarbeid, tømrerarbeid etc)?"
+          ],
+          "source_documents": [
+            "d163_d163"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.7,
+          "details": {}
+        },
+        {
+          "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_014",
+          "description": "Ukjent status for nedgravd oljetank: Egenerklæringsskjemaet stiller spørsmål om det er nedgravd oljetank på eiendommen, men svaret er ikke gjengitt i den tilgjengelige konteksten. En eventuell oljetank kan medføre miljørisiko og kostnader til fjerning.",
+          "evidence": [
+            "Er det nedgravd oljetank på – (svar ikke gjengitt i dokumentet)"
+          ],
+          "source_documents": [
+            "d163_d163"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.72,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d163_001",
+          "description": "Manglende ferdigattest og brukstillatelse – boligen kan ikke lovlig tas i bruk",
+          "evidence": [
+            "I følge opplysninger fra kommunen foreligger det verken midlertidig brukstillatelse eller ferdigattest på eiendommen, og plan- og bygningslovens formelle forutsetning for lovlig bruk av eiendommen kan derfor ikke dokumenteres.",
+            "Mangler Ferdigattest og Brukstillatelse (egenerklæring spørsmål 22)",
+            "Mangler ferdigattest og brukstillatelse. Pålegg om takstige fra Feiervesenet (egenerklæring spørsmål 20)"
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            13,
+            20
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d163_006",
+          "description": "Fukt og råteskader i kjeller/underetasje – fuktgjennomtrenging i gulv og mur, råteskader i treverk",
+          "evidence": [
+            "Det er påvist indikasjoner på noe fuktgjennomtrenging i kjellergulv.",
+            "Det er påvist indikasjoner på noe fuktgjennomtrenging inn i kjellermur.",
+            "Det er påvist synlige fukt/råteskader i treverk i underetg./kjeller, hulltaking er derfor ikke nødvendig. Innredninger av organisk materiale har lokale råteskader. Årsaken vurderes å være mangelfull ventilasjon og fuktopptrekk via gulvstøp.",
+            "Det anbefales at alt treverk i kjeller fjernes og at kjelleren har mest mulig åpne murkonstruksjoner med god utlufting."
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            14,
+            27,
+            28
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d163_008",
+          "description": "Eiendommen ligger i flomutsatt område (NVE aktsomhetssone)",
+          "evidence": [
+            "Eiendommen ligger i flomutsatt område.",
+            "Opplyst ved NVE sine kartsider at eiendommen ligger i aktsomhetssone for flom (NVE Atlas)."
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            15,
+            25,
+            35
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d163_009",
+          "description": "Utvendige vann- og avløpsledninger fra 1968 – mer enn halvparten av forventet levetid er passert, manglende dokumentasjon",
+          "evidence": [
+            "Mer enn halvparten av forventet brukstid er passert på utvendige avløpsledninger.",
+            "Manglende dokumentasjon for vann- og avløpsanlegg. Bolig med avstengt vann ved befaringen.",
+            "Bunn- og stikkledning for avløp sannsynlig med sement- og soilrør hvis byggeåret legges til grunn. Anlegget er 57 år gammelt.",
+            "Normal forventet levetid på galvaniserte rør, støpejernsrør og sementrør er ca 40 år."
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            15,
+            16,
+            31
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d163_010",
+          "description": "Pipe og ildsted – pipevanger ikke synlige, utradisjonell røykgassdimensjon, ikke i henhold til brannforskrift",
+          "evidence": [
+            "Pipevanger er ikke synlige. Innkledd pipevange mot delevegg til baderom, synlig del av påforing med Lecablokk.",
+            "Røykgasskanalen har en utradisjonell dimensjon.",
+            "Utførelse med påforinger, tildekkinger eller vinyltapet/strie foran pipevanger er ikke i henhold til regler for teglpiper hvor det kreves at alle 4 pipevanger skal være tilgjengelig for inspeksjon.",
+            "Utførelse ved himlinger/gulvoverflater hvor treverk tildekker murkrager ved teglpiper er ikke i henhold til brannforskrift.",
+            "Avvik fra forskriftens krav om at fire sider av skorsteinen skal være tilgjengelig for visuell kontroll bør avklares med det kommunale feiervesenet."
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            13,
+            14,
+            27
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d163_011",
+          "description": "Mangelfull ventilasjon – ingen ventilering utover åpning av vindu, planlagt løsning ikke tilfredsstillende",
+          "evidence": [
+            "Det er påvist avvik i ventilasjonsløsning i forhold til gjeldende krav på oppføringstidspunktet.",
+            "Ingen ventilering utover åpning av vindu.",
+            "Planlagt utførelse av boligventilasjonen vurderes som mangelfull etter dagens anbefalinger.",
+            "Bedre ventilering må etableres. Det bør etableres veggventiler/vindusventiler i alle oppholdsrom som ikke har det."
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            14,
+            29
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d163_012",
+          "description": "Manglende rekkverk på terrasse/balkong – alvorlig fallrisiko",
+          "evidence": [
+            "Det er ikke montert rekkverk. For å ivareta personsikkerheten må terrassedøren sikres inntil terrasse og rekkverk er etablert.",
+            "Terrassedør ved stue bør sikres midlertidig, og rekkverk må monteres så snart terrassen er etablert for å ivareta personsikkerheten og hindre fallulykker.",
+            "Kostnadsestimat: 50 000 - 100 000"
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            13,
+            26
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d163_014",
+          "description": "Våtrom ikke ferdigstilt – bad 1, bad 2 og vaskerom mangler WC, armaturer, el-installasjoner og ventilasjon",
+          "evidence": [
+            "Våtrommet må oppgraderes for å tåle normal bruk etter dagens krav. Gjenstående arbeider i himling og deler av veggflater. WC-skål og armaturer ikke montert. Gjenstående arbeid av el-installasjoner. Ventilasjon ikke etablert. Kostnadsestimat: 100 000 - 300 000 (Bad 1)",
+            "Våtrommet må oppgraderes for å tåle normal bruk etter dagens krav. Gjenstående arbeider i himling og deler av veggflater. WC-skål og armaturer ikke montert. Gjenstående arbeid av el-installasjoner. Ventilasjon ikke etablert. Kostnadsestimat: 50 000 - 100 000 (Bad 2)",
+            "Våtrommet må oppgraderes for å tåle normal bruk etter dagens krav. Gjenstående arbeider på vegger og himling. Vann- og elektroinstallasjoner ikke montert. Kostnadsestimat: 50 000 - 100 000 (Vaskerom)"
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            14,
+            28,
+            29
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d163_015",
+          "description": "Vannledninger ikke ferdigstilt – ingen tappepunkter, trykktest og lekkasjesøk ikke utført, bolig uten vanntrykk ved befaring",
+          "evidence": [
+            "Ingen etablerte tappepunkter. Trykktest og lekkasjesøk ikke utført.",
+            "Boligen var uten vanntrykk ved befaringen. Alle vannlåser var tørre.",
+            "Anlegget bør kontrolleres av fagmann. Kostnadsestimat: 10 000 - 50 000"
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            15,
+            29
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d163_016",
+          "description": "Grunnmur beliggende i tomtegrensen mot nabo i nordøst – byggelivet for yttervegg ligger inne på naboeiendommen",
+          "evidence": [
+            "Bygget fremstår bygget med grunnmur beliggende i tomtegrensen mot nabo i nordøst. Byggelivet for ytterveggen ligger da inne på naboeiendommen."
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            25,
+            35
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d163_017",
+          "description": "Eksponert isopor/EPS-plater ved grunnmur – vil forringes ved sollyseksponering",
+          "evidence": [
+            "Eksponert isopor utenfor grunnmurer ved tilbygg, terreng tilknyttet gårsplass er ikke ferdigstilt. Eksponert isopor vil forringes hvis denne utsettes for sollys.",
+            "Tildekking av eksponert EPS-plater bør utføres for å hindre forringelse som følge av sollys og værpåkjenninger."
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            15,
+            31
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d163_018",
+          "description": "Provisorisk ytterdør til kjeller med skjevheter og fuktrelaterte skader (TG3)",
+          "evidence": [
+            "Provisorisk ytterdør til kjeller med skjevheter og fuktrelaterte skader (TG 3).",
+            "Gjenstående arbeid med utforinger og karmlister. Provisorisk ytterdør til kjeller med skjevheter og fuktrelaterte skader (TG 3). Kostnadsestimat: 10 000 - 50 000"
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            15,
+            26
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d163_019",
+          "description": "Innvendig trapp er provisorisk – skjevheter, knirk og manglende håndløper",
+          "evidence": [
+            "Det mangler håndløper på vegg i trappeløpet.",
+            "Trappen vurderes som provisorisk i forbindelse med byggeprosessen. Inntrinn med skjevheter og diverse knirk.",
+            "Kostnadsestimat for etablering av ordinær tretrapp med lukkede opptrinn og handløpere på vegg. Kostnadsestimat: 50 000 - 100 000"
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            15,
+            28
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d163_020",
+          "description": "Utvendig trapp til kjeller uten rekkverk/håndløper og med skjevheter og skader i murkonstruksjon",
+          "evidence": [
+            "Konstruksjonene har skjevheter. Murkonstruksjon med diverse skader. Trappeløp uten rekkverk/handløper.",
+            "Trapp uten rekkverk/håndløper, ingen spesielle krav ved intern trapp kun for drift av bygget. Av sikkerhetsmessige hensyn bør rekkverk eller håndløper monteres."
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            15,
+            27
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d163_021",
+          "description": "Siporex-dekke over kjeller/krypkjeller har bevegelse ved belastning – risiko for ytterligere skader over tid",
+          "evidence": [
+            "Lokalt område av Siporex-dekket har noe bevegelse ved belastning. Siporex-elementene med lokale skader som er synlige fra kjellerrom.",
+            "Bevegelse i Siporex-elementet kan skyldes setningsavvik/bevegelser i underliggende lettvegger i kjeller. Dersom tiltak ikke gjennomføres, kan det oppstå økt risiko for ytterligere bevegelser eller skader i dekket over tid."
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            14,
+            27
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d163_022",
+          "description": "Krypkjeller med skader i murkonstruksjoner og risiko for fukt og skadedyr",
+          "evidence": [
+            "Det er påvist skader i murkonstruksjoner i krypkjeller. Lokale avskallinger i Siporex-dekket.",
+            "Det bør gjennomføres jevnlig overvåkning av krypkjelleren for å avdekke eventuelle endringer eller forverring av skader. Tiltak mot skadedyr bør vurderes, da slike miljøer ofte har økt risiko for angrep. Det må påregnes et fuktmiljø i krypkjelleren."
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            15,
+            28
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d163_023",
+          "description": "Energimerking ikke angitt – selger har ikke fremlagt energiattest",
+          "evidence": [
+            "Energimerking: Ikke angitt",
+            "Alle eiendommer som selges eller leies ut skal ha en energiattest. Dersom eier ikke har lagt frem energiattest, og eier etter skriftlig anmodning fra kjøper ikke har fremlagt energiattest før avtale om salg er inngått, kan kjøper få laget en energiattest ved hjelp av ekspert for selgers regning."
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            4,
+            16
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d163_024",
+          "description": "Privat veiadkomst – ukjent om kostnadsnøkkel for brøyting og vedlikehold er utarbeidet, ingen tinglyst veirett",
+          "evidence": [
+            "Brøytekostnader og vedlikeholdskostnader tilknyttet privat veiadkomst for flere boligeiendommer må påregnes. Ukjent om kostnadsnøkkel er utarbeidet til fordeling av brøyte- og vedlikeholdsutgiftene.",
+            "Ingen opplysninger om tinglyst veirett.",
+            "Felles privat veiadkomst for flere boligeiendommer tilknyttet kommunal vei. Det er utarbeidet kostnadsnøkkel for fordeling av brøyte- og vedlikeholdskostnader. (egenerklæring)"
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            25,
+            35,
+            21
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d163_025",
+          "description": "Pålegg om takstige fra Feiervesenet – offentlig pålegg ikke utbedret",
+          "evidence": [
+            "Mangler ferdigattest og brukstillatelse. Pålegg om takstige fra Feiervesenet. (egenerklæring spørsmål 20)"
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            20
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d163_027",
+          "description": "Taktekking med avvik – pappfolie med buler og limslipp, eksponert klebesone ved gesims",
+          "evidence": [
+            "Pappfolie på takoverbygg ved inngangsparti har enkelte buler og limslipp fra underlaget. Tekkeduk har eksponert klebesone ved deler av oppbrettet mot gesims.",
+            "Ukjent vedr sekundærtekking."
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            14,
+            26
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d163_028",
+          "description": "Boligen er ikke fullstendig kontrollert for dagslyskrav og volumkrav for oppholdsrom",
+          "evidence": [
+            "Boligen er ikke fullstendig kontrollert i forhold til dagslyskrav (min 10 % av gulvarealet) og volumkrav (min 15 m3) for oppholdsrom (stue, kjøkken, soverom og kontor).",
+            "Boligen er ikke fullstendig kontrollert i forhold til dagslyskrav (min 10 % av gulvarealet) og volumkrav (min 15 m3) for oppholdsrom."
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            13,
+            25,
+            35
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d163_029",
+          "description": "Kjøkken ikke etablert – mangler kjøkkeninnredning, hvitevarer og kjøkkenventilator med avtrekk",
+          "evidence": [
+            "Kjøkken ikke etablert. Kostnadsestimat for etablering av kjøkken med integrerte hvitevarer etter dagens standard for nybygg. Kostnadsestimat: 100 000 - 300 000",
+            "Avtrekk ikke montert. Kostnadsestimat for etablering av kjøkkenventilator med avtrekk til friluft. Kostnadsestimat: 10 000 - 50 000"
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            14,
+            29
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d163_030",
+          "description": "Terrengforhold med dårlig fall mot grunnmur – økt risiko for vannansamlinger og fuktskader",
+          "evidence": [
+            "Det er påvist dårlig fall eller flatt terreng inn mot grunnmur og dermed muligheter for større vannansamlinger.",
+            "Deler av takvann ført til terreng med fall mot grunn/ringmurer.",
+            "Det er ikke tilfredsstillende fall på terrenget fra grunn- og ringmurer. Deler av terrenget mot nord og øst vil kunne gi økt vanntrykk mot grunn- og ringmurer."
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            15,
+            30
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d163_032",
+          "description": "Stor differanse mellom prisantydning (4 450 000) og takstmannens markedsverdi (5 000 000) – kjøper bør vurdere reell markedsverdi",
+          "evidence": [
+            "Prisantydning: Kr 4 450 000",
+            "Markedsverdi: Kr 5 000 000 (tilstandsrapport)",
+            "Totalpris inkl. omkostninger: 4 581 240"
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            4,
+            32
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d163_034",
+          "description": "Avløpsrør – ukjent lufting av kloakk, funksjon og tilstand ikke kontrollert ved befaring",
+          "evidence": [
+            "Ukjent utførelse av evt. lufting av kloakk. Nyere vertikalt PP-rør i krypkjeller med stakeluke. Funksjon og tilstand må vurderes av fagmann.",
+            "Boligen var uten vanntrykk ved befaringen. Alle vannlåser var tørre, ingen registrert lukt som kan settes i sammenheng med evt. feil på etablerte avløpsrør.",
+            "Kostnadsestimat: 10 000 - 50 000"
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            15,
+            29
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_007",
+            "description": "Boligen selges 'som den er': Eiendommen selges etter avhendingsloven § 3-9 med 'som den er'-forbehold, noe som begrenser selgers ansvar og øker risikoen for kjøper ved eventuelle skjulte feil og mangler.",
+            "evidence": [
+              "Ved slike kjøp selges eiendommen 'som den er', og selgers ansvar er begrenset til det som følger direkte av avtalen, jf. avhendingsloven § 3-9",
+              "Selges ansvar begrenses ettersom boligen selges 'som den er'"
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt at eiendommen selges 'som den er' for ikke-forbrukerkjøpere: 'Ved slike kjøp selges eiendommen «som den er», og selgers ansvar er begrenset til det som følger direkte av avtalen, jf. avhendingsloven § 3-9.' Dette er tydelig beskrevet i salgsoppgaven under avsnittet om ikke-forbrukerkjøp."
+        },
+        {
+          "risk": {
+            "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_009",
+            "description": "Manglende egenerklæring fra selger innhentet av megler: Det gjøres oppmerksom på at megler ikke har innhentet egenerklæring på vanlig måte, noe som kan gi kjøper begrenset informasjon om eiendommens tilstand og historikk.",
+            "evidence": [
+              "Det gjøres oppmerksom på at megler ikke har innhentet egenerklæring"
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder følgende setning: 'Det gjøres oppmerksom på at megler ikke har innhentet egenerklæring på vanlig måte' – dette er direkte sitert i salgsoppgaven. Merk at egenerklæringsskjema faktisk er vedlagt og signert av selger, men megler har altså ikke innhentet det på ordinær måte, noe som er opplyst i dokumentet."
+        },
+        {
+          "risk": {
+            "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_010",
+            "description": "Boligen var ikke bebodd ved besiktigelse: Tilstandsrapporten indikerer at boligen ikke var bebodd på besiktigelsestidspunktet, noe som kan ha begrenset muligheten for å avdekke feil og mangler ved normal bruk.",
+            "evidence": [
+              "boligen var ikke bebodd ved"
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Tilstandsrapporten bekrefter at boligen ikke var bebodd ved befaringen. Dette fremgår eksplisitt flere steder, blant annet: 'Boligen var ikke bebodd ved befaringen' (under branntekniske forhold) og 'Boligen har ikke vært i ordinær bruk siden renovering og etablering av tilbygg.' Dette kan ha begrenset muligheten for å avdekke feil ved normal bruk."
+        },
+        {
+          "risk": {
+            "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_011",
+            "description": "Begrenset besiktigelse av deler av eiendommen: Tilstandsrapporten opplyser om begrenset besiktigelse grunnet kjellernedgang, noe som betyr at deler av eiendommen ikke er tilstrekkelig undersøkt og skjulte feil kan foreligge.",
+            "evidence": [
+              "Begrenset besiktigelse grunnet kjellernedgang"
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.87,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Tilstandsrapporten bekrefter begrenset besiktigelse: 'Begrenset besiktigelse grunnet kjellernedgang, vegetasjon etc som tildekker grunnmurer. Fundamenter var tildekket med jordmasser og kunne ikke besiktiges.' Dette er direkte dokumentert i rapporten under grunnmur og fundamenter."
+        },
+        {
+          "risk": {
+            "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_012",
+            "description": "Risiko for bortfall av boligselgerforsikring: Forsikringen kan bortfalle dersom forsikringsselskapet ikke har gitt skriftlig samtykke til visse forhold. Det er også begrensninger knyttet til hvilke salg som kan tegne boligselgerforsikring.",
+            "evidence": [
+              "Dersom forsikringsselskapet ikke har gitt skriftlig samtykke, kan erstatningen bortfalle",
+              "Det kan ikke tegnes boligselgerforsikring ved følgende salg: mellom ektefeller eller slektninger i rett oppstigende eller nedstigende linje, søsken, eller mellom personer som bor eller har bodd på boligeiendommen"
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Egenerklæringsskjemaet inneholder begge de siterte passasjene: 'Dersom forsikringsselskapet ikke har gitt skriftlig samtykke, kan erstatningen bortfalle' og 'Det kan ikke tegnes boligselgerforsikring ved følgende salg: mellom ektefeller eller slektninger i rett oppstigende eller nedstigende linje, søsken, eller mellom personer som bor eller har bodd på boligeiendommen'. Disse er direkte gjengitt i dokumentet."
+        },
+        {
+          "risk": {
+            "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_013",
+            "description": "Ufaglært arbeid kan ha blitt utført: Egenerklæringsskjemaet stiller spørsmål om ufaglærte har utført arbeid som normalt bør utføres av faglærte (f.eks. drenering, murerarbeid, tømrerarbeid). Svaret er ikke tydelig bekreftet som 'Nei', noe som skaper usikkerhet.",
+            "evidence": [
+              "Kjenner du til om ufaglærte har utført arbeid som normalt bør utføres av faglærte, utover det som er nevnt tidligere (f.eks. drenering, murerarbeid, tømrerarbeid etc)?"
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Egenerklæringsskjemaet inneholder spørsmål 14: 'Kjenner du til om ufaglærte har utført arbeid som normalt bør utføres av faglærte, utover det som er nevnt tidligere (f.eks. drenering, murerarbeid, tømrerarbeid etc)?' og svaret er tydelig 'Nei'. Risikoen er derfor ikke reell – selger har bekreftet at ufaglærte ikke har utført slikt arbeid. Risikobeskrivelsen hevder at svaret ikke er tydelig bekreftet som 'Nei', men dette er feil – dokumentet viser klart 'Nei' som svar."
+        },
+        {
+          "risk": {
+            "risk_id": "a6e5de4b-e6cd-4209-a615-f06ff7f5a769_risk_014",
+            "description": "Ukjent status for nedgravd oljetank: Egenerklæringsskjemaet stiller spørsmål om det er nedgravd oljetank på eiendommen, men svaret er ikke gjengitt i den tilgjengelige konteksten. En eventuell oljetank kan medføre miljørisiko og kostnader til fjerning.",
+            "evidence": [
+              "Er det nedgravd oljetank på – (svar ikke gjengitt i dokumentet)"
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.72,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Egenerklæringsskjemaet inneholder spørsmål 15: 'Er det nedgravd oljetank på eiendommen?' og svaret er tydelig 'Nei'. I tillegg nevner spørsmål 11 at selger 'Henviser til Elverum Kommune vedr godkjent sanering av oljetank', noe som indikerer at en eventuell oljetank allerede er sanert og godkjent av kommunen. Risikoen om ukjent status for nedgravd oljetank er derfor ikke støttet av dokumentet – statusen er kjent og bekreftet som 'Nei' (ingen nedgravd oljetank)."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 0.8181818181818182,
+        "recall": 0.2647058823529412,
+        "f1": 0.39999999999999997,
+        "total_support": 34
+      }
+    },
+    "agentic_rag_P+T+R": {
+      "run_id": "be66f41b-126d-4293-b172-798794d281c3",
+      "system_type": "agentic_rag_P+T+R",
+      "overall_metrics": {
+        "precision": 0.9130434782608695,
+        "recall": 0.6176470588235294,
+        "f1": 0.7368421052631579,
+        "total_support": 34
+      },
+      "matched_risks": 21,
+      "unmatched_predicted": 2,
+      "unmatched_ground_truth": 13,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_000",
+            "description": "Manglende ferdigattest og brukstillatelse: Eiendommen mangler både ferdigattest og brukstillatelse, noe som betyr at lovlig bruk ikke kan dokumenteres. Dette er en vesentlig juridisk risiko som kan medføre pålegg fra kommunen.",
+            "evidence": [
+              "Mangler ferdigattest og brukstillatelse. Pålegg om takstige fra Feiervesenet.",
+              "Mangler Ferdigattest og Brukstillatelse",
+              "I følge opplysninger fra kommunen foreligger det verken midlertidig brukstillatelse eller ferdigattest på eiendommen.",
+              "plan- og bygningslovens formelle forutsetning for lovlig bruk av eiendommen kan derfor ikke dokumenteres."
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 1.0,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_001",
+            "description": "Manglende ferdigattest og brukstillatelse – boligen kan ikke lovlig tas i bruk",
+            "evidence": [
+              "I følge opplysninger fra kommunen foreligger det verken midlertidig brukstillatelse eller ferdigattest på eiendommen, og plan- og bygningslovens formelle forutsetning for lovlig bruk av eiendommen kan derfor ikke dokumenteres.",
+              "Mangler Ferdigattest og Brukstillatelse (egenerklæring spørsmål 22)",
+              "Mangler ferdigattest og brukstillatelse. Pålegg om takstige fra Feiervesenet (egenerklæring spørsmål 20)"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              13,
+              20
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_001",
+            "description": "Boligen er under oppføring/renovering og ikke ferdigstilt: Tilbygg er under oppføring og opprinnelig bolig er under renovering/oppgradering. Svært mange bygningsdeler og installasjoner er ikke ferdigstilt, noe som medfører stor usikkerhet om endelig tilstand og kostnader.",
+            "evidence": [
+              "Tilbygg under oppføring, opprinnelig bolig under renovering/oppgradering.",
+              "Gjenstående arbeid av gulv- vegger og himlings昀氀ater.",
+              "WC-skål og armaturer ikke montert. Gjenstående arbeid av el-installasjoner. Ventilasjon ikke etablert.",
+              "Arbeidene er ikke ferdigstilt.",
+              "Kjøkken ikke etablert."
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 1.0,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_002",
+            "description": "Boligen er ikke ferdigstilt – svært store gjenstående arbeider og kostnader",
+            "evidence": [
+              "Eneboligen er påbegynt renovert og har nytt tilbygg fra 2024. Så godt som alt er revet med unntak av vegger av Siporex.",
+              "Kostnadsestimat for å ferdigstille boligens overflater med ordinært parkettgulv. Vegger og himlinger med malte plater. Kostnadsestimat: Over 300 000",
+              "Kjøkken ikke etablert. Kostnadsestimat for etablering av kjøkken med integrerte hvitevarer etter dagens standard for nybygg. Kostnadsestimat: 100 000 - 300 000",
+              "Ingen innvendige karmer/terskel eller dørblad. Kostnadsestimat for montering av komplette dører. Kostnadsestimat: 50 000 - 100 000",
+              "Tilbygg under oppføring, opprinnelig bolig under renovering/oppgradering."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              13,
+              14,
+              15,
+              24
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_003",
+            "description": "Ingen røykvarslere eller brannslukningsutstyr montert: Det er ikke montert røykvarslere eller brannslukningsapparat i boligen, noe som er i strid med forskriftskrav og utgjør en alvorlig sikkerhetsrisiko.",
+            "evidence": [
+              "Ingen monterte røykvarslere.",
+              "Ingen brannslukningsapparat utplassert.",
+              "Ja Ingen brannslukningsapparat. Ingen røykvarslere.",
+              "Er det mangler for brannslukningsutstyr i boligen iht. forskriftskrav på søknadstidspunktet, men minst Byggeforskrift 1985? - Ja Ingen brannslukningsapparat. Ingen røykvarslere."
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 1.0,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_003",
+            "description": "Ingen brannslukningsutstyr og ingen røykvarslere montert – alvorlig sikkerhetsrisiko",
+            "evidence": [
+              "Er det mangler for brannslukningsutstyr i boligen iht. forskriftskrav på søknadstidspunktet, men minst Byggeforskrift 1985? Ja Ingen brannslukningsapparat. Ingen røykvarslere.",
+              "Er det mangler på røykvarsler i boligen iht. forskriftskrav på søknadstidspunktet, men minst Byggeforskrift 1985? Ja. Ingen monterte røykvarslere."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              30
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_002",
+            "description": "Elektrisk anlegg ikke ferdigstilt og mangler samsvarserklæring: El-anlegget er ikke ferdigstilt, nye installasjoner er ikke tilkoblet strømnettet, og det er usikkert om samsvarserklæring foreligger. Dette er en sikkerhetsrisiko og kan medføre betydelige kostnader.",
+            "evidence": [
+              "El-anlegget er ikke ferdigstilt. Gjenstående arbeid med montering av sikringer, kontakter, brytere osv.",
+              "Nye el-installasjoner er ikke tilkoblet strømnettet. Samsvarserklæringer ved ferdigstillelse må fremlegges.",
+              "Eksisterer det samsvarserklæring? Ukjent",
+              "Kostnadsestimat for ferdigstillelse av elektriskanlegg i boligen."
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 1.0,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_004",
+            "description": "Elektrisk anlegg ikke ferdigstilt – mangler sikringer, kontakter og brytere, samsvarserklæring ikke fremlagt",
+            "evidence": [
+              "El-anlegget er ikke ferdigstilt. Gjenstående arbeid med montering av sikringer, kontakter, brytere osv. Trekkerør og veggbokser fremstår som tilnærmet ferdigstilt.",
+              "Eksisterer det samsvarserklæring? Ukjent. El-anlegg ikke ferdigstilt.",
+              "Dokumentasjon er ikke fremlagt. Nye installasjoner er ikke tilkoblet strømnettet. Samsvarserklæringer ved ferdigstillelse må fremlegges.",
+              "Kostnadsestimat for ferdigstillelse av elektriskanlegg i boligen. Kostnadsestimat: 50 000 - 100 000"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              15,
+              30
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_004",
+            "description": "Radon: Eiendommen ligger i område med høy radonaktivitet ifølge NGU-kart, og det er ikke foretatt radonmålinger. Dette er en helse- og sikkerhetsrisiko.",
+            "evidence": [
+              "Det er ikke foretatt radonmålinger, og bygget er heller ikke i ordinær bruk.",
+              "Ved kartsider fra NGU angitt at eiendommen ligger i område med høy radonaktivitet. Ukjent om det er foretatt radonmålinger.",
+              "Radonmålinger er ikke foretatt, heller ikke andre tiltak mot radon, eiendommen ligger i et område som i NGU Radon aktsomhetskart er definert med 'høy' eller 'særlig'.",
+              "Det bør gjennomføres radonmålinger."
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 1.0,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_005",
+            "description": "Radon – eiendommen ligger i område med høy/særlig høy aktsomhetsgrad, ingen radonmålinger foretatt og ingen radonsperre etablert",
+            "evidence": [
+              "Det er ikke foretatt radonmålinger, og bygget er heller ikke utført med radonsperre.",
+              "Radonmålinger er ikke foretatt, heller ikke andre tiltak mot radon, eiendommen ligger i et område som i NGU Radon aktsomhetskart er definert med 'høy' eller 'særlig høy' aktsomhetsgrad.",
+              "Selger har ikke foretatt radonmåling.",
+              "Er det foretatt radonmåling? Nei (egenerklæring spørsmål 21)"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              17,
+              27,
+              20
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_008",
+            "description": "Fukt- og råteskader i kjeller/underetasje: Det er påvist fuktindikasjoner, råteskader i treverk og lokale følgeskader i kjeller og krypkjeller. Årsaken vurderes å være mangelfull ventilasjon og fuktopptrekk.",
+            "evidence": [
+              "Det er påvist indikasjoner på noe fuktgjennomtrenging inn i kjellermur.",
+              "Det er påvist synlige fukt/råteskader i treverk i underetg./kjeller.",
+              "Innredninger av organisk materiale har lokale råteskader. Årsaken vurderes å være mangelfull ventilasjon og fuktopptrekk via gulvstøp.",
+              "Krypkjeller og etablert kjeller med lokale følgeskader som kan settes i sammenheng med fuktpåvirkning via terreng og grunne."
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_006",
+            "description": "Fukt og råteskader i kjeller/underetasje – fuktgjennomtrenging i gulv og mur, råteskader i treverk",
+            "evidence": [
+              "Det er påvist indikasjoner på noe fuktgjennomtrenging i kjellergulv.",
+              "Det er påvist indikasjoner på noe fuktgjennomtrenging inn i kjellermur.",
+              "Det er påvist synlige fukt/råteskader i treverk i underetg./kjeller, hulltaking er derfor ikke nødvendig. Innredninger av organisk materiale har lokale råteskader. Årsaken vurderes å være mangelfull ventilasjon og fuktopptrekk via gulvstøp.",
+              "Det anbefales at alt treverk i kjeller fjernes og at kjelleren har mest mulig åpne murkonstruksjoner med god utlufting."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              27,
+              28
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_009",
+            "description": "Drenering: Mer enn halvparten av forventet levetid på drenering er overskredet, og det er ikke tilfredsstillende bortledning av vann fra taknedløp ved grunnmur. Tiltak for redrenering kan ikke utelukkes.",
+            "evidence": [
+              "Mer enn halvparten av forventet levetid på drenering er overskredet.",
+              "Det er ikke tilfredsstillende bortledning av vann fra taknedløp ved grunnmur.",
+              "Tiltak for redrenering rundt boligen kan ikke utelukkes.",
+              "Byggegrop uten etablert drenering. Takvann ført direkte til terreng."
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_007",
+            "description": "Manglende og utilstrekkelig drenering og fuktsikring av grunnmur – risiko for vannansamlinger og fuktskader",
+            "evidence": [
+              "Det mangler, eller på grunn av alder er det sannsynlig at det mangler, utvendig fuktsikring av grunnmuren ved kjeller/underetasje.",
+              "Mer enn halvparten av forventet levetid på drenering er overskredet.",
+              "Det er påvist dårlig fall eller flatt terreng inn mot grunnmur og dermed muligheter for større vannansamlinger.",
+              "Deler av takvann ført til terreng med fall mot grunn/ringmurer.",
+              "Byggegrop uten etablert drenering. Takvann ført direkte til terreng."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              16,
+              30
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_005",
+            "description": "Flomutsatt område: Eiendommen ligger i aktsomhetssone for flom ifølge NVE Atlas, og det er påvist dårlig fall/flatt terreng inn mot grunnmur med mulighet for vannansamlinger.",
+            "evidence": [
+              "Eiendommen ligger i flomutsatt område.",
+              "Opplyst ved NVE sine kartsider at eiendommen ligger i aktsomhetssone for flom (NVE Atlas).",
+              "Det er påvist dårlig fall eller flatt terreng inn mot grunnmur og dermed muligheter for større vannansamlinger.",
+              "Deler av takvann ført til terreng med fall mot grunn/ringmurer."
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_008",
+            "description": "Eiendommen ligger i flomutsatt område (NVE aktsomhetssone)",
+            "evidence": [
+              "Eiendommen ligger i flomutsatt område.",
+              "Opplyst ved NVE sine kartsider at eiendommen ligger i aktsomhetssone for flom (NVE Atlas)."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              25,
+              35
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_007",
+            "description": "Manglende dokumentasjon og ukjent tilstand for vann- og avløpsanlegg: Vann- og avløpsledninger er fra byggeåret 1968 (57 år gamle), dokumentasjon mangler, og anlegget er ikke kontrollert. Levetiden på rørene kan være overskredet.",
+            "evidence": [
+              "Manglende dokumentasjon for vann- og avløpsanlegg.",
+              "Bolig med avstengt vann ved befaringen. Vanntrykk og kapasitet, samt avløpets funksjon ikke kontrollert ved befaringen.",
+              "Bunn- og stikkledning for avløp sannsynlig med sement- og soilrør hvis byggeåret legges til grunn. Anlegget er 57 år gammelt.",
+              "Mer enn halvparten av forventet brukstid er passert på utvendige avløpsledninger.",
+              "Dokumentasjon for vann- og avløpsanlegget må/bør fremskaffes, herunder offentlige betingelser vedr vann/avløp for eiendommen."
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_009",
+            "description": "Utvendige vann- og avløpsledninger fra 1968 – mer enn halvparten av forventet levetid er passert, manglende dokumentasjon",
+            "evidence": [
+              "Mer enn halvparten av forventet brukstid er passert på utvendige avløpsledninger.",
+              "Manglende dokumentasjon for vann- og avløpsanlegg. Bolig med avstengt vann ved befaringen.",
+              "Bunn- og stikkledning for avløp sannsynlig med sement- og soilrør hvis byggeåret legges til grunn. Anlegget er 57 år gammelt.",
+              "Normal forventet levetid på galvaniserte rør, støpejernsrør og sementrør er ca 40 år."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              16,
+              31
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_012",
+            "description": "Pipe og ildsted – brannsikkerhetsrisiko: Pipevanger er ikke synlige, utførelse ved himlinger/gulvoverflater er ikke i henhold til brannforskrift, og det foreligger ingen opplysninger om eventuelle påbud etter feiertilsyn. Røykgasskanalen har utradisjonell dimensjon.",
+            "evidence": [
+              "Pipevanger er ikke synlige.",
+              "Utførelse ved himlinger/gulvoverflater hvor treverk tildekker murkrager ved teglpiper er ikke i henhold til brannforskrift.",
+              "Røykgasskanalen har en utradisjonell dimensjon.",
+              "Avvik fra forskriftens krav om at fire sider av skorsteinen skal være tilgjengelig for visuell kontroll bør avklares med det kommunale feiervesenet.",
+              "Det foreligger ingen opplysninger om eventuelle påbud etter feiertilsyn."
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_010",
+            "description": "Pipe og ildsted – pipevanger ikke synlige, utradisjonell røykgassdimensjon, ikke i henhold til brannforskrift",
+            "evidence": [
+              "Pipevanger er ikke synlige. Innkledd pipevange mot delevegg til baderom, synlig del av påforing med Lecablokk.",
+              "Røykgasskanalen har en utradisjonell dimensjon.",
+              "Utførelse med påforinger, tildekkinger eller vinyltapet/strie foran pipevanger er ikke i henhold til regler for teglpiper hvor det kreves at alle 4 pipevanger skal være tilgjengelig for inspeksjon.",
+              "Utførelse ved himlinger/gulvoverflater hvor treverk tildekker murkrager ved teglpiper er ikke i henhold til brannforskrift.",
+              "Avvik fra forskriftens krav om at fire sider av skorsteinen skal være tilgjengelig for visuell kontroll bør avklares med det kommunale feiervesenet."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              13,
+              14,
+              27
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_010",
+            "description": "Manglende ventilasjon: Ventilasjon er ikke etablert i boligen, og det er påvist avvik i ventilasjonsløsning i forhold til gjeldende krav. Det er kun åpning av vindu som ventilering.",
+            "evidence": [
+              "Ventilasjon ikke etablert.",
+              "Det er påvist avvik i ventilasjonsløsning i forhold til gjeldende krav på oppføringstidspunktet.",
+              "Ingen ventilering utover åpning av vindu.",
+              "Det bør etableres veggventiler/vindusventiler i alle oppholdsrom som ikke har det."
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_011",
+            "description": "Mangelfull ventilasjon – ingen ventilering utover åpning av vindu, planlagt løsning ikke tilfredsstillende",
+            "evidence": [
+              "Det er påvist avvik i ventilasjonsløsning i forhold til gjeldende krav på oppføringstidspunktet.",
+              "Ingen ventilering utover åpning av vindu.",
+              "Planlagt utførelse av boligventilasjonen vurderes som mangelfull etter dagens anbefalinger.",
+              "Bedre ventilering må etableres. Det bør etableres veggventiler/vindusventiler i alle oppholdsrom som ikke har det."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              29
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_011",
+            "description": "Manglende rekkverk og sikring: Det mangler rekkverk på forstøtningsmurer, innvendig trapp mangler håndløper, og terrassedør mangler sikring. Dette er en sikkerhetsrisiko.",
+            "evidence": [
+              "Det mangler rekkverk/annen sikring på forstøtningsmuren(e) ut ifra dagens krav.",
+              "Rekkverkssikring ved murkant mangler, krav 90 cm over terrengnivå.",
+              "Det er ikke montert rekkverk.",
+              "Det mangler håndløper på vegg i trappeløpet.",
+              "For å ivareta personsikkerheten må terrassedøren sikres."
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_012",
+            "description": "Manglende rekkverk på terrasse/balkong – alvorlig fallrisiko",
+            "evidence": [
+              "Det er ikke montert rekkverk. For å ivareta personsikkerheten må terrassedøren sikres inntil terrasse og rekkverk er etablert.",
+              "Terrassedør ved stue bør sikres midlertidig, og rekkverk må monteres så snart terrassen er etablert for å ivareta personsikkerheten og hindre fallulykker.",
+              "Kostnadsestimat: 50 000 - 100 000"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              13,
+              26
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_011",
+            "description": "Manglende rekkverk og sikring: Det mangler rekkverk på forstøtningsmurer, innvendig trapp mangler håndløper, og terrassedør mangler sikring. Dette er en sikkerhetsrisiko.",
+            "evidence": [
+              "Det mangler rekkverk/annen sikring på forstøtningsmuren(e) ut ifra dagens krav.",
+              "Rekkverkssikring ved murkant mangler, krav 90 cm over terrengnivå.",
+              "Det er ikke montert rekkverk.",
+              "Det mangler håndløper på vegg i trappeløpet.",
+              "For å ivareta personsikkerheten må terrassedøren sikres."
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_013",
+            "description": "Manglende rekkverk på forstøtningsmurer – sikkerhetsrisiko",
+            "evidence": [
+              "Det mangler rekkverk/annen sikring på forstøtningsmuren(e) ut ifra dagens krav.",
+              "Rekkverkssikring ved murkant mangler, krav 90 cm over terrengnivå. Murkonstruksjon med diverse skader.",
+              "Rekkverk må etableres langs murkanter."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              15,
+              31
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_006",
+            "description": "Grunnmur i tomtegrensen mot nabo – byggelivet på naboeiendommen: Bygget fremstår bygget med grunnmur beliggende i tomtegrensen mot nabo i nordøst, og byggelivet for ytterveggen ligger inne på naboeiendommen. Dette kan medføre juridiske konflikter og krav fra nabo.",
+            "evidence": [
+              "Bygget fremstår bygget med grunnmur beliggende i tomtegrensen mot nabo i nordøst. Byggelivet for ytterveggen ligger da inne på naboeiendommen.",
+              "Bygget fremstår bygget med grunnmur beliggende i tomtegrensen mot nabo i nordøst. Byggelivet for ytterveggen ligger da inne på naboeiendommen."
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_016",
+            "description": "Grunnmur beliggende i tomtegrensen mot nabo i nordøst – byggelivet for yttervegg ligger inne på naboeiendommen",
+            "evidence": [
+              "Bygget fremstår bygget med grunnmur beliggende i tomtegrensen mot nabo i nordøst. Byggelivet for ytterveggen ligger da inne på naboeiendommen."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              25,
+              35
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_016",
+            "description": "Eksponert isopor/EPS ved grunnmur: Eksponert isopor utenfor grunnmurer ved tilbygg vil forringes ved sollys og værpåkjenninger. Terreng tilknyttet gårdsplass er ikke ferdigstilt.",
+            "evidence": [
+              "Eksponert isopor utenfor grunnmurer ved tilbygg, terreng tilknyttet gårsplass er ikke ferdigstilt. Eksponert isopor vil forringes hvis denne utsettes for sollys.",
+              "Tildekking av eksponert EPS-plater bør utføres for å hindre forringelse som følge av sollys og værpåkjenninger."
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_017",
+            "description": "Eksponert isopor/EPS-plater ved grunnmur – vil forringes ved sollyseksponering",
+            "evidence": [
+              "Eksponert isopor utenfor grunnmurer ved tilbygg, terreng tilknyttet gårsplass er ikke ferdigstilt. Eksponert isopor vil forringes hvis denne utsettes for sollys.",
+              "Tildekking av eksponert EPS-plater bør utføres for å hindre forringelse som følge av sollys og værpåkjenninger."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              31
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_019",
+            "description": "Provisorisk ytterdør til kjeller med fuktrelaterte skader (TG3): Ytterdøren til kjeller er provisorisk, har skjevheter og fuktrelaterte skader, og er gitt tilstandsgrad 3.",
+            "evidence": [
+              "Provisorisk ytterdør til kjeller med skjevheter og fuktrelaterte skader (TG 3).",
+              "Kostnadsestimat for ny ytterdør, samt ferdigstillelse av utforinger og innvendig listverk ved dørsmyg. Kostnadsestimat: 10 000 - 50 000"
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_018",
+            "description": "Provisorisk ytterdør til kjeller med skjevheter og fuktrelaterte skader (TG3)",
+            "evidence": [
+              "Provisorisk ytterdør til kjeller med skjevheter og fuktrelaterte skader (TG 3).",
+              "Gjenstående arbeid med utforinger og karmlister. Provisorisk ytterdør til kjeller med skjevheter og fuktrelaterte skader (TG 3). Kostnadsestimat: 10 000 - 50 000"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              26
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_018",
+            "description": "Manglende energiattest: Det er ikke fremlagt energiattest for eiendommen, noe som er et lovpålagt krav ved salg.",
+            "evidence": [
+              "Alle eiendommer som selges eller leies ut skal ha en energiattest.",
+              "Dersom eier ikke har lagt frem energiattest, og eier etter skriftlig anmodning fra kjøper ikke har fremlagt energiattest før avtale om salg er inngått, kan kjøper få laget en energiattest ved hjelp av ekspert for selgers regning."
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_023",
+            "description": "Energimerking ikke angitt – selger har ikke fremlagt energiattest",
+            "evidence": [
+              "Energimerking: Ikke angitt",
+              "Alle eiendommer som selges eller leies ut skal ha en energiattest. Dersom eier ikke har lagt frem energiattest, og eier etter skriftlig anmodning fra kjøper ikke har fremlagt energiattest før avtale om salg er inngått, kan kjøper få laget en energiattest ved hjelp av ekspert for selgers regning."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              4,
+              16
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_013",
+            "description": "Privat veiadkomst uten tinglyst veirett og uklar kostnadsnøkkel: Eiendommen har adkomst via privat vei, men det er ingen opplysninger om tinglyst veirett, og det er uklart om kostnadsnøkkel for brøyting og vedlikehold er utarbeidet.",
+            "evidence": [
+              "Ingen opplysninger om tinglyst veirett.",
+              "Brøytekostnader og vedlikeholdskostnader tilknyttet privat veiadkomst for flere boligeiendommer må påregnes. Ukjent om kostnadsnøkkel er utarbeidet til fordeling av brøyte- og vedlikeholdsutgiftene.",
+              "Felles privat veiadkomst for flere boligeiendommer tilknyttet kommunal vei."
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_024",
+            "description": "Privat veiadkomst – ukjent om kostnadsnøkkel for brøyting og vedlikehold er utarbeidet, ingen tinglyst veirett",
+            "evidence": [
+              "Brøytekostnader og vedlikeholdskostnader tilknyttet privat veiadkomst for flere boligeiendommer må påregnes. Ukjent om kostnadsnøkkel er utarbeidet til fordeling av brøyte- og vedlikeholdsutgiftene.",
+              "Ingen opplysninger om tinglyst veirett.",
+              "Felles privat veiadkomst for flere boligeiendommer tilknyttet kommunal vei. Det er utarbeidet kostnadsnøkkel for fordeling av brøyte- og vedlikeholdskostnader. (egenerklæring)"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              25,
+              35,
+              21
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_021",
+            "description": "Pålegg om takstige fra Feiervesenet: Det foreligger et pålegg om takstige fra Feiervesenet som ikke er utbedret.",
+            "evidence": [
+              "Pålegg om takstige fra Feiervesenet.",
+              "Det gjøres oppmerksom på at megler ikke har innhentet egenerklæring om det finnes pålegg fra brann-/feiervesen på eiendommen."
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_025",
+            "description": "Pålegg om takstige fra Feiervesenet – offentlig pålegg ikke utbedret",
+            "evidence": [
+              "Mangler ferdigattest og brukstillatelse. Pålegg om takstige fra Feiervesenet. (egenerklæring spørsmål 20)"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_017",
+            "description": "Avvik i beslagløsninger og nedløp: Mangelfull innfesting av nedløp, nedløp plassert for nært terreng, utett gjæring ved beslag og deformasjoner i gesimsbeslag. Dette kan medføre fuktskader.",
+            "evidence": [
+              "Det er påvist avvik i beslagløsninger.",
+              "Nedløp med utkast til terreng. Mangelfull innfesting av nedløp ved hjørnet mot nordøst.",
+              "Nedløp/utkast ved gavl mot syd er plassert for nært terreng.",
+              "Utett gjæring ved beslag over gesimshjørne mot nordøst. Gesimsbeslag har enkelte deformasjoner og lokalt omfang med ufagmessig utførelse."
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_026",
+            "description": "Nedløp og beslag med avvik – utilstrekkelig bortledning av vann fra taknedløp ved grunnmur, ufagmessig utførelse",
+            "evidence": [
+              "Det er ikke tilfredsstillende bortledning av vann fra taknedløp ved grunnmur.",
+              "Det er påvist avvik i beslagløsninger.",
+              "Nedløp med utkast til terreng. Mangelfull innfesting av nedløp ved hjørnet mot nordøst. Nedløp/utkast ved gavl mot syd er plassert for nært terreng.",
+              "Utett gjæring ved beslag over gesimshjørne mot nordøst. Gesimsbeslag har enkelte deformasjoner og lokalt omfang med ufagmessig utførelse.",
+              "Kostnadsestimat: 10 000 - 50 000"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              26
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_015",
+            "description": "Ukjent isolering, fuktsperre og radonsperre under betonggulv i tilbygg: Det er ukjent om det er isolering under betonggulvet og om det er etablert fuktsperre og radonsperre mot grunnen i tilbygget.",
+            "evidence": [
+              "Tilbygg med støpt plate på mark. Ukjent vedr isolering under betonggulvet og evt med fuktsperre mot grunne. Ukjent vedr radonsperre.",
+              "Begrenset besiktigelse grunnet kjellernedgang, vegetasjon etc som tildekker grunnmurer."
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_033",
+            "description": "Ukjent om det er isolering og fuktsperre under betonggulv i tilbygg, samt ukjent radonsperre",
+            "evidence": [
+              "Tilbygg med støpt plate på mark. Ukjent vedr isolering under betonggulvet og evt med fuktsperre mot grunne. Ukjent vedr radonsperre.",
+              "Det er ikke utført med radonsperre."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              30
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_014",
+          "description": "Svært høye utbedringskostnader: Tilstandsrapporten viser kostnadsestimat over 300 000 kr for ferdigstillelse av innvendige overflater alene, i tillegg til en rekke andre kostnadsposter. Samlet utbedringsbehov er betydelig.",
+          "evidence": [
+            "Kostnadsestimat: Over 300 000 (innvendige overflater)",
+            "Fradrag (utidsmessighet, elde, vedlikeholdsmangler, gjenstående arbeider, svekkelser og forskriftsmangler) Kr. - 1 450 000",
+            "Kostnadsestimat: 50 000 - 100 000 (vaskerom)",
+            "Kostnadsestimat: 100 000 - 300 000 (bad 1)",
+            "Kostnadsestimat: 50 000 - 100 000 (grunnmur/fundamenter)"
+          ],
+          "source_documents": [
+            "d163_d163"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.95,
+          "details": {}
+        },
+        {
+          "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_020",
+          "description": "Ukjent tilstand på fundamenter og såler: Det er ukjent om det er såler under grunnmurene og om fundamentene er frostsikret. Fundamenter var tildekket med jordmasser og kunne ikke besiktiges.",
+          "evidence": [
+            "Ukjent vedr evt såler under grunnmurer og vedr frostsikring av fundamenter.",
+            "Fundamenter var tildekket med jordmasser og kunne ikke besiktiges.",
+            "Begrenset besiktigelse grunnet kjellernedgang, vegetasjon etc som tildekker grunnmurer."
+          ],
+          "source_documents": [
+            "d163_d163"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.85,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d163_014",
+          "description": "Våtrom ikke ferdigstilt – bad 1, bad 2 og vaskerom mangler WC, armaturer, el-installasjoner og ventilasjon",
+          "evidence": [
+            "Våtrommet må oppgraderes for å tåle normal bruk etter dagens krav. Gjenstående arbeider i himling og deler av veggflater. WC-skål og armaturer ikke montert. Gjenstående arbeid av el-installasjoner. Ventilasjon ikke etablert. Kostnadsestimat: 100 000 - 300 000 (Bad 1)",
+            "Våtrommet må oppgraderes for å tåle normal bruk etter dagens krav. Gjenstående arbeider i himling og deler av veggflater. WC-skål og armaturer ikke montert. Gjenstående arbeid av el-installasjoner. Ventilasjon ikke etablert. Kostnadsestimat: 50 000 - 100 000 (Bad 2)",
+            "Våtrommet må oppgraderes for å tåle normal bruk etter dagens krav. Gjenstående arbeider på vegger og himling. Vann- og elektroinstallasjoner ikke montert. Kostnadsestimat: 50 000 - 100 000 (Vaskerom)"
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            14,
+            28,
+            29
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d163_015",
+          "description": "Vannledninger ikke ferdigstilt – ingen tappepunkter, trykktest og lekkasjesøk ikke utført, bolig uten vanntrykk ved befaring",
+          "evidence": [
+            "Ingen etablerte tappepunkter. Trykktest og lekkasjesøk ikke utført.",
+            "Boligen var uten vanntrykk ved befaringen. Alle vannlåser var tørre.",
+            "Anlegget bør kontrolleres av fagmann. Kostnadsestimat: 10 000 - 50 000"
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            15,
+            29
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d163_019",
+          "description": "Innvendig trapp er provisorisk – skjevheter, knirk og manglende håndløper",
+          "evidence": [
+            "Det mangler håndløper på vegg i trappeløpet.",
+            "Trappen vurderes som provisorisk i forbindelse med byggeprosessen. Inntrinn med skjevheter og diverse knirk.",
+            "Kostnadsestimat for etablering av ordinær tretrapp med lukkede opptrinn og handløpere på vegg. Kostnadsestimat: 50 000 - 100 000"
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            15,
+            28
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d163_020",
+          "description": "Utvendig trapp til kjeller uten rekkverk/håndløper og med skjevheter og skader i murkonstruksjon",
+          "evidence": [
+            "Konstruksjonene har skjevheter. Murkonstruksjon med diverse skader. Trappeløp uten rekkverk/handløper.",
+            "Trapp uten rekkverk/håndløper, ingen spesielle krav ved intern trapp kun for drift av bygget. Av sikkerhetsmessige hensyn bør rekkverk eller håndløper monteres."
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            15,
+            27
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d163_021",
+          "description": "Siporex-dekke over kjeller/krypkjeller har bevegelse ved belastning – risiko for ytterligere skader over tid",
+          "evidence": [
+            "Lokalt område av Siporex-dekket har noe bevegelse ved belastning. Siporex-elementene med lokale skader som er synlige fra kjellerrom.",
+            "Bevegelse i Siporex-elementet kan skyldes setningsavvik/bevegelser i underliggende lettvegger i kjeller. Dersom tiltak ikke gjennomføres, kan det oppstå økt risiko for ytterligere bevegelser eller skader i dekket over tid."
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            14,
+            27
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d163_022",
+          "description": "Krypkjeller med skader i murkonstruksjoner og risiko for fukt og skadedyr",
+          "evidence": [
+            "Det er påvist skader i murkonstruksjoner i krypkjeller. Lokale avskallinger i Siporex-dekket.",
+            "Det bør gjennomføres jevnlig overvåkning av krypkjelleren for å avdekke eventuelle endringer eller forverring av skader. Tiltak mot skadedyr bør vurderes, da slike miljøer ofte har økt risiko for angrep. Det må påregnes et fuktmiljø i krypkjelleren."
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            15,
+            28
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d163_027",
+          "description": "Taktekking med avvik – pappfolie med buler og limslipp, eksponert klebesone ved gesims",
+          "evidence": [
+            "Pappfolie på takoverbygg ved inngangsparti har enkelte buler og limslipp fra underlaget. Tekkeduk har eksponert klebesone ved deler av oppbrettet mot gesims.",
+            "Ukjent vedr sekundærtekking."
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            14,
+            26
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d163_028",
+          "description": "Boligen er ikke fullstendig kontrollert for dagslyskrav og volumkrav for oppholdsrom",
+          "evidence": [
+            "Boligen er ikke fullstendig kontrollert i forhold til dagslyskrav (min 10 % av gulvarealet) og volumkrav (min 15 m3) for oppholdsrom (stue, kjøkken, soverom og kontor).",
+            "Boligen er ikke fullstendig kontrollert i forhold til dagslyskrav (min 10 % av gulvarealet) og volumkrav (min 15 m3) for oppholdsrom."
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            13,
+            25,
+            35
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d163_029",
+          "description": "Kjøkken ikke etablert – mangler kjøkkeninnredning, hvitevarer og kjøkkenventilator med avtrekk",
+          "evidence": [
+            "Kjøkken ikke etablert. Kostnadsestimat for etablering av kjøkken med integrerte hvitevarer etter dagens standard for nybygg. Kostnadsestimat: 100 000 - 300 000",
+            "Avtrekk ikke montert. Kostnadsestimat for etablering av kjøkkenventilator med avtrekk til friluft. Kostnadsestimat: 10 000 - 50 000"
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            14,
+            29
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d163_030",
+          "description": "Terrengforhold med dårlig fall mot grunnmur – økt risiko for vannansamlinger og fuktskader",
+          "evidence": [
+            "Det er påvist dårlig fall eller flatt terreng inn mot grunnmur og dermed muligheter for større vannansamlinger.",
+            "Deler av takvann ført til terreng med fall mot grunn/ringmurer.",
+            "Det er ikke tilfredsstillende fall på terrenget fra grunn- og ringmurer. Deler av terrenget mot nord og øst vil kunne gi økt vanntrykk mot grunn- og ringmurer."
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            15,
+            30
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d163_031",
+          "description": "Tinglyst heftelse fra 2025 – eiendommen kan ikke disponeres over uten samtykke fra Romerike Eiendomsmegling AS",
+          "evidence": [
+            "16.10.2025 - Dokumentnr: 1244126 - Registerenheten kan ikke disponeres over uten samtykke fra rettighetshaver. Rettighetshaver: Romerike Eiendomsmegling AS – Org.nr: 926 743 023"
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            17
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d163_032",
+          "description": "Stor differanse mellom prisantydning (4 450 000) og takstmannens markedsverdi (5 000 000) – kjøper bør vurdere reell markedsverdi",
+          "evidence": [
+            "Prisantydning: Kr 4 450 000",
+            "Markedsverdi: Kr 5 000 000 (tilstandsrapport)",
+            "Totalpris inkl. omkostninger: 4 581 240"
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            4,
+            32
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d163_034",
+          "description": "Avløpsrør – ukjent lufting av kloakk, funksjon og tilstand ikke kontrollert ved befaring",
+          "evidence": [
+            "Ukjent utførelse av evt. lufting av kloakk. Nyere vertikalt PP-rør i krypkjeller med stakeluke. Funksjon og tilstand må vurderes av fagmann.",
+            "Boligen var uten vanntrykk ved befaringen. Alle vannlåser var tørre, ingen registrert lukt som kan settes i sammenheng med evt. feil på etablerte avløpsrør.",
+            "Kostnadsestimat: 10 000 - 50 000"
+          ],
+          "source_documents": [
+            "d163.pdf"
+          ],
+          "source_pages": [
+            15,
+            29
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_014",
+            "description": "Svært høye utbedringskostnader: Tilstandsrapporten viser kostnadsestimat over 300 000 kr for ferdigstillelse av innvendige overflater alene, i tillegg til en rekke andre kostnadsposter. Samlet utbedringsbehov er betydelig.",
+            "evidence": [
+              "Kostnadsestimat: Over 300 000 (innvendige overflater)",
+              "Fradrag (utidsmessighet, elde, vedlikeholdsmangler, gjenstående arbeider, svekkelser og forskriftsmangler) Kr. - 1 450 000",
+              "Kostnadsestimat: 50 000 - 100 000 (vaskerom)",
+              "Kostnadsestimat: 100 000 - 300 000 (bad 1)",
+              "Kostnadsestimat: 50 000 - 100 000 (grunnmur/fundamenter)"
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter tydelig alle de oppgitte kostnadspostene. Tilstandsrapporten viser: Kostnadsestimat over 300 000 kr for ferdigstillelse av innvendige overflater ('Kostnadsestimat: Over 300 000' under Innvendig > Overflater), 50 000–100 000 kr for vaskerom, 100 000–300 000 kr for bad 1 (Bad 2 i rapporten), og 50 000–100 000 kr for grunnmur/fundamenter (terrasser/balkonger). I tillegg viser beregningssiden et fradrag på kr -1 450 000 for utidsmessighet, elde, vedlikeholdsmangler, gjenstående arbeider, svekkelser og forskriftsmangler. Det er også ytterligere kostnadsposter for kjøkken (100 000–300 000), innvendige dører (50 000–100 000), elektrisk anlegg (50 000–100 000) m.fl. Samlet utbedringsbehov er svært betydelig og godt dokumentert i rapporten."
+        },
+        {
+          "risk": {
+            "risk_id": "be66f41b-126d-4293-b172-798794d281c3_risk_020",
+            "description": "Ukjent tilstand på fundamenter og såler: Det er ukjent om det er såler under grunnmurene og om fundamentene er frostsikret. Fundamenter var tildekket med jordmasser og kunne ikke besiktiges.",
+            "evidence": [
+              "Ukjent vedr evt såler under grunnmurer og vedr frostsikring av fundamenter.",
+              "Fundamenter var tildekket med jordmasser og kunne ikke besiktiges.",
+              "Begrenset besiktigelse grunnet kjellernedgang, vegetasjon etc som tildekker grunnmurer."
+            ],
+            "source_documents": [
+              "d163_d163"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter alle tre bevisene direkte. Under 'Tomteforhold > Grunnmur og fundamenter' i tilstandsrapporten står det eksplisitt: 'Ukjent vedr evt såler under grunnmurer og vedr frostsikring av fundamenter.' og 'Fundamenter var tildekket med jordmasser og kunne ikke besiktiges.' samt 'Begrenset besiktigelse grunnet kjellernedgang, vegetasjon etc som tildekker grunnmurer.' Risikoen er dermed fullt ut støttet av dokumentteksten."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.6176470588235294,
+        "f1": 0.7636363636363637,
+        "total_support": 34
+      }
+    },
+    "ground_truth": {
+      "run_id": "73e2e921-bf15-4119-88b2-0dd570cb29bc_gt",
+      "system_type": "ground_truth",
+      "overall_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "total_support": 34
+      },
+      "matched_risks": 34,
+      "unmatched_predicted": 0,
+      "unmatched_ground_truth": 0,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_001",
+            "description": "Manglende ferdigattest og brukstillatelse – boligen kan ikke lovlig tas i bruk",
+            "evidence": [
+              "I følge opplysninger fra kommunen foreligger det verken midlertidig brukstillatelse eller ferdigattest på eiendommen, og plan- og bygningslovens formelle forutsetning for lovlig bruk av eiendommen kan derfor ikke dokumenteres.",
+              "Mangler Ferdigattest og Brukstillatelse (egenerklæring spørsmål 22)",
+              "Mangler ferdigattest og brukstillatelse. Pålegg om takstige fra Feiervesenet (egenerklæring spørsmål 20)"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              13,
+              20
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_001",
+            "description": "Manglende ferdigattest og brukstillatelse – boligen kan ikke lovlig tas i bruk",
+            "evidence": [
+              "I følge opplysninger fra kommunen foreligger det verken midlertidig brukstillatelse eller ferdigattest på eiendommen, og plan- og bygningslovens formelle forutsetning for lovlig bruk av eiendommen kan derfor ikke dokumenteres.",
+              "Mangler Ferdigattest og Brukstillatelse (egenerklæring spørsmål 22)",
+              "Mangler ferdigattest og brukstillatelse. Pålegg om takstige fra Feiervesenet (egenerklæring spørsmål 20)"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              13,
+              20
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_002",
+            "description": "Boligen er ikke ferdigstilt – svært store gjenstående arbeider og kostnader",
+            "evidence": [
+              "Eneboligen er påbegynt renovert og har nytt tilbygg fra 2024. Så godt som alt er revet med unntak av vegger av Siporex.",
+              "Kostnadsestimat for å ferdigstille boligens overflater med ordinært parkettgulv. Vegger og himlinger med malte plater. Kostnadsestimat: Over 300 000",
+              "Kjøkken ikke etablert. Kostnadsestimat for etablering av kjøkken med integrerte hvitevarer etter dagens standard for nybygg. Kostnadsestimat: 100 000 - 300 000",
+              "Ingen innvendige karmer/terskel eller dørblad. Kostnadsestimat for montering av komplette dører. Kostnadsestimat: 50 000 - 100 000",
+              "Tilbygg under oppføring, opprinnelig bolig under renovering/oppgradering."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              13,
+              14,
+              15,
+              24
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_002",
+            "description": "Boligen er ikke ferdigstilt – svært store gjenstående arbeider og kostnader",
+            "evidence": [
+              "Eneboligen er påbegynt renovert og har nytt tilbygg fra 2024. Så godt som alt er revet med unntak av vegger av Siporex.",
+              "Kostnadsestimat for å ferdigstille boligens overflater med ordinært parkettgulv. Vegger og himlinger med malte plater. Kostnadsestimat: Over 300 000",
+              "Kjøkken ikke etablert. Kostnadsestimat for etablering av kjøkken med integrerte hvitevarer etter dagens standard for nybygg. Kostnadsestimat: 100 000 - 300 000",
+              "Ingen innvendige karmer/terskel eller dørblad. Kostnadsestimat for montering av komplette dører. Kostnadsestimat: 50 000 - 100 000",
+              "Tilbygg under oppføring, opprinnelig bolig under renovering/oppgradering."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              13,
+              14,
+              15,
+              24
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_003",
+            "description": "Ingen brannslukningsutstyr og ingen røykvarslere montert – alvorlig sikkerhetsrisiko",
+            "evidence": [
+              "Er det mangler for brannslukningsutstyr i boligen iht. forskriftskrav på søknadstidspunktet, men minst Byggeforskrift 1985? Ja Ingen brannslukningsapparat. Ingen røykvarslere.",
+              "Er det mangler på røykvarsler i boligen iht. forskriftskrav på søknadstidspunktet, men minst Byggeforskrift 1985? Ja. Ingen monterte røykvarslere."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              30
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_003",
+            "description": "Ingen brannslukningsutstyr og ingen røykvarslere montert – alvorlig sikkerhetsrisiko",
+            "evidence": [
+              "Er det mangler for brannslukningsutstyr i boligen iht. forskriftskrav på søknadstidspunktet, men minst Byggeforskrift 1985? Ja Ingen brannslukningsapparat. Ingen røykvarslere.",
+              "Er det mangler på røykvarsler i boligen iht. forskriftskrav på søknadstidspunktet, men minst Byggeforskrift 1985? Ja. Ingen monterte røykvarslere."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              30
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_004",
+            "description": "Elektrisk anlegg ikke ferdigstilt – mangler sikringer, kontakter og brytere, samsvarserklæring ikke fremlagt",
+            "evidence": [
+              "El-anlegget er ikke ferdigstilt. Gjenstående arbeid med montering av sikringer, kontakter, brytere osv. Trekkerør og veggbokser fremstår som tilnærmet ferdigstilt.",
+              "Eksisterer det samsvarserklæring? Ukjent. El-anlegg ikke ferdigstilt.",
+              "Dokumentasjon er ikke fremlagt. Nye installasjoner er ikke tilkoblet strømnettet. Samsvarserklæringer ved ferdigstillelse må fremlegges.",
+              "Kostnadsestimat for ferdigstillelse av elektriskanlegg i boligen. Kostnadsestimat: 50 000 - 100 000"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              15,
+              30
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_004",
+            "description": "Elektrisk anlegg ikke ferdigstilt – mangler sikringer, kontakter og brytere, samsvarserklæring ikke fremlagt",
+            "evidence": [
+              "El-anlegget er ikke ferdigstilt. Gjenstående arbeid med montering av sikringer, kontakter, brytere osv. Trekkerør og veggbokser fremstår som tilnærmet ferdigstilt.",
+              "Eksisterer det samsvarserklæring? Ukjent. El-anlegg ikke ferdigstilt.",
+              "Dokumentasjon er ikke fremlagt. Nye installasjoner er ikke tilkoblet strømnettet. Samsvarserklæringer ved ferdigstillelse må fremlegges.",
+              "Kostnadsestimat for ferdigstillelse av elektriskanlegg i boligen. Kostnadsestimat: 50 000 - 100 000"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              15,
+              30
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_005",
+            "description": "Radon – eiendommen ligger i område med høy/særlig høy aktsomhetsgrad, ingen radonmålinger foretatt og ingen radonsperre etablert",
+            "evidence": [
+              "Det er ikke foretatt radonmålinger, og bygget er heller ikke utført med radonsperre.",
+              "Radonmålinger er ikke foretatt, heller ikke andre tiltak mot radon, eiendommen ligger i et område som i NGU Radon aktsomhetskart er definert med 'høy' eller 'særlig høy' aktsomhetsgrad.",
+              "Selger har ikke foretatt radonmåling.",
+              "Er det foretatt radonmåling? Nei (egenerklæring spørsmål 21)"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              17,
+              27,
+              20
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_005",
+            "description": "Radon – eiendommen ligger i område med høy/særlig høy aktsomhetsgrad, ingen radonmålinger foretatt og ingen radonsperre etablert",
+            "evidence": [
+              "Det er ikke foretatt radonmålinger, og bygget er heller ikke utført med radonsperre.",
+              "Radonmålinger er ikke foretatt, heller ikke andre tiltak mot radon, eiendommen ligger i et område som i NGU Radon aktsomhetskart er definert med 'høy' eller 'særlig høy' aktsomhetsgrad.",
+              "Selger har ikke foretatt radonmåling.",
+              "Er det foretatt radonmåling? Nei (egenerklæring spørsmål 21)"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              17,
+              27,
+              20
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_006",
+            "description": "Fukt og råteskader i kjeller/underetasje – fuktgjennomtrenging i gulv og mur, råteskader i treverk",
+            "evidence": [
+              "Det er påvist indikasjoner på noe fuktgjennomtrenging i kjellergulv.",
+              "Det er påvist indikasjoner på noe fuktgjennomtrenging inn i kjellermur.",
+              "Det er påvist synlige fukt/råteskader i treverk i underetg./kjeller, hulltaking er derfor ikke nødvendig. Innredninger av organisk materiale har lokale råteskader. Årsaken vurderes å være mangelfull ventilasjon og fuktopptrekk via gulvstøp.",
+              "Det anbefales at alt treverk i kjeller fjernes og at kjelleren har mest mulig åpne murkonstruksjoner med god utlufting."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              27,
+              28
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_006",
+            "description": "Fukt og råteskader i kjeller/underetasje – fuktgjennomtrenging i gulv og mur, råteskader i treverk",
+            "evidence": [
+              "Det er påvist indikasjoner på noe fuktgjennomtrenging i kjellergulv.",
+              "Det er påvist indikasjoner på noe fuktgjennomtrenging inn i kjellermur.",
+              "Det er påvist synlige fukt/råteskader i treverk i underetg./kjeller, hulltaking er derfor ikke nødvendig. Innredninger av organisk materiale har lokale råteskader. Årsaken vurderes å være mangelfull ventilasjon og fuktopptrekk via gulvstøp.",
+              "Det anbefales at alt treverk i kjeller fjernes og at kjelleren har mest mulig åpne murkonstruksjoner med god utlufting."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              27,
+              28
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_007",
+            "description": "Manglende og utilstrekkelig drenering og fuktsikring av grunnmur – risiko for vannansamlinger og fuktskader",
+            "evidence": [
+              "Det mangler, eller på grunn av alder er det sannsynlig at det mangler, utvendig fuktsikring av grunnmuren ved kjeller/underetasje.",
+              "Mer enn halvparten av forventet levetid på drenering er overskredet.",
+              "Det er påvist dårlig fall eller flatt terreng inn mot grunnmur og dermed muligheter for større vannansamlinger.",
+              "Deler av takvann ført til terreng med fall mot grunn/ringmurer.",
+              "Byggegrop uten etablert drenering. Takvann ført direkte til terreng."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              16,
+              30
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_007",
+            "description": "Manglende og utilstrekkelig drenering og fuktsikring av grunnmur – risiko for vannansamlinger og fuktskader",
+            "evidence": [
+              "Det mangler, eller på grunn av alder er det sannsynlig at det mangler, utvendig fuktsikring av grunnmuren ved kjeller/underetasje.",
+              "Mer enn halvparten av forventet levetid på drenering er overskredet.",
+              "Det er påvist dårlig fall eller flatt terreng inn mot grunnmur og dermed muligheter for større vannansamlinger.",
+              "Deler av takvann ført til terreng med fall mot grunn/ringmurer.",
+              "Byggegrop uten etablert drenering. Takvann ført direkte til terreng."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              16,
+              30
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_008",
+            "description": "Eiendommen ligger i flomutsatt område (NVE aktsomhetssone)",
+            "evidence": [
+              "Eiendommen ligger i flomutsatt område.",
+              "Opplyst ved NVE sine kartsider at eiendommen ligger i aktsomhetssone for flom (NVE Atlas)."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              25,
+              35
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_008",
+            "description": "Eiendommen ligger i flomutsatt område (NVE aktsomhetssone)",
+            "evidence": [
+              "Eiendommen ligger i flomutsatt område.",
+              "Opplyst ved NVE sine kartsider at eiendommen ligger i aktsomhetssone for flom (NVE Atlas)."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              25,
+              35
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_009",
+            "description": "Utvendige vann- og avløpsledninger fra 1968 – mer enn halvparten av forventet levetid er passert, manglende dokumentasjon",
+            "evidence": [
+              "Mer enn halvparten av forventet brukstid er passert på utvendige avløpsledninger.",
+              "Manglende dokumentasjon for vann- og avløpsanlegg. Bolig med avstengt vann ved befaringen.",
+              "Bunn- og stikkledning for avløp sannsynlig med sement- og soilrør hvis byggeåret legges til grunn. Anlegget er 57 år gammelt.",
+              "Normal forventet levetid på galvaniserte rør, støpejernsrør og sementrør er ca 40 år."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              16,
+              31
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_009",
+            "description": "Utvendige vann- og avløpsledninger fra 1968 – mer enn halvparten av forventet levetid er passert, manglende dokumentasjon",
+            "evidence": [
+              "Mer enn halvparten av forventet brukstid er passert på utvendige avløpsledninger.",
+              "Manglende dokumentasjon for vann- og avløpsanlegg. Bolig med avstengt vann ved befaringen.",
+              "Bunn- og stikkledning for avløp sannsynlig med sement- og soilrør hvis byggeåret legges til grunn. Anlegget er 57 år gammelt.",
+              "Normal forventet levetid på galvaniserte rør, støpejernsrør og sementrør er ca 40 år."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              16,
+              31
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_010",
+            "description": "Pipe og ildsted – pipevanger ikke synlige, utradisjonell røykgassdimensjon, ikke i henhold til brannforskrift",
+            "evidence": [
+              "Pipevanger er ikke synlige. Innkledd pipevange mot delevegg til baderom, synlig del av påforing med Lecablokk.",
+              "Røykgasskanalen har en utradisjonell dimensjon.",
+              "Utførelse med påforinger, tildekkinger eller vinyltapet/strie foran pipevanger er ikke i henhold til regler for teglpiper hvor det kreves at alle 4 pipevanger skal være tilgjengelig for inspeksjon.",
+              "Utførelse ved himlinger/gulvoverflater hvor treverk tildekker murkrager ved teglpiper er ikke i henhold til brannforskrift.",
+              "Avvik fra forskriftens krav om at fire sider av skorsteinen skal være tilgjengelig for visuell kontroll bør avklares med det kommunale feiervesenet."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              13,
+              14,
+              27
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_010",
+            "description": "Pipe og ildsted – pipevanger ikke synlige, utradisjonell røykgassdimensjon, ikke i henhold til brannforskrift",
+            "evidence": [
+              "Pipevanger er ikke synlige. Innkledd pipevange mot delevegg til baderom, synlig del av påforing med Lecablokk.",
+              "Røykgasskanalen har en utradisjonell dimensjon.",
+              "Utførelse med påforinger, tildekkinger eller vinyltapet/strie foran pipevanger er ikke i henhold til regler for teglpiper hvor det kreves at alle 4 pipevanger skal være tilgjengelig for inspeksjon.",
+              "Utførelse ved himlinger/gulvoverflater hvor treverk tildekker murkrager ved teglpiper er ikke i henhold til brannforskrift.",
+              "Avvik fra forskriftens krav om at fire sider av skorsteinen skal være tilgjengelig for visuell kontroll bør avklares med det kommunale feiervesenet."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              13,
+              14,
+              27
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_011",
+            "description": "Mangelfull ventilasjon – ingen ventilering utover åpning av vindu, planlagt løsning ikke tilfredsstillende",
+            "evidence": [
+              "Det er påvist avvik i ventilasjonsløsning i forhold til gjeldende krav på oppføringstidspunktet.",
+              "Ingen ventilering utover åpning av vindu.",
+              "Planlagt utførelse av boligventilasjonen vurderes som mangelfull etter dagens anbefalinger.",
+              "Bedre ventilering må etableres. Det bør etableres veggventiler/vindusventiler i alle oppholdsrom som ikke har det."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              29
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_011",
+            "description": "Mangelfull ventilasjon – ingen ventilering utover åpning av vindu, planlagt løsning ikke tilfredsstillende",
+            "evidence": [
+              "Det er påvist avvik i ventilasjonsløsning i forhold til gjeldende krav på oppføringstidspunktet.",
+              "Ingen ventilering utover åpning av vindu.",
+              "Planlagt utførelse av boligventilasjonen vurderes som mangelfull etter dagens anbefalinger.",
+              "Bedre ventilering må etableres. Det bør etableres veggventiler/vindusventiler i alle oppholdsrom som ikke har det."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              29
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_012",
+            "description": "Manglende rekkverk på terrasse/balkong – alvorlig fallrisiko",
+            "evidence": [
+              "Det er ikke montert rekkverk. For å ivareta personsikkerheten må terrassedøren sikres inntil terrasse og rekkverk er etablert.",
+              "Terrassedør ved stue bør sikres midlertidig, og rekkverk må monteres så snart terrassen er etablert for å ivareta personsikkerheten og hindre fallulykker.",
+              "Kostnadsestimat: 50 000 - 100 000"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              13,
+              26
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_012",
+            "description": "Manglende rekkverk på terrasse/balkong – alvorlig fallrisiko",
+            "evidence": [
+              "Det er ikke montert rekkverk. For å ivareta personsikkerheten må terrassedøren sikres inntil terrasse og rekkverk er etablert.",
+              "Terrassedør ved stue bør sikres midlertidig, og rekkverk må monteres så snart terrassen er etablert for å ivareta personsikkerheten og hindre fallulykker.",
+              "Kostnadsestimat: 50 000 - 100 000"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              13,
+              26
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_013",
+            "description": "Manglende rekkverk på forstøtningsmurer – sikkerhetsrisiko",
+            "evidence": [
+              "Det mangler rekkverk/annen sikring på forstøtningsmuren(e) ut ifra dagens krav.",
+              "Rekkverkssikring ved murkant mangler, krav 90 cm over terrengnivå. Murkonstruksjon med diverse skader.",
+              "Rekkverk må etableres langs murkanter."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              15,
+              31
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_013",
+            "description": "Manglende rekkverk på forstøtningsmurer – sikkerhetsrisiko",
+            "evidence": [
+              "Det mangler rekkverk/annen sikring på forstøtningsmuren(e) ut ifra dagens krav.",
+              "Rekkverkssikring ved murkant mangler, krav 90 cm over terrengnivå. Murkonstruksjon med diverse skader.",
+              "Rekkverk må etableres langs murkanter."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              15,
+              31
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_014",
+            "description": "Våtrom ikke ferdigstilt – bad 1, bad 2 og vaskerom mangler WC, armaturer, el-installasjoner og ventilasjon",
+            "evidence": [
+              "Våtrommet må oppgraderes for å tåle normal bruk etter dagens krav. Gjenstående arbeider i himling og deler av veggflater. WC-skål og armaturer ikke montert. Gjenstående arbeid av el-installasjoner. Ventilasjon ikke etablert. Kostnadsestimat: 100 000 - 300 000 (Bad 1)",
+              "Våtrommet må oppgraderes for å tåle normal bruk etter dagens krav. Gjenstående arbeider i himling og deler av veggflater. WC-skål og armaturer ikke montert. Gjenstående arbeid av el-installasjoner. Ventilasjon ikke etablert. Kostnadsestimat: 50 000 - 100 000 (Bad 2)",
+              "Våtrommet må oppgraderes for å tåle normal bruk etter dagens krav. Gjenstående arbeider på vegger og himling. Vann- og elektroinstallasjoner ikke montert. Kostnadsestimat: 50 000 - 100 000 (Vaskerom)"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              28,
+              29
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_014",
+            "description": "Våtrom ikke ferdigstilt – bad 1, bad 2 og vaskerom mangler WC, armaturer, el-installasjoner og ventilasjon",
+            "evidence": [
+              "Våtrommet må oppgraderes for å tåle normal bruk etter dagens krav. Gjenstående arbeider i himling og deler av veggflater. WC-skål og armaturer ikke montert. Gjenstående arbeid av el-installasjoner. Ventilasjon ikke etablert. Kostnadsestimat: 100 000 - 300 000 (Bad 1)",
+              "Våtrommet må oppgraderes for å tåle normal bruk etter dagens krav. Gjenstående arbeider i himling og deler av veggflater. WC-skål og armaturer ikke montert. Gjenstående arbeid av el-installasjoner. Ventilasjon ikke etablert. Kostnadsestimat: 50 000 - 100 000 (Bad 2)",
+              "Våtrommet må oppgraderes for å tåle normal bruk etter dagens krav. Gjenstående arbeider på vegger og himling. Vann- og elektroinstallasjoner ikke montert. Kostnadsestimat: 50 000 - 100 000 (Vaskerom)"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              28,
+              29
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_015",
+            "description": "Vannledninger ikke ferdigstilt – ingen tappepunkter, trykktest og lekkasjesøk ikke utført, bolig uten vanntrykk ved befaring",
+            "evidence": [
+              "Ingen etablerte tappepunkter. Trykktest og lekkasjesøk ikke utført.",
+              "Boligen var uten vanntrykk ved befaringen. Alle vannlåser var tørre.",
+              "Anlegget bør kontrolleres av fagmann. Kostnadsestimat: 10 000 - 50 000"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              29
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_015",
+            "description": "Vannledninger ikke ferdigstilt – ingen tappepunkter, trykktest og lekkasjesøk ikke utført, bolig uten vanntrykk ved befaring",
+            "evidence": [
+              "Ingen etablerte tappepunkter. Trykktest og lekkasjesøk ikke utført.",
+              "Boligen var uten vanntrykk ved befaringen. Alle vannlåser var tørre.",
+              "Anlegget bør kontrolleres av fagmann. Kostnadsestimat: 10 000 - 50 000"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              29
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_016",
+            "description": "Grunnmur beliggende i tomtegrensen mot nabo i nordøst – byggelivet for yttervegg ligger inne på naboeiendommen",
+            "evidence": [
+              "Bygget fremstår bygget med grunnmur beliggende i tomtegrensen mot nabo i nordøst. Byggelivet for ytterveggen ligger da inne på naboeiendommen."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              25,
+              35
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_016",
+            "description": "Grunnmur beliggende i tomtegrensen mot nabo i nordøst – byggelivet for yttervegg ligger inne på naboeiendommen",
+            "evidence": [
+              "Bygget fremstår bygget med grunnmur beliggende i tomtegrensen mot nabo i nordøst. Byggelivet for ytterveggen ligger da inne på naboeiendommen."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              25,
+              35
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_017",
+            "description": "Eksponert isopor/EPS-plater ved grunnmur – vil forringes ved sollyseksponering",
+            "evidence": [
+              "Eksponert isopor utenfor grunnmurer ved tilbygg, terreng tilknyttet gårsplass er ikke ferdigstilt. Eksponert isopor vil forringes hvis denne utsettes for sollys.",
+              "Tildekking av eksponert EPS-plater bør utføres for å hindre forringelse som følge av sollys og værpåkjenninger."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              31
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_017",
+            "description": "Eksponert isopor/EPS-plater ved grunnmur – vil forringes ved sollyseksponering",
+            "evidence": [
+              "Eksponert isopor utenfor grunnmurer ved tilbygg, terreng tilknyttet gårsplass er ikke ferdigstilt. Eksponert isopor vil forringes hvis denne utsettes for sollys.",
+              "Tildekking av eksponert EPS-plater bør utføres for å hindre forringelse som følge av sollys og værpåkjenninger."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              31
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_018",
+            "description": "Provisorisk ytterdør til kjeller med skjevheter og fuktrelaterte skader (TG3)",
+            "evidence": [
+              "Provisorisk ytterdør til kjeller med skjevheter og fuktrelaterte skader (TG 3).",
+              "Gjenstående arbeid med utforinger og karmlister. Provisorisk ytterdør til kjeller med skjevheter og fuktrelaterte skader (TG 3). Kostnadsestimat: 10 000 - 50 000"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              26
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_018",
+            "description": "Provisorisk ytterdør til kjeller med skjevheter og fuktrelaterte skader (TG3)",
+            "evidence": [
+              "Provisorisk ytterdør til kjeller med skjevheter og fuktrelaterte skader (TG 3).",
+              "Gjenstående arbeid med utforinger og karmlister. Provisorisk ytterdør til kjeller med skjevheter og fuktrelaterte skader (TG 3). Kostnadsestimat: 10 000 - 50 000"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              26
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_019",
+            "description": "Innvendig trapp er provisorisk – skjevheter, knirk og manglende håndløper",
+            "evidence": [
+              "Det mangler håndløper på vegg i trappeløpet.",
+              "Trappen vurderes som provisorisk i forbindelse med byggeprosessen. Inntrinn med skjevheter og diverse knirk.",
+              "Kostnadsestimat for etablering av ordinær tretrapp med lukkede opptrinn og handløpere på vegg. Kostnadsestimat: 50 000 - 100 000"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              28
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_019",
+            "description": "Innvendig trapp er provisorisk – skjevheter, knirk og manglende håndløper",
+            "evidence": [
+              "Det mangler håndløper på vegg i trappeløpet.",
+              "Trappen vurderes som provisorisk i forbindelse med byggeprosessen. Inntrinn med skjevheter og diverse knirk.",
+              "Kostnadsestimat for etablering av ordinær tretrapp med lukkede opptrinn og handløpere på vegg. Kostnadsestimat: 50 000 - 100 000"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              28
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_020",
+            "description": "Utvendig trapp til kjeller uten rekkverk/håndløper og med skjevheter og skader i murkonstruksjon",
+            "evidence": [
+              "Konstruksjonene har skjevheter. Murkonstruksjon med diverse skader. Trappeløp uten rekkverk/handløper.",
+              "Trapp uten rekkverk/håndløper, ingen spesielle krav ved intern trapp kun for drift av bygget. Av sikkerhetsmessige hensyn bør rekkverk eller håndløper monteres."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              27
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_020",
+            "description": "Utvendig trapp til kjeller uten rekkverk/håndløper og med skjevheter og skader i murkonstruksjon",
+            "evidence": [
+              "Konstruksjonene har skjevheter. Murkonstruksjon med diverse skader. Trappeløp uten rekkverk/handløper.",
+              "Trapp uten rekkverk/håndløper, ingen spesielle krav ved intern trapp kun for drift av bygget. Av sikkerhetsmessige hensyn bør rekkverk eller håndløper monteres."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              27
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_021",
+            "description": "Siporex-dekke over kjeller/krypkjeller har bevegelse ved belastning – risiko for ytterligere skader over tid",
+            "evidence": [
+              "Lokalt område av Siporex-dekket har noe bevegelse ved belastning. Siporex-elementene med lokale skader som er synlige fra kjellerrom.",
+              "Bevegelse i Siporex-elementet kan skyldes setningsavvik/bevegelser i underliggende lettvegger i kjeller. Dersom tiltak ikke gjennomføres, kan det oppstå økt risiko for ytterligere bevegelser eller skader i dekket over tid."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              27
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_021",
+            "description": "Siporex-dekke over kjeller/krypkjeller har bevegelse ved belastning – risiko for ytterligere skader over tid",
+            "evidence": [
+              "Lokalt område av Siporex-dekket har noe bevegelse ved belastning. Siporex-elementene med lokale skader som er synlige fra kjellerrom.",
+              "Bevegelse i Siporex-elementet kan skyldes setningsavvik/bevegelser i underliggende lettvegger i kjeller. Dersom tiltak ikke gjennomføres, kan det oppstå økt risiko for ytterligere bevegelser eller skader i dekket over tid."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              27
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_022",
+            "description": "Krypkjeller med skader i murkonstruksjoner og risiko for fukt og skadedyr",
+            "evidence": [
+              "Det er påvist skader i murkonstruksjoner i krypkjeller. Lokale avskallinger i Siporex-dekket.",
+              "Det bør gjennomføres jevnlig overvåkning av krypkjelleren for å avdekke eventuelle endringer eller forverring av skader. Tiltak mot skadedyr bør vurderes, da slike miljøer ofte har økt risiko for angrep. Det må påregnes et fuktmiljø i krypkjelleren."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              28
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_022",
+            "description": "Krypkjeller med skader i murkonstruksjoner og risiko for fukt og skadedyr",
+            "evidence": [
+              "Det er påvist skader i murkonstruksjoner i krypkjeller. Lokale avskallinger i Siporex-dekket.",
+              "Det bør gjennomføres jevnlig overvåkning av krypkjelleren for å avdekke eventuelle endringer eller forverring av skader. Tiltak mot skadedyr bør vurderes, da slike miljøer ofte har økt risiko for angrep. Det må påregnes et fuktmiljø i krypkjelleren."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              28
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_023",
+            "description": "Energimerking ikke angitt – selger har ikke fremlagt energiattest",
+            "evidence": [
+              "Energimerking: Ikke angitt",
+              "Alle eiendommer som selges eller leies ut skal ha en energiattest. Dersom eier ikke har lagt frem energiattest, og eier etter skriftlig anmodning fra kjøper ikke har fremlagt energiattest før avtale om salg er inngått, kan kjøper få laget en energiattest ved hjelp av ekspert for selgers regning."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              4,
+              16
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_023",
+            "description": "Energimerking ikke angitt – selger har ikke fremlagt energiattest",
+            "evidence": [
+              "Energimerking: Ikke angitt",
+              "Alle eiendommer som selges eller leies ut skal ha en energiattest. Dersom eier ikke har lagt frem energiattest, og eier etter skriftlig anmodning fra kjøper ikke har fremlagt energiattest før avtale om salg er inngått, kan kjøper få laget en energiattest ved hjelp av ekspert for selgers regning."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              4,
+              16
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_024",
+            "description": "Privat veiadkomst – ukjent om kostnadsnøkkel for brøyting og vedlikehold er utarbeidet, ingen tinglyst veirett",
+            "evidence": [
+              "Brøytekostnader og vedlikeholdskostnader tilknyttet privat veiadkomst for flere boligeiendommer må påregnes. Ukjent om kostnadsnøkkel er utarbeidet til fordeling av brøyte- og vedlikeholdsutgiftene.",
+              "Ingen opplysninger om tinglyst veirett.",
+              "Felles privat veiadkomst for flere boligeiendommer tilknyttet kommunal vei. Det er utarbeidet kostnadsnøkkel for fordeling av brøyte- og vedlikeholdskostnader. (egenerklæring)"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              25,
+              35,
+              21
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_024",
+            "description": "Privat veiadkomst – ukjent om kostnadsnøkkel for brøyting og vedlikehold er utarbeidet, ingen tinglyst veirett",
+            "evidence": [
+              "Brøytekostnader og vedlikeholdskostnader tilknyttet privat veiadkomst for flere boligeiendommer må påregnes. Ukjent om kostnadsnøkkel er utarbeidet til fordeling av brøyte- og vedlikeholdsutgiftene.",
+              "Ingen opplysninger om tinglyst veirett.",
+              "Felles privat veiadkomst for flere boligeiendommer tilknyttet kommunal vei. Det er utarbeidet kostnadsnøkkel for fordeling av brøyte- og vedlikeholdskostnader. (egenerklæring)"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              25,
+              35,
+              21
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_025",
+            "description": "Pålegg om takstige fra Feiervesenet – offentlig pålegg ikke utbedret",
+            "evidence": [
+              "Mangler ferdigattest og brukstillatelse. Pålegg om takstige fra Feiervesenet. (egenerklæring spørsmål 20)"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_025",
+            "description": "Pålegg om takstige fra Feiervesenet – offentlig pålegg ikke utbedret",
+            "evidence": [
+              "Mangler ferdigattest og brukstillatelse. Pålegg om takstige fra Feiervesenet. (egenerklæring spørsmål 20)"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_026",
+            "description": "Nedløp og beslag med avvik – utilstrekkelig bortledning av vann fra taknedløp ved grunnmur, ufagmessig utførelse",
+            "evidence": [
+              "Det er ikke tilfredsstillende bortledning av vann fra taknedløp ved grunnmur.",
+              "Det er påvist avvik i beslagløsninger.",
+              "Nedløp med utkast til terreng. Mangelfull innfesting av nedløp ved hjørnet mot nordøst. Nedløp/utkast ved gavl mot syd er plassert for nært terreng.",
+              "Utett gjæring ved beslag over gesimshjørne mot nordøst. Gesimsbeslag har enkelte deformasjoner og lokalt omfang med ufagmessig utførelse.",
+              "Kostnadsestimat: 10 000 - 50 000"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              26
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_026",
+            "description": "Nedløp og beslag med avvik – utilstrekkelig bortledning av vann fra taknedløp ved grunnmur, ufagmessig utførelse",
+            "evidence": [
+              "Det er ikke tilfredsstillende bortledning av vann fra taknedløp ved grunnmur.",
+              "Det er påvist avvik i beslagløsninger.",
+              "Nedløp med utkast til terreng. Mangelfull innfesting av nedløp ved hjørnet mot nordøst. Nedløp/utkast ved gavl mot syd er plassert for nært terreng.",
+              "Utett gjæring ved beslag over gesimshjørne mot nordøst. Gesimsbeslag har enkelte deformasjoner og lokalt omfang med ufagmessig utførelse.",
+              "Kostnadsestimat: 10 000 - 50 000"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              26
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_027",
+            "description": "Taktekking med avvik – pappfolie med buler og limslipp, eksponert klebesone ved gesims",
+            "evidence": [
+              "Pappfolie på takoverbygg ved inngangsparti har enkelte buler og limslipp fra underlaget. Tekkeduk har eksponert klebesone ved deler av oppbrettet mot gesims.",
+              "Ukjent vedr sekundærtekking."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              26
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_027",
+            "description": "Taktekking med avvik – pappfolie med buler og limslipp, eksponert klebesone ved gesims",
+            "evidence": [
+              "Pappfolie på takoverbygg ved inngangsparti har enkelte buler og limslipp fra underlaget. Tekkeduk har eksponert klebesone ved deler av oppbrettet mot gesims.",
+              "Ukjent vedr sekundærtekking."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              26
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_028",
+            "description": "Boligen er ikke fullstendig kontrollert for dagslyskrav og volumkrav for oppholdsrom",
+            "evidence": [
+              "Boligen er ikke fullstendig kontrollert i forhold til dagslyskrav (min 10 % av gulvarealet) og volumkrav (min 15 m3) for oppholdsrom (stue, kjøkken, soverom og kontor).",
+              "Boligen er ikke fullstendig kontrollert i forhold til dagslyskrav (min 10 % av gulvarealet) og volumkrav (min 15 m3) for oppholdsrom."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              13,
+              25,
+              35
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_028",
+            "description": "Boligen er ikke fullstendig kontrollert for dagslyskrav og volumkrav for oppholdsrom",
+            "evidence": [
+              "Boligen er ikke fullstendig kontrollert i forhold til dagslyskrav (min 10 % av gulvarealet) og volumkrav (min 15 m3) for oppholdsrom (stue, kjøkken, soverom og kontor).",
+              "Boligen er ikke fullstendig kontrollert i forhold til dagslyskrav (min 10 % av gulvarealet) og volumkrav (min 15 m3) for oppholdsrom."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              13,
+              25,
+              35
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_029",
+            "description": "Kjøkken ikke etablert – mangler kjøkkeninnredning, hvitevarer og kjøkkenventilator med avtrekk",
+            "evidence": [
+              "Kjøkken ikke etablert. Kostnadsestimat for etablering av kjøkken med integrerte hvitevarer etter dagens standard for nybygg. Kostnadsestimat: 100 000 - 300 000",
+              "Avtrekk ikke montert. Kostnadsestimat for etablering av kjøkkenventilator med avtrekk til friluft. Kostnadsestimat: 10 000 - 50 000"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              29
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_029",
+            "description": "Kjøkken ikke etablert – mangler kjøkkeninnredning, hvitevarer og kjøkkenventilator med avtrekk",
+            "evidence": [
+              "Kjøkken ikke etablert. Kostnadsestimat for etablering av kjøkken med integrerte hvitevarer etter dagens standard for nybygg. Kostnadsestimat: 100 000 - 300 000",
+              "Avtrekk ikke montert. Kostnadsestimat for etablering av kjøkkenventilator med avtrekk til friluft. Kostnadsestimat: 10 000 - 50 000"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              29
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_030",
+            "description": "Terrengforhold med dårlig fall mot grunnmur – økt risiko for vannansamlinger og fuktskader",
+            "evidence": [
+              "Det er påvist dårlig fall eller flatt terreng inn mot grunnmur og dermed muligheter for større vannansamlinger.",
+              "Deler av takvann ført til terreng med fall mot grunn/ringmurer.",
+              "Det er ikke tilfredsstillende fall på terrenget fra grunn- og ringmurer. Deler av terrenget mot nord og øst vil kunne gi økt vanntrykk mot grunn- og ringmurer."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              30
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_030",
+            "description": "Terrengforhold med dårlig fall mot grunnmur – økt risiko for vannansamlinger og fuktskader",
+            "evidence": [
+              "Det er påvist dårlig fall eller flatt terreng inn mot grunnmur og dermed muligheter for større vannansamlinger.",
+              "Deler av takvann ført til terreng med fall mot grunn/ringmurer.",
+              "Det er ikke tilfredsstillende fall på terrenget fra grunn- og ringmurer. Deler av terrenget mot nord og øst vil kunne gi økt vanntrykk mot grunn- og ringmurer."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              30
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_031",
+            "description": "Tinglyst heftelse fra 2025 – eiendommen kan ikke disponeres over uten samtykke fra Romerike Eiendomsmegling AS",
+            "evidence": [
+              "16.10.2025 - Dokumentnr: 1244126 - Registerenheten kan ikke disponeres over uten samtykke fra rettighetshaver. Rettighetshaver: Romerike Eiendomsmegling AS – Org.nr: 926 743 023"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              17
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_031",
+            "description": "Tinglyst heftelse fra 2025 – eiendommen kan ikke disponeres over uten samtykke fra Romerike Eiendomsmegling AS",
+            "evidence": [
+              "16.10.2025 - Dokumentnr: 1244126 - Registerenheten kan ikke disponeres over uten samtykke fra rettighetshaver. Rettighetshaver: Romerike Eiendomsmegling AS – Org.nr: 926 743 023"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              17
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_032",
+            "description": "Stor differanse mellom prisantydning (4 450 000) og takstmannens markedsverdi (5 000 000) – kjøper bør vurdere reell markedsverdi",
+            "evidence": [
+              "Prisantydning: Kr 4 450 000",
+              "Markedsverdi: Kr 5 000 000 (tilstandsrapport)",
+              "Totalpris inkl. omkostninger: 4 581 240"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              4,
+              32
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_032",
+            "description": "Stor differanse mellom prisantydning (4 450 000) og takstmannens markedsverdi (5 000 000) – kjøper bør vurdere reell markedsverdi",
+            "evidence": [
+              "Prisantydning: Kr 4 450 000",
+              "Markedsverdi: Kr 5 000 000 (tilstandsrapport)",
+              "Totalpris inkl. omkostninger: 4 581 240"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              4,
+              32
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_033",
+            "description": "Ukjent om det er isolering og fuktsperre under betonggulv i tilbygg, samt ukjent radonsperre",
+            "evidence": [
+              "Tilbygg med støpt plate på mark. Ukjent vedr isolering under betonggulvet og evt med fuktsperre mot grunne. Ukjent vedr radonsperre.",
+              "Det er ikke utført med radonsperre."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              30
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_033",
+            "description": "Ukjent om det er isolering og fuktsperre under betonggulv i tilbygg, samt ukjent radonsperre",
+            "evidence": [
+              "Tilbygg med støpt plate på mark. Ukjent vedr isolering under betonggulvet og evt med fuktsperre mot grunne. Ukjent vedr radonsperre.",
+              "Det er ikke utført med radonsperre."
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              14,
+              30
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d163_034",
+            "description": "Avløpsrør – ukjent lufting av kloakk, funksjon og tilstand ikke kontrollert ved befaring",
+            "evidence": [
+              "Ukjent utførelse av evt. lufting av kloakk. Nyere vertikalt PP-rør i krypkjeller med stakeluke. Funksjon og tilstand må vurderes av fagmann.",
+              "Boligen var uten vanntrykk ved befaringen. Alle vannlåser var tørre, ingen registrert lukt som kan settes i sammenheng med evt. feil på etablerte avløpsrør.",
+              "Kostnadsestimat: 10 000 - 50 000"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              29
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d163_034",
+            "description": "Avløpsrør – ukjent lufting av kloakk, funksjon og tilstand ikke kontrollert ved befaring",
+            "evidence": [
+              "Ukjent utførelse av evt. lufting av kloakk. Nyere vertikalt PP-rør i krypkjeller med stakeluke. Funksjon og tilstand må vurderes av fagmann.",
+              "Boligen var uten vanntrykk ved befaringen. Alle vannlåser var tørre, ingen registrert lukt som kan settes i sammenheng med evt. feil på etablerte avløpsrør.",
+              "Kostnadsestimat: 10 000 - 50 000"
+            ],
+            "source_documents": [
+              "d163.pdf"
+            ],
+            "source_pages": [
+              15,
+              29
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [],
+      "unmatched_ground_truth_risks": [],
+      "verified_unmatched": [],
+      "adjusted_metrics": null
+    }
+  },
+  "best_system": "ground_truth",
+  "statistical_tests": {
+    "standard_rag_vs_agentic_rag_P+T+R": 1.0,
+    "standard_rag_vs_ground_truth": 1.0,
+    "agentic_rag_P+T+R_vs_ground_truth": 1.0
+  },
+  "record_id": "a4330af8-695b-4b94-b8d5-01ab2ead4248",
+  "query": "Identifiser risikoer i salgsoppgaven",
+  "document_set_id": "d163",
+  "timestamp": "2026-03-25T11:39:16.801632",
+  "risk_summaries": [
+    {
+      "system_type": "standard_rag",
+      "total_risks": 15,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "agentic_rag_P+T+R",
+      "total_risks": 22,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "ground_truth",
+      "total_risks": 34,
+      "risks_by_category": {}
+    }
+  ],
+  "has_ground_truth": true,
+  "overlapping_risk_count": 26,
+  "unique_to": {
+    "standard_rag": 6,
+    "agentic_rag_P+T+R": 1,
+    "ground_truth": 12
+  },
+  "record_type": "comparison"
+}

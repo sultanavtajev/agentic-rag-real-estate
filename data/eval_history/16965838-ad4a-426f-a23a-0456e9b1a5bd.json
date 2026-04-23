@@ -1,0 +1,3361 @@
+{
+  "system_results": {
+    "standard_rag": {
+      "run_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a",
+      "system_type": "standard_rag",
+      "overall_metrics": {
+        "precision": 0.42857142857142855,
+        "recall": 0.17647058823529413,
+        "f1": 0.25,
+        "total_support": 34
+      },
+      "matched_risks": 6,
+      "unmatched_predicted": 8,
+      "unmatched_ground_truth": 28,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a_risk_002",
+            "description": "Risiko ved kjøp av kontraktsposisjon: Salget gjelder en kontraktsposisjon til en spesifikk bolig, noe som innebærer særskilte risikoer knyttet til godkjenning fra utbygger og at kjøper overtar en annenhånds kontraktsposisjon.",
+            "evidence": [
+              "Salget gjelder en kontraktsposisjon til en spesifikk bolig",
+              "Overdragelsen forutsetter godkjenning fra utbygger",
+              "Kjøper av kontraktsposisjonen gjøres"
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_001",
+            "description": "Salg av kontraktsposisjon (videresalg) – kjøper overtar alle rettigheter og forpliktelser fra opprinnelig kjøper, inkludert risiko for mangler og forsinkelser fra utbygger som kjøper 1 ikke kan holdes ansvarlig for.",
+            "evidence": [
+              "Ny kjøper trer inn i den opprinnelige kjøpekontrakten og overtar samtlige rettigheter og forpliktelser fra nåværende kjøper (kjøper 1).",
+              "Kjøper 1 kan ikke holdes ansvarlig for mangler eller forsinkelser fra utbyggers side.",
+              "Kjøper er likevel forpliktet til å betale hele merverdien, også i tilfeller hvor mangelen er vesentlig og gir grunnlag for å heve kjøpet med utbygger."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              10,
+              11
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a_risk_000",
+            "description": "Forsinkelsesrisiko ved ferdigstillelse: Selger tar eksplisitt forbehold om å forskyve fremdriften i prosjektet som følge av markedssituasjonen (pandemi, krigen i Ukraina, renter, prisvekst, materialmangel, arbeidskraft). Kjøper kan ikke gjøre gjeldende krav mot selger ved slik forsinkelse.",
+            "evidence": [
+              "i dag er en uvanlig og svært uforutsigbar markedssituasjon. Det skyldes blant annet senvirkninger av pandemisituasjonen, krigen i Ukraina og et generelt utfordrende marked med renter og prisvekst.",
+              "kan bli påvirket av situasjonen og føre til at den estimerte ferdigstillelsen blir forskjøvet, og det vil være en viss usikkerhet også etter at bygging er besluttet.",
+              "Selger tar forbehold om å stå fritt til å forskyve fremdriften i prosjektet som følge av slike forhold. Kjøper kan ikke gjøre gjeldende noen krav mot selger på grunn av en slik forskyvning"
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_002",
+            "description": "Boligen er ikke ferdigstilt – estimert overtakelse er 2. kvartal 2026, men tidspunktet er foreløpig og ikke bindende for selger. Forsinkelse utløser ikke dagmulkt eller krav på vederlag.",
+            "evidence": [
+              "Estimert overtakelse er 2.kvartal 2026",
+              "Tidspunktet er foreløpig og ikke bindende for Selger. Senere ferdigstillelse utløser ikke dagmulkt eller annet krav på vederlag hos Kjøper.",
+              "Selger tar et særskilt forbehold om det i dag er en uvanlig og svært uforutsigbar markedssituasjon. Det skyldes blant annet senvirkninger av pandemisituasjonen, krigen i Ukraina og et generelt utfordrende marked med renter og prisvekst."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              10,
+              21,
+              22
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a_risk_001",
+            "description": "Selgers rett til endringer i leveransen: Selger forbeholder seg retten til å gjøre endringer i konstruksjon og materialvalg etter egen vurdering, uten at kjøper nødvendigvis kan motsette seg dette.",
+            "evidence": [
+              "2.5 Selger tar forbehold om og har etter egen vurdering rett til endringer i leveransen, herunder i konstruksjon og materialvalg, som er",
+              "feil i den opprinnelige salgsoppgaven, mindre justeringer i leveransen samt avvik i areal."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.93,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_008",
+            "description": "Selger forbeholder seg retten til endringer i leveransen (konstruksjon, materialvalg, vindusplassering, balkongutforming) uten at kjøper kan kreve prisreduksjon.",
+            "evidence": [
+              "Selger tar forbehold om og har etter egen vurdering rett til endringer i leveransen, herunder i konstruksjon og materialvalg, som er hensiktsmessige og som ikke forringer leveransekvaliteten, som følge av prisendringer, manglende tilgjengelighet, samt endringer som måtte følge av regelendringer, pålegg eller annet vedtak fra offentlig myndighet, uten at Kjøper kan kreve reduksjon endringer i pris.",
+              "Det kan også forekomme justeringer av vindusplassering/-størrelse samt endelig utforming av private balkonger/terrasser/markterrasser og lignende uten at Kjøper kan kreve prisendringer."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              20,
+              21
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a_risk_000",
+            "description": "Forsinkelsesrisiko ved ferdigstillelse: Selger tar eksplisitt forbehold om å forskyve fremdriften i prosjektet som følge av markedssituasjonen (pandemi, krigen i Ukraina, renter, prisvekst, materialmangel, arbeidskraft). Kjøper kan ikke gjøre gjeldende krav mot selger ved slik forsinkelse.",
+            "evidence": [
+              "i dag er en uvanlig og svært uforutsigbar markedssituasjon. Det skyldes blant annet senvirkninger av pandemisituasjonen, krigen i Ukraina og et generelt utfordrende marked med renter og prisvekst.",
+              "kan bli påvirket av situasjonen og føre til at den estimerte ferdigstillelsen blir forskjøvet, og det vil være en viss usikkerhet også etter at bygging er besluttet.",
+              "Selger tar forbehold om å stå fritt til å forskyve fremdriften i prosjektet som følge av slike forhold. Kjøper kan ikke gjøre gjeldende noen krav mot selger på grunn av en slik forskyvning"
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_014",
+            "description": "Selger (utbygger) har rett til å forskyve fremdriften i prosjektet som følge av markedssituasjon (pandemi, krig, renter, prisvekst) uten at kjøper kan gjøre krav gjeldende.",
+            "evidence": [
+              "Selger tar et særskilt forbehold om det i dag er en uvanlig og svært uforutsigbar markedssituasjon. Det skyldes blant annet senvirkninger av pandemisituasjonen, krigen i Ukraina og et generelt utfordrende marked med renter og prisvekst.",
+              "Selger tar forbehold om å stå fritt til å forskyve fremdriften i prosjektet som følge av slike forhold. Kjøper kan ikke gjøre gjeldende noen krav mot selger på grunn av en slik forskyvning av fremdrift."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              22
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a_risk_002",
+            "description": "Risiko ved kjøp av kontraktsposisjon: Salget gjelder en kontraktsposisjon til en spesifikk bolig, noe som innebærer særskilte risikoer knyttet til godkjenning fra utbygger og at kjøper overtar en annenhånds kontraktsposisjon.",
+            "evidence": [
+              "Salget gjelder en kontraktsposisjon til en spesifikk bolig",
+              "Overdragelsen forutsetter godkjenning fra utbygger",
+              "Kjøper av kontraktsposisjonen gjøres"
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_016",
+            "description": "Overdragelsen av kontraktsposisjonen forutsetter godkjenning fra utbygger og aksept fra garantistiller – dersom dette ikke oppnås, kan handelen ikke gjennomføres.",
+            "evidence": [
+              "Overdragelsen forutsetter godkjenning fra utbygger, samt aksept fra garantistiller om transport av den opprinnelige garantien."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              10
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a_risk_006",
+            "description": "Utomhusarbeider kan ferdigstilles etter kjøpers overtakelse: Kjøper kan overta boligen uten at utvendige fellesarealer og utomhusarbeider er fullført, noe som kan medføre ulemper og usikkerhet om ferdigstillelse.",
+            "evidence": [
+              "8.7 Avhengig av årstid vil utomhusarbeidene kunne bli ferdigstilt og overtakelsesforretning for disse avholdt etter Kjøpers overtakelse av boligen.",
+              "8.6 Utvendige og innvendige fellesarealer overleveres til Eierseksjonssameiets styre. Selger kan beslutte at overtakelse av fellesarealer gjennomføres trinnvis."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_030",
+            "description": "Utomhusarbeider og fellesarealer kan gjenstå ved kjøpers overtakelse av boligen – selger kan ferdigstille disse etter overtakelse.",
+            "evidence": [
+              "Kjøper er kjent med at det vil kunne gjenstå arbeider på fellesarealer frem til prosjektet som helhet er ferdigstilt.",
+              "Avhengig av årstid vil utomhusarbeidene kunne bli ferdigstilt og overtakelsesforretning for disse avholdt etter Kjøpers overtakelse av boligen."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              22
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a_risk_003",
+          "description": "Betalingsrisiko ved forsinkelse fra kjøper: Dersom kjøper er forsinket med betaling over 30 dager etter forfallsdato, kan selger heve kjøpet og kreve kjøper for oppgjør etter buofl. § 55. Kjøper risikerer også dekningssalg for egen regning ved vesentlig mislighold.",
+          "evidence": [
+            "Dersom Kjøper er forsinket med betaling over 30 – tretti – dager etter forfallsdato, gir dette Selger rett til å heve kjøpet og kreve Kjøper for oppgjør etter buofl. § 55.",
+            "Et vesentlig mislighold kan gi selger rett til å heve avtalen og til å gjennomføre dekningssalg for kjøpers regning."
+          ],
+          "source_documents": [
+            "d157_d157"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.95,
+          "details": {}
+        },
+        {
+          "risk_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a_risk_004",
+          "description": "Begrenset reklamasjonsrett – selgers utbedringsplikt dekker ikke sprekkdannelser, vanlig vedlikehold eller skader fra uforsvarlig bruk: Kjøper har begrenset rett til å reklamere på visse typer feil og mangler.",
+          "evidence": [
+            "Selgerens plikt til å utbedre feil eller mangler ikke omfatter følgende punkter:",
+            "Sprekkdannelser som oppstår som følge av naturlige endringer og krymping av materialer, så lenge disse ikke innebærer avvik fra god håndverksmessig standard.",
+            "Reparasjoner som går inn under vanlig vedlikehold.",
+            "Mangler som oppstår på grunn av mangelfullt vedlikehold og/eller uforsvarlig bruk av Eierseksjonen med utstyr."
+          ],
+          "source_documents": [
+            "d157_d157"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.91,
+          "details": {}
+        },
+        {
+          "risk_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a_risk_005",
+          "description": "Risiko ved overtakelse uten kjøpers tilstedeværelse: Dersom kjøper ikke møter til overtakelsesforretning uten gyldig grunn, kan selger gjennomføre overtakelsen alene, og risikoen for eierseksjonen går over på kjøper selv om overtakelsesforretning ikke er avholdt.",
+          "evidence": [
+            "Om Kjøper ikke møter iht. innkallingen uten gyldig grunn kan Selger foreta overtakelsesforretningen alene.",
+            "Har Kjøper overtatt bruken av Eierseksjonen og Selgers leveranse er fullført går risikoen over på Kjøper i tråd med bufl. § 14 selv om det ikke er avholdt overtakelsesforretning.",
+            "Hvis Kjøper ikke overtar bruken pr. Overtakelse og årsaken til dette ligger hos ham, har han risikoen fra det tidspunkt han kunne ha fått overta bruken."
+          ],
+          "source_documents": [
+            "d157_d157"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.9,
+          "details": {}
+        },
+        {
+          "risk_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a_risk_007",
+          "description": "Betalingsrestriksjon – kun norsk bankkonto akseptert: Hele oppgjøret må betales samlet fra en norsk bankkonto. Overføringer fra utlandet aksepteres kun unntaksvis og må forhåndsavtales. Dette kan være en risiko for kjøpere med utenlandsk bankforbindelse.",
+          "evidence": [
+            "Hele oppgjøret må betales samlet fra en norsk bankkonto. Overføringer fra utlandet aksepteres kun unntaksvis, og kun dersom dette er forhåndsavtalt med megler i forbindelse med aksept av budet.",
+            "4.5 Innbetalinger fra annet enn Kjøpers konto i norsk bank/låneinstitusjon, skal forhåndsgodkjennes skriftlig av Oppgjørsmegler og før betaling kan finne sted."
+          ],
+          "source_documents": [
+            "d157_d157"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.85,
+          "details": {}
+        },
+        {
+          "risk_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a_risk_008",
+          "description": "Avbestillingsrisiko – kjøper kan bli krevd for kompensasjon og erstatning: Dersom kjøper avbestiller leveransen, kan selger kreve økonomisk kompensasjon og/eller erstatning i henhold til buofl. §§ 52 og 53.",
+          "evidence": [
+            "3.7 Kjøper kan avbestille leveransen helt eller delvis i henhold til reglene i buofl. §§ 52 og 53. Slik avbestilling kan gi selger rett til økonomisk kompensasjon og/eller erstatning."
+          ],
+          "source_documents": [
+            "d157_d157"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a_risk_009",
+          "description": "Risiko knyttet til kundetiltak og hvitvaskingsregler: Dersom selger ikke bidrar til at megler får gjennomført løpende kundetiltak, må eiendomsmegler stanse transaksjonen. Selger vil da ha misligholdt sine forpliktelser, og kjøper kan ha krav mot selger.",
+          "evidence": [
+            "Dersom selger ikke bidrar til at megler får gjennomført løpende kundetiltak underveis i oppdraget, må eiendomsmegler stanse gjennomføringen av transaksjonen.",
+            "Selger vil i et slikt tilfelle ha misligholdt sine forpliktelser, og kjøper vil kunne ha et krav mot selger etter avhendingsloven.",
+            "Hvis kundetiltak ikke lar seg gjennomføre, vil Emera eiendomsmegling ikke kunne bistå med handelen eller foreta oppgjør."
+          ],
+          "source_documents": [
+            "d157_d157"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.87,
+          "details": {}
+        },
+        {
+          "risk_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a_risk_010",
+          "description": "Ingen angrerett ved kjøp av fast eiendom: Kjøper har ingen angrerett etter at bud er akseptert, og er bundet av avtalen. Dette innebærer at kjøper ikke kan trekke seg uten risiko for vesentlige økonomiske konsekvenser.",
+          "evidence": [
+            "1. Det eksisterer ingen angrerett ved salg/kjøp av fast eiendom.",
+            "Selger står fritt til å forkaste eller akseptere ethvert bud, og er for eksempel ikke forpliktet til å akseptere høyeste bud."
+          ],
+          "source_documents": [
+            "d157_d157"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.92,
+          "details": {}
+        },
+        {
+          "risk_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a_risk_011",
+          "description": "Kjøper må påregne egen vask før innflytting: Alle boliger leveres som hovedregel kun byggerengjort, og kjøper må påregne ekstra kostnader til vask før innflytting.",
+          "evidence": [
+            "Alle boliger leveres som hovedregel byggerengjort, og kjøper må påregne egen vask før innflytting."
+          ],
+          "source_documents": [
+            "d157_d157"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.75,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d157_003",
+          "description": "Felleskostnader er ikke endelig fastsatt – stipulerte beløp kan øke etter ferdigstillelse og vedtak i sameiet. Endringer i BRA-i kan påvirke beregningen.",
+          "evidence": [
+            "Felleskostnadene er ikke endelig fastsatt, men stipulerte felleskostnader skal dekke sameiets ordinære driftsutgifter.",
+            "Endringer i BRA‑i vil kunne påvirke beregningen av felleskostnadene.",
+            "Felleskostnadene er stipulert for første driftsår, og Kjøper er kjent med at justeringer kan forekomme etter endringer i offentlige avgifter, konsumprisindeksutvikling, vedlikeholdsbehov, Eierseksjonssameiets egne vedtak mm."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            6,
+            23
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d157_004",
+          "description": "Eiendomsskatt innføres i Lørenskog fra 2026 og vil faktureres direkte til seksjonseier. Skattesatsen kan øke med inntil én promille per år.",
+          "evidence": [
+            "Lørenskog kommune har vedtatt/ innført eiendomsskatt fra og med 2026. Dette vil faktureres direkte til den enkelte seksjonseier.",
+            "Skattesatsen kan ikke øke med mer enn én promille i året.",
+            "Forutsatt verdi på boligen kr. 5.800.000,‑ vil eiendomsskatt for 2026 utgjøre kr. 3.960,‑ pr. år."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            6,
+            7
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d157_005",
+          "description": "Parkeringskjelleren eies og driftes av Thongård AS (ikke sameiet). Ledige parkeringsplasser ved overtakelse tilhører Thongård AS, som fritt kan selge eller leie disse ut. Bruksrett til parkeringsplass kan ikke selges eller leies ut til andre enn seksjonseiere på Skårer Vest felt 8.",
+          "evidence": [
+            "Parkeringskjelleren vil ligge i en anleggseiendom som eies og driftes av Thongård AS.",
+            "Evt. ledige parkeringsplasser ved overtagelsestidspunkt vil tilhøre Thongård AS som beholder eiendoms- og/eller bruksrett til disse. Disse parkeringsplassene vil fritt kunne selges eller leies ut til beboere på området Skårer Vest felt 8.",
+            "Bruksrett til parkeringsplasser kan ikke selges eller leies ut til andre enn seksjonseiere på området Skårer Vest felt 8."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            7,
+            23
+          ],
+          "details": {
+            "confidence": 0.93
+          }
+        },
+        {
+          "risk_id": "gt_d157_006",
+          "description": "Parkeringskjelleren deles med Triaden kjøpesenter og andre boligselskaper, noe som kan medføre kapasitets- og tilgjengelighetsutfordringer for beboere.",
+          "evidence": [
+            "Parkeringskjelleren vil også benyttes til parkering for Triaden kjøpesenter og andre boligselskaper på Skårerløkka/Triaden.",
+            "Boligparkeringen planlegges i egen etasje, adskilt fra kjøpesenterets parkeringsarealer. Parkering for næring vil evt. ligge i samme etasje som boligparkeringen, i så tilfelle vil det lages et fysisk skille mellom parkeringene."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            7,
+            14
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d157_007",
+          "description": "Arealangivelser er foreløpige og basert på beregninger – endelig areal er ikke oppmålt. Avvik kan forekomme og påvirke felleskostnader.",
+          "evidence": [
+            "Leiligheten er ikke ferdigstilt enda og dermed ikke oppmålt. Arealene som er oppgitt i prospekt, prisliste og på tegninger er angitt i BRA‑i (internt bruksareal)... og følgelig er foreløpige.",
+            "Kjøper er innforstått med at arealangivelsene i leilighetene er et resultat av beregninger som er foreløpige. Endringer i BRA‑i vil kunne påvirke beregningen av felleskostnadene."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            6,
+            14
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d157_009",
+          "description": "Tomtens endelige størrelse og avgrensning er ikke avklart – utbygger tar forbehold om tomtens endelige størrelse inntil fradeling og oppmåling er gjennomført.",
+          "evidence": [
+            "Utbygger tar forbehold om tomtens endelige størrelse inntil fradeling og oppmåling er gjennomført.",
+            "Det tas også forbehold om endelig størrelse og avgrensning på Eierseksjonssameiets tomt, og Kjøper aksepterer at avvik kan forekomme."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            7,
+            20
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d157_010",
+          "description": "Sameiebrøk er ikke fastsatt – dette bestemmes først ved kommende seksjonering, og kan påvirke fordeling av felleskostnader og stemmerett.",
+          "evidence": [
+            "Eierseksjonens sameiebrøk bestemmes i forbindelse med kommende seksjonering."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            20
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d157_011",
+          "description": "Endelig adresse og matrikkelbetegnelse (gnr., bnr., snr.) er ikke tildelt – dette skjer først etter seksjonering og innflytting, noe som kan forsinke tinglysing og hjemmelsoverføring.",
+          "evidence": [
+            "Eierseksjonen vil etter gjennomført seksjonering bli betegnet ved et eget gårdsnummer (gnr.), bruksnummer (bnr.) og seksjonsnummer (snr.). Endelig adresse vil bli tildelt av kommunen i forbindelse med innflytting.",
+            "Hjemmelsoverføring kan bli forsinket som følge av offentlige myndigheters saksbehandlingstid ved deling/sammenføyning/seksjonering av Eiendommen."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            20,
+            21
+          ],
+          "details": {
+            "confidence": 0.87
+          }
+        },
+        {
+          "risk_id": "gt_d157_012",
+          "description": "Oppvarming og varmtvann leveres av ekstern leverandør (Smartly) og faktureres separat – kostnaden er ikke inkludert i felleskostnadene og kan variere med forbruk og markedspriser.",
+          "evidence": [
+            "Oppvarming og varmtvann leveres av Smartly og kommer i tillegg til felleskostnadene. Smartly sender egen faktura til seksjonseier hver måned. Denne inneholder systemkost, kostnader for forbruk av både varme og varmt vann, og i tillegg kostnader for fellesoppvarming/felles vann fordelt per leilighet."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            6,
+            9
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d157_013",
+          "description": "Grunnpakke kabel-TV og fiber (ca. kr 299/mnd) kommer i tillegg til felleskostnadene og kan reguleres med KPI etter år 1.",
+          "evidence": [
+            "Grunnpakke kabel‑tv og fiber kommer i tillegg med ca. kr 299,‑/ mnd. Prisen kan bli regulert (KPI) etter år 1."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            6
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d157_015",
+          "description": "Første delinnbetaling (kr 100 000) må være fri egenkapital – det er ikke mulig å få sikkerhet i boligen ved delinnbetaling 1, noe som kan være en likviditetsutfordring for kjøper.",
+          "evidence": [
+            "Første delinnbetaling må være fri egenkapital da det ikke er mulig å få sikkerhet i boligen ved delinnbetaling 1.",
+            "Det må avklares med banken før bud inngis at det kan tas sikkerhet i en annen bolig ved delinnbetaling 1."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            10
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d157_017",
+          "description": "Garanti etter buofl. § 12 er beregnet av opprinnelig kjøpesum mellom selger og kjøper 1 – ikke av den høyere prisen kjøper 2 betaler, noe som gir lavere garantidekning i forhold til faktisk investering.",
+          "evidence": [
+            "Garantien etter buofl. § 12, som minst lyder på 3% av vederlaget i perioden før overtagelse og 5 % i perioden frem til 5 år etter overtagelsen, er beregnet av opprinnelig kjøpesum mellom Selger og Kjøper 1 i henhold til kjøpekontrakt."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            10
+          ],
+          "details": {
+            "confidence": 0.92
+          }
+        },
+        {
+          "risk_id": "gt_d157_018",
+          "description": "Selger forbeholder seg retten til å endre leilighetsnummer og antall seksjoner i sameiet (inkl. bolig og næring), noe som kan påvirke sammensetningen av sameiet.",
+          "evidence": [
+            "Selger står fritt til å endre leilighetsnummer og det tas forbehold om eventuell endring av antall seksjoner i Eierseksjonssameiet, herunder både bolig og næring."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            23
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d157_019",
+          "description": "Vedtekter for sameiet er ikke utarbeidet på salgstidspunktet – disse utarbeides av selger i samarbeid med forretningsfører og ettersendes, noe som gir kjøper begrenset innsyn i sameiets fremtidige regler.",
+          "evidence": [
+            "Vedtekter vil bli utarbeidet av Selger i samarbeid med forretningsfører og ettersendes når klart.",
+            "Det foreligger pt. ikke regnskap eller budsjett for Eierseksjonssameiet."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            23
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d157_020",
+          "description": "Selger har rett til å bestemme leverandører for sameiet (strøm, vaktmester, vedlikehold, TV/bredbånd) uten at sameiet nødvendigvis kan velge fritt.",
+          "evidence": [
+            "Selger har rett til å bestemme leverandører for Eierseksjonssameiet (bl.a. strøm, vaktmester, vedlikehold av tekniske installasjoner, tv/bredbånd)."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            23
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d157_021",
+          "description": "Radonmåling er ikke utført – selger har ikke foretatt radonmåling, og det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+          "evidence": [
+            "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            9
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d157_022",
+          "description": "Formuesverdi er ikke beregnet på salgstidspunktet – dette kan gi usikkerhet om fremtidig formuesskatt og skattemessig behandling.",
+          "evidence": [
+            "Formuesverdien er ikke beregnet. Skatteetaten vil beregne en boligverdi (beregnet markedsverdi for bolig) basert på SSBs statistiske opplysninger om omsatte boliger. Beregningen vil skje i forbindelse med første skattemelding etter overtakelse."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            7
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        },
+        {
+          "risk_id": "gt_d157_023",
+          "description": "Balkonger uten tak kan samle vann etter regnvær, og drypp fra overliggende balkong og rekkverk vil forekomme.",
+          "evidence": [
+            "Balkonger som ikke har tak eller overliggende balkong vil utformes med sluk. Balkonger er som en utvendig konstruksjon å anse og mindre ansamlinger av vann vil derfor kunne oppstå på gulvflaten etter regnvær. Det samme vil gjelde drypp fra overliggende balkong og rekkverk."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            9
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d157_024",
+          "description": "Enkelte vinduer er faste og kan ikke åpnes – disse må pusses fra terrasse, balkong eller fra vindusfelt ved siden av, noe som kan være upraktisk og utgjøre en sikkerhetsrisiko.",
+          "evidence": [
+            "Enkelte vinduer er faste og kan ikke åpnes. Disse vinduene må pusses fra terrasse, balkong eller fra vindusfelt ved siden av."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            18
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d157_025",
+          "description": "Tekniske føringer og rør vil være synlige i leiligheten (nisje for vaskemaskin/tørketrommel), og luker for vann- og varmetekniske installasjoner kan plasseres i primærrom.",
+          "evidence": [
+            "I leiligheter med teknisk nisje med plass til vaskemaskin/tørketrommel vil det være synlige føringer/rør.",
+            "Luker for vann og varmetekniske installasjoner er primært plassert i sekundærrom/nisjen. Det kan være unntak hvor luker plasseres i primærrom, for eksempel ved vannutkaster på terrasse eller lignende."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            8,
+            15
+          ],
+          "details": {
+            "confidence": 0.72
+          }
+        },
+        {
+          "risk_id": "gt_d157_026",
+          "description": "Parkeringsplasser kan ha lavere takhøyde enn 2,1 m på grunn av tekniske føringer (avløpsrør, søyler), noe som kan begrense bruken for høye kjøretøy.",
+          "evidence": [
+            "Parkeringer vil generelt holde minimum 2,1m høyde. Det vil kunne være enkelte tekniske føringer med lavere høyde, for eksempel pga. avløpsrør/føringer langs vegger og søyler."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            7,
+            14
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        },
+        {
+          "risk_id": "gt_d157_027",
+          "description": "Kjøper er ansvarlig overfor sameiets kreditorer i forhold til sin sameiebrøk (solidaransvar), og sameiet har legal panterett i seksjonen for inntil 2 ganger folketrygdens grunnbeløp ved manglende betaling av fellesutgifter.",
+          "evidence": [
+            "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.",
+            "Ved manglende betaling av fellesutgifter har sameiet legal panterett i den enkelte eierseksjon, begrenset til inntil 2 ganger folketrygdens grunnbeløp."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            9
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d157_028",
+          "description": "Ingen kan eie mer enn to boligseksjoner i sameiet – seksjoner eid av nærstående eller gjennom firma regnes også med, noe som begrenser investeringsmuligheter.",
+          "evidence": [
+            "Det informeres om at ingen kan eie mer enn to boligseksjoner i sameiet, i henhold til eierseksjonsloven § 23. Seksjoner som eies av nærstående eller gjennom et firma regnes også med."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            9
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d157_029",
+          "description": "Korttidsutleie er begrenset til 90 døgn per år i henhold til eierseksjonsloven § 24, og denne grensen kan endres i vedtektene (mellom 60 og 120 døgn).",
+          "evidence": [
+            "Korttidsutleie er tillatt i inntil 90 døgn per år, jf. eierseksjonsloven § 24. Denne grensen kan endres i vedtektene, men den må være satt mellom 60 og 120 døgn."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            9
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d157_031",
+          "description": "Grunnboksutskrift vedlagt kjøpekontrakten er datert 04.10.2023 – over to år gammel på salgstidspunktet (januar 2026), noe som innebærer risiko for at heftelser eller endringer ikke er oppdatert.",
+          "evidence": [
+            "Grunnboksutskrifter a jour 04.10.2023 (vedlegg til kjøpekontrakten, jf. punkt 17.1)"
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            24
+          ],
+          "details": {
+            "confidence": 0.83
+          }
+        },
+        {
+          "risk_id": "gt_d157_032",
+          "description": "Situasjonsplan og utomhusplan er datert henholdsvis 19.03.2021 og 20.11.2023, begge med forbehold om endringer – disse kan avvike fra faktisk utførelse.",
+          "evidence": [
+            "Situasjonsplan datert 19.03.2021 (med forbehold om endringer)",
+            "Utomhusplan datert 20.11.2023 (med forbehold om endringer)"
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            24
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        },
+        {
+          "risk_id": "gt_d157_033",
+          "description": "Byggetrinn BT6 (kontor, næring og boliger for utleie) er under utbygging i nærområdet, noe som kan medføre støy, støv og anleggsarbeid i en periode etter innflytting.",
+          "evidence": [
+            "Forøvrig pågår det også utbygging av byggetrinn BT6. BT6 vil bestå av kontor, næring og boliger for utleie."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            13
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d157_034",
+          "description": "Energiklasse B er stipulert, men endelig energiklasse avgjøres ved beregninger før innflytting og kan avvike. Det er den enkelte seksjonseiers energibruk som avgjør endelig klasse.",
+          "evidence": [
+            "Leiligheter vil få energiklasse B.",
+            "Leilighetene leveres med energisertifikat og klassen på den enkelte leiligheten blir avgjort ved beregninger før innflytting. Ved senere salg av leiligheten er det energibruken til hver enkelt seksjonseier som avgjør hvilken klasse den kommer i."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            9
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a_risk_003",
+            "description": "Betalingsrisiko ved forsinkelse fra kjøper: Dersom kjøper er forsinket med betaling over 30 dager etter forfallsdato, kan selger heve kjøpet og kreve kjøper for oppgjør etter buofl. § 55. Kjøper risikerer også dekningssalg for egen regning ved vesentlig mislighold.",
+            "evidence": [
+              "Dersom Kjøper er forsinket med betaling over 30 – tretti – dager etter forfallsdato, gir dette Selger rett til å heve kjøpet og kreve Kjøper for oppgjør etter buofl. § 55.",
+              "Et vesentlig mislighold kan gi selger rett til å heve avtalen og til å gjennomføre dekningssalg for kjøpers regning."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter begge påstandene direkte. På side 21 (kjøpekontraktens punkt 4.4) står det: 'Dersom Kjøper er forsinket med betaling over 30 – tretti – dager etter forfallsdato, gir dette Selger rett til å heve kjøpet og kreve Kjøper for oppgjør etter buofl. § 55.' På side 20 (hvitvasking-avsnittet) står det: 'Et vesentlig mislighold kan gi selger rett til å heve avtalen og til å gjennomføre dekningssalg for kjøpers regning.' Risikoen er godt underbygget av dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a_risk_004",
+            "description": "Begrenset reklamasjonsrett – selgers utbedringsplikt dekker ikke sprekkdannelser, vanlig vedlikehold eller skader fra uforsvarlig bruk: Kjøper har begrenset rett til å reklamere på visse typer feil og mangler.",
+            "evidence": [
+              "Selgerens plikt til å utbedre feil eller mangler ikke omfatter følgende punkter:",
+              "Sprekkdannelser som oppstår som følge av naturlige endringer og krymping av materialer, så lenge disse ikke innebærer avvik fra god håndverksmessig standard.",
+              "Reparasjoner som går inn under vanlig vedlikehold.",
+              "Mangler som oppstår på grunn av mangelfullt vedlikehold og/eller uforsvarlig bruk av Eierseksjonen med utstyr."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.91,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette direkte i punkt 10.2 (side 43): 'Det gjøres oppmerksom på at Selgerens plikt til å utbedre feil eller mangler ikke omfatter følgende punkter: Sprekkdannelser som oppstår som følge av naturlige endringer og krymping av materialer, så lenge disse ikke innebærer avvik fra god håndverksmessig standard. Reparasjoner som går inn under vanlig vedlikehold. Mangler som oppstår på grunn av mangelfullt vedlikehold og/eller uforsvarlig bruk av Eierseksjonen med utstyr.' Alle tre unntakene er eksplisitt nevnt i dokumentet."
+        },
+        {
+          "risk": {
+            "risk_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a_risk_005",
+            "description": "Risiko ved overtakelse uten kjøpers tilstedeværelse: Dersom kjøper ikke møter til overtakelsesforretning uten gyldig grunn, kan selger gjennomføre overtakelsen alene, og risikoen for eierseksjonen går over på kjøper selv om overtakelsesforretning ikke er avholdt.",
+            "evidence": [
+              "Om Kjøper ikke møter iht. innkallingen uten gyldig grunn kan Selger foreta overtakelsesforretningen alene.",
+              "Har Kjøper overtatt bruken av Eierseksjonen og Selgers leveranse er fullført går risikoen over på Kjøper i tråd med bufl. § 14 selv om det ikke er avholdt overtakelsesforretning.",
+              "Hvis Kjøper ikke overtar bruken pr. Overtakelse og årsaken til dette ligger hos ham, har han risikoen fra det tidspunkt han kunne ha fått overta bruken."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette i punkt 8.1 og 8.3 (side 42-43): 'Om Kjøper ikke møter iht. innkallingen uten gyldig grunn kan Selger foreta overtakelsesforretningen alene.' Videre: 'Har Kjøper overtatt bruken av Eierseksjonen og Selgers leveranse er fullført går risikoen over på Kjøper i tråd med bufl. § 14 selv om det ikke er avholdt overtakelsesforretning.' Og: 'Hvis Kjøper ikke overtar bruken pr. Overtakelse og årsaken til dette ligger hos ham, har han risikoen fra det tidspunkt han kunne ha fått overta bruken.' Alle tre bevisene er direkte sitert fra dokumentet."
+        },
+        {
+          "risk": {
+            "risk_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a_risk_007",
+            "description": "Betalingsrestriksjon – kun norsk bankkonto akseptert: Hele oppgjøret må betales samlet fra en norsk bankkonto. Overføringer fra utlandet aksepteres kun unntaksvis og må forhåndsavtales. Dette kan være en risiko for kjøpere med utenlandsk bankforbindelse.",
+            "evidence": [
+              "Hele oppgjøret må betales samlet fra en norsk bankkonto. Overføringer fra utlandet aksepteres kun unntaksvis, og kun dersom dette er forhåndsavtalt med megler i forbindelse med aksept av budet.",
+              "4.5 Innbetalinger fra annet enn Kjøpers konto i norsk bank/låneinstitusjon, skal forhåndsgodkjennes skriftlig av Oppgjørsmegler og før betaling kan finne sted."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette på to steder. På side 20 (OM EIENDOMMEN): 'Hele oppgjøret må betales samlet fra en norsk bankkonto. Overføringer fra utlandet aksepteres kun unntaksvis, og kun dersom dette er forhåndsavtalt med megler i forbindelse med aksept av budet.' Og i kjøpekontraktens punkt 4.5 (side 40): 'Innbetalinger fra annet enn Kjøpers konto i norsk bank/låneinstitusjon, skal forhåndsgodkjennes skriftlig av Oppgjørsmegler og før betaling kan finne sted.' Risikoen er klart dokumentert."
+        },
+        {
+          "risk": {
+            "risk_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a_risk_008",
+            "description": "Avbestillingsrisiko – kjøper kan bli krevd for kompensasjon og erstatning: Dersom kjøper avbestiller leveransen, kan selger kreve økonomisk kompensasjon og/eller erstatning i henhold til buofl. §§ 52 og 53.",
+            "evidence": [
+              "3.7 Kjøper kan avbestille leveransen helt eller delvis i henhold til reglene i buofl. §§ 52 og 53. Slik avbestilling kan gi selger rett til økonomisk kompensasjon og/eller erstatning."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette direkte i kjøpekontraktens punkt 3.7 (side 39): 'Kjøper kan avbestille leveransen helt eller delvis i henhold til reglene i buofl. §§ 52 og 53. Slik avbestilling kan gi selger rett til økonomisk kompensasjon og/eller erstatning.' Risikoen er fullt ut støttet av dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a_risk_009",
+            "description": "Risiko knyttet til kundetiltak og hvitvaskingsregler: Dersom selger ikke bidrar til at megler får gjennomført løpende kundetiltak, må eiendomsmegler stanse transaksjonen. Selger vil da ha misligholdt sine forpliktelser, og kjøper kan ha krav mot selger.",
+            "evidence": [
+              "Dersom selger ikke bidrar til at megler får gjennomført løpende kundetiltak underveis i oppdraget, må eiendomsmegler stanse gjennomføringen av transaksjonen.",
+              "Selger vil i et slikt tilfelle ha misligholdt sine forpliktelser, og kjøper vil kunne ha et krav mot selger etter avhendingsloven.",
+              "Hvis kundetiltak ikke lar seg gjennomføre, vil Emera eiendomsmegling ikke kunne bistå med handelen eller foreta oppgjør."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.87,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette i hvitvasking-avsnittet på side 20-21: 'Dersom selger ikke bidrar til at megler får gjennomført løpende kundetiltak underveis i oppdraget, må eiendomsmegler stanse gjennomføringen av transaksjonen. Selger vil i et slikt tilfelle ha misligholdt sine forpliktelser, og kjøper vil kunne ha et krav mot selger etter avhendingsloven.' Og: 'Hvis kundetiltak ikke lar seg gjennomføre, vil Emera eiendomsmegling ikke kunne bistå med handelen eller foreta oppgjør.' Alle tre bevisene er direkte sitert fra dokumentet. Merk at risikobeskrivelsen er korrekt, men det er verdt å merke at dokumentet også omtaler tilsvarende risiko for kjøper (ikke bare selger)."
+        },
+        {
+          "risk": {
+            "risk_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a_risk_010",
+            "description": "Ingen angrerett ved kjøp av fast eiendom: Kjøper har ingen angrerett etter at bud er akseptert, og er bundet av avtalen. Dette innebærer at kjøper ikke kan trekke seg uten risiko for vesentlige økonomiske konsekvenser.",
+            "evidence": [
+              "1. Det eksisterer ingen angrerett ved salg/kjøp av fast eiendom.",
+              "Selger står fritt til å forkaste eller akseptere ethvert bud, og er for eksempel ikke forpliktet til å akseptere høyeste bud."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette i budskjemaets 'Viktige avtalerettslige forhold' på side 31: '1. Det eksisterer ingen angrerett ved salg/kjøp av fast eiendom.' Og: 'Selger står fritt til å forkaste eller akseptere ethvert bud, og er for eksempel ikke forpliktet til å akseptere høyeste bud.' Risikoen om manglende angrerett er klart dokumentert."
+        },
+        {
+          "risk": {
+            "risk_id": "7810f9b2-494d-41f5-b26b-ca8744a81a5a_risk_011",
+            "description": "Kjøper må påregne egen vask før innflytting: Alle boliger leveres som hovedregel kun byggerengjort, og kjøper må påregne ekstra kostnader til vask før innflytting.",
+            "evidence": [
+              "Alle boliger leveres som hovedregel byggerengjort, og kjøper må påregne egen vask før innflytting."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette direkte på side 20 (OM EIENDOMMEN): 'Alle boliger leveres som hovedregel byggerengjort, og kjøper må påregne egen vask før innflytting.' Dette er et eksakt sitat fra dokumentet, og risikoen er fullt ut støttet."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.17647058823529413,
+        "f1": 0.3,
+        "total_support": 34
+      }
+    },
+    "agentic_rag_P+T+R": {
+      "run_id": "a0fe3747-421f-453f-9319-f7723a9b5bac",
+      "system_type": "agentic_rag_P+T+R",
+      "overall_metrics": {
+        "precision": 0.9047619047619048,
+        "recall": 0.5588235294117647,
+        "f1": 0.6909090909090908,
+        "total_support": 34
+      },
+      "matched_risks": 19,
+      "unmatched_predicted": 2,
+      "unmatched_ground_truth": 15,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_006",
+            "description": "Salg av kontraktsposisjon (videresalg) – kjøper 2 overtar alle forpliktelser fra opprinnelig kontrakt og er avhengig av utbyggers godkjenning",
+            "evidence": [
+              "Overdragelsen forutsetter godkjenning fra utbygger.",
+              "Ny kjøper trer inn i den opprinnelige kjøpekontrakten og overtar samtlige rettigheter og forpliktelser fra nåværende kjøper (kjøper 1). Alle forhold knyttet til boligleveransen er regulert i den opprinnelige kontrakten.",
+              "Overdragelsen av rettighetene i kontrakten omfattes av bestemmelsene i kjøpsloven, samt fjerde ledd i avhendingslovens § 1‑1, og bygger for øvrig på alminnelige rettsregler. Den underliggende avtalen som overføres, er underlagt reglene i bustadoppføringslova."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.93,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_001",
+            "description": "Salg av kontraktsposisjon (videresalg) – kjøper overtar alle rettigheter og forpliktelser fra opprinnelig kjøper, inkludert risiko for mangler og forsinkelser fra utbygger som kjøper 1 ikke kan holdes ansvarlig for.",
+            "evidence": [
+              "Ny kjøper trer inn i den opprinnelige kjøpekontrakten og overtar samtlige rettigheter og forpliktelser fra nåværende kjøper (kjøper 1).",
+              "Kjøper 1 kan ikke holdes ansvarlig for mangler eller forsinkelser fra utbyggers side.",
+              "Kjøper er likevel forpliktet til å betale hele merverdien, også i tilfeller hvor mangelen er vesentlig og gir grunnlag for å heve kjøpet med utbygger."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              10,
+              11
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_000",
+            "description": "Forsinket overtakelse – foreløpig og ikke bindende tidspunkt",
+            "evidence": [
+              "Forventet ferdigstillelse er 2. kvartal 2026. Tidspunktet er foreløpig og ikke bindende for Selger. Senere ferdigstillelse utløser ikke dagmulkt eller annet krav på vederlag hos Kjøper.",
+              "Selger tar et særskilt forbehold om det i dag er en uvanlig og svært uforutsigbar markedssituasjon. Det skyldes blant annet senvirkninger av pandemisituasjonen, krigen i Ukraina og et generelt utfordrende marked med renter og prisvekst.",
+              "Selger tar forbehold om å stå fritt til å forskyve fremdriften i prosjektet som følge av slike forhold. Kjøper kan ikke gjøre gjeldende noen krav mot selger på grunn av en slik forskyvning av fremdrift."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_002",
+            "description": "Boligen er ikke ferdigstilt – estimert overtakelse er 2. kvartal 2026, men tidspunktet er foreløpig og ikke bindende for selger. Forsinkelse utløser ikke dagmulkt eller krav på vederlag.",
+            "evidence": [
+              "Estimert overtakelse er 2.kvartal 2026",
+              "Tidspunktet er foreløpig og ikke bindende for Selger. Senere ferdigstillelse utløser ikke dagmulkt eller annet krav på vederlag hos Kjøper.",
+              "Selger tar et særskilt forbehold om det i dag er en uvanlig og svært uforutsigbar markedssituasjon. Det skyldes blant annet senvirkninger av pandemisituasjonen, krigen i Ukraina og et generelt utfordrende marked med renter og prisvekst."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              10,
+              21,
+              22
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_003",
+            "description": "Felleskostnader er stipulerte og ikke endelig fastsatt – kan øke etter overtakelse",
+            "evidence": [
+              "Felleskostnadene er ikke endelig fastsatt, men stipulerte felleskostnader skal dekke sameiets ordinære driftsutgifter. Hvor store kostnadene blir, vil avhenge av hvor mange ytelser sameiet rekvirerer.",
+              "Felleskostnadene er stipulert for første driftsår, og Kjøper er kjent med at justeringer kan forekomme etter endringer i offentlige avgifter, konsumprisindeksutvikling, vedlikeholdsbehov, Eierseksjonssameiets egne vedtak mm.",
+              "Det foreligger pt. ikke regnskap eller budsjett for Eierseksjonssameiet."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_003",
+            "description": "Felleskostnader er ikke endelig fastsatt – stipulerte beløp kan øke etter ferdigstillelse og vedtak i sameiet. Endringer i BRA-i kan påvirke beregningen.",
+            "evidence": [
+              "Felleskostnadene er ikke endelig fastsatt, men stipulerte felleskostnader skal dekke sameiets ordinære driftsutgifter.",
+              "Endringer i BRA‑i vil kunne påvirke beregningen av felleskostnadene.",
+              "Felleskostnadene er stipulert for første driftsår, og Kjøper er kjent med at justeringer kan forekomme etter endringer i offentlige avgifter, konsumprisindeksutvikling, vedlikeholdsbehov, Eierseksjonssameiets egne vedtak mm."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              6,
+              23
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_004",
+            "description": "Eiendomsskatt innføres fra 2026 – ekstra løpende kostnad for kjøper",
+            "evidence": [
+              "Lørenskog kommune har vedtatt/innført eiendomsskatt fra og med 2026. Dette vil faktureres direkte til den enkelte seksjonseier.",
+              "Forutsatt verdi på boligen kr. 5.800.000,‑ vil eiendomsskatt for 2026 utgjøre kr. 3.960,‑ pr. år."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_004",
+            "description": "Eiendomsskatt innføres i Lørenskog fra 2026 og vil faktureres direkte til seksjonseier. Skattesatsen kan øke med inntil én promille per år.",
+            "evidence": [
+              "Lørenskog kommune har vedtatt/ innført eiendomsskatt fra og med 2026. Dette vil faktureres direkte til den enkelte seksjonseier.",
+              "Skattesatsen kan ikke øke med mer enn én promille i året.",
+              "Forutsatt verdi på boligen kr. 5.800.000,‑ vil eiendomsskatt for 2026 utgjøre kr. 3.960,‑ pr. år."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              6,
+              7
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_005",
+            "description": "Parkeringskjeller eies og driftes av tredjepart (Thongård AS) – kjøper har kun bruksrett, ikke eiendomsrett",
+            "evidence": [
+              "Parkeringskjelleren vil ligge i en anleggseiendom som eies og driftes av Thongård AS.",
+              "Parkering vil være i parkeringskjeller under Skårerløkka (inkl. salgstrinn 2 og 3). Parkeringsplasser vil for de som kjøper parkeringsplass bli organisert med bruksretter til anleggseiendommen.",
+              "Selger forbeholder seg retten til fordeling av parkeringsplassene. Selger beholder eiendom-/bruksrett til eventuelle ledige parkeringsplasser ved ferdigstillelse og kan disponere disse fritt, herunder både salg og utleie."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.91,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_005",
+            "description": "Parkeringskjelleren eies og driftes av Thongård AS (ikke sameiet). Ledige parkeringsplasser ved overtakelse tilhører Thongård AS, som fritt kan selge eller leie disse ut. Bruksrett til parkeringsplass kan ikke selges eller leies ut til andre enn seksjonseiere på Skårer Vest felt 8.",
+            "evidence": [
+              "Parkeringskjelleren vil ligge i en anleggseiendom som eies og driftes av Thongård AS.",
+              "Evt. ledige parkeringsplasser ved overtagelsestidspunkt vil tilhøre Thongård AS som beholder eiendoms- og/eller bruksrett til disse. Disse parkeringsplassene vil fritt kunne selges eller leies ut til beboere på området Skårer Vest felt 8.",
+              "Bruksrett til parkeringsplasser kan ikke selges eller leies ut til andre enn seksjonseiere på området Skårer Vest felt 8."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              7,
+              23
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_002",
+            "description": "Foreløpige arealberegninger – endringer i BRA-i kan påvirke felleskostnader",
+            "evidence": [
+              "Kjøper er innforstått med at arealangivelsene i leilighetene er et resultat av beregninger som er foreløpige. Endringer i BRA‑i vil kunne påvirke beregningen av felleskostnadene.",
+              "Leiligheten er ikke ferdigstilt enda og dermed ikke oppmålt. Arealene som er oppgitt i prospekt, prisliste og på tegninger er angitt i BRA‑i (internt bruksareal).",
+              "Kjøper er innforstått med at arealangivelsene på de enkelte rom i leilighetene er et resultat av beregninger og følgelig er foreløpige."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.93,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_007",
+            "description": "Arealangivelser er foreløpige og basert på beregninger – endelig areal er ikke oppmålt. Avvik kan forekomme og påvirke felleskostnader.",
+            "evidence": [
+              "Leiligheten er ikke ferdigstilt enda og dermed ikke oppmålt. Arealene som er oppgitt i prospekt, prisliste og på tegninger er angitt i BRA‑i (internt bruksareal)... og følgelig er foreløpige.",
+              "Kjøper er innforstått med at arealangivelsene i leilighetene er et resultat av beregninger som er foreløpige. Endringer i BRA‑i vil kunne påvirke beregningen av felleskostnadene."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              6,
+              14
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_001",
+            "description": "Selger forbeholder seg retten til endringer i leveransen, materialvalg og fasade uten at kjøper kan kreve prisreduksjon",
+            "evidence": [
+              "Selger forbeholder seg retten til fleksibilitet vedrørende løsning/utforming og materialvalg for fellesarealene, samt farge/materiale på tak og fasade. Fasadeendringer kan forekomme i detaljprosjekteringen.",
+              "Endringer i leveransen, herunder i konstruksjon og materialvalg, som er hensiktsmessige og som ikke forringer leveransekvaliteten, som følge av prisendringer, manglende tilgjengelighet, samt endringer som måtte følge av regelendringer, pålegg eller annet vedtak fra offentlig myndighet, uten at Kjøper kan kreve reduksjon endringer i pris.",
+              "Endringer og justeringer som er hensiktsmessige og nødvendige (for eksempel plassering av kanaler/sjakter) kan forekomme under byggeperioden. Dette kan gi mindre endringer i areal for Eierseksjonen inklusiv terrasse/markterrasse/balkong."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_008",
+            "description": "Selger forbeholder seg retten til endringer i leveransen (konstruksjon, materialvalg, vindusplassering, balkongutforming) uten at kjøper kan kreve prisreduksjon.",
+            "evidence": [
+              "Selger tar forbehold om og har etter egen vurdering rett til endringer i leveransen, herunder i konstruksjon og materialvalg, som er hensiktsmessige og som ikke forringer leveransekvaliteten, som følge av prisendringer, manglende tilgjengelighet, samt endringer som måtte følge av regelendringer, pålegg eller annet vedtak fra offentlig myndighet, uten at Kjøper kan kreve reduksjon endringer i pris.",
+              "Det kan også forekomme justeringer av vindusplassering/-størrelse samt endelig utforming av private balkonger/terrasser/markterrasser og lignende uten at Kjøper kan kreve prisendringer."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              20,
+              21
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_013",
+            "description": "Tomtens endelige størrelse er ikke avklart – forbehold om fradeling og oppmåling",
+            "evidence": [
+              "Utbygger tar forbehold om tomtens endelige størrelse inntil fradeling og oppmåling er gjennomført.",
+              "Det er planlagt at tomtene til Skårerløkka salgstrinn 2 og 3 etableres som en felles eiet tomt under Sameiet Skårerløkka 2."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.83,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_009",
+            "description": "Tomtens endelige størrelse og avgrensning er ikke avklart – utbygger tar forbehold om tomtens endelige størrelse inntil fradeling og oppmåling er gjennomført.",
+            "evidence": [
+              "Utbygger tar forbehold om tomtens endelige størrelse inntil fradeling og oppmåling er gjennomført.",
+              "Det tas også forbehold om endelig størrelse og avgrensning på Eierseksjonssameiets tomt, og Kjøper aksepterer at avvik kan forekomme."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              7,
+              20
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_010",
+            "description": "Sameiebrøk og endelig seksjonsnummer ikke fastsatt – usikkerhet om fordeling av kostnader og rettigheter",
+            "evidence": [
+              "Eierseksjonens sameiebrøk bestemmes i forbindelse med kommende seksjonering.",
+              "Selger står fritt til å seksjonere Eierseksjonssameiet, å etablere og organisere flere eierseksjonssameier, samt å tildele og plassere sportsbod etter egen vurdering.",
+              "Selger står fritt til å endre leilighetsnummer og det tas forbehold om eventuell endring av antall seksjoner i Eierseksjonssameiet, herunder både bolig og næring."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_010",
+            "description": "Sameiebrøk er ikke fastsatt – dette bestemmes først ved kommende seksjonering, og kan påvirke fordeling av felleskostnader og stemmerett.",
+            "evidence": [
+              "Eierseksjonens sameiebrøk bestemmes i forbindelse med kommende seksjonering."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_014",
+            "description": "Hjemmelsoverføring kan bli forsinket som følge av offentlig saksbehandling ved seksjonering",
+            "evidence": [
+              "Hjemmelsoverføring kan bli forsinket som følge av offentlige myndigheters saksbehandlingstid ved deling/sammenføyning/seksjonering av Eiendommen.",
+              "Tinglysing finner ikke sted før Kjøper har innbetalt fullt oppgjør."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_011",
+            "description": "Endelig adresse og matrikkelbetegnelse (gnr., bnr., snr.) er ikke tildelt – dette skjer først etter seksjonering og innflytting, noe som kan forsinke tinglysing og hjemmelsoverføring.",
+            "evidence": [
+              "Eierseksjonen vil etter gjennomført seksjonering bli betegnet ved et eget gårdsnummer (gnr.), bruksnummer (bnr.) og seksjonsnummer (snr.). Endelig adresse vil bli tildelt av kommunen i forbindelse med innflytting.",
+              "Hjemmelsoverføring kan bli forsinket som følge av offentlige myndigheters saksbehandlingstid ved deling/sammenføyning/seksjonering av Eiendommen."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              20,
+              21
+            ],
+            "details": {
+              "confidence": 0.87
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_009",
+            "description": "Oppvarming og varmtvann leveres av ekstern tredjepart (Smartly) – ekstra kostnad utover felleskostnader",
+            "evidence": [
+              "Oppvarming og varmtvann leveres av Smartly og kommer i tillegg til felleskostnadene. Smartly sender egen faktura til seksjonseier hver måned. Denne inneholder systemkost, kostnader for forbruk av både varme og varmt vann, og i tillegg kostnader for fellesoppvarming/felles vann fordelt per leilighet."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.87,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_012",
+            "description": "Oppvarming og varmtvann leveres av ekstern leverandør (Smartly) og faktureres separat – kostnaden er ikke inkludert i felleskostnadene og kan variere med forbruk og markedspriser.",
+            "evidence": [
+              "Oppvarming og varmtvann leveres av Smartly og kommer i tillegg til felleskostnadene. Smartly sender egen faktura til seksjonseier hver måned. Denne inneholder systemkost, kostnader for forbruk av både varme og varmt vann, og i tillegg kostnader for fellesoppvarming/felles vann fordelt per leilighet."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              6,
+              9
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_017",
+            "description": "Anleggsmaskiner og utstyr kan stå på eiendommen inntil prosjektet er ferdigstilt – ulempe for kjøper",
+            "evidence": [
+              "Inntil prosjektet er ferdigstilt, har Selger rett til å ha stående anleggsmaskiner, materialer og utstyr på Eiendommen og i deler av fellesarealene."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_014",
+            "description": "Selger (utbygger) har rett til å forskyve fremdriften i prosjektet som følge av markedssituasjon (pandemi, krig, renter, prisvekst) uten at kjøper kan gjøre krav gjeldende.",
+            "evidence": [
+              "Selger tar et særskilt forbehold om det i dag er en uvanlig og svært uforutsigbar markedssituasjon. Det skyldes blant annet senvirkninger av pandemisituasjonen, krigen i Ukraina og et generelt utfordrende marked med renter og prisvekst.",
+              "Selger tar forbehold om å stå fritt til å forskyve fremdriften i prosjektet som følge av slike forhold. Kjøper kan ikke gjøre gjeldende noen krav mot selger på grunn av en slik forskyvning av fremdrift."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              22
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_010",
+            "description": "Sameiebrøk og endelig seksjonsnummer ikke fastsatt – usikkerhet om fordeling av kostnader og rettigheter",
+            "evidence": [
+              "Eierseksjonens sameiebrøk bestemmes i forbindelse med kommende seksjonering.",
+              "Selger står fritt til å seksjonere Eierseksjonssameiet, å etablere og organisere flere eierseksjonssameier, samt å tildele og plassere sportsbod etter egen vurdering.",
+              "Selger står fritt til å endre leilighetsnummer og det tas forbehold om eventuell endring av antall seksjoner i Eierseksjonssameiet, herunder både bolig og næring."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_018",
+            "description": "Selger forbeholder seg retten til å endre leilighetsnummer og antall seksjoner i sameiet (inkl. bolig og næring), noe som kan påvirke sammensetningen av sameiet.",
+            "evidence": [
+              "Selger står fritt til å endre leilighetsnummer og det tas forbehold om eventuell endring av antall seksjoner i Eierseksjonssameiet, herunder både bolig og næring."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              23
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_011",
+            "description": "Vedtekter for sameiet er ikke utarbeidet og ettersendes – kjøper kjenner ikke de endelige reglene ved kjøpstidspunktet",
+            "evidence": [
+              "Vedtekter vil bli utarbeidet av Selger i samarbeid med forretningsfører og ettersendes når klart.",
+              "Budsjett inklusiv forslag til fastsettelse av fellesutgifter for første driftsår vil bli utarbeidet av Selger i samarbeid med forretningsfører og legges frem på konstituerende sameiermøte."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_019",
+            "description": "Vedtekter for sameiet er ikke utarbeidet på salgstidspunktet – disse utarbeides av selger i samarbeid med forretningsfører og ettersendes, noe som gir kjøper begrenset innsyn i sameiets fremtidige regler.",
+            "evidence": [
+              "Vedtekter vil bli utarbeidet av Selger i samarbeid med forretningsfører og ettersendes når klart.",
+              "Det foreligger pt. ikke regnskap eller budsjett for Eierseksjonssameiet."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              23
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_012",
+            "description": "Selger har rett til å bestemme leverandører for sameiet – kjøper har ingen innflytelse på valg av tjenesteleverandører",
+            "evidence": [
+              "Selger har rett til å bestemme leverandører for Eierseksjonssameiet (bl.a. strøm, vaktmester, vedlikehold av tekniske installasjoner, tv/bredbånd)."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_020",
+            "description": "Selger har rett til å bestemme leverandører for sameiet (strøm, vaktmester, vedlikehold, TV/bredbånd) uten at sameiet nødvendigvis kan velge fritt.",
+            "evidence": [
+              "Selger har rett til å bestemme leverandører for Eierseksjonssameiet (bl.a. strøm, vaktmester, vedlikehold av tekniske installasjoner, tv/bredbånd)."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              23
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_007",
+            "description": "Ingen radonmåling er utført",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om radonmåling med mindre boligen er helt eller delvis utleid."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_021",
+            "description": "Radonmåling er ikke utført – selger har ikke foretatt radonmåling, og det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              9
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_015",
+            "description": "Kjøper er solidarisk ansvarlig overfor sameiets kreditorer i henhold til sameiebrøk",
+            "evidence": [
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk. Ved manglende betaling av fellesutgifter har sameiet legal panterett i den enkelte eierseksjon, begrenset til inntil 2 ganger folketrygdens grunnbeløp."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.84,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_027",
+            "description": "Kjøper er ansvarlig overfor sameiets kreditorer i forhold til sin sameiebrøk (solidaransvar), og sameiet har legal panterett i seksjonen for inntil 2 ganger folketrygdens grunnbeløp ved manglende betaling av fellesutgifter.",
+            "evidence": [
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.",
+              "Ved manglende betaling av fellesutgifter har sameiet legal panterett i den enkelte eierseksjon, begrenset til inntil 2 ganger folketrygdens grunnbeløp."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              9
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_008",
+            "description": "Gjenstående arbeider på fellesarealer ved overtakelse – kjøper overtar bolig før prosjektet er ferdigstilt",
+            "evidence": [
+              "Kjøper er kjent med og aksepterer at boligen vil kunne ferdigstilles før det totale prosjektet kan ferdigstilles.",
+              "Det vil kunne gjenstå arbeider på fellesarealer frem til prosjektet som helhet er ferdigstilt.",
+              "Avhengig av årstid vil utomhusarbeidene kunne bli ferdigstilt og overtakelsesforretning for disse avholdt etter Kjøpers overtakelse av boligen."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_030",
+            "description": "Utomhusarbeider og fellesarealer kan gjenstå ved kjøpers overtakelse av boligen – selger kan ferdigstille disse etter overtakelse.",
+            "evidence": [
+              "Kjøper er kjent med at det vil kunne gjenstå arbeider på fellesarealer frem til prosjektet som helhet er ferdigstilt.",
+              "Avhengig av årstid vil utomhusarbeidene kunne bli ferdigstilt og overtakelsesforretning for disse avholdt etter Kjøpers overtakelse av boligen."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              22
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_016",
+            "description": "Energiklasse er ikke endelig fastsatt – beregnes først før innflytting",
+            "evidence": [
+              "Leilighetene leveres med energisertifikat og klassen på den enkelte leiligheten blir avgjort ved beregninger før innflytting. Ved senere salg av leiligheten er det energibruken til hver enkelt seksjonseier som avgjør hvilken klasse den kommer i."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_034",
+            "description": "Energiklasse B er stipulert, men endelig energiklasse avgjøres ved beregninger før innflytting og kan avvike. Det er den enkelte seksjonseiers energibruk som avgjør endelig klasse.",
+            "evidence": [
+              "Leiligheter vil få energiklasse B.",
+              "Leilighetene leveres med energisertifikat og klassen på den enkelte leiligheten blir avgjort ved beregninger før innflytting. Ved senere salg av leiligheten er det energibruken til hver enkelt seksjonseier som avgjør hvilken klasse den kommer i."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              9
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_018",
+          "description": "Nye servitutter og erklæringer kan påheftes eiendommen etter kjøp",
+          "evidence": [
+            "Kjøper aksepterer at det på Eiendommen kan påheftes servitutter/erklæringer som måtte bli påkrevd av offentlig myndighet, samt andre servitutter/erklæringer vedrørende atkomst til Eierseksjonssameiets fellesarealer for tilstøtende eiendommer, drift og vedlikehold av fellesområder og drift og vedlikehold av nettverk/energi/vann og avløp mv.",
+            "Kjøper plikter nødvendig å medvirke ved sin underskrift på slike erklæringer/servitutter."
+          ],
+          "source_documents": [
+            "d157_d157"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.82,
+          "details": {}
+        },
+        {
+          "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_019",
+          "description": "Tilvalgsfrister er allerede utløpt – kjøper av kontraktsposisjon kan ikke gjøre tilvalg",
+          "evidence": [
+            "Det er ikke lenger mulig å gjøre endringer eller tilvalg for leiligheten.",
+            "Tilvalg for trinn 3 er allerede utført innenfor de aktuelle tilvalgsfrister.",
+            "Tilvalg trinn 2 og trinn 3 er allerede utført innenfor de aktuelle tilvalgsfrister."
+          ],
+          "source_documents": [
+            "d157_d157"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.92,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d157_006",
+          "description": "Parkeringskjelleren deles med Triaden kjøpesenter og andre boligselskaper, noe som kan medføre kapasitets- og tilgjengelighetsutfordringer for beboere.",
+          "evidence": [
+            "Parkeringskjelleren vil også benyttes til parkering for Triaden kjøpesenter og andre boligselskaper på Skårerløkka/Triaden.",
+            "Boligparkeringen planlegges i egen etasje, adskilt fra kjøpesenterets parkeringsarealer. Parkering for næring vil evt. ligge i samme etasje som boligparkeringen, i så tilfelle vil det lages et fysisk skille mellom parkeringene."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            7,
+            14
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d157_013",
+          "description": "Grunnpakke kabel-TV og fiber (ca. kr 299/mnd) kommer i tillegg til felleskostnadene og kan reguleres med KPI etter år 1.",
+          "evidence": [
+            "Grunnpakke kabel‑tv og fiber kommer i tillegg med ca. kr 299,‑/ mnd. Prisen kan bli regulert (KPI) etter år 1."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            6
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d157_015",
+          "description": "Første delinnbetaling (kr 100 000) må være fri egenkapital – det er ikke mulig å få sikkerhet i boligen ved delinnbetaling 1, noe som kan være en likviditetsutfordring for kjøper.",
+          "evidence": [
+            "Første delinnbetaling må være fri egenkapital da det ikke er mulig å få sikkerhet i boligen ved delinnbetaling 1.",
+            "Det må avklares med banken før bud inngis at det kan tas sikkerhet i en annen bolig ved delinnbetaling 1."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            10
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d157_016",
+          "description": "Overdragelsen av kontraktsposisjonen forutsetter godkjenning fra utbygger og aksept fra garantistiller – dersom dette ikke oppnås, kan handelen ikke gjennomføres.",
+          "evidence": [
+            "Overdragelsen forutsetter godkjenning fra utbygger, samt aksept fra garantistiller om transport av den opprinnelige garantien."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            10
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d157_017",
+          "description": "Garanti etter buofl. § 12 er beregnet av opprinnelig kjøpesum mellom selger og kjøper 1 – ikke av den høyere prisen kjøper 2 betaler, noe som gir lavere garantidekning i forhold til faktisk investering.",
+          "evidence": [
+            "Garantien etter buofl. § 12, som minst lyder på 3% av vederlaget i perioden før overtagelse og 5 % i perioden frem til 5 år etter overtagelsen, er beregnet av opprinnelig kjøpesum mellom Selger og Kjøper 1 i henhold til kjøpekontrakt."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            10
+          ],
+          "details": {
+            "confidence": 0.92
+          }
+        },
+        {
+          "risk_id": "gt_d157_022",
+          "description": "Formuesverdi er ikke beregnet på salgstidspunktet – dette kan gi usikkerhet om fremtidig formuesskatt og skattemessig behandling.",
+          "evidence": [
+            "Formuesverdien er ikke beregnet. Skatteetaten vil beregne en boligverdi (beregnet markedsverdi for bolig) basert på SSBs statistiske opplysninger om omsatte boliger. Beregningen vil skje i forbindelse med første skattemelding etter overtakelse."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            7
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        },
+        {
+          "risk_id": "gt_d157_023",
+          "description": "Balkonger uten tak kan samle vann etter regnvær, og drypp fra overliggende balkong og rekkverk vil forekomme.",
+          "evidence": [
+            "Balkonger som ikke har tak eller overliggende balkong vil utformes med sluk. Balkonger er som en utvendig konstruksjon å anse og mindre ansamlinger av vann vil derfor kunne oppstå på gulvflaten etter regnvær. Det samme vil gjelde drypp fra overliggende balkong og rekkverk."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            9
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d157_024",
+          "description": "Enkelte vinduer er faste og kan ikke åpnes – disse må pusses fra terrasse, balkong eller fra vindusfelt ved siden av, noe som kan være upraktisk og utgjøre en sikkerhetsrisiko.",
+          "evidence": [
+            "Enkelte vinduer er faste og kan ikke åpnes. Disse vinduene må pusses fra terrasse, balkong eller fra vindusfelt ved siden av."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            18
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d157_025",
+          "description": "Tekniske føringer og rør vil være synlige i leiligheten (nisje for vaskemaskin/tørketrommel), og luker for vann- og varmetekniske installasjoner kan plasseres i primærrom.",
+          "evidence": [
+            "I leiligheter med teknisk nisje med plass til vaskemaskin/tørketrommel vil det være synlige føringer/rør.",
+            "Luker for vann og varmetekniske installasjoner er primært plassert i sekundærrom/nisjen. Det kan være unntak hvor luker plasseres i primærrom, for eksempel ved vannutkaster på terrasse eller lignende."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            8,
+            15
+          ],
+          "details": {
+            "confidence": 0.72
+          }
+        },
+        {
+          "risk_id": "gt_d157_026",
+          "description": "Parkeringsplasser kan ha lavere takhøyde enn 2,1 m på grunn av tekniske føringer (avløpsrør, søyler), noe som kan begrense bruken for høye kjøretøy.",
+          "evidence": [
+            "Parkeringer vil generelt holde minimum 2,1m høyde. Det vil kunne være enkelte tekniske føringer med lavere høyde, for eksempel pga. avløpsrør/føringer langs vegger og søyler."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            7,
+            14
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        },
+        {
+          "risk_id": "gt_d157_028",
+          "description": "Ingen kan eie mer enn to boligseksjoner i sameiet – seksjoner eid av nærstående eller gjennom firma regnes også med, noe som begrenser investeringsmuligheter.",
+          "evidence": [
+            "Det informeres om at ingen kan eie mer enn to boligseksjoner i sameiet, i henhold til eierseksjonsloven § 23. Seksjoner som eies av nærstående eller gjennom et firma regnes også med."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            9
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d157_029",
+          "description": "Korttidsutleie er begrenset til 90 døgn per år i henhold til eierseksjonsloven § 24, og denne grensen kan endres i vedtektene (mellom 60 og 120 døgn).",
+          "evidence": [
+            "Korttidsutleie er tillatt i inntil 90 døgn per år, jf. eierseksjonsloven § 24. Denne grensen kan endres i vedtektene, men den må være satt mellom 60 og 120 døgn."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            9
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d157_031",
+          "description": "Grunnboksutskrift vedlagt kjøpekontrakten er datert 04.10.2023 – over to år gammel på salgstidspunktet (januar 2026), noe som innebærer risiko for at heftelser eller endringer ikke er oppdatert.",
+          "evidence": [
+            "Grunnboksutskrifter a jour 04.10.2023 (vedlegg til kjøpekontrakten, jf. punkt 17.1)"
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            24
+          ],
+          "details": {
+            "confidence": 0.83
+          }
+        },
+        {
+          "risk_id": "gt_d157_032",
+          "description": "Situasjonsplan og utomhusplan er datert henholdsvis 19.03.2021 og 20.11.2023, begge med forbehold om endringer – disse kan avvike fra faktisk utførelse.",
+          "evidence": [
+            "Situasjonsplan datert 19.03.2021 (med forbehold om endringer)",
+            "Utomhusplan datert 20.11.2023 (med forbehold om endringer)"
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            24
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        },
+        {
+          "risk_id": "gt_d157_033",
+          "description": "Byggetrinn BT6 (kontor, næring og boliger for utleie) er under utbygging i nærområdet, noe som kan medføre støy, støv og anleggsarbeid i en periode etter innflytting.",
+          "evidence": [
+            "Forøvrig pågår det også utbygging av byggetrinn BT6. BT6 vil bestå av kontor, næring og boliger for utleie."
+          ],
+          "source_documents": [
+            "d157.pdf"
+          ],
+          "source_pages": [
+            13
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_018",
+            "description": "Nye servitutter og erklæringer kan påheftes eiendommen etter kjøp",
+            "evidence": [
+              "Kjøper aksepterer at det på Eiendommen kan påheftes servitutter/erklæringer som måtte bli påkrevd av offentlig myndighet, samt andre servitutter/erklæringer vedrørende atkomst til Eierseksjonssameiets fellesarealer for tilstøtende eiendommer, drift og vedlikehold av fellesområder og drift og vedlikehold av nettverk/energi/vann og avløp mv.",
+              "Kjøper plikter nødvendig å medvirke ved sin underskrift på slike erklæringer/servitutter."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter denne risikoen eksplisitt i kjøpekontraktens punkt 12.1: 'Kjøper aksepterer at det på Eiendommen kan påheftes servitutter/erklæringer som måtte bli påkrevd av offentlig myndighet, samt andre servitutter/erklæringer vedrørende atkomst til Eierseksjonssameiets fellesarealer for tilstøtende eiendommer, drift og vedlikehold av fellesområder og drift og vedlikehold av nettverk/energi/vann og avløp mv. Kjøper plikter om nødvendig å medvirke ved sin underskrift på slike erklæringer/servitutter.' Ordlyden i evidensen samsvarer nøyaktig med dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "a0fe3747-421f-453f-9319-f7723a9b5bac_risk_019",
+            "description": "Tilvalgsfrister er allerede utløpt – kjøper av kontraktsposisjon kan ikke gjøre tilvalg",
+            "evidence": [
+              "Det er ikke lenger mulig å gjøre endringer eller tilvalg for leiligheten.",
+              "Tilvalg for trinn 3 er allerede utført innenfor de aktuelle tilvalgsfrister.",
+              "Tilvalg trinn 2 og trinn 3 er allerede utført innenfor de aktuelle tilvalgsfrister."
+            ],
+            "source_documents": [
+              "d157_d157"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter denne risikoen på flere steder. I tilvalgsdelen for denne enheten (K301) står det eksplisitt: 'Det er ikke lenger mulig å gjøre endringer eller tilvalg for leiligheten.' I leveransebeskrivelsen for Trinn 2 og 3 fremgår det gjentatte ganger: 'Tilvalg trinn 2 og trinn 3 er allerede utført innenfor de aktuelle tilvalgs frister.' og 'Tilvalg for trinn 3 er allerede utført innenfor de aktuelle tilvalgs frister.' Dette bekrefter at en kjøper av kontraktsposisjonen ikke kan gjøre tilvalg, da fristene allerede er utløpt."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.5588235294117647,
+        "f1": 0.7169811320754718,
+        "total_support": 34
+      }
+    },
+    "ground_truth": {
+      "run_id": "dc25041f-aa7a-46b0-b5c6-bf8720dffa51_gt",
+      "system_type": "ground_truth",
+      "overall_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "total_support": 34
+      },
+      "matched_risks": 34,
+      "unmatched_predicted": 0,
+      "unmatched_ground_truth": 0,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_001",
+            "description": "Salg av kontraktsposisjon (videresalg) – kjøper overtar alle rettigheter og forpliktelser fra opprinnelig kjøper, inkludert risiko for mangler og forsinkelser fra utbygger som kjøper 1 ikke kan holdes ansvarlig for.",
+            "evidence": [
+              "Ny kjøper trer inn i den opprinnelige kjøpekontrakten og overtar samtlige rettigheter og forpliktelser fra nåværende kjøper (kjøper 1).",
+              "Kjøper 1 kan ikke holdes ansvarlig for mangler eller forsinkelser fra utbyggers side.",
+              "Kjøper er likevel forpliktet til å betale hele merverdien, også i tilfeller hvor mangelen er vesentlig og gir grunnlag for å heve kjøpet med utbygger."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              10,
+              11
+            ],
+            "confidence": 0.97,
+            "details": {
+              "confidence": 0.97
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_001",
+            "description": "Salg av kontraktsposisjon (videresalg) – kjøper overtar alle rettigheter og forpliktelser fra opprinnelig kjøper, inkludert risiko for mangler og forsinkelser fra utbygger som kjøper 1 ikke kan holdes ansvarlig for.",
+            "evidence": [
+              "Ny kjøper trer inn i den opprinnelige kjøpekontrakten og overtar samtlige rettigheter og forpliktelser fra nåværende kjøper (kjøper 1).",
+              "Kjøper 1 kan ikke holdes ansvarlig for mangler eller forsinkelser fra utbyggers side.",
+              "Kjøper er likevel forpliktet til å betale hele merverdien, også i tilfeller hvor mangelen er vesentlig og gir grunnlag for å heve kjøpet med utbygger."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              10,
+              11
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_002",
+            "description": "Boligen er ikke ferdigstilt – estimert overtakelse er 2. kvartal 2026, men tidspunktet er foreløpig og ikke bindende for selger. Forsinkelse utløser ikke dagmulkt eller krav på vederlag.",
+            "evidence": [
+              "Estimert overtakelse er 2.kvartal 2026",
+              "Tidspunktet er foreløpig og ikke bindende for Selger. Senere ferdigstillelse utløser ikke dagmulkt eller annet krav på vederlag hos Kjøper.",
+              "Selger tar et særskilt forbehold om det i dag er en uvanlig og svært uforutsigbar markedssituasjon. Det skyldes blant annet senvirkninger av pandemisituasjonen, krigen i Ukraina og et generelt utfordrende marked med renter og prisvekst."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              10,
+              21,
+              22
+            ],
+            "confidence": 0.97,
+            "details": {
+              "confidence": 0.97
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_002",
+            "description": "Boligen er ikke ferdigstilt – estimert overtakelse er 2. kvartal 2026, men tidspunktet er foreløpig og ikke bindende for selger. Forsinkelse utløser ikke dagmulkt eller krav på vederlag.",
+            "evidence": [
+              "Estimert overtakelse er 2.kvartal 2026",
+              "Tidspunktet er foreløpig og ikke bindende for Selger. Senere ferdigstillelse utløser ikke dagmulkt eller annet krav på vederlag hos Kjøper.",
+              "Selger tar et særskilt forbehold om det i dag er en uvanlig og svært uforutsigbar markedssituasjon. Det skyldes blant annet senvirkninger av pandemisituasjonen, krigen i Ukraina og et generelt utfordrende marked med renter og prisvekst."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              10,
+              21,
+              22
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_003",
+            "description": "Felleskostnader er ikke endelig fastsatt – stipulerte beløp kan øke etter ferdigstillelse og vedtak i sameiet. Endringer i BRA-i kan påvirke beregningen.",
+            "evidence": [
+              "Felleskostnadene er ikke endelig fastsatt, men stipulerte felleskostnader skal dekke sameiets ordinære driftsutgifter.",
+              "Endringer i BRA‑i vil kunne påvirke beregningen av felleskostnadene.",
+              "Felleskostnadene er stipulert for første driftsår, og Kjøper er kjent med at justeringer kan forekomme etter endringer i offentlige avgifter, konsumprisindeksutvikling, vedlikeholdsbehov, Eierseksjonssameiets egne vedtak mm."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              6,
+              23
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_003",
+            "description": "Felleskostnader er ikke endelig fastsatt – stipulerte beløp kan øke etter ferdigstillelse og vedtak i sameiet. Endringer i BRA-i kan påvirke beregningen.",
+            "evidence": [
+              "Felleskostnadene er ikke endelig fastsatt, men stipulerte felleskostnader skal dekke sameiets ordinære driftsutgifter.",
+              "Endringer i BRA‑i vil kunne påvirke beregningen av felleskostnadene.",
+              "Felleskostnadene er stipulert for første driftsår, og Kjøper er kjent med at justeringer kan forekomme etter endringer i offentlige avgifter, konsumprisindeksutvikling, vedlikeholdsbehov, Eierseksjonssameiets egne vedtak mm."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              6,
+              23
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_004",
+            "description": "Eiendomsskatt innføres i Lørenskog fra 2026 og vil faktureres direkte til seksjonseier. Skattesatsen kan øke med inntil én promille per år.",
+            "evidence": [
+              "Lørenskog kommune har vedtatt/ innført eiendomsskatt fra og med 2026. Dette vil faktureres direkte til den enkelte seksjonseier.",
+              "Skattesatsen kan ikke øke med mer enn én promille i året.",
+              "Forutsatt verdi på boligen kr. 5.800.000,‑ vil eiendomsskatt for 2026 utgjøre kr. 3.960,‑ pr. år."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              6,
+              7
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_004",
+            "description": "Eiendomsskatt innføres i Lørenskog fra 2026 og vil faktureres direkte til seksjonseier. Skattesatsen kan øke med inntil én promille per år.",
+            "evidence": [
+              "Lørenskog kommune har vedtatt/ innført eiendomsskatt fra og med 2026. Dette vil faktureres direkte til den enkelte seksjonseier.",
+              "Skattesatsen kan ikke øke med mer enn én promille i året.",
+              "Forutsatt verdi på boligen kr. 5.800.000,‑ vil eiendomsskatt for 2026 utgjøre kr. 3.960,‑ pr. år."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              6,
+              7
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_005",
+            "description": "Parkeringskjelleren eies og driftes av Thongård AS (ikke sameiet). Ledige parkeringsplasser ved overtakelse tilhører Thongård AS, som fritt kan selge eller leie disse ut. Bruksrett til parkeringsplass kan ikke selges eller leies ut til andre enn seksjonseiere på Skårer Vest felt 8.",
+            "evidence": [
+              "Parkeringskjelleren vil ligge i en anleggseiendom som eies og driftes av Thongård AS.",
+              "Evt. ledige parkeringsplasser ved overtagelsestidspunkt vil tilhøre Thongård AS som beholder eiendoms- og/eller bruksrett til disse. Disse parkeringsplassene vil fritt kunne selges eller leies ut til beboere på området Skårer Vest felt 8.",
+              "Bruksrett til parkeringsplasser kan ikke selges eller leies ut til andre enn seksjonseiere på området Skårer Vest felt 8."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              7,
+              23
+            ],
+            "confidence": 0.93,
+            "details": {
+              "confidence": 0.93
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_005",
+            "description": "Parkeringskjelleren eies og driftes av Thongård AS (ikke sameiet). Ledige parkeringsplasser ved overtakelse tilhører Thongård AS, som fritt kan selge eller leie disse ut. Bruksrett til parkeringsplass kan ikke selges eller leies ut til andre enn seksjonseiere på Skårer Vest felt 8.",
+            "evidence": [
+              "Parkeringskjelleren vil ligge i en anleggseiendom som eies og driftes av Thongård AS.",
+              "Evt. ledige parkeringsplasser ved overtagelsestidspunkt vil tilhøre Thongård AS som beholder eiendoms- og/eller bruksrett til disse. Disse parkeringsplassene vil fritt kunne selges eller leies ut til beboere på området Skårer Vest felt 8.",
+              "Bruksrett til parkeringsplasser kan ikke selges eller leies ut til andre enn seksjonseiere på området Skårer Vest felt 8."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              7,
+              23
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_006",
+            "description": "Parkeringskjelleren deles med Triaden kjøpesenter og andre boligselskaper, noe som kan medføre kapasitets- og tilgjengelighetsutfordringer for beboere.",
+            "evidence": [
+              "Parkeringskjelleren vil også benyttes til parkering for Triaden kjøpesenter og andre boligselskaper på Skårerløkka/Triaden.",
+              "Boligparkeringen planlegges i egen etasje, adskilt fra kjøpesenterets parkeringsarealer. Parkering for næring vil evt. ligge i samme etasje som boligparkeringen, i så tilfelle vil det lages et fysisk skille mellom parkeringene."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              7,
+              14
+            ],
+            "confidence": 0.82,
+            "details": {
+              "confidence": 0.82
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_006",
+            "description": "Parkeringskjelleren deles med Triaden kjøpesenter og andre boligselskaper, noe som kan medføre kapasitets- og tilgjengelighetsutfordringer for beboere.",
+            "evidence": [
+              "Parkeringskjelleren vil også benyttes til parkering for Triaden kjøpesenter og andre boligselskaper på Skårerløkka/Triaden.",
+              "Boligparkeringen planlegges i egen etasje, adskilt fra kjøpesenterets parkeringsarealer. Parkering for næring vil evt. ligge i samme etasje som boligparkeringen, i så tilfelle vil det lages et fysisk skille mellom parkeringene."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              7,
+              14
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_007",
+            "description": "Arealangivelser er foreløpige og basert på beregninger – endelig areal er ikke oppmålt. Avvik kan forekomme og påvirke felleskostnader.",
+            "evidence": [
+              "Leiligheten er ikke ferdigstilt enda og dermed ikke oppmålt. Arealene som er oppgitt i prospekt, prisliste og på tegninger er angitt i BRA‑i (internt bruksareal)... og følgelig er foreløpige.",
+              "Kjøper er innforstått med at arealangivelsene i leilighetene er et resultat av beregninger som er foreløpige. Endringer i BRA‑i vil kunne påvirke beregningen av felleskostnadene."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              6,
+              14
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_007",
+            "description": "Arealangivelser er foreløpige og basert på beregninger – endelig areal er ikke oppmålt. Avvik kan forekomme og påvirke felleskostnader.",
+            "evidence": [
+              "Leiligheten er ikke ferdigstilt enda og dermed ikke oppmålt. Arealene som er oppgitt i prospekt, prisliste og på tegninger er angitt i BRA‑i (internt bruksareal)... og følgelig er foreløpige.",
+              "Kjøper er innforstått med at arealangivelsene i leilighetene er et resultat av beregninger som er foreløpige. Endringer i BRA‑i vil kunne påvirke beregningen av felleskostnadene."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              6,
+              14
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_008",
+            "description": "Selger forbeholder seg retten til endringer i leveransen (konstruksjon, materialvalg, vindusplassering, balkongutforming) uten at kjøper kan kreve prisreduksjon.",
+            "evidence": [
+              "Selger tar forbehold om og har etter egen vurdering rett til endringer i leveransen, herunder i konstruksjon og materialvalg, som er hensiktsmessige og som ikke forringer leveransekvaliteten, som følge av prisendringer, manglende tilgjengelighet, samt endringer som måtte følge av regelendringer, pålegg eller annet vedtak fra offentlig myndighet, uten at Kjøper kan kreve reduksjon endringer i pris.",
+              "Det kan også forekomme justeringer av vindusplassering/-størrelse samt endelig utforming av private balkonger/terrasser/markterrasser og lignende uten at Kjøper kan kreve prisendringer."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              20,
+              21
+            ],
+            "confidence": 0.92,
+            "details": {
+              "confidence": 0.92
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_008",
+            "description": "Selger forbeholder seg retten til endringer i leveransen (konstruksjon, materialvalg, vindusplassering, balkongutforming) uten at kjøper kan kreve prisreduksjon.",
+            "evidence": [
+              "Selger tar forbehold om og har etter egen vurdering rett til endringer i leveransen, herunder i konstruksjon og materialvalg, som er hensiktsmessige og som ikke forringer leveransekvaliteten, som følge av prisendringer, manglende tilgjengelighet, samt endringer som måtte følge av regelendringer, pålegg eller annet vedtak fra offentlig myndighet, uten at Kjøper kan kreve reduksjon endringer i pris.",
+              "Det kan også forekomme justeringer av vindusplassering/-størrelse samt endelig utforming av private balkonger/terrasser/markterrasser og lignende uten at Kjøper kan kreve prisendringer."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              20,
+              21
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_009",
+            "description": "Tomtens endelige størrelse og avgrensning er ikke avklart – utbygger tar forbehold om tomtens endelige størrelse inntil fradeling og oppmåling er gjennomført.",
+            "evidence": [
+              "Utbygger tar forbehold om tomtens endelige størrelse inntil fradeling og oppmåling er gjennomført.",
+              "Det tas også forbehold om endelig størrelse og avgrensning på Eierseksjonssameiets tomt, og Kjøper aksepterer at avvik kan forekomme."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              7,
+              20
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_009",
+            "description": "Tomtens endelige størrelse og avgrensning er ikke avklart – utbygger tar forbehold om tomtens endelige størrelse inntil fradeling og oppmåling er gjennomført.",
+            "evidence": [
+              "Utbygger tar forbehold om tomtens endelige størrelse inntil fradeling og oppmåling er gjennomført.",
+              "Det tas også forbehold om endelig størrelse og avgrensning på Eierseksjonssameiets tomt, og Kjøper aksepterer at avvik kan forekomme."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              7,
+              20
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_010",
+            "description": "Sameiebrøk er ikke fastsatt – dette bestemmes først ved kommende seksjonering, og kan påvirke fordeling av felleskostnader og stemmerett.",
+            "evidence": [
+              "Eierseksjonens sameiebrøk bestemmes i forbindelse med kommende seksjonering."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_010",
+            "description": "Sameiebrøk er ikke fastsatt – dette bestemmes først ved kommende seksjonering, og kan påvirke fordeling av felleskostnader og stemmerett.",
+            "evidence": [
+              "Eierseksjonens sameiebrøk bestemmes i forbindelse med kommende seksjonering."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_011",
+            "description": "Endelig adresse og matrikkelbetegnelse (gnr., bnr., snr.) er ikke tildelt – dette skjer først etter seksjonering og innflytting, noe som kan forsinke tinglysing og hjemmelsoverføring.",
+            "evidence": [
+              "Eierseksjonen vil etter gjennomført seksjonering bli betegnet ved et eget gårdsnummer (gnr.), bruksnummer (bnr.) og seksjonsnummer (snr.). Endelig adresse vil bli tildelt av kommunen i forbindelse med innflytting.",
+              "Hjemmelsoverføring kan bli forsinket som følge av offentlige myndigheters saksbehandlingstid ved deling/sammenføyning/seksjonering av Eiendommen."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              20,
+              21
+            ],
+            "confidence": 0.87,
+            "details": {
+              "confidence": 0.87
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_011",
+            "description": "Endelig adresse og matrikkelbetegnelse (gnr., bnr., snr.) er ikke tildelt – dette skjer først etter seksjonering og innflytting, noe som kan forsinke tinglysing og hjemmelsoverføring.",
+            "evidence": [
+              "Eierseksjonen vil etter gjennomført seksjonering bli betegnet ved et eget gårdsnummer (gnr.), bruksnummer (bnr.) og seksjonsnummer (snr.). Endelig adresse vil bli tildelt av kommunen i forbindelse med innflytting.",
+              "Hjemmelsoverføring kan bli forsinket som følge av offentlige myndigheters saksbehandlingstid ved deling/sammenføyning/seksjonering av Eiendommen."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              20,
+              21
+            ],
+            "details": {
+              "confidence": 0.87
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_012",
+            "description": "Oppvarming og varmtvann leveres av ekstern leverandør (Smartly) og faktureres separat – kostnaden er ikke inkludert i felleskostnadene og kan variere med forbruk og markedspriser.",
+            "evidence": [
+              "Oppvarming og varmtvann leveres av Smartly og kommer i tillegg til felleskostnadene. Smartly sender egen faktura til seksjonseier hver måned. Denne inneholder systemkost, kostnader for forbruk av både varme og varmt vann, og i tillegg kostnader for fellesoppvarming/felles vann fordelt per leilighet."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              6,
+              9
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_012",
+            "description": "Oppvarming og varmtvann leveres av ekstern leverandør (Smartly) og faktureres separat – kostnaden er ikke inkludert i felleskostnadene og kan variere med forbruk og markedspriser.",
+            "evidence": [
+              "Oppvarming og varmtvann leveres av Smartly og kommer i tillegg til felleskostnadene. Smartly sender egen faktura til seksjonseier hver måned. Denne inneholder systemkost, kostnader for forbruk av både varme og varmt vann, og i tillegg kostnader for fellesoppvarming/felles vann fordelt per leilighet."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              6,
+              9
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_013",
+            "description": "Grunnpakke kabel-TV og fiber (ca. kr 299/mnd) kommer i tillegg til felleskostnadene og kan reguleres med KPI etter år 1.",
+            "evidence": [
+              "Grunnpakke kabel‑tv og fiber kommer i tillegg med ca. kr 299,‑/ mnd. Prisen kan bli regulert (KPI) etter år 1."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              6
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_013",
+            "description": "Grunnpakke kabel-TV og fiber (ca. kr 299/mnd) kommer i tillegg til felleskostnadene og kan reguleres med KPI etter år 1.",
+            "evidence": [
+              "Grunnpakke kabel‑tv og fiber kommer i tillegg med ca. kr 299,‑/ mnd. Prisen kan bli regulert (KPI) etter år 1."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              6
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_014",
+            "description": "Selger (utbygger) har rett til å forskyve fremdriften i prosjektet som følge av markedssituasjon (pandemi, krig, renter, prisvekst) uten at kjøper kan gjøre krav gjeldende.",
+            "evidence": [
+              "Selger tar et særskilt forbehold om det i dag er en uvanlig og svært uforutsigbar markedssituasjon. Det skyldes blant annet senvirkninger av pandemisituasjonen, krigen i Ukraina og et generelt utfordrende marked med renter og prisvekst.",
+              "Selger tar forbehold om å stå fritt til å forskyve fremdriften i prosjektet som følge av slike forhold. Kjøper kan ikke gjøre gjeldende noen krav mot selger på grunn av en slik forskyvning av fremdrift."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              22
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_014",
+            "description": "Selger (utbygger) har rett til å forskyve fremdriften i prosjektet som følge av markedssituasjon (pandemi, krig, renter, prisvekst) uten at kjøper kan gjøre krav gjeldende.",
+            "evidence": [
+              "Selger tar et særskilt forbehold om det i dag er en uvanlig og svært uforutsigbar markedssituasjon. Det skyldes blant annet senvirkninger av pandemisituasjonen, krigen i Ukraina og et generelt utfordrende marked med renter og prisvekst.",
+              "Selger tar forbehold om å stå fritt til å forskyve fremdriften i prosjektet som følge av slike forhold. Kjøper kan ikke gjøre gjeldende noen krav mot selger på grunn av en slik forskyvning av fremdrift."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              22
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_015",
+            "description": "Første delinnbetaling (kr 100 000) må være fri egenkapital – det er ikke mulig å få sikkerhet i boligen ved delinnbetaling 1, noe som kan være en likviditetsutfordring for kjøper.",
+            "evidence": [
+              "Første delinnbetaling må være fri egenkapital da det ikke er mulig å få sikkerhet i boligen ved delinnbetaling 1.",
+              "Det må avklares med banken før bud inngis at det kan tas sikkerhet i en annen bolig ved delinnbetaling 1."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              10
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_015",
+            "description": "Første delinnbetaling (kr 100 000) må være fri egenkapital – det er ikke mulig å få sikkerhet i boligen ved delinnbetaling 1, noe som kan være en likviditetsutfordring for kjøper.",
+            "evidence": [
+              "Første delinnbetaling må være fri egenkapital da det ikke er mulig å få sikkerhet i boligen ved delinnbetaling 1.",
+              "Det må avklares med banken før bud inngis at det kan tas sikkerhet i en annen bolig ved delinnbetaling 1."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              10
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_016",
+            "description": "Overdragelsen av kontraktsposisjonen forutsetter godkjenning fra utbygger og aksept fra garantistiller – dersom dette ikke oppnås, kan handelen ikke gjennomføres.",
+            "evidence": [
+              "Overdragelsen forutsetter godkjenning fra utbygger, samt aksept fra garantistiller om transport av den opprinnelige garantien."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              10
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_016",
+            "description": "Overdragelsen av kontraktsposisjonen forutsetter godkjenning fra utbygger og aksept fra garantistiller – dersom dette ikke oppnås, kan handelen ikke gjennomføres.",
+            "evidence": [
+              "Overdragelsen forutsetter godkjenning fra utbygger, samt aksept fra garantistiller om transport av den opprinnelige garantien."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              10
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_017",
+            "description": "Garanti etter buofl. § 12 er beregnet av opprinnelig kjøpesum mellom selger og kjøper 1 – ikke av den høyere prisen kjøper 2 betaler, noe som gir lavere garantidekning i forhold til faktisk investering.",
+            "evidence": [
+              "Garantien etter buofl. § 12, som minst lyder på 3% av vederlaget i perioden før overtagelse og 5 % i perioden frem til 5 år etter overtagelsen, er beregnet av opprinnelig kjøpesum mellom Selger og Kjøper 1 i henhold til kjøpekontrakt."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              10
+            ],
+            "confidence": 0.92,
+            "details": {
+              "confidence": 0.92
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_017",
+            "description": "Garanti etter buofl. § 12 er beregnet av opprinnelig kjøpesum mellom selger og kjøper 1 – ikke av den høyere prisen kjøper 2 betaler, noe som gir lavere garantidekning i forhold til faktisk investering.",
+            "evidence": [
+              "Garantien etter buofl. § 12, som minst lyder på 3% av vederlaget i perioden før overtagelse og 5 % i perioden frem til 5 år etter overtagelsen, er beregnet av opprinnelig kjøpesum mellom Selger og Kjøper 1 i henhold til kjøpekontrakt."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              10
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_018",
+            "description": "Selger forbeholder seg retten til å endre leilighetsnummer og antall seksjoner i sameiet (inkl. bolig og næring), noe som kan påvirke sammensetningen av sameiet.",
+            "evidence": [
+              "Selger står fritt til å endre leilighetsnummer og det tas forbehold om eventuell endring av antall seksjoner i Eierseksjonssameiet, herunder både bolig og næring."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              23
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_018",
+            "description": "Selger forbeholder seg retten til å endre leilighetsnummer og antall seksjoner i sameiet (inkl. bolig og næring), noe som kan påvirke sammensetningen av sameiet.",
+            "evidence": [
+              "Selger står fritt til å endre leilighetsnummer og det tas forbehold om eventuell endring av antall seksjoner i Eierseksjonssameiet, herunder både bolig og næring."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              23
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_019",
+            "description": "Vedtekter for sameiet er ikke utarbeidet på salgstidspunktet – disse utarbeides av selger i samarbeid med forretningsfører og ettersendes, noe som gir kjøper begrenset innsyn i sameiets fremtidige regler.",
+            "evidence": [
+              "Vedtekter vil bli utarbeidet av Selger i samarbeid med forretningsfører og ettersendes når klart.",
+              "Det foreligger pt. ikke regnskap eller budsjett for Eierseksjonssameiet."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              23
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_019",
+            "description": "Vedtekter for sameiet er ikke utarbeidet på salgstidspunktet – disse utarbeides av selger i samarbeid med forretningsfører og ettersendes, noe som gir kjøper begrenset innsyn i sameiets fremtidige regler.",
+            "evidence": [
+              "Vedtekter vil bli utarbeidet av Selger i samarbeid med forretningsfører og ettersendes når klart.",
+              "Det foreligger pt. ikke regnskap eller budsjett for Eierseksjonssameiet."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              23
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_020",
+            "description": "Selger har rett til å bestemme leverandører for sameiet (strøm, vaktmester, vedlikehold, TV/bredbånd) uten at sameiet nødvendigvis kan velge fritt.",
+            "evidence": [
+              "Selger har rett til å bestemme leverandører for Eierseksjonssameiet (bl.a. strøm, vaktmester, vedlikehold av tekniske installasjoner, tv/bredbånd)."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              23
+            ],
+            "confidence": 0.82,
+            "details": {
+              "confidence": 0.82
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_020",
+            "description": "Selger har rett til å bestemme leverandører for sameiet (strøm, vaktmester, vedlikehold, TV/bredbånd) uten at sameiet nødvendigvis kan velge fritt.",
+            "evidence": [
+              "Selger har rett til å bestemme leverandører for Eierseksjonssameiet (bl.a. strøm, vaktmester, vedlikehold av tekniske installasjoner, tv/bredbånd)."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              23
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_021",
+            "description": "Radonmåling er ikke utført – selger har ikke foretatt radonmåling, og det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              9
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_021",
+            "description": "Radonmåling er ikke utført – selger har ikke foretatt radonmåling, og det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              9
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_022",
+            "description": "Formuesverdi er ikke beregnet på salgstidspunktet – dette kan gi usikkerhet om fremtidig formuesskatt og skattemessig behandling.",
+            "evidence": [
+              "Formuesverdien er ikke beregnet. Skatteetaten vil beregne en boligverdi (beregnet markedsverdi for bolig) basert på SSBs statistiske opplysninger om omsatte boliger. Beregningen vil skje i forbindelse med første skattemelding etter overtakelse."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              7
+            ],
+            "confidence": 0.78,
+            "details": {
+              "confidence": 0.78
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_022",
+            "description": "Formuesverdi er ikke beregnet på salgstidspunktet – dette kan gi usikkerhet om fremtidig formuesskatt og skattemessig behandling.",
+            "evidence": [
+              "Formuesverdien er ikke beregnet. Skatteetaten vil beregne en boligverdi (beregnet markedsverdi for bolig) basert på SSBs statistiske opplysninger om omsatte boliger. Beregningen vil skje i forbindelse med første skattemelding etter overtakelse."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              7
+            ],
+            "details": {
+              "confidence": 0.78
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_023",
+            "description": "Balkonger uten tak kan samle vann etter regnvær, og drypp fra overliggende balkong og rekkverk vil forekomme.",
+            "evidence": [
+              "Balkonger som ikke har tak eller overliggende balkong vil utformes med sluk. Balkonger er som en utvendig konstruksjon å anse og mindre ansamlinger av vann vil derfor kunne oppstå på gulvflaten etter regnvær. Det samme vil gjelde drypp fra overliggende balkong og rekkverk."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              9
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_023",
+            "description": "Balkonger uten tak kan samle vann etter regnvær, og drypp fra overliggende balkong og rekkverk vil forekomme.",
+            "evidence": [
+              "Balkonger som ikke har tak eller overliggende balkong vil utformes med sluk. Balkonger er som en utvendig konstruksjon å anse og mindre ansamlinger av vann vil derfor kunne oppstå på gulvflaten etter regnvær. Det samme vil gjelde drypp fra overliggende balkong og rekkverk."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              9
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_024",
+            "description": "Enkelte vinduer er faste og kan ikke åpnes – disse må pusses fra terrasse, balkong eller fra vindusfelt ved siden av, noe som kan være upraktisk og utgjøre en sikkerhetsrisiko.",
+            "evidence": [
+              "Enkelte vinduer er faste og kan ikke åpnes. Disse vinduene må pusses fra terrasse, balkong eller fra vindusfelt ved siden av."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_024",
+            "description": "Enkelte vinduer er faste og kan ikke åpnes – disse må pusses fra terrasse, balkong eller fra vindusfelt ved siden av, noe som kan være upraktisk og utgjøre en sikkerhetsrisiko.",
+            "evidence": [
+              "Enkelte vinduer er faste og kan ikke åpnes. Disse vinduene må pusses fra terrasse, balkong eller fra vindusfelt ved siden av."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_025",
+            "description": "Tekniske føringer og rør vil være synlige i leiligheten (nisje for vaskemaskin/tørketrommel), og luker for vann- og varmetekniske installasjoner kan plasseres i primærrom.",
+            "evidence": [
+              "I leiligheter med teknisk nisje med plass til vaskemaskin/tørketrommel vil det være synlige føringer/rør.",
+              "Luker for vann og varmetekniske installasjoner er primært plassert i sekundærrom/nisjen. Det kan være unntak hvor luker plasseres i primærrom, for eksempel ved vannutkaster på terrasse eller lignende."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              8,
+              15
+            ],
+            "confidence": 0.72,
+            "details": {
+              "confidence": 0.72
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_025",
+            "description": "Tekniske føringer og rør vil være synlige i leiligheten (nisje for vaskemaskin/tørketrommel), og luker for vann- og varmetekniske installasjoner kan plasseres i primærrom.",
+            "evidence": [
+              "I leiligheter med teknisk nisje med plass til vaskemaskin/tørketrommel vil det være synlige føringer/rør.",
+              "Luker for vann og varmetekniske installasjoner er primært plassert i sekundærrom/nisjen. Det kan være unntak hvor luker plasseres i primærrom, for eksempel ved vannutkaster på terrasse eller lignende."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              8,
+              15
+            ],
+            "details": {
+              "confidence": 0.72
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_026",
+            "description": "Parkeringsplasser kan ha lavere takhøyde enn 2,1 m på grunn av tekniske føringer (avløpsrør, søyler), noe som kan begrense bruken for høye kjøretøy.",
+            "evidence": [
+              "Parkeringer vil generelt holde minimum 2,1m høyde. Det vil kunne være enkelte tekniske føringer med lavere høyde, for eksempel pga. avløpsrør/føringer langs vegger og søyler."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              7,
+              14
+            ],
+            "confidence": 0.78,
+            "details": {
+              "confidence": 0.78
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_026",
+            "description": "Parkeringsplasser kan ha lavere takhøyde enn 2,1 m på grunn av tekniske føringer (avløpsrør, søyler), noe som kan begrense bruken for høye kjøretøy.",
+            "evidence": [
+              "Parkeringer vil generelt holde minimum 2,1m høyde. Det vil kunne være enkelte tekniske føringer med lavere høyde, for eksempel pga. avløpsrør/føringer langs vegger og søyler."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              7,
+              14
+            ],
+            "details": {
+              "confidence": 0.78
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_027",
+            "description": "Kjøper er ansvarlig overfor sameiets kreditorer i forhold til sin sameiebrøk (solidaransvar), og sameiet har legal panterett i seksjonen for inntil 2 ganger folketrygdens grunnbeløp ved manglende betaling av fellesutgifter.",
+            "evidence": [
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.",
+              "Ved manglende betaling av fellesutgifter har sameiet legal panterett i den enkelte eierseksjon, begrenset til inntil 2 ganger folketrygdens grunnbeløp."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              9
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_027",
+            "description": "Kjøper er ansvarlig overfor sameiets kreditorer i forhold til sin sameiebrøk (solidaransvar), og sameiet har legal panterett i seksjonen for inntil 2 ganger folketrygdens grunnbeløp ved manglende betaling av fellesutgifter.",
+            "evidence": [
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.",
+              "Ved manglende betaling av fellesutgifter har sameiet legal panterett i den enkelte eierseksjon, begrenset til inntil 2 ganger folketrygdens grunnbeløp."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              9
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_028",
+            "description": "Ingen kan eie mer enn to boligseksjoner i sameiet – seksjoner eid av nærstående eller gjennom firma regnes også med, noe som begrenser investeringsmuligheter.",
+            "evidence": [
+              "Det informeres om at ingen kan eie mer enn to boligseksjoner i sameiet, i henhold til eierseksjonsloven § 23. Seksjoner som eies av nærstående eller gjennom et firma regnes også med."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              9
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_028",
+            "description": "Ingen kan eie mer enn to boligseksjoner i sameiet – seksjoner eid av nærstående eller gjennom firma regnes også med, noe som begrenser investeringsmuligheter.",
+            "evidence": [
+              "Det informeres om at ingen kan eie mer enn to boligseksjoner i sameiet, i henhold til eierseksjonsloven § 23. Seksjoner som eies av nærstående eller gjennom et firma regnes også med."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              9
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_029",
+            "description": "Korttidsutleie er begrenset til 90 døgn per år i henhold til eierseksjonsloven § 24, og denne grensen kan endres i vedtektene (mellom 60 og 120 døgn).",
+            "evidence": [
+              "Korttidsutleie er tillatt i inntil 90 døgn per år, jf. eierseksjonsloven § 24. Denne grensen kan endres i vedtektene, men den må være satt mellom 60 og 120 døgn."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              9
+            ],
+            "confidence": 0.82,
+            "details": {
+              "confidence": 0.82
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_029",
+            "description": "Korttidsutleie er begrenset til 90 døgn per år i henhold til eierseksjonsloven § 24, og denne grensen kan endres i vedtektene (mellom 60 og 120 døgn).",
+            "evidence": [
+              "Korttidsutleie er tillatt i inntil 90 døgn per år, jf. eierseksjonsloven § 24. Denne grensen kan endres i vedtektene, men den må være satt mellom 60 og 120 døgn."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              9
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_030",
+            "description": "Utomhusarbeider og fellesarealer kan gjenstå ved kjøpers overtakelse av boligen – selger kan ferdigstille disse etter overtakelse.",
+            "evidence": [
+              "Kjøper er kjent med at det vil kunne gjenstå arbeider på fellesarealer frem til prosjektet som helhet er ferdigstilt.",
+              "Avhengig av årstid vil utomhusarbeidene kunne bli ferdigstilt og overtakelsesforretning for disse avholdt etter Kjøpers overtakelse av boligen."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              22
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_030",
+            "description": "Utomhusarbeider og fellesarealer kan gjenstå ved kjøpers overtakelse av boligen – selger kan ferdigstille disse etter overtakelse.",
+            "evidence": [
+              "Kjøper er kjent med at det vil kunne gjenstå arbeider på fellesarealer frem til prosjektet som helhet er ferdigstilt.",
+              "Avhengig av årstid vil utomhusarbeidene kunne bli ferdigstilt og overtakelsesforretning for disse avholdt etter Kjøpers overtakelse av boligen."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              22
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_031",
+            "description": "Grunnboksutskrift vedlagt kjøpekontrakten er datert 04.10.2023 – over to år gammel på salgstidspunktet (januar 2026), noe som innebærer risiko for at heftelser eller endringer ikke er oppdatert.",
+            "evidence": [
+              "Grunnboksutskrifter a jour 04.10.2023 (vedlegg til kjøpekontrakten, jf. punkt 17.1)"
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              24
+            ],
+            "confidence": 0.83,
+            "details": {
+              "confidence": 0.83
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_031",
+            "description": "Grunnboksutskrift vedlagt kjøpekontrakten er datert 04.10.2023 – over to år gammel på salgstidspunktet (januar 2026), noe som innebærer risiko for at heftelser eller endringer ikke er oppdatert.",
+            "evidence": [
+              "Grunnboksutskrifter a jour 04.10.2023 (vedlegg til kjøpekontrakten, jf. punkt 17.1)"
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              24
+            ],
+            "details": {
+              "confidence": 0.83
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_032",
+            "description": "Situasjonsplan og utomhusplan er datert henholdsvis 19.03.2021 og 20.11.2023, begge med forbehold om endringer – disse kan avvike fra faktisk utførelse.",
+            "evidence": [
+              "Situasjonsplan datert 19.03.2021 (med forbehold om endringer)",
+              "Utomhusplan datert 20.11.2023 (med forbehold om endringer)"
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              24
+            ],
+            "confidence": 0.78,
+            "details": {
+              "confidence": 0.78
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_032",
+            "description": "Situasjonsplan og utomhusplan er datert henholdsvis 19.03.2021 og 20.11.2023, begge med forbehold om endringer – disse kan avvike fra faktisk utførelse.",
+            "evidence": [
+              "Situasjonsplan datert 19.03.2021 (med forbehold om endringer)",
+              "Utomhusplan datert 20.11.2023 (med forbehold om endringer)"
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              24
+            ],
+            "details": {
+              "confidence": 0.78
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_033",
+            "description": "Byggetrinn BT6 (kontor, næring og boliger for utleie) er under utbygging i nærområdet, noe som kan medføre støy, støv og anleggsarbeid i en periode etter innflytting.",
+            "evidence": [
+              "Forøvrig pågår det også utbygging av byggetrinn BT6. BT6 vil bestå av kontor, næring og boliger for utleie."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              13
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_033",
+            "description": "Byggetrinn BT6 (kontor, næring og boliger for utleie) er under utbygging i nærområdet, noe som kan medføre støy, støv og anleggsarbeid i en periode etter innflytting.",
+            "evidence": [
+              "Forøvrig pågår det også utbygging av byggetrinn BT6. BT6 vil bestå av kontor, næring og boliger for utleie."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              13
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d157_034",
+            "description": "Energiklasse B er stipulert, men endelig energiklasse avgjøres ved beregninger før innflytting og kan avvike. Det er den enkelte seksjonseiers energibruk som avgjør endelig klasse.",
+            "evidence": [
+              "Leiligheter vil få energiklasse B.",
+              "Leilighetene leveres med energisertifikat og klassen på den enkelte leiligheten blir avgjort ved beregninger før innflytting. Ved senere salg av leiligheten er det energibruken til hver enkelt seksjonseier som avgjør hvilken klasse den kommer i."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              9
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d157_034",
+            "description": "Energiklasse B er stipulert, men endelig energiklasse avgjøres ved beregninger før innflytting og kan avvike. Det er den enkelte seksjonseiers energibruk som avgjør endelig klasse.",
+            "evidence": [
+              "Leiligheter vil få energiklasse B.",
+              "Leilighetene leveres med energisertifikat og klassen på den enkelte leiligheten blir avgjort ved beregninger før innflytting. Ved senere salg av leiligheten er det energibruken til hver enkelt seksjonseier som avgjør hvilken klasse den kommer i."
+            ],
+            "source_documents": [
+              "d157.pdf"
+            ],
+            "source_pages": [
+              9
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [],
+      "unmatched_ground_truth_risks": [],
+      "verified_unmatched": [],
+      "adjusted_metrics": null
+    }
+  },
+  "best_system": "ground_truth",
+  "statistical_tests": {
+    "standard_rag_vs_agentic_rag_P+T+R": 1.0,
+    "standard_rag_vs_ground_truth": 1.0,
+    "agentic_rag_P+T+R_vs_ground_truth": 1.0
+  },
+  "record_id": "16965838-ad4a-426f-a23a-0456e9b1a5bd",
+  "query": "Identifiser risikoer i salgsoppgaven",
+  "document_set_id": "d157",
+  "timestamp": "2026-03-25T10:43:30.784305",
+  "risk_summaries": [
+    {
+      "system_type": "standard_rag",
+      "total_risks": 12,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "agentic_rag_P+T+R",
+      "total_risks": 20,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "ground_truth",
+      "total_risks": 34,
+      "risks_by_category": {}
+    }
+  ],
+  "has_ground_truth": true,
+  "overlapping_risk_count": 20,
+  "unique_to": {
+    "standard_rag": 7,
+    "agentic_rag_P+T+R": 3,
+    "ground_truth": 16
+  },
+  "record_type": "comparison"
+}

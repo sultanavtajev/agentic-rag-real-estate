@@ -1,0 +1,2354 @@
+{
+  "system_results": {
+    "standard_rag": {
+      "run_id": "56ee8509-aee3-46e1-9db7-5b66ef80cb69",
+      "system_type": "standard_rag",
+      "overall_metrics": {
+        "precision": 0.6923076923076923,
+        "recall": 0.45,
+        "f1": 0.5454545454545455,
+        "total_support": 20
+      },
+      "matched_risks": 9,
+      "unmatched_predicted": 4,
+      "unmatched_ground_truth": 11,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "56ee8509-aee3-46e1-9db7-5b66ef80cb69_risk_001",
+            "description": "Salget skjer fra et dødsbo (avdøde Ingrid Flatø), med Rune Stavenes som selger. Dødsboer innebærer ofte begrenset kunnskap om eiendommens historikk og tilstand, noe som øker risikoen for ukjente feil og mangler.",
+            "evidence": [
+              "Er det dødsbo? Nei Ja",
+              "Avdødes navn Ingrid Flatø",
+              "Hjemmelshavers navn Ingrid Flatø",
+              "Selger har ikke bebodd eiendommen og har derfor ikke spesifikk kunnskap"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.93,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_001",
+            "description": "Salg fra dødsbo med svært begrenset kunnskap om eiendommen. Selger (bobestyrer) har ikke bebodd eiendommen og har ingen kunnskap om feil, mangler eller historikk. Når boet er oppgjort, slettes det som rettsubjekt og det vil ikke lenger være mulig å gjøre gjeldende mangler overfor boet.",
+            "evidence": [
+              "Det gjøres spesielt oppmerksom på at boligen selges for et dødsbo som offentlig skifte. Bobestyrer har ikke bebodd eiendommen og har ingen kunnskap vedrørende eiendommen og eiendommens beskaffenhet utover det som her fremgår av prospektet.",
+              "Selger har ikke bebodd eiendommen og har derfor ikke spesifikk kunnskap om den. Det kan derfor være skader og andre forhold ved eiendommen som ikke er spesifikt opplyst.",
+              "Dette innebærer at når hele boet er oppgjort/avgjort, vil boet som rettsubjekt bli slettet, og det vil ikke lenger være mulig å gjøre gjeldende mangler på eiendommen overfor boet.",
+              "Egenerklæringsskjema er ikke kontrollert. Befaringen er gjennomført i forbindelse med et dødsbo. Egenerklæringsskjema er derfor ikke utfylt, og det foreligger begrenset informasjon om boligens historikk, vedlikehold og dokumentasjon."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18,
+              19,
+              22,
+              33
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "56ee8509-aee3-46e1-9db7-5b66ef80cb69_risk_004",
+            "description": "Rekkverket på balkong eller terrasse er for lavt i forhold til dagens krav. Dette er en sikkerhetsrisiko og kan medføre krav om utbedring og kostnader for kjøper.",
+            "evidence": [
+              "Rekkverket på balkong eller terrasse er for lavt i forhold til dagens krav"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.93,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_002",
+            "description": "Rekkverkshøyde på balkong er for lav i henhold til dagens krav (TEK17). Rekkverket er målt til 1,12 meter, mens TEK17 krever minimum 1,20 meter der nivåforskjellen er mer enn 10 meter. Dette er klassifisert som et HMS-avvik.",
+            "evidence": [
+              "Rekkverket på balkong eller terrasse er for lavt i forhold til dagens krav.",
+              "Rekkverkshøyde ble målt til 1,12 meter.",
+              "Fra TEK 17 (paragraf 12-17): Balkonger, terrasser, tribuner, passasjer og lignende skal ha rekkverk med høyde; a) minimum 1,20 m der nivåforskjellen er mer enn 10 m.",
+              "Forhold som åpenbart kan medføre fare for helse, miljø og sikkerhet > Rekkverket på balkong eller terrasse er for lavt i forhold til dagens krav."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18,
+              26,
+              27,
+              30
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "56ee8509-aee3-46e1-9db7-5b66ef80cb69_risk_005",
+            "description": "Det er ikke foretatt hulltaking på våtrom da dusjsone grenser mot naboseksjon/kjøkkeninnredning. Dette betyr at skjulte fukt- og råteskader i konstruksjonen ikke kan utelukkes.",
+            "evidence": [
+              "Det er ikke foretatt hulltaking da dusjsone grenser mot naboseksjon/‑ kjøkkeninnredning."
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_006",
+            "description": "Tilliggende konstruksjoner til våtrom er ikke undersøkt (TGIU) fordi dusjsone grenser mot naboseksjon/kjøkkeninnredning, og hulltaking ikke ble utført. Fuktskader i disse konstruksjonene kan ikke utelukkes.",
+            "evidence": [
+              "Tilliggende konstruksjoner våtrom. Det er ikke foretatt hulltaking da dusjsone grenser mot naboseksjon/kjøkkeninnredning.",
+              "Det er ikke foretatt hulltaking da dusjsone grenser mot naboseksjon/kjøkkeninnredning. Det ble foretatt kontroll med fuktindikator, uten å registrere avvik.",
+              "Fuktsøk er utført med fuktindikator (Protimeter MMS3) der hulltaking ikke var mulig. Indikatoren er begrenset til å påvise fukt i overflaten og gir ikke informasjon om fuktens plassering i forhold til membranen."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18,
+              28
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "56ee8509-aee3-46e1-9db7-5b66ef80cb69_risk_002",
+            "description": "El-anlegget kan ha skjulte feil og mangler som ikke avdekkes av den forenklede kontrollen. Eier har ansvar for at anlegget til enhver tid tilfredsstiller gjeldende forskrifter.",
+            "evidence": [
+              "El-anlegget kan ha feil og mangler som en slik forenklet kontrollrapport eller dokumentasjon ikke vil avdekke.",
+              "Vær derfor oppmerksom på denne risikoen, og søk videre veiledning eller få en fullstendig kontroll utført av registrert elektrovirksomhet.",
+              "Skjulte feil og mangler kan ikke"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_007",
+            "description": "Det elektriske anlegget anbefales utvidet kontroll av. Det er ukjent om det er gjennomført el-tilsyn de siste fem år, og det foreligger ikke samsvarserklæringer for anlegget. Boligen er et dødsbo, og informasjon fra eier har ikke vært mulig å innhente.",
+            "evidence": [
+              "Det er ukjent om det er gjennomført kontroll av det elektriske anlegget av offentlig myndighet (Det lokale eltilsyn) de siste fem årene.",
+              "Det er ikke fremvist samsvarserklæringer for anlegget (utført ifb. med dødsbo).",
+              "På bakgrunn av nevnte forhold anbefales det å foreta en utvidet kontroll av anlegget.",
+              "Forskrift om elektriske lavspenningsanlegg anbefaler at det blir foretatt regelmessig ettersyn av det elektriske anlegget hvert tiende år. Det er ukjent om det er foretatt tilsyn i de senere år."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              29
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "56ee8509-aee3-46e1-9db7-5b66ef80cb69_risk_003",
+            "description": "Eiendommen befinner seg i en faresone for steinsprang, jord- og andre naturskader. Dette utgjør en fysisk sikkerhetsrisiko og kan påvirke forsikringsvilkår og fremtidig verdi.",
+            "evidence": [
+              "Eiendommen befinner seg i følgende hensynssoner: Faresone. Aktsomhetsområde for steinsprang, jord‑ og"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.91,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_008",
+            "description": "Eiendommen ligger i en hensynssone klassifisert som faresone for steinsprang, jord- og flomskred og snøskred med berøringsgrad 100%. Dette utgjør en naturfarerelatert risiko for beboere og eiendom.",
+            "evidence": [
+              "Eiendommen befinner seg i følgende hensynssoner: - Faresone. Aktsomhetsområde for steinsprang, jord- og flomskred og snøskred, berøringsgrad 100%",
+              "- Friluftsliv. Byfjellgrense - vest, berøringsgrad 16,2%"
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "56ee8509-aee3-46e1-9db7-5b66ef80cb69_risk_007",
+            "description": "Kommunen har legalpant i eiendommen som sikkerhet for betaling av kommunale avgifter. Dersom det foreligger ubetalte kommunale krav, kan dette belaste ny kjøper.",
+            "evidence": [
+              "Legalpant: Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_010",
+            "description": "Legalpant utgjør en skjult heftelse som ikke fremgår av grunnboksutskriften. Kommunen har legalpant for kommunale avgifter og eiendomsskatt, og øvrige seksjonseiere har legalpant på inntil 2G for krav knyttet til sameieforholdet. Disse har prioritet foran tinglyste banklån.",
+            "evidence": [
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen.",
+              "Legalpant til kommunen har høyere prioritet enn legalpant til sameiet.",
+              "De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "56ee8509-aee3-46e1-9db7-5b66ef80cb69_risk_008",
+            "description": "Boligen selges 'som den er', noe som begrenser kjøpers reklamasjonsrett og selgers ansvar for skjulte feil og mangler, særlig overfor ikke-forbrukere.",
+            "evidence": [
+              "selges ansvar begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger.",
+              "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke‑forbrukere, selv om budet er lavere"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.87,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_012",
+            "description": "Selger kan prioritere bud fra ikke-forbrukere fremfor forbrukerbud, selv om forbrukerbudet er høyere. Ved salg til ikke-forbruker kan selgers ansvar begrenses ytterligere ved at boligen selges «som den er», noe som svekker kjøpers rettigheter.",
+            "evidence": [
+              "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud.",
+              "Når kjøper ikke er forbruker, kan selgers ansvar begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger.",
+              "Det understrekes at selger står fritt til å velge hvilket bud som aksepteres, og er ikke forpliktet til å velge det høyeste."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "56ee8509-aee3-46e1-9db7-5b66ef80cb69_risk_006",
+            "description": "Kommuneplanen (KPA 2027) er under revisjon og ikke endelig vedtatt. Dette skaper usikkerhet om fremtidig arealbruk og regulering av eiendommen.",
+            "evidence": [
+              "PlanID: 71740000. Kommuneplanens arealdel KPA 2027.",
+              "Bystyret legger til grunn at revisjon av KPA‑bestemmelsene skal sluttføres med vedtak Bystyret i første kvartal 2027."
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_014",
+            "description": "Pågående revisjon av kommuneplanens arealdel (KPA 2027) kan medføre endringer i reguleringsbestemmelser som påvirker eiendommen og nærområdet. Vedtak er forventet i første kvartal 2027.",
+            "evidence": [
+              "PlanID: 71740000. Kommuneplanens arealdel KPA 2027. Bystyret legger til grunn at revisjon av KPA-bestemmelsene skal sluttføres med vedtak Bystyret i første kvartal 2027.",
+              "Hovedmålet med revisjon av KPA-bestemmelsene er forenkling, fortgang og forutsigbarhet i plan- og byggesaksprosesser, for å sikre gode boliger og nabolag."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "56ee8509-aee3-46e1-9db7-5b66ef80cb69_risk_011",
+            "description": "Det vil ikke bli foretatt ytterligere utvask eller rengjøring av leiligheten innen overtagelse. Kjøper overtar leiligheten i nåværende stand, noe som kan medføre ekstra kostnader.",
+            "evidence": [
+              "ikke vil bli foretatt ytterligere utvask/ rengjøring av leiligheten innen overtagelse."
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.72,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_019",
+            "description": "Det er ikke foretatt ytterligere utvask/rengjøring av leiligheten innen overtagelse. Boligen er et dødsbo og selges i den stand den er, uten garanti for rengjøring utover det som allerede er gjort.",
+            "evidence": [
+              "For god ordens skyld gjøres det oppmerksom på at det ikke vil bli foretatt ytterligere utvask/rengjøring av leiligheten innen overtagelse."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "56ee8509-aee3-46e1-9db7-5b66ef80cb69_risk_000",
+          "description": "Selger har ikke bebodd eiendommen og har begrenset kunnskap om dens tilstand. Dette øker risikoen for skjulte feil og mangler som ikke er avdekket eller opplyst om i salgsoppgaven.",
+          "evidence": [
+            "Selger har ikke bebodd eiendommen og har derfor ikke spesifikk kunnskap",
+            "salgsoppgaven er basert på selgers informasjon, fagkyndig vurdering, samt opplysninger fra offentlige registre"
+          ],
+          "source_documents": [
+            "d108_d108"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.95,
+          "details": {}
+        },
+        {
+          "risk_id": "56ee8509-aee3-46e1-9db7-5b66ef80cb69_risk_009",
+          "description": "Avvik mellom oppgitt og faktisk innvendig areal på minst 2 % og samtidig minst 1 kvadratmeter kan utløse rett til prisavslag. Dette indikerer en risiko for at oppgitte arealer ikke er korrekte.",
+          "evidence": [
+            "Dersom det er avvik mellom oppgitt og faktisk innvendig areal på minst 2 % og samtidig minst 1 kvadratmeter, kan dette utløse rett til"
+          ],
+          "source_documents": [
+            "d108_d108"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.75,
+          "details": {}
+        },
+        {
+          "risk_id": "56ee8509-aee3-46e1-9db7-5b66ef80cb69_risk_010",
+          "description": "Dersom eiendomsmegler ikke kan gjennomføre løpende kundetiltak (hvitvaskingskontroll), må transaksjonen stanses. Dette kan forsinke eller avbryte handelen, noe som kan medføre mislighold fra selgers side.",
+          "evidence": [
+            "løpende kundetiltak underveis i oppdraget, må eiendomsmegler stanse gjennomføringen av transaksjonen. Selger vil i et slikt tilfelle ha misligholdt sine forpliktelser, og kjøper vil kunne ha et krav mot"
+          ],
+          "source_documents": [
+            "d108_d108"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.78,
+          "details": {}
+        },
+        {
+          "risk_id": "56ee8509-aee3-46e1-9db7-5b66ef80cb69_risk_012",
+          "description": "Fordeling av biloppstillingsplasser og garasjeplasser mellom seksjoner i sameiet er uavklart eller under endring. Dette kan skape konflikter og usikkerhet for kjøper om hvilke rettigheter som følger med seksjonen.",
+          "evidence": [
+            "biloppstillingsplass ute; S4, S10, S11, S12 og S23. Følgende seksjoner har hatt biloppstillingsplass ute og skal ha garasje; S31, S39, S41, S43 og S44. Alle de berørte"
+          ],
+          "source_documents": [
+            "d108_d108"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.7,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d108_003",
+          "description": "Sluk, membran og tettesjikt på badet er vurdert med TG2. Mer enn halvparten av forventet brukstid er passert på membranløsningen, og det foreligger ukjent utførelse/dokumentasjon. Dette innebærer risiko for lekkasje og vannskader.",
+          "evidence": [
+            "Sluk, membran og tettesjikt på bad grunnet alder og ukjent utførelse/dokumentasjon.",
+            "Mer enn halvparten av forventet brukstid er passert på membranløsningen.",
+            "Sluk har begrenset mulighet for inspeksjon og rengjøring.",
+            "Ukjent utførelse/dokumentasjon.",
+            "Bilder eller øvrig dokumentasjon på membranarbeid er ikke mottatt eller kontrollert."
+          ],
+          "source_documents": [
+            "d108.pdf"
+          ],
+          "source_pages": [
+            17,
+            26,
+            27,
+            28
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d108_004",
+          "description": "Ventilasjonsanlegget (aggregat fra 2013) nærmer seg eller har passert forventet levetid på 15–20 år. Dette innebærer økt risiko for funksjonssvikt, redusert effektivitet og behov for hyppigere vedlikehold eller utskifting.",
+          "evidence": [
+            "Ventilasjonsanlegget har en alder som tilsier at det nærmer seg eller har passert forventet levetid på 15–20 år.",
+            "Aggregat fra 2013.",
+            "Selv om anlegget fungerer på befaringstidspunktet, innebærer alderen økt risiko for funksjonssvikt, redusert effektivitet og behov for hyppigere vedlikehold.",
+            "Det anbefales imidlertid å planlegge for fremtidig oppgradering eller utskifting av anlegget, da alderen kan medføre økt risiko for funksjonssvikt."
+          ],
+          "source_documents": [
+            "d108.pdf"
+          ],
+          "source_pages": [
+            17,
+            26,
+            28,
+            29
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d108_005",
+          "description": "Etasjeskille/gulv mot grunn er vurdert med TG2 grunnet nivåforskjell på mellom 10–20 mm i stue/kjøkken innenfor en lengde på 2 meter. Dette indikerer skjevhet i gulvet utover godkjente måleavvik.",
+          "evidence": [
+            "Etasjeskille/gulv mot grunn på grunn av nivåforskjell i stue/kjøkken mellom 0-20mm.",
+            "Målt høydeforskjell på mellom 10 - 20 mm innenfor en lengde på 2 meter. Tilstandsgrad 2 gis med bakgrunn i standardens krav til godkjente måleavvik.",
+            "Det ble målt mellom 0-20 mm nivåforskjell i stue/kjøkken."
+          ],
+          "source_documents": [
+            "d108.pdf"
+          ],
+          "source_pages": [
+            17,
+            26,
+            27
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d108_009",
+          "description": "Felleskostnadene kan bli besluttet økt etter utarbeidelse av salgsoppgaven. Kjøper bør være forberedt på at månedlige kostnader kan stige utover oppgitte kr 2 816,- pr. mnd.",
+          "evidence": [
+            "Felleskostnadene kan bli besluttet økt etter utarbeidelse av salgsoppgaven.",
+            "Felleskostnader kr 2 816,- pr. mnd"
+          ],
+          "source_documents": [
+            "d108.pdf"
+          ],
+          "source_pages": [
+            16
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d108_011",
+          "description": "Energiattesten viser at boligen er registrert med byggeår 1957 og bruksareal 57 m², mens salgsoppgaven oppgir byggeår 2004 og BRA 88/93,9 m². Dette er en betydelig diskrepans i energiattestens grunnlagsdata som kan påvirke energikarakterens pålitelighet.",
+          "evidence": [
+            "Byggeår: 1957 (energiattest)",
+            "Bruksareal: 57,0 m² / Oppvarmet bruksareal: 57,0 m² (energiattest)",
+            "Byggeår 2004 (salgsoppgave og tilstandsrapport)",
+            "BRA-i: 88 m² / BRA totalt: 93.9 kvm (salgsoppgave)",
+            "Bruksenhetsnummer: H0302 (energiattest) – avviker fra SSb-nr H0507 i tilstandsrapporten"
+          ],
+          "source_documents": [
+            "d108.pdf"
+          ],
+          "source_pages": [
+            4,
+            17,
+            33
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d108_013",
+          "description": "Kommunale avgifter er oppgitt som et estimat og det faktiske beløpet kan avvike. Eiendomsskatt er kr 4 814,- (2026) og kommunale avgifter er estimert til kr 10 237,- (2026), men disse kan endres.",
+          "evidence": [
+            "Oppgitt beløp på kr 10 237,- er et estimat for hele året. Det fakturerte beløpet kan avvike fra estimatet.",
+            "Eiendomsskatt: Kr 4 814,- (2026)",
+            "Kommunale avgifter: Kr 10 237 (2026)"
+          ],
+          "source_documents": [
+            "d108.pdf"
+          ],
+          "source_pages": [
+            16
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d108_015",
+          "description": "Tilstandsrapporten dekker ikke bygningens fellesdeler (tak, yttervegger, grunnmur, drenering, felles tekniske installasjoner). Det er heller ikke kjent om det foreligger tilstandsrapport eller vedlikeholdsplan for felles bygningsmasse, noe som gir begrenset innsikt i sameiets tekniske tilstand.",
+          "evidence": [
+            "Tilstandsrapporten omfatter derfor ikke bygningens fellesdeler som for eksempel tak, yttervegger, grunnmur, drenering, og felles tekniske installasjoner.",
+            "Takstmann kjenner ikke til om det foreligger tilstandsrapport, vedlikeholdsplan eller lignende for felles bygningsmasse."
+          ],
+          "source_documents": [
+            "d108.pdf"
+          ],
+          "source_pages": [
+            25
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d108_016",
+          "description": "Korttidsutleie er begrenset til maksimalt 90 døgn per år, og utleie i mer enn 30 sammenhengende døgn er ikke tillatt uten godkjenning. Leier må i tillegg godkjennes av sameiet ved styret, noe som begrenser fleksibiliteten ved utleie.",
+          "evidence": [
+            "Korttidsutleie er tillatt i opptil 90 døgn per år, jf. eierseksjonsloven § 24. Korttidsutleie av hele boligseksjonen i mer enn 90 døgn årlig er ikke tillatt.",
+            "Med korttidsutleie menes utleie i inntil 30 døgn sammenhengende.",
+            "En seksjonseier har rett til å leie ut sin seksjon, men leier må godkjennes av sameiet ved styret."
+          ],
+          "source_documents": [
+            "d108.pdf"
+          ],
+          "source_pages": [
+            18,
+            37
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d108_017",
+          "description": "Ingen kan eie mer enn to boligseksjoner i sameiet. Seksjoner eid av nærstående eller gjennom firma regnes også med. Dette begrenser investorers mulighet til å kjøpe seksjonen som del av en større portefølje i samme sameie.",
+          "evidence": [
+            "Det informeres om at ingen kan eie mer enn to boligseksjoner i sameiet, i henhold til eierseksjonsloven § 23. Seksjoner som eies av nærstående eller gjennom et firma regnes også med."
+          ],
+          "source_documents": [
+            "d108.pdf"
+          ],
+          "source_pages": [
+            19
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d108_018",
+          "description": "Stikkledninger fra eiendommen til det kommunale nettet er private, og vedlikeholdsansvaret påhviler sameiet. Dette kan medføre uventede kostnader ved rørbrudd eller behov for rehabilitering av private ledninger.",
+          "evidence": [
+            "Eiendommen er tilknyttet offentlig vann- og avløpssystem. Stikkledningene fra eiendommen og ut til det kommunale nettet er private, og vedlikeholdsansvaret for disse påhviler sameiet."
+          ],
+          "source_documents": [
+            "d108.pdf"
+          ],
+          "source_pages": [
+            18
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d108_020",
+          "description": "Oppmålingen er ikke kontrollert opp mot byggetegninger (ikke mottatt), og egenerklæring fra eier foreligger ikke (dødsbo). Dette øker usikkerheten rundt arealoppgaver og boligens lovlighet.",
+          "evidence": [
+            "Oppmålingen er ikke kontrollert opp mot tegninger (ikke mottatt).",
+            "Egenerklæring: Dødsbo. Ikke gjennomgått.",
+            "Opplysninger fra eier. Dødsbo. Ikke gjennomgått."
+          ],
+          "source_documents": [
+            "d108.pdf"
+          ],
+          "source_pages": [
+            31
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "56ee8509-aee3-46e1-9db7-5b66ef80cb69_risk_000",
+            "description": "Selger har ikke bebodd eiendommen og har begrenset kunnskap om dens tilstand. Dette øker risikoen for skjulte feil og mangler som ikke er avdekket eller opplyst om i salgsoppgaven.",
+            "evidence": [
+              "Selger har ikke bebodd eiendommen og har derfor ikke spesifikk kunnskap",
+              "salgsoppgaven er basert på selgers informasjon, fagkyndig vurdering, samt opplysninger fra offentlige registre"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter tydelig at selger ikke har bebodd eiendommen. Dette fremgår flere steder: I egenerklæringsskjemaet (side 22) står det eksplisitt 'Selger har ikke bebodd eiendommen og har derfor ikke spesifikk kunnskap om den.' Videre på side 18-19 fremgår det at dette er et dødsbo, og at 'Bobestyrer har ikke bebodd eiendommen og har ingen kunnskap vedrørende eiendommen og eiendommens beskaffenhet utover det som her fremgår av prospektet.' Salgsoppgaven bekrefter også at informasjonen er basert på 'selgers informasjon, fagkyndig vurdering, samt opplysninger fra offentlige registre'. Risikoen for skjulte feil og mangler er dermed reell og godt underbygget av dokumentet."
+        },
+        {
+          "risk": {
+            "risk_id": "56ee8509-aee3-46e1-9db7-5b66ef80cb69_risk_009",
+            "description": "Avvik mellom oppgitt og faktisk innvendig areal på minst 2 % og samtidig minst 1 kvadratmeter kan utløse rett til prisavslag. Dette indikerer en risiko for at oppgitte arealer ikke er korrekte.",
+            "evidence": [
+              "Dersom det er avvik mellom oppgitt og faktisk innvendig areal på minst 2 % og samtidig minst 1 kvadratmeter, kan dette utløse rett til"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder eksplisitt tekst om dette på side 19: 'Dersom det er avvik mellom oppgitt og faktisk innvendig areal på minst 2 % og samtidig minst 1 kvadratmeter, kan dette utløse rett til kompensasjon etter § 3-3 i avhendingsloven.' Dette er en standardopplysning i salgsoppgaven som indikerer at arealavvik er en kjent risiko. Tilstandsrapporten opplyser også om at arealmålinger kan ha unøyaktigheter, og at oppmålingen ikke er kontrollert mot tegninger (ikke mottatt). Risikoen er reell og støttes av dokumentet."
+        },
+        {
+          "risk": {
+            "risk_id": "56ee8509-aee3-46e1-9db7-5b66ef80cb69_risk_010",
+            "description": "Dersom eiendomsmegler ikke kan gjennomføre løpende kundetiltak (hvitvaskingskontroll), må transaksjonen stanses. Dette kan forsinke eller avbryte handelen, noe som kan medføre mislighold fra selgers side.",
+            "evidence": [
+              "løpende kundetiltak underveis i oppdraget, må eiendomsmegler stanse gjennomføringen av transaksjonen. Selger vil i et slikt tilfelle ha misligholdt sine forpliktelser, og kjøper vil kunne ha et krav mot"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter denne risikoen på side 20: 'Dersom selger ikke bidrar til at megler får gjennomført løpende kundetiltak underveis i oppdraget, må eiendomsmegler stanse gjennomføringen av transaksjonen. Selger vil i et slikt tilfelle ha misligholdt sine forpliktelser, og kjøper vil kunne ha et krav mot selger etter avhendingsloven.' Videre nevnes det at 'Hvis kundetiltak ikke lar seg gjennomføre, vil Emera eiendomsmegling ikke kunne bistå med handelen eller foreta oppgjør.' Risikoen er direkte beskrevet i dokumentet og er dermed reell."
+        },
+        {
+          "risk": {
+            "risk_id": "56ee8509-aee3-46e1-9db7-5b66ef80cb69_risk_012",
+            "description": "Fordeling av biloppstillingsplasser og garasjeplasser mellom seksjoner i sameiet er uavklart eller under endring. Dette kan skape konflikter og usikkerhet for kjøper om hvilke rettigheter som følger med seksjonen.",
+            "evidence": [
+              "biloppstillingsplass ute; S4, S10, S11, S12 og S23. Følgende seksjoner har hatt biloppstillingsplass ute og skal ha garasje; S31, S39, S41, S43 og S44. Alle de berørte"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet beskriver på side 18 en pågående reseksjonering som gjelder bytting av parkeringsplasser mellom seksjoner: 'Bestemmelser om bytting av parkeringsplasser. Reseksjoneringen gjelder bytting av parkeringsplasser, samt at noen parkeringsplasser i garasjen er byttet med biloppstillingsplass utendørs og motsatt. Følgende seksjoner har hatt parkeringsplass i garasjen og skal ha biloppstillingsplass ute; S4, S10, S11, S12 og S23. Følgende seksjoner har hatt biloppstillingsplass ute og skal ha garasje; S31, S39, S41, S43 og S44. Alle de berørte seksjonseierene har signert på reseksjoneringen iht vedlegg.' Selv om det fremgår at berørte seksjonseiere har signert, er situasjonen med pågående endringer i parkeringsrettigheter en reell risiko for usikkerhet og potensielle konflikter for kjøper."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.45,
+        "f1": 0.6206896551724138,
+        "total_support": 20
+      }
+    },
+    "agentic_rag_P+T+R": {
+      "run_id": "7df2e0db-28f0-4af0-949c-c4e7b25d9d5b",
+      "system_type": "agentic_rag_P+T+R",
+      "overall_metrics": {
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "f1": 0.5714285714285715,
+        "total_support": 20
+      },
+      "matched_risks": 10,
+      "unmatched_predicted": 5,
+      "unmatched_ground_truth": 10,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "7df2e0db-28f0-4af0-949c-c4e7b25d9d5b_risk_004",
+            "description": "Boligen selges som dødsbo, og selger (bostyrer) har ikke bebodd eiendommen og har ingen spesifikk kunnskap om eiendommens tilstand. Det kan derfor være skjulte skader og mangler som ikke er opplyst om. Kjøper bærer dermed en høyere risiko for ukjente feil.",
+            "evidence": [
+              "Selger har ikke bebodd eiendommen og har derfor ikke spesifikk kunnskap om den. Det kan derfor være skader og andre forhold ved eiendommen som ikke er spesifikt opplyst",
+              "Arvingene har begrenset kjennskap til eiendommen, og de er derfor ikke kjent med feil eller mangler",
+              "Bobestyrer har ikke undersøkelser, gjerne sammen med takstmann eller annen fagkyndig",
+              "Opplysninger fra eier. Dødsbo. Nei"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_001",
+            "description": "Salg fra dødsbo med svært begrenset kunnskap om eiendommen. Selger (bobestyrer) har ikke bebodd eiendommen og har ingen kunnskap om feil, mangler eller historikk. Når boet er oppgjort, slettes det som rettsubjekt og det vil ikke lenger være mulig å gjøre gjeldende mangler overfor boet.",
+            "evidence": [
+              "Det gjøres spesielt oppmerksom på at boligen selges for et dødsbo som offentlig skifte. Bobestyrer har ikke bebodd eiendommen og har ingen kunnskap vedrørende eiendommen og eiendommens beskaffenhet utover det som her fremgår av prospektet.",
+              "Selger har ikke bebodd eiendommen og har derfor ikke spesifikk kunnskap om den. Det kan derfor være skader og andre forhold ved eiendommen som ikke er spesifikt opplyst.",
+              "Dette innebærer at når hele boet er oppgjort/avgjort, vil boet som rettsubjekt bli slettet, og det vil ikke lenger være mulig å gjøre gjeldende mangler på eiendommen overfor boet.",
+              "Egenerklæringsskjema er ikke kontrollert. Befaringen er gjennomført i forbindelse med et dødsbo. Egenerklæringsskjema er derfor ikke utfylt, og det foreligger begrenset informasjon om boligens historikk, vedlikehold og dokumentasjon."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18,
+              19,
+              22,
+              33
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7df2e0db-28f0-4af0-949c-c4e7b25d9d5b_risk_000",
+            "description": "Rekkverkshøyde på balkong er for lav i forhold til dagens krav (TEK17 § 12-17). Rekkverkshøyde ble målt til 1,12 meter, mens kravet er minimum 1,20 m der nivåforskjellen er mer enn 10 m. Dette er klassifisert som et HMS-avvik og utgjør en potensiell sikkerhetsrisiko.",
+            "evidence": [
+              "Rekkverket på balkong eller terrasse er for lavt i forhold til dagens krav",
+              "Rekkverkshøyde ble målt til 1,12 meter",
+              "Ihht. avhendingslovens paragraf 2-13 skal rekkverkshøyde og åpninger undersøkes mot gjeldende byggteknisk forskrift på befaringstidspunktet",
+              "Fra TEK 17 (paragraf 12-17): Det er påvist andre avvik"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_002",
+            "description": "Rekkverkshøyde på balkong er for lav i henhold til dagens krav (TEK17). Rekkverket er målt til 1,12 meter, mens TEK17 krever minimum 1,20 meter der nivåforskjellen er mer enn 10 meter. Dette er klassifisert som et HMS-avvik.",
+            "evidence": [
+              "Rekkverket på balkong eller terrasse er for lavt i forhold til dagens krav.",
+              "Rekkverkshøyde ble målt til 1,12 meter.",
+              "Fra TEK 17 (paragraf 12-17): Balkonger, terrasser, tribuner, passasjer og lignende skal ha rekkverk med høyde; a) minimum 1,20 m der nivåforskjellen er mer enn 10 m.",
+              "Forhold som åpenbart kan medføre fare for helse, miljø og sikkerhet > Rekkverket på balkong eller terrasse er for lavt i forhold til dagens krav."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18,
+              26,
+              27,
+              30
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7df2e0db-28f0-4af0-949c-c4e7b25d9d5b_risk_001",
+            "description": "Sluk, membran og tettesjikt på badet er gitt TG2 grunnet alder og ukjent utførelse/dokumentasjon. Mer enn halvparten av forventet brukstid er passert på membranløsningen, og sluk har begrenset mulighet for inspeksjon og rengjøring. Dette innebærer risiko for lekkasje og vannskader.",
+            "evidence": [
+              "Sluk, membran og tettesjikt på bad grunnet alder og ukjent utførelse/dokumentasjon",
+              "Mer enn halvparten av forventet brukstid er passert på membranløsningen",
+              "Sluk har begrenset mulighet for inspeksjon og rengjøring",
+              "Ukjent utførelse/dokumentasjon",
+              "Bilder eller øvrig dokumentasjon på membranarbeid er ikke mottatt eller kontrollert"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_003",
+            "description": "Sluk, membran og tettesjikt på badet er vurdert med TG2. Mer enn halvparten av forventet brukstid er passert på membranløsningen, og det foreligger ukjent utførelse/dokumentasjon. Dette innebærer risiko for lekkasje og vannskader.",
+            "evidence": [
+              "Sluk, membran og tettesjikt på bad grunnet alder og ukjent utførelse/dokumentasjon.",
+              "Mer enn halvparten av forventet brukstid er passert på membranløsningen.",
+              "Sluk har begrenset mulighet for inspeksjon og rengjøring.",
+              "Ukjent utførelse/dokumentasjon.",
+              "Bilder eller øvrig dokumentasjon på membranarbeid er ikke mottatt eller kontrollert."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              17,
+              26,
+              27,
+              28
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7df2e0db-28f0-4af0-949c-c4e7b25d9d5b_risk_002",
+            "description": "Ventilasjonsanlegget nærmer seg eller har passert forventet levetid på 15–20 år (aggregat fra 2013). Dette innebærer økt risiko for funksjonssvikt, redusert effektivitet og behov for hyppigere vedlikehold eller utskifting i nær fremtid.",
+            "evidence": [
+              "Ventilasjonsanlegget har en alder som tilsier at det nærmer seg eller har passert forventet levetid på 15–20 år",
+              "Selv om anlegget fungerer på befaringstidspunktet, innebærer alderen økt risiko for funksjonssvikt, redusert effektivitet og behov for hyppigere vedlikehold",
+              "Aggregat fra 2013",
+              "Normal levetid for denne typen anlegg er typisk 15–20 år, avhengig av bruksintensitet og vedlikehold"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.93,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_004",
+            "description": "Ventilasjonsanlegget (aggregat fra 2013) nærmer seg eller har passert forventet levetid på 15–20 år. Dette innebærer økt risiko for funksjonssvikt, redusert effektivitet og behov for hyppigere vedlikehold eller utskifting.",
+            "evidence": [
+              "Ventilasjonsanlegget har en alder som tilsier at det nærmer seg eller har passert forventet levetid på 15–20 år.",
+              "Aggregat fra 2013.",
+              "Selv om anlegget fungerer på befaringstidspunktet, innebærer alderen økt risiko for funksjonssvikt, redusert effektivitet og behov for hyppigere vedlikehold.",
+              "Det anbefales imidlertid å planlegge for fremtidig oppgradering eller utskifting av anlegget, da alderen kan medføre økt risiko for funksjonssvikt."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              17,
+              26,
+              28,
+              29
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7df2e0db-28f0-4af0-949c-c4e7b25d9d5b_risk_003",
+            "description": "Etasjeskille/gulv mot grunn er gitt TG2 grunnet nivåforskjell på 0–20 mm i stue/kjøkken. Målt høydeforskjell på mellom 10–20 mm innenfor en lengde på 2 meter overskrider standardens krav til godkjente måleavvik.",
+            "evidence": [
+              "Etasjeskille/gulv mot grunn på grunn av nivåforskjell i stue/kjøkken mellom 0-20mm",
+              "Målt høydeforskjell på mellom 10 - 20 mm innenfor en lengde på 2 meter. Tilstandsgrad 2 gis med bakgrunn i standardens krav til godkjente måleavvik",
+              "Det ble målt mellom 0-20 mm nivåforskjell i stue/kjøkken"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_005",
+            "description": "Etasjeskille/gulv mot grunn er vurdert med TG2 grunnet nivåforskjell på mellom 10–20 mm i stue/kjøkken innenfor en lengde på 2 meter. Dette indikerer skjevhet i gulvet utover godkjente måleavvik.",
+            "evidence": [
+              "Etasjeskille/gulv mot grunn på grunn av nivåforskjell i stue/kjøkken mellom 0-20mm.",
+              "Målt høydeforskjell på mellom 10 - 20 mm innenfor en lengde på 2 meter. Tilstandsgrad 2 gis med bakgrunn i standardens krav til godkjente måleavvik.",
+              "Det ble målt mellom 0-20 mm nivåforskjell i stue/kjøkken."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              17,
+              26,
+              27
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7df2e0db-28f0-4af0-949c-c4e7b25d9d5b_risk_006",
+            "description": "Tilliggende konstruksjoner på våtrom (bad) er ikke undersøkt (TGIU) fordi dusjsone grenser mot naboseksjon/kjøkkeninnredning, og hulltaking ikke ble foretatt. Dette betyr at eventuelle fuktskader i tilstøtende konstruksjoner ikke kan utelukkes.",
+            "evidence": [
+              "Tilliggende konstruksjoner våtrom. Det er ikke foretatt hulltaking da dusjsone grenser mot naboseksjon/kjøkkeninnredning",
+              "Bygningsdeler vurdert med TG IU: Tilliggende konstruksjoner våtrom",
+              "Fuktsøk er utført med fuktindikator (Protimeter MMS3) der hulltaking ikke var mulig. Indikatoren er begrenset til å påvise fukt i overflaten og gir ikke informasjon om fuktens plassering i forhold til membranen"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_006",
+            "description": "Tilliggende konstruksjoner til våtrom er ikke undersøkt (TGIU) fordi dusjsone grenser mot naboseksjon/kjøkkeninnredning, og hulltaking ikke ble utført. Fuktskader i disse konstruksjonene kan ikke utelukkes.",
+            "evidence": [
+              "Tilliggende konstruksjoner våtrom. Det er ikke foretatt hulltaking da dusjsone grenser mot naboseksjon/kjøkkeninnredning.",
+              "Det er ikke foretatt hulltaking da dusjsone grenser mot naboseksjon/kjøkkeninnredning. Det ble foretatt kontroll med fuktindikator, uten å registrere avvik.",
+              "Fuktsøk er utført med fuktindikator (Protimeter MMS3) der hulltaking ikke var mulig. Indikatoren er begrenset til å påvise fukt i overflaten og gir ikke informasjon om fuktens plassering i forhold til membranen."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18,
+              28
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7df2e0db-28f0-4af0-949c-c4e7b25d9d5b_risk_005",
+            "description": "Det er ikke kjent om det er gjennomført kontroll av det elektriske anlegget av offentlig myndighet (Det lokale eltilsyn) de siste fem årene. Boligen er et dødsbo, og det har ikke vært mulig å innhente informasjon fra eier. Vurderingen er begrenset til visuell kontroll.",
+            "evidence": [
+              "Det er ukjent om det er gjennomført kontroll av det elektriske anlegget av offentlig myndighet (Det lokale eltilsyn) de siste fem årene",
+              "Boligen er et dødsbo, og det har derfor ikke vært mulig å innhente informasjon fra eier",
+              "Egenerklæringsskjema foreligger ikke. Vurderingen er begrenset til visuell kontroll av tilgjengelige punkter uten inngrep",
+              "Det er ikke utført teknisk kontroll"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_007",
+            "description": "Det elektriske anlegget anbefales utvidet kontroll av. Det er ukjent om det er gjennomført el-tilsyn de siste fem år, og det foreligger ikke samsvarserklæringer for anlegget. Boligen er et dødsbo, og informasjon fra eier har ikke vært mulig å innhente.",
+            "evidence": [
+              "Det er ukjent om det er gjennomført kontroll av det elektriske anlegget av offentlig myndighet (Det lokale eltilsyn) de siste fem årene.",
+              "Det er ikke fremvist samsvarserklæringer for anlegget (utført ifb. med dødsbo).",
+              "På bakgrunn av nevnte forhold anbefales det å foreta en utvidet kontroll av anlegget.",
+              "Forskrift om elektriske lavspenningsanlegg anbefaler at det blir foretatt regelmessig ettersyn av det elektriske anlegget hvert tiende år. Det er ukjent om det er foretatt tilsyn i de senere år."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              29
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7df2e0db-28f0-4af0-949c-c4e7b25d9d5b_risk_007",
+            "description": "Eiendommen ligger i en hensynssone for faresone – aktsomhetsområde for steinsprang, jord- og flomskred og snøskred med berøringsgrad 100%. Dette representerer en naturrisiko som kan påvirke eiendommens sikkerhet og forsikringsforhold.",
+            "evidence": [
+              "Faresone. Aktsomhetsområde for steinsprang, jord- og flomskred og snøskred, berøringsgrad 100%",
+              "Eiendommen befinner seg i følgende hensynssoner: Faresone. Aktsomhetsområde for steinsprang, jord- og flomskred og snøskred, berøringsgrad 100%"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_008",
+            "description": "Eiendommen ligger i en hensynssone klassifisert som faresone for steinsprang, jord- og flomskred og snøskred med berøringsgrad 100%. Dette utgjør en naturfarerelatert risiko for beboere og eiendom.",
+            "evidence": [
+              "Eiendommen befinner seg i følgende hensynssoner: - Faresone. Aktsomhetsområde for steinsprang, jord- og flomskred og snøskred, berøringsgrad 100%",
+              "- Friluftsliv. Byfjellgrense - vest, berøringsgrad 16,2%"
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7df2e0db-28f0-4af0-949c-c4e7b25d9d5b_risk_009",
+            "description": "Legalpant utgjør en skjult heftelse som ikke fremgår av grunnboksutskriften. Kommunen har legalpant for kommunale avgifter og eiendomsskatt, og øvrige seksjonseiere har legalpant på inntil 2G for krav knyttet til sameieforholdet. Legalpant til kommunen har høyere prioritet enn banklån.",
+            "evidence": [
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen",
+              "Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter og eventuell eiendomsskatt",
+              "De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader",
+              "Legalpant til kommunen har høyere prioritet enn legalpant til sameiet"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_010",
+            "description": "Legalpant utgjør en skjult heftelse som ikke fremgår av grunnboksutskriften. Kommunen har legalpant for kommunale avgifter og eiendomsskatt, og øvrige seksjonseiere har legalpant på inntil 2G for krav knyttet til sameieforholdet. Disse har prioritet foran tinglyste banklån.",
+            "evidence": [
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen.",
+              "Legalpant til kommunen har høyere prioritet enn legalpant til sameiet.",
+              "De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7df2e0db-28f0-4af0-949c-c4e7b25d9d5b_risk_011",
+            "description": "Takstmann kjenner ikke til om det foreligger tilstandsrapport, vedlikeholdsplan eller lignende for felles bygningsmasse i sameiet. Manglende oversikt over sameiets vedlikeholdsstatus kan innebære risiko for fremtidige, uventede felleskostnader.",
+            "evidence": [
+              "Takstmann kjenner ikke til om det foreligger tilstandsrapport, vedlikeholdsplan eller lignende for felles bygningsmasse"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_015",
+            "description": "Tilstandsrapporten dekker ikke bygningens fellesdeler (tak, yttervegger, grunnmur, drenering, felles tekniske installasjoner). Det er heller ikke kjent om det foreligger tilstandsrapport eller vedlikeholdsplan for felles bygningsmasse, noe som gir begrenset innsikt i sameiets tekniske tilstand.",
+            "evidence": [
+              "Tilstandsrapporten omfatter derfor ikke bygningens fellesdeler som for eksempel tak, yttervegger, grunnmur, drenering, og felles tekniske installasjoner.",
+              "Takstmann kjenner ikke til om det foreligger tilstandsrapport, vedlikeholdsplan eller lignende for felles bygningsmasse."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              25
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "7df2e0db-28f0-4af0-949c-c4e7b25d9d5b_risk_008",
+          "description": "Ventilasjon på badet er gitt TG2 grunnet alder. Mekanisk avtrekk via ventil i himling med tilluft via luftespalte under dør. Alderen på anlegget innebærer risiko for redusert funksjon og økt vedlikeholdsbehov.",
+          "evidence": [
+            "Ventilasjon grunnet alder",
+            "Mekanisk avtrekk via ventil i himling. Tilluft via luftespalte under dør"
+          ],
+          "source_documents": [
+            "d108_d108"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.85,
+          "details": {}
+        },
+        {
+          "risk_id": "7df2e0db-28f0-4af0-949c-c4e7b25d9d5b_risk_010",
+          "description": "Badet er pusset opp i senere tid, men utførelse og dokumentasjon er ukjent. Det foreligger ikke dokumentasjon på membranarbeid, og det er ikke mulig å kontrollere membran og mansjetter uten destruktive inngrep. Dette øker risikoen for skjulte feil ved våtrommet.",
+          "evidence": [
+            "Badet er pusset opp i senere tid. Ukjent utførelse/dokumentasjon",
+            "Bilder eller øvrig dokumentasjon på membranarbeid er ikke mottatt eller kontrollert",
+            "Det gjøres spesielt oppmerksom på at membran og mansjetter ikke er kontrollerbare uten destruktive inngrep (fjerning av fliser)"
+          ],
+          "source_documents": [
+            "d108_d108"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "7df2e0db-28f0-4af0-949c-c4e7b25d9d5b_risk_012",
+          "description": "Boligen selges 'som den er' som et forbrukerkjøp fra et dødsbo, noe som begrenser selgers ansvar. Kjøper har begrenset reklamasjonsadgang og bærer dermed en høyere risiko for skjulte feil og mangler som ikke er avdekket i tilstandsrapporten.",
+          "evidence": [
+            "Det gjøres spesielt oppmerksom på at boligen selges for et dødsbo som offentlig skifte",
+            "Ved slike kjøp selges eiendommen «som den er», og selgers ansvar er begrenset til det som følger direkte av avtalen, jf. avhendingsloven § 3-9",
+            "All informasjon i tilstandsrapporten anses som kjent for kjøper, og det vil ikke være mulig å reklamere på forhold som er nevnt i rapporten"
+          ],
+          "source_documents": [
+            "d108_d108"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.9,
+          "details": {}
+        },
+        {
+          "risk_id": "7df2e0db-28f0-4af0-949c-c4e7b25d9d5b_risk_013",
+          "description": "Gulvmåling på badet viser 15 mm nivåforskjell fra topp flis ved dørteskel til kant av dusjsone, og videre kontroll er begrenset grunnet dusjkabinett i rommet. Dette kan indikere avvik fra krav til fall mot sluk og øker risikoen for vannansamling.",
+          "evidence": [
+            "Det ble målt 15 mm nivåforskjell fra topp flis ved dørteskel til kant av dusjsone",
+            "Videre kontroll av begrenset grunnet dusjkabinett i rommet",
+            "Målt høydeforskjell på mellom 10 - 20 mm innenfor en lengde på 2 meter. Tilstandsgrad 2 gis med bakgrunn i standardens krav til godkjente måleavvik"
+          ],
+          "source_documents": [
+            "d108_d108"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.87,
+          "details": {}
+        },
+        {
+          "risk_id": "7df2e0db-28f0-4af0-949c-c4e7b25d9d5b_risk_014",
+          "description": "Det kan være forskjell mellom boligens faktiske bruk av rom og det som er godkjent av myndighetene. Ferdigattest gir ingen garanti for at bygget er oppført i henhold til tillatelsen og gjeldende regelverk, og det kan ha blitt utført arbeid som ikke er byggemeldt eller godkjent.",
+          "evidence": [
+            "Det kan være forskjell mellom boligens faktiske bruk av rom og det som er godkjent av myndighetene",
+            "selv om ferdigattest foreligger, gir det ingen garanti for at bygget er oppført i henhold til tillatelsen og gjeldende regelverk, eller at det senere er utført arbeid på bygget som ikke er byggemeldt eller godkjent"
+          ],
+          "source_documents": [
+            "d108_d108"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d108_009",
+          "description": "Felleskostnadene kan bli besluttet økt etter utarbeidelse av salgsoppgaven. Kjøper bør være forberedt på at månedlige kostnader kan stige utover oppgitte kr 2 816,- pr. mnd.",
+          "evidence": [
+            "Felleskostnadene kan bli besluttet økt etter utarbeidelse av salgsoppgaven.",
+            "Felleskostnader kr 2 816,- pr. mnd"
+          ],
+          "source_documents": [
+            "d108.pdf"
+          ],
+          "source_pages": [
+            16
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d108_011",
+          "description": "Energiattesten viser at boligen er registrert med byggeår 1957 og bruksareal 57 m², mens salgsoppgaven oppgir byggeår 2004 og BRA 88/93,9 m². Dette er en betydelig diskrepans i energiattestens grunnlagsdata som kan påvirke energikarakterens pålitelighet.",
+          "evidence": [
+            "Byggeår: 1957 (energiattest)",
+            "Bruksareal: 57,0 m² / Oppvarmet bruksareal: 57,0 m² (energiattest)",
+            "Byggeår 2004 (salgsoppgave og tilstandsrapport)",
+            "BRA-i: 88 m² / BRA totalt: 93.9 kvm (salgsoppgave)",
+            "Bruksenhetsnummer: H0302 (energiattest) – avviker fra SSb-nr H0507 i tilstandsrapporten"
+          ],
+          "source_documents": [
+            "d108.pdf"
+          ],
+          "source_pages": [
+            4,
+            17,
+            33
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d108_012",
+          "description": "Selger kan prioritere bud fra ikke-forbrukere fremfor forbrukerbud, selv om forbrukerbudet er høyere. Ved salg til ikke-forbruker kan selgers ansvar begrenses ytterligere ved at boligen selges «som den er», noe som svekker kjøpers rettigheter.",
+          "evidence": [
+            "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud.",
+            "Når kjøper ikke er forbruker, kan selgers ansvar begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger.",
+            "Det understrekes at selger står fritt til å velge hvilket bud som aksepteres, og er ikke forpliktet til å velge det høyeste."
+          ],
+          "source_documents": [
+            "d108.pdf"
+          ],
+          "source_pages": [
+            19
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d108_013",
+          "description": "Kommunale avgifter er oppgitt som et estimat og det faktiske beløpet kan avvike. Eiendomsskatt er kr 4 814,- (2026) og kommunale avgifter er estimert til kr 10 237,- (2026), men disse kan endres.",
+          "evidence": [
+            "Oppgitt beløp på kr 10 237,- er et estimat for hele året. Det fakturerte beløpet kan avvike fra estimatet.",
+            "Eiendomsskatt: Kr 4 814,- (2026)",
+            "Kommunale avgifter: Kr 10 237 (2026)"
+          ],
+          "source_documents": [
+            "d108.pdf"
+          ],
+          "source_pages": [
+            16
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d108_014",
+          "description": "Pågående revisjon av kommuneplanens arealdel (KPA 2027) kan medføre endringer i reguleringsbestemmelser som påvirker eiendommen og nærområdet. Vedtak er forventet i første kvartal 2027.",
+          "evidence": [
+            "PlanID: 71740000. Kommuneplanens arealdel KPA 2027. Bystyret legger til grunn at revisjon av KPA-bestemmelsene skal sluttføres med vedtak Bystyret i første kvartal 2027.",
+            "Hovedmålet med revisjon av KPA-bestemmelsene er forenkling, fortgang og forutsigbarhet i plan- og byggesaksprosesser, for å sikre gode boliger og nabolag."
+          ],
+          "source_documents": [
+            "d108.pdf"
+          ],
+          "source_pages": [
+            18
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d108_016",
+          "description": "Korttidsutleie er begrenset til maksimalt 90 døgn per år, og utleie i mer enn 30 sammenhengende døgn er ikke tillatt uten godkjenning. Leier må i tillegg godkjennes av sameiet ved styret, noe som begrenser fleksibiliteten ved utleie.",
+          "evidence": [
+            "Korttidsutleie er tillatt i opptil 90 døgn per år, jf. eierseksjonsloven § 24. Korttidsutleie av hele boligseksjonen i mer enn 90 døgn årlig er ikke tillatt.",
+            "Med korttidsutleie menes utleie i inntil 30 døgn sammenhengende.",
+            "En seksjonseier har rett til å leie ut sin seksjon, men leier må godkjennes av sameiet ved styret."
+          ],
+          "source_documents": [
+            "d108.pdf"
+          ],
+          "source_pages": [
+            18,
+            37
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d108_017",
+          "description": "Ingen kan eie mer enn to boligseksjoner i sameiet. Seksjoner eid av nærstående eller gjennom firma regnes også med. Dette begrenser investorers mulighet til å kjøpe seksjonen som del av en større portefølje i samme sameie.",
+          "evidence": [
+            "Det informeres om at ingen kan eie mer enn to boligseksjoner i sameiet, i henhold til eierseksjonsloven § 23. Seksjoner som eies av nærstående eller gjennom et firma regnes også med."
+          ],
+          "source_documents": [
+            "d108.pdf"
+          ],
+          "source_pages": [
+            19
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d108_018",
+          "description": "Stikkledninger fra eiendommen til det kommunale nettet er private, og vedlikeholdsansvaret påhviler sameiet. Dette kan medføre uventede kostnader ved rørbrudd eller behov for rehabilitering av private ledninger.",
+          "evidence": [
+            "Eiendommen er tilknyttet offentlig vann- og avløpssystem. Stikkledningene fra eiendommen og ut til det kommunale nettet er private, og vedlikeholdsansvaret for disse påhviler sameiet."
+          ],
+          "source_documents": [
+            "d108.pdf"
+          ],
+          "source_pages": [
+            18
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d108_019",
+          "description": "Det er ikke foretatt ytterligere utvask/rengjøring av leiligheten innen overtagelse. Boligen er et dødsbo og selges i den stand den er, uten garanti for rengjøring utover det som allerede er gjort.",
+          "evidence": [
+            "For god ordens skyld gjøres det oppmerksom på at det ikke vil bli foretatt ytterligere utvask/rengjøring av leiligheten innen overtagelse."
+          ],
+          "source_documents": [
+            "d108.pdf"
+          ],
+          "source_pages": [
+            19
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d108_020",
+          "description": "Oppmålingen er ikke kontrollert opp mot byggetegninger (ikke mottatt), og egenerklæring fra eier foreligger ikke (dødsbo). Dette øker usikkerheten rundt arealoppgaver og boligens lovlighet.",
+          "evidence": [
+            "Oppmålingen er ikke kontrollert opp mot tegninger (ikke mottatt).",
+            "Egenerklæring: Dødsbo. Ikke gjennomgått.",
+            "Opplysninger fra eier. Dødsbo. Ikke gjennomgått."
+          ],
+          "source_documents": [
+            "d108.pdf"
+          ],
+          "source_pages": [
+            31
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "7df2e0db-28f0-4af0-949c-c4e7b25d9d5b_risk_008",
+            "description": "Ventilasjon på badet er gitt TG2 grunnet alder. Mekanisk avtrekk via ventil i himling med tilluft via luftespalte under dør. Alderen på anlegget innebærer risiko for redusert funksjon og økt vedlikeholdsbehov.",
+            "evidence": [
+              "Ventilasjon grunnet alder",
+              "Mekanisk avtrekk via ventil i himling. Tilluft via luftespalte under dør"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter at ventilasjon er gitt TG2 grunnet alder. I tilstandsrapporten (side 28) beskrives ventilasjonsanlegget med aggregat fra 2013, og det fremgår at 'Ventilasjonsanlegget har en alder som tilsier at det nærmer seg eller har passert forventet levetid på 15–20 år. Selv om anlegget fungerer på befaringstidspunktet, innebærer alderen økt risiko for funksjonssvikt, redusert effektivitet og behov for hyppigere vedlikehold.' Videre beskrives badet med 'Mekanisk avtrekk via ventil i himling. Tilluft via luftespalte under dør.' Salgsoppgaven lister også 'Ventilasjon grunnet alder' som en bygningsdel vurdert med TG2."
+        },
+        {
+          "risk": {
+            "risk_id": "7df2e0db-28f0-4af0-949c-c4e7b25d9d5b_risk_010",
+            "description": "Badet er pusset opp i senere tid, men utførelse og dokumentasjon er ukjent. Det foreligger ikke dokumentasjon på membranarbeid, og det er ikke mulig å kontrollere membran og mansjetter uten destruktive inngrep. Dette øker risikoen for skjulte feil ved våtrommet.",
+            "evidence": [
+              "Badet er pusset opp i senere tid. Ukjent utførelse/dokumentasjon",
+              "Bilder eller øvrig dokumentasjon på membranarbeid er ikke mottatt eller kontrollert",
+              "Det gjøres spesielt oppmerksom på at membran og mansjetter ikke er kontrollerbare uten destruktive inngrep (fjerning av fliser)"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet støtter denne risikoen fullt ut. I tilstandsrapporten (side 27-28) fremgår det at 'Badet er pusset opp i senere tid. Ukjent utførelse/dokumentasjon.' Videre: 'Bilder eller øvrig dokumentasjon på membranarbeid er ikke mottatt eller kontrollert.' Og: 'Det gjøres spesielt oppmerksom på at membran og mansjetter ikke er kontrollerbare uten destruktive inngrep (fjerning av fliser).' Salgsoppgaven lister 'Sluk, membran og tettesjikt på bad grunnet alder og ukjent utførelse/dokumentasjon' som TG2."
+        },
+        {
+          "risk": {
+            "risk_id": "7df2e0db-28f0-4af0-949c-c4e7b25d9d5b_risk_012",
+            "description": "Boligen selges 'som den er' som et forbrukerkjøp fra et dødsbo, noe som begrenser selgers ansvar. Kjøper har begrenset reklamasjonsadgang og bærer dermed en høyere risiko for skjulte feil og mangler som ikke er avdekket i tilstandsrapporten.",
+            "evidence": [
+              "Det gjøres spesielt oppmerksom på at boligen selges for et dødsbo som offentlig skifte",
+              "Ved slike kjøp selges eiendommen «som den er», og selgers ansvar er begrenset til det som følger direkte av avtalen, jf. avhendingsloven § 3-9",
+              "All informasjon i tilstandsrapporten anses som kjent for kjøper, og det vil ikke være mulig å reklamere på forhold som er nevnt i rapporten"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter denne risikoen. Det fremgår eksplisitt at 'Det gjøres spesielt oppmerksom på at boligen selges for et dødsbo som offentlig skifte.' Videre under kontraktsgrunnlag: 'Ved slike kjøp selges eiendommen «som den er», og selgers ansvar er begrenset til det som følger direkte av avtalen, jf. avhendingsloven § 3-9.' Og: 'All informasjon i tilstandsrapporten anses som kjent for kjøper, og det vil ikke være mulig å reklamere på forhold som er nevnt i rapporten.' Egenerklæringen bekrefter også at selger ikke har bebodd eiendommen og mangler kunnskap om den."
+        },
+        {
+          "risk": {
+            "risk_id": "7df2e0db-28f0-4af0-949c-c4e7b25d9d5b_risk_013",
+            "description": "Gulvmåling på badet viser 15 mm nivåforskjell fra topp flis ved dørteskel til kant av dusjsone, og videre kontroll er begrenset grunnet dusjkabinett i rommet. Dette kan indikere avvik fra krav til fall mot sluk og øker risikoen for vannansamling.",
+            "evidence": [
+              "Det ble målt 15 mm nivåforskjell fra topp flis ved dørteskel til kant av dusjsone",
+              "Videre kontroll av begrenset grunnet dusjkabinett i rommet",
+              "Målt høydeforskjell på mellom 10 - 20 mm innenfor en lengde på 2 meter. Tilstandsgrad 2 gis med bakgrunn i standardens krav til godkjente måleavvik"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.87,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet støtter denne risikoen. I tilstandsrapporten (side 27) fremgår det: 'Det ble målt 15 mm nivåforskjell fra topp flis ved dørteskel til kant av dusjsone. Videre kontroll av begrenset grunnet dusjkabinett i rommet.' Og i oppsummeringen: 'Målt høydeforskjell på mellom 10 - 20 mm innenfor en lengde på 2 meter. Tilstandsgrad 2 gis med bakgrunn i standardens krav til godkjente måleavvik.' Dette er knyttet til badet og indikerer avvik fra krav til fall mot sluk."
+        },
+        {
+          "risk": {
+            "risk_id": "7df2e0db-28f0-4af0-949c-c4e7b25d9d5b_risk_014",
+            "description": "Det kan være forskjell mellom boligens faktiske bruk av rom og det som er godkjent av myndighetene. Ferdigattest gir ingen garanti for at bygget er oppført i henhold til tillatelsen og gjeldende regelverk, og det kan ha blitt utført arbeid som ikke er byggemeldt eller godkjent.",
+            "evidence": [
+              "Det kan være forskjell mellom boligens faktiske bruk av rom og det som er godkjent av myndighetene",
+              "selv om ferdigattest foreligger, gir det ingen garanti for at bygget er oppført i henhold til tillatelsen og gjeldende regelverk, eller at det senere er utført arbeid på bygget som ikke er byggemeldt eller godkjent"
+            ],
+            "source_documents": [
+              "d108_d108"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter denne risikoen direkte. Under ferdigattest/brukstillatelse i salgsoppgaven (side 17) fremgår det: 'Det kan være forskjell mellom boligens faktiske bruk av rom og det som er godkjent av myndighetene.' Og: 'selv om ferdigattest foreligger, gir det ingen garanti for at bygget er oppført i henhold til tillatelsen og gjeldende regelverk, eller at det senere er utført arbeid på bygget som ikke er byggemeldt eller godkjent.' Tilstandsrapporten nevner også at rommene er beskrevet ut fra bruken på befaringstidspunktet, og at dette kan avvike fra hva de opprinnelig er omsøkt som."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "total_support": 20
+      }
+    },
+    "ground_truth": {
+      "run_id": "57bbcc93-8cbb-42d8-9ec1-167ba8591afa_gt",
+      "system_type": "ground_truth",
+      "overall_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "total_support": 20
+      },
+      "matched_risks": 20,
+      "unmatched_predicted": 0,
+      "unmatched_ground_truth": 0,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "gt_d108_001",
+            "description": "Salg fra dødsbo med svært begrenset kunnskap om eiendommen. Selger (bobestyrer) har ikke bebodd eiendommen og har ingen kunnskap om feil, mangler eller historikk. Når boet er oppgjort, slettes det som rettsubjekt og det vil ikke lenger være mulig å gjøre gjeldende mangler overfor boet.",
+            "evidence": [
+              "Det gjøres spesielt oppmerksom på at boligen selges for et dødsbo som offentlig skifte. Bobestyrer har ikke bebodd eiendommen og har ingen kunnskap vedrørende eiendommen og eiendommens beskaffenhet utover det som her fremgår av prospektet.",
+              "Selger har ikke bebodd eiendommen og har derfor ikke spesifikk kunnskap om den. Det kan derfor være skader og andre forhold ved eiendommen som ikke er spesifikt opplyst.",
+              "Dette innebærer at når hele boet er oppgjort/avgjort, vil boet som rettsubjekt bli slettet, og det vil ikke lenger være mulig å gjøre gjeldende mangler på eiendommen overfor boet.",
+              "Egenerklæringsskjema er ikke kontrollert. Befaringen er gjennomført i forbindelse med et dødsbo. Egenerklæringsskjema er derfor ikke utfylt, og det foreligger begrenset informasjon om boligens historikk, vedlikehold og dokumentasjon."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18,
+              19,
+              22,
+              33
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_001",
+            "description": "Salg fra dødsbo med svært begrenset kunnskap om eiendommen. Selger (bobestyrer) har ikke bebodd eiendommen og har ingen kunnskap om feil, mangler eller historikk. Når boet er oppgjort, slettes det som rettsubjekt og det vil ikke lenger være mulig å gjøre gjeldende mangler overfor boet.",
+            "evidence": [
+              "Det gjøres spesielt oppmerksom på at boligen selges for et dødsbo som offentlig skifte. Bobestyrer har ikke bebodd eiendommen og har ingen kunnskap vedrørende eiendommen og eiendommens beskaffenhet utover det som her fremgår av prospektet.",
+              "Selger har ikke bebodd eiendommen og har derfor ikke spesifikk kunnskap om den. Det kan derfor være skader og andre forhold ved eiendommen som ikke er spesifikt opplyst.",
+              "Dette innebærer at når hele boet er oppgjort/avgjort, vil boet som rettsubjekt bli slettet, og det vil ikke lenger være mulig å gjøre gjeldende mangler på eiendommen overfor boet.",
+              "Egenerklæringsskjema er ikke kontrollert. Befaringen er gjennomført i forbindelse med et dødsbo. Egenerklæringsskjema er derfor ikke utfylt, og det foreligger begrenset informasjon om boligens historikk, vedlikehold og dokumentasjon."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18,
+              19,
+              22,
+              33
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d108_002",
+            "description": "Rekkverkshøyde på balkong er for lav i henhold til dagens krav (TEK17). Rekkverket er målt til 1,12 meter, mens TEK17 krever minimum 1,20 meter der nivåforskjellen er mer enn 10 meter. Dette er klassifisert som et HMS-avvik.",
+            "evidence": [
+              "Rekkverket på balkong eller terrasse er for lavt i forhold til dagens krav.",
+              "Rekkverkshøyde ble målt til 1,12 meter.",
+              "Fra TEK 17 (paragraf 12-17): Balkonger, terrasser, tribuner, passasjer og lignende skal ha rekkverk med høyde; a) minimum 1,20 m der nivåforskjellen er mer enn 10 m.",
+              "Forhold som åpenbart kan medføre fare for helse, miljø og sikkerhet > Rekkverket på balkong eller terrasse er for lavt i forhold til dagens krav."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18,
+              26,
+              27,
+              30
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_002",
+            "description": "Rekkverkshøyde på balkong er for lav i henhold til dagens krav (TEK17). Rekkverket er målt til 1,12 meter, mens TEK17 krever minimum 1,20 meter der nivåforskjellen er mer enn 10 meter. Dette er klassifisert som et HMS-avvik.",
+            "evidence": [
+              "Rekkverket på balkong eller terrasse er for lavt i forhold til dagens krav.",
+              "Rekkverkshøyde ble målt til 1,12 meter.",
+              "Fra TEK 17 (paragraf 12-17): Balkonger, terrasser, tribuner, passasjer og lignende skal ha rekkverk med høyde; a) minimum 1,20 m der nivåforskjellen er mer enn 10 m.",
+              "Forhold som åpenbart kan medføre fare for helse, miljø og sikkerhet > Rekkverket på balkong eller terrasse er for lavt i forhold til dagens krav."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18,
+              26,
+              27,
+              30
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d108_003",
+            "description": "Sluk, membran og tettesjikt på badet er vurdert med TG2. Mer enn halvparten av forventet brukstid er passert på membranløsningen, og det foreligger ukjent utførelse/dokumentasjon. Dette innebærer risiko for lekkasje og vannskader.",
+            "evidence": [
+              "Sluk, membran og tettesjikt på bad grunnet alder og ukjent utførelse/dokumentasjon.",
+              "Mer enn halvparten av forventet brukstid er passert på membranløsningen.",
+              "Sluk har begrenset mulighet for inspeksjon og rengjøring.",
+              "Ukjent utførelse/dokumentasjon.",
+              "Bilder eller øvrig dokumentasjon på membranarbeid er ikke mottatt eller kontrollert."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              17,
+              26,
+              27,
+              28
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_003",
+            "description": "Sluk, membran og tettesjikt på badet er vurdert med TG2. Mer enn halvparten av forventet brukstid er passert på membranløsningen, og det foreligger ukjent utførelse/dokumentasjon. Dette innebærer risiko for lekkasje og vannskader.",
+            "evidence": [
+              "Sluk, membran og tettesjikt på bad grunnet alder og ukjent utførelse/dokumentasjon.",
+              "Mer enn halvparten av forventet brukstid er passert på membranløsningen.",
+              "Sluk har begrenset mulighet for inspeksjon og rengjøring.",
+              "Ukjent utførelse/dokumentasjon.",
+              "Bilder eller øvrig dokumentasjon på membranarbeid er ikke mottatt eller kontrollert."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              17,
+              26,
+              27,
+              28
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d108_004",
+            "description": "Ventilasjonsanlegget (aggregat fra 2013) nærmer seg eller har passert forventet levetid på 15–20 år. Dette innebærer økt risiko for funksjonssvikt, redusert effektivitet og behov for hyppigere vedlikehold eller utskifting.",
+            "evidence": [
+              "Ventilasjonsanlegget har en alder som tilsier at det nærmer seg eller har passert forventet levetid på 15–20 år.",
+              "Aggregat fra 2013.",
+              "Selv om anlegget fungerer på befaringstidspunktet, innebærer alderen økt risiko for funksjonssvikt, redusert effektivitet og behov for hyppigere vedlikehold.",
+              "Det anbefales imidlertid å planlegge for fremtidig oppgradering eller utskifting av anlegget, da alderen kan medføre økt risiko for funksjonssvikt."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              17,
+              26,
+              28,
+              29
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_004",
+            "description": "Ventilasjonsanlegget (aggregat fra 2013) nærmer seg eller har passert forventet levetid på 15–20 år. Dette innebærer økt risiko for funksjonssvikt, redusert effektivitet og behov for hyppigere vedlikehold eller utskifting.",
+            "evidence": [
+              "Ventilasjonsanlegget har en alder som tilsier at det nærmer seg eller har passert forventet levetid på 15–20 år.",
+              "Aggregat fra 2013.",
+              "Selv om anlegget fungerer på befaringstidspunktet, innebærer alderen økt risiko for funksjonssvikt, redusert effektivitet og behov for hyppigere vedlikehold.",
+              "Det anbefales imidlertid å planlegge for fremtidig oppgradering eller utskifting av anlegget, da alderen kan medføre økt risiko for funksjonssvikt."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              17,
+              26,
+              28,
+              29
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d108_005",
+            "description": "Etasjeskille/gulv mot grunn er vurdert med TG2 grunnet nivåforskjell på mellom 10–20 mm i stue/kjøkken innenfor en lengde på 2 meter. Dette indikerer skjevhet i gulvet utover godkjente måleavvik.",
+            "evidence": [
+              "Etasjeskille/gulv mot grunn på grunn av nivåforskjell i stue/kjøkken mellom 0-20mm.",
+              "Målt høydeforskjell på mellom 10 - 20 mm innenfor en lengde på 2 meter. Tilstandsgrad 2 gis med bakgrunn i standardens krav til godkjente måleavvik.",
+              "Det ble målt mellom 0-20 mm nivåforskjell i stue/kjøkken."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              17,
+              26,
+              27
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_005",
+            "description": "Etasjeskille/gulv mot grunn er vurdert med TG2 grunnet nivåforskjell på mellom 10–20 mm i stue/kjøkken innenfor en lengde på 2 meter. Dette indikerer skjevhet i gulvet utover godkjente måleavvik.",
+            "evidence": [
+              "Etasjeskille/gulv mot grunn på grunn av nivåforskjell i stue/kjøkken mellom 0-20mm.",
+              "Målt høydeforskjell på mellom 10 - 20 mm innenfor en lengde på 2 meter. Tilstandsgrad 2 gis med bakgrunn i standardens krav til godkjente måleavvik.",
+              "Det ble målt mellom 0-20 mm nivåforskjell i stue/kjøkken."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              17,
+              26,
+              27
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d108_006",
+            "description": "Tilliggende konstruksjoner til våtrom er ikke undersøkt (TGIU) fordi dusjsone grenser mot naboseksjon/kjøkkeninnredning, og hulltaking ikke ble utført. Fuktskader i disse konstruksjonene kan ikke utelukkes.",
+            "evidence": [
+              "Tilliggende konstruksjoner våtrom. Det er ikke foretatt hulltaking da dusjsone grenser mot naboseksjon/kjøkkeninnredning.",
+              "Det er ikke foretatt hulltaking da dusjsone grenser mot naboseksjon/kjøkkeninnredning. Det ble foretatt kontroll med fuktindikator, uten å registrere avvik.",
+              "Fuktsøk er utført med fuktindikator (Protimeter MMS3) der hulltaking ikke var mulig. Indikatoren er begrenset til å påvise fukt i overflaten og gir ikke informasjon om fuktens plassering i forhold til membranen."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18,
+              28
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_006",
+            "description": "Tilliggende konstruksjoner til våtrom er ikke undersøkt (TGIU) fordi dusjsone grenser mot naboseksjon/kjøkkeninnredning, og hulltaking ikke ble utført. Fuktskader i disse konstruksjonene kan ikke utelukkes.",
+            "evidence": [
+              "Tilliggende konstruksjoner våtrom. Det er ikke foretatt hulltaking da dusjsone grenser mot naboseksjon/kjøkkeninnredning.",
+              "Det er ikke foretatt hulltaking da dusjsone grenser mot naboseksjon/kjøkkeninnredning. Det ble foretatt kontroll med fuktindikator, uten å registrere avvik.",
+              "Fuktsøk er utført med fuktindikator (Protimeter MMS3) der hulltaking ikke var mulig. Indikatoren er begrenset til å påvise fukt i overflaten og gir ikke informasjon om fuktens plassering i forhold til membranen."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18,
+              28
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d108_007",
+            "description": "Det elektriske anlegget anbefales utvidet kontroll av. Det er ukjent om det er gjennomført el-tilsyn de siste fem år, og det foreligger ikke samsvarserklæringer for anlegget. Boligen er et dødsbo, og informasjon fra eier har ikke vært mulig å innhente.",
+            "evidence": [
+              "Det er ukjent om det er gjennomført kontroll av det elektriske anlegget av offentlig myndighet (Det lokale eltilsyn) de siste fem årene.",
+              "Det er ikke fremvist samsvarserklæringer for anlegget (utført ifb. med dødsbo).",
+              "På bakgrunn av nevnte forhold anbefales det å foreta en utvidet kontroll av anlegget.",
+              "Forskrift om elektriske lavspenningsanlegg anbefaler at det blir foretatt regelmessig ettersyn av det elektriske anlegget hvert tiende år. Det er ukjent om det er foretatt tilsyn i de senere år."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              29
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_007",
+            "description": "Det elektriske anlegget anbefales utvidet kontroll av. Det er ukjent om det er gjennomført el-tilsyn de siste fem år, og det foreligger ikke samsvarserklæringer for anlegget. Boligen er et dødsbo, og informasjon fra eier har ikke vært mulig å innhente.",
+            "evidence": [
+              "Det er ukjent om det er gjennomført kontroll av det elektriske anlegget av offentlig myndighet (Det lokale eltilsyn) de siste fem årene.",
+              "Det er ikke fremvist samsvarserklæringer for anlegget (utført ifb. med dødsbo).",
+              "På bakgrunn av nevnte forhold anbefales det å foreta en utvidet kontroll av anlegget.",
+              "Forskrift om elektriske lavspenningsanlegg anbefaler at det blir foretatt regelmessig ettersyn av det elektriske anlegget hvert tiende år. Det er ukjent om det er foretatt tilsyn i de senere år."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              29
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d108_008",
+            "description": "Eiendommen ligger i en hensynssone klassifisert som faresone for steinsprang, jord- og flomskred og snøskred med berøringsgrad 100%. Dette utgjør en naturfarerelatert risiko for beboere og eiendom.",
+            "evidence": [
+              "Eiendommen befinner seg i følgende hensynssoner: - Faresone. Aktsomhetsområde for steinsprang, jord- og flomskred og snøskred, berøringsgrad 100%",
+              "- Friluftsliv. Byfjellgrense - vest, berøringsgrad 16,2%"
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_008",
+            "description": "Eiendommen ligger i en hensynssone klassifisert som faresone for steinsprang, jord- og flomskred og snøskred med berøringsgrad 100%. Dette utgjør en naturfarerelatert risiko for beboere og eiendom.",
+            "evidence": [
+              "Eiendommen befinner seg i følgende hensynssoner: - Faresone. Aktsomhetsområde for steinsprang, jord- og flomskred og snøskred, berøringsgrad 100%",
+              "- Friluftsliv. Byfjellgrense - vest, berøringsgrad 16,2%"
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d108_009",
+            "description": "Felleskostnadene kan bli besluttet økt etter utarbeidelse av salgsoppgaven. Kjøper bør være forberedt på at månedlige kostnader kan stige utover oppgitte kr 2 816,- pr. mnd.",
+            "evidence": [
+              "Felleskostnadene kan bli besluttet økt etter utarbeidelse av salgsoppgaven.",
+              "Felleskostnader kr 2 816,- pr. mnd"
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_009",
+            "description": "Felleskostnadene kan bli besluttet økt etter utarbeidelse av salgsoppgaven. Kjøper bør være forberedt på at månedlige kostnader kan stige utover oppgitte kr 2 816,- pr. mnd.",
+            "evidence": [
+              "Felleskostnadene kan bli besluttet økt etter utarbeidelse av salgsoppgaven.",
+              "Felleskostnader kr 2 816,- pr. mnd"
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d108_010",
+            "description": "Legalpant utgjør en skjult heftelse som ikke fremgår av grunnboksutskriften. Kommunen har legalpant for kommunale avgifter og eiendomsskatt, og øvrige seksjonseiere har legalpant på inntil 2G for krav knyttet til sameieforholdet. Disse har prioritet foran tinglyste banklån.",
+            "evidence": [
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen.",
+              "Legalpant til kommunen har høyere prioritet enn legalpant til sameiet.",
+              "De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_010",
+            "description": "Legalpant utgjør en skjult heftelse som ikke fremgår av grunnboksutskriften. Kommunen har legalpant for kommunale avgifter og eiendomsskatt, og øvrige seksjonseiere har legalpant på inntil 2G for krav knyttet til sameieforholdet. Disse har prioritet foran tinglyste banklån.",
+            "evidence": [
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen.",
+              "Legalpant til kommunen har høyere prioritet enn legalpant til sameiet.",
+              "De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d108_011",
+            "description": "Energiattesten viser at boligen er registrert med byggeår 1957 og bruksareal 57 m², mens salgsoppgaven oppgir byggeår 2004 og BRA 88/93,9 m². Dette er en betydelig diskrepans i energiattestens grunnlagsdata som kan påvirke energikarakterens pålitelighet.",
+            "evidence": [
+              "Byggeår: 1957 (energiattest)",
+              "Bruksareal: 57,0 m² / Oppvarmet bruksareal: 57,0 m² (energiattest)",
+              "Byggeår 2004 (salgsoppgave og tilstandsrapport)",
+              "BRA-i: 88 m² / BRA totalt: 93.9 kvm (salgsoppgave)",
+              "Bruksenhetsnummer: H0302 (energiattest) – avviker fra SSb-nr H0507 i tilstandsrapporten"
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              4,
+              17,
+              33
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_011",
+            "description": "Energiattesten viser at boligen er registrert med byggeår 1957 og bruksareal 57 m², mens salgsoppgaven oppgir byggeår 2004 og BRA 88/93,9 m². Dette er en betydelig diskrepans i energiattestens grunnlagsdata som kan påvirke energikarakterens pålitelighet.",
+            "evidence": [
+              "Byggeår: 1957 (energiattest)",
+              "Bruksareal: 57,0 m² / Oppvarmet bruksareal: 57,0 m² (energiattest)",
+              "Byggeår 2004 (salgsoppgave og tilstandsrapport)",
+              "BRA-i: 88 m² / BRA totalt: 93.9 kvm (salgsoppgave)",
+              "Bruksenhetsnummer: H0302 (energiattest) – avviker fra SSb-nr H0507 i tilstandsrapporten"
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              4,
+              17,
+              33
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d108_012",
+            "description": "Selger kan prioritere bud fra ikke-forbrukere fremfor forbrukerbud, selv om forbrukerbudet er høyere. Ved salg til ikke-forbruker kan selgers ansvar begrenses ytterligere ved at boligen selges «som den er», noe som svekker kjøpers rettigheter.",
+            "evidence": [
+              "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud.",
+              "Når kjøper ikke er forbruker, kan selgers ansvar begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger.",
+              "Det understrekes at selger står fritt til å velge hvilket bud som aksepteres, og er ikke forpliktet til å velge det høyeste."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_012",
+            "description": "Selger kan prioritere bud fra ikke-forbrukere fremfor forbrukerbud, selv om forbrukerbudet er høyere. Ved salg til ikke-forbruker kan selgers ansvar begrenses ytterligere ved at boligen selges «som den er», noe som svekker kjøpers rettigheter.",
+            "evidence": [
+              "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud.",
+              "Når kjøper ikke er forbruker, kan selgers ansvar begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger.",
+              "Det understrekes at selger står fritt til å velge hvilket bud som aksepteres, og er ikke forpliktet til å velge det høyeste."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d108_013",
+            "description": "Kommunale avgifter er oppgitt som et estimat og det faktiske beløpet kan avvike. Eiendomsskatt er kr 4 814,- (2026) og kommunale avgifter er estimert til kr 10 237,- (2026), men disse kan endres.",
+            "evidence": [
+              "Oppgitt beløp på kr 10 237,- er et estimat for hele året. Det fakturerte beløpet kan avvike fra estimatet.",
+              "Eiendomsskatt: Kr 4 814,- (2026)",
+              "Kommunale avgifter: Kr 10 237 (2026)"
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_013",
+            "description": "Kommunale avgifter er oppgitt som et estimat og det faktiske beløpet kan avvike. Eiendomsskatt er kr 4 814,- (2026) og kommunale avgifter er estimert til kr 10 237,- (2026), men disse kan endres.",
+            "evidence": [
+              "Oppgitt beløp på kr 10 237,- er et estimat for hele året. Det fakturerte beløpet kan avvike fra estimatet.",
+              "Eiendomsskatt: Kr 4 814,- (2026)",
+              "Kommunale avgifter: Kr 10 237 (2026)"
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d108_014",
+            "description": "Pågående revisjon av kommuneplanens arealdel (KPA 2027) kan medføre endringer i reguleringsbestemmelser som påvirker eiendommen og nærområdet. Vedtak er forventet i første kvartal 2027.",
+            "evidence": [
+              "PlanID: 71740000. Kommuneplanens arealdel KPA 2027. Bystyret legger til grunn at revisjon av KPA-bestemmelsene skal sluttføres med vedtak Bystyret i første kvartal 2027.",
+              "Hovedmålet med revisjon av KPA-bestemmelsene er forenkling, fortgang og forutsigbarhet i plan- og byggesaksprosesser, for å sikre gode boliger og nabolag."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_014",
+            "description": "Pågående revisjon av kommuneplanens arealdel (KPA 2027) kan medføre endringer i reguleringsbestemmelser som påvirker eiendommen og nærområdet. Vedtak er forventet i første kvartal 2027.",
+            "evidence": [
+              "PlanID: 71740000. Kommuneplanens arealdel KPA 2027. Bystyret legger til grunn at revisjon av KPA-bestemmelsene skal sluttføres med vedtak Bystyret i første kvartal 2027.",
+              "Hovedmålet med revisjon av KPA-bestemmelsene er forenkling, fortgang og forutsigbarhet i plan- og byggesaksprosesser, for å sikre gode boliger og nabolag."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d108_015",
+            "description": "Tilstandsrapporten dekker ikke bygningens fellesdeler (tak, yttervegger, grunnmur, drenering, felles tekniske installasjoner). Det er heller ikke kjent om det foreligger tilstandsrapport eller vedlikeholdsplan for felles bygningsmasse, noe som gir begrenset innsikt i sameiets tekniske tilstand.",
+            "evidence": [
+              "Tilstandsrapporten omfatter derfor ikke bygningens fellesdeler som for eksempel tak, yttervegger, grunnmur, drenering, og felles tekniske installasjoner.",
+              "Takstmann kjenner ikke til om det foreligger tilstandsrapport, vedlikeholdsplan eller lignende for felles bygningsmasse."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              25
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_015",
+            "description": "Tilstandsrapporten dekker ikke bygningens fellesdeler (tak, yttervegger, grunnmur, drenering, felles tekniske installasjoner). Det er heller ikke kjent om det foreligger tilstandsrapport eller vedlikeholdsplan for felles bygningsmasse, noe som gir begrenset innsikt i sameiets tekniske tilstand.",
+            "evidence": [
+              "Tilstandsrapporten omfatter derfor ikke bygningens fellesdeler som for eksempel tak, yttervegger, grunnmur, drenering, og felles tekniske installasjoner.",
+              "Takstmann kjenner ikke til om det foreligger tilstandsrapport, vedlikeholdsplan eller lignende for felles bygningsmasse."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              25
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d108_016",
+            "description": "Korttidsutleie er begrenset til maksimalt 90 døgn per år, og utleie i mer enn 30 sammenhengende døgn er ikke tillatt uten godkjenning. Leier må i tillegg godkjennes av sameiet ved styret, noe som begrenser fleksibiliteten ved utleie.",
+            "evidence": [
+              "Korttidsutleie er tillatt i opptil 90 døgn per år, jf. eierseksjonsloven § 24. Korttidsutleie av hele boligseksjonen i mer enn 90 døgn årlig er ikke tillatt.",
+              "Med korttidsutleie menes utleie i inntil 30 døgn sammenhengende.",
+              "En seksjonseier har rett til å leie ut sin seksjon, men leier må godkjennes av sameiet ved styret."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18,
+              37
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_016",
+            "description": "Korttidsutleie er begrenset til maksimalt 90 døgn per år, og utleie i mer enn 30 sammenhengende døgn er ikke tillatt uten godkjenning. Leier må i tillegg godkjennes av sameiet ved styret, noe som begrenser fleksibiliteten ved utleie.",
+            "evidence": [
+              "Korttidsutleie er tillatt i opptil 90 døgn per år, jf. eierseksjonsloven § 24. Korttidsutleie av hele boligseksjonen i mer enn 90 døgn årlig er ikke tillatt.",
+              "Med korttidsutleie menes utleie i inntil 30 døgn sammenhengende.",
+              "En seksjonseier har rett til å leie ut sin seksjon, men leier må godkjennes av sameiet ved styret."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18,
+              37
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d108_017",
+            "description": "Ingen kan eie mer enn to boligseksjoner i sameiet. Seksjoner eid av nærstående eller gjennom firma regnes også med. Dette begrenser investorers mulighet til å kjøpe seksjonen som del av en større portefølje i samme sameie.",
+            "evidence": [
+              "Det informeres om at ingen kan eie mer enn to boligseksjoner i sameiet, i henhold til eierseksjonsloven § 23. Seksjoner som eies av nærstående eller gjennom et firma regnes også med."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_017",
+            "description": "Ingen kan eie mer enn to boligseksjoner i sameiet. Seksjoner eid av nærstående eller gjennom firma regnes også med. Dette begrenser investorers mulighet til å kjøpe seksjonen som del av en større portefølje i samme sameie.",
+            "evidence": [
+              "Det informeres om at ingen kan eie mer enn to boligseksjoner i sameiet, i henhold til eierseksjonsloven § 23. Seksjoner som eies av nærstående eller gjennom et firma regnes også med."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d108_018",
+            "description": "Stikkledninger fra eiendommen til det kommunale nettet er private, og vedlikeholdsansvaret påhviler sameiet. Dette kan medføre uventede kostnader ved rørbrudd eller behov for rehabilitering av private ledninger.",
+            "evidence": [
+              "Eiendommen er tilknyttet offentlig vann- og avløpssystem. Stikkledningene fra eiendommen og ut til det kommunale nettet er private, og vedlikeholdsansvaret for disse påhviler sameiet."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_018",
+            "description": "Stikkledninger fra eiendommen til det kommunale nettet er private, og vedlikeholdsansvaret påhviler sameiet. Dette kan medføre uventede kostnader ved rørbrudd eller behov for rehabilitering av private ledninger.",
+            "evidence": [
+              "Eiendommen er tilknyttet offentlig vann- og avløpssystem. Stikkledningene fra eiendommen og ut til det kommunale nettet er private, og vedlikeholdsansvaret for disse påhviler sameiet."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d108_019",
+            "description": "Det er ikke foretatt ytterligere utvask/rengjøring av leiligheten innen overtagelse. Boligen er et dødsbo og selges i den stand den er, uten garanti for rengjøring utover det som allerede er gjort.",
+            "evidence": [
+              "For god ordens skyld gjøres det oppmerksom på at det ikke vil bli foretatt ytterligere utvask/rengjøring av leiligheten innen overtagelse."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_019",
+            "description": "Det er ikke foretatt ytterligere utvask/rengjøring av leiligheten innen overtagelse. Boligen er et dødsbo og selges i den stand den er, uten garanti for rengjøring utover det som allerede er gjort.",
+            "evidence": [
+              "For god ordens skyld gjøres det oppmerksom på at det ikke vil bli foretatt ytterligere utvask/rengjøring av leiligheten innen overtagelse."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d108_020",
+            "description": "Oppmålingen er ikke kontrollert opp mot byggetegninger (ikke mottatt), og egenerklæring fra eier foreligger ikke (dødsbo). Dette øker usikkerheten rundt arealoppgaver og boligens lovlighet.",
+            "evidence": [
+              "Oppmålingen er ikke kontrollert opp mot tegninger (ikke mottatt).",
+              "Egenerklæring: Dødsbo. Ikke gjennomgått.",
+              "Opplysninger fra eier. Dødsbo. Ikke gjennomgått."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              31
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d108_020",
+            "description": "Oppmålingen er ikke kontrollert opp mot byggetegninger (ikke mottatt), og egenerklæring fra eier foreligger ikke (dødsbo). Dette øker usikkerheten rundt arealoppgaver og boligens lovlighet.",
+            "evidence": [
+              "Oppmålingen er ikke kontrollert opp mot tegninger (ikke mottatt).",
+              "Egenerklæring: Dødsbo. Ikke gjennomgått.",
+              "Opplysninger fra eier. Dødsbo. Ikke gjennomgått."
+            ],
+            "source_documents": [
+              "d108.pdf"
+            ],
+            "source_pages": [
+              31
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [],
+      "unmatched_ground_truth_risks": [],
+      "verified_unmatched": [],
+      "adjusted_metrics": null
+    }
+  },
+  "best_system": "ground_truth",
+  "statistical_tests": {
+    "standard_rag_vs_agentic_rag_P+T+R": 1.0,
+    "standard_rag_vs_ground_truth": 1.0,
+    "agentic_rag_P+T+R_vs_ground_truth": 1.0
+  },
+  "record_id": "0c4b56e6-c9a0-484a-a9a1-e9fcc8b28dd4",
+  "query": "Identifiser risikoer i salgsoppgaven",
+  "document_set_id": "d108",
+  "timestamp": "2026-03-25T01:38:20.161888",
+  "risk_summaries": [
+    {
+      "system_type": "standard_rag",
+      "total_risks": 13,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "agentic_rag_P+T+R",
+      "total_risks": 15,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "ground_truth",
+      "total_risks": 20,
+      "risks_by_category": {}
+    }
+  ],
+  "has_ground_truth": true,
+  "overlapping_risk_count": 12,
+  "unique_to": {
+    "standard_rag": 9,
+    "agentic_rag_P+T+R": 6,
+    "ground_truth": 9
+  },
+  "record_type": "comparison"
+}

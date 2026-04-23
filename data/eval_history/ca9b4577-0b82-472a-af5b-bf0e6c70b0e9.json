@@ -1,0 +1,2122 @@
+{
+  "system_results": {
+    "standard_rag": {
+      "run_id": "e4031341-ca16-4f06-ac0b-dba1b0814d7c",
+      "system_type": "standard_rag",
+      "overall_metrics": {
+        "precision": 0.6,
+        "recall": 0.3,
+        "f1": 0.4,
+        "total_support": 20
+      },
+      "matched_risks": 6,
+      "unmatched_predicted": 4,
+      "unmatched_ground_truth": 14,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "e4031341-ca16-4f06-ac0b-dba1b0814d7c_risk_002",
+            "description": "Eiendommen ligger i faresone for ras- og skredfare (steinsprang, steinskred, løsmasseskred, fjellskred eller snøskred) i henhold til kommunekartet.",
+            "evidence": [
+              "I følge kommunekartet ligger deler av eiendommen i faresone for ras- og skredfare.",
+              "På kart/plan som megler har mottatt fra kommunen er området der eiendommen ligger markert med fare, dvs. fare for ras- og skred f.eks. steinsprang, steinskred, løsmasseskred, fjellskred eller snøskred."
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.98,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_001",
+            "description": "Ras- og skredfare: Deler av eiendommen ligger i faresone for ras og skred, inkludert steinsprang, steinskred, løsmasseskred, fjellskred og snøskred. Dette kan medføre forbud mot tiltak og arbeider i området.",
+            "evidence": [
+              "I følge kommunekartet ligger deler av eiendommen i faresone for ras‑ og skredfare.",
+              "På kart/plan som megler har mottatt fra kommunen er området der eiendommen ligger markert med fare, dvs. fare for ras‑ og skred f.eks. steinsprang, steinskred, løsmasseskred, fjellskred eller snøskred.",
+              "Det kan være forbud mot tiltak og arbeider i rasutsatte områder."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              30
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "e4031341-ca16-4f06-ac0b-dba1b0814d7c_risk_000",
+            "description": "Ingen radonmåling er utført av selger. Kjøper overtar risikoen for radonnivået i boligen og eventuelle utleieenheter.",
+            "evidence": [
+              "Selger har ikke utført radonmåling.",
+              "Dersom selger ikke har gitt informasjon om eiendommens radonnivå, vil kjøper overta risikoen for radonnivået i boligen/utleieenheten."
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_007",
+            "description": "Ingen radonmåling utført: Selger har ikke utført radonmåling. Eiendommen ligger i et område med moderat til lav aktsomhet for radon, men ved utleie er det krav om forsvarlige radonnivåer. Kjøper overtar risikoen for radonnivået.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Det er krav om forsvarlige radonnivåer i utleieboliger. Dersom selger ikke har gitt informasjon om eiendommens radonnivå, vil kjøper overta risikoen for radonnivået i boligen/utleieenheten.",
+              "Eiendommen ligger i et område med moderat til lav aktsomhet for radon."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              31
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "e4031341-ca16-4f06-ac0b-dba1b0814d7c_risk_001",
+            "description": "Selger har ikke tegnet boligselgerforsikring. Dette innebærer at kjøper har redusert beskyttelse ved eventuelle skjulte feil og mangler som avdekkes etter overtakelse.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring.",
+              "Jeg ønsker ikke boligselgerforsikring, men megler har tilbudt meg å kjøpe slik forsikring."
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_008",
+            "description": "Selger har ikke tegnet boligselgerforsikring: Selger har valgt å ikke tegne boligselgerforsikring, noe som kan svekke kjøpers mulighet til å få dekket krav mot selger ved eventuelle skjulte feil og mangler.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              31
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "e4031341-ca16-4f06-ac0b-dba1b0814d7c_risk_004",
+            "description": "Legalpant fra sameiet og kommunen er ikke synlig i grunnboksutskriften, men har prioritet foran tinglyste lån. Kjøper kan bli ansvarlig for ubetalte felleskostnader og kommunale avgifter.",
+            "evidence": [
+              "De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader.",
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån.",
+              "Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter og eventuell eiendomsskatt."
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.93,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_011",
+            "description": "Legalpant og sameiernes solidaransvar: Sameierne er ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk. Sameiet har legal panterett i seksjonen ved manglende betaling av fellesutgifter, begrenset til 2G. Kommunen har også legalpant med høyere prioritet enn banklån.",
+            "evidence": [
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.",
+              "Ved manglende betaling av fellesutgifter har sameiet legal panterett i den enkelte eierseksjon, begrenset til inntil 2 ganger folketrygdens grunnbeløp.",
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen. Legalpant til kommunen har høyere prioritet enn legalpant til sameiet."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              29,
+              30,
+              31
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "e4031341-ca16-4f06-ac0b-dba1b0814d7c_risk_003",
+            "description": "El-anlegget er kun forenklet kontrollert. Det kan foreligge feil og mangler som ikke er avdekket, og en fullstendig kontroll av registrert elektrovirksomhet er ikke utført.",
+            "evidence": [
+              "El-anlegget kan ha feil og mangler som en slik forenklet undersøkelse ikke vil avdekke.",
+              "Dette er en forenklet kontroll begrenset til de spørsmål og undersøkelser som forskrift til avhendingslova (tryggere bolighandel) § 2-18 inneholder.",
+              "Dette kan ikke sammenlignes med en kontroll utført av offentlig myndighet (Det lokale eltilsyn) eller registrert elektrovirksomhet."
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_014",
+            "description": "El-anlegg ikke fullstendig kontrollert: El-anlegget er kun vurdert på laveste inspeksjonsnivå med visuell kontroll. Det er ikke utført el-tilsyn de siste 5 år, og det tas forbehold for underliggende feil og mangler som ikke kan kontrolleres grunnet skjult konstruksjon.",
+            "evidence": [
+              "Det elektriske vurdert på det laveste inspeksjonsnivå med kun en visuell kontroll der el-kontroll må utføres for faktisk tilstand på anlegget.",
+              "1. Foreligger det eltilsynsrapport de siste 5 år, og det er ikke foretatt arbeid på anlegget etter denne... Nei",
+              "El-anlegget kan ha feil og mangler som en slik forenklet undersøkelse ikke vil avdekke.",
+              "det tas særskilt forbehold for underliggende feil og mangler som ikke kan kontrolleres grunnet skjult i konstruksjonen."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              51,
+              52
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "e4031341-ca16-4f06-ac0b-dba1b0814d7c_risk_006",
+            "description": "Bunnledninger (røropplegg) er ikke kontrollert, noe som innebærer en ukjent risiko for skjulte feil i avløps- og vannledninger under bygget.",
+            "evidence": [
+              "Bunnledninger av den årsak følgelig heller ikke er kontrollert.",
+              "Besiktelse av røropplegg."
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_020",
+            "description": "Bunnledninger ikke kontrollert: Bunnledninger for både vann og avløp er ikke kontrollert. Alder er en vurderingskriterie for slitasjegrad, og eventuelle feil i bunnledningene er ikke avdekket.",
+            "evidence": [
+              "Videre bemerkes at bunnledninger av den årsak følgelig heller ikke er kontrollert. (vannrør)",
+              "Videre bemerkes at bunnledninger av den årsak følgelig heller ikke er kontrollert. Ingen negative avvik observert på befaringsdagen. (avløpsrør)"
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              51
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "e4031341-ca16-4f06-ac0b-dba1b0814d7c_risk_005",
+          "description": "Boligen selges 'som den er', noe som begrenser selgers ansvar overfor kjøpere som ikke er forbrukere. Kjøper bærer dermed en større risiko for skjulte feil og mangler.",
+          "evidence": [
+            "Når kjøper ikke er forbruker, kan selgers ansvar begrenses ettersom boligen selges «som den er».",
+            "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud."
+          ],
+          "source_documents": [
+            "d138_d138"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "e4031341-ca16-4f06-ac0b-dba1b0814d7c_risk_007",
+          "description": "Det er ikke dokumentert om det foreligger påbud, heftelser, krav eller manglende tillatelser vedrørende eiendommen, da egenerklæringsskjemaet ikke viser tydelig svar på dette spørsmålet.",
+          "evidence": [
+            "Kjenner du til om det foreligger påbud/heftelser/krav/manglende tillatelser vedrørende eiendommen? Nei Ja"
+          ],
+          "source_documents": [
+            "d138_d138"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.72,
+          "details": {}
+        },
+        {
+          "risk_id": "e4031341-ca16-4f06-ac0b-dba1b0814d7c_risk_008",
+          "description": "Det er ikke dokumentert om det foreligger forslag eller vedtatte reguleringsplaner, nabovarsel eller offentlige vedtak som kan medføre endringer i bruken av eiendommen eller dens omgivelser.",
+          "evidence": [
+            "Kjenner du til om det foreligger forslag eller vedtatte reguleringsplaner, andre planer, nabovarsel eller offentlige vedtak som kan medføre endringer i bruken av eiendommen eller av dens omgivelser? Nei Ja"
+          ],
+          "source_documents": [
+            "d138_d138"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.7,
+          "details": {}
+        },
+        {
+          "risk_id": "e4031341-ca16-4f06-ac0b-dba1b0814d7c_risk_009",
+          "description": "Det er ikke avklart om ufaglærte har utført arbeid som normalt bør utføres av faglærte (f.eks. drenering, murerarbeid, tømrerarbeid). Svar på egenerklæringsskjemaet er ikke tydelig dokumentert.",
+          "evidence": [
+            "Kjenner du til om ufaglærte har utført arbeid som normalt bør utføres av faglærte, utover det som er nevnt tidligere (f.eks. drenering, murerarbeid, tømrerarbeid etc)? Nei Ja"
+          ],
+          "source_documents": [
+            "d138_d138"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.68,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d138_002",
+          "description": "Marin leire: Eiendommen ligger i et område med middels mulighet for marin leire, noe som kan innebære risiko for grunnforhold og setningsskader.",
+          "evidence": [
+            "I følge en områdeanalyse ligger eiendommen i et område med middels mulighet for marin leire."
+          ],
+          "source_documents": [
+            "d138.pdf"
+          ],
+          "source_pages": [
+            30
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d138_003",
+          "description": "Uautorisert egeninnsats på bad/våtrom: Selger har utført arbeid på badet uten fagfolk, inkludert legging av vinylbelegg over eksisterende fliser, bytte av armatur, spraying av dusjdører og maling av lister. Tettesjikt/membran er ikke oppgradert, og arbeidet er ikke byggemeldt.",
+          "evidence": [
+            "Svar Ja, kun av ufaglært/egeninnsats/dugnad",
+            "Byttet armatur i dusjen, lagt belegg over flis på gulvet, sprayet dusjdører og innredning, malt lister",
+            "Ble tettesjikt/membran/sluk oppgradert/fornyet? Nei",
+            "Er arbeidet byggemeldt? Nei"
+          ],
+          "source_documents": [
+            "d138.pdf"
+          ],
+          "source_pages": [
+            38
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d138_004",
+          "description": "TG2 på baderomsgulv: Vinylfliser er lagt over opprinnelige fliser på egeninnsats, med synlige avvik på overganger og avslutninger. Vinylflisene kan løsne på sikt, og ved fjerning kan underliggende flisfuger måtte fuges om.",
+          "evidence": [
+            "Det er avvik: Det er lagt vinylfliser over opprinnelig underliggende fliser på egeninnsats. Noe synlige avvik på overganger og avslutninger.",
+            "Vinylfliser kan løsne på sikt, men har ingen betydning for underliggende opprinnelige fliser eller tetthet på badet for øvrig. Ved fjerning av vinylfliser kan det ikke utelukkes av underliggende flisfuger må fuges om og med ny silikon."
+          ],
+          "source_documents": [
+            "d138.pdf"
+          ],
+          "source_pages": [
+            27,
+            50
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d138_005",
+          "description": "Fuktskade og svartsopp på bad: Selger opplyser om tidligere fuktskade på baderomsdør og svartsopp i dusjen fra tidligere eiere. Behandlet av selger, men det er usikkert om utbedringen er tilstrekkelig fagmessig utført.",
+          "evidence": [
+            "Litt svartsopp i dusjen og fuktskade på baderomsdør ved dårlig utluftig av tidligere eiere da jeg tok over. Behandlet svartsopp og fuget på nytt i dusjen."
+          ],
+          "source_documents": [
+            "d138.pdf"
+          ],
+          "source_pages": [
+            38
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d138_006",
+          "description": "Vannlekkasje fra oppvaskmaskin: Det ble byttet gulv etter lekkasje fra oppvaskmaskin i 2024 under tidligere eier. Risiko for skjulte følgeskader som ikke er avdekket.",
+          "evidence": [
+            "Det er byttet gulv etter lekkasje fra oppvaskmaskin i 2024 utført av Kaph entreprenør under tidligere eier"
+          ],
+          "source_documents": [
+            "d138.pdf"
+          ],
+          "source_pages": [
+            40
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d138_009",
+          "description": "Bindende strømavtale med bindingstid: Nåværende eier har tegnet Norgespris-avtale med bindingstid til 31.12.2026. Avtalen følger boligen og må overtas av kjøper, noe som begrenser kjøpers valgfrihet for strømleverandør og medfører at eventuell strømstøtte bortfaller.",
+          "evidence": [
+            "Nåværende eier har tegnet avtale om Norgespris på strøm, og avtalen har bindingstid til 31.12.2026. Avtalen følger boligen, og må derfor overtas av kjøper.",
+            "Når det er tegnet avtale om Norgespris bortfaller eventuell strømstøtte."
+          ],
+          "source_documents": [
+            "d138.pdf"
+          ],
+          "source_pages": [
+            29
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d138_010",
+          "description": "Ekstern bod på sameiets fellesareal kan omdisponeres: Boden som er medtatt i BRA-e og totalt BRA ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet, noe som kan redusere boligens reelle areal og verdi.",
+          "evidence": [
+            "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA-e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet."
+          ],
+          "source_documents": [
+            "d138.pdf"
+          ],
+          "source_pages": [
+            27
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d138_012",
+          "description": "Nylig kjøpt eiendom – kort eiertid: Selger har kun eid boligen i ca. 5 måneder (kjøpt i 2025). Kort eiertid kan indikere ukjente forhold ved eiendommen, og selgers kjennskap til boligens tilstand kan være begrenset.",
+          "evidence": [
+            "Når kjøpte du boligen? År 2025",
+            "Antall år 0, Antall måneder 5"
+          ],
+          "source_documents": [
+            "d138.pdf"
+          ],
+          "source_pages": [
+            37
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d138_013",
+          "description": "Varmtvannstank fra byggeår (2016): Varmtvannsberederen på ca. 200 liter er fra byggeår 2016, nå ca. 10 år gammel. Normal levetid for varmtvannstanker er typisk 10–20 år, og tanken kan nærme seg slutten av sin levetid.",
+          "evidence": [
+            "Varmtvannsbereder ca. 200 L fra byggeår plassert på bod. Rom med sluk for lekkasjevann. Normalt vil fabrikkår indikere tilstanden og samtidig forventet levetid ut fra en gjennomsnittsbetraktning."
+          ],
+          "source_documents": [
+            "d138.pdf"
+          ],
+          "source_pages": [
+            51
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d138_015",
+          "description": "Pipeløp og ildsted ikke funksjonstestet: Pipeløpet er formelt ikke vurdert av takstmann, og ildstedet ble ikke funksjonstestet. Det forutsettes at branntekniske krav er kontrollert og godkjent av brann- og feievesen, men dette er ikke bekreftet.",
+          "evidence": [
+            "Peisovn i stue med pipeløp fra byggeår. Pipeløp er formelt ikke vurdert og det forutsettes at de branntekniske krav er kontrollert og godkjent av det stedlige brann og feievesen. Ildsted ble ikke funksjonstestet av undertegnende men det ble ikke opplyst om negative avvik på befaringsdagen."
+          ],
+          "source_documents": [
+            "d138.pdf"
+          ],
+          "source_pages": [
+            49
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d138_016",
+          "description": "Tomt ikke vurdert av takstmann: Tomten var snødekket på befaringsdagen og er ikke vurdert eller beskrevet. Eventuelle feil, skader eller uregelmessigheter på tomten er dermed ikke avdekket.",
+          "evidence": [
+            "Snødekket tomt på befaringsdagen og er ikke vurdert eller beskrevet.",
+            "Felles arealer og tomt er ikke vurdert."
+          ],
+          "source_documents": [
+            "d138.pdf"
+          ],
+          "source_pages": [
+            46,
+            55
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d138_017",
+          "description": "Grendelag med løpende kostnader: Det ble etablert et grendelag i 2024 som sameiet betaler kr 18 000 per år til. I tillegg betales kr 100 per måned ekstra til sameiet for felles vedlikehold. Dette er kostnader som kommer i tillegg til de oppgitte felleskostnadene.",
+          "evidence": [
+            "Det ble etablert et grendelag i 2024 som tar ansvar for fellesarealer på området. Sameiet betaler kr 18 000 i året til grendelaget.",
+            "Selger opplyser at det betales inn kr. 100,‑ i mnd til sameiet for felles vedlikehold av utstyr/hygge, dette kommer i tillegg til felleskostnadene."
+          ],
+          "source_documents": [
+            "d138.pdf"
+          ],
+          "source_pages": [
+            25
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d138_018",
+          "description": "Kommuneplan under arbeid kan påvirke eiendommen: Det pågår arbeid med ny kommuneplan (KP2023-2040) som fortsatt er på planforslagsstadiet. Endringer i arealplanen kan potensielt påvirke bruken av eiendommen og omgivelsene.",
+          "evidence": [
+            "Id KP2023‑2040, Navn Kommuneplanens arealdel 2023‑2040, Status Planforslag, Plantype Kommuneplanens arealdel"
+          ],
+          "source_documents": [
+            "d138.pdf"
+          ],
+          "source_pages": [
+            30
+          ],
+          "details": {
+            "confidence": 0.65
+          }
+        },
+        {
+          "risk_id": "gt_d138_019",
+          "description": "Dusjdører lakkert av eier – maling kan flasse av: Selger har lakkert/sprayet dusjdørene selv, og malingen kan flasse av på sikt. Dette er egeninnsats som kan gi estetiske og funksjonelle problemer.",
+          "evidence": [
+            "Dusjdører er lakkert av eier der maling kan flasse av på sikt.",
+            "Byttet armatur i dusjen, lagt belegg over flis på gulvet, sprayet dusjdører og innredning, malt lister"
+          ],
+          "source_documents": [
+            "d138.pdf"
+          ],
+          "source_pages": [
+            38,
+            50
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "e4031341-ca16-4f06-ac0b-dba1b0814d7c_risk_005",
+            "description": "Boligen selges 'som den er', noe som begrenser selgers ansvar overfor kjøpere som ikke er forbrukere. Kjøper bærer dermed en større risiko for skjulte feil og mangler.",
+            "evidence": [
+              "Når kjøper ikke er forbruker, kan selgers ansvar begrenses ettersom boligen selges «som den er».",
+              "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud."
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt denne risikoen på side 32: 'På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud. Når kjøper ikke er forbruker, kan selges ansvar begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger.' Dette underbygger direkte at kjøpere som ikke er forbrukere bærer større risiko for skjulte feil og mangler, ettersom selgers ansvar er begrenset etter avhendingsloven § 3-9."
+        },
+        {
+          "risk": {
+            "risk_id": "e4031341-ca16-4f06-ac0b-dba1b0814d7c_risk_007",
+            "description": "Det er ikke dokumentert om det foreligger påbud, heftelser, krav eller manglende tillatelser vedrørende eiendommen, da egenerklæringsskjemaet ikke viser tydelig svar på dette spørsmålet.",
+            "evidence": [
+              "Kjenner du til om det foreligger påbud/heftelser/krav/manglende tillatelser vedrørende eiendommen? Nei Ja"
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.72,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Egenerklæringsskjemaet (side 39, spørsmål 20) viser spørsmålet 'Kjenner du til om det foreligger påbud/heftelser/krav/manglende tillatelser vedrørende eiendommen? Nei Ja'. Selger har initialisert skjemaet (YV), og basert på dokumentets kontekst er svaret 'Nei' avkrysset – dette er standardformatet i norske egenerklæringsskjemaer der begge alternativer vises, men kun ett er valgt. Det er ingen indikasjon i dokumentet på at svaret er ubesvart eller uklart. Risikoen om at dette ikke er dokumentert er derfor ikke støttet av dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "e4031341-ca16-4f06-ac0b-dba1b0814d7c_risk_008",
+            "description": "Det er ikke dokumentert om det foreligger forslag eller vedtatte reguleringsplaner, nabovarsel eller offentlige vedtak som kan medføre endringer i bruken av eiendommen eller dens omgivelser.",
+            "evidence": [
+              "Kjenner du til om det foreligger forslag eller vedtatte reguleringsplaner, andre planer, nabovarsel eller offentlige vedtak som kan medføre endringer i bruken av eiendommen eller av dens omgivelser? Nei Ja"
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Egenerklæringsskjemaet (side 39, spørsmål 19) viser spørsmålet om reguleringsplaner, nabovarsel og offentlige vedtak med alternativene 'Nei Ja'. Skjemaet er signert av selger (YV). Dokumentet gir ingen indikasjon på at svaret er ubesvart. I tillegg gir salgsoppgaven (side 29-30) detaljert informasjon om gjeldende reguleringsplaner og kommuneplaner, noe som tyder på at dette er undersøkt og dokumentert. Risikoen er ikke støttet av dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "e4031341-ca16-4f06-ac0b-dba1b0814d7c_risk_009",
+            "description": "Det er ikke avklart om ufaglærte har utført arbeid som normalt bør utføres av faglærte (f.eks. drenering, murerarbeid, tømrerarbeid). Svar på egenerklæringsskjemaet er ikke tydelig dokumentert.",
+            "evidence": [
+              "Kjenner du til om ufaglærte har utført arbeid som normalt bør utføres av faglærte, utover det som er nevnt tidligere (f.eks. drenering, murerarbeid, tømrerarbeid etc)? Nei Ja"
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.68,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Egenerklæringsskjemaet (side 38, spørsmål 14) viser spørsmålet om ufaglærte har utført arbeid med alternativene 'Nei Ja'. Skjemaet er signert av selger (YV). Dokumentet gir ingen indikasjon på at svaret er ubesvart. Videre fremgår det av egenerklæringen at selger har svart på spørsmål 2 om arbeid på bad/våtrom (egeninnsats er oppgitt der), og tilstandsrapporten bekrefter at det er lagt vinylfliser over opprinnelige fliser på egeninnsats – dette er allerede dokumentert under spørsmål 2, ikke under spørsmål 14. Det er ingen grunnlag i dokumentet for at spørsmål 14 er ubesvart eller uklart."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 0.6666666666666666,
+        "recall": 0.3,
+        "f1": 0.41379310344827586,
+        "total_support": 20
+      }
+    },
+    "agentic_rag_P+T+R": {
+      "run_id": "35cc1eea-deab-436a-a8a3-57288a1fed45",
+      "system_type": "agentic_rag_P+T+R",
+      "overall_metrics": {
+        "precision": 0.9411764705882353,
+        "recall": 0.8,
+        "f1": 0.8648648648648648,
+        "total_support": 20
+      },
+      "matched_risks": 16,
+      "unmatched_predicted": 1,
+      "unmatched_ground_truth": 4,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "35cc1eea-deab-436a-a8a3-57288a1fed45_risk_000",
+            "description": "Ras- og skredfare: Deler av eiendommen ligger i faresone for ras og skred, inkludert steinsprang, steinskred, løsmasseskred, fjellskred og snøskred. Det kan være forbud mot tiltak og arbeider i rasutsatte områder.",
+            "evidence": [
+              "I følge kommunekartet ligger deler av eiendommen i faresone for ras‑ og skredfare.",
+              "På kart/plan som megler har mottatt fra kommunen er området der eiendommen ligger markert med fare, dvs. fare for ras‑ og skred f.eks. steinsprang, steinskred, løsmasseskred, fjellskred eller snøskred.",
+              "Det kan være forbud mot tiltak og arbeider i rasutsatte områder."
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_001",
+            "description": "Ras- og skredfare: Deler av eiendommen ligger i faresone for ras og skred, inkludert steinsprang, steinskred, løsmasseskred, fjellskred og snøskred. Dette kan medføre forbud mot tiltak og arbeider i området.",
+            "evidence": [
+              "I følge kommunekartet ligger deler av eiendommen i faresone for ras‑ og skredfare.",
+              "På kart/plan som megler har mottatt fra kommunen er området der eiendommen ligger markert med fare, dvs. fare for ras‑ og skred f.eks. steinsprang, steinskred, løsmasseskred, fjellskred eller snøskred.",
+              "Det kan være forbud mot tiltak og arbeider i rasutsatte områder."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              30
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35cc1eea-deab-436a-a8a3-57288a1fed45_risk_001",
+            "description": "Marin leire: Eiendommen ligger i et område med middels mulighet for marin leire, noe som kan innebære risiko for setningsskader og ustabil grunn.",
+            "evidence": [
+              "I følge en områdeanalyse ligger eiendommen i et område med middels mulighet for marin leire."
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_002",
+            "description": "Marin leire: Eiendommen ligger i et område med middels mulighet for marin leire, noe som kan innebære risiko for grunnforhold og setningsskader.",
+            "evidence": [
+              "I følge en områdeanalyse ligger eiendommen i et område med middels mulighet for marin leire."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              30
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35cc1eea-deab-436a-a8a3-57288a1fed45_risk_002",
+            "description": "TG2 på baderomsgulv: Det er lagt vinylfliser over opprinnelige fliser på egeninnsats (ufaglært arbeid), med synlige avvik på overganger og avslutninger. Vinylflisene kan løsne, og ved fjerning kan det avdekkes behov for omfuging.",
+            "evidence": [
+              "Det er lagt vinylfliser over opprinnelig underliggende fliser på egeninnsats. Noe synlige avvik på overganger og avslutninger.",
+              "Vinylfliser kan løsne på sikt, men har ingen betydning for underliggende opprinnelige fliser eller tetthet på badet for øvrig. Ved fjerning av vinylfliser kan det ikke utelukkes av underliggende flisfuger må fuges om og med ny silikon.",
+              "Svar Ja, kun av ufaglært/egeninnsats/dugnad – Byttet armatur i dusjen, lagt belegg over flis på gulvet, sprayet dusjdører og innredning, malt lister"
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_003",
+            "description": "Uautorisert egeninnsats på bad/våtrom: Selger har utført arbeid på badet uten fagfolk, inkludert legging av vinylbelegg over eksisterende fliser, bytte av armatur, spraying av dusjdører og maling av lister. Tettesjikt/membran er ikke oppgradert, og arbeidet er ikke byggemeldt.",
+            "evidence": [
+              "Svar Ja, kun av ufaglært/egeninnsats/dugnad",
+              "Byttet armatur i dusjen, lagt belegg over flis på gulvet, sprayet dusjdører og innredning, malt lister",
+              "Ble tettesjikt/membran/sluk oppgradert/fornyet? Nei",
+              "Er arbeidet byggemeldt? Nei"
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              38
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35cc1eea-deab-436a-a8a3-57288a1fed45_risk_002",
+            "description": "TG2 på baderomsgulv: Det er lagt vinylfliser over opprinnelige fliser på egeninnsats (ufaglært arbeid), med synlige avvik på overganger og avslutninger. Vinylflisene kan løsne, og ved fjerning kan det avdekkes behov for omfuging.",
+            "evidence": [
+              "Det er lagt vinylfliser over opprinnelig underliggende fliser på egeninnsats. Noe synlige avvik på overganger og avslutninger.",
+              "Vinylfliser kan løsne på sikt, men har ingen betydning for underliggende opprinnelige fliser eller tetthet på badet for øvrig. Ved fjerning av vinylfliser kan det ikke utelukkes av underliggende flisfuger må fuges om og med ny silikon.",
+              "Svar Ja, kun av ufaglært/egeninnsats/dugnad – Byttet armatur i dusjen, lagt belegg over flis på gulvet, sprayet dusjdører og innredning, malt lister"
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_004",
+            "description": "TG2 på baderomsgulv: Vinylfliser er lagt over opprinnelige fliser på egeninnsats, med synlige avvik på overganger og avslutninger. Vinylflisene kan løsne på sikt, og ved fjerning kan underliggende flisfuger måtte fuges om.",
+            "evidence": [
+              "Det er avvik: Det er lagt vinylfliser over opprinnelig underliggende fliser på egeninnsats. Noe synlige avvik på overganger og avslutninger.",
+              "Vinylfliser kan løsne på sikt, men har ingen betydning for underliggende opprinnelige fliser eller tetthet på badet for øvrig. Ved fjerning av vinylfliser kan det ikke utelukkes av underliggende flisfuger må fuges om og med ny silikon."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              27,
+              50
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35cc1eea-deab-436a-a8a3-57288a1fed45_risk_003",
+            "description": "Tidligere fuktskade og svartsopp på bad: Selger opplyser om svartsopp i dusjen og fuktskade på baderomsdør under tidligere eiere. Arbeidet er utført av ufaglært/egeninnsats.",
+            "evidence": [
+              "Litt svartsopp i dusjen og fuktskade på baderomsdør ved dårlig utluftig av tidligere eiere da jeg tok over. Behandlet svartsopp og fuget på nytt i dusjen.",
+              "Svar Ja, kun av ufaglært/egeninnsats/dugnad"
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_005",
+            "description": "Fuktskade og svartsopp på bad: Selger opplyser om tidligere fuktskade på baderomsdør og svartsopp i dusjen fra tidligere eiere. Behandlet av selger, men det er usikkert om utbedringen er tilstrekkelig fagmessig utført.",
+            "evidence": [
+              "Litt svartsopp i dusjen og fuktskade på baderomsdør ved dårlig utluftig av tidligere eiere da jeg tok over. Behandlet svartsopp og fuget på nytt i dusjen."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              38
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35cc1eea-deab-436a-a8a3-57288a1fed45_risk_004",
+            "description": "Lekkasje fra oppvaskmaskin i 2024: Det er byttet gulv etter lekkasje fra oppvaskmaskin i 2024 under tidligere eier. Skjulte følgeskader kan ikke utelukkes.",
+            "evidence": [
+              "Det er byttet gulv etter lekkasje fra oppvaskmaskin i 2024 utført av Kaph entreprenør under tidligere eier"
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_006",
+            "description": "Vannlekkasje fra oppvaskmaskin: Det ble byttet gulv etter lekkasje fra oppvaskmaskin i 2024 under tidligere eier. Risiko for skjulte følgeskader som ikke er avdekket.",
+            "evidence": [
+              "Det er byttet gulv etter lekkasje fra oppvaskmaskin i 2024 utført av Kaph entreprenør under tidligere eier"
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              40
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35cc1eea-deab-436a-a8a3-57288a1fed45_risk_006",
+            "description": "Ingen radonmåling utført: Selger har ikke utført radonmåling. Kjøper overtar dermed risikoen for radonnivået i boligen.",
+            "evidence": [
+              "Selger har ikke utført radonmåling.",
+              "Dersom selger ikke har gitt informasjon om eiendommens radonnivå, vil kjøper overta risikoen for radonnivået i boligen/utleieenheten."
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.93,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_007",
+            "description": "Ingen radonmåling utført: Selger har ikke utført radonmåling. Eiendommen ligger i et område med moderat til lav aktsomhet for radon, men ved utleie er det krav om forsvarlige radonnivåer. Kjøper overtar risikoen for radonnivået.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Det er krav om forsvarlige radonnivåer i utleieboliger. Dersom selger ikke har gitt informasjon om eiendommens radonnivå, vil kjøper overta risikoen for radonnivået i boligen/utleieenheten.",
+              "Eiendommen ligger i et område med moderat til lav aktsomhet for radon."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              31
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35cc1eea-deab-436a-a8a3-57288a1fed45_risk_005",
+            "description": "Selger har ikke tegnet boligselgerforsikring: Selger har valgt ikke å tegne boligselgerforsikring, noe som kan svekke kjøpers mulighet til å fremme krav mot selger ved eventuelle skjulte feil og mangler.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_008",
+            "description": "Selger har ikke tegnet boligselgerforsikring: Selger har valgt å ikke tegne boligselgerforsikring, noe som kan svekke kjøpers mulighet til å få dekket krav mot selger ved eventuelle skjulte feil og mangler.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              31
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35cc1eea-deab-436a-a8a3-57288a1fed45_risk_007",
+            "description": "Bindende strømavtale (Norgespris) med bindingstid til 31.12.2026: Kjøper er forpliktet til å overta selgers strømavtale med bindingstid, noe som begrenser kjøpers valgfrihet for strømleverandør og medfører at eventuell strømstøtte bortfaller.",
+            "evidence": [
+              "Nåværende eier har tegnet avtale om Norgespris på strøm, og avtalen har bindingstid til 31.12.2026. Avtalen følger boligen, og må derfor overtas av kjøper.",
+              "Når det er tegnet avtale om Norgespris bortfaller eventuell strømstøtte."
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_009",
+            "description": "Bindende strømavtale med bindingstid: Nåværende eier har tegnet Norgespris-avtale med bindingstid til 31.12.2026. Avtalen følger boligen og må overtas av kjøper, noe som begrenser kjøpers valgfrihet for strømleverandør og medfører at eventuell strømstøtte bortfaller.",
+            "evidence": [
+              "Nåværende eier har tegnet avtale om Norgespris på strøm, og avtalen har bindingstid til 31.12.2026. Avtalen følger boligen, og må derfor overtas av kjøper.",
+              "Når det er tegnet avtale om Norgespris bortfaller eventuell strømstøtte."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              29
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35cc1eea-deab-436a-a8a3-57288a1fed45_risk_009",
+            "description": "Bod på sameiets fellesareal: Boden som er medtatt i BRA-e og totalt BRA ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet.",
+            "evidence": [
+              "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA‑e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet."
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.93,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_010",
+            "description": "Ekstern bod på sameiets fellesareal kan omdisponeres: Boden som er medtatt i BRA-e og totalt BRA ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet, noe som kan redusere boligens reelle areal og verdi.",
+            "evidence": [
+              "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA-e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              27
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35cc1eea-deab-436a-a8a3-57288a1fed45_risk_008",
+            "description": "Legalpant fra sameiet og kommunen: Sameiet har legalpant på inntil 2G i seksjonen som sikkerhet for felleskostnader, og kommunen har legalpant for kommunale avgifter. Legalpant har prioritet foran tinglyste lån og vises ikke i grunnboksutskriften.",
+            "evidence": [
+              "De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader.",
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen.",
+              "Legalpant til kommunen har høyere prioritet enn legalpant til sameiet."
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_011",
+            "description": "Legalpant og sameiernes solidaransvar: Sameierne er ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk. Sameiet har legal panterett i seksjonen ved manglende betaling av fellesutgifter, begrenset til 2G. Kommunen har også legalpant med høyere prioritet enn banklån.",
+            "evidence": [
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.",
+              "Ved manglende betaling av fellesutgifter har sameiet legal panterett i den enkelte eierseksjon, begrenset til inntil 2 ganger folketrygdens grunnbeløp.",
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen. Legalpant til kommunen har høyere prioritet enn legalpant til sameiet."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              29,
+              30,
+              31
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35cc1eea-deab-436a-a8a3-57288a1fed45_risk_012",
+            "description": "Kort eiertid hos selger: Selger har kun eid boligen i ca. 5 måneder og har ikke bodd der siste 12 måneder. Dette begrenser selgers kjennskap til boligens tilstand og eventuelle skjulte feil.",
+            "evidence": [
+              "Når kjøpte du boligen? År 2025",
+              "Antall måneder 5",
+              "Har du bodd i boligen siste 12 måneder? Nei"
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_012",
+            "description": "Nylig kjøpt eiendom – kort eiertid: Selger har kun eid boligen i ca. 5 måneder (kjøpt i 2025). Kort eiertid kan indikere ukjente forhold ved eiendommen, og selgers kjennskap til boligens tilstand kan være begrenset.",
+            "evidence": [
+              "Når kjøpte du boligen? År 2025",
+              "Antall år 0, Antall måneder 5"
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              37
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35cc1eea-deab-436a-a8a3-57288a1fed45_risk_010",
+            "description": "Elektrisk anlegg kun visuelt kontrollert: Det elektriske anlegget er kun vurdert på laveste inspeksjonsnivå med visuell kontroll. El-anlegget kan ha feil og mangler som ikke avdekkes ved en slik forenklet undersøkelse.",
+            "evidence": [
+              "Det elektriske vurdert på det laveste inspeksjonsnivå med kun en visuell kontroll der el-kontroll må utføres for faktisk tilstand på anlegget.",
+              "El-anlegget kan ha feil og mangler som en slik forenklet undersøkelse ikke vil avdekke. Vær derfor oppmerksom på denne risikoen, og søk videre veiledning eller få en fullstendig kontroll utført av registrert elektrovirksomhet.",
+              "det tas særskilt forbehold for underliggende feil og mangler som ikke kan kontrolleres grunnet skjult i konstruksjonen."
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_014",
+            "description": "El-anlegg ikke fullstendig kontrollert: El-anlegget er kun vurdert på laveste inspeksjonsnivå med visuell kontroll. Det er ikke utført el-tilsyn de siste 5 år, og det tas forbehold for underliggende feil og mangler som ikke kan kontrolleres grunnet skjult konstruksjon.",
+            "evidence": [
+              "Det elektriske vurdert på det laveste inspeksjonsnivå med kun en visuell kontroll der el-kontroll må utføres for faktisk tilstand på anlegget.",
+              "1. Foreligger det eltilsynsrapport de siste 5 år, og det er ikke foretatt arbeid på anlegget etter denne... Nei",
+              "El-anlegget kan ha feil og mangler som en slik forenklet undersøkelse ikke vil avdekke.",
+              "det tas særskilt forbehold for underliggende feil og mangler som ikke kan kontrolleres grunnet skjult i konstruksjonen."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              51,
+              52
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35cc1eea-deab-436a-a8a3-57288a1fed45_risk_011",
+            "description": "Pipeløp og ildsted ikke funksjonstestet: Pipeløpet er formelt ikke vurdert av takstmann, og ildstedet ble ikke funksjonstestet. Branntekniske krav er kun forutsatt kontrollert av brann- og feievesen.",
+            "evidence": [
+              "Peisovn i stue med pipeløp fra byggeår. Pipeløp er formelt ikke vurdert og det forutsettes at de branntekniske krav er kontrollert og godkjent av det stedlige brann og feievesen. Ildsted ble ikke funksjonstestet av undertegnende men det ble ikke opplyst om negative avvik på befaringsdagen."
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_015",
+            "description": "Pipeløp og ildsted ikke funksjonstestet: Pipeløpet er formelt ikke vurdert av takstmann, og ildstedet ble ikke funksjonstestet. Det forutsettes at branntekniske krav er kontrollert og godkjent av brann- og feievesen, men dette er ikke bekreftet.",
+            "evidence": [
+              "Peisovn i stue med pipeløp fra byggeår. Pipeløp er formelt ikke vurdert og det forutsettes at de branntekniske krav er kontrollert og godkjent av det stedlige brann og feievesen. Ildsted ble ikke funksjonstestet av undertegnende men det ble ikke opplyst om negative avvik på befaringsdagen."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              49
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35cc1eea-deab-436a-a8a3-57288a1fed45_risk_014",
+            "description": "Tomt ikke vurdert på befaringsdagen: Tomten var snødekket på befaringsdagen og er ikke vurdert eller beskrevet. Eventuelle feil og mangler på tomten kan dermed ikke avdekkes.",
+            "evidence": [
+              "Om tomten: Snødekket tomt på befaringsdagen og er ikke vurdert eller beskrevet.",
+              "Felles arealer og tomt er ikke vurdert."
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_016",
+            "description": "Tomt ikke vurdert av takstmann: Tomten var snødekket på befaringsdagen og er ikke vurdert eller beskrevet. Eventuelle feil, skader eller uregelmessigheter på tomten er dermed ikke avdekket.",
+            "evidence": [
+              "Snødekket tomt på befaringsdagen og er ikke vurdert eller beskrevet.",
+              "Felles arealer og tomt er ikke vurdert."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              46,
+              55
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35cc1eea-deab-436a-a8a3-57288a1fed45_risk_013",
+            "description": "Kommuneplan under arbeid (KP2023-2040): Det er et planforslag for ny kommuneplan som kan medføre endringer i bruken av eiendommen eller dens omgivelser.",
+            "evidence": [
+              "Kommuneplaner under arbeid: Id KP2023‑2040, Navn Kommuneplanens arealdel 2023‑2040, Status Planforslag"
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_018",
+            "description": "Kommuneplan under arbeid kan påvirke eiendommen: Det pågår arbeid med ny kommuneplan (KP2023-2040) som fortsatt er på planforslagsstadiet. Endringer i arealplanen kan potensielt påvirke bruken av eiendommen og omgivelsene.",
+            "evidence": [
+              "Id KP2023‑2040, Navn Kommuneplanens arealdel 2023‑2040, Status Planforslag, Plantype Kommuneplanens arealdel"
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              30
+            ],
+            "details": {
+              "confidence": 0.65
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "35cc1eea-deab-436a-a8a3-57288a1fed45_risk_015",
+          "description": "Sameiernes solidaransvar overfor kreditorer: I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk, noe som kan medføre økonomisk risiko for kjøper ved mislighold fra andre seksjonseiere.",
+          "evidence": [
+            "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk."
+          ],
+          "source_documents": [
+            "d138_d138"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d138_013",
+          "description": "Varmtvannstank fra byggeår (2016): Varmtvannsberederen på ca. 200 liter er fra byggeår 2016, nå ca. 10 år gammel. Normal levetid for varmtvannstanker er typisk 10–20 år, og tanken kan nærme seg slutten av sin levetid.",
+          "evidence": [
+            "Varmtvannsbereder ca. 200 L fra byggeår plassert på bod. Rom med sluk for lekkasjevann. Normalt vil fabrikkår indikere tilstanden og samtidig forventet levetid ut fra en gjennomsnittsbetraktning."
+          ],
+          "source_documents": [
+            "d138.pdf"
+          ],
+          "source_pages": [
+            51
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d138_017",
+          "description": "Grendelag med løpende kostnader: Det ble etablert et grendelag i 2024 som sameiet betaler kr 18 000 per år til. I tillegg betales kr 100 per måned ekstra til sameiet for felles vedlikehold. Dette er kostnader som kommer i tillegg til de oppgitte felleskostnadene.",
+          "evidence": [
+            "Det ble etablert et grendelag i 2024 som tar ansvar for fellesarealer på området. Sameiet betaler kr 18 000 i året til grendelaget.",
+            "Selger opplyser at det betales inn kr. 100,‑ i mnd til sameiet for felles vedlikehold av utstyr/hygge, dette kommer i tillegg til felleskostnadene."
+          ],
+          "source_documents": [
+            "d138.pdf"
+          ],
+          "source_pages": [
+            25
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d138_019",
+          "description": "Dusjdører lakkert av eier – maling kan flasse av: Selger har lakkert/sprayet dusjdørene selv, og malingen kan flasse av på sikt. Dette er egeninnsats som kan gi estetiske og funksjonelle problemer.",
+          "evidence": [
+            "Dusjdører er lakkert av eier der maling kan flasse av på sikt.",
+            "Byttet armatur i dusjen, lagt belegg over flis på gulvet, sprayet dusjdører og innredning, malt lister"
+          ],
+          "source_documents": [
+            "d138.pdf"
+          ],
+          "source_pages": [
+            38,
+            50
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d138_020",
+          "description": "Bunnledninger ikke kontrollert: Bunnledninger for både vann og avløp er ikke kontrollert. Alder er en vurderingskriterie for slitasjegrad, og eventuelle feil i bunnledningene er ikke avdekket.",
+          "evidence": [
+            "Videre bemerkes at bunnledninger av den årsak følgelig heller ikke er kontrollert. (vannrør)",
+            "Videre bemerkes at bunnledninger av den årsak følgelig heller ikke er kontrollert. Ingen negative avvik observert på befaringsdagen. (avløpsrør)"
+          ],
+          "source_documents": [
+            "d138.pdf"
+          ],
+          "source_pages": [
+            51
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "35cc1eea-deab-436a-a8a3-57288a1fed45_risk_015",
+            "description": "Sameiernes solidaransvar overfor kreditorer: I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk, noe som kan medføre økonomisk risiko for kjøper ved mislighold fra andre seksjonseiere.",
+            "evidence": [
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk."
+            ],
+            "source_documents": [
+              "d138_d138"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder eksplisitt tekst som bekrefter denne risikoen. På side 29 under 'Sameie'-seksjonen står det: 'I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.' Den samme setningen gjentas på side 31 under 'Diverse'-seksjonen. Risikoen er dermed direkte støttet av dokumentteksten, og er en reell risiko for kjøper av denne eierseksjonen."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.888888888888889,
+        "total_support": 20
+      }
+    },
+    "ground_truth": {
+      "run_id": "ca591402-ce0e-4aea-bfac-e81457db7ea3_gt",
+      "system_type": "ground_truth",
+      "overall_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "total_support": 20
+      },
+      "matched_risks": 20,
+      "unmatched_predicted": 0,
+      "unmatched_ground_truth": 0,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "gt_d138_001",
+            "description": "Ras- og skredfare: Deler av eiendommen ligger i faresone for ras og skred, inkludert steinsprang, steinskred, løsmasseskred, fjellskred og snøskred. Dette kan medføre forbud mot tiltak og arbeider i området.",
+            "evidence": [
+              "I følge kommunekartet ligger deler av eiendommen i faresone for ras‑ og skredfare.",
+              "På kart/plan som megler har mottatt fra kommunen er området der eiendommen ligger markert med fare, dvs. fare for ras‑ og skred f.eks. steinsprang, steinskred, løsmasseskred, fjellskred eller snøskred.",
+              "Det kan være forbud mot tiltak og arbeider i rasutsatte områder."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              30
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_001",
+            "description": "Ras- og skredfare: Deler av eiendommen ligger i faresone for ras og skred, inkludert steinsprang, steinskred, løsmasseskred, fjellskred og snøskred. Dette kan medføre forbud mot tiltak og arbeider i området.",
+            "evidence": [
+              "I følge kommunekartet ligger deler av eiendommen i faresone for ras‑ og skredfare.",
+              "På kart/plan som megler har mottatt fra kommunen er området der eiendommen ligger markert med fare, dvs. fare for ras‑ og skred f.eks. steinsprang, steinskred, løsmasseskred, fjellskred eller snøskred.",
+              "Det kan være forbud mot tiltak og arbeider i rasutsatte områder."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              30
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d138_002",
+            "description": "Marin leire: Eiendommen ligger i et område med middels mulighet for marin leire, noe som kan innebære risiko for grunnforhold og setningsskader.",
+            "evidence": [
+              "I følge en områdeanalyse ligger eiendommen i et område med middels mulighet for marin leire."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              30
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_002",
+            "description": "Marin leire: Eiendommen ligger i et område med middels mulighet for marin leire, noe som kan innebære risiko for grunnforhold og setningsskader.",
+            "evidence": [
+              "I følge en områdeanalyse ligger eiendommen i et område med middels mulighet for marin leire."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              30
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d138_003",
+            "description": "Uautorisert egeninnsats på bad/våtrom: Selger har utført arbeid på badet uten fagfolk, inkludert legging av vinylbelegg over eksisterende fliser, bytte av armatur, spraying av dusjdører og maling av lister. Tettesjikt/membran er ikke oppgradert, og arbeidet er ikke byggemeldt.",
+            "evidence": [
+              "Svar Ja, kun av ufaglært/egeninnsats/dugnad",
+              "Byttet armatur i dusjen, lagt belegg over flis på gulvet, sprayet dusjdører og innredning, malt lister",
+              "Ble tettesjikt/membran/sluk oppgradert/fornyet? Nei",
+              "Er arbeidet byggemeldt? Nei"
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              38
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_003",
+            "description": "Uautorisert egeninnsats på bad/våtrom: Selger har utført arbeid på badet uten fagfolk, inkludert legging av vinylbelegg over eksisterende fliser, bytte av armatur, spraying av dusjdører og maling av lister. Tettesjikt/membran er ikke oppgradert, og arbeidet er ikke byggemeldt.",
+            "evidence": [
+              "Svar Ja, kun av ufaglært/egeninnsats/dugnad",
+              "Byttet armatur i dusjen, lagt belegg over flis på gulvet, sprayet dusjdører og innredning, malt lister",
+              "Ble tettesjikt/membran/sluk oppgradert/fornyet? Nei",
+              "Er arbeidet byggemeldt? Nei"
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              38
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d138_004",
+            "description": "TG2 på baderomsgulv: Vinylfliser er lagt over opprinnelige fliser på egeninnsats, med synlige avvik på overganger og avslutninger. Vinylflisene kan løsne på sikt, og ved fjerning kan underliggende flisfuger måtte fuges om.",
+            "evidence": [
+              "Det er avvik: Det er lagt vinylfliser over opprinnelig underliggende fliser på egeninnsats. Noe synlige avvik på overganger og avslutninger.",
+              "Vinylfliser kan løsne på sikt, men har ingen betydning for underliggende opprinnelige fliser eller tetthet på badet for øvrig. Ved fjerning av vinylfliser kan det ikke utelukkes av underliggende flisfuger må fuges om og med ny silikon."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              27,
+              50
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_004",
+            "description": "TG2 på baderomsgulv: Vinylfliser er lagt over opprinnelige fliser på egeninnsats, med synlige avvik på overganger og avslutninger. Vinylflisene kan løsne på sikt, og ved fjerning kan underliggende flisfuger måtte fuges om.",
+            "evidence": [
+              "Det er avvik: Det er lagt vinylfliser over opprinnelig underliggende fliser på egeninnsats. Noe synlige avvik på overganger og avslutninger.",
+              "Vinylfliser kan løsne på sikt, men har ingen betydning for underliggende opprinnelige fliser eller tetthet på badet for øvrig. Ved fjerning av vinylfliser kan det ikke utelukkes av underliggende flisfuger må fuges om og med ny silikon."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              27,
+              50
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d138_005",
+            "description": "Fuktskade og svartsopp på bad: Selger opplyser om tidligere fuktskade på baderomsdør og svartsopp i dusjen fra tidligere eiere. Behandlet av selger, men det er usikkert om utbedringen er tilstrekkelig fagmessig utført.",
+            "evidence": [
+              "Litt svartsopp i dusjen og fuktskade på baderomsdør ved dårlig utluftig av tidligere eiere da jeg tok over. Behandlet svartsopp og fuget på nytt i dusjen."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              38
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_005",
+            "description": "Fuktskade og svartsopp på bad: Selger opplyser om tidligere fuktskade på baderomsdør og svartsopp i dusjen fra tidligere eiere. Behandlet av selger, men det er usikkert om utbedringen er tilstrekkelig fagmessig utført.",
+            "evidence": [
+              "Litt svartsopp i dusjen og fuktskade på baderomsdør ved dårlig utluftig av tidligere eiere da jeg tok over. Behandlet svartsopp og fuget på nytt i dusjen."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              38
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d138_006",
+            "description": "Vannlekkasje fra oppvaskmaskin: Det ble byttet gulv etter lekkasje fra oppvaskmaskin i 2024 under tidligere eier. Risiko for skjulte følgeskader som ikke er avdekket.",
+            "evidence": [
+              "Det er byttet gulv etter lekkasje fra oppvaskmaskin i 2024 utført av Kaph entreprenør under tidligere eier"
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              40
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_006",
+            "description": "Vannlekkasje fra oppvaskmaskin: Det ble byttet gulv etter lekkasje fra oppvaskmaskin i 2024 under tidligere eier. Risiko for skjulte følgeskader som ikke er avdekket.",
+            "evidence": [
+              "Det er byttet gulv etter lekkasje fra oppvaskmaskin i 2024 utført av Kaph entreprenør under tidligere eier"
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              40
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d138_007",
+            "description": "Ingen radonmåling utført: Selger har ikke utført radonmåling. Eiendommen ligger i et område med moderat til lav aktsomhet for radon, men ved utleie er det krav om forsvarlige radonnivåer. Kjøper overtar risikoen for radonnivået.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Det er krav om forsvarlige radonnivåer i utleieboliger. Dersom selger ikke har gitt informasjon om eiendommens radonnivå, vil kjøper overta risikoen for radonnivået i boligen/utleieenheten.",
+              "Eiendommen ligger i et område med moderat til lav aktsomhet for radon."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              31
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_007",
+            "description": "Ingen radonmåling utført: Selger har ikke utført radonmåling. Eiendommen ligger i et område med moderat til lav aktsomhet for radon, men ved utleie er det krav om forsvarlige radonnivåer. Kjøper overtar risikoen for radonnivået.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Det er krav om forsvarlige radonnivåer i utleieboliger. Dersom selger ikke har gitt informasjon om eiendommens radonnivå, vil kjøper overta risikoen for radonnivået i boligen/utleieenheten.",
+              "Eiendommen ligger i et område med moderat til lav aktsomhet for radon."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              31
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d138_008",
+            "description": "Selger har ikke tegnet boligselgerforsikring: Selger har valgt å ikke tegne boligselgerforsikring, noe som kan svekke kjøpers mulighet til å få dekket krav mot selger ved eventuelle skjulte feil og mangler.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              31
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_008",
+            "description": "Selger har ikke tegnet boligselgerforsikring: Selger har valgt å ikke tegne boligselgerforsikring, noe som kan svekke kjøpers mulighet til å få dekket krav mot selger ved eventuelle skjulte feil og mangler.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              31
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d138_009",
+            "description": "Bindende strømavtale med bindingstid: Nåværende eier har tegnet Norgespris-avtale med bindingstid til 31.12.2026. Avtalen følger boligen og må overtas av kjøper, noe som begrenser kjøpers valgfrihet for strømleverandør og medfører at eventuell strømstøtte bortfaller.",
+            "evidence": [
+              "Nåværende eier har tegnet avtale om Norgespris på strøm, og avtalen har bindingstid til 31.12.2026. Avtalen følger boligen, og må derfor overtas av kjøper.",
+              "Når det er tegnet avtale om Norgespris bortfaller eventuell strømstøtte."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              29
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_009",
+            "description": "Bindende strømavtale med bindingstid: Nåværende eier har tegnet Norgespris-avtale med bindingstid til 31.12.2026. Avtalen følger boligen og må overtas av kjøper, noe som begrenser kjøpers valgfrihet for strømleverandør og medfører at eventuell strømstøtte bortfaller.",
+            "evidence": [
+              "Nåværende eier har tegnet avtale om Norgespris på strøm, og avtalen har bindingstid til 31.12.2026. Avtalen følger boligen, og må derfor overtas av kjøper.",
+              "Når det er tegnet avtale om Norgespris bortfaller eventuell strømstøtte."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              29
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d138_010",
+            "description": "Ekstern bod på sameiets fellesareal kan omdisponeres: Boden som er medtatt i BRA-e og totalt BRA ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet, noe som kan redusere boligens reelle areal og verdi.",
+            "evidence": [
+              "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA-e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              27
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_010",
+            "description": "Ekstern bod på sameiets fellesareal kan omdisponeres: Boden som er medtatt i BRA-e og totalt BRA ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet, noe som kan redusere boligens reelle areal og verdi.",
+            "evidence": [
+              "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA-e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              27
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d138_011",
+            "description": "Legalpant og sameiernes solidaransvar: Sameierne er ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk. Sameiet har legal panterett i seksjonen ved manglende betaling av fellesutgifter, begrenset til 2G. Kommunen har også legalpant med høyere prioritet enn banklån.",
+            "evidence": [
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.",
+              "Ved manglende betaling av fellesutgifter har sameiet legal panterett i den enkelte eierseksjon, begrenset til inntil 2 ganger folketrygdens grunnbeløp.",
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen. Legalpant til kommunen har høyere prioritet enn legalpant til sameiet."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              29,
+              30,
+              31
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_011",
+            "description": "Legalpant og sameiernes solidaransvar: Sameierne er ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk. Sameiet har legal panterett i seksjonen ved manglende betaling av fellesutgifter, begrenset til 2G. Kommunen har også legalpant med høyere prioritet enn banklån.",
+            "evidence": [
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.",
+              "Ved manglende betaling av fellesutgifter har sameiet legal panterett i den enkelte eierseksjon, begrenset til inntil 2 ganger folketrygdens grunnbeløp.",
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen. Legalpant til kommunen har høyere prioritet enn legalpant til sameiet."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              29,
+              30,
+              31
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d138_012",
+            "description": "Nylig kjøpt eiendom – kort eiertid: Selger har kun eid boligen i ca. 5 måneder (kjøpt i 2025). Kort eiertid kan indikere ukjente forhold ved eiendommen, og selgers kjennskap til boligens tilstand kan være begrenset.",
+            "evidence": [
+              "Når kjøpte du boligen? År 2025",
+              "Antall år 0, Antall måneder 5"
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              37
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_012",
+            "description": "Nylig kjøpt eiendom – kort eiertid: Selger har kun eid boligen i ca. 5 måneder (kjøpt i 2025). Kort eiertid kan indikere ukjente forhold ved eiendommen, og selgers kjennskap til boligens tilstand kan være begrenset.",
+            "evidence": [
+              "Når kjøpte du boligen? År 2025",
+              "Antall år 0, Antall måneder 5"
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              37
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d138_013",
+            "description": "Varmtvannstank fra byggeår (2016): Varmtvannsberederen på ca. 200 liter er fra byggeår 2016, nå ca. 10 år gammel. Normal levetid for varmtvannstanker er typisk 10–20 år, og tanken kan nærme seg slutten av sin levetid.",
+            "evidence": [
+              "Varmtvannsbereder ca. 200 L fra byggeår plassert på bod. Rom med sluk for lekkasjevann. Normalt vil fabrikkår indikere tilstanden og samtidig forventet levetid ut fra en gjennomsnittsbetraktning."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              51
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_013",
+            "description": "Varmtvannstank fra byggeår (2016): Varmtvannsberederen på ca. 200 liter er fra byggeår 2016, nå ca. 10 år gammel. Normal levetid for varmtvannstanker er typisk 10–20 år, og tanken kan nærme seg slutten av sin levetid.",
+            "evidence": [
+              "Varmtvannsbereder ca. 200 L fra byggeår plassert på bod. Rom med sluk for lekkasjevann. Normalt vil fabrikkår indikere tilstanden og samtidig forventet levetid ut fra en gjennomsnittsbetraktning."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              51
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d138_014",
+            "description": "El-anlegg ikke fullstendig kontrollert: El-anlegget er kun vurdert på laveste inspeksjonsnivå med visuell kontroll. Det er ikke utført el-tilsyn de siste 5 år, og det tas forbehold for underliggende feil og mangler som ikke kan kontrolleres grunnet skjult konstruksjon.",
+            "evidence": [
+              "Det elektriske vurdert på det laveste inspeksjonsnivå med kun en visuell kontroll der el-kontroll må utføres for faktisk tilstand på anlegget.",
+              "1. Foreligger det eltilsynsrapport de siste 5 år, og det er ikke foretatt arbeid på anlegget etter denne... Nei",
+              "El-anlegget kan ha feil og mangler som en slik forenklet undersøkelse ikke vil avdekke.",
+              "det tas særskilt forbehold for underliggende feil og mangler som ikke kan kontrolleres grunnet skjult i konstruksjonen."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              51,
+              52
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_014",
+            "description": "El-anlegg ikke fullstendig kontrollert: El-anlegget er kun vurdert på laveste inspeksjonsnivå med visuell kontroll. Det er ikke utført el-tilsyn de siste 5 år, og det tas forbehold for underliggende feil og mangler som ikke kan kontrolleres grunnet skjult konstruksjon.",
+            "evidence": [
+              "Det elektriske vurdert på det laveste inspeksjonsnivå med kun en visuell kontroll der el-kontroll må utføres for faktisk tilstand på anlegget.",
+              "1. Foreligger det eltilsynsrapport de siste 5 år, og det er ikke foretatt arbeid på anlegget etter denne... Nei",
+              "El-anlegget kan ha feil og mangler som en slik forenklet undersøkelse ikke vil avdekke.",
+              "det tas særskilt forbehold for underliggende feil og mangler som ikke kan kontrolleres grunnet skjult i konstruksjonen."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              51,
+              52
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d138_015",
+            "description": "Pipeløp og ildsted ikke funksjonstestet: Pipeløpet er formelt ikke vurdert av takstmann, og ildstedet ble ikke funksjonstestet. Det forutsettes at branntekniske krav er kontrollert og godkjent av brann- og feievesen, men dette er ikke bekreftet.",
+            "evidence": [
+              "Peisovn i stue med pipeløp fra byggeår. Pipeløp er formelt ikke vurdert og det forutsettes at de branntekniske krav er kontrollert og godkjent av det stedlige brann og feievesen. Ildsted ble ikke funksjonstestet av undertegnende men det ble ikke opplyst om negative avvik på befaringsdagen."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              49
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_015",
+            "description": "Pipeløp og ildsted ikke funksjonstestet: Pipeløpet er formelt ikke vurdert av takstmann, og ildstedet ble ikke funksjonstestet. Det forutsettes at branntekniske krav er kontrollert og godkjent av brann- og feievesen, men dette er ikke bekreftet.",
+            "evidence": [
+              "Peisovn i stue med pipeløp fra byggeår. Pipeløp er formelt ikke vurdert og det forutsettes at de branntekniske krav er kontrollert og godkjent av det stedlige brann og feievesen. Ildsted ble ikke funksjonstestet av undertegnende men det ble ikke opplyst om negative avvik på befaringsdagen."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              49
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d138_016",
+            "description": "Tomt ikke vurdert av takstmann: Tomten var snødekket på befaringsdagen og er ikke vurdert eller beskrevet. Eventuelle feil, skader eller uregelmessigheter på tomten er dermed ikke avdekket.",
+            "evidence": [
+              "Snødekket tomt på befaringsdagen og er ikke vurdert eller beskrevet.",
+              "Felles arealer og tomt er ikke vurdert."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              46,
+              55
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_016",
+            "description": "Tomt ikke vurdert av takstmann: Tomten var snødekket på befaringsdagen og er ikke vurdert eller beskrevet. Eventuelle feil, skader eller uregelmessigheter på tomten er dermed ikke avdekket.",
+            "evidence": [
+              "Snødekket tomt på befaringsdagen og er ikke vurdert eller beskrevet.",
+              "Felles arealer og tomt er ikke vurdert."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              46,
+              55
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d138_017",
+            "description": "Grendelag med løpende kostnader: Det ble etablert et grendelag i 2024 som sameiet betaler kr 18 000 per år til. I tillegg betales kr 100 per måned ekstra til sameiet for felles vedlikehold. Dette er kostnader som kommer i tillegg til de oppgitte felleskostnadene.",
+            "evidence": [
+              "Det ble etablert et grendelag i 2024 som tar ansvar for fellesarealer på området. Sameiet betaler kr 18 000 i året til grendelaget.",
+              "Selger opplyser at det betales inn kr. 100,‑ i mnd til sameiet for felles vedlikehold av utstyr/hygge, dette kommer i tillegg til felleskostnadene."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              25
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_017",
+            "description": "Grendelag med løpende kostnader: Det ble etablert et grendelag i 2024 som sameiet betaler kr 18 000 per år til. I tillegg betales kr 100 per måned ekstra til sameiet for felles vedlikehold. Dette er kostnader som kommer i tillegg til de oppgitte felleskostnadene.",
+            "evidence": [
+              "Det ble etablert et grendelag i 2024 som tar ansvar for fellesarealer på området. Sameiet betaler kr 18 000 i året til grendelaget.",
+              "Selger opplyser at det betales inn kr. 100,‑ i mnd til sameiet for felles vedlikehold av utstyr/hygge, dette kommer i tillegg til felleskostnadene."
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              25
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d138_018",
+            "description": "Kommuneplan under arbeid kan påvirke eiendommen: Det pågår arbeid med ny kommuneplan (KP2023-2040) som fortsatt er på planforslagsstadiet. Endringer i arealplanen kan potensielt påvirke bruken av eiendommen og omgivelsene.",
+            "evidence": [
+              "Id KP2023‑2040, Navn Kommuneplanens arealdel 2023‑2040, Status Planforslag, Plantype Kommuneplanens arealdel"
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              30
+            ],
+            "confidence": 0.65,
+            "details": {
+              "confidence": 0.65
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_018",
+            "description": "Kommuneplan under arbeid kan påvirke eiendommen: Det pågår arbeid med ny kommuneplan (KP2023-2040) som fortsatt er på planforslagsstadiet. Endringer i arealplanen kan potensielt påvirke bruken av eiendommen og omgivelsene.",
+            "evidence": [
+              "Id KP2023‑2040, Navn Kommuneplanens arealdel 2023‑2040, Status Planforslag, Plantype Kommuneplanens arealdel"
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              30
+            ],
+            "details": {
+              "confidence": 0.65
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d138_019",
+            "description": "Dusjdører lakkert av eier – maling kan flasse av: Selger har lakkert/sprayet dusjdørene selv, og malingen kan flasse av på sikt. Dette er egeninnsats som kan gi estetiske og funksjonelle problemer.",
+            "evidence": [
+              "Dusjdører er lakkert av eier der maling kan flasse av på sikt.",
+              "Byttet armatur i dusjen, lagt belegg over flis på gulvet, sprayet dusjdører og innredning, malt lister"
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              38,
+              50
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_019",
+            "description": "Dusjdører lakkert av eier – maling kan flasse av: Selger har lakkert/sprayet dusjdørene selv, og malingen kan flasse av på sikt. Dette er egeninnsats som kan gi estetiske og funksjonelle problemer.",
+            "evidence": [
+              "Dusjdører er lakkert av eier der maling kan flasse av på sikt.",
+              "Byttet armatur i dusjen, lagt belegg over flis på gulvet, sprayet dusjdører og innredning, malt lister"
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              38,
+              50
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d138_020",
+            "description": "Bunnledninger ikke kontrollert: Bunnledninger for både vann og avløp er ikke kontrollert. Alder er en vurderingskriterie for slitasjegrad, og eventuelle feil i bunnledningene er ikke avdekket.",
+            "evidence": [
+              "Videre bemerkes at bunnledninger av den årsak følgelig heller ikke er kontrollert. (vannrør)",
+              "Videre bemerkes at bunnledninger av den årsak følgelig heller ikke er kontrollert. Ingen negative avvik observert på befaringsdagen. (avløpsrør)"
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              51
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d138_020",
+            "description": "Bunnledninger ikke kontrollert: Bunnledninger for både vann og avløp er ikke kontrollert. Alder er en vurderingskriterie for slitasjegrad, og eventuelle feil i bunnledningene er ikke avdekket.",
+            "evidence": [
+              "Videre bemerkes at bunnledninger av den årsak følgelig heller ikke er kontrollert. (vannrør)",
+              "Videre bemerkes at bunnledninger av den årsak følgelig heller ikke er kontrollert. Ingen negative avvik observert på befaringsdagen. (avløpsrør)"
+            ],
+            "source_documents": [
+              "d138.pdf"
+            ],
+            "source_pages": [
+              51
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [],
+      "unmatched_ground_truth_risks": [],
+      "verified_unmatched": [],
+      "adjusted_metrics": null
+    }
+  },
+  "best_system": "ground_truth",
+  "statistical_tests": {
+    "standard_rag_vs_agentic_rag_P+T+R": 1.0,
+    "standard_rag_vs_ground_truth": 1.0,
+    "agentic_rag_P+T+R_vs_ground_truth": 1.0
+  },
+  "record_id": "ca9b4577-0b82-472a-af5b-bf0e6c70b0e9",
+  "query": "Identifiser risikoer i salgsoppgaven",
+  "document_set_id": "d138",
+  "timestamp": "2026-03-27T21:48:17.787823",
+  "risk_summaries": [
+    {
+      "system_type": "standard_rag",
+      "total_risks": 10,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "agentic_rag_P+T+R",
+      "total_risks": 16,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "ground_truth",
+      "total_risks": 20,
+      "risks_by_category": {}
+    }
+  ],
+  "has_ground_truth": true,
+  "overlapping_risk_count": 22,
+  "unique_to": {
+    "standard_rag": 3,
+    "agentic_rag_P+T+R": 0,
+    "ground_truth": 2
+  },
+  "record_type": "comparison"
+}

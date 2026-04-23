@@ -1,0 +1,2671 @@
+{
+  "system_results": {
+    "standard_rag": {
+      "run_id": "8ba010d4-d764-468a-a224-cd74412eb630",
+      "system_type": "standard_rag",
+      "overall_metrics": {
+        "precision": 0.5454545454545454,
+        "recall": 0.23076923076923078,
+        "f1": 0.3243243243243243,
+        "total_support": 26
+      },
+      "matched_risks": 6,
+      "unmatched_predicted": 5,
+      "unmatched_ground_truth": 20,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "8ba010d4-d764-468a-a224-cd74412eb630_risk_000",
+            "description": "Selger har ikke tegnet boligselgerforsikring. Dette innebærer at kjøper ikke har den ekstra beskyttelsen som boligselgerforsikringen normalt gir, og at eventuelle krav etter avhendingsloven må rettes direkte mot selger personlig.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring.",
+              "Jeg er orientert om mitt mulige ansvar som selger etter avhendingsloven, eventuelt etter kjøpsloven (aksjeboliger), og om forsikringsgiver sitt boligselgerforsikringstilbud."
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_005",
+            "description": "Selger har ikke tegnet boligselgerforsikring. Dette innebærer at kjøper ikke har den ekstra sikkerheten som boligselgerforsikring normalt gir, og at eventuelle krav mot selger kan bli vanskeligere å inndrive.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              23
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "8ba010d4-d764-468a-a224-cd74412eb630_risk_002",
+            "description": "Legalpant på inntil 2G (to ganger grunnbeløpet i Folketrygden) fra øvrige seksjonseiere som sikkerhet for krav knyttet til sameieforholdet, herunder felleskostnader. Dette er pant som ikke fremgår av grunnboksutskriften, og som kjøper overtar.",
+            "evidence": [
+              "De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader. Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen."
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_021",
+            "description": "Legalpant fra kommunen og øvrige seksjonseiere (inntil 2G) har prioritet foran tinglyste banklån. Dette innebærer at kjøpers bank ikke nødvendigvis har første prioritet på pantet, noe som kan påvirke finansieringsbetingelsene.",
+            "evidence": [
+              "Legalpant: Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter og eventuell eiendomsskatt. De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader. Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              23
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "8ba010d4-d764-468a-a224-cd74412eb630_risk_003",
+            "description": "Det elektriske anlegget er ikke kontrollert av det lokale eltilsyn i løpet av de siste 5 år, og det er ikke utført arbeider på anlegget etter byggeår. Dette kan innebære risiko for skjulte feil eller mangler ved det elektriske anlegget.",
+            "evidence": [
+              "Er det utført kontroll av det lokale el tilsyn i løpet av de siste 5 år: Nei",
+              "Er det utført arbeider på anlegget etter byggeår? Nei",
+              "Type anlegg: Skjult"
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_009",
+            "description": "El-anlegget er ikke kontrollert av Det lokale el-tilsyn (DLE) de siste 5 år, og det er ikke utført el-takst. Det er sannsynlig at det kan avdekkes avvik fra dagens forskriftskrav og oppstå funksjonssvikt. Kjøper må påregne oppgraderinger.",
+            "evidence": [
+              "Er det foretatt kontroll av det lokale el tilsyn i løpet av de siste 5 år: Nei",
+              "Siden elanlegget ikke er kontrollert er det sannsynlig at det siden kan avdekkes avvik fra dagens forskriftskrav og oppstå funksjonssvikt.",
+              "Videre må kjøper være forberedt på det må foretas oppgraderinger på grunn av slitasje, fraværende vedlikehold, arbeider som er utført av ufaglærte, utidsmessighet eller tekniske løsninger som ikke holder dagens standard."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              19,
+              20
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "8ba010d4-d764-468a-a224-cd74412eb630_risk_004",
+            "description": "Det foreligger heftelser/bestemmelser om vedlikehold av anlegg/ledninger som er overført fra tidligere registerenheter. Disse heftelsene følger eiendommen og kan medføre forpliktelser for ny eier.",
+            "evidence": [
+              "Bestemmelse om vedlikehold av anlegg/ledninger",
+              "Overført fra: KNR: 3222 GNR: 106 BNR: 254 GJELDER DENNE REGISTERENHETEN MED FLERE",
+              "2018/629231-1/200 10.04.2018 BESTEMMELSE OM",
+              "2020/2459520-1/200 14.05.2020 BESTEMMELSE OM"
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_011",
+            "description": "Eiendommen er belastet med et svært stort antall tinglyste heftelser og rettigheter, inkludert bestemmelser om adkomstrett, vann- og kloakkledninger, elektriske ledninger, mast/stolpe, nettstasjon, fjernvarme, bredbånd og solidarisk ansvar for fellesledninger. Disse heftelsene følger eiendommen og kan begrense bruken eller medføre plikter for kjøper.",
+            "evidence": [
+              "Tinglyste heftelser og rettigheter: Følgende tinglyste heftelser følger eiendommen ved salg, og ved inngivelse av bud vil disse være akseptert av budgiver/kjøper",
+              "Bestemmelse om solidarisk ansvar for fellesledninger",
+              "Bestemmelse om adkomstrett (flere heftelser fra ulike år)",
+              "Bestemmelse om mast/stolpe, nettstasjon, fjernvarme, bredbånd, kloakkledning, vannledning, elektriske ledninger/kabler"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              21,
+              22
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "8ba010d4-d764-468a-a224-cd74412eb630_risk_005",
+            "description": "Det er ikke foretatt radonmåling. Radon er en usynlig og luktfri gass som kan utgjøre en helserisiko ved forhøyede konsentrasjoner innendørs.",
+            "evidence": [
+              "21 Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_006",
+            "description": "Selger har ikke utført radonmåling. Radon er en usynlig og luktfri radioaktiv gass som kan utgjøre en helserisiko. Uten radonmåling er det ukjent om boligen har forhøyede radonverdier.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              23,
+              27
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "8ba010d4-d764-468a-a224-cd74412eb630_risk_010",
+            "description": "Manglende energiattest fra selger. Dersom selger ikke har lagt frem energiattest før avtale om salg er inngått, kan kjøper få laget en energiattest for selgers regning. Dette kan indikere at eiendommens energistandard er ukjent.",
+            "evidence": [
+              "eier etter skriftlig anmodning fra kjøper ikke har lagt frem energiattest før avtale om salg er inngått, kan kjøper få laget en energiattest ved hjelp av ekspert for selgers regning."
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_007",
+            "description": "Eiendommen er ikke energimerket av selger. Kjøper kan kreve at selger bekoster energimerking dersom dette ikke er fremlagt. Manglende energiattest kan indikere at selger ikke har oppfylt sin plikt.",
+            "evidence": [
+              "Eiendommen er ikke energimerket. Det følger av forskrift om energimerking § 5 at dersom eier ikke har lagt frem energiattest, og eier etter skriftlig anmodning fra kjøper ikke har lagt frem energiattest før avtale om salg er inngått, kan kjøper få laget en energiattest ved hjelp av ekspert for selgers regning, innen ett år etter at avtale om salg er inngått."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "8ba010d4-d764-468a-a224-cd74412eb630_risk_001",
+          "description": "Stikkledninger fra eiendommen og ut til det kommunale nettet er private. Dette betyr at vedlikehold og kostnader knyttet til disse ledningene påhviler eier, noe som kan medføre uventede utgifter.",
+          "evidence": [
+            "Eiendommen er tilknyttet offentlig vann- og avløpssystem. Stikkledningene fra eiendommen og ut til det kommunale nettet er private."
+          ],
+          "source_documents": [
+            "d035_d035"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "8ba010d4-d764-468a-a224-cd74412eb630_risk_006",
+          "description": "Det elektriske anlegget er av typen 'skjult', noe som gjør det vanskelig å inspisere og avdekke eventuelle feil. Kombinert med at det ikke er utført kontroll av eltilsynet de siste 5 år, øker dette risikoen for skjulte elektriske feil.",
+          "evidence": [
+            "Type anlegg: Skjult",
+            "Er det utført kontroll av det lokale el tilsyn i løpet av de siste 5 år: Nei",
+            "Er det tegn på varmgang (termiske skader) på kabler, brytere, downlight, stikkkontakter, og elektrisk utstyr? Nei"
+          ],
+          "source_documents": [
+            "d035_d035"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "8ba010d4-d764-468a-a224-cd74412eb630_risk_007",
+          "description": "Selger er ikke forpliktet til å akseptere høyeste bud, og kan prioritere bud fra ikke-forbrukere selv om budet er lavere. Dette kan skape usikkerhet for budgivere om likebehandling i budrunden.",
+          "evidence": [
+            "Selger står fritt til å velge hvilket bud som aksepteres, og er ikke forpliktet til å velge det høyeste.",
+            "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud."
+          ],
+          "source_documents": [
+            "d035_d035"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.82,
+          "details": {}
+        },
+        {
+          "risk_id": "8ba010d4-d764-468a-a224-cd74412eb630_risk_008",
+          "description": "Kjøper må selv dekke kostnader med inntil kr 10 000 ved beregning av krav om prisavslag eller erstatning. Dette er en økonomisk risiko for kjøper dersom det oppstår tvister om mangler etter overtakelse.",
+          "evidence": [
+            "Ved beregning av krav om prisavslag eller erstatning må kjøper selv dekke kostnader med inntil kr 10 000 (som en egenandel)."
+          ],
+          "source_documents": [
+            "d035_d035"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.9,
+          "details": {}
+        },
+        {
+          "risk_id": "8ba010d4-d764-468a-a224-cd74412eb630_risk_009",
+          "description": "Det elektriske anlegget kan være underdimensjonert for moderne bruk. Salgsoppgaven advarer om at dagens anlegg ikke nødvendigvis er dimensjonert for oppgradering av kjøkken med nye elektriske apparater, rehabilitering av bad med varmekabler eller installering av elbillader.",
+          "evidence": [
+            "det må derfor påregnes at dagens anlegg ikke nødvendigvis er dimensjonert for oppgradering av kjøkken med nye elektriske apparater, rehabilitering av bad m/ varmekabler eller installeringer elbillader."
+          ],
+          "source_documents": [
+            "d035_d035"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.87,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d035_001",
+          "description": "Sameiets økonomi viser betydelige og voksende underskudd. Regnskapet for 2024 viste et underskudd på kr 1 034 074, opp fra kr 574 759 i 2023. Sameiet har negativ egenkapital (udekket tap) på kr 1 167 368 per 31.12.2024. Dette indikerer en alvorlig og forverret økonomisk situasjon i sameiet.",
+          "evidence": [
+            "Regnskapet for 2024 viste et underskudd på kr 1 034 074, en økning fra underskuddet på kr 574 759 i 2023.",
+            "Udekket tap betyr at egenkapitalen i selskapet er negativ.",
+            "Udekket tap 2024: -1 167 368, 2023: -133 294",
+            "ÅRSRESULTAT -1 034 074 (2024), -574 759 (2023)"
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            17,
+            53,
+            54
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d035_002",
+          "description": "Felleskostnadene har blitt økt kraftig og vil øke ytterligere. Felleskostnadene ble økt med 15 % i august 2024, og det er vedtatt en ytterligere økning på 15 % for 2025. Fra 1. januar 2026 øker felleskostnadene fra kr 3 130,30 til kr 3 413 per måned. Dette medfører økte løpende kostnader for kjøper.",
+          "evidence": [
+            "Felleskostnadene øker fra kr 3 130,30 til kr 3 413,‑ fra 1. januar 2026.",
+            "For å styrke økonomien ble felleskostnadene økt med 15 % i august 2024, og det er vedtatt en ytterligere økning på 15 % for 2025.",
+            "Budsjettet for 2025 er satt opp med et forventet overskudd på kr 61 920. Det er også planlagt en fremtidig økning av felleskostnadene til kr 2 377 fra 1. januar 2026."
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            17,
+            20
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d035_003",
+          "description": "Kommunale avgifter er kraftig underbudsjettert og har økt dramatisk. I 2024 var faktiske kommunale avgifter kr 3 482 083, mot et budsjett på kr 2 380 000 – en overskridelse på over kr 1 million. Styret oppgir at underskuddet skyldes at økningen i felleskostnadene ikke holdt tritt med økte kommunale utgifter.",
+          "evidence": [
+            "Kommunale avgifter 2024: -3 482 083 mot budsjett -2 380 000",
+            "Ifølge styret skyldes dette at økningen i felleskostnadene ikke holdt tritt med økte kommunale utgifter.",
+            "Vann- og avløpsavgift -2 443 929, Renovasjonsavgift -1 038 154"
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            53,
+            54
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d035_004",
+          "description": "Det er observert skadedyr (mus og møll) i sameiet. Selger bekrefter at det har vært observert mus i sameiet høsten 2024, og møll i enkelte boder i 2024. Sameiet har hatt utgifter til skadedyrarbeid/soppkontroll på kr 69 510 og nedfrysing grunnet skadedyr på kr 43 096 i 2024.",
+          "evidence": [
+            "Sameiet har gitt ut informasjon om at det har ble observert mus tidligere i høst. Det har også vært observert møll i enkelte boder i 2024, sameiet håndterte dette umiddelbart og gjennomførte nødvendige tiltak.",
+            "Skadedyrarbeid/soppkontroll -69 510",
+            "Nedfrysing grunnet skadedyr 43 096",
+            "Kjenner du til om det er/har vært sopp/råteskader/insekter/skadedyr i sameiet/laget/selskapet (fellesareal eller i andre boliger) som rotter, mus, maur eller lignende? Ja"
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            19,
+            26,
+            27,
+            54,
+            55
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d035_008",
+          "description": "Ferdigattest er datert 21.06.2023, men det presiseres at ferdigattest ikke gir garanti for at bygget er oppført i henhold til tillatelsen og gjeldende regelverk, eller at det ikke er utført ulovlig arbeid i ettertid. Det er også gjort 'mindre innvendige endringer av planløsningen' etter rammetillatelse.",
+          "evidence": [
+            "Det er viktig å merke seg at selv om ferdigattest foreligger, gir det ingen garanti for at bygget er oppført i henhold til tillatelsen og gjeldende regelverk, eller at det senere er utført arbeid på bygget som ikke er byggemeldt eller godkjent.",
+            "Det er foretatt mindre innvendige endringer av planløsningen, «som bygget» tegninger er vedlagt.",
+            "Ferdigattest er gitt med bakgrunn i mottatt søknad. Søknad om ferdigattest er mottatt 25.04.2022."
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            18,
+            37
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d035_010",
+          "description": "Fjernvarmekostnaden er et a konto-beløp som avregnes årlig. Faktiske kostnader kan avvike fra innbetalt beløp, noe som kan medføre etterbetaling. I 2024 var energiavregningen (fjernvarme og Techem) kr 773 054 mot innbetalte a konto-beløp på kr 1 223 519, noe som ga en netto avregning på kr 455 142.",
+          "evidence": [
+            "Kostnaden for fjernvarme er et a konto‑beløp, og faktiske kostnader avregnes årlig mot innbetalt beløp. Dette kan føre til etterbetaling eller tilbakebetaling.",
+            "Fjernvarme 680 161, Techem 92 893, SUM KOSTNADER 773 054",
+            "Forskuddsinnbetalinger (a konto) -1 223 519, SUM ENERGIAVREGNING -455 142"
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            17,
+            55
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d035_012",
+          "description": "Sameiet har ingen sikringsordning registrert. Dette innebærer at kjøper ikke er beskyttet mot tap dersom sameiet ikke kan innfri sine forpliktelser.",
+          "evidence": [
+            "Sikringsordning: Ingen sikringsordning registrert."
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            17
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d035_013",
+          "description": "Elbil-lading er ikke montert på parkeringsplassen. Det er mulighet for etablering av elbil-lading, men avregning av strøm håndteres av en ekstern leverandør og inngår ikke i felleskostnadene. Kjøper som ønsker elbil-lading må påregne ekstra kostnader og prosess for etablering.",
+          "evidence": [
+            "Det er mulighet for etablering av elbil‑lading, hvor avregning av strøm håndteres av en ekstern leverandør og ikke inngår i felleskostnadene. Det er pt. ikke montert el‑lading."
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            18
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d035_014",
+          "description": "Selger har kun eid boligen i ca. 2,5 år (kjøpt 2023) og har bodd der siste 12 måneder. Kort eiertid kan indikere at selger ikke har full kjennskap til boligens tilstand over tid, og at eventuelle skjulte feil ikke er avdekket.",
+          "evidence": [
+            "Når kjøpte du boligen? År 2023",
+            "Hvor lenge har du eid boligen? Antall år 2, Antall måneder 6",
+            "Har du bodd i boligen siste 12 måneder? Ja"
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            26
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d035_015",
+          "description": "Avløpsrørene er av stål. Stålrør kan over tid være utsatt for korrosjon og rust, noe som kan medføre lekkasjer og behov for utskifting. Selv om rørene er fra 2021 og ikke har nådd kritisk alder, er dette en materialerisiko på lengre sikt.",
+          "evidence": [
+            "Type avløpsrør: Stål",
+            "Avløpsrør av stål."
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            19,
+            35
+          ],
+          "details": {
+            "confidence": 0.6
+          }
+        },
+        {
+          "risk_id": "gt_d035_016",
+          "description": "Stoppekran er plassert i fellesgang, ikke inne i leiligheten. Dette innebærer at beboer ikke selv kan stenge vannet raskt ved en lekkasje uten å gå ut i fellesarealet, noe som kan øke skadeomfanget ved vannlekkasje.",
+          "evidence": [
+            "Stoppekran er plassert i fellesgang.",
+            "Skap i fellesgang med stoppekran"
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            19,
+            35
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d035_017",
+          "description": "Reguleringsplanen for området (Lørenskog Vinterpark) tillater en rekke kommersielle og næringsformål i nærområdet, inkludert hotell, konferansesenter, forretning, bevertning og skianlegg. Videre utbygging av Lørenskog Vinterpark kan medføre økt trafikk, støy og anleggsarbeid i nærområdet i fremtiden.",
+          "evidence": [
+            "I tilknytning til skihallen utvikles også den nye bydelen Lørenskog Vinterpark, som vil romme blant annet konferansehotell, butikker, serveringssteder, skiservice og leiligheter.",
+            "Reguleringsformål: Skianlegg, Hotell/kurs- og konferansesenter, Tjenesteyting, Forretning, Næring, Bevertning, Kontor, Boligbebyggelse"
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            18,
+            38,
+            39
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d035_018",
+          "description": "Høyspenningsanlegg (H 370) er angitt som hensynssone i reguleringsplanen for området. Det tillates ikke tiltak innenfor hensynssone for høyspent uten godkjenning fra linjeeier. Høyspentlinje H370_2 innenfor byggeområdet skal i nødvendig grad legges i bakken. Dette kan påvirke omgivelsene og potensielt medføre elektromagnetiske felt.",
+          "evidence": [
+            "Høyspenningsanlegg (H 370) – hensynssone i reguleringsplanen",
+            "Det tillates ikke tiltak innenfor hensynssone for høyspent, uten godkjenning fra linjeeier.",
+            "Høyspentlinje H370_2 innenfor byggeområdet skal i nødvendig grad være lagt i bakken før det gis igangsettingstillatelse innenfor planområdet."
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            38,
+            40
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d035_019",
+          "description": "Flomhensynssone er angitt i reguleringsplanen. Innenfor vernesonen gjelder et generelt byggeforbud, og området kan tidvis oversvømmes. Dette kan påvirke nærområdet og infrastruktur.",
+          "evidence": [
+            "Flom (H 320) – hensynssone i reguleringsplanen",
+            "Innenfor vernesonen gjelder et generelt byggeforbud, med unntak for turstien mot Gjelleråsmarka.",
+            "Området skal tåle tidvis oversvømming."
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            38,
+            40,
+            41
+          ],
+          "details": {
+            "confidence": 0.65
+          }
+        },
+        {
+          "risk_id": "gt_d035_020",
+          "description": "Seksjonering ble registrert med feil tilleggsdel og måtte rettes etter tinglysningsloven § 18. Dette kan indikere feil i den opprinnelige seksjoneringen, og kjøper bør undersøke at alle tilleggsdeler (bod, parkeringsplass) er korrekt registrert.",
+          "evidence": [
+            "Registrert feil tilleggsdel 04.11.2021 Arkivref. 21/42403-21 Rettet etter tingl. §18"
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            22
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d035_022",
+          "description": "Vakthold og renhold utgjør svært store kostnader i sameiet. I 2024 var vakthold kr 162 556 og renhold ved firmaer kr 655 534. Disse kostnadene bidrar til de høye felleskostnadene og kan øke ytterligere.",
+          "evidence": [
+            "Vakthold -162 556",
+            "Renhold ved firmaer -655 534",
+            "Vaktmestertjenester -260 988"
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            55
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d035_023",
+          "description": "Styrehonorar er høyt (kr 360 000 for 2023/2024) og utgjør en betydelig del av sameiets kostnader. Dette er en løpende kostnad som bidrar til de høye felleskostnadene.",
+          "evidence": [
+            "Styrehonorar -360 000 (2024), -305 000 (2023)",
+            "Honorar til styret gjelder for perioden 2023/2024, og er på kr 360 000."
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            53,
+            54
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d035_024",
+          "description": "Korttidsutleie av hele boligseksjonen er begrenset til maksimalt 90 døgn per år, og enkeltutleie kan ikke overstige 30 sammenhengende døgn. Dette begrenser muligheten for Airbnb-lignende utleie.",
+          "evidence": [
+            "Korttidsutleie av hele boligseksjonen i mer enn 90 døgn årlig er ikke tillatt. Med korttidsutleie menes utleie i inntil 30 døgn sammenhengende."
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            60
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d035_025",
+          "description": "Tilstandsrapporten er basert på visuell inspeksjon uten hulltaking fra tilstøtende rom på badet. Skjulte fuktskader bak fliser eller i konstruksjonen kan ikke utelukkes, selv om det ikke ble registrert fukt ved måling.",
+          "evidence": [
+            "Er det foretatt hulltaking fra tilstøtende rom? Nei",
+            "Er det registrert fukt eller andre skader ved fuktmåling? Nei",
+            "Er det registrert fukt eller andre skader ved hulltaking? Nei"
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            36
+          ],
+          "details": {
+            "confidence": 0.6
+          }
+        },
+        {
+          "risk_id": "gt_d035_026",
+          "description": "Selgers egenerklæring er ikke fremlagt og gjennomgått av bygningssakkyndig. Dette kan innebære at takstmannen ikke har hatt tilgang til all relevant informasjon fra selger ved utarbeidelse av tilstandsrapporten.",
+          "evidence": [
+            "Er selgers egenerklæring fremlagt og gjennomgått av bygningssakkyndig? Nei"
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            32
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "8ba010d4-d764-468a-a224-cd74412eb630_risk_001",
+            "description": "Stikkledninger fra eiendommen og ut til det kommunale nettet er private. Dette betyr at vedlikehold og kostnader knyttet til disse ledningene påhviler eier, noe som kan medføre uventede utgifter.",
+            "evidence": [
+              "Eiendommen er tilknyttet offentlig vann- og avløpssystem. Stikkledningene fra eiendommen og ut til det kommunale nettet er private."
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt at stikkledningene fra eiendommen og ut til det kommunale nettet er private, og at vedlikeholdsansvaret for disse påhviler sameiet. Dette fremgår av avsnittet 'Vei, vann og avløp': 'Eiendommen er tilknyttet offentlig vann- og avløpssystem. Stikkledningene fra eiendommen og ut til det kommunale nettet er private, og vedlikeholdsansvaret for disse påhviler sameiet.' Risikoen er reell – private stikkledninger medfører at vedlikehold og kostnader ikke dekkes av kommunen."
+        },
+        {
+          "risk": {
+            "risk_id": "8ba010d4-d764-468a-a224-cd74412eb630_risk_006",
+            "description": "Det elektriske anlegget er av typen 'skjult', noe som gjør det vanskelig å inspisere og avdekke eventuelle feil. Kombinert med at det ikke er utført kontroll av eltilsynet de siste 5 år, øker dette risikoen for skjulte elektriske feil.",
+            "evidence": [
+              "Type anlegg: Skjult",
+              "Er det utført kontroll av det lokale el tilsyn i løpet av de siste 5 år: Nei",
+              "Er det tegn på varmgang (termiske skader) på kabler, brytere, downlight, stikkkontakter, og elektrisk utstyr? Nei"
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter alle tre evidenspunktene. Under 'Elektrisk anlegg' i tilstandsrapporten (side 35, avsnitt 6.18) fremgår det at: Type anlegg er 'Skjult', det ikke er foretatt kontroll av det lokale el-tilsyn i løpet av de siste 5 år (Nei), og at det ikke er tegn på varmgang. Salgsoppgaven advarer også om at 'siden elanlegget ikke er kontrollert er det sannsynlig at det siden kan avdekkes avvik fra dagens forskriftskrav og oppstå funksjonssvikt.' Risikoen er reell og godt dokumentert."
+        },
+        {
+          "risk": {
+            "risk_id": "8ba010d4-d764-468a-a224-cd74412eb630_risk_007",
+            "description": "Selger er ikke forpliktet til å akseptere høyeste bud, og kan prioritere bud fra ikke-forbrukere selv om budet er lavere. Dette kan skape usikkerhet for budgivere om likebehandling i budrunden.",
+            "evidence": [
+              "Selger står fritt til å velge hvilket bud som aksepteres, og er ikke forpliktet til å velge det høyeste.",
+              "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud."
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter begge evidenspunktene direkte. Under 'Budgivning og selgers vurdering' i salgsoppgaven står det: 'På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud' og 'selger står fritt til å velge hvilket bud som aksepteres, og er ikke forpliktet til å velge det høyeste.' Dette er en reell risiko for budgivere som er forbrukere."
+        },
+        {
+          "risk": {
+            "risk_id": "8ba010d4-d764-468a-a224-cd74412eb630_risk_008",
+            "description": "Kjøper må selv dekke kostnader med inntil kr 10 000 ved beregning av krav om prisavslag eller erstatning. Dette er en økonomisk risiko for kjøper dersom det oppstår tvister om mangler etter overtakelse.",
+            "evidence": [
+              "Ved beregning av krav om prisavslag eller erstatning må kjøper selv dekke kostnader med inntil kr 10 000 (som en egenandel)."
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette direkte. Under avsnittet om forbrukerkjøp i salgsoppgaven står det eksplisitt: 'Ved beregning av krav om prisavslag eller erstatning må kjøper selv dekke kostnader med inntil kr 10 000 (som en egenandel).' Dette er en reell økonomisk risiko for kjøper ved eventuelle tvister om mangler."
+        },
+        {
+          "risk": {
+            "risk_id": "8ba010d4-d764-468a-a224-cd74412eb630_risk_009",
+            "description": "Det elektriske anlegget kan være underdimensjonert for moderne bruk. Salgsoppgaven advarer om at dagens anlegg ikke nødvendigvis er dimensjonert for oppgradering av kjøkken med nye elektriske apparater, rehabilitering av bad med varmekabler eller installering av elbillader.",
+            "evidence": [
+              "det må derfor påregnes at dagens anlegg ikke nødvendigvis er dimensjonert for oppgradering av kjøkken med nye elektriske apparater, rehabilitering av bad m/ varmekabler eller installeringer elbillader."
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.87,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette direkte. I avsnittet om det elektriske anlegget i salgsoppgaven (side 39) står det: 'El-anlegget er en bygningsdel som er gjenstand for konstant utvikling, det må derfor påregnes at dagens anlegg ikke nødvendigvis er dimensjonert for oppgradering av kjøkken med nye elektriske apparater, rehabilitering av bad m/ varmekabler eller installeringer elbillader.' Dette er en reell risiko som er eksplisitt nevnt i dokumentet."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.23076923076923078,
+        "f1": 0.375,
+        "total_support": 26
+      }
+    },
+    "agentic_rag_P+T+R": {
+      "run_id": "f33c173d-7697-4951-a2a5-7a49cdaeaf5a",
+      "system_type": "agentic_rag_P+T+R",
+      "overall_metrics": {
+        "precision": 0.8666666666666667,
+        "recall": 0.5,
+        "f1": 0.6341463414634146,
+        "total_support": 26
+      },
+      "matched_risks": 13,
+      "unmatched_predicted": 2,
+      "unmatched_ground_truth": 13,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "f33c173d-7697-4951-a2a5-7a49cdaeaf5a_risk_000",
+            "description": "Sameiet har negativ egenkapital (udekket tap) og voksende underskudd. Regnskapet for 2024 viste et underskudd på kr 1 034 074, en økning fra underskuddet på kr 574 759 i 2023. Udekket tap per 31.12.2024 er kr -1 167 368 mot kr -133 294 i 2023. Dette indikerer en forverret økonomisk situasjon i sameiet.",
+            "evidence": [
+              "Regnskapet for 2024 viste et underskudd på kr 1 034 074, en økning fra underskuddet på kr 574 759 i 2023.",
+              "Udekket tap 14 -1 167 368 -133 294. SUM EGENKAPITAL -1 167 368 -133 294",
+              "Udekket tap betyr at egenkapitalen i selskapet er negativ. Det skyldes at selskapet fra stiftelsen og frem til 31.12. i regnskapsåret, har hatt høyere kostnader enn inntekter."
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_001",
+            "description": "Sameiets økonomi viser betydelige og voksende underskudd. Regnskapet for 2024 viste et underskudd på kr 1 034 074, opp fra kr 574 759 i 2023. Sameiet har negativ egenkapital (udekket tap) på kr 1 167 368 per 31.12.2024. Dette indikerer en alvorlig og forverret økonomisk situasjon i sameiet.",
+            "evidence": [
+              "Regnskapet for 2024 viste et underskudd på kr 1 034 074, en økning fra underskuddet på kr 574 759 i 2023.",
+              "Udekket tap betyr at egenkapitalen i selskapet er negativ.",
+              "Udekket tap 2024: -1 167 368, 2023: -133 294",
+              "ÅRSRESULTAT -1 034 074 (2024), -574 759 (2023)"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              17,
+              53,
+              54
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "f33c173d-7697-4951-a2a5-7a49cdaeaf5a_risk_001",
+            "description": "Planlagt økning av felleskostnader fra 1. januar 2026. Felleskostnadene øker fra kr 3 130,30 til kr 3 413,- per måned, og det er planlagt en fremtidig økning til kr 2 377 fra 1. januar 2026. Kjøper må påregne høyere løpende kostnader enn dagens nivå.",
+            "evidence": [
+              "Det er også planlagt en fremtidig økning av felleskostnadene til kr 2 377 fra 1. januar 2026.",
+              "Felleskostnadene øker fra kr 3 130,30 til kr 3 413,- fra 1. januar 2026.",
+              "Budsjettet for 2025 er satt opp med et forventet overskudd på kr 61 920."
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_002",
+            "description": "Felleskostnadene har blitt økt kraftig og vil øke ytterligere. Felleskostnadene ble økt med 15 % i august 2024, og det er vedtatt en ytterligere økning på 15 % for 2025. Fra 1. januar 2026 øker felleskostnadene fra kr 3 130,30 til kr 3 413 per måned. Dette medfører økte løpende kostnader for kjøper.",
+            "evidence": [
+              "Felleskostnadene øker fra kr 3 130,30 til kr 3 413,‑ fra 1. januar 2026.",
+              "For å styrke økonomien ble felleskostnadene økt med 15 % i august 2024, og det er vedtatt en ytterligere økning på 15 % for 2025.",
+              "Budsjettet for 2025 er satt opp med et forventet overskudd på kr 61 920. Det er også planlagt en fremtidig økning av felleskostnadene til kr 2 377 fra 1. januar 2026."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              17,
+              20
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "f33c173d-7697-4951-a2a5-7a49cdaeaf5a_risk_002",
+            "description": "Svært høye kommunale avgifter i sameiet. Vann- og avløpsavgift utgjorde kr 2 443 929 og renovasjonsavgift kr 1 038 154 i 2024, til sammen kr 3 482 083. Dette er en vesentlig kostnadspost som bidrar til sameiets underskudd og kan medføre fremtidige felleskostnadsøkninger.",
+            "evidence": [
+              "Vann- og avløpsavgift -2 443 929",
+              "Renovasjonsavgift -1 038 154",
+              "SUM KOMMUNALE AVGIFTER -3 482 083",
+              "Kommunale avgifter 9 -3 482 083 -3 264 981 -2 380 000 -3 300 000"
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_003",
+            "description": "Kommunale avgifter er kraftig underbudsjettert og har økt dramatisk. I 2024 var faktiske kommunale avgifter kr 3 482 083, mot et budsjett på kr 2 380 000 – en overskridelse på over kr 1 million. Styret oppgir at underskuddet skyldes at økningen i felleskostnadene ikke holdt tritt med økte kommunale utgifter.",
+            "evidence": [
+              "Kommunale avgifter 2024: -3 482 083 mot budsjett -2 380 000",
+              "Ifølge styret skyldes dette at økningen i felleskostnadene ikke holdt tritt med økte kommunale utgifter.",
+              "Vann- og avløpsavgift -2 443 929, Renovasjonsavgift -1 038 154"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              53,
+              54
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "f33c173d-7697-4951-a2a5-7a49cdaeaf5a_risk_003",
+            "description": "Skadedyrproblematikk i sameiet. Det er observert mus og møll i sameiet/boder i 2024. Selv om sameiet håndterte dette, er det en risiko for gjentakelse og potensielle kostnader knyttet til skadedyrbekjempelse.",
+            "evidence": [
+              "Sameiet har gitt ut informasjon om at det ble observert mus tidligere i høst. Det har også vært observert møll i enkelte boder i 2024, sameiet håndterte dette umiddelbart og gjennomførte nødvendige tiltak. Det er per idag ikke kjent noen pågående problemer.",
+              "Skadedyrarbeid/soppkontroll -69 510",
+              "Nedfrysing grunnet skadedyr 43 096"
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_004",
+            "description": "Det er observert skadedyr (mus og møll) i sameiet. Selger bekrefter at det har vært observert mus i sameiet høsten 2024, og møll i enkelte boder i 2024. Sameiet har hatt utgifter til skadedyrarbeid/soppkontroll på kr 69 510 og nedfrysing grunnet skadedyr på kr 43 096 i 2024.",
+            "evidence": [
+              "Sameiet har gitt ut informasjon om at det har ble observert mus tidligere i høst. Det har også vært observert møll i enkelte boder i 2024, sameiet håndterte dette umiddelbart og gjennomførte nødvendige tiltak.",
+              "Skadedyrarbeid/soppkontroll -69 510",
+              "Nedfrysing grunnet skadedyr 43 096",
+              "Kjenner du til om det er/har vært sopp/råteskader/insekter/skadedyr i sameiet/laget/selskapet (fellesareal eller i andre boliger) som rotter, mus, maur eller lignende? Ja"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              19,
+              26,
+              27,
+              54,
+              55
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "f33c173d-7697-4951-a2a5-7a49cdaeaf5a_risk_004",
+            "description": "Selger har ikke tegnet boligselgerforsikring. Dette innebærer at kjøper ikke har samme sikkerhet som ved salg med boligselgerforsikring, og eventuelle krav mot selger kan bli vanskeligere å inndrive.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_005",
+            "description": "Selger har ikke tegnet boligselgerforsikring. Dette innebærer at kjøper ikke har den ekstra sikkerheten som boligselgerforsikring normalt gir, og at eventuelle krav mot selger kan bli vanskeligere å inndrive.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              23
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "f33c173d-7697-4951-a2a5-7a49cdaeaf5a_risk_005",
+            "description": "Selger har ikke utført radonmåling. Radon kan utgjøre en helserisiko, og manglende måling gir kjøper usikkerhet om radonforholdene i boligen.",
+            "evidence": [
+              "Selger har ikke utført radonmåling."
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_006",
+            "description": "Selger har ikke utført radonmåling. Radon er en usynlig og luktfri radioaktiv gass som kan utgjøre en helserisiko. Uten radonmåling er det ukjent om boligen har forhøyede radonverdier.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              23,
+              27
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "f33c173d-7697-4951-a2a5-7a49cdaeaf5a_risk_006",
+            "description": "El-anlegget er ikke kontrollert av det lokale el-tilsyn de siste 5 år, og bygningssakkyndig har ikke satt tilstandsgrad på det elektriske anlegget. Det er sannsynlig at det kan avdekkes avvik fra dagens forskriftskrav og oppstå funksjonssvikt.",
+            "evidence": [
+              "Er det foretatt kontroll av det lokale el tilsyn i løpet av de siste 5 år - Nei",
+              "Siden elanlegget ikke er kontrollert er det sannsynlig at det siden kan avdekkes avvik fra dagens forskriftskrav og oppstå funksjonssvikt.",
+              "Iht. veileder fra direktoratet for byggkvalitet skal ikke den bygningssakkyndige sette tilstandsgrad på det elektriske anlegget."
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_009",
+            "description": "El-anlegget er ikke kontrollert av Det lokale el-tilsyn (DLE) de siste 5 år, og det er ikke utført el-takst. Det er sannsynlig at det kan avdekkes avvik fra dagens forskriftskrav og oppstå funksjonssvikt. Kjøper må påregne oppgraderinger.",
+            "evidence": [
+              "Er det foretatt kontroll av det lokale el tilsyn i løpet av de siste 5 år: Nei",
+              "Siden elanlegget ikke er kontrollert er det sannsynlig at det siden kan avdekkes avvik fra dagens forskriftskrav og oppstå funksjonssvikt.",
+              "Videre må kjøper være forberedt på det må foretas oppgraderinger på grunn av slitasje, fraværende vedlikehold, arbeider som er utført av ufaglærte, utidsmessighet eller tekniske løsninger som ikke holder dagens standard."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              19,
+              20
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "f33c173d-7697-4951-a2a5-7a49cdaeaf5a_risk_007",
+            "description": "Avløpsrør er av stål. Stålrør kan over tid være utsatt for korrosjon og rust, noe som kan medføre lekkasjer og behov for utskifting. Dette er en potensiell fremtidig vedlikeholdskostnad.",
+            "evidence": [
+              "Type avløpsrør Stål",
+              "Avløpsrør av stål. Stoppekran er plassert i fellesgang."
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_015",
+            "description": "Avløpsrørene er av stål. Stålrør kan over tid være utsatt for korrosjon og rust, noe som kan medføre lekkasjer og behov for utskifting. Selv om rørene er fra 2021 og ikke har nådd kritisk alder, er dette en materialerisiko på lengre sikt.",
+            "evidence": [
+              "Type avløpsrør: Stål",
+              "Avløpsrør av stål."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              19,
+              35
+            ],
+            "details": {
+              "confidence": 0.6
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "f33c173d-7697-4951-a2a5-7a49cdaeaf5a_risk_008",
+            "description": "Legalpant og heftelser følger eiendommen. Kommunen har legalpant for kommunale avgifter, og de øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet. Disse heftelsene har prioritet foran tinglyste lån og er ikke synlige i grunnboksutskriften.",
+            "evidence": [
+              "Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter og eventuell eiendomsskatt.",
+              "De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader. Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen."
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_021",
+            "description": "Legalpant fra kommunen og øvrige seksjonseiere (inntil 2G) har prioritet foran tinglyste banklån. Dette innebærer at kjøpers bank ikke nødvendigvis har første prioritet på pantet, noe som kan påvirke finansieringsbetingelsene.",
+            "evidence": [
+              "Legalpant: Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter og eventuell eiendomsskatt. De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader. Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              23
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "f33c173d-7697-4951-a2a5-7a49cdaeaf5a_risk_009",
+            "description": "Nærheten til SNØ skihall medfører en reguleringsrisiko: Formål forretning relatert til skihallen/vintersport opphører dersom driften av skihallen opphører. Dette kan påvirke nærområdets attraktivitet og potensielt boligens verdi.",
+            "evidence": [
+              "Formål forretning relatert til skihallen/vintersport opphører dersom driften av skihallen opphører.",
+              "Rett ved ligger SNØ, verdens største innendørs skianlegg."
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.72,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_017",
+            "description": "Reguleringsplanen for området (Lørenskog Vinterpark) tillater en rekke kommersielle og næringsformål i nærområdet, inkludert hotell, konferansesenter, forretning, bevertning og skianlegg. Videre utbygging av Lørenskog Vinterpark kan medføre økt trafikk, støy og anleggsarbeid i nærområdet i fremtiden.",
+            "evidence": [
+              "I tilknytning til skihallen utvikles også den nye bydelen Lørenskog Vinterpark, som vil romme blant annet konferansehotell, butikker, serveringssteder, skiservice og leiligheter.",
+              "Reguleringsformål: Skianlegg, Hotell/kurs- og konferansesenter, Tjenesteyting, Forretning, Næring, Bevertning, Kontor, Boligbebyggelse"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              18,
+              38,
+              39
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "f33c173d-7697-4951-a2a5-7a49cdaeaf5a_risk_010",
+            "description": "Registrert feil tilleggsdel i grunnboken (04.11.2021), rettet etter tinglysningsloven § 18. Dette kan indikere tidligere feil i seksjoneringsregistreringen og bør undersøkes nærmere av kjøper.",
+            "evidence": [
+              "Registrert feil tilleggsdel 04.11.2021 Arkivref. 21/42403-21. Rettet etter tingl. §18"
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_020",
+            "description": "Seksjonering ble registrert med feil tilleggsdel og måtte rettes etter tinglysningsloven § 18. Dette kan indikere feil i den opprinnelige seksjoneringen, og kjøper bør undersøke at alle tilleggsdeler (bod, parkeringsplass) er korrekt registrert.",
+            "evidence": [
+              "Registrert feil tilleggsdel 04.11.2021 Arkivref. 21/42403-21 Rettet etter tingl. §18"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              22
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "f33c173d-7697-4951-a2a5-7a49cdaeaf5a_risk_011",
+            "description": "Elbil-lading er ikke inkludert i felleskostnadene og er ikke byggemeldt eller godkjent. Det er mulighet for etablering av elbil-lading, men avregning av strøm håndteres av ekstern leverandør. Kjøper som ønsker elbil-lading må påregne egne kostnader og søknadsprosess.",
+            "evidence": [
+              "Det er mulighet for etablering av elbil-lading, hvor avregning av strøm håndteres av en ekstern leverandør og ikke inngår i felleskostnadene.",
+              "Det er pt. ikke montert el-lading.",
+              "Det som ikke er byggemeldt eller godkjent."
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_013",
+            "description": "Elbil-lading er ikke montert på parkeringsplassen. Det er mulighet for etablering av elbil-lading, men avregning av strøm håndteres av en ekstern leverandør og inngår ikke i felleskostnadene. Kjøper som ønsker elbil-lading må påregne ekstra kostnader og prosess for etablering.",
+            "evidence": [
+              "Det er mulighet for etablering av elbil‑lading, hvor avregning av strøm håndteres av en ekstern leverandør og ikke inngår i felleskostnadene. Det er pt. ikke montert el‑lading."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "f33c173d-7697-4951-a2a5-7a49cdaeaf5a_risk_014",
+            "description": "Energiavregning for fjernvarme kan medføre etterbetaling. Kostnaden for fjernvarme er et a konto-beløp, og faktiske kostnader avregnes årlig mot innbetalt beløp. Dette kan føre til etterbetaling eller tilbakebetaling, og gir usikkerhet om de faktiske boligkostnadene.",
+            "evidence": [
+              "Kostnaden for fjernvarme er et a konto-beløp, og faktiske kostnader avregnes årlig mot innbetalt beløp. Dette kan føre til etterbetaling eller tilbakebetaling.",
+              "Akonto fjernvarme: kr 766,-",
+              "Fjernvarme 680 161"
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_010",
+            "description": "Fjernvarmekostnaden er et a konto-beløp som avregnes årlig. Faktiske kostnader kan avvike fra innbetalt beløp, noe som kan medføre etterbetaling. I 2024 var energiavregningen (fjernvarme og Techem) kr 773 054 mot innbetalte a konto-beløp på kr 1 223 519, noe som ga en netto avregning på kr 455 142.",
+            "evidence": [
+              "Kostnaden for fjernvarme er et a konto‑beløp, og faktiske kostnader avregnes årlig mot innbetalt beløp. Dette kan føre til etterbetaling eller tilbakebetaling.",
+              "Fjernvarme 680 161, Techem 92 893, SUM KOSTNADER 773 054",
+              "Forskuddsinnbetalinger (a konto) -1 223 519, SUM ENERGIAVREGNING -455 142"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              17,
+              55
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "f33c173d-7697-4951-a2a5-7a49cdaeaf5a_risk_012",
+          "description": "Solidarisk ansvar for sameiets forpliktelser. Sameierne er solidarisk ansvarlige overfor sameiets kreditorer. Dersom andre sameiere ikke betaler sin andel av felleskostnadene, kan øvrige sameiere bli belastet for dette i regressomgangen.",
+          "evidence": [
+            "Overfor sameiets kreditorer er sameierne solidarisk ansvarlig. Den enkelte sameier hefter imidlertid i regressomgangen ikke for en annen sameiers andel av sameiets forpliktelser.",
+            "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk."
+          ],
+          "source_documents": [
+            "d035_d035"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "f33c173d-7697-4951-a2a5-7a49cdaeaf5a_risk_013",
+          "description": "Høye drifts- og vedlikeholdskostnader i sameiet, særlig for heisanlegg og ventilasjonsanlegg. Drift/vedlikehold heisanlegg utgjorde kr 206 640 og ventilasjonsanlegg kr 189 554 i 2024. Disse kostnadene kan øke fremover og påvirke felleskostnadene.",
+          "evidence": [
+            "Drift/vedlikehold heisanlegg -206 640",
+            "Drift/vedlikehold ventilasjonsanlegg -189 554",
+            "SUM DRIFT OG VEDLIKEHOLD -877 708"
+          ],
+          "source_documents": [
+            "d035_d035"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d035_007",
+          "description": "Eiendommen er ikke energimerket av selger. Kjøper kan kreve at selger bekoster energimerking dersom dette ikke er fremlagt. Manglende energiattest kan indikere at selger ikke har oppfylt sin plikt.",
+          "evidence": [
+            "Eiendommen er ikke energimerket. Det følger av forskrift om energimerking § 5 at dersom eier ikke har lagt frem energiattest, og eier etter skriftlig anmodning fra kjøper ikke har lagt frem energiattest før avtale om salg er inngått, kan kjøper få laget en energiattest ved hjelp av ekspert for selgers regning, innen ett år etter at avtale om salg er inngått."
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            20
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d035_008",
+          "description": "Ferdigattest er datert 21.06.2023, men det presiseres at ferdigattest ikke gir garanti for at bygget er oppført i henhold til tillatelsen og gjeldende regelverk, eller at det ikke er utført ulovlig arbeid i ettertid. Det er også gjort 'mindre innvendige endringer av planløsningen' etter rammetillatelse.",
+          "evidence": [
+            "Det er viktig å merke seg at selv om ferdigattest foreligger, gir det ingen garanti for at bygget er oppført i henhold til tillatelsen og gjeldende regelverk, eller at det senere er utført arbeid på bygget som ikke er byggemeldt eller godkjent.",
+            "Det er foretatt mindre innvendige endringer av planløsningen, «som bygget» tegninger er vedlagt.",
+            "Ferdigattest er gitt med bakgrunn i mottatt søknad. Søknad om ferdigattest er mottatt 25.04.2022."
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            18,
+            37
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d035_011",
+          "description": "Eiendommen er belastet med et svært stort antall tinglyste heftelser og rettigheter, inkludert bestemmelser om adkomstrett, vann- og kloakkledninger, elektriske ledninger, mast/stolpe, nettstasjon, fjernvarme, bredbånd og solidarisk ansvar for fellesledninger. Disse heftelsene følger eiendommen og kan begrense bruken eller medføre plikter for kjøper.",
+          "evidence": [
+            "Tinglyste heftelser og rettigheter: Følgende tinglyste heftelser følger eiendommen ved salg, og ved inngivelse av bud vil disse være akseptert av budgiver/kjøper",
+            "Bestemmelse om solidarisk ansvar for fellesledninger",
+            "Bestemmelse om adkomstrett (flere heftelser fra ulike år)",
+            "Bestemmelse om mast/stolpe, nettstasjon, fjernvarme, bredbånd, kloakkledning, vannledning, elektriske ledninger/kabler"
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            21,
+            22
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d035_012",
+          "description": "Sameiet har ingen sikringsordning registrert. Dette innebærer at kjøper ikke er beskyttet mot tap dersom sameiet ikke kan innfri sine forpliktelser.",
+          "evidence": [
+            "Sikringsordning: Ingen sikringsordning registrert."
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            17
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d035_014",
+          "description": "Selger har kun eid boligen i ca. 2,5 år (kjøpt 2023) og har bodd der siste 12 måneder. Kort eiertid kan indikere at selger ikke har full kjennskap til boligens tilstand over tid, og at eventuelle skjulte feil ikke er avdekket.",
+          "evidence": [
+            "Når kjøpte du boligen? År 2023",
+            "Hvor lenge har du eid boligen? Antall år 2, Antall måneder 6",
+            "Har du bodd i boligen siste 12 måneder? Ja"
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            26
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d035_016",
+          "description": "Stoppekran er plassert i fellesgang, ikke inne i leiligheten. Dette innebærer at beboer ikke selv kan stenge vannet raskt ved en lekkasje uten å gå ut i fellesarealet, noe som kan øke skadeomfanget ved vannlekkasje.",
+          "evidence": [
+            "Stoppekran er plassert i fellesgang.",
+            "Skap i fellesgang med stoppekran"
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            19,
+            35
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d035_018",
+          "description": "Høyspenningsanlegg (H 370) er angitt som hensynssone i reguleringsplanen for området. Det tillates ikke tiltak innenfor hensynssone for høyspent uten godkjenning fra linjeeier. Høyspentlinje H370_2 innenfor byggeområdet skal i nødvendig grad legges i bakken. Dette kan påvirke omgivelsene og potensielt medføre elektromagnetiske felt.",
+          "evidence": [
+            "Høyspenningsanlegg (H 370) – hensynssone i reguleringsplanen",
+            "Det tillates ikke tiltak innenfor hensynssone for høyspent, uten godkjenning fra linjeeier.",
+            "Høyspentlinje H370_2 innenfor byggeområdet skal i nødvendig grad være lagt i bakken før det gis igangsettingstillatelse innenfor planområdet."
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            38,
+            40
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d035_019",
+          "description": "Flomhensynssone er angitt i reguleringsplanen. Innenfor vernesonen gjelder et generelt byggeforbud, og området kan tidvis oversvømmes. Dette kan påvirke nærområdet og infrastruktur.",
+          "evidence": [
+            "Flom (H 320) – hensynssone i reguleringsplanen",
+            "Innenfor vernesonen gjelder et generelt byggeforbud, med unntak for turstien mot Gjelleråsmarka.",
+            "Området skal tåle tidvis oversvømming."
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            38,
+            40,
+            41
+          ],
+          "details": {
+            "confidence": 0.65
+          }
+        },
+        {
+          "risk_id": "gt_d035_022",
+          "description": "Vakthold og renhold utgjør svært store kostnader i sameiet. I 2024 var vakthold kr 162 556 og renhold ved firmaer kr 655 534. Disse kostnadene bidrar til de høye felleskostnadene og kan øke ytterligere.",
+          "evidence": [
+            "Vakthold -162 556",
+            "Renhold ved firmaer -655 534",
+            "Vaktmestertjenester -260 988"
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            55
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d035_023",
+          "description": "Styrehonorar er høyt (kr 360 000 for 2023/2024) og utgjør en betydelig del av sameiets kostnader. Dette er en løpende kostnad som bidrar til de høye felleskostnadene.",
+          "evidence": [
+            "Styrehonorar -360 000 (2024), -305 000 (2023)",
+            "Honorar til styret gjelder for perioden 2023/2024, og er på kr 360 000."
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            53,
+            54
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d035_024",
+          "description": "Korttidsutleie av hele boligseksjonen er begrenset til maksimalt 90 døgn per år, og enkeltutleie kan ikke overstige 30 sammenhengende døgn. Dette begrenser muligheten for Airbnb-lignende utleie.",
+          "evidence": [
+            "Korttidsutleie av hele boligseksjonen i mer enn 90 døgn årlig er ikke tillatt. Med korttidsutleie menes utleie i inntil 30 døgn sammenhengende."
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            60
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d035_025",
+          "description": "Tilstandsrapporten er basert på visuell inspeksjon uten hulltaking fra tilstøtende rom på badet. Skjulte fuktskader bak fliser eller i konstruksjonen kan ikke utelukkes, selv om det ikke ble registrert fukt ved måling.",
+          "evidence": [
+            "Er det foretatt hulltaking fra tilstøtende rom? Nei",
+            "Er det registrert fukt eller andre skader ved fuktmåling? Nei",
+            "Er det registrert fukt eller andre skader ved hulltaking? Nei"
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            36
+          ],
+          "details": {
+            "confidence": 0.6
+          }
+        },
+        {
+          "risk_id": "gt_d035_026",
+          "description": "Selgers egenerklæring er ikke fremlagt og gjennomgått av bygningssakkyndig. Dette kan innebære at takstmannen ikke har hatt tilgang til all relevant informasjon fra selger ved utarbeidelse av tilstandsrapporten.",
+          "evidence": [
+            "Er selgers egenerklæring fremlagt og gjennomgått av bygningssakkyndig? Nei"
+          ],
+          "source_documents": [
+            "d035.pdf"
+          ],
+          "source_pages": [
+            32
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "f33c173d-7697-4951-a2a5-7a49cdaeaf5a_risk_012",
+            "description": "Solidarisk ansvar for sameiets forpliktelser. Sameierne er solidarisk ansvarlige overfor sameiets kreditorer. Dersom andre sameiere ikke betaler sin andel av felleskostnadene, kan øvrige sameiere bli belastet for dette i regressomgangen.",
+            "evidence": [
+              "Overfor sameiets kreditorer er sameierne solidarisk ansvarlig. Den enkelte sameier hefter imidlertid i regressomgangen ikke for en annen sameiers andel av sameiets forpliktelser.",
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk."
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder to relevante tekstpassasjer som underbygger denne risikoen. I vedtektene for Snølia Garasjesameie (§ 16) står det eksplisitt: 'Overfor sameiets kreditorer er sameierne solidarisk ansvarlig. Den enkelte sameier hefter imidlertid i regressomgangen ikke for en annen sameiers andel av sameiets forpliktelser.' I tillegg fremgår det av salgsoppgavens juridiske del: 'I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.' Begge disse sitatene er identiske med bevisene oppgitt i risikobeskrivelsen. Risikoen er reell – solidaransvaret overfor kreditorer innebærer at en sameier i ytterste konsekvens kan måtte dekke andres forpliktelser, selv om man i regressomgangen kan kreve tilbake det overskytende."
+        },
+        {
+          "risk": {
+            "risk_id": "f33c173d-7697-4951-a2a5-7a49cdaeaf5a_risk_013",
+            "description": "Høye drifts- og vedlikeholdskostnader i sameiet, særlig for heisanlegg og ventilasjonsanlegg. Drift/vedlikehold heisanlegg utgjorde kr 206 640 og ventilasjonsanlegg kr 189 554 i 2024. Disse kostnadene kan øke fremover og påvirke felleskostnadene.",
+            "evidence": [
+              "Drift/vedlikehold heisanlegg -206 640",
+              "Drift/vedlikehold ventilasjonsanlegg -189 554",
+              "SUM DRIFT OG VEDLIKEHOLD -877 708"
+            ],
+            "source_documents": [
+              "d035_d035"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder sameiets resultatregnskap for 2024 (Note 8: Drift og vedlikehold), som eksplisitt viser: 'Drift/vedlikehold heisanlegg -206 640' og 'Drift/vedlikehold ventilasjonsanlegg -189 554', samt 'SUM DRIFT OG VEDLIKEHOLD -877 708'. Disse tallene er identiske med bevisene oppgitt i risikobeskrivelsen. Risikoen er reell – disse kostnadene er dokumenterte og betydelige, og sameiet hadde et underskudd på kr 1 034 074 i 2024. Felleskostnadene er allerede økt med 15 % i august 2024 og ytterligere 15 % er vedtatt for 2025, noe som indikerer at kostnadspresset er reelt og kan påvirke fremtidige felleskostnader."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "total_support": 26
+      }
+    },
+    "ground_truth": {
+      "run_id": "5b8f01bc-edb9-4da3-97b9-915b0c1ce8f3_gt",
+      "system_type": "ground_truth",
+      "overall_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "total_support": 26
+      },
+      "matched_risks": 26,
+      "unmatched_predicted": 0,
+      "unmatched_ground_truth": 0,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_001",
+            "description": "Sameiets økonomi viser betydelige og voksende underskudd. Regnskapet for 2024 viste et underskudd på kr 1 034 074, opp fra kr 574 759 i 2023. Sameiet har negativ egenkapital (udekket tap) på kr 1 167 368 per 31.12.2024. Dette indikerer en alvorlig og forverret økonomisk situasjon i sameiet.",
+            "evidence": [
+              "Regnskapet for 2024 viste et underskudd på kr 1 034 074, en økning fra underskuddet på kr 574 759 i 2023.",
+              "Udekket tap betyr at egenkapitalen i selskapet er negativ.",
+              "Udekket tap 2024: -1 167 368, 2023: -133 294",
+              "ÅRSRESULTAT -1 034 074 (2024), -574 759 (2023)"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              17,
+              53,
+              54
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_001",
+            "description": "Sameiets økonomi viser betydelige og voksende underskudd. Regnskapet for 2024 viste et underskudd på kr 1 034 074, opp fra kr 574 759 i 2023. Sameiet har negativ egenkapital (udekket tap) på kr 1 167 368 per 31.12.2024. Dette indikerer en alvorlig og forverret økonomisk situasjon i sameiet.",
+            "evidence": [
+              "Regnskapet for 2024 viste et underskudd på kr 1 034 074, en økning fra underskuddet på kr 574 759 i 2023.",
+              "Udekket tap betyr at egenkapitalen i selskapet er negativ.",
+              "Udekket tap 2024: -1 167 368, 2023: -133 294",
+              "ÅRSRESULTAT -1 034 074 (2024), -574 759 (2023)"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              17,
+              53,
+              54
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_002",
+            "description": "Felleskostnadene har blitt økt kraftig og vil øke ytterligere. Felleskostnadene ble økt med 15 % i august 2024, og det er vedtatt en ytterligere økning på 15 % for 2025. Fra 1. januar 2026 øker felleskostnadene fra kr 3 130,30 til kr 3 413 per måned. Dette medfører økte løpende kostnader for kjøper.",
+            "evidence": [
+              "Felleskostnadene øker fra kr 3 130,30 til kr 3 413,‑ fra 1. januar 2026.",
+              "For å styrke økonomien ble felleskostnadene økt med 15 % i august 2024, og det er vedtatt en ytterligere økning på 15 % for 2025.",
+              "Budsjettet for 2025 er satt opp med et forventet overskudd på kr 61 920. Det er også planlagt en fremtidig økning av felleskostnadene til kr 2 377 fra 1. januar 2026."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              17,
+              20
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_002",
+            "description": "Felleskostnadene har blitt økt kraftig og vil øke ytterligere. Felleskostnadene ble økt med 15 % i august 2024, og det er vedtatt en ytterligere økning på 15 % for 2025. Fra 1. januar 2026 øker felleskostnadene fra kr 3 130,30 til kr 3 413 per måned. Dette medfører økte løpende kostnader for kjøper.",
+            "evidence": [
+              "Felleskostnadene øker fra kr 3 130,30 til kr 3 413,‑ fra 1. januar 2026.",
+              "For å styrke økonomien ble felleskostnadene økt med 15 % i august 2024, og det er vedtatt en ytterligere økning på 15 % for 2025.",
+              "Budsjettet for 2025 er satt opp med et forventet overskudd på kr 61 920. Det er også planlagt en fremtidig økning av felleskostnadene til kr 2 377 fra 1. januar 2026."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              17,
+              20
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_003",
+            "description": "Kommunale avgifter er kraftig underbudsjettert og har økt dramatisk. I 2024 var faktiske kommunale avgifter kr 3 482 083, mot et budsjett på kr 2 380 000 – en overskridelse på over kr 1 million. Styret oppgir at underskuddet skyldes at økningen i felleskostnadene ikke holdt tritt med økte kommunale utgifter.",
+            "evidence": [
+              "Kommunale avgifter 2024: -3 482 083 mot budsjett -2 380 000",
+              "Ifølge styret skyldes dette at økningen i felleskostnadene ikke holdt tritt med økte kommunale utgifter.",
+              "Vann- og avløpsavgift -2 443 929, Renovasjonsavgift -1 038 154"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              53,
+              54
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_003",
+            "description": "Kommunale avgifter er kraftig underbudsjettert og har økt dramatisk. I 2024 var faktiske kommunale avgifter kr 3 482 083, mot et budsjett på kr 2 380 000 – en overskridelse på over kr 1 million. Styret oppgir at underskuddet skyldes at økningen i felleskostnadene ikke holdt tritt med økte kommunale utgifter.",
+            "evidence": [
+              "Kommunale avgifter 2024: -3 482 083 mot budsjett -2 380 000",
+              "Ifølge styret skyldes dette at økningen i felleskostnadene ikke holdt tritt med økte kommunale utgifter.",
+              "Vann- og avløpsavgift -2 443 929, Renovasjonsavgift -1 038 154"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              53,
+              54
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_004",
+            "description": "Det er observert skadedyr (mus og møll) i sameiet. Selger bekrefter at det har vært observert mus i sameiet høsten 2024, og møll i enkelte boder i 2024. Sameiet har hatt utgifter til skadedyrarbeid/soppkontroll på kr 69 510 og nedfrysing grunnet skadedyr på kr 43 096 i 2024.",
+            "evidence": [
+              "Sameiet har gitt ut informasjon om at det har ble observert mus tidligere i høst. Det har også vært observert møll i enkelte boder i 2024, sameiet håndterte dette umiddelbart og gjennomførte nødvendige tiltak.",
+              "Skadedyrarbeid/soppkontroll -69 510",
+              "Nedfrysing grunnet skadedyr 43 096",
+              "Kjenner du til om det er/har vært sopp/råteskader/insekter/skadedyr i sameiet/laget/selskapet (fellesareal eller i andre boliger) som rotter, mus, maur eller lignende? Ja"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              19,
+              26,
+              27,
+              54,
+              55
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_004",
+            "description": "Det er observert skadedyr (mus og møll) i sameiet. Selger bekrefter at det har vært observert mus i sameiet høsten 2024, og møll i enkelte boder i 2024. Sameiet har hatt utgifter til skadedyrarbeid/soppkontroll på kr 69 510 og nedfrysing grunnet skadedyr på kr 43 096 i 2024.",
+            "evidence": [
+              "Sameiet har gitt ut informasjon om at det har ble observert mus tidligere i høst. Det har også vært observert møll i enkelte boder i 2024, sameiet håndterte dette umiddelbart og gjennomførte nødvendige tiltak.",
+              "Skadedyrarbeid/soppkontroll -69 510",
+              "Nedfrysing grunnet skadedyr 43 096",
+              "Kjenner du til om det er/har vært sopp/råteskader/insekter/skadedyr i sameiet/laget/selskapet (fellesareal eller i andre boliger) som rotter, mus, maur eller lignende? Ja"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              19,
+              26,
+              27,
+              54,
+              55
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_005",
+            "description": "Selger har ikke tegnet boligselgerforsikring. Dette innebærer at kjøper ikke har den ekstra sikkerheten som boligselgerforsikring normalt gir, og at eventuelle krav mot selger kan bli vanskeligere å inndrive.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              23
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_005",
+            "description": "Selger har ikke tegnet boligselgerforsikring. Dette innebærer at kjøper ikke har den ekstra sikkerheten som boligselgerforsikring normalt gir, og at eventuelle krav mot selger kan bli vanskeligere å inndrive.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              23
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_006",
+            "description": "Selger har ikke utført radonmåling. Radon er en usynlig og luktfri radioaktiv gass som kan utgjøre en helserisiko. Uten radonmåling er det ukjent om boligen har forhøyede radonverdier.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              23,
+              27
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_006",
+            "description": "Selger har ikke utført radonmåling. Radon er en usynlig og luktfri radioaktiv gass som kan utgjøre en helserisiko. Uten radonmåling er det ukjent om boligen har forhøyede radonverdier.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              23,
+              27
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_007",
+            "description": "Eiendommen er ikke energimerket av selger. Kjøper kan kreve at selger bekoster energimerking dersom dette ikke er fremlagt. Manglende energiattest kan indikere at selger ikke har oppfylt sin plikt.",
+            "evidence": [
+              "Eiendommen er ikke energimerket. Det følger av forskrift om energimerking § 5 at dersom eier ikke har lagt frem energiattest, og eier etter skriftlig anmodning fra kjøper ikke har lagt frem energiattest før avtale om salg er inngått, kan kjøper få laget en energiattest ved hjelp av ekspert for selgers regning, innen ett år etter at avtale om salg er inngått."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_007",
+            "description": "Eiendommen er ikke energimerket av selger. Kjøper kan kreve at selger bekoster energimerking dersom dette ikke er fremlagt. Manglende energiattest kan indikere at selger ikke har oppfylt sin plikt.",
+            "evidence": [
+              "Eiendommen er ikke energimerket. Det følger av forskrift om energimerking § 5 at dersom eier ikke har lagt frem energiattest, og eier etter skriftlig anmodning fra kjøper ikke har lagt frem energiattest før avtale om salg er inngått, kan kjøper få laget en energiattest ved hjelp av ekspert for selgers regning, innen ett år etter at avtale om salg er inngått."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_008",
+            "description": "Ferdigattest er datert 21.06.2023, men det presiseres at ferdigattest ikke gir garanti for at bygget er oppført i henhold til tillatelsen og gjeldende regelverk, eller at det ikke er utført ulovlig arbeid i ettertid. Det er også gjort 'mindre innvendige endringer av planløsningen' etter rammetillatelse.",
+            "evidence": [
+              "Det er viktig å merke seg at selv om ferdigattest foreligger, gir det ingen garanti for at bygget er oppført i henhold til tillatelsen og gjeldende regelverk, eller at det senere er utført arbeid på bygget som ikke er byggemeldt eller godkjent.",
+              "Det er foretatt mindre innvendige endringer av planløsningen, «som bygget» tegninger er vedlagt.",
+              "Ferdigattest er gitt med bakgrunn i mottatt søknad. Søknad om ferdigattest er mottatt 25.04.2022."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              18,
+              37
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_008",
+            "description": "Ferdigattest er datert 21.06.2023, men det presiseres at ferdigattest ikke gir garanti for at bygget er oppført i henhold til tillatelsen og gjeldende regelverk, eller at det ikke er utført ulovlig arbeid i ettertid. Det er også gjort 'mindre innvendige endringer av planløsningen' etter rammetillatelse.",
+            "evidence": [
+              "Det er viktig å merke seg at selv om ferdigattest foreligger, gir det ingen garanti for at bygget er oppført i henhold til tillatelsen og gjeldende regelverk, eller at det senere er utført arbeid på bygget som ikke er byggemeldt eller godkjent.",
+              "Det er foretatt mindre innvendige endringer av planløsningen, «som bygget» tegninger er vedlagt.",
+              "Ferdigattest er gitt med bakgrunn i mottatt søknad. Søknad om ferdigattest er mottatt 25.04.2022."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              18,
+              37
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_009",
+            "description": "El-anlegget er ikke kontrollert av Det lokale el-tilsyn (DLE) de siste 5 år, og det er ikke utført el-takst. Det er sannsynlig at det kan avdekkes avvik fra dagens forskriftskrav og oppstå funksjonssvikt. Kjøper må påregne oppgraderinger.",
+            "evidence": [
+              "Er det foretatt kontroll av det lokale el tilsyn i løpet av de siste 5 år: Nei",
+              "Siden elanlegget ikke er kontrollert er det sannsynlig at det siden kan avdekkes avvik fra dagens forskriftskrav og oppstå funksjonssvikt.",
+              "Videre må kjøper være forberedt på det må foretas oppgraderinger på grunn av slitasje, fraværende vedlikehold, arbeider som er utført av ufaglærte, utidsmessighet eller tekniske løsninger som ikke holder dagens standard."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              19,
+              20
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_009",
+            "description": "El-anlegget er ikke kontrollert av Det lokale el-tilsyn (DLE) de siste 5 år, og det er ikke utført el-takst. Det er sannsynlig at det kan avdekkes avvik fra dagens forskriftskrav og oppstå funksjonssvikt. Kjøper må påregne oppgraderinger.",
+            "evidence": [
+              "Er det foretatt kontroll av det lokale el tilsyn i løpet av de siste 5 år: Nei",
+              "Siden elanlegget ikke er kontrollert er det sannsynlig at det siden kan avdekkes avvik fra dagens forskriftskrav og oppstå funksjonssvikt.",
+              "Videre må kjøper være forberedt på det må foretas oppgraderinger på grunn av slitasje, fraværende vedlikehold, arbeider som er utført av ufaglærte, utidsmessighet eller tekniske løsninger som ikke holder dagens standard."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              19,
+              20
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_010",
+            "description": "Fjernvarmekostnaden er et a konto-beløp som avregnes årlig. Faktiske kostnader kan avvike fra innbetalt beløp, noe som kan medføre etterbetaling. I 2024 var energiavregningen (fjernvarme og Techem) kr 773 054 mot innbetalte a konto-beløp på kr 1 223 519, noe som ga en netto avregning på kr 455 142.",
+            "evidence": [
+              "Kostnaden for fjernvarme er et a konto‑beløp, og faktiske kostnader avregnes årlig mot innbetalt beløp. Dette kan føre til etterbetaling eller tilbakebetaling.",
+              "Fjernvarme 680 161, Techem 92 893, SUM KOSTNADER 773 054",
+              "Forskuddsinnbetalinger (a konto) -1 223 519, SUM ENERGIAVREGNING -455 142"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              17,
+              55
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_010",
+            "description": "Fjernvarmekostnaden er et a konto-beløp som avregnes årlig. Faktiske kostnader kan avvike fra innbetalt beløp, noe som kan medføre etterbetaling. I 2024 var energiavregningen (fjernvarme og Techem) kr 773 054 mot innbetalte a konto-beløp på kr 1 223 519, noe som ga en netto avregning på kr 455 142.",
+            "evidence": [
+              "Kostnaden for fjernvarme er et a konto‑beløp, og faktiske kostnader avregnes årlig mot innbetalt beløp. Dette kan føre til etterbetaling eller tilbakebetaling.",
+              "Fjernvarme 680 161, Techem 92 893, SUM KOSTNADER 773 054",
+              "Forskuddsinnbetalinger (a konto) -1 223 519, SUM ENERGIAVREGNING -455 142"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              17,
+              55
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_011",
+            "description": "Eiendommen er belastet med et svært stort antall tinglyste heftelser og rettigheter, inkludert bestemmelser om adkomstrett, vann- og kloakkledninger, elektriske ledninger, mast/stolpe, nettstasjon, fjernvarme, bredbånd og solidarisk ansvar for fellesledninger. Disse heftelsene følger eiendommen og kan begrense bruken eller medføre plikter for kjøper.",
+            "evidence": [
+              "Tinglyste heftelser og rettigheter: Følgende tinglyste heftelser følger eiendommen ved salg, og ved inngivelse av bud vil disse være akseptert av budgiver/kjøper",
+              "Bestemmelse om solidarisk ansvar for fellesledninger",
+              "Bestemmelse om adkomstrett (flere heftelser fra ulike år)",
+              "Bestemmelse om mast/stolpe, nettstasjon, fjernvarme, bredbånd, kloakkledning, vannledning, elektriske ledninger/kabler"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              21,
+              22
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_011",
+            "description": "Eiendommen er belastet med et svært stort antall tinglyste heftelser og rettigheter, inkludert bestemmelser om adkomstrett, vann- og kloakkledninger, elektriske ledninger, mast/stolpe, nettstasjon, fjernvarme, bredbånd og solidarisk ansvar for fellesledninger. Disse heftelsene følger eiendommen og kan begrense bruken eller medføre plikter for kjøper.",
+            "evidence": [
+              "Tinglyste heftelser og rettigheter: Følgende tinglyste heftelser følger eiendommen ved salg, og ved inngivelse av bud vil disse være akseptert av budgiver/kjøper",
+              "Bestemmelse om solidarisk ansvar for fellesledninger",
+              "Bestemmelse om adkomstrett (flere heftelser fra ulike år)",
+              "Bestemmelse om mast/stolpe, nettstasjon, fjernvarme, bredbånd, kloakkledning, vannledning, elektriske ledninger/kabler"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              21,
+              22
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_012",
+            "description": "Sameiet har ingen sikringsordning registrert. Dette innebærer at kjøper ikke er beskyttet mot tap dersom sameiet ikke kan innfri sine forpliktelser.",
+            "evidence": [
+              "Sikringsordning: Ingen sikringsordning registrert."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              17
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_012",
+            "description": "Sameiet har ingen sikringsordning registrert. Dette innebærer at kjøper ikke er beskyttet mot tap dersom sameiet ikke kan innfri sine forpliktelser.",
+            "evidence": [
+              "Sikringsordning: Ingen sikringsordning registrert."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              17
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_013",
+            "description": "Elbil-lading er ikke montert på parkeringsplassen. Det er mulighet for etablering av elbil-lading, men avregning av strøm håndteres av en ekstern leverandør og inngår ikke i felleskostnadene. Kjøper som ønsker elbil-lading må påregne ekstra kostnader og prosess for etablering.",
+            "evidence": [
+              "Det er mulighet for etablering av elbil‑lading, hvor avregning av strøm håndteres av en ekstern leverandør og ikke inngår i felleskostnadene. Det er pt. ikke montert el‑lading."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_013",
+            "description": "Elbil-lading er ikke montert på parkeringsplassen. Det er mulighet for etablering av elbil-lading, men avregning av strøm håndteres av en ekstern leverandør og inngår ikke i felleskostnadene. Kjøper som ønsker elbil-lading må påregne ekstra kostnader og prosess for etablering.",
+            "evidence": [
+              "Det er mulighet for etablering av elbil‑lading, hvor avregning av strøm håndteres av en ekstern leverandør og ikke inngår i felleskostnadene. Det er pt. ikke montert el‑lading."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_014",
+            "description": "Selger har kun eid boligen i ca. 2,5 år (kjøpt 2023) og har bodd der siste 12 måneder. Kort eiertid kan indikere at selger ikke har full kjennskap til boligens tilstand over tid, og at eventuelle skjulte feil ikke er avdekket.",
+            "evidence": [
+              "Når kjøpte du boligen? År 2023",
+              "Hvor lenge har du eid boligen? Antall år 2, Antall måneder 6",
+              "Har du bodd i boligen siste 12 måneder? Ja"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              26
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_014",
+            "description": "Selger har kun eid boligen i ca. 2,5 år (kjøpt 2023) og har bodd der siste 12 måneder. Kort eiertid kan indikere at selger ikke har full kjennskap til boligens tilstand over tid, og at eventuelle skjulte feil ikke er avdekket.",
+            "evidence": [
+              "Når kjøpte du boligen? År 2023",
+              "Hvor lenge har du eid boligen? Antall år 2, Antall måneder 6",
+              "Har du bodd i boligen siste 12 måneder? Ja"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              26
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_015",
+            "description": "Avløpsrørene er av stål. Stålrør kan over tid være utsatt for korrosjon og rust, noe som kan medføre lekkasjer og behov for utskifting. Selv om rørene er fra 2021 og ikke har nådd kritisk alder, er dette en materialerisiko på lengre sikt.",
+            "evidence": [
+              "Type avløpsrør: Stål",
+              "Avløpsrør av stål."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              19,
+              35
+            ],
+            "confidence": 0.6,
+            "details": {
+              "confidence": 0.6
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_015",
+            "description": "Avløpsrørene er av stål. Stålrør kan over tid være utsatt for korrosjon og rust, noe som kan medføre lekkasjer og behov for utskifting. Selv om rørene er fra 2021 og ikke har nådd kritisk alder, er dette en materialerisiko på lengre sikt.",
+            "evidence": [
+              "Type avløpsrør: Stål",
+              "Avløpsrør av stål."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              19,
+              35
+            ],
+            "details": {
+              "confidence": 0.6
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_016",
+            "description": "Stoppekran er plassert i fellesgang, ikke inne i leiligheten. Dette innebærer at beboer ikke selv kan stenge vannet raskt ved en lekkasje uten å gå ut i fellesarealet, noe som kan øke skadeomfanget ved vannlekkasje.",
+            "evidence": [
+              "Stoppekran er plassert i fellesgang.",
+              "Skap i fellesgang med stoppekran"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              19,
+              35
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_016",
+            "description": "Stoppekran er plassert i fellesgang, ikke inne i leiligheten. Dette innebærer at beboer ikke selv kan stenge vannet raskt ved en lekkasje uten å gå ut i fellesarealet, noe som kan øke skadeomfanget ved vannlekkasje.",
+            "evidence": [
+              "Stoppekran er plassert i fellesgang.",
+              "Skap i fellesgang med stoppekran"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              19,
+              35
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_017",
+            "description": "Reguleringsplanen for området (Lørenskog Vinterpark) tillater en rekke kommersielle og næringsformål i nærområdet, inkludert hotell, konferansesenter, forretning, bevertning og skianlegg. Videre utbygging av Lørenskog Vinterpark kan medføre økt trafikk, støy og anleggsarbeid i nærområdet i fremtiden.",
+            "evidence": [
+              "I tilknytning til skihallen utvikles også den nye bydelen Lørenskog Vinterpark, som vil romme blant annet konferansehotell, butikker, serveringssteder, skiservice og leiligheter.",
+              "Reguleringsformål: Skianlegg, Hotell/kurs- og konferansesenter, Tjenesteyting, Forretning, Næring, Bevertning, Kontor, Boligbebyggelse"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              18,
+              38,
+              39
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_017",
+            "description": "Reguleringsplanen for området (Lørenskog Vinterpark) tillater en rekke kommersielle og næringsformål i nærområdet, inkludert hotell, konferansesenter, forretning, bevertning og skianlegg. Videre utbygging av Lørenskog Vinterpark kan medføre økt trafikk, støy og anleggsarbeid i nærområdet i fremtiden.",
+            "evidence": [
+              "I tilknytning til skihallen utvikles også den nye bydelen Lørenskog Vinterpark, som vil romme blant annet konferansehotell, butikker, serveringssteder, skiservice og leiligheter.",
+              "Reguleringsformål: Skianlegg, Hotell/kurs- og konferansesenter, Tjenesteyting, Forretning, Næring, Bevertning, Kontor, Boligbebyggelse"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              18,
+              38,
+              39
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_018",
+            "description": "Høyspenningsanlegg (H 370) er angitt som hensynssone i reguleringsplanen for området. Det tillates ikke tiltak innenfor hensynssone for høyspent uten godkjenning fra linjeeier. Høyspentlinje H370_2 innenfor byggeområdet skal i nødvendig grad legges i bakken. Dette kan påvirke omgivelsene og potensielt medføre elektromagnetiske felt.",
+            "evidence": [
+              "Høyspenningsanlegg (H 370) – hensynssone i reguleringsplanen",
+              "Det tillates ikke tiltak innenfor hensynssone for høyspent, uten godkjenning fra linjeeier.",
+              "Høyspentlinje H370_2 innenfor byggeområdet skal i nødvendig grad være lagt i bakken før det gis igangsettingstillatelse innenfor planområdet."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              38,
+              40
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_018",
+            "description": "Høyspenningsanlegg (H 370) er angitt som hensynssone i reguleringsplanen for området. Det tillates ikke tiltak innenfor hensynssone for høyspent uten godkjenning fra linjeeier. Høyspentlinje H370_2 innenfor byggeområdet skal i nødvendig grad legges i bakken. Dette kan påvirke omgivelsene og potensielt medføre elektromagnetiske felt.",
+            "evidence": [
+              "Høyspenningsanlegg (H 370) – hensynssone i reguleringsplanen",
+              "Det tillates ikke tiltak innenfor hensynssone for høyspent, uten godkjenning fra linjeeier.",
+              "Høyspentlinje H370_2 innenfor byggeområdet skal i nødvendig grad være lagt i bakken før det gis igangsettingstillatelse innenfor planområdet."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              38,
+              40
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_019",
+            "description": "Flomhensynssone er angitt i reguleringsplanen. Innenfor vernesonen gjelder et generelt byggeforbud, og området kan tidvis oversvømmes. Dette kan påvirke nærområdet og infrastruktur.",
+            "evidence": [
+              "Flom (H 320) – hensynssone i reguleringsplanen",
+              "Innenfor vernesonen gjelder et generelt byggeforbud, med unntak for turstien mot Gjelleråsmarka.",
+              "Området skal tåle tidvis oversvømming."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              38,
+              40,
+              41
+            ],
+            "confidence": 0.65,
+            "details": {
+              "confidence": 0.65
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_019",
+            "description": "Flomhensynssone er angitt i reguleringsplanen. Innenfor vernesonen gjelder et generelt byggeforbud, og området kan tidvis oversvømmes. Dette kan påvirke nærområdet og infrastruktur.",
+            "evidence": [
+              "Flom (H 320) – hensynssone i reguleringsplanen",
+              "Innenfor vernesonen gjelder et generelt byggeforbud, med unntak for turstien mot Gjelleråsmarka.",
+              "Området skal tåle tidvis oversvømming."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              38,
+              40,
+              41
+            ],
+            "details": {
+              "confidence": 0.65
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_020",
+            "description": "Seksjonering ble registrert med feil tilleggsdel og måtte rettes etter tinglysningsloven § 18. Dette kan indikere feil i den opprinnelige seksjoneringen, og kjøper bør undersøke at alle tilleggsdeler (bod, parkeringsplass) er korrekt registrert.",
+            "evidence": [
+              "Registrert feil tilleggsdel 04.11.2021 Arkivref. 21/42403-21 Rettet etter tingl. §18"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              22
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_020",
+            "description": "Seksjonering ble registrert med feil tilleggsdel og måtte rettes etter tinglysningsloven § 18. Dette kan indikere feil i den opprinnelige seksjoneringen, og kjøper bør undersøke at alle tilleggsdeler (bod, parkeringsplass) er korrekt registrert.",
+            "evidence": [
+              "Registrert feil tilleggsdel 04.11.2021 Arkivref. 21/42403-21 Rettet etter tingl. §18"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              22
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_021",
+            "description": "Legalpant fra kommunen og øvrige seksjonseiere (inntil 2G) har prioritet foran tinglyste banklån. Dette innebærer at kjøpers bank ikke nødvendigvis har første prioritet på pantet, noe som kan påvirke finansieringsbetingelsene.",
+            "evidence": [
+              "Legalpant: Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter og eventuell eiendomsskatt. De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader. Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              23
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_021",
+            "description": "Legalpant fra kommunen og øvrige seksjonseiere (inntil 2G) har prioritet foran tinglyste banklån. Dette innebærer at kjøpers bank ikke nødvendigvis har første prioritet på pantet, noe som kan påvirke finansieringsbetingelsene.",
+            "evidence": [
+              "Legalpant: Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter og eventuell eiendomsskatt. De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader. Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              23
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_022",
+            "description": "Vakthold og renhold utgjør svært store kostnader i sameiet. I 2024 var vakthold kr 162 556 og renhold ved firmaer kr 655 534. Disse kostnadene bidrar til de høye felleskostnadene og kan øke ytterligere.",
+            "evidence": [
+              "Vakthold -162 556",
+              "Renhold ved firmaer -655 534",
+              "Vaktmestertjenester -260 988"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              55
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_022",
+            "description": "Vakthold og renhold utgjør svært store kostnader i sameiet. I 2024 var vakthold kr 162 556 og renhold ved firmaer kr 655 534. Disse kostnadene bidrar til de høye felleskostnadene og kan øke ytterligere.",
+            "evidence": [
+              "Vakthold -162 556",
+              "Renhold ved firmaer -655 534",
+              "Vaktmestertjenester -260 988"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              55
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_023",
+            "description": "Styrehonorar er høyt (kr 360 000 for 2023/2024) og utgjør en betydelig del av sameiets kostnader. Dette er en løpende kostnad som bidrar til de høye felleskostnadene.",
+            "evidence": [
+              "Styrehonorar -360 000 (2024), -305 000 (2023)",
+              "Honorar til styret gjelder for perioden 2023/2024, og er på kr 360 000."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              53,
+              54
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_023",
+            "description": "Styrehonorar er høyt (kr 360 000 for 2023/2024) og utgjør en betydelig del av sameiets kostnader. Dette er en løpende kostnad som bidrar til de høye felleskostnadene.",
+            "evidence": [
+              "Styrehonorar -360 000 (2024), -305 000 (2023)",
+              "Honorar til styret gjelder for perioden 2023/2024, og er på kr 360 000."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              53,
+              54
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_024",
+            "description": "Korttidsutleie av hele boligseksjonen er begrenset til maksimalt 90 døgn per år, og enkeltutleie kan ikke overstige 30 sammenhengende døgn. Dette begrenser muligheten for Airbnb-lignende utleie.",
+            "evidence": [
+              "Korttidsutleie av hele boligseksjonen i mer enn 90 døgn årlig er ikke tillatt. Med korttidsutleie menes utleie i inntil 30 døgn sammenhengende."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              60
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_024",
+            "description": "Korttidsutleie av hele boligseksjonen er begrenset til maksimalt 90 døgn per år, og enkeltutleie kan ikke overstige 30 sammenhengende døgn. Dette begrenser muligheten for Airbnb-lignende utleie.",
+            "evidence": [
+              "Korttidsutleie av hele boligseksjonen i mer enn 90 døgn årlig er ikke tillatt. Med korttidsutleie menes utleie i inntil 30 døgn sammenhengende."
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              60
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_025",
+            "description": "Tilstandsrapporten er basert på visuell inspeksjon uten hulltaking fra tilstøtende rom på badet. Skjulte fuktskader bak fliser eller i konstruksjonen kan ikke utelukkes, selv om det ikke ble registrert fukt ved måling.",
+            "evidence": [
+              "Er det foretatt hulltaking fra tilstøtende rom? Nei",
+              "Er det registrert fukt eller andre skader ved fuktmåling? Nei",
+              "Er det registrert fukt eller andre skader ved hulltaking? Nei"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              36
+            ],
+            "confidence": 0.6,
+            "details": {
+              "confidence": 0.6
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_025",
+            "description": "Tilstandsrapporten er basert på visuell inspeksjon uten hulltaking fra tilstøtende rom på badet. Skjulte fuktskader bak fliser eller i konstruksjonen kan ikke utelukkes, selv om det ikke ble registrert fukt ved måling.",
+            "evidence": [
+              "Er det foretatt hulltaking fra tilstøtende rom? Nei",
+              "Er det registrert fukt eller andre skader ved fuktmåling? Nei",
+              "Er det registrert fukt eller andre skader ved hulltaking? Nei"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              36
+            ],
+            "details": {
+              "confidence": 0.6
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d035_026",
+            "description": "Selgers egenerklæring er ikke fremlagt og gjennomgått av bygningssakkyndig. Dette kan innebære at takstmannen ikke har hatt tilgang til all relevant informasjon fra selger ved utarbeidelse av tilstandsrapporten.",
+            "evidence": [
+              "Er selgers egenerklæring fremlagt og gjennomgått av bygningssakkyndig? Nei"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              32
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d035_026",
+            "description": "Selgers egenerklæring er ikke fremlagt og gjennomgått av bygningssakkyndig. Dette kan innebære at takstmannen ikke har hatt tilgang til all relevant informasjon fra selger ved utarbeidelse av tilstandsrapporten.",
+            "evidence": [
+              "Er selgers egenerklæring fremlagt og gjennomgått av bygningssakkyndig? Nei"
+            ],
+            "source_documents": [
+              "d035.pdf"
+            ],
+            "source_pages": [
+              32
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [],
+      "unmatched_ground_truth_risks": [],
+      "verified_unmatched": [],
+      "adjusted_metrics": null
+    }
+  },
+  "best_system": "ground_truth",
+  "statistical_tests": {
+    "standard_rag_vs_agentic_rag_P+T+R": 1.0,
+    "standard_rag_vs_ground_truth": 1.0,
+    "agentic_rag_P+T+R_vs_ground_truth": 1.0
+  },
+  "record_id": "6c041759-1d60-4542-9ff3-1871751c5196",
+  "query": "Identifiser risikoer i salgsoppgaven",
+  "document_set_id": "d035",
+  "timestamp": "2026-03-27T21:12:15.389832",
+  "risk_summaries": [
+    {
+      "system_type": "standard_rag",
+      "total_risks": 11,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "agentic_rag_P+T+R",
+      "total_risks": 15,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "ground_truth",
+      "total_risks": 26,
+      "risks_by_category": {}
+    }
+  ],
+  "has_ground_truth": true,
+  "overlapping_risk_count": 16,
+  "unique_to": {
+    "standard_rag": 5,
+    "agentic_rag_P+T+R": 3,
+    "ground_truth": 12
+  },
+  "record_type": "comparison"
+}

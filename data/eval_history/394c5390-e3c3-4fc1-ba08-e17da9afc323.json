@@ -1,0 +1,2727 @@
+{
+  "system_results": {
+    "standard_rag": {
+      "run_id": "85952716-db9a-4146-a9b9-c646cd0bc50e",
+      "system_type": "standard_rag",
+      "overall_metrics": {
+        "precision": 0.36363636363636365,
+        "recall": 0.15384615384615385,
+        "f1": 0.21621621621621623,
+        "total_support": 26
+      },
+      "matched_risks": 4,
+      "unmatched_predicted": 7,
+      "unmatched_ground_truth": 22,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "85952716-db9a-4146-a9b9-c646cd0bc50e_risk_001",
+            "description": "Selger har ikke utført radonmåling. Dette er en potensiell helserisiko for kjøper, særlig dersom boligen benyttes til utleie.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_010",
+            "description": "Radonrisiko: Eiendommen ligger i et område med moderat til lav aktsomhet for radon, og det er ikke utført radonmåling. Radon kan utgjøre en helserisiko for beboerne.",
+            "evidence": [
+              "Eiendommen ligger i et område med moderat til lav aktsomhet for radon.",
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              18,
+              19
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "85952716-db9a-4146-a9b9-c646cd0bc50e_risk_000",
+            "description": "Selger har ikke tegnet boligselgerforsikring, noe som øker kjøpers risiko ved eventuelle skjulte feil og mangler etter overtakelse.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet slike forhold kan ikke senere gjøres gjeldende som en mangel ved boligen.",
+              "Jeg kan ikke kjøpe boligselgerforsikring ihht vilkår."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_012",
+            "description": "Selger har ikke tegnet boligselgerforsikring: Selger har valgt ikke å tegne boligselgerforsikring, noe som kan gjøre det vanskeligere for kjøper å få dekket eventuelle krav mot selger ved skjulte feil og mangler.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "85952716-db9a-4146-a9b9-c646cd0bc50e_risk_002",
+            "description": "Plantegningene i salgsoppgaven stemmer ikke overens med faktisk innredning og møblering, og er ikke målbare. Dette kan gi kjøper et feilaktig bilde av boligens faktiske utforming.",
+            "evidence": [
+              "Det gjøres oppmerksom på at vedlagte plantegninger ikke stemmer hva gjelder faktisk innredning og møblering etc. Den er ikke målbar, avvik og feil kan – med mindre avvik er tydelig avtalt mellom kjøper og..."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.93,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_019",
+            "description": "Plantegninger stemmer ikke med faktisk innredning: Salgsoppgaven opplyser at vedlagte plantegninger ikke stemmer hva gjelder faktisk innredning og møblering, og at de ikke er målbare.",
+            "evidence": [
+              "Det gjøres oppmerksom på at vedlagte plantegninger ikke stemmer hva gjelder faktisk innredning og møblering etc. Den er ikke målbar, avvik og feil kan forekomme."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "85952716-db9a-4146-a9b9-c646cd0bc50e_risk_010",
+            "description": "Risiko knyttet til fukt i rom under terreng og bad: Tilstandsrapporten åpner for inngrep i vegger ved mistanke om alvorlige avvik, noe som indikerer at fuktproblemer ikke kan utelukkes.",
+            "evidence": [
+              "det kan utføres inngrep i vegg ved bad og i rom under terreng for undersøkelse av fukt ved mistanke om alvorlige avvik, samt at selger/hjemmelshaver godkjenner inngrepet.",
+              "Se etter forhold som kan indikere fuktskade, som for eksempel råte, muggvekst, oppsprekking, svelling og fuktkrevende insekter."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_004",
+            "description": "Fuktsøk på bad gitt TG IU (ikke undersøkt): Totalvurdering av fuktsøk er gitt tilstandsgrad IU, noe som betyr at skjulte fuktforhold ikke kan utelukkes. Forhold bak tette overflater og i konstruksjoner er ikke undersøkt.",
+            "evidence": [
+              "Bad - Totalvurdering av fuktsøk er gitt tilstandsgrad iu (ikke undersøkt)",
+              "Fuktsøk og inspeksjon er gjennomført innenfor tilgjengelige og synlige områder, uten destruktive inngrep eller åpning av underliggende konstruksjoner. Undersøkelsen gir derfor kun grunnlag for vurdering av synlige og tilgjengelige forhold på befaringsdagen. Forhold bak tette overflater, i konstruksjoner og i ikke tilgjengelige soner er ikke undersøkt."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              16,
+              28,
+              32
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "85952716-db9a-4146-a9b9-c646cd0bc50e_risk_003",
+          "description": "Skjulte konstruksjoner er ikke kontrollert av takstmann, noe som innebærer risiko for skjulte feil og mangler som ikke er avdekket i tilstandsrapporten.",
+          "evidence": [
+            "Det tas forbehold om at skjulte konstruksjoner og utførelse ikke er kontrollert.",
+            "Takstmann har lagt denne dokumentasjonen til grunn sammen med visuelle observasjoner."
+          ],
+          "source_documents": [
+            "d154_d154"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.91,
+          "details": {}
+        },
+        {
+          "risk_id": "85952716-db9a-4146-a9b9-c646cd0bc50e_risk_004",
+          "description": "Boligen selges 'som den er', noe som begrenser selgers ansvar for feil og mangler og øker kjøpers risiko.",
+          "evidence": [
+            "selges ansvar begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger."
+          ],
+          "source_documents": [
+            "d154_d154"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.95,
+          "details": {}
+        },
+        {
+          "risk_id": "85952716-db9a-4146-a9b9-c646cd0bc50e_risk_005",
+          "description": "Begrensning på korttidsutleie: Vedtektene tillater kun korttidsutleie i inntil 60 døgn per år (maks 30 døgn sammenhengende), noe som kan begrense kjøpers inntektsmuligheter fra utleie.",
+          "evidence": [
+            "Korttidsutleie er tillatt i inntil 60 døgn per år, jf. vedtektene.",
+            "Med korttidsutleie menes utleie i en sammenhengende periode på opptil 30 døgn."
+          ],
+          "source_documents": [
+            "d154_d154"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "85952716-db9a-4146-a9b9-c646cd0bc50e_risk_006",
+          "description": "Risiko for at kjøper ikke kan gjennomføre nødvendige kundetiltak (AML), noe som kan medføre at avtalen ikke kan gjennomføres eller blir forsinket – og dette regnes som mislighold fra kjøpers side.",
+          "evidence": [
+            "når gjennomført kundetiltak og dette fører til at avtalen ikke kan gjennomføres eller blir forsinket, er dette et mislighold fra..."
+          ],
+          "source_documents": [
+            "d154_d154"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.82,
+          "details": {}
+        },
+        {
+          "risk_id": "85952716-db9a-4146-a9b9-c646cd0bc50e_risk_007",
+          "description": "Elektrisk anlegg kan være en risikofaktor ved eierskifte, da endret bruk kan avdekke mangler. Tilstandsrapporten anbefaler tilleggsundersøkelser av elektrisk anlegg.",
+          "evidence": [
+            "Elektrisk anlegg og brannforebyggende tiltak: Ved omsetning av bolig vil man ofte få endring i bruk av det elektriske anlegget. Takstmannen...",
+            "Det ble byttet komfyrvakt av BTA Elektro 15.07.2025."
+          ],
+          "source_documents": [
+            "d154_d154"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "85952716-db9a-4146-a9b9-c646cd0bc50e_risk_008",
+          "description": "Piper og ildsteder er ikke grundig undersøkt av takstmann – det anbefales tilleggsundersøkelser i samråd med brann- og feiervesenet, noe som indikerer potensiell risiko.",
+          "evidence": [
+            "Piper og ildsteder: Grundig undersøkelse av piper og ildsteder anbefales utført i samråd med offentlige godkjenningsmyndigheter som for eksempel det lokale brann og feiervesenet."
+          ],
+          "source_documents": [
+            "d154_d154"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.78,
+          "details": {}
+        },
+        {
+          "risk_id": "85952716-db9a-4146-a9b9-c646cd0bc50e_risk_009",
+          "description": "Selger kan prioritere bud fra ikke-forbrukere fremfor forbrukere, selv ved lavere budsum, på grunn av ulike ansvarsforhold. Dette kan svekke forbrukerkjøpers mulighet til å vinne budrunden.",
+          "evidence": [
+            "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud."
+          ],
+          "source_documents": [
+            "d154_d154"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.85,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d154_001",
+          "description": "Fuktskade og vannlekkasje fra overliggende leilighet: Det oppstod en vannlekkasje 02.06.2021 fra leiligheten over, før denne leiligheten ble bebodd. Det foreligger tørkerapport, men skjulte følgeskader kan ikke utelukkes.",
+          "evidence": [
+            "Oppstod vannlekkasje 02.06.2021 fra leiligheten over, før denne leiligheten ble bebodd. Det foreligger tørkerapport og info om arbeidet for ferdigstilling etter dette.",
+            "Kjenner du til om det foreligger skaderapporter/ tilstandsvurderinger eller utførte målinger? Ja."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            16,
+            22
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d154_002",
+          "description": "Sprekk i fuge på bad/dusj: Selger opplyser om sprekk i fugen i dusjen. Feilen er utbedret av utbygger, men underliggende membran og konstruksjon er ikke kontrollert destruktivt.",
+          "evidence": [
+            "Kjenner du til om det er/har vært feil tilknyttet våtrommene, f.eks. sprekker, lekkasje, råte, lukt eller soppskader? Ja. Beskrivelse: Sprekk i fugen i dusjen. Feilen er utbredte av utbygger.",
+            "Fikset fugen i dusjen, som nevnt over. Aas & Nordal.",
+            "Det er ikke opplyst om øvrige arbeider på våtrommet, og det er ikke fremlagt dokumentasjon som tilsier inngrep i underliggende konstruksjon eller membran."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            16,
+            22,
+            30
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d154_003",
+          "description": "Hulrom under flis (bom) ved toalett på bad: Takstmann registrerte hulrom under flis lokalt ved siden av toalett. Dette kan over tid medføre sprekkdannelse, løsning av flis og fuktinntrenging gjennom fuger.",
+          "evidence": [
+            "Det er registrert hulrom under flis lokalt ved siden av toalett, basert på avvikende lyd ved lett banking og normal belastning.",
+            "Selv om forholdet vurderes som begrenset, kan hulrom under flis over tid medføre: Økt risiko for sprekkdannelse eller løsning av flis, Mulighet for fuktinntrenging gjennom fuger ved belastning eller bevegelse, Potensiell påvirkning av underliggende membran og konstruksjon dersom forholdet forverres."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            30,
+            31
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d154_005",
+          "description": "Setningssprekk i gang: Selger opplyser om setningssprekk i gangen. Feilen er utbedret av utbygger, men setningsskader kan indikere pågående bevegelse i bygget.",
+          "evidence": [
+            "Kjenner du til om det er/har vært f.eks. sprekker i mur, skjeve gulv eller lignende? Ja. Setnings sprekk i gangen. Feilen er utbedret av utbygger."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            16,
+            22
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d154_006",
+          "description": "Bytte av viftemotorer og rotormodul i ventilasjonsanlegg: Begge viftemotorer og rotormodul ble byttet på grunn av ulyd i systemet. Dette indikerer at ventilasjonsanlegget har hatt feil, og fremtidig svikt kan ikke utelukkes.",
+          "evidence": [
+            "Kjenner du til om det er utført arbeid på el-anlegget eller andre installasjoner (f.eks. oljetank, sentralfyr, ventilasjon)? Ja, kun av faglært. Beskrivelse: Byttet begge viftemotorer og rotormodul på grunn av ulyd i systemet. Östberg Norge AS."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            16,
+            22
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d154_007",
+          "description": "Eiendommen ligger i aktsomhetsområde for kvikkleireskred: Eiendommen er lokalisert i et område med risiko for kvikkleireskred, noe som kan utgjøre en sikkerhetsrisiko og påvirke fremtidig verdi og forsikringsforhold.",
+          "evidence": [
+            "Eiendommen ligger i et aktsomhetsområde for kvikkleireskred.",
+            "Eiendommen ligger i et område under marin grense med svært stor mulighet for marin leire."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            18
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d154_008",
+          "description": "Eiendommen ligger i restriksjonsområde for Avinors lufthavner: Eiendommen er underlagt restriksjoner knyttet til Avinors lufthavner, noe som kan begrense fremtidige bygningstiltak og påvirke støynivå.",
+          "evidence": [
+            "Eiendommen ligger i et restriksjonsområde for Avinors lufthavner."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            18
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d154_009",
+          "description": "Eiendommen ligger delvis i rød støysone: Eiendommen er delvis plassert i rød støysone knyttet til vei, noe som kan medføre støyplager for beboerne.",
+          "evidence": [
+            "Eiendommen ligger hovedsakelig i gul støysone, men også dels i rød støysone ifb med vei."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            18
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d154_011",
+          "description": "Sameiet mangler sikringsordning: Sameiet er ikke tilknyttet sikringsordning, noe som innebærer at kjøper ikke er beskyttet mot tap dersom andre seksjonseiere misligholder sine forpliktelser.",
+          "evidence": [
+            "Sikringsordning: Sameiet er ikke tilknyttet sikringsordning."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            15
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d154_013",
+          "description": "Økning i felleskostnader: Felleskostnadene er nylig økt med 4% til kr 5 042 per måned fra 01.04, og ytterligere økning må påregnes som følge av generelle prisøkninger og vedlikehold.",
+          "evidence": [
+            "Selger opplyser om økning til ca. 5042 fra 01.04 (4% økning).",
+            "Økninger i felleskostnader som følge av generelle økninger på tjenester samt vedlikehold, utbedringer og påkost må påregnes."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            15
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d154_014",
+          "description": "Utfordringer med vannansamlinger i garasjeanlegget: Det er vedvarende problemer med vannansamlinger i garasjen, særlig ved snøfall. Det er ikke montert sluk i gulvene, og styret må jevnlig suge opp vann.",
+          "evidence": [
+            "Vi har fremdeles hatt utfordring med store vannansamlinger i garasjeanlegget, da især ved mye snøfall som medfører at biler drar snø inn i garasjen. Det er ikke montert sluk i gulvene, noe som er normalt ved nyere bygg.",
+            "Styrer utfører oppsuging av vann jevnlig."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            17
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d154_015",
+          "description": "Utfordringer med korrekt avlesing av vannmåler: Sameiet har hatt problemer med korrekt avlesing av vannmåler, noe som kan ha medført feil fordeling av kostnader for vann/avløp og fjernvarme mellom sameierne.",
+          "evidence": [
+            "Vi har fremdeles utfordringer med korrekt avlesing av vannmåler til vårt sameie i og med at det er ett felles inntak til både Smedhagen 3 og 4 Boligsameie og Smedhagen Park 5 Boligsameie.",
+            "Det ble montert 2 målere som skulle gjøre det mulig for oss å lese av vårt forbruk, imidlertid viste det seg at det manglet en måler for at avlesingen skulle være korrekt. Dette er nå montert, og vi overvåker nå med månedlige avlesninger for å sjekke at dette blir korrekt fremover."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            17
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d154_016",
+          "description": "Pågående reklamasjoner og uløste feil i sameiet: Sameiet jobber fortsatt med reklamasjon på skjeve dører og feil i el-tavle, noe som indikerer at bygget har byggefeil som ennå ikke er fullt utbedret.",
+          "evidence": [
+            "Vi jobber også med reklamasjon på retting av skjeve dører og justering av disse på fellesområdene som kjeller/dører til branntrappen og dører inn til svalgangene.",
+            "Vi har jobbet og jobber fremdeles med å få rettet feil i el-tavle som ble oppdaget ved årlig kontroll av Nordengen AS."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            17
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d154_017",
+          "description": "Realsameie for utearealer og gjesteparkering ikke ferdigstilt: Realsameiet for utearealer og gjesteparkeringsplasser er påbegynt men ikke ferdigstilt, noe som skaper usikkerhet rundt fremtidig drift, kostnadsfordeling og vedlikehold av fellesarealer.",
+          "evidence": [
+            "6 av 18 gjesteparkeringsplasser ble påbegynt og er fremdeles under arbeid.",
+            "Det varslede Realsameiet for utearealer/gjesteparkeringsplasser ble påbegynt og er fremdeles under arbeid.",
+            "Vi jobber for tiden med vedtekter og samarbeidsavtaler for fordeling av kostnader i forbindelse med vedlikehold av fellesområdene."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            17,
+            18
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d154_018",
+          "description": "Ferdigattest ikke fremlagt for takstmann: Takstmannen opplyser at ferdigattest eller midlertidig brukstillatelse ikke ble fremlagt under befaringen, til tross for at salgsoppgaven oppgir at ferdigattest foreligger.",
+          "evidence": [
+            "Er det fremlagt ferdigattest / midlertidig brukstillatelse? Nei. Kommentar: Det er ikke fremlagt ferdigattest eller midlertidig brukstillatelse. Offentligrettslige forhold knyttet til ferdigstillelse og brukstillatelse er ikke kontrollert opp mot kommunale byggesaksdokumenter.",
+            "Det foreligger ferdigattest for oppføring av boligblokk - Smedhagen park - byggetrinn 5 datert 03.06.2021."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            16,
+            28
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d154_020",
+          "description": "Bod ikke formelt dokumentert tilordnet boligen: Takstmannen opplyser at det ikke er fremlagt dokumentasjon som bekrefter om boden er tinglyst eller formelt tilordnet boligen.",
+          "evidence": [
+            "Det er imidlertid ikke fremlagt dokumentasjon for undertegnede som bekrefter om bod(er) er tinglyst eller formelt tilordnet boligen. Eventuelle kjøpere oppfordres derfor til å kontrollere dette nærmere mot grunnbok, seksjoneringsbegjæring eller vedtekter hos borettslag/sameie."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            27
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d154_021",
+          "description": "Legalpant har prioritet foran tinglyste lån: Kommunen og sameiet har legalpant i eiendommen som ikke vises i grunnboken, og som har prioritet foran tinglyste banklån. Dette kan påvirke kjøpers finansiering og sikkerhet.",
+          "evidence": [
+            "Legalpant: Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter og eventuell eiendomsskatt. De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader. Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            19
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d154_022",
+          "description": "Elbil-lading medfører individuelle kostnader og begrensninger: Kun Zaptec-ladere er tillatt, og den enkelte beboer må selv bekoste montering og tilkobling. Lading skjer via sameiets felles strømmåler med betalingsløsning Charge 365.",
+          "evidence": [
+            "Det er kun lov til å montere Zaptec elbil ladere, disse må monteres og tilkobles sameiets felles infrastruktur, ladere samt tilkobling må den enkelte beboer selv bekoste.",
+            "Lading vil foregå via sameiets felles strømmåler. Forbruket belastes den enkelte eier av lader ved oppkobling via sameiets felles ladesystem/betalingsløsning Charge 365."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            16
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d154_023",
+          "description": "Kommuneplanens arealdel er under arbeid: Eiendommen er avsatt til sentrumsformål i kommuneplanen, men arealdelen er under revisjon, noe som kan medføre endringer i tillatt bruk og fremtidig utvikling av området.",
+          "evidence": [
+            "Avsatt i kommuneplanen til sentrumsformål, nåværende. Kommuneplanens arealdel er under arbeid."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            18
+          ],
+          "details": {
+            "confidence": 0.65
+          }
+        },
+        {
+          "risk_id": "gt_d154_024",
+          "description": "Høy sekundær formuesverdi kan gi økt formueskatt: Sekundær formuesverdi er beregnet til kr 2 981 755, noe som er nær prisantydningen på kr 2 990 000. Dette kan medføre høy formueskatt for kjøper som ikke bruker boligen som primærbolig.",
+          "evidence": [
+            "Formuesverdi primær: Kr 745 439 (2024)",
+            "Formuesverdi sekundær: Kr 2 981 755 (2024)"
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            15
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d154_025",
+          "description": "Brannslukningsapparat med stempeldato 2020: Brannslukningsapparatet i boden har stempeldato 2020 og vedlikeholdsstatus er ikke kontrollert. Apparatet kan være utdatert og bør kontrolleres.",
+          "evidence": [
+            "Det er observert brannslukningsapparat plassert i boden, med stempeldato 2020. Apparatet er ikke funksjonstestet, og vedlikeholdsstatus er ikke kontrollert utover visuell observasjon."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            34
+          ],
+          "details": {
+            "confidence": 0.65
+          }
+        },
+        {
+          "risk_id": "gt_d154_026",
+          "description": "Drift og vedlikehold budsjettert vesentlig høyere enn faktisk forbruk: Budsjettet for drift og vedlikehold i 2024 var kr 222 500, mens faktisk kostnad var kr 100 074. For 2025 er budsjettet kr 200 000. Dette kan indikere planlagte vedlikeholdsarbeider som vil belaste felleskostnadene.",
+          "evidence": [
+            "Drift og vedlikehold 8 -100 074 -90 477 -222 500 -200 000"
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            45
+          ],
+          "details": {
+            "confidence": 0.65
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "85952716-db9a-4146-a9b9-c646cd0bc50e_risk_003",
+            "description": "Skjulte konstruksjoner er ikke kontrollert av takstmann, noe som innebærer risiko for skjulte feil og mangler som ikke er avdekket i tilstandsrapporten.",
+            "evidence": [
+              "Det tas forbehold om at skjulte konstruksjoner og utførelse ikke er kontrollert.",
+              "Takstmann har lagt denne dokumentasjonen til grunn sammen med visuelle observasjoner."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.91,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt at skjulte konstruksjoner ikke er kontrollert. Fra tilstandsrapporten (bad-seksjonen): 'Det tas forbehold om at skjulte konstruksjoner og utførelse ikke er kontrollert.' og 'Takstmann har lagt denne dokumentasjonen til grunn sammen med visuelle observasjoner.' Fuktsøk er gitt TG IU (ikke undersøkt) med begrunnelse om at forhold bak tette overflater og i konstruksjoner ikke er undersøkt."
+        },
+        {
+          "risk": {
+            "risk_id": "85952716-db9a-4146-a9b9-c646cd0bc50e_risk_004",
+            "description": "Boligen selges 'som den er', noe som begrenser selgers ansvar for feil og mangler og øker kjøpers risiko.",
+            "evidence": [
+              "selges ansvar begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter at boligen selges 'som den er' for ikke-forbrukerkjøpere. Fra salgsoppgaven: 'selges ansvar begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger.' Dette er knyttet til situasjoner der kjøper ikke er forbruker, og begrenser selgers ansvar i henhold til avhendingsloven § 3-9."
+        },
+        {
+          "risk": {
+            "risk_id": "85952716-db9a-4146-a9b9-c646cd0bc50e_risk_005",
+            "description": "Begrensning på korttidsutleie: Vedtektene tillater kun korttidsutleie i inntil 60 døgn per år (maks 30 døgn sammenhengende), noe som kan begrense kjøpers inntektsmuligheter fra utleie.",
+            "evidence": [
+              "Korttidsutleie er tillatt i inntil 60 døgn per år, jf. vedtektene.",
+              "Med korttidsutleie menes utleie i en sammenhengende periode på opptil 30 døgn."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter begge evidensene direkte. Fra salgsoppgaven: 'Korttidsutleie er tillatt i inntil 60 døgn per år, jf. vedtektene.' og 'Med korttidsutleie menes utleie i en sammenhengende periode på opptil 30 døgn.' Dette er en reell begrensning på kjøpers utleiemuligheter."
+        },
+        {
+          "risk": {
+            "risk_id": "85952716-db9a-4146-a9b9-c646cd0bc50e_risk_006",
+            "description": "Risiko for at kjøper ikke kan gjennomføre nødvendige kundetiltak (AML), noe som kan medføre at avtalen ikke kan gjennomføres eller blir forsinket – og dette regnes som mislighold fra kjøpers side.",
+            "evidence": [
+              "når gjennomført kundetiltak og dette fører til at avtalen ikke kan gjennomføres eller blir forsinket, er dette et mislighold fra..."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter risikoen. Fra salgsoppgaven under hvitvasking: 'Hvis kjøper ikke bidrar til at megler får gjennomført kundetiltak og dette fører til at avtalen ikke kan gjennomføres eller blir forsinket, er dette et mislighold fra kjøpers side.' Videre: 'Hvis kundetiltak ikke lar seg gjennomføre, vil Emera eiendomsmegling ikke kunne bistå med handelen eller foreta oppgjør.'"
+        },
+        {
+          "risk": {
+            "risk_id": "85952716-db9a-4146-a9b9-c646cd0bc50e_risk_007",
+            "description": "Elektrisk anlegg kan være en risikofaktor ved eierskifte, da endret bruk kan avdekke mangler. Tilstandsrapporten anbefaler tilleggsundersøkelser av elektrisk anlegg.",
+            "evidence": [
+              "Elektrisk anlegg og brannforebyggende tiltak: Ved omsetning av bolig vil man ofte få endring i bruk av det elektriske anlegget. Takstmannen...",
+              "Det ble byttet komfyrvakt av BTA Elektro 15.07.2025."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter begge evidensene. Fra tilstandsrapportens tilleggsundersøkelser: 'Elektrisk anlegg og brannforebyggende tiltak: Ved omsetning av bolig vil man ofte få endring i bruk av det elektriske anlegget. Takstmannen anbefaler på generelt grunnlag at en registrert elektroinstallatør foretar en kontroll av boliginstallasjon ved eierskifte.' I tillegg bekreftes byttet komfyrvakt: 'Det ble byttet komfyrvakt av BTA Elektro 15.07.2025.'"
+        },
+        {
+          "risk": {
+            "risk_id": "85952716-db9a-4146-a9b9-c646cd0bc50e_risk_008",
+            "description": "Piper og ildsteder er ikke grundig undersøkt av takstmann – det anbefales tilleggsundersøkelser i samråd med brann- og feiervesenet, noe som indikerer potensiell risiko.",
+            "evidence": [
+              "Piper og ildsteder: Grundig undersøkelse av piper og ildsteder anbefales utført i samråd med offentlige godkjenningsmyndigheter som for eksempel det lokale brann og feiervesenet."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter evidensen direkte. Fra tilstandsrapportens tilleggsundersøkelser: 'Piper og ildsteder: Grundig undersøkelse av piper og ildsteder anbefales utført i samråd med offentlige godkjenningsmyndigheter som for eksempel det lokale brann og feiervesenet.' Dette er en standardanbefaling som indikerer at piper og ildsteder ikke er grundig undersøkt av takstmann."
+        },
+        {
+          "risk": {
+            "risk_id": "85952716-db9a-4146-a9b9-c646cd0bc50e_risk_009",
+            "description": "Selger kan prioritere bud fra ikke-forbrukere fremfor forbrukere, selv ved lavere budsum, på grunn av ulike ansvarsforhold. Dette kan svekke forbrukerkjøpers mulighet til å vinne budrunden.",
+            "evidence": [
+              "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter risikoen direkte. Fra salgsoppgaven under budgivning: 'På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud.' Dette er en reell risiko for forbrukerkjøpere som kan bli forbigått til fordel for ikke-forbrukere med lavere bud."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.15384615384615385,
+        "f1": 0.2666666666666667,
+        "total_support": 26
+      }
+    },
+    "agentic_rag_P+T+R": {
+      "run_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1",
+      "system_type": "agentic_rag_P+T+R",
+      "overall_metrics": {
+        "precision": 0.6842105263157895,
+        "recall": 0.5,
+        "f1": 0.5777777777777778,
+        "total_support": 26
+      },
+      "matched_risks": 13,
+      "unmatched_predicted": 6,
+      "unmatched_ground_truth": 13,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_004",
+            "description": "Vannlekkasje fra leiligheten over i 2021. Det oppstod en vannlekkasje 02.06.2021 fra leiligheten over, før denne leiligheten ble bebodd. Selv om det foreligger tørkerapport og dokumentasjon på utbedring, representerer historikken en risiko for skjulte fuktskader.",
+            "evidence": [
+              "Oppstod vannlekkasje 02.06.2021 fra leiligheten over, før denne leiligheten ble bebodd.",
+              "Det foreligger tørkerapport og info om arbeidet for ferdigstilling etter dette."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_001",
+            "description": "Fuktskade og vannlekkasje fra overliggende leilighet: Det oppstod en vannlekkasje 02.06.2021 fra leiligheten over, før denne leiligheten ble bebodd. Det foreligger tørkerapport, men skjulte følgeskader kan ikke utelukkes.",
+            "evidence": [
+              "Oppstod vannlekkasje 02.06.2021 fra leiligheten over, før denne leiligheten ble bebodd. Det foreligger tørkerapport og info om arbeidet for ferdigstilling etter dette.",
+              "Kjenner du til om det foreligger skaderapporter/ tilstandsvurderinger eller utførte målinger? Ja."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              16,
+              22
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_005",
+            "description": "Hulrom (bom) i flis ved siden av toalett på badet. Det er registrert hulrom under flis lokalt ved siden av toalett, noe som over tid kan medføre sprekkdannelse, fuktinntrenging og påvirkning av underliggende membran.",
+            "evidence": [
+              "Det er registrert bom (hulrom) i én flis ved siden av toalett.",
+              "Selv om forholdet vurderes som begrenset, kan hulrom under flis over tid medføre: Økt risiko for sprekkdannelse eller løsning av flis, Mulighet for fuktinntrenging gjennom fuger ved belastning eller bevegelse, Potensiell påvirkning av underliggende membran og konstruksjon dersom forholdet forverres.",
+              "Forholdet representerer derfor en potensiell risiko, selv om det ikke er påvist skade på befaringsdagen."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_003",
+            "description": "Hulrom under flis (bom) ved toalett på bad: Takstmann registrerte hulrom under flis lokalt ved siden av toalett. Dette kan over tid medføre sprekkdannelse, løsning av flis og fuktinntrenging gjennom fuger.",
+            "evidence": [
+              "Det er registrert hulrom under flis lokalt ved siden av toalett, basert på avvikende lyd ved lett banking og normal belastning.",
+              "Selv om forholdet vurderes som begrenset, kan hulrom under flis over tid medføre: Økt risiko for sprekkdannelse eller løsning av flis, Mulighet for fuktinntrenging gjennom fuger ved belastning eller bevegelse, Potensiell påvirkning av underliggende membran og konstruksjon dersom forholdet forverres."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              30,
+              31
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_006",
+            "description": "Fuktsøk på bad er gitt tilstandsgrad IU (ikke undersøkt). Det var ikke mulig å utføre fuktmåling med måleinstrument på befaringsdagen, da det ikke forelå tilgjengelige målepunkter. Skjulte fuktforhold kan ikke utelukkes.",
+            "evidence": [
+              "Bad - Totalvurdering av fuktsøk er gitt tilstandsgrad iu (ikke undersøkt).",
+              "På befaringsdagen var det ikke mulig å utføre fuktmåling med måleinstrument, da det ikke forelå tilgjengelige målepunkter som muliggjorde pålitelig instrumentell måling uten ytterligere inngrep.",
+              "Forhold bak tette overflater, i konstruksjoner og i ikke tilgjengelige soner er ikke undersøkt."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.87,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_004",
+            "description": "Fuktsøk på bad gitt TG IU (ikke undersøkt): Totalvurdering av fuktsøk er gitt tilstandsgrad IU, noe som betyr at skjulte fuktforhold ikke kan utelukkes. Forhold bak tette overflater og i konstruksjoner er ikke undersøkt.",
+            "evidence": [
+              "Bad - Totalvurdering av fuktsøk er gitt tilstandsgrad iu (ikke undersøkt)",
+              "Fuktsøk og inspeksjon er gjennomført innenfor tilgjengelige og synlige områder, uten destruktive inngrep eller åpning av underliggende konstruksjoner. Undersøkelsen gir derfor kun grunnlag for vurdering av synlige og tilgjengelige forhold på befaringsdagen. Forhold bak tette overflater, i konstruksjoner og i ikke tilgjengelige soner er ikke undersøkt."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              16,
+              28,
+              32
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_012",
+            "description": "Setningssprekk i gangen er registrert. Selger opplyser om setningssprekk i gangen som er utbedret av utbygger, men dette kan indikere setningsproblematikk i bygget.",
+            "evidence": [
+              "Kjenner du til om det er/har vært f.eks. sprekker i mur, skjeve gulv eller lignende? Ja",
+              "Setnings sprekk i gangen. Feilen er utbedret av utbygger."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_005",
+            "description": "Setningssprekk i gang: Selger opplyser om setningssprekk i gangen. Feilen er utbedret av utbygger, men setningsskader kan indikere pågående bevegelse i bygget.",
+            "evidence": [
+              "Kjenner du til om det er/har vært f.eks. sprekker i mur, skjeve gulv eller lignende? Ja. Setnings sprekk i gangen. Feilen er utbedret av utbygger."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              16,
+              22
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_001",
+            "description": "Eiendommen ligger i et aktsomhetsområde for kvikkleire/marin leire. Området er under marin grense med svært stor mulighet for marin leire, og det er registrert aktsomhetsområde for kvikkleireskred.",
+            "evidence": [
+              "Eiendommen ligger i et aktsomhetsområde for kvikkleireskred.",
+              "Eiendommen ligger i et område under marin grense med svært stor mulighet for marin leire."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_007",
+            "description": "Eiendommen ligger i aktsomhetsområde for kvikkleireskred: Eiendommen er lokalisert i et område med risiko for kvikkleireskred, noe som kan utgjøre en sikkerhetsrisiko og påvirke fremtidig verdi og forsikringsforhold.",
+            "evidence": [
+              "Eiendommen ligger i et aktsomhetsområde for kvikkleireskred.",
+              "Eiendommen ligger i et område under marin grense med svært stor mulighet for marin leire."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_003",
+            "description": "Eiendommen ligger i restriksjonsområde for Avinors lufthavner. Dette kan medføre begrensninger på byggetiltak og støybelastning fra flytrafikk.",
+            "evidence": [
+              "Eiendommen ligger i et restriksjonsområde for Avinors lufthavner."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.93,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_008",
+            "description": "Eiendommen ligger i restriksjonsområde for Avinors lufthavner: Eiendommen er underlagt restriksjoner knyttet til Avinors lufthavner, noe som kan begrense fremtidige bygningstiltak og påvirke støynivå.",
+            "evidence": [
+              "Eiendommen ligger i et restriksjonsområde for Avinors lufthavner."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_002",
+            "description": "Eiendommen ligger i støysone – delvis i rød støysone. Eiendommen ligger hovedsakelig i gul støysone, men også dels i rød støysone i forbindelse med vei. Rød støysone er den mest belastede sonen og kan medføre restriksjoner og redusert bokvalitet.",
+            "evidence": [
+              "Eiendommen ligger hovedsakelig i gul støysone, men også dels i rød støysone ifb med vei."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_009",
+            "description": "Eiendommen ligger delvis i rød støysone: Eiendommen er delvis plassert i rød støysone knyttet til vei, noe som kan medføre støyplager for beboerne.",
+            "evidence": [
+              "Eiendommen ligger hovedsakelig i gul støysone, men også dels i rød støysone ifb med vei."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_014",
+            "description": "Selger har ikke utført radonmåling. Det er ikke foretatt radonmåling av boligen. Eiendommen ligger i et område med moderat til lav aktsomhet for radon, men risikoen kan ikke utelukkes uten måling.",
+            "evidence": [
+              "Selger har ikke utført radonmåling.",
+              "Er det foretatt radonmåling? Nei",
+              "Eiendommen ligget i et område med moderat til lav aktsomhet for radon."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_010",
+            "description": "Radonrisiko: Eiendommen ligger i et område med moderat til lav aktsomhet for radon, og det er ikke utført radonmåling. Radon kan utgjøre en helserisiko for beboerne.",
+            "evidence": [
+              "Eiendommen ligger i et område med moderat til lav aktsomhet for radon.",
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              18,
+              19
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_009",
+            "description": "Vannansamlinger i garasjeanlegget ved snøfall. Det er kjente problemer med vannansamlinger i garasjen, særlig ved mye snøfall, og styret utfører jevnlig oppsuging av vann.",
+            "evidence": [
+              "Vannansamlinger i garasjeanlegget, da især ved mye snøfall som medfører at biler drar snø inn i garasjen.",
+              "Styrer utfører oppsuging av vann jevnlig."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_014",
+            "description": "Utfordringer med vannansamlinger i garasjeanlegget: Det er vedvarende problemer med vannansamlinger i garasjen, særlig ved snøfall. Det er ikke montert sluk i gulvene, og styret må jevnlig suge opp vann.",
+            "evidence": [
+              "Vi har fremdeles hatt utfordring med store vannansamlinger i garasjeanlegget, da især ved mye snøfall som medfører at biler drar snø inn i garasjen. Det er ikke montert sluk i gulvene, noe som er normalt ved nyere bygg.",
+              "Styrer utfører oppsuging av vann jevnlig."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              17
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_008",
+            "description": "Utfordringer med korrekt avlesing av vannmåler i sameiet. Sameiet har hatt utfordringer med korrekt avlesing av vannmåler, noe som kan medføre feil fordeling av kostnader og potensielt etterberegning av vann- og avløpsavgifter.",
+            "evidence": [
+              "Vi har fremdeles utfordringer med korrekt avlesing av vannmåler til vårt sameie i og med at det er ett felles inntak til både Smedhagen 3 og 4 Boligsameie og Smedhagen Park 5 Boligsameie.",
+              "Det ble montert 2 målere som skulle gjøre det mulig for oss å lese av vårt forbruk, imidlertid viste det seg at det manglet en måler for at avlesingen skulle være korrekt."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_015",
+            "description": "Utfordringer med korrekt avlesing av vannmåler: Sameiet har hatt problemer med korrekt avlesing av vannmåler, noe som kan ha medført feil fordeling av kostnader for vann/avløp og fjernvarme mellom sameierne.",
+            "evidence": [
+              "Vi har fremdeles utfordringer med korrekt avlesing av vannmåler til vårt sameie i og med at det er ett felles inntak til både Smedhagen 3 og 4 Boligsameie og Smedhagen Park 5 Boligsameie.",
+              "Det ble montert 2 målere som skulle gjøre det mulig for oss å lese av vårt forbruk, imidlertid viste det seg at det manglet en måler for at avlesingen skulle være korrekt. Dette er nå montert, og vi overvåker nå med månedlige avlesninger for å sjekke at dette blir korrekt fremover."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              17
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_010",
+            "description": "Realsameie for utearealer og gjesteparkeringsplasser er ikke ferdigstilt. Arbeidet med etablering av realsameie for uteområdene og gjesteparkeringsplasser er påbegynt, men kun 6 av 18 gjesteparkeringsplasser er ferdigstilt.",
+            "evidence": [
+              "Arbeid med ny vaktmesteravtale og etablering av realsameie for uteområdene / gjesteparkeringsplasser påbegynt.",
+              "6 av 18 gjesteparkeringsplasser ble påbegynt og er fremdeles under arbeid."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_017",
+            "description": "Realsameie for utearealer og gjesteparkering ikke ferdigstilt: Realsameiet for utearealer og gjesteparkeringsplasser er påbegynt men ikke ferdigstilt, noe som skaper usikkerhet rundt fremtidig drift, kostnadsfordeling og vedlikehold av fellesarealer.",
+            "evidence": [
+              "6 av 18 gjesteparkeringsplasser ble påbegynt og er fremdeles under arbeid.",
+              "Det varslede Realsameiet for utearealer/gjesteparkeringsplasser ble påbegynt og er fremdeles under arbeid.",
+              "Vi jobber for tiden med vedtekter og samarbeidsavtaler for fordeling av kostnader i forbindelse med vedlikehold av fellesområdene."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              17,
+              18
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_000",
+            "description": "Manglende ferdigattest eller midlertidig brukstillatelse. Det er ikke fremlagt ferdigattest eller midlertidig brukstillatelse, og offentligrettslige forhold knyttet til ferdigstillelse er ikke kontrollert mot kommunale byggesaksdokumenter.",
+            "evidence": [
+              "Det er ikke fremlagt ferdigattest eller midlertidig brukstillatelse.",
+              "Offentligrettslige forhold knyttet til ferdigstillelse og brukstillatelse er ikke kontrollert opp mot kommunale byggesaksdokumenter.",
+              "Vurderingene i rapporten er basert på visuelle observasjoner ved befaring samt opplysninger gitt av hjemmelshaver.",
+              "Kjenner du til manglende brukstillatelse eller ferdigattest? Nei Ja"
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_018",
+            "description": "Ferdigattest ikke fremlagt for takstmann: Takstmannen opplyser at ferdigattest eller midlertidig brukstillatelse ikke ble fremlagt under befaringen, til tross for at salgsoppgaven oppgir at ferdigattest foreligger.",
+            "evidence": [
+              "Er det fremlagt ferdigattest / midlertidig brukstillatelse? Nei. Kommentar: Det er ikke fremlagt ferdigattest eller midlertidig brukstillatelse. Offentligrettslige forhold knyttet til ferdigstillelse og brukstillatelse er ikke kontrollert opp mot kommunale byggesaksdokumenter.",
+              "Det foreligger ferdigattest for oppføring av boligblokk - Smedhagen park - byggetrinn 5 datert 03.06.2021."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              16,
+              28
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_015",
+            "description": "Bod er ikke bekreftet tinglyst eller formelt tilordnet boligen. Det er ikke fremlagt dokumentasjon som bekrefter om boden er tinglyst eller formelt tilordnet boligen, noe som kan skape usikkerhet om kjøpers rettigheter til boden.",
+            "evidence": [
+              "Det er imidlertid ikke fremlagt dokumentasjon for undertegnede som bekrefter om bod(er) er tinglyst eller formelt tilordnet boligen.",
+              "Eventuelle kjøpere oppfordres derfor til å kontrollere dette nærmere mot grunnbok, seksjoneringsbegjæring eller vedtekter hos borettslag/sameie."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_020",
+            "description": "Bod ikke formelt dokumentert tilordnet boligen: Takstmannen opplyser at det ikke er fremlagt dokumentasjon som bekrefter om boden er tinglyst eller formelt tilordnet boligen.",
+            "evidence": [
+              "Det er imidlertid ikke fremlagt dokumentasjon for undertegnede som bekrefter om bod(er) er tinglyst eller formelt tilordnet boligen. Eventuelle kjøpere oppfordres derfor til å kontrollere dette nærmere mot grunnbok, seksjoneringsbegjæring eller vedtekter hos borettslag/sameie."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              27
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_007",
+          "description": "Taktekking, pipe og takkonstruksjon er ikke kontrollert. Disse bygningsdelene er ikke inspisert på grunn av manglende sikker adkomst, og ligger under sameiets ansvarsområde. Eventuelle skjulte feil kan medføre kostnader for sameiet og dermed økte felleskostnader.",
+          "evidence": [
+            "Taktekking, pipe og takkonstruksjon er ikke kontrollert, da det ikke var etablert tilstrekkelig og sikker adkomst.",
+            "Takkonstruksjon, taktekking og utvendige fasader ikke undersøkt, da disse bygningsdelene ligger under borettslagets/sameiets ansvarsområde."
+          ],
+          "source_documents": [
+            "d154_d154"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.82,
+          "details": {}
+        },
+        {
+          "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_011",
+          "description": "Vedtekter og samarbeidsavtaler for fordeling av kostnader i fellesområdene er ikke ferdigstilt. Sameiet jobber fortsatt med vedtekter og samarbeidsavtaler for fordeling av vedlikeholdskostnader, noe som skaper usikkerhet om fremtidige kostnader.",
+          "evidence": [
+            "Vi jobber for tiden med vedtekter og samarbeidsavtaler for fordeling av kostnader i forbindelse med vedlikehold av fellesområdene."
+          ],
+          "source_documents": [
+            "d154_d154"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.78,
+          "details": {}
+        },
+        {
+          "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_013",
+          "description": "Samsvarserklæring for el-anlegget er ikke fysisk tilgjengelig. Samsvarserklæringen er ikke synlig i sikringsskapet og er kun antatt lagret digitalt. Dette gir usikkerhet om el-anleggets godkjenningsstatus.",
+          "evidence": [
+            "Samsvarserklæring er ikke fysisk tilgjengelig eller synlig i sikringsskapet på befaringsdagen.",
+            "Hjemmelshaver har fremlagt nødvendig dokumentasjon, og at samsvarserklæring sannsynligvis er lagret digitalt, eksempelvis via Boligmappa eller tilsvarende løsning."
+          ],
+          "source_documents": [
+            "d154_d154"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.72,
+          "details": {}
+        },
+        {
+          "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_016",
+          "description": "Dagens bruk av boligen er ikke kontrollert mot godkjente byggetegninger. Planløsning og offentligrettslige forhold er ikke kontrollert mot kommunale byggesaksdokumenter, og det er ikke fremlagt dokumentasjon som bekrefter samsvar.",
+          "evidence": [
+            "Boligens planløsning og eventuelle offentligrettslige forhold, herunder ulovlighetsmangler, er ikke kontrollert opp mot kommunale byggesaksdokumenter.",
+            "Det er ikke fremlagt dokumentasjon som bekrefter at dagens planløsning er i samsvar med godkjente tegninger eller tillatelser."
+          ],
+          "source_documents": [
+            "d154_d154"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_017",
+          "description": "Korttidsutleie er begrenset til 60 døgn per år i henhold til vedtektene. Dette begrenser kjøpers mulighet til å leie ut boligen på korttidsbasis (f.eks. Airbnb), noe som kan påvirke investeringsverdien.",
+          "evidence": [
+            "Korttidsutleie er tillatt i inntil 60 døgn per år, jf. vedtektene."
+          ],
+          "source_documents": [
+            "d154_d154"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_018",
+          "description": "Annen kortsiktig gjeld i sameiet på kr 167 800. Sameiet har en uavklart kortsiktig gjeld som kan indikere ubetalte forpliktelser eller påløpte kostnader som kan påvirke fremtidige felleskostnader.",
+          "evidence": [
+            "Annen kortsiktig gjeld 14 167 800 55 399",
+            "Annen påløpt kostnad -167 800",
+            "SUM KORTSIKTIG GJELD 167 800 55 399"
+          ],
+          "source_documents": [
+            "d154_d154"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.7,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d154_002",
+          "description": "Sprekk i fuge på bad/dusj: Selger opplyser om sprekk i fugen i dusjen. Feilen er utbedret av utbygger, men underliggende membran og konstruksjon er ikke kontrollert destruktivt.",
+          "evidence": [
+            "Kjenner du til om det er/har vært feil tilknyttet våtrommene, f.eks. sprekker, lekkasje, råte, lukt eller soppskader? Ja. Beskrivelse: Sprekk i fugen i dusjen. Feilen er utbredte av utbygger.",
+            "Fikset fugen i dusjen, som nevnt over. Aas & Nordal.",
+            "Det er ikke opplyst om øvrige arbeider på våtrommet, og det er ikke fremlagt dokumentasjon som tilsier inngrep i underliggende konstruksjon eller membran."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            16,
+            22,
+            30
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d154_006",
+          "description": "Bytte av viftemotorer og rotormodul i ventilasjonsanlegg: Begge viftemotorer og rotormodul ble byttet på grunn av ulyd i systemet. Dette indikerer at ventilasjonsanlegget har hatt feil, og fremtidig svikt kan ikke utelukkes.",
+          "evidence": [
+            "Kjenner du til om det er utført arbeid på el-anlegget eller andre installasjoner (f.eks. oljetank, sentralfyr, ventilasjon)? Ja, kun av faglært. Beskrivelse: Byttet begge viftemotorer og rotormodul på grunn av ulyd i systemet. Östberg Norge AS."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            16,
+            22
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d154_011",
+          "description": "Sameiet mangler sikringsordning: Sameiet er ikke tilknyttet sikringsordning, noe som innebærer at kjøper ikke er beskyttet mot tap dersom andre seksjonseiere misligholder sine forpliktelser.",
+          "evidence": [
+            "Sikringsordning: Sameiet er ikke tilknyttet sikringsordning."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            15
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d154_012",
+          "description": "Selger har ikke tegnet boligselgerforsikring: Selger har valgt ikke å tegne boligselgerforsikring, noe som kan gjøre det vanskeligere for kjøper å få dekket eventuelle krav mot selger ved skjulte feil og mangler.",
+          "evidence": [
+            "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            19
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d154_013",
+          "description": "Økning i felleskostnader: Felleskostnadene er nylig økt med 4% til kr 5 042 per måned fra 01.04, og ytterligere økning må påregnes som følge av generelle prisøkninger og vedlikehold.",
+          "evidence": [
+            "Selger opplyser om økning til ca. 5042 fra 01.04 (4% økning).",
+            "Økninger i felleskostnader som følge av generelle økninger på tjenester samt vedlikehold, utbedringer og påkost må påregnes."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            15
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d154_016",
+          "description": "Pågående reklamasjoner og uløste feil i sameiet: Sameiet jobber fortsatt med reklamasjon på skjeve dører og feil i el-tavle, noe som indikerer at bygget har byggefeil som ennå ikke er fullt utbedret.",
+          "evidence": [
+            "Vi jobber også med reklamasjon på retting av skjeve dører og justering av disse på fellesområdene som kjeller/dører til branntrappen og dører inn til svalgangene.",
+            "Vi har jobbet og jobber fremdeles med å få rettet feil i el-tavle som ble oppdaget ved årlig kontroll av Nordengen AS."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            17
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d154_019",
+          "description": "Plantegninger stemmer ikke med faktisk innredning: Salgsoppgaven opplyser at vedlagte plantegninger ikke stemmer hva gjelder faktisk innredning og møblering, og at de ikke er målbare.",
+          "evidence": [
+            "Det gjøres oppmerksom på at vedlagte plantegninger ikke stemmer hva gjelder faktisk innredning og møblering etc. Den er ikke målbar, avvik og feil kan forekomme."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            19
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d154_021",
+          "description": "Legalpant har prioritet foran tinglyste lån: Kommunen og sameiet har legalpant i eiendommen som ikke vises i grunnboken, og som har prioritet foran tinglyste banklån. Dette kan påvirke kjøpers finansiering og sikkerhet.",
+          "evidence": [
+            "Legalpant: Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter og eventuell eiendomsskatt. De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader. Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            19
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d154_022",
+          "description": "Elbil-lading medfører individuelle kostnader og begrensninger: Kun Zaptec-ladere er tillatt, og den enkelte beboer må selv bekoste montering og tilkobling. Lading skjer via sameiets felles strømmåler med betalingsløsning Charge 365.",
+          "evidence": [
+            "Det er kun lov til å montere Zaptec elbil ladere, disse må monteres og tilkobles sameiets felles infrastruktur, ladere samt tilkobling må den enkelte beboer selv bekoste.",
+            "Lading vil foregå via sameiets felles strømmåler. Forbruket belastes den enkelte eier av lader ved oppkobling via sameiets felles ladesystem/betalingsløsning Charge 365."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            16
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d154_023",
+          "description": "Kommuneplanens arealdel er under arbeid: Eiendommen er avsatt til sentrumsformål i kommuneplanen, men arealdelen er under revisjon, noe som kan medføre endringer i tillatt bruk og fremtidig utvikling av området.",
+          "evidence": [
+            "Avsatt i kommuneplanen til sentrumsformål, nåværende. Kommuneplanens arealdel er under arbeid."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            18
+          ],
+          "details": {
+            "confidence": 0.65
+          }
+        },
+        {
+          "risk_id": "gt_d154_024",
+          "description": "Høy sekundær formuesverdi kan gi økt formueskatt: Sekundær formuesverdi er beregnet til kr 2 981 755, noe som er nær prisantydningen på kr 2 990 000. Dette kan medføre høy formueskatt for kjøper som ikke bruker boligen som primærbolig.",
+          "evidence": [
+            "Formuesverdi primær: Kr 745 439 (2024)",
+            "Formuesverdi sekundær: Kr 2 981 755 (2024)"
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            15
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d154_025",
+          "description": "Brannslukningsapparat med stempeldato 2020: Brannslukningsapparatet i boden har stempeldato 2020 og vedlikeholdsstatus er ikke kontrollert. Apparatet kan være utdatert og bør kontrolleres.",
+          "evidence": [
+            "Det er observert brannslukningsapparat plassert i boden, med stempeldato 2020. Apparatet er ikke funksjonstestet, og vedlikeholdsstatus er ikke kontrollert utover visuell observasjon."
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            34
+          ],
+          "details": {
+            "confidence": 0.65
+          }
+        },
+        {
+          "risk_id": "gt_d154_026",
+          "description": "Drift og vedlikehold budsjettert vesentlig høyere enn faktisk forbruk: Budsjettet for drift og vedlikehold i 2024 var kr 222 500, mens faktisk kostnad var kr 100 074. For 2025 er budsjettet kr 200 000. Dette kan indikere planlagte vedlikeholdsarbeider som vil belaste felleskostnadene.",
+          "evidence": [
+            "Drift og vedlikehold 8 -100 074 -90 477 -222 500 -200 000"
+          ],
+          "source_documents": [
+            "d154.pdf"
+          ],
+          "source_pages": [
+            45
+          ],
+          "details": {
+            "confidence": 0.65
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_007",
+            "description": "Taktekking, pipe og takkonstruksjon er ikke kontrollert. Disse bygningsdelene er ikke inspisert på grunn av manglende sikker adkomst, og ligger under sameiets ansvarsområde. Eventuelle skjulte feil kan medføre kostnader for sameiet og dermed økte felleskostnader.",
+            "evidence": [
+              "Taktekking, pipe og takkonstruksjon er ikke kontrollert, da det ikke var etablert tilstrekkelig og sikker adkomst.",
+              "Takkonstruksjon, taktekking og utvendige fasader ikke undersøkt, da disse bygningsdelene ligger under borettslagets/sameiets ansvarsområde."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt i tilstandsrapporten (side 27): 'Taktekking, pipe og takkonstruksjon er ikke kontrollert, da det ikke var etablert tilstrekkelig og sikker adkomst. Videre er takkonstruksjon, taktekking og utvendige fasader ikke undersøkt, da disse bygningsdelene ligger under borettslagets/sameiets ansvarsområde og normalt ikke inngår i takstmannens kontroll ved utarbeidelse av tilstandsrapport for seksjon/leilighet.' Begge evidenssetningene er direkte sitater fra dokumentet."
+        },
+        {
+          "risk": {
+            "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_011",
+            "description": "Vedtekter og samarbeidsavtaler for fordeling av kostnader i fellesområdene er ikke ferdigstilt. Sameiet jobber fortsatt med vedtekter og samarbeidsavtaler for fordeling av vedlikeholdskostnader, noe som skaper usikkerhet om fremtidige kostnader.",
+            "evidence": [
+              "Vi jobber for tiden med vedtekter og samarbeidsavtaler for fordeling av kostnader i forbindelse med vedlikehold av fellesområdene."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter på side 18 under 'OM EIENDOMMEN': 'Vi jobber for tiden med vedtekter og samarbeidsavtaler for fordeling av kostnader i forbindelse med vedlikehold av fellesområdene. Bl.a. for vedlikehold av lekeplassene, snømåking og plenklipping, samt oppgraderinger ved behov.' Dette er et direkte sitat som bekrefter at vedtekter og samarbeidsavtaler ikke er ferdigstilt, noe som skaper usikkerhet om fremtidige kostnader."
+        },
+        {
+          "risk": {
+            "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_013",
+            "description": "Samsvarserklæring for el-anlegget er ikke fysisk tilgjengelig. Samsvarserklæringen er ikke synlig i sikringsskapet og er kun antatt lagret digitalt. Dette gir usikkerhet om el-anleggets godkjenningsstatus.",
+            "evidence": [
+              "Samsvarserklæring er ikke fysisk tilgjengelig eller synlig i sikringsskapet på befaringsdagen.",
+              "Hjemmelshaver har fremlagt nødvendig dokumentasjon, og at samsvarserklæring sannsynligvis er lagret digitalt, eksempelvis via Boligmappa eller tilsvarende løsning."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.72,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter i tilstandsrapporten under punkt 8 (Elektrisk anlegg og samsvarserklæringer, side 34): 'Samsvarserklæring er ikke fysisk tilgjengelig eller synlig i sikringsskapet på befaringsdagen. Hjemmelshaver har fremlagt nødvendig dokumentasjon, og at samsvarserklæring sannsynligvis er lagret digitalt, eksempelvis via Boligmappa eller tilsvarende løsning.' Begge evidenssetningene er direkte sitater fra dokumentet."
+        },
+        {
+          "risk": {
+            "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_016",
+            "description": "Dagens bruk av boligen er ikke kontrollert mot godkjente byggetegninger. Planløsning og offentligrettslige forhold er ikke kontrollert mot kommunale byggesaksdokumenter, og det er ikke fremlagt dokumentasjon som bekrefter samsvar.",
+            "evidence": [
+              "Boligens planløsning og eventuelle offentligrettslige forhold, herunder ulovlighetsmangler, er ikke kontrollert opp mot kommunale byggesaksdokumenter.",
+              "Det er ikke fremlagt dokumentasjon som bekrefter at dagens planløsning er i samsvar med godkjente tegninger eller tillatelser."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter i tilstandsrapporten under punkt 2 (Lovlighet, side 28): 'Boligens planløsning og eventuelle offentligrettslige forhold, herunder ulovlighetsmangler, er ikke kontrollert opp mot kommunale byggesaksdokumenter. Det er ikke fremlagt dokumentasjon som bekrefter at dagens planløsning er i samsvar med godkjente tegninger eller tillatelser.' Begge evidenssetningene er direkte sitater fra dokumentet."
+        },
+        {
+          "risk": {
+            "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_017",
+            "description": "Korttidsutleie er begrenset til 60 døgn per år i henhold til vedtektene. Dette begrenser kjøpers mulighet til å leie ut boligen på korttidsbasis (f.eks. Airbnb), noe som kan påvirke investeringsverdien.",
+            "evidence": [
+              "Korttidsutleie er tillatt i inntil 60 døgn per år, jf. vedtektene."
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter på side 19 under 'OM EIENDOMMEN' (Utleie): 'Korttidsutleie er tillatt i inntil 60 døgn per år, jf. vedtektene. Med korttidsutleie menes utleie i en sammenhengende periode på opptil 30 døgn.' Dette er et direkte sitat som bekrefter begrensningen på korttidsutleie."
+        },
+        {
+          "risk": {
+            "risk_id": "b6b21ae5-35f7-40af-b685-b9cbe2b499a1_risk_018",
+            "description": "Annen kortsiktig gjeld i sameiet på kr 167 800. Sameiet har en uavklart kortsiktig gjeld som kan indikere ubetalte forpliktelser eller påløpte kostnader som kan påvirke fremtidige felleskostnader.",
+            "evidence": [
+              "Annen kortsiktig gjeld 14 167 800 55 399",
+              "Annen påløpt kostnad -167 800",
+              "SUM KORTSIKTIG GJELD 167 800 55 399"
+            ],
+            "source_documents": [
+              "d154_d154"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter i årsregnskapet (side 46) under balansen: 'Annen kortsiktig gjeld 14: 167 800' og 'SUM KORTSIKTIG GJELD: 167 800'. I note 14 fremgår det: 'Annen påløpt kostnad -167 800'. Tallene stemmer overens med evidensen i risikobeskrivelsen. Dette er reell kortsiktig gjeld i sameiet som kan påvirke fremtidige felleskostnader."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "total_support": 26
+      }
+    },
+    "ground_truth": {
+      "run_id": "5c573060-03d3-47cb-95c0-976c24522980_gt",
+      "system_type": "ground_truth",
+      "overall_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "total_support": 26
+      },
+      "matched_risks": 26,
+      "unmatched_predicted": 0,
+      "unmatched_ground_truth": 0,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_001",
+            "description": "Fuktskade og vannlekkasje fra overliggende leilighet: Det oppstod en vannlekkasje 02.06.2021 fra leiligheten over, før denne leiligheten ble bebodd. Det foreligger tørkerapport, men skjulte følgeskader kan ikke utelukkes.",
+            "evidence": [
+              "Oppstod vannlekkasje 02.06.2021 fra leiligheten over, før denne leiligheten ble bebodd. Det foreligger tørkerapport og info om arbeidet for ferdigstilling etter dette.",
+              "Kjenner du til om det foreligger skaderapporter/ tilstandsvurderinger eller utførte målinger? Ja."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              16,
+              22
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_001",
+            "description": "Fuktskade og vannlekkasje fra overliggende leilighet: Det oppstod en vannlekkasje 02.06.2021 fra leiligheten over, før denne leiligheten ble bebodd. Det foreligger tørkerapport, men skjulte følgeskader kan ikke utelukkes.",
+            "evidence": [
+              "Oppstod vannlekkasje 02.06.2021 fra leiligheten over, før denne leiligheten ble bebodd. Det foreligger tørkerapport og info om arbeidet for ferdigstilling etter dette.",
+              "Kjenner du til om det foreligger skaderapporter/ tilstandsvurderinger eller utførte målinger? Ja."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              16,
+              22
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_002",
+            "description": "Sprekk i fuge på bad/dusj: Selger opplyser om sprekk i fugen i dusjen. Feilen er utbedret av utbygger, men underliggende membran og konstruksjon er ikke kontrollert destruktivt.",
+            "evidence": [
+              "Kjenner du til om det er/har vært feil tilknyttet våtrommene, f.eks. sprekker, lekkasje, råte, lukt eller soppskader? Ja. Beskrivelse: Sprekk i fugen i dusjen. Feilen er utbredte av utbygger.",
+              "Fikset fugen i dusjen, som nevnt over. Aas & Nordal.",
+              "Det er ikke opplyst om øvrige arbeider på våtrommet, og det er ikke fremlagt dokumentasjon som tilsier inngrep i underliggende konstruksjon eller membran."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              16,
+              22,
+              30
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_002",
+            "description": "Sprekk i fuge på bad/dusj: Selger opplyser om sprekk i fugen i dusjen. Feilen er utbedret av utbygger, men underliggende membran og konstruksjon er ikke kontrollert destruktivt.",
+            "evidence": [
+              "Kjenner du til om det er/har vært feil tilknyttet våtrommene, f.eks. sprekker, lekkasje, råte, lukt eller soppskader? Ja. Beskrivelse: Sprekk i fugen i dusjen. Feilen er utbredte av utbygger.",
+              "Fikset fugen i dusjen, som nevnt over. Aas & Nordal.",
+              "Det er ikke opplyst om øvrige arbeider på våtrommet, og det er ikke fremlagt dokumentasjon som tilsier inngrep i underliggende konstruksjon eller membran."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              16,
+              22,
+              30
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_003",
+            "description": "Hulrom under flis (bom) ved toalett på bad: Takstmann registrerte hulrom under flis lokalt ved siden av toalett. Dette kan over tid medføre sprekkdannelse, løsning av flis og fuktinntrenging gjennom fuger.",
+            "evidence": [
+              "Det er registrert hulrom under flis lokalt ved siden av toalett, basert på avvikende lyd ved lett banking og normal belastning.",
+              "Selv om forholdet vurderes som begrenset, kan hulrom under flis over tid medføre: Økt risiko for sprekkdannelse eller løsning av flis, Mulighet for fuktinntrenging gjennom fuger ved belastning eller bevegelse, Potensiell påvirkning av underliggende membran og konstruksjon dersom forholdet forverres."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              30,
+              31
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_003",
+            "description": "Hulrom under flis (bom) ved toalett på bad: Takstmann registrerte hulrom under flis lokalt ved siden av toalett. Dette kan over tid medføre sprekkdannelse, løsning av flis og fuktinntrenging gjennom fuger.",
+            "evidence": [
+              "Det er registrert hulrom under flis lokalt ved siden av toalett, basert på avvikende lyd ved lett banking og normal belastning.",
+              "Selv om forholdet vurderes som begrenset, kan hulrom under flis over tid medføre: Økt risiko for sprekkdannelse eller løsning av flis, Mulighet for fuktinntrenging gjennom fuger ved belastning eller bevegelse, Potensiell påvirkning av underliggende membran og konstruksjon dersom forholdet forverres."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              30,
+              31
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_004",
+            "description": "Fuktsøk på bad gitt TG IU (ikke undersøkt): Totalvurdering av fuktsøk er gitt tilstandsgrad IU, noe som betyr at skjulte fuktforhold ikke kan utelukkes. Forhold bak tette overflater og i konstruksjoner er ikke undersøkt.",
+            "evidence": [
+              "Bad - Totalvurdering av fuktsøk er gitt tilstandsgrad iu (ikke undersøkt)",
+              "Fuktsøk og inspeksjon er gjennomført innenfor tilgjengelige og synlige områder, uten destruktive inngrep eller åpning av underliggende konstruksjoner. Undersøkelsen gir derfor kun grunnlag for vurdering av synlige og tilgjengelige forhold på befaringsdagen. Forhold bak tette overflater, i konstruksjoner og i ikke tilgjengelige soner er ikke undersøkt."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              16,
+              28,
+              32
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_004",
+            "description": "Fuktsøk på bad gitt TG IU (ikke undersøkt): Totalvurdering av fuktsøk er gitt tilstandsgrad IU, noe som betyr at skjulte fuktforhold ikke kan utelukkes. Forhold bak tette overflater og i konstruksjoner er ikke undersøkt.",
+            "evidence": [
+              "Bad - Totalvurdering av fuktsøk er gitt tilstandsgrad iu (ikke undersøkt)",
+              "Fuktsøk og inspeksjon er gjennomført innenfor tilgjengelige og synlige områder, uten destruktive inngrep eller åpning av underliggende konstruksjoner. Undersøkelsen gir derfor kun grunnlag for vurdering av synlige og tilgjengelige forhold på befaringsdagen. Forhold bak tette overflater, i konstruksjoner og i ikke tilgjengelige soner er ikke undersøkt."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              16,
+              28,
+              32
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_005",
+            "description": "Setningssprekk i gang: Selger opplyser om setningssprekk i gangen. Feilen er utbedret av utbygger, men setningsskader kan indikere pågående bevegelse i bygget.",
+            "evidence": [
+              "Kjenner du til om det er/har vært f.eks. sprekker i mur, skjeve gulv eller lignende? Ja. Setnings sprekk i gangen. Feilen er utbedret av utbygger."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              16,
+              22
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_005",
+            "description": "Setningssprekk i gang: Selger opplyser om setningssprekk i gangen. Feilen er utbedret av utbygger, men setningsskader kan indikere pågående bevegelse i bygget.",
+            "evidence": [
+              "Kjenner du til om det er/har vært f.eks. sprekker i mur, skjeve gulv eller lignende? Ja. Setnings sprekk i gangen. Feilen er utbedret av utbygger."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              16,
+              22
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_006",
+            "description": "Bytte av viftemotorer og rotormodul i ventilasjonsanlegg: Begge viftemotorer og rotormodul ble byttet på grunn av ulyd i systemet. Dette indikerer at ventilasjonsanlegget har hatt feil, og fremtidig svikt kan ikke utelukkes.",
+            "evidence": [
+              "Kjenner du til om det er utført arbeid på el-anlegget eller andre installasjoner (f.eks. oljetank, sentralfyr, ventilasjon)? Ja, kun av faglært. Beskrivelse: Byttet begge viftemotorer og rotormodul på grunn av ulyd i systemet. Östberg Norge AS."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              16,
+              22
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_006",
+            "description": "Bytte av viftemotorer og rotormodul i ventilasjonsanlegg: Begge viftemotorer og rotormodul ble byttet på grunn av ulyd i systemet. Dette indikerer at ventilasjonsanlegget har hatt feil, og fremtidig svikt kan ikke utelukkes.",
+            "evidence": [
+              "Kjenner du til om det er utført arbeid på el-anlegget eller andre installasjoner (f.eks. oljetank, sentralfyr, ventilasjon)? Ja, kun av faglært. Beskrivelse: Byttet begge viftemotorer og rotormodul på grunn av ulyd i systemet. Östberg Norge AS."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              16,
+              22
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_007",
+            "description": "Eiendommen ligger i aktsomhetsområde for kvikkleireskred: Eiendommen er lokalisert i et område med risiko for kvikkleireskred, noe som kan utgjøre en sikkerhetsrisiko og påvirke fremtidig verdi og forsikringsforhold.",
+            "evidence": [
+              "Eiendommen ligger i et aktsomhetsområde for kvikkleireskred.",
+              "Eiendommen ligger i et område under marin grense med svært stor mulighet for marin leire."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_007",
+            "description": "Eiendommen ligger i aktsomhetsområde for kvikkleireskred: Eiendommen er lokalisert i et område med risiko for kvikkleireskred, noe som kan utgjøre en sikkerhetsrisiko og påvirke fremtidig verdi og forsikringsforhold.",
+            "evidence": [
+              "Eiendommen ligger i et aktsomhetsområde for kvikkleireskred.",
+              "Eiendommen ligger i et område under marin grense med svært stor mulighet for marin leire."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_008",
+            "description": "Eiendommen ligger i restriksjonsområde for Avinors lufthavner: Eiendommen er underlagt restriksjoner knyttet til Avinors lufthavner, noe som kan begrense fremtidige bygningstiltak og påvirke støynivå.",
+            "evidence": [
+              "Eiendommen ligger i et restriksjonsområde for Avinors lufthavner."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_008",
+            "description": "Eiendommen ligger i restriksjonsområde for Avinors lufthavner: Eiendommen er underlagt restriksjoner knyttet til Avinors lufthavner, noe som kan begrense fremtidige bygningstiltak og påvirke støynivå.",
+            "evidence": [
+              "Eiendommen ligger i et restriksjonsområde for Avinors lufthavner."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_009",
+            "description": "Eiendommen ligger delvis i rød støysone: Eiendommen er delvis plassert i rød støysone knyttet til vei, noe som kan medføre støyplager for beboerne.",
+            "evidence": [
+              "Eiendommen ligger hovedsakelig i gul støysone, men også dels i rød støysone ifb med vei."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_009",
+            "description": "Eiendommen ligger delvis i rød støysone: Eiendommen er delvis plassert i rød støysone knyttet til vei, noe som kan medføre støyplager for beboerne.",
+            "evidence": [
+              "Eiendommen ligger hovedsakelig i gul støysone, men også dels i rød støysone ifb med vei."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_010",
+            "description": "Radonrisiko: Eiendommen ligger i et område med moderat til lav aktsomhet for radon, og det er ikke utført radonmåling. Radon kan utgjøre en helserisiko for beboerne.",
+            "evidence": [
+              "Eiendommen ligger i et område med moderat til lav aktsomhet for radon.",
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              18,
+              19
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_010",
+            "description": "Radonrisiko: Eiendommen ligger i et område med moderat til lav aktsomhet for radon, og det er ikke utført radonmåling. Radon kan utgjøre en helserisiko for beboerne.",
+            "evidence": [
+              "Eiendommen ligger i et område med moderat til lav aktsomhet for radon.",
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              18,
+              19
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_011",
+            "description": "Sameiet mangler sikringsordning: Sameiet er ikke tilknyttet sikringsordning, noe som innebærer at kjøper ikke er beskyttet mot tap dersom andre seksjonseiere misligholder sine forpliktelser.",
+            "evidence": [
+              "Sikringsordning: Sameiet er ikke tilknyttet sikringsordning."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              15
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_011",
+            "description": "Sameiet mangler sikringsordning: Sameiet er ikke tilknyttet sikringsordning, noe som innebærer at kjøper ikke er beskyttet mot tap dersom andre seksjonseiere misligholder sine forpliktelser.",
+            "evidence": [
+              "Sikringsordning: Sameiet er ikke tilknyttet sikringsordning."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              15
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_012",
+            "description": "Selger har ikke tegnet boligselgerforsikring: Selger har valgt ikke å tegne boligselgerforsikring, noe som kan gjøre det vanskeligere for kjøper å få dekket eventuelle krav mot selger ved skjulte feil og mangler.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_012",
+            "description": "Selger har ikke tegnet boligselgerforsikring: Selger har valgt ikke å tegne boligselgerforsikring, noe som kan gjøre det vanskeligere for kjøper å få dekket eventuelle krav mot selger ved skjulte feil og mangler.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_013",
+            "description": "Økning i felleskostnader: Felleskostnadene er nylig økt med 4% til kr 5 042 per måned fra 01.04, og ytterligere økning må påregnes som følge av generelle prisøkninger og vedlikehold.",
+            "evidence": [
+              "Selger opplyser om økning til ca. 5042 fra 01.04 (4% økning).",
+              "Økninger i felleskostnader som følge av generelle økninger på tjenester samt vedlikehold, utbedringer og påkost må påregnes."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              15
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_013",
+            "description": "Økning i felleskostnader: Felleskostnadene er nylig økt med 4% til kr 5 042 per måned fra 01.04, og ytterligere økning må påregnes som følge av generelle prisøkninger og vedlikehold.",
+            "evidence": [
+              "Selger opplyser om økning til ca. 5042 fra 01.04 (4% økning).",
+              "Økninger i felleskostnader som følge av generelle økninger på tjenester samt vedlikehold, utbedringer og påkost må påregnes."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              15
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_014",
+            "description": "Utfordringer med vannansamlinger i garasjeanlegget: Det er vedvarende problemer med vannansamlinger i garasjen, særlig ved snøfall. Det er ikke montert sluk i gulvene, og styret må jevnlig suge opp vann.",
+            "evidence": [
+              "Vi har fremdeles hatt utfordring med store vannansamlinger i garasjeanlegget, da især ved mye snøfall som medfører at biler drar snø inn i garasjen. Det er ikke montert sluk i gulvene, noe som er normalt ved nyere bygg.",
+              "Styrer utfører oppsuging av vann jevnlig."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              17
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_014",
+            "description": "Utfordringer med vannansamlinger i garasjeanlegget: Det er vedvarende problemer med vannansamlinger i garasjen, særlig ved snøfall. Det er ikke montert sluk i gulvene, og styret må jevnlig suge opp vann.",
+            "evidence": [
+              "Vi har fremdeles hatt utfordring med store vannansamlinger i garasjeanlegget, da især ved mye snøfall som medfører at biler drar snø inn i garasjen. Det er ikke montert sluk i gulvene, noe som er normalt ved nyere bygg.",
+              "Styrer utfører oppsuging av vann jevnlig."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              17
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_015",
+            "description": "Utfordringer med korrekt avlesing av vannmåler: Sameiet har hatt problemer med korrekt avlesing av vannmåler, noe som kan ha medført feil fordeling av kostnader for vann/avløp og fjernvarme mellom sameierne.",
+            "evidence": [
+              "Vi har fremdeles utfordringer med korrekt avlesing av vannmåler til vårt sameie i og med at det er ett felles inntak til både Smedhagen 3 og 4 Boligsameie og Smedhagen Park 5 Boligsameie.",
+              "Det ble montert 2 målere som skulle gjøre det mulig for oss å lese av vårt forbruk, imidlertid viste det seg at det manglet en måler for at avlesingen skulle være korrekt. Dette er nå montert, og vi overvåker nå med månedlige avlesninger for å sjekke at dette blir korrekt fremover."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              17
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_015",
+            "description": "Utfordringer med korrekt avlesing av vannmåler: Sameiet har hatt problemer med korrekt avlesing av vannmåler, noe som kan ha medført feil fordeling av kostnader for vann/avløp og fjernvarme mellom sameierne.",
+            "evidence": [
+              "Vi har fremdeles utfordringer med korrekt avlesing av vannmåler til vårt sameie i og med at det er ett felles inntak til både Smedhagen 3 og 4 Boligsameie og Smedhagen Park 5 Boligsameie.",
+              "Det ble montert 2 målere som skulle gjøre det mulig for oss å lese av vårt forbruk, imidlertid viste det seg at det manglet en måler for at avlesingen skulle være korrekt. Dette er nå montert, og vi overvåker nå med månedlige avlesninger for å sjekke at dette blir korrekt fremover."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              17
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_016",
+            "description": "Pågående reklamasjoner og uløste feil i sameiet: Sameiet jobber fortsatt med reklamasjon på skjeve dører og feil i el-tavle, noe som indikerer at bygget har byggefeil som ennå ikke er fullt utbedret.",
+            "evidence": [
+              "Vi jobber også med reklamasjon på retting av skjeve dører og justering av disse på fellesområdene som kjeller/dører til branntrappen og dører inn til svalgangene.",
+              "Vi har jobbet og jobber fremdeles med å få rettet feil i el-tavle som ble oppdaget ved årlig kontroll av Nordengen AS."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              17
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_016",
+            "description": "Pågående reklamasjoner og uløste feil i sameiet: Sameiet jobber fortsatt med reklamasjon på skjeve dører og feil i el-tavle, noe som indikerer at bygget har byggefeil som ennå ikke er fullt utbedret.",
+            "evidence": [
+              "Vi jobber også med reklamasjon på retting av skjeve dører og justering av disse på fellesområdene som kjeller/dører til branntrappen og dører inn til svalgangene.",
+              "Vi har jobbet og jobber fremdeles med å få rettet feil i el-tavle som ble oppdaget ved årlig kontroll av Nordengen AS."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              17
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_017",
+            "description": "Realsameie for utearealer og gjesteparkering ikke ferdigstilt: Realsameiet for utearealer og gjesteparkeringsplasser er påbegynt men ikke ferdigstilt, noe som skaper usikkerhet rundt fremtidig drift, kostnadsfordeling og vedlikehold av fellesarealer.",
+            "evidence": [
+              "6 av 18 gjesteparkeringsplasser ble påbegynt og er fremdeles under arbeid.",
+              "Det varslede Realsameiet for utearealer/gjesteparkeringsplasser ble påbegynt og er fremdeles under arbeid.",
+              "Vi jobber for tiden med vedtekter og samarbeidsavtaler for fordeling av kostnader i forbindelse med vedlikehold av fellesområdene."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              17,
+              18
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_017",
+            "description": "Realsameie for utearealer og gjesteparkering ikke ferdigstilt: Realsameiet for utearealer og gjesteparkeringsplasser er påbegynt men ikke ferdigstilt, noe som skaper usikkerhet rundt fremtidig drift, kostnadsfordeling og vedlikehold av fellesarealer.",
+            "evidence": [
+              "6 av 18 gjesteparkeringsplasser ble påbegynt og er fremdeles under arbeid.",
+              "Det varslede Realsameiet for utearealer/gjesteparkeringsplasser ble påbegynt og er fremdeles under arbeid.",
+              "Vi jobber for tiden med vedtekter og samarbeidsavtaler for fordeling av kostnader i forbindelse med vedlikehold av fellesområdene."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              17,
+              18
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_018",
+            "description": "Ferdigattest ikke fremlagt for takstmann: Takstmannen opplyser at ferdigattest eller midlertidig brukstillatelse ikke ble fremlagt under befaringen, til tross for at salgsoppgaven oppgir at ferdigattest foreligger.",
+            "evidence": [
+              "Er det fremlagt ferdigattest / midlertidig brukstillatelse? Nei. Kommentar: Det er ikke fremlagt ferdigattest eller midlertidig brukstillatelse. Offentligrettslige forhold knyttet til ferdigstillelse og brukstillatelse er ikke kontrollert opp mot kommunale byggesaksdokumenter.",
+              "Det foreligger ferdigattest for oppføring av boligblokk - Smedhagen park - byggetrinn 5 datert 03.06.2021."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              16,
+              28
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_018",
+            "description": "Ferdigattest ikke fremlagt for takstmann: Takstmannen opplyser at ferdigattest eller midlertidig brukstillatelse ikke ble fremlagt under befaringen, til tross for at salgsoppgaven oppgir at ferdigattest foreligger.",
+            "evidence": [
+              "Er det fremlagt ferdigattest / midlertidig brukstillatelse? Nei. Kommentar: Det er ikke fremlagt ferdigattest eller midlertidig brukstillatelse. Offentligrettslige forhold knyttet til ferdigstillelse og brukstillatelse er ikke kontrollert opp mot kommunale byggesaksdokumenter.",
+              "Det foreligger ferdigattest for oppføring av boligblokk - Smedhagen park - byggetrinn 5 datert 03.06.2021."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              16,
+              28
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_019",
+            "description": "Plantegninger stemmer ikke med faktisk innredning: Salgsoppgaven opplyser at vedlagte plantegninger ikke stemmer hva gjelder faktisk innredning og møblering, og at de ikke er målbare.",
+            "evidence": [
+              "Det gjøres oppmerksom på at vedlagte plantegninger ikke stemmer hva gjelder faktisk innredning og møblering etc. Den er ikke målbar, avvik og feil kan forekomme."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_019",
+            "description": "Plantegninger stemmer ikke med faktisk innredning: Salgsoppgaven opplyser at vedlagte plantegninger ikke stemmer hva gjelder faktisk innredning og møblering, og at de ikke er målbare.",
+            "evidence": [
+              "Det gjøres oppmerksom på at vedlagte plantegninger ikke stemmer hva gjelder faktisk innredning og møblering etc. Den er ikke målbar, avvik og feil kan forekomme."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_020",
+            "description": "Bod ikke formelt dokumentert tilordnet boligen: Takstmannen opplyser at det ikke er fremlagt dokumentasjon som bekrefter om boden er tinglyst eller formelt tilordnet boligen.",
+            "evidence": [
+              "Det er imidlertid ikke fremlagt dokumentasjon for undertegnede som bekrefter om bod(er) er tinglyst eller formelt tilordnet boligen. Eventuelle kjøpere oppfordres derfor til å kontrollere dette nærmere mot grunnbok, seksjoneringsbegjæring eller vedtekter hos borettslag/sameie."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              27
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_020",
+            "description": "Bod ikke formelt dokumentert tilordnet boligen: Takstmannen opplyser at det ikke er fremlagt dokumentasjon som bekrefter om boden er tinglyst eller formelt tilordnet boligen.",
+            "evidence": [
+              "Det er imidlertid ikke fremlagt dokumentasjon for undertegnede som bekrefter om bod(er) er tinglyst eller formelt tilordnet boligen. Eventuelle kjøpere oppfordres derfor til å kontrollere dette nærmere mot grunnbok, seksjoneringsbegjæring eller vedtekter hos borettslag/sameie."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              27
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_021",
+            "description": "Legalpant har prioritet foran tinglyste lån: Kommunen og sameiet har legalpant i eiendommen som ikke vises i grunnboken, og som har prioritet foran tinglyste banklån. Dette kan påvirke kjøpers finansiering og sikkerhet.",
+            "evidence": [
+              "Legalpant: Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter og eventuell eiendomsskatt. De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader. Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_021",
+            "description": "Legalpant har prioritet foran tinglyste lån: Kommunen og sameiet har legalpant i eiendommen som ikke vises i grunnboken, og som har prioritet foran tinglyste banklån. Dette kan påvirke kjøpers finansiering og sikkerhet.",
+            "evidence": [
+              "Legalpant: Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter og eventuell eiendomsskatt. De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader. Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_022",
+            "description": "Elbil-lading medfører individuelle kostnader og begrensninger: Kun Zaptec-ladere er tillatt, og den enkelte beboer må selv bekoste montering og tilkobling. Lading skjer via sameiets felles strømmåler med betalingsløsning Charge 365.",
+            "evidence": [
+              "Det er kun lov til å montere Zaptec elbil ladere, disse må monteres og tilkobles sameiets felles infrastruktur, ladere samt tilkobling må den enkelte beboer selv bekoste.",
+              "Lading vil foregå via sameiets felles strømmåler. Forbruket belastes den enkelte eier av lader ved oppkobling via sameiets felles ladesystem/betalingsløsning Charge 365."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_022",
+            "description": "Elbil-lading medfører individuelle kostnader og begrensninger: Kun Zaptec-ladere er tillatt, og den enkelte beboer må selv bekoste montering og tilkobling. Lading skjer via sameiets felles strømmåler med betalingsløsning Charge 365.",
+            "evidence": [
+              "Det er kun lov til å montere Zaptec elbil ladere, disse må monteres og tilkobles sameiets felles infrastruktur, ladere samt tilkobling må den enkelte beboer selv bekoste.",
+              "Lading vil foregå via sameiets felles strømmåler. Forbruket belastes den enkelte eier av lader ved oppkobling via sameiets felles ladesystem/betalingsløsning Charge 365."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_023",
+            "description": "Kommuneplanens arealdel er under arbeid: Eiendommen er avsatt til sentrumsformål i kommuneplanen, men arealdelen er under revisjon, noe som kan medføre endringer i tillatt bruk og fremtidig utvikling av området.",
+            "evidence": [
+              "Avsatt i kommuneplanen til sentrumsformål, nåværende. Kommuneplanens arealdel er under arbeid."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "confidence": 0.65,
+            "details": {
+              "confidence": 0.65
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_023",
+            "description": "Kommuneplanens arealdel er under arbeid: Eiendommen er avsatt til sentrumsformål i kommuneplanen, men arealdelen er under revisjon, noe som kan medføre endringer i tillatt bruk og fremtidig utvikling av området.",
+            "evidence": [
+              "Avsatt i kommuneplanen til sentrumsformål, nåværende. Kommuneplanens arealdel er under arbeid."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              18
+            ],
+            "details": {
+              "confidence": 0.65
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_024",
+            "description": "Høy sekundær formuesverdi kan gi økt formueskatt: Sekundær formuesverdi er beregnet til kr 2 981 755, noe som er nær prisantydningen på kr 2 990 000. Dette kan medføre høy formueskatt for kjøper som ikke bruker boligen som primærbolig.",
+            "evidence": [
+              "Formuesverdi primær: Kr 745 439 (2024)",
+              "Formuesverdi sekundær: Kr 2 981 755 (2024)"
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              15
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_024",
+            "description": "Høy sekundær formuesverdi kan gi økt formueskatt: Sekundær formuesverdi er beregnet til kr 2 981 755, noe som er nær prisantydningen på kr 2 990 000. Dette kan medføre høy formueskatt for kjøper som ikke bruker boligen som primærbolig.",
+            "evidence": [
+              "Formuesverdi primær: Kr 745 439 (2024)",
+              "Formuesverdi sekundær: Kr 2 981 755 (2024)"
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              15
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_025",
+            "description": "Brannslukningsapparat med stempeldato 2020: Brannslukningsapparatet i boden har stempeldato 2020 og vedlikeholdsstatus er ikke kontrollert. Apparatet kan være utdatert og bør kontrolleres.",
+            "evidence": [
+              "Det er observert brannslukningsapparat plassert i boden, med stempeldato 2020. Apparatet er ikke funksjonstestet, og vedlikeholdsstatus er ikke kontrollert utover visuell observasjon."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              34
+            ],
+            "confidence": 0.65,
+            "details": {
+              "confidence": 0.65
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_025",
+            "description": "Brannslukningsapparat med stempeldato 2020: Brannslukningsapparatet i boden har stempeldato 2020 og vedlikeholdsstatus er ikke kontrollert. Apparatet kan være utdatert og bør kontrolleres.",
+            "evidence": [
+              "Det er observert brannslukningsapparat plassert i boden, med stempeldato 2020. Apparatet er ikke funksjonstestet, og vedlikeholdsstatus er ikke kontrollert utover visuell observasjon."
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              34
+            ],
+            "details": {
+              "confidence": 0.65
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d154_026",
+            "description": "Drift og vedlikehold budsjettert vesentlig høyere enn faktisk forbruk: Budsjettet for drift og vedlikehold i 2024 var kr 222 500, mens faktisk kostnad var kr 100 074. For 2025 er budsjettet kr 200 000. Dette kan indikere planlagte vedlikeholdsarbeider som vil belaste felleskostnadene.",
+            "evidence": [
+              "Drift og vedlikehold 8 -100 074 -90 477 -222 500 -200 000"
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              45
+            ],
+            "confidence": 0.65,
+            "details": {
+              "confidence": 0.65
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d154_026",
+            "description": "Drift og vedlikehold budsjettert vesentlig høyere enn faktisk forbruk: Budsjettet for drift og vedlikehold i 2024 var kr 222 500, mens faktisk kostnad var kr 100 074. For 2025 er budsjettet kr 200 000. Dette kan indikere planlagte vedlikeholdsarbeider som vil belaste felleskostnadene.",
+            "evidence": [
+              "Drift og vedlikehold 8 -100 074 -90 477 -222 500 -200 000"
+            ],
+            "source_documents": [
+              "d154.pdf"
+            ],
+            "source_pages": [
+              45
+            ],
+            "details": {
+              "confidence": 0.65
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [],
+      "unmatched_ground_truth_risks": [],
+      "verified_unmatched": [],
+      "adjusted_metrics": null
+    }
+  },
+  "best_system": "ground_truth",
+  "statistical_tests": {
+    "standard_rag_vs_agentic_rag_P+T+R": 1.0,
+    "standard_rag_vs_ground_truth": 1.0,
+    "agentic_rag_P+T+R_vs_ground_truth": 1.0
+  },
+  "record_id": "394c5390-e3c3-4fc1-ba08-e17da9afc323",
+  "query": "Identifiser risikoer i salgsoppgaven",
+  "document_set_id": "d154",
+  "timestamp": "2026-03-25T10:13:43.763978",
+  "risk_summaries": [
+    {
+      "system_type": "standard_rag",
+      "total_risks": 11,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "agentic_rag_P+T+R",
+      "total_risks": 19,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "ground_truth",
+      "total_risks": 26,
+      "risks_by_category": {}
+    }
+  ],
+  "has_ground_truth": true,
+  "overlapping_risk_count": 16,
+  "unique_to": {
+    "standard_rag": 8,
+    "agentic_rag_P+T+R": 5,
+    "ground_truth": 11
+  },
+  "record_type": "comparison"
+}

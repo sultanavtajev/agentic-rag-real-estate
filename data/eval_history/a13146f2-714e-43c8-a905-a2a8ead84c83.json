@@ -1,0 +1,2515 @@
+{
+  "system_results": {
+    "standard_rag": {
+      "run_id": "c3a5e120-1ca6-4064-a0f2-77d63348d59a",
+      "system_type": "standard_rag",
+      "overall_metrics": {
+        "precision": 0.4,
+        "recall": 0.16,
+        "f1": 0.22857142857142856,
+        "total_support": 25
+      },
+      "matched_risks": 4,
+      "unmatched_predicted": 6,
+      "unmatched_ground_truth": 21,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "c3a5e120-1ca6-4064-a0f2-77d63348d59a_risk_000",
+            "description": "Selger har ikke utført radonmåling. Manglende radonmåling kan innebære en helserisiko for kjøper, særlig dersom boligen er helt eller delvis utleid.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_005",
+            "description": "Ingen radonmåling er utført – risiko for radoneksponering er ukjent",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "c3a5e120-1ca6-4064-a0f2-77d63348d59a_risk_001",
+            "description": "Legalpant til kommunen og sameiet utgjør en skjult panterisiko for kjøper. Legalpant vises ikke i grunnboksutskriften, men har prioritet foran tinglyste lån som banklån på seksjonen. Kommunens legalpant har høyere prioritet enn sameiets legalpant.",
+            "evidence": [
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen.",
+              "Legalpant til kommunen har høyere prioritet enn legalpant til sameiet.",
+              "De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_008",
+            "description": "Legalpant – kommunen og øvrige seksjonseiere har legalpant i eierseksjonen som ikke fremgår av grunnboken, og som har prioritet foran tinglyste banklån",
+            "evidence": [
+              "Legalpant: Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter og eventuell eiendomsskatt.",
+              "De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader.",
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "c3a5e120-1ca6-4064-a0f2-77d63348d59a_risk_002",
+            "description": "Stikkledninger fra eiendommen til det kommunale nettet er private, og vedlikeholdsansvaret påhviler sameiet. Dette kan medføre uventede kostnader for sameiet og dermed for kjøper.",
+            "evidence": [
+              "Stikkledningene fra eiendommen og ut til det kommunale nettet er private, og vedlikeholdsansvaret for disse påhviler sameiet."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_010",
+            "description": "Stikkledninger er private – vedlikeholdsansvaret for stikkledninger fra eiendommen til det kommunale nettet påhviler sameiet",
+            "evidence": [
+              "Stikkledningene fra eiendommen og ut til det kommunale nettet er private, og vedlikeholdsansvaret for disse påhviler sameiet."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "c3a5e120-1ca6-4064-a0f2-77d63348d59a_risk_007",
+            "description": "Sameiernes solidaransvar overfor sameiets kreditorer i henhold til eierseksjonsloven § 31. Kjøper overtar et forholdsmessig ansvar for sameiets forpliktelser i henhold til sin sameiebrøk.",
+            "evidence": [
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.87,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_016",
+            "description": "Sameiernes solidaransvar overfor sameiets kreditorer – seksjonseier kan bli holdt ansvarlig for sameiets gjeld i henhold til sin sameiebrøk",
+            "evidence": [
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "c3a5e120-1ca6-4064-a0f2-77d63348d59a_risk_003",
+          "description": "Risiko knyttet til hvitvaskingsregelverket: Dersom kjøper ikke bidrar til gjennomføring av kundetiltak, kan dette medføre mislighold og gi selger rett til å heve avtalen og gjennomføre dekningssalg for kjøpers regning.",
+          "evidence": [
+            "Hvis kjøper ikke bidrar til at megler får gjennomført kundetiltak og dette fører til at avtalen ikke kan gjennomføres eller blir forsinket, er dette et mislighold fra kjøpers side.",
+            "Et vesentlig mislighold kan gi selger rett til å heve avtalen og til å gjennomføre dekningssalg for kjøpers regning."
+          ],
+          "source_documents": [
+            "d055_d055"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.9,
+          "details": {}
+        },
+        {
+          "risk_id": "c3a5e120-1ca6-4064-a0f2-77d63348d59a_risk_004",
+          "description": "Risiko for at transaksjonen stanses dersom selger ikke bidrar til gjennomføring av kundetiltak. Kjøper kan i et slikt tilfelle ha krav mot selger etter avhendingsloven.",
+          "evidence": [
+            "Dersom selger ikke bidrar til at megler får gjennomført løpende kundetiltak underveis i oppdraget, må eiendomsmegler stanse gjennomføringen av transaksjonen.",
+            "Selger vil i et slikt tilfelle ha misligholdt sine forpliktelser, og kjøper vil kunne ha et krav mot selger etter avhendingsloven."
+          ],
+          "source_documents": [
+            "d055_d055"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "c3a5e120-1ca6-4064-a0f2-77d63348d59a_risk_005",
+          "description": "Ingen angrerett ved kjøp av fast eiendom. Kjøper er bundet av akseptert bud og kan ikke trekke seg uten rettslige konsekvenser.",
+          "evidence": [
+            "Det eksisterer ingen angrerett ved salg/kjøp av fast eiendom."
+          ],
+          "source_documents": [
+            "d055_d055"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.97,
+          "details": {}
+        },
+        {
+          "risk_id": "c3a5e120-1ca6-4064-a0f2-77d63348d59a_risk_006",
+          "description": "Risiko knyttet til bud med forbehold (f.eks. usikker finansiering eller salg av nåværende bolig). Slike bud vil normalt ikke bli akseptert før forbeholdet er avklart, noe som kan forsinke eller hindre handel.",
+          "evidence": [
+            "Normalt vil ikke et bud med forbehold bli akseptert før forbeholdet er avklart.",
+            "eventuelle forbehold som for eksempel usikker finansiering, salg av nåværende bolig ol."
+          ],
+          "source_documents": [
+            "d055_d055"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.85,
+          "details": {}
+        },
+        {
+          "risk_id": "c3a5e120-1ca6-4064-a0f2-77d63348d59a_risk_008",
+          "description": "Risiko for skjulte feil og mangler ved boligen. Salgsoppgaven nevner eksplisitt at skjulte feil kan koste kjøper både tid og penger, og det anbefales boligkjøperforsikring.",
+          "evidence": [
+            "Hvis din nye bolig har skjulte feil kan dette koste deg både tid og [penger]"
+          ],
+          "source_documents": [
+            "d055_d055"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.85,
+          "details": {}
+        },
+        {
+          "risk_id": "c3a5e120-1ca6-4064-a0f2-77d63348d59a_risk_009",
+          "description": "Meglers høye samlede vederlag kan påvirke nettoprovenyet for selger. Totale kostnader inkluderer provisjon, tilrettelegging, visningshonorar, markedspakke, oppgjørshonorar og grunnpakke, noe som utgjør en betydelig kostnad.",
+          "evidence": [
+            "Provisjon ved salg til prisantydning: kr 0,8%",
+            "Tilrettelegging: kr 15.000",
+            "Visninger/overtagelser: kr 3000 pr. stk.",
+            "Markedspakke: kr 23.900",
+            "Oppgjørshonorar inkl. factoring: kr 9900",
+            "Grunnpakke bolig Info: kr 9.900"
+          ],
+          "source_documents": [
+            "d055_d055"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d055_001",
+          "description": "Boligen er under oppføring og ikke ferdigstilt – risiko for forsinkelse i innflytting",
+          "evidence": [
+            "Innflyttingsklar 01.03.2026.",
+            "Byggeår: 2026",
+            "Prosjektet planlegges og oppføres i samsvar med nødvendige offentlige tillatelser og gjeldende tekniske forskrifter."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            5,
+            17
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d055_002",
+          "description": "Ferdigattest foreligger ikke ved overtakelse – overtakelse kan skje på grunnlag av midlertidig brukstillatelse",
+          "evidence": [
+            "Dersom ferdigattest ikke foreligger på overtakelsestidspunktet, vil overtakelse skje på grunnlag av midlertidig brukstillatelse.",
+            "Kjøper er kjent med at ferdigattest som regel utstedes en tid etter at boligen er overtatt."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            17
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d055_003",
+          "description": "Eiendommen er under seksjonering – seksjoneringsbegjæringen er ikke fullført, noe som kan medføre forsinkelser eller komplikasjoner ved eiendomsoverdragelse",
+          "evidence": [
+            "Eiendommen er under seksjonering.",
+            "Kontorforretning, seksjonering sak:25/6783. Eiendom (gbnr): 107/111",
+            "Tomtene er under seksjonering, med et tomteareal på ca. 250 kvm per tomt."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            4,
+            17,
+            28
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d055_004",
+          "description": "Energimerke B med rød energifarge – høyt energiforbruk til oppvarming, noe som kan medføre høye strømkostnader",
+          "evidence": [
+            "Energikarakter: B, Energifarge: Rød",
+            "Sum andel el/olje/gass av netto oppvarmingsbehov: 86.9 %",
+            "Beregnet levert energi normalisert klima: 105.76 kWh/m²",
+            "Elektrisitet 11332 kWh, Total energibruk 12998 kWh"
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            4,
+            17,
+            24
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d055_006",
+          "description": "Formuesverdi er ikke beregnet – kjøper kan ikke forutse fremtidig formuesskatt og eiendomsskatt nøyaktig",
+          "evidence": [
+            "Info om formuesverdi: Formuesverdien er ikke beregnet.",
+            "Skatteetaten vil beregne en boligverdi basert på SSBs statistiske opplysninger om omsatte boliger."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            16
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d055_007",
+          "description": "Eiendomsskatt – løpende kostnad som kjøper må påregne",
+          "evidence": [
+            "I Lørenskog kommune er det eiendomsskatt på boliger og fast eiendom som overstiger en fastsatt verdi. Ved en markedsverdi på 9 300 000 er det estimert ca. 6 410,‑ i året i eiendomsskatt."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            16
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d055_009",
+          "description": "Solidarisk ansvar for fellesledninger – seksjonseier er solidarisk ansvarlig for fellesledninger med øvrige sameiere",
+          "evidence": [
+            "08.06.1964 ‑ Dokumentnr: 1790 ‑ Best. om vann/kloakkledn. Bestemmelse om solidarisk ansvar for fellesledninger"
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            19
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d055_011",
+          "description": "Felles vei – vedlikehold av adkomstveien påhviler sameierne i fellesskap, noe som kan medføre uforutsette kostnader",
+          "evidence": [
+            "Adkomst til eiendommen skjer via sameiets felles vei. Vedlikehold av veien påhviler sameierne i felleskap."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            20
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d055_012",
+          "description": "Bestemmelse om å rive/fjerne bygg når bygningsrådet forlanger det – tinglyst heftelse som gir myndighetene rett til å kreve riving",
+          "evidence": [
+            "24.06.1970 ‑ Dokumentnr: 3106 ‑ Best om garasje/parkering. Bestemmelse om å rive/fjerne bygg når bygningsrådet forlanger det."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            19
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d055_013",
+          "description": "Bestemmelse om frostsikkert fundament på garasje – tinglyst krav som kan medføre kostnader ved fremtidige arbeider",
+          "evidence": [
+            "28.04.1981 ‑ Dokumentnr: 2720 ‑ Erklæring/avtale. Bestemmelse om frostsikkert fundament på garasje."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            19
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d055_014",
+          "description": "Adkomstrett tinglyst til fordel for Lørenskog Kommune – kommunen har tinglyst adkomstrett på eiendommen som ikke kan slettes uten kommunens samtykke",
+          "evidence": [
+            "20.09.2024 ‑ Dokumentnr: 1979147 ‑ Bestemmelse om adkomstrett. Rettighet hefter i: Knr:3222 Gnr:107 Bnr:1. Kan ikke slettes uten samtykke fra: Lørenskog Kommune."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            20
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d055_015",
+          "description": "Eierskap begrenset til maks to seksjoner per person i sameiet – begrenser fremtidig kjøp og investering i sameiet",
+          "evidence": [
+            "Det informeres om at ingen kan eie mer enn to boligseksjoner i sameiet, i henhold til eierseksjonsloven § 23. Seksjoner som eies av nærstående eller gjennom et firma regnes også med."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            20
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d055_017",
+          "description": "Bilder i prospektet er fra tilsvarende visningsbolig – den faktiske boligen kan avvike fra det som vises i markedsføringen",
+          "evidence": [
+            "Samtlige bilder i prospektet er fra tilsvarende visningsbolig."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            6
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d055_018",
+          "description": "Ingen mulighet for tilvalg – kjøper kan ikke tilpasse boligen etter egne ønsker",
+          "evidence": [
+            "Det er ikke muligheter for tilvalg."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            19
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d055_019",
+          "description": "TV/internett/bredbånd medfølger ikke – kjøper må tegne eget abonnement og påregne løpende kostnader",
+          "evidence": [
+            "TV/Internett/Bredbånd: Kjøper må tegne eget abonnement."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            16
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d055_020",
+          "description": "Bustadoppføringslova regulerer kjøpet – kjøper er forbruker og kjøper bolig under oppføring, noe som innebærer særskilte rettigheter og plikter, men også risiko knyttet til utbyggers økonomi og garantistillelse",
+          "evidence": [
+            "Når en privatperson inngår avtale med en utbygger om oppføring av ny bolig, vil dette normalt omfattes av reglene i bustadoppføringslova.",
+            "Dette regelverket sikrer blant annet at kjøperen får garanti for at selgeren oppfyller sine forpliktelser, jf. bustadoppføringslova § 12."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            20
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d055_021",
+          "description": "Tomteareal er kun ca. 250 kvm per tomt – begrenset uteareale for en enebolig til kr 9,3 millioner",
+          "evidence": [
+            "Eiendommen har egen hage, og tomtene er under seksjonering, med et tomteareal på ca. 250 kvm per tomt."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            5
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d055_022",
+          "description": "Energisimulering er utført i juli 2024 og gjelder for hus E og G – det er usikkert om simuleringen er fullt representativ for den aktuelle seksjonen (Marcus Thranes vei 38)",
+          "evidence": [
+            "Inndatafil: C:\\...\\Marcus Thranes vei 38 E+F Hus E, G - 04.07.2024.smi",
+            "Prosjekt: Marcus Thranes vei 38 E+F hus E, G",
+            "Tid/dato simulering: 06:29 4/7-2024"
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            24,
+            25
+          ],
+          "details": {
+            "confidence": 0.65
+          }
+        },
+        {
+          "risk_id": "gt_d055_023",
+          "description": "Reguleringsplan tillater blokkbebyggelse i nærområdet – fremtidig utbygging kan påvirke utsikt, sol og bomiljø",
+          "evidence": [
+            "Eiendommen er regulert til småhus og blokkbebyggelse mm.",
+            "22-4-10 Boligområde (blokker): Området skal benyttes til blokkbebyggelse i inntil 4 etasjer."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            19,
+            31
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d055_024",
+          "description": "Kommunale avgifter er ikke oppgitt med konkrete beløp – kjøper kan ikke forutse de løpende kommunale kostnadene",
+          "evidence": [
+            "Kommunale avgifter: Informasjon: Kommunale avgifter avhenger av kommunens satser og eget forbruk til enhver tid."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            16
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d055_025",
+          "description": "Dokumentavgift beregnes kun av tomteverdi (ikke total kjøpesum) – dette er positivt for kjøper, men tomteverdien er ikke eksplisitt oppgitt, noe som kan skape usikkerhet om korrekt beregning",
+          "evidence": [
+            "20 000 (Dokumentavgift (2,5% av tomteverdi))"
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            16
+          ],
+          "details": {
+            "confidence": 0.65
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "c3a5e120-1ca6-4064-a0f2-77d63348d59a_risk_003",
+            "description": "Risiko knyttet til hvitvaskingsregelverket: Dersom kjøper ikke bidrar til gjennomføring av kundetiltak, kan dette medføre mislighold og gi selger rett til å heve avtalen og gjennomføre dekningssalg for kjøpers regning.",
+            "evidence": [
+              "Hvis kjøper ikke bidrar til at megler får gjennomført kundetiltak og dette fører til at avtalen ikke kan gjennomføres eller blir forsinket, er dette et mislighold fra kjøpers side.",
+              "Et vesentlig mislighold kan gi selger rett til å heve avtalen og til å gjennomføre dekningssalg for kjøpers regning."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder eksplisitt tekst under 'Hvitvasking' på side 21: 'Hvis kjøper ikke bidrar til at megler får gjennomført kundetiltak og dette fører til at avtalen ikke kan gjennomføres eller blir forsinket, er dette et mislighold fra kjøpers side. Et vesentlig mislighold kan gi selger rett til å heve avtalen og til å gjennomføre dekningssalg for kjøpers regning.' Dette bekrefter risikoen fullt ut."
+        },
+        {
+          "risk": {
+            "risk_id": "c3a5e120-1ca6-4064-a0f2-77d63348d59a_risk_004",
+            "description": "Risiko for at transaksjonen stanses dersom selger ikke bidrar til gjennomføring av kundetiltak. Kjøper kan i et slikt tilfelle ha krav mot selger etter avhendingsloven.",
+            "evidence": [
+              "Dersom selger ikke bidrar til at megler får gjennomført løpende kundetiltak underveis i oppdraget, må eiendomsmegler stanse gjennomføringen av transaksjonen.",
+              "Selger vil i et slikt tilfelle ha misligholdt sine forpliktelser, og kjøper vil kunne ha et krav mot selger etter avhendingsloven."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder eksplisitt tekst under 'Hvitvasking' på side 21: 'Dersom selger ikke bidrar til at megler får gjennomført løpende kundetiltak underveis i oppdraget, må eiendomsmegler stanse gjennomføringen av transaksjonen. Selger vil i et slikt tilfelle ha misligholdt sine forpliktelser, og kjøper vil kunne ha et krav mot selger etter avhendingsloven.' Dette bekrefter risikoen fullt ut."
+        },
+        {
+          "risk": {
+            "risk_id": "c3a5e120-1ca6-4064-a0f2-77d63348d59a_risk_005",
+            "description": "Ingen angrerett ved kjøp av fast eiendom. Kjøper er bundet av akseptert bud og kan ikke trekke seg uten rettslige konsekvenser.",
+            "evidence": [
+              "Det eksisterer ingen angrerett ved salg/kjøp av fast eiendom."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder under 'VIKTIGE AVTALERETTSLIGE FORHOLD' på side 35: 'Det eksisterer ingen angrerett ved salg/kjøp av fast eiendom.' Dette bekrefter risikoen direkte. Videre fremgår det at budet er bindende for budgiver frem til akseptfristens utløp, noe som underbygger at kjøper er bundet av akseptert bud."
+        },
+        {
+          "risk": {
+            "risk_id": "c3a5e120-1ca6-4064-a0f2-77d63348d59a_risk_006",
+            "description": "Risiko knyttet til bud med forbehold (f.eks. usikker finansiering eller salg av nåværende bolig). Slike bud vil normalt ikke bli akseptert før forbeholdet er avklart, noe som kan forsinke eller hindre handel.",
+            "evidence": [
+              "Normalt vil ikke et bud med forbehold bli akseptert før forbeholdet er avklart.",
+              "eventuelle forbehold som for eksempel usikker finansiering, salg av nåværende bolig ol."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder på side 20 og side 35 tekst om at et bud bør inneholde 'eventuelle forbehold som for eksempel usikker finansiering, salg av nåværende bolig ol.' og at 'Normalt vil ikke et bud med forbehold bli akseptert før forbeholdet er avklart.' Dette bekrefter risikoen om at bud med forbehold kan forsinke eller hindre handel."
+        },
+        {
+          "risk": {
+            "risk_id": "c3a5e120-1ca6-4064-a0f2-77d63348d59a_risk_008",
+            "description": "Risiko for skjulte feil og mangler ved boligen. Salgsoppgaven nevner eksplisitt at skjulte feil kan koste kjøper både tid og penger, og det anbefales boligkjøperforsikring.",
+            "evidence": [
+              "Hvis din nye bolig har skjulte feil kan dette koste deg både tid og [penger]"
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder på side 33 (boligkjøperforsikring-siden) teksten: 'Hvis din nye bolig har skjulte feil kan dette koste deg både tid og penger.' Dette bekrefter risikoen om skjulte feil og mangler, og at boligkjøperforsikring anbefales."
+        },
+        {
+          "risk": {
+            "risk_id": "c3a5e120-1ca6-4064-a0f2-77d63348d59a_risk_009",
+            "description": "Meglers høye samlede vederlag kan påvirke nettoprovenyet for selger. Totale kostnader inkluderer provisjon, tilrettelegging, visningshonorar, markedspakke, oppgjørshonorar og grunnpakke, noe som utgjør en betydelig kostnad.",
+            "evidence": [
+              "Provisjon ved salg til prisantydning: kr 0,8%",
+              "Tilrettelegging: kr 15.000",
+              "Visninger/overtagelser: kr 3000 pr. stk.",
+              "Markedspakke: kr 23.900",
+              "Oppgjørshonorar inkl. factoring: kr 9900",
+              "Grunnpakke bolig Info: kr 9.900"
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder under 'Meglers vederlag' på side 21 en detaljert liste over kostnader: Provisjon ved salg til prisantydning kr 0,8%, Tilrettelegging kr 15.000, Visninger/overtagelser kr 3000 pr. stk., Markedspakke kr 23.900, Oppgjørshonorar inkl. factoring kr 9900, og Grunnpakke bolig Info kr 9.900. Alle disse kostnadene er eksplisitt nevnt i dokumentet og utgjør til sammen en betydelig kostnad som påvirker nettoprovenyet for selger."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.16,
+        "f1": 0.2758620689655173,
+        "total_support": 25
+      }
+    },
+    "agentic_rag_P+T+R": {
+      "run_id": "6cac1d8e-59f5-400e-a00b-ba03fb435d60",
+      "system_type": "agentic_rag_P+T+R",
+      "overall_metrics": {
+        "precision": 0.8888888888888888,
+        "recall": 0.64,
+        "f1": 0.7441860465116279,
+        "total_support": 25
+      },
+      "matched_risks": 16,
+      "unmatched_predicted": 2,
+      "unmatched_ground_truth": 9,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "6cac1d8e-59f5-400e-a00b-ba03fb435d60_risk_001",
+            "description": "Ferdigattest foreligger ikke – boligen er under oppføring og ferdigattest utstedes normalt etter overtakelse. Overtakelse kan skje på grunnlag av midlertidig brukstillatelse, noe som innebærer risiko for forsinkelser og uavklarte forhold.",
+            "evidence": [
+              "Dersom ferdigattest ikke foreligger på overtakelsestidspunktet, vil overtakelse skje på grunnlag av midlertidig brukstillatelse. Denne ordningen påvirker ikke selgers plikt til å sørge for at ferdigattest blir utstedt.",
+              "Selger har ansvar for å innhente ferdigattest for boligen. Kjøper er kjent med at ferdigattest som regel utstedes en tid etter at boligen er overtatt.",
+              "Innflyttingsklar 01.03.2026."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_001",
+            "description": "Boligen er under oppføring og ikke ferdigstilt – risiko for forsinkelse i innflytting",
+            "evidence": [
+              "Innflyttingsklar 01.03.2026.",
+              "Byggeår: 2026",
+              "Prosjektet planlegges og oppføres i samsvar med nødvendige offentlige tillatelser og gjeldende tekniske forskrifter."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              5,
+              17
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "6cac1d8e-59f5-400e-a00b-ba03fb435d60_risk_001",
+            "description": "Ferdigattest foreligger ikke – boligen er under oppføring og ferdigattest utstedes normalt etter overtakelse. Overtakelse kan skje på grunnlag av midlertidig brukstillatelse, noe som innebærer risiko for forsinkelser og uavklarte forhold.",
+            "evidence": [
+              "Dersom ferdigattest ikke foreligger på overtakelsestidspunktet, vil overtakelse skje på grunnlag av midlertidig brukstillatelse. Denne ordningen påvirker ikke selgers plikt til å sørge for at ferdigattest blir utstedt.",
+              "Selger har ansvar for å innhente ferdigattest for boligen. Kjøper er kjent med at ferdigattest som regel utstedes en tid etter at boligen er overtatt.",
+              "Innflyttingsklar 01.03.2026."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_002",
+            "description": "Ferdigattest foreligger ikke ved overtakelse – overtakelse kan skje på grunnlag av midlertidig brukstillatelse",
+            "evidence": [
+              "Dersom ferdigattest ikke foreligger på overtakelsestidspunktet, vil overtakelse skje på grunnlag av midlertidig brukstillatelse.",
+              "Kjøper er kjent med at ferdigattest som regel utstedes en tid etter at boligen er overtatt."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              17
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "6cac1d8e-59f5-400e-a00b-ba03fb435d60_risk_000",
+            "description": "Eiendommen er under seksjonering – seksjoneringen er ikke fullført på salgstidspunktet",
+            "evidence": [
+              "Eiendommen er under seksjonering.",
+              "Gnr. 107, bnr. 111, ideell andel 1/1 i Lørenskog kommune. Eiendommen er under seksjonering."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_003",
+            "description": "Eiendommen er under seksjonering – seksjoneringsbegjæringen er ikke fullført, noe som kan medføre forsinkelser eller komplikasjoner ved eiendomsoverdragelse",
+            "evidence": [
+              "Eiendommen er under seksjonering.",
+              "Kontorforretning, seksjonering sak:25/6783. Eiendom (gbnr): 107/111",
+              "Tomtene er under seksjonering, med et tomteareal på ca. 250 kvm per tomt."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              4,
+              17,
+              28
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "6cac1d8e-59f5-400e-a00b-ba03fb435d60_risk_012",
+            "description": "Energimerke B med rød energifarge – relativt høyt energiforbruk (beregnet levert energi 106 kWh/m²), og andel el/olje/gass av netto oppvarmingsbehov er 86,9 %, noe som kan gi høye strømkostnader",
+            "evidence": [
+              "Energikarakter: B. Energifarge: Rød.",
+              "Beregnet levert energi normalisert klima: 105.76 kWh/m²",
+              "Sum andel el/olje/gass av netto oppvarmingsbehov: 86.9 %",
+              "Total energibruk 12998 kWh"
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.72,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_004",
+            "description": "Energimerke B med rød energifarge – høyt energiforbruk til oppvarming, noe som kan medføre høye strømkostnader",
+            "evidence": [
+              "Energikarakter: B, Energifarge: Rød",
+              "Sum andel el/olje/gass av netto oppvarmingsbehov: 86.9 %",
+              "Beregnet levert energi normalisert klima: 105.76 kWh/m²",
+              "Elektrisitet 11332 kWh, Total energibruk 12998 kWh"
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              4,
+              17,
+              24
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "6cac1d8e-59f5-400e-a00b-ba03fb435d60_risk_004",
+            "description": "Ingen radonmåling er utført av selger – kjøper har ikke informasjon om radonverdier i boligen",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_005",
+            "description": "Ingen radonmåling er utført – risiko for radoneksponering er ukjent",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "6cac1d8e-59f5-400e-a00b-ba03fb435d60_risk_005",
+            "description": "Formuesverdi er ikke beregnet – kjøper vet ikke hva formuesverdien og dermed skattebelastningen vil bli",
+            "evidence": [
+              "Info om formuesverdi: Formuesverdien er ikke beregnet. Skatteetaten vil beregne en boligverdi basert på SSBs statistiske opplysninger om omsatte boliger. Beregningen vil skje i forbindelse med første skattemelding etter overtakelse."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_006",
+            "description": "Formuesverdi er ikke beregnet – kjøper kan ikke forutse fremtidig formuesskatt og eiendomsskatt nøyaktig",
+            "evidence": [
+              "Info om formuesverdi: Formuesverdien er ikke beregnet.",
+              "Skatteetaten vil beregne en boligverdi basert på SSBs statistiske opplysninger om omsatte boliger."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "6cac1d8e-59f5-400e-a00b-ba03fb435d60_risk_006",
+            "description": "Eiendomsskatt i Lørenskog – kjøper vil bli ilagt løpende eiendomsskatt estimert til ca. kr 6 410 per år",
+            "evidence": [
+              "I Lørenskog kommune er det eiendomsskatt på boliger og fast eiendom som overstiger en fastsatt verdi. Ved en markedsverdi på 9 300 000 er det estimert ca. 6 410,- i året i eiendomsskatt."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_007",
+            "description": "Eiendomsskatt – løpende kostnad som kjøper må påregne",
+            "evidence": [
+              "I Lørenskog kommune er det eiendomsskatt på boliger og fast eiendom som overstiger en fastsatt verdi. Ved en markedsverdi på 9 300 000 er det estimert ca. 6 410,‑ i året i eiendomsskatt."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "6cac1d8e-59f5-400e-a00b-ba03fb435d60_risk_003",
+            "description": "Legalpant – kommunen og sameiet har legalpant med høy prioritet som ikke fremgår av grunnboken, og som går foran tinglyste banklån",
+            "evidence": [
+              "Legalpant: Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter og eventuell eiendomsskatt.",
+              "De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader. Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen.",
+              "Legalpant til kommunen har høyere prioritet enn legalpant til sameiet."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.93,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_008",
+            "description": "Legalpant – kommunen og øvrige seksjonseiere har legalpant i eierseksjonen som ikke fremgår av grunnboken, og som har prioritet foran tinglyste banklån",
+            "evidence": [
+              "Legalpant: Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter og eventuell eiendomsskatt.",
+              "De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader.",
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "6cac1d8e-59f5-400e-a00b-ba03fb435d60_risk_007",
+            "description": "Stikkledninger for vann og avløp er private og vedlikeholdsansvaret påhviler sameiet – potensielle fremtidige kostnader for sameiet",
+            "evidence": [
+              "Stikkledningene fra eiendommen og ut til det kommunale nettet er private, og vedlikeholdsansvaret for disse påhviler sameiet."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_010",
+            "description": "Stikkledninger er private – vedlikeholdsansvaret for stikkledninger fra eiendommen til det kommunale nettet påhviler sameiet",
+            "evidence": [
+              "Stikkledningene fra eiendommen og ut til det kommunale nettet er private, og vedlikeholdsansvaret for disse påhviler sameiet."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "6cac1d8e-59f5-400e-a00b-ba03fb435d60_risk_008",
+            "description": "Adkomst via sameiets felles vei – vedlikehold av veien påhviler sameierne i fellesskap, noe som kan medføre fremtidige kostnader og konflikter",
+            "evidence": [
+              "Adkomst til eiendommen skjer via sameiets felles vei. Vedlikehold av veien påhviler sameierne i felleskap. Se vedtekter for oversikt."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_011",
+            "description": "Felles vei – vedlikehold av adkomstveien påhviler sameierne i fellesskap, noe som kan medføre uforutsette kostnader",
+            "evidence": [
+              "Adkomst til eiendommen skjer via sameiets felles vei. Vedlikehold av veien påhviler sameierne i felleskap."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "6cac1d8e-59f5-400e-a00b-ba03fb435d60_risk_002",
+            "description": "Tinglyst bestemmelse om riveplikt – bygningsrådet kan kreve at bygg rives/fjernes",
+            "evidence": [
+              "24.06.1970 – Dokumentnr: 3106 – Best om garasje/parkering. Bestemmelse om å rive/fjerne bygg når bygningsrådet forlanger det."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_012",
+            "description": "Bestemmelse om å rive/fjerne bygg når bygningsrådet forlanger det – tinglyst heftelse som gir myndighetene rett til å kreve riving",
+            "evidence": [
+              "24.06.1970 ‑ Dokumentnr: 3106 ‑ Best om garasje/parkering. Bestemmelse om å rive/fjerne bygg når bygningsrådet forlanger det."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "6cac1d8e-59f5-400e-a00b-ba03fb435d60_risk_013",
+            "description": "Tinglyst bestemmelse om frostsikkert fundament på garasje – indikerer historiske krav til grunnforhold som kan ha relevans for byggets tilstand",
+            "evidence": [
+              "28.04.1981 – Dokumentnr: 2720 – Erklæring/avtale. Bestemmelse om frostsikkert fundament på garasje."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.65,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_013",
+            "description": "Bestemmelse om frostsikkert fundament på garasje – tinglyst krav som kan medføre kostnader ved fremtidige arbeider",
+            "evidence": [
+              "28.04.1981 ‑ Dokumentnr: 2720 ‑ Erklæring/avtale. Bestemmelse om frostsikkert fundament på garasje."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "6cac1d8e-59f5-400e-a00b-ba03fb435d60_risk_015",
+            "description": "Eierseksjonsloven § 23 – ingen kan eie mer enn to boligseksjoner i sameiet, noe som kan begrense fremtidig videresalg til investorer",
+            "evidence": [
+              "Det informeres om at ingen kan eie mer enn to boligseksjoner i sameiet, i henhold til eierseksjonsloven § 23. Seksjoner som eies av nærstående eller gjennom et firma regnes også med."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_015",
+            "description": "Eierskap begrenset til maks to seksjoner per person i sameiet – begrenser fremtidig kjøp og investering i sameiet",
+            "evidence": [
+              "Det informeres om at ingen kan eie mer enn to boligseksjoner i sameiet, i henhold til eierseksjonsloven § 23. Seksjoner som eies av nærstående eller gjennom et firma regnes også med."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "6cac1d8e-59f5-400e-a00b-ba03fb435d60_risk_009",
+            "description": "Bilder i prospektet er fra tilsvarende visningsbolig – ikke fra den faktiske boligen som selges, noe som kan gi et misvisende inntrykk av standard og utførelse",
+            "evidence": [
+              "Samtlige bilder i prospektet er fra tilsvarende visningsbolig."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_017",
+            "description": "Bilder i prospektet er fra tilsvarende visningsbolig – den faktiske boligen kan avvike fra det som vises i markedsføringen",
+            "evidence": [
+              "Samtlige bilder i prospektet er fra tilsvarende visningsbolig."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              6
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "6cac1d8e-59f5-400e-a00b-ba03fb435d60_risk_010",
+            "description": "Ingen muligheter for tilvalg – kjøper kan ikke tilpasse boligen etter egne ønsker",
+            "evidence": [
+              "Det er ikke muligheter for tilvalg."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_018",
+            "description": "Ingen mulighet for tilvalg – kjøper kan ikke tilpasse boligen etter egne ønsker",
+            "evidence": [
+              "Det er ikke muligheter for tilvalg."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "6cac1d8e-59f5-400e-a00b-ba03fb435d60_risk_014",
+            "description": "Bustadoppføringslova gjelder – kjøper inngår avtale med utbygger om oppføring av ny bolig, noe som innebærer risiko knyttet til forsinkelser, konkurs hos utbygger og garantiforpliktelser",
+            "evidence": [
+              "Når en privatperson inngår avtale med en utbygger om oppføring av ny bolig, vil dette normalt omfattes av reglene i bustadoppføringslova. Dette regelverket sikrer blant annet at kjøperen får garanti for at selgeren oppfyller sine forpliktelser, jf. bustadoppføringslova § 12."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_020",
+            "description": "Bustadoppføringslova regulerer kjøpet – kjøper er forbruker og kjøper bolig under oppføring, noe som innebærer særskilte rettigheter og plikter, men også risiko knyttet til utbyggers økonomi og garantistillelse",
+            "evidence": [
+              "Når en privatperson inngår avtale med en utbygger om oppføring av ny bolig, vil dette normalt omfattes av reglene i bustadoppføringslova.",
+              "Dette regelverket sikrer blant annet at kjøperen får garanti for at selgeren oppfyller sine forpliktelser, jf. bustadoppføringslova § 12."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "6cac1d8e-59f5-400e-a00b-ba03fb435d60_risk_011",
+          "description": "Skillevegg for bod i garasje er ikke etablert ved befaring – det er usikkert om denne vil bli ferdigstilt som forutsatt",
+          "evidence": [
+            "17.3 m² Terrasse (ved befaring er det ikke etablert skillevegg for bod)"
+          ],
+          "source_documents": [
+            "d055_d055"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "6cac1d8e-59f5-400e-a00b-ba03fb435d60_risk_016",
+          "description": "Megler påtar seg ikke ansvar for informasjonen i energiattesten – kjøper bærer risikoen for at energidata kan være unøyaktige",
+          "evidence": [
+            "Megler påtar seg ikke ansvar for informasjonen som fremgår av energiattesten."
+          ],
+          "source_documents": [
+            "d055_d055"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.68,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d055_009",
+          "description": "Solidarisk ansvar for fellesledninger – seksjonseier er solidarisk ansvarlig for fellesledninger med øvrige sameiere",
+          "evidence": [
+            "08.06.1964 ‑ Dokumentnr: 1790 ‑ Best. om vann/kloakkledn. Bestemmelse om solidarisk ansvar for fellesledninger"
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            19
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d055_014",
+          "description": "Adkomstrett tinglyst til fordel for Lørenskog Kommune – kommunen har tinglyst adkomstrett på eiendommen som ikke kan slettes uten kommunens samtykke",
+          "evidence": [
+            "20.09.2024 ‑ Dokumentnr: 1979147 ‑ Bestemmelse om adkomstrett. Rettighet hefter i: Knr:3222 Gnr:107 Bnr:1. Kan ikke slettes uten samtykke fra: Lørenskog Kommune."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            20
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d055_016",
+          "description": "Sameiernes solidaransvar overfor sameiets kreditorer – seksjonseier kan bli holdt ansvarlig for sameiets gjeld i henhold til sin sameiebrøk",
+          "evidence": [
+            "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            20
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d055_019",
+          "description": "TV/internett/bredbånd medfølger ikke – kjøper må tegne eget abonnement og påregne løpende kostnader",
+          "evidence": [
+            "TV/Internett/Bredbånd: Kjøper må tegne eget abonnement."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            16
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d055_021",
+          "description": "Tomteareal er kun ca. 250 kvm per tomt – begrenset uteareale for en enebolig til kr 9,3 millioner",
+          "evidence": [
+            "Eiendommen har egen hage, og tomtene er under seksjonering, med et tomteareal på ca. 250 kvm per tomt."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            5
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d055_022",
+          "description": "Energisimulering er utført i juli 2024 og gjelder for hus E og G – det er usikkert om simuleringen er fullt representativ for den aktuelle seksjonen (Marcus Thranes vei 38)",
+          "evidence": [
+            "Inndatafil: C:\\...\\Marcus Thranes vei 38 E+F Hus E, G - 04.07.2024.smi",
+            "Prosjekt: Marcus Thranes vei 38 E+F hus E, G",
+            "Tid/dato simulering: 06:29 4/7-2024"
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            24,
+            25
+          ],
+          "details": {
+            "confidence": 0.65
+          }
+        },
+        {
+          "risk_id": "gt_d055_023",
+          "description": "Reguleringsplan tillater blokkbebyggelse i nærområdet – fremtidig utbygging kan påvirke utsikt, sol og bomiljø",
+          "evidence": [
+            "Eiendommen er regulert til småhus og blokkbebyggelse mm.",
+            "22-4-10 Boligområde (blokker): Området skal benyttes til blokkbebyggelse i inntil 4 etasjer."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            19,
+            31
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d055_024",
+          "description": "Kommunale avgifter er ikke oppgitt med konkrete beløp – kjøper kan ikke forutse de løpende kommunale kostnadene",
+          "evidence": [
+            "Kommunale avgifter: Informasjon: Kommunale avgifter avhenger av kommunens satser og eget forbruk til enhver tid."
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            16
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d055_025",
+          "description": "Dokumentavgift beregnes kun av tomteverdi (ikke total kjøpesum) – dette er positivt for kjøper, men tomteverdien er ikke eksplisitt oppgitt, noe som kan skape usikkerhet om korrekt beregning",
+          "evidence": [
+            "20 000 (Dokumentavgift (2,5% av tomteverdi))"
+          ],
+          "source_documents": [
+            "d055.pdf"
+          ],
+          "source_pages": [
+            16
+          ],
+          "details": {
+            "confidence": 0.65
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "6cac1d8e-59f5-400e-a00b-ba03fb435d60_risk_011",
+            "description": "Skillevegg for bod i garasje er ikke etablert ved befaring – det er usikkert om denne vil bli ferdigstilt som forutsatt",
+            "evidence": [
+              "17.3 m² Terrasse (ved befaring er det ikke etablert skillevegg for bod)"
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Dokumentet nevner at skillevegg for bod ikke er etablert ved befaring, men dette gjelder terrassen (TBA-areal), ikke garasjen. Sitatet lyder: '17.3 m² Terrasse (ved befaring er det ikke etablert skillevegg for bod)'. Risikobeskrivelsen sier 'bod i garasje', men dokumentet knytter den manglende skilleveggen til terrassen/TBA-arealet, ikke til garasjen. Risikoen er delvis feilbeskrevet, men det er likevel reelt at en skillevegg for bod ikke var etablert ved befaring – bare at plasseringen er feil angitt i risikobeskrivelsen. Selve observasjonen om manglende skillevegg støttes av dokumentet, men koblingen til 'garasje' er ikke korrekt. Siden risikobeskrivelsen eksplisitt sier 'garasje' mens dokumentet sier 'terrasse', er risikoen som beskrevet ikke støttet av dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "6cac1d8e-59f5-400e-a00b-ba03fb435d60_risk_016",
+            "description": "Megler påtar seg ikke ansvar for informasjonen i energiattesten – kjøper bærer risikoen for at energidata kan være unøyaktige",
+            "evidence": [
+              "Megler påtar seg ikke ansvar for informasjonen som fremgår av energiattesten."
+            ],
+            "source_documents": [
+              "d055_d055"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.68,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder følgende setning under energimerke-seksjonen: 'Megler påtar seg ikke ansvar for informasjonen som fremgår av energiattesten.' Dette bekrefter direkte at megler fraskriver seg ansvar for energidata, og at kjøper dermed bærer risikoen for at informasjonen i energiattesten kan være unøyaktig. Risikoen er klart støttet av dokumentteksten."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 0.9411764705882353,
+        "recall": 0.64,
+        "f1": 0.7619047619047621,
+        "total_support": 25
+      }
+    },
+    "ground_truth": {
+      "run_id": "dc319b86-f976-4a82-83a0-f00fbfdb2274_gt",
+      "system_type": "ground_truth",
+      "overall_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "total_support": 25
+      },
+      "matched_risks": 25,
+      "unmatched_predicted": 0,
+      "unmatched_ground_truth": 0,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_001",
+            "description": "Boligen er under oppføring og ikke ferdigstilt – risiko for forsinkelse i innflytting",
+            "evidence": [
+              "Innflyttingsklar 01.03.2026.",
+              "Byggeår: 2026",
+              "Prosjektet planlegges og oppføres i samsvar med nødvendige offentlige tillatelser og gjeldende tekniske forskrifter."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              5,
+              17
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_001",
+            "description": "Boligen er under oppføring og ikke ferdigstilt – risiko for forsinkelse i innflytting",
+            "evidence": [
+              "Innflyttingsklar 01.03.2026.",
+              "Byggeår: 2026",
+              "Prosjektet planlegges og oppføres i samsvar med nødvendige offentlige tillatelser og gjeldende tekniske forskrifter."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              5,
+              17
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_002",
+            "description": "Ferdigattest foreligger ikke ved overtakelse – overtakelse kan skje på grunnlag av midlertidig brukstillatelse",
+            "evidence": [
+              "Dersom ferdigattest ikke foreligger på overtakelsestidspunktet, vil overtakelse skje på grunnlag av midlertidig brukstillatelse.",
+              "Kjøper er kjent med at ferdigattest som regel utstedes en tid etter at boligen er overtatt."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              17
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_002",
+            "description": "Ferdigattest foreligger ikke ved overtakelse – overtakelse kan skje på grunnlag av midlertidig brukstillatelse",
+            "evidence": [
+              "Dersom ferdigattest ikke foreligger på overtakelsestidspunktet, vil overtakelse skje på grunnlag av midlertidig brukstillatelse.",
+              "Kjøper er kjent med at ferdigattest som regel utstedes en tid etter at boligen er overtatt."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              17
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_003",
+            "description": "Eiendommen er under seksjonering – seksjoneringsbegjæringen er ikke fullført, noe som kan medføre forsinkelser eller komplikasjoner ved eiendomsoverdragelse",
+            "evidence": [
+              "Eiendommen er under seksjonering.",
+              "Kontorforretning, seksjonering sak:25/6783. Eiendom (gbnr): 107/111",
+              "Tomtene er under seksjonering, med et tomteareal på ca. 250 kvm per tomt."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              4,
+              17,
+              28
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_003",
+            "description": "Eiendommen er under seksjonering – seksjoneringsbegjæringen er ikke fullført, noe som kan medføre forsinkelser eller komplikasjoner ved eiendomsoverdragelse",
+            "evidence": [
+              "Eiendommen er under seksjonering.",
+              "Kontorforretning, seksjonering sak:25/6783. Eiendom (gbnr): 107/111",
+              "Tomtene er under seksjonering, med et tomteareal på ca. 250 kvm per tomt."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              4,
+              17,
+              28
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_004",
+            "description": "Energimerke B med rød energifarge – høyt energiforbruk til oppvarming, noe som kan medføre høye strømkostnader",
+            "evidence": [
+              "Energikarakter: B, Energifarge: Rød",
+              "Sum andel el/olje/gass av netto oppvarmingsbehov: 86.9 %",
+              "Beregnet levert energi normalisert klima: 105.76 kWh/m²",
+              "Elektrisitet 11332 kWh, Total energibruk 12998 kWh"
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              4,
+              17,
+              24
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_004",
+            "description": "Energimerke B med rød energifarge – høyt energiforbruk til oppvarming, noe som kan medføre høye strømkostnader",
+            "evidence": [
+              "Energikarakter: B, Energifarge: Rød",
+              "Sum andel el/olje/gass av netto oppvarmingsbehov: 86.9 %",
+              "Beregnet levert energi normalisert klima: 105.76 kWh/m²",
+              "Elektrisitet 11332 kWh, Total energibruk 12998 kWh"
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              4,
+              17,
+              24
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_005",
+            "description": "Ingen radonmåling er utført – risiko for radoneksponering er ukjent",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_005",
+            "description": "Ingen radonmåling er utført – risiko for radoneksponering er ukjent",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_006",
+            "description": "Formuesverdi er ikke beregnet – kjøper kan ikke forutse fremtidig formuesskatt og eiendomsskatt nøyaktig",
+            "evidence": [
+              "Info om formuesverdi: Formuesverdien er ikke beregnet.",
+              "Skatteetaten vil beregne en boligverdi basert på SSBs statistiske opplysninger om omsatte boliger."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_006",
+            "description": "Formuesverdi er ikke beregnet – kjøper kan ikke forutse fremtidig formuesskatt og eiendomsskatt nøyaktig",
+            "evidence": [
+              "Info om formuesverdi: Formuesverdien er ikke beregnet.",
+              "Skatteetaten vil beregne en boligverdi basert på SSBs statistiske opplysninger om omsatte boliger."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_007",
+            "description": "Eiendomsskatt – løpende kostnad som kjøper må påregne",
+            "evidence": [
+              "I Lørenskog kommune er det eiendomsskatt på boliger og fast eiendom som overstiger en fastsatt verdi. Ved en markedsverdi på 9 300 000 er det estimert ca. 6 410,‑ i året i eiendomsskatt."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_007",
+            "description": "Eiendomsskatt – løpende kostnad som kjøper må påregne",
+            "evidence": [
+              "I Lørenskog kommune er det eiendomsskatt på boliger og fast eiendom som overstiger en fastsatt verdi. Ved en markedsverdi på 9 300 000 er det estimert ca. 6 410,‑ i året i eiendomsskatt."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_008",
+            "description": "Legalpant – kommunen og øvrige seksjonseiere har legalpant i eierseksjonen som ikke fremgår av grunnboken, og som har prioritet foran tinglyste banklån",
+            "evidence": [
+              "Legalpant: Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter og eventuell eiendomsskatt.",
+              "De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader.",
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_008",
+            "description": "Legalpant – kommunen og øvrige seksjonseiere har legalpant i eierseksjonen som ikke fremgår av grunnboken, og som har prioritet foran tinglyste banklån",
+            "evidence": [
+              "Legalpant: Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter og eventuell eiendomsskatt.",
+              "De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader.",
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_009",
+            "description": "Solidarisk ansvar for fellesledninger – seksjonseier er solidarisk ansvarlig for fellesledninger med øvrige sameiere",
+            "evidence": [
+              "08.06.1964 ‑ Dokumentnr: 1790 ‑ Best. om vann/kloakkledn. Bestemmelse om solidarisk ansvar for fellesledninger"
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_009",
+            "description": "Solidarisk ansvar for fellesledninger – seksjonseier er solidarisk ansvarlig for fellesledninger med øvrige sameiere",
+            "evidence": [
+              "08.06.1964 ‑ Dokumentnr: 1790 ‑ Best. om vann/kloakkledn. Bestemmelse om solidarisk ansvar for fellesledninger"
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_010",
+            "description": "Stikkledninger er private – vedlikeholdsansvaret for stikkledninger fra eiendommen til det kommunale nettet påhviler sameiet",
+            "evidence": [
+              "Stikkledningene fra eiendommen og ut til det kommunale nettet er private, og vedlikeholdsansvaret for disse påhviler sameiet."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_010",
+            "description": "Stikkledninger er private – vedlikeholdsansvaret for stikkledninger fra eiendommen til det kommunale nettet påhviler sameiet",
+            "evidence": [
+              "Stikkledningene fra eiendommen og ut til det kommunale nettet er private, og vedlikeholdsansvaret for disse påhviler sameiet."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_011",
+            "description": "Felles vei – vedlikehold av adkomstveien påhviler sameierne i fellesskap, noe som kan medføre uforutsette kostnader",
+            "evidence": [
+              "Adkomst til eiendommen skjer via sameiets felles vei. Vedlikehold av veien påhviler sameierne i felleskap."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_011",
+            "description": "Felles vei – vedlikehold av adkomstveien påhviler sameierne i fellesskap, noe som kan medføre uforutsette kostnader",
+            "evidence": [
+              "Adkomst til eiendommen skjer via sameiets felles vei. Vedlikehold av veien påhviler sameierne i felleskap."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_012",
+            "description": "Bestemmelse om å rive/fjerne bygg når bygningsrådet forlanger det – tinglyst heftelse som gir myndighetene rett til å kreve riving",
+            "evidence": [
+              "24.06.1970 ‑ Dokumentnr: 3106 ‑ Best om garasje/parkering. Bestemmelse om å rive/fjerne bygg når bygningsrådet forlanger det."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_012",
+            "description": "Bestemmelse om å rive/fjerne bygg når bygningsrådet forlanger det – tinglyst heftelse som gir myndighetene rett til å kreve riving",
+            "evidence": [
+              "24.06.1970 ‑ Dokumentnr: 3106 ‑ Best om garasje/parkering. Bestemmelse om å rive/fjerne bygg når bygningsrådet forlanger det."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_013",
+            "description": "Bestemmelse om frostsikkert fundament på garasje – tinglyst krav som kan medføre kostnader ved fremtidige arbeider",
+            "evidence": [
+              "28.04.1981 ‑ Dokumentnr: 2720 ‑ Erklæring/avtale. Bestemmelse om frostsikkert fundament på garasje."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_013",
+            "description": "Bestemmelse om frostsikkert fundament på garasje – tinglyst krav som kan medføre kostnader ved fremtidige arbeider",
+            "evidence": [
+              "28.04.1981 ‑ Dokumentnr: 2720 ‑ Erklæring/avtale. Bestemmelse om frostsikkert fundament på garasje."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_014",
+            "description": "Adkomstrett tinglyst til fordel for Lørenskog Kommune – kommunen har tinglyst adkomstrett på eiendommen som ikke kan slettes uten kommunens samtykke",
+            "evidence": [
+              "20.09.2024 ‑ Dokumentnr: 1979147 ‑ Bestemmelse om adkomstrett. Rettighet hefter i: Knr:3222 Gnr:107 Bnr:1. Kan ikke slettes uten samtykke fra: Lørenskog Kommune."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_014",
+            "description": "Adkomstrett tinglyst til fordel for Lørenskog Kommune – kommunen har tinglyst adkomstrett på eiendommen som ikke kan slettes uten kommunens samtykke",
+            "evidence": [
+              "20.09.2024 ‑ Dokumentnr: 1979147 ‑ Bestemmelse om adkomstrett. Rettighet hefter i: Knr:3222 Gnr:107 Bnr:1. Kan ikke slettes uten samtykke fra: Lørenskog Kommune."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_015",
+            "description": "Eierskap begrenset til maks to seksjoner per person i sameiet – begrenser fremtidig kjøp og investering i sameiet",
+            "evidence": [
+              "Det informeres om at ingen kan eie mer enn to boligseksjoner i sameiet, i henhold til eierseksjonsloven § 23. Seksjoner som eies av nærstående eller gjennom et firma regnes også med."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_015",
+            "description": "Eierskap begrenset til maks to seksjoner per person i sameiet – begrenser fremtidig kjøp og investering i sameiet",
+            "evidence": [
+              "Det informeres om at ingen kan eie mer enn to boligseksjoner i sameiet, i henhold til eierseksjonsloven § 23. Seksjoner som eies av nærstående eller gjennom et firma regnes også med."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_016",
+            "description": "Sameiernes solidaransvar overfor sameiets kreditorer – seksjonseier kan bli holdt ansvarlig for sameiets gjeld i henhold til sin sameiebrøk",
+            "evidence": [
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_016",
+            "description": "Sameiernes solidaransvar overfor sameiets kreditorer – seksjonseier kan bli holdt ansvarlig for sameiets gjeld i henhold til sin sameiebrøk",
+            "evidence": [
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_017",
+            "description": "Bilder i prospektet er fra tilsvarende visningsbolig – den faktiske boligen kan avvike fra det som vises i markedsføringen",
+            "evidence": [
+              "Samtlige bilder i prospektet er fra tilsvarende visningsbolig."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              6
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_017",
+            "description": "Bilder i prospektet er fra tilsvarende visningsbolig – den faktiske boligen kan avvike fra det som vises i markedsføringen",
+            "evidence": [
+              "Samtlige bilder i prospektet er fra tilsvarende visningsbolig."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              6
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_018",
+            "description": "Ingen mulighet for tilvalg – kjøper kan ikke tilpasse boligen etter egne ønsker",
+            "evidence": [
+              "Det er ikke muligheter for tilvalg."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_018",
+            "description": "Ingen mulighet for tilvalg – kjøper kan ikke tilpasse boligen etter egne ønsker",
+            "evidence": [
+              "Det er ikke muligheter for tilvalg."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_019",
+            "description": "TV/internett/bredbånd medfølger ikke – kjøper må tegne eget abonnement og påregne løpende kostnader",
+            "evidence": [
+              "TV/Internett/Bredbånd: Kjøper må tegne eget abonnement."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_019",
+            "description": "TV/internett/bredbånd medfølger ikke – kjøper må tegne eget abonnement og påregne løpende kostnader",
+            "evidence": [
+              "TV/Internett/Bredbånd: Kjøper må tegne eget abonnement."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_020",
+            "description": "Bustadoppføringslova regulerer kjøpet – kjøper er forbruker og kjøper bolig under oppføring, noe som innebærer særskilte rettigheter og plikter, men også risiko knyttet til utbyggers økonomi og garantistillelse",
+            "evidence": [
+              "Når en privatperson inngår avtale med en utbygger om oppføring av ny bolig, vil dette normalt omfattes av reglene i bustadoppføringslova.",
+              "Dette regelverket sikrer blant annet at kjøperen får garanti for at selgeren oppfyller sine forpliktelser, jf. bustadoppføringslova § 12."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_020",
+            "description": "Bustadoppføringslova regulerer kjøpet – kjøper er forbruker og kjøper bolig under oppføring, noe som innebærer særskilte rettigheter og plikter, men også risiko knyttet til utbyggers økonomi og garantistillelse",
+            "evidence": [
+              "Når en privatperson inngår avtale med en utbygger om oppføring av ny bolig, vil dette normalt omfattes av reglene i bustadoppføringslova.",
+              "Dette regelverket sikrer blant annet at kjøperen får garanti for at selgeren oppfyller sine forpliktelser, jf. bustadoppføringslova § 12."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_021",
+            "description": "Tomteareal er kun ca. 250 kvm per tomt – begrenset uteareale for en enebolig til kr 9,3 millioner",
+            "evidence": [
+              "Eiendommen har egen hage, og tomtene er under seksjonering, med et tomteareal på ca. 250 kvm per tomt."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              5
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_021",
+            "description": "Tomteareal er kun ca. 250 kvm per tomt – begrenset uteareale for en enebolig til kr 9,3 millioner",
+            "evidence": [
+              "Eiendommen har egen hage, og tomtene er under seksjonering, med et tomteareal på ca. 250 kvm per tomt."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              5
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_022",
+            "description": "Energisimulering er utført i juli 2024 og gjelder for hus E og G – det er usikkert om simuleringen er fullt representativ for den aktuelle seksjonen (Marcus Thranes vei 38)",
+            "evidence": [
+              "Inndatafil: C:\\...\\Marcus Thranes vei 38 E+F Hus E, G - 04.07.2024.smi",
+              "Prosjekt: Marcus Thranes vei 38 E+F hus E, G",
+              "Tid/dato simulering: 06:29 4/7-2024"
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              24,
+              25
+            ],
+            "confidence": 0.65,
+            "details": {
+              "confidence": 0.65
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_022",
+            "description": "Energisimulering er utført i juli 2024 og gjelder for hus E og G – det er usikkert om simuleringen er fullt representativ for den aktuelle seksjonen (Marcus Thranes vei 38)",
+            "evidence": [
+              "Inndatafil: C:\\...\\Marcus Thranes vei 38 E+F Hus E, G - 04.07.2024.smi",
+              "Prosjekt: Marcus Thranes vei 38 E+F hus E, G",
+              "Tid/dato simulering: 06:29 4/7-2024"
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              24,
+              25
+            ],
+            "details": {
+              "confidence": 0.65
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_023",
+            "description": "Reguleringsplan tillater blokkbebyggelse i nærområdet – fremtidig utbygging kan påvirke utsikt, sol og bomiljø",
+            "evidence": [
+              "Eiendommen er regulert til småhus og blokkbebyggelse mm.",
+              "22-4-10 Boligområde (blokker): Området skal benyttes til blokkbebyggelse i inntil 4 etasjer."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              19,
+              31
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_023",
+            "description": "Reguleringsplan tillater blokkbebyggelse i nærområdet – fremtidig utbygging kan påvirke utsikt, sol og bomiljø",
+            "evidence": [
+              "Eiendommen er regulert til småhus og blokkbebyggelse mm.",
+              "22-4-10 Boligområde (blokker): Området skal benyttes til blokkbebyggelse i inntil 4 etasjer."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              19,
+              31
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_024",
+            "description": "Kommunale avgifter er ikke oppgitt med konkrete beløp – kjøper kan ikke forutse de løpende kommunale kostnadene",
+            "evidence": [
+              "Kommunale avgifter: Informasjon: Kommunale avgifter avhenger av kommunens satser og eget forbruk til enhver tid."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_024",
+            "description": "Kommunale avgifter er ikke oppgitt med konkrete beløp – kjøper kan ikke forutse de løpende kommunale kostnadene",
+            "evidence": [
+              "Kommunale avgifter: Informasjon: Kommunale avgifter avhenger av kommunens satser og eget forbruk til enhver tid."
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d055_025",
+            "description": "Dokumentavgift beregnes kun av tomteverdi (ikke total kjøpesum) – dette er positivt for kjøper, men tomteverdien er ikke eksplisitt oppgitt, noe som kan skape usikkerhet om korrekt beregning",
+            "evidence": [
+              "20 000 (Dokumentavgift (2,5% av tomteverdi))"
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "confidence": 0.65,
+            "details": {
+              "confidence": 0.65
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d055_025",
+            "description": "Dokumentavgift beregnes kun av tomteverdi (ikke total kjøpesum) – dette er positivt for kjøper, men tomteverdien er ikke eksplisitt oppgitt, noe som kan skape usikkerhet om korrekt beregning",
+            "evidence": [
+              "20 000 (Dokumentavgift (2,5% av tomteverdi))"
+            ],
+            "source_documents": [
+              "d055.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "details": {
+              "confidence": 0.65
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [],
+      "unmatched_ground_truth_risks": [],
+      "verified_unmatched": [],
+      "adjusted_metrics": null
+    }
+  },
+  "best_system": "ground_truth",
+  "statistical_tests": {
+    "standard_rag_vs_agentic_rag_P+T+R": 1.0,
+    "standard_rag_vs_ground_truth": 1.0,
+    "agentic_rag_P+T+R_vs_ground_truth": 1.0
+  },
+  "record_id": "a13146f2-714e-43c8-a905-a2a8ead84c83",
+  "query": "Identifiser risikoer i salgsoppgaven",
+  "document_set_id": "d055",
+  "timestamp": "2026-03-24T14:00:00.696197",
+  "risk_summaries": [
+    {
+      "system_type": "standard_rag",
+      "total_risks": 10,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "agentic_rag_P+T+R",
+      "total_risks": 17,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "ground_truth",
+      "total_risks": 25,
+      "risks_by_category": {}
+    }
+  ],
+  "has_ground_truth": true,
+  "overlapping_risk_count": 21,
+  "unique_to": {
+    "standard_rag": 3,
+    "agentic_rag_P+T+R": 0,
+    "ground_truth": 7
+  },
+  "record_type": "comparison"
+}

@@ -1,0 +1,2427 @@
+{
+  "system_results": {
+    "standard_rag": {
+      "run_id": "801751ce-bb8c-4177-9a91-de361df3cebf",
+      "system_type": "standard_rag",
+      "overall_metrics": {
+        "precision": 0.6666666666666666,
+        "recall": 0.38095238095238093,
+        "f1": 0.4848484848484849,
+        "total_support": 21
+      },
+      "matched_risks": 8,
+      "unmatched_predicted": 4,
+      "unmatched_ground_truth": 13,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "801751ce-bb8c-4177-9a91-de361df3cebf_risk_000",
+            "description": "Forkjøpsrett kan forsinke eller avlyse salget: OBOS har 20 dager (modell 2) eller 5 hverdager (modell 1) til å gjøre forkjøpsretten gjeldende. Dersom forkjøpsretten benyttes, kan opprinnelig kjøper miste boligen.",
+            "evidence": [
+              "OBOS har i henhold til lov om borettslag, §4-15, 20 dager til å gjøre forkjøpsrett gjeldende.",
+              "Fristen reduseres til 5 hverdager dersom OBOS har mottatt et forhåndsvarsel mer enn 15 dager før melding om salg/akseptert bud er mottatt.",
+              "Salg av OBOS-tilknyttet bolig utløser som regel forkjøpsrett.",
+              "Aksepten må inneholde forbehold om avklaring av forkjøpsretten."
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_004",
+            "description": "Forkjøpsrett for OBOS-medlemmer kan forsinke eller avbryte kjøpsprosessen. Kjøper har ikke rett til å ta boligen i bruk før forkjøpsretten er avklart og styregodkjenning foreligger. Avklaringsprosessen kan ta opptil 20 virkedager.",
+            "evidence": [
+              "Forkjøpsrett: Ja",
+              "OBOS har i henhold til lov om borettslag, §4-15, 20 dager til å gjøre forkjøpsrett gjeldende.",
+              "Kjøper har ikke rett til å ta boligen i bruk før søknaden er godkjent, ref. Lov om brl § 4-5.",
+              "Overtakelse bes lagt til etter at eventuell forkjøpsrett er avklart og styregodkjenning foreligger."
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              39,
+              40,
+              41
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "801751ce-bb8c-4177-9a91-de361df3cebf_risk_008",
+            "description": "Risiko for manglende styregodkjenning av ny andelseier: Styret i borettslaget kan nekte å godkjenne kjøper som ny andelseier, noe som kan medføre at salget ikke kan gjennomføres.",
+            "evidence": [
+              "Megler er ansvarlig for å sende søknad til styret i borettslaget om godkjenning av ny andelseier.",
+              "Dersom borettslaget ikke finner å kunne godkjenne kjøperen som ny andelseier, må dette formidles til de berørte parter."
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_005",
+            "description": "Styregodkjenning kreves ved kjøp av andelen. Styret kan nekte godkjenning dersom det foreligger saklig grunn. Kjøper kan ikke ta boligen i bruk før godkjenning er gitt, noe som skaper usikkerhet i kjøpsprosessen.",
+            "evidence": [
+              "Styregodkjenning: Ja",
+              "Ved et hvert eierskifte må erververen godkjennes av styret for å få rett til å bruke boligen.",
+              "Styret kan nekte godkjenning når det er saklig grunn til det",
+              "Kjøper har ikke rett til å ta boligen i bruk før søknaden er godkjent"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              29,
+              39
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "801751ce-bb8c-4177-9a91-de361df3cebf_risk_002",
+            "description": "Risiko for ekstra kostnader ved forhåndsvarsling av forkjøpsrett: Forhåndsvarsling koster kr 8 406,- per gang. Ved flere forhåndsvarsler refunderes kun det siste gebyret dersom forkjøpsretten benyttes, og tidligere gebyrer må betales.",
+            "evidence": [
+              "Pris for forhåndsvarsling av forkjøpsretten er pt. 8406,-, men refunderes, dersom forkjøpsrett benyttes.",
+              "Hvis den forhåndsvarsles flere ganger er det gebyret for det siste forhåndsvarselet som faller bort, dersom det benyttes forkjøp, mens tidligere gebyr må betales."
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_007",
+            "description": "Betydelige gebyrer ved eierskifte. Eierskiftegebyr er kr 6 725, gebyr for forhåndsvarsel av forkjøpsrett er kr 8 406, og gebyr for å benytte forkjøpsrett er kr 8 406. Dette er kostnader som kan påløpe i tillegg til kjøpesummen.",
+            "evidence": [
+              "Eierskiftegebyr kr 6.725,–",
+              "Gebyr for å forhåndsvarsle forkjøpsrett kr 8.406,–",
+              "Gebyr for å benytte forkjøpsrett Kr 8406,- Kjøper (som benytter forkjøp)"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              39,
+              42
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "801751ce-bb8c-4177-9a91-de361df3cebf_risk_003",
+            "description": "Risiko for restanse/krav mot selger ved regulering av kapitalkostnader: Selv om felleskostnadene betales ut overtakelsesmåneden, kan det påløpe restanse eller krav mot selger som følge av regulering av kapitalkostnader for tidligere perioder.",
+            "evidence": [
+              "Ved salg vil eventuelle krav som skyldes regulering av kapitalkostnader for tidligere periode, følge selger. Det kan derfor påløpe restanse/krav for selger, selv om felleskostnadene betales ut overtagelsesmåneden."
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_016",
+            "description": "IN-ordning (individuell nedbetaling av fellesgjeld) medfører at kapitalkostnader endres ved renteendring, og endringen kommer som tillegg eller fratrekk på fakturaen påfølgende måneder. Ved salg kan det påløpe restanse/krav for selger selv om felleskostnadene er betalt ut overtakelsesmåneden.",
+            "evidence": [
+              "Kapitalkostnader endres ved renteendring og endringen kommer da som tillegg evt fratrekk på fakturaen påfølgende måneder.",
+              "Ved salg vil eventuelle krav som skyldes regulering av kapitalkostnader for tidligere periode, følge selger. Det kan derfor påløpe restanse/krav for selger, selv om felleskostnadene betales ut overtagelsesmåneden."
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              37
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "801751ce-bb8c-4177-9a91-de361df3cebf_risk_009",
+            "description": "Risiko knyttet til ras, skred og kvikkleireskred i området: Kommuneplanen stiller krav til reguleringsplan i faresoner for ras, skred og kvikkleireskred (H310), noe som indikerer at det kan være slike faresoner i nærheten av eiendommen.",
+            "evidence": [
+              "§ 4.1 Fare for ras og skred: Det er krav til reguleringsplan i faresonene for ras, skred og kvikkleireskred (H310). Tiltak i..."
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_012",
+            "description": "Kommuneplanens arealdel for Hå kommune (vedtatt 2024) inneholder faresoner for ras/skred (H310), flom og stormflo (H320) samt brann- og eksplosjonsfare (H350). Det er ikke avklart i dokumentene om eiendommen ligger innenfor noen av disse faresonene, noe som bør undersøkes nærmere.",
+            "evidence": [
+              "Sone H310_ras1 er basert på NVE sine aktsemdsoner for kvikkleireskred og marin leire.",
+              "Sone H320_flom1 er basert på NVE sine aktsemdssoner.",
+              "Sone H320_stormflo ligg under kote 3,0 kan vera utsett for stormflo.",
+              "Flomfare (tegnforklaring i kommuneplanskart)"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              99,
+              100,
+              110
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "801751ce-bb8c-4177-9a91-de361df3cebf_risk_011",
+            "description": "Risiko for manglende eller ufullstendig informasjon i salgsoppgaven: Flere sider i salgsoppgaven er uten ekstrahert tekst, noe som kan bety at viktig informasjon ikke er tilgjengelig for kjøper i den digitale versjonen.",
+            "evidence": [
+              "Side 3 til og med Side 10: (Ingen tekst ekstrahert)",
+              "For å se hele salgsoppgaven klikk på lenken under. Link til salgsoppgave"
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_019",
+            "description": "Salgsoppgaven er digital og inneholder lenke til full salgsoppgave som ikke er vedlagt i dokumentene. Viktig informasjon som tilstandsrapport, prisantydning, arealbeskrivelse og selgers egenerklæring kan mangle i det fremlagte materialet, noe som gir et ufullstendig beslutningsgrunnlag.",
+            "evidence": [
+              "For å se hele salgsoppgaven klikk på lenken under.",
+              "Link til salgsoppgave",
+              "DIGITAL SALGSOPPGAVE"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              1,
+              2
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "801751ce-bb8c-4177-9a91-de361df3cebf_risk_005",
+            "description": "Risiko knyttet til fellesgjeld og renteendringer: Felleskostnadene kan endres ved renteendring, og endringen kommer som tillegg eller fratrekk på fakturaen i påfølgende måneder. Dette gir usikkerhet rundt fremtidige boutgifter.",
+            "evidence": [
+              "Kostnadene endres ved renteendring og endringen kommer da som tillegg evt fratrekk på fakturaen påfølgende måneder."
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.87,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_001",
+            "description": "Høy andel fellesgjeld med flytende rente og kort innfrielsesdato. Andel fellesgjeld er kr 265 678,53 med flytende rente på 4,04% og innfrielsesdato 30.11.2030. Flytende rente medfører risiko for økte kapitalkostnader ved renteoppgang.",
+            "evidence": [
+              "Restsaldo: 265 678,53",
+              "Rentesats: 4,04%",
+              "Type rente: Flytende rente",
+              "Innfrielsesdato: 30.11.2030",
+              "Kapitalkostnader: 3 990,46"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              37,
+              38
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "801751ce-bb8c-4177-9a91-de361df3cebf_risk_010",
+            "description": "Risiko knyttet til overvannshåndtering og bekkekapasitet: Kommuneplanen stiller krav til utredning av rensing av overvann og vassdragets kapasitet og sårbarhet, noe som kan påvirke fremtidig utbygging og bruk av området.",
+            "evidence": [
+              "Krav til reinsing av overvatnet og vassdraget sin kapasitet og sårbarheit greiast ut i reguleringsplan.",
+              "Ved vurdering av nye utbyggingsprosjekt med lukka bekkeløp, skal kommunen vurdera om vassdraget kan gjenåpnast og restaurerast."
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_020",
+            "description": "Kommuneplanen for Hå (vedtatt 2024) stiller krav om reguleringsplan for en rekke tiltak, og inneholder rekkefølgekrav som kan begrense utbygging i området. Blant annet er utbygging av areal med påkopling av avløp til Nærbø renseanlegg ikke tillatt før renseanlegget overholder rensekravene.",
+            "evidence": [
+              "Utbygging av areal med påkopling av avlaup til Nærbø reinseanlegg er ikkje tillate før det kan dokumenterast at reinseanlegget overheld reinsekrava.",
+              "Arbeid, tiltak og frådeling etter plan- og bygningslova § 20-1 er ikkje tillate før arealet det vedkjem inngår i ein reguleringsplan."
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              61,
+              102
+            ],
+            "details": {
+              "confidence": 0.65
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "801751ce-bb8c-4177-9a91-de361df3cebf_risk_001",
+          "description": "Risiko for ugyldig forkjøpsrettsprosess ved feil adressat: Dersom melding om forkjøpsrett sendes til feil e-postadresse i OBOS, begynner ikke fristen å løpe, noe som kan forsinke hele salgsprosessen betydelig.",
+          "evidence": [
+            "Kun dette godkjennes som rett adressat. Dersom melding sendes til annen adresse i OBOS begynner ikke fristen å løpe før meldingen er mottatt av Avdeling Forkjøp.",
+            "Melding til OBOS om å få avklart forkjøpsrett sendes til e-post forkjop@obos.no."
+          ],
+          "source_documents": [
+            "d201_d201"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.9,
+          "details": {}
+        },
+        {
+          "risk_id": "801751ce-bb8c-4177-9a91-de361df3cebf_risk_004",
+          "description": "Risiko for økte felleskostnader etter avdragsfri periode: Borettslaget har fellesgjeld med avdragsfri periode. Når denne avsluttes, vil felleskostnadene øke, noe som kan påvirke boligens verdi og kjøpers økonomi.",
+          "evidence": [
+            "Estimert endring i felleskostnader pr. md. etter avdragsfri periode forutsetter at avdrag og rentebetingelser pr. dato beholdes uendret.",
+            "Det er viktig å sette av midler i den avdragsfrie perioden, slik at man har midler til å betale avdraget ved forfall."
+          ],
+          "source_documents": [
+            "d201_d201"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.9,
+          "details": {}
+        },
+        {
+          "risk_id": "801751ce-bb8c-4177-9a91-de361df3cebf_risk_006",
+          "description": "Risiko for feil eller mangelfulle opplysninger fra forretningsfører: Opplysningene i brevet er basert på forretningsførers informasjon på avgittidspunktet, og det kan forekomme avvik mot andre dokumenter. Forretningsfører fraskriver seg erstatningsansvar med mindre det er utvist grov uaktsomhet.",
+          "evidence": [
+            "Opplysninger gitt i dette brev er basert på de opplysninger forretningsfører har på tidspunktet for avgivelsen.",
+            "Selger og megler må kontrollere de tall som framgår av dette brev mot den informasjon han selv sitter inne med, særlig tidligere ligningsoppgaver.",
+            "Forretningsfører aksepterer intet erstatningsansvar for feil i de gitte opplysninger med mindre det er utvist grov uaktsomhet."
+          ],
+          "source_documents": [
+            "d201_d201"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.85,
+          "details": {}
+        },
+        {
+          "risk_id": "801751ce-bb8c-4177-9a91-de361df3cebf_risk_007",
+          "description": "Risiko for at boligen må utlyses på nytt: Dersom det går mer enn 3 måneder fra boligen ble annonsert til salg uten at salg er gjennomført, må boligen utlyses på nytt. Dette kan medføre forsinkelser og ekstra kostnader.",
+          "evidence": [
+            "Boligen må utlyses på nytt dersom det går mer enn 3 mnd fra..."
+          ],
+          "source_documents": [
+            "d201_d201"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.82,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d201_002",
+          "description": "Nylig vedtatt økning av felleskostnader på 7,6% fra 01.01.2026. Totale månedlige felleskostnader er kr 8 230,84, noe som er en betydelig løpende kostnad for kjøper. Ytterligere økning kan ikke utelukkes.",
+          "evidence": [
+            "Styret har vedtatt økning av felleskostnader med 7,6% fra 01.01.2026",
+            "Totale felleskostnader pr. Månedlig intervall: 8 230,84,-"
+          ],
+          "source_documents": [
+            "d201.pdf"
+          ],
+          "source_pages": [
+            37
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d201_003",
+          "description": "Svært høye månedlige kapitalkostnader (renter og avdrag på fellesgjeld) på kr 5 130,85 per måned (akonto renter kr 895,34 + akonto avdrag kr 4 235,51), som utgjør over 62% av de totale felleskostnadene. Dette gir begrenset forutsigbarhet ved renteendringer.",
+          "evidence": [
+            "Lån nr: 13549837; IN lån 1 - Akonto renter 895,34",
+            "Lån nr: 13549837; IN lån 1 - Akonto avdrag 4 235,51",
+            "Felleskostnader 3 100,00",
+            "Type rente: Flytende rente"
+          ],
+          "source_documents": [
+            "d201.pdf"
+          ],
+          "source_pages": [
+            38
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d201_006",
+          "description": "Obligatorisk OBOS-medlemskap kreves for å eie boligen. Alle eiere må være OBOS-medlemmer og betale medlemskontingent. Dette er en ekstra kostnad og et krav som kan overraske kjøpere som ikke er kjent med borettslagsmodellen.",
+          "evidence": [
+            "Det kreves medlemskap i OBOS for å erverve/eie denne boligen.",
+            "Dersom det er flere enn én som skal eie boligen sammen, må alle være medlem i OBOS og betale hver sin medlemskontingent.",
+            "Innmelding i OBOS kr 500,–"
+          ],
+          "source_documents": [
+            "d201.pdf"
+          ],
+          "source_pages": [
+            39
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d201_008",
+          "description": "Energikarakteren er ikke oppgitt med bokstavkarakter i dokumentet, men beregnet vektet levert energi er 153,67 kWh/m² per år, noe som indikerer en relativt energikrevende bolig. Oppvarmet bruksareal er kun 48 m² av totalt 98 m² bruksareal, noe som kan tyde på at deler av boligen ikke er energieffektivt oppvarmet.",
+          "evidence": [
+            "Beregnet vektet levert energi i normert klima: 153,67 kWh/m²",
+            "Bruksareal: 98,0 m²",
+            "Oppvarmet bruksareal: 48,0 m²",
+            "Oppvarming: Varmepumpe, Ved"
+          ],
+          "source_documents": [
+            "d201.pdf"
+          ],
+          "source_pages": [
+            118,
+            119
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d201_009",
+          "description": "Boligen er bygget i 2005 og har 1,5 etasjer. Energiattesten viser at det ikke er oppgitt informasjon om vegger, vindu, gulv, takkonstruksjon, ytterdører, energibruk eller lekkasjetall, noe som gir begrenset innsikt i boligens tekniske tilstand og energimessige standard.",
+          "evidence": [
+            "Byggeår: 2005",
+            "Vegger: Nei",
+            "Vindu: Nei",
+            "Gulv: Nei",
+            "Takkonstruksjon: Nei",
+            "Ytterdører: Nei",
+            "Energibruk: Nei",
+            "Lekkasjetall: Nei"
+          ],
+          "source_documents": [
+            "d201.pdf"
+          ],
+          "source_pages": [
+            118,
+            119
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d201_010",
+          "description": "Panteheftelser på eiendommen (gnr. 26, bnr. 1064): Husbanken har pantedokument på NOK 10 000 000 (tinglyst 03.02.2005) og Jæren Boligbyggelag AL har pantedokument på NOK 3 125 000 (tinglyst 15.02.2005). Disse heftelsene er knyttet til borettslagets eiendom og representerer en risiko dersom borettslaget ikke betjener sine lån.",
+          "evidence": [
+            "2005/1033-1/44 03.02.2005 PANTEDOKUMENT Beløp: NOK 10 000 000 Panthaver: HUSBANKEN",
+            "2005/1365-1/44 15.02.2005 PANTEDOKUMENT Beløp: NOK 3 125 000 Panthaver: JÆREN BOLIGBYGGELAG AL"
+          ],
+          "source_documents": [
+            "d201.pdf"
+          ],
+          "source_pages": [
+            46
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d201_011",
+          "description": "Borettslagets totale lån hos Husbanken har restsaldo på kr 1 859 735,52 med innfrielsesdato 30.11.2030. Etter innfrielse må borettslaget refinansiere eller nedbetale restgjelden, noe som kan medføre økte felleskostnader for andelseierne.",
+          "evidence": [
+            "Bank: Husbanken",
+            "Restsaldo 1 859 735,52",
+            "Innfrielsesdato: 30.11.2030",
+            "Type rente: Flytende rente"
+          ],
+          "source_documents": [
+            "d201.pdf"
+          ],
+          "source_pages": [
+            37
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d201_013",
+          "description": "Reguleringsplanen for Dalabekk II (Plan 990) er opprinnelig fra 1989 med endringer i 2000, 2001 og 2022. Eldre reguleringsplaner kan inneholde utdaterte bestemmelser som kan komme i konflikt med ny kommuneplan vedtatt i 2024, noe som kan skape usikkerhet om fremtidig arealbruk og byggemuligheter.",
+          "evidence": [
+            "Godkjent av kommunestyre i møte 15. juni 1989, sak 78.",
+            "Endring A Vedtak 25. april 2000",
+            "Endring B Vedtak 23. januar 2001",
+            "Reguleringsendring etter forenklet prosess revisjon C. Delegert vedtak 23. august 2022",
+            "Kommuneplanen gjeld føre tidlegare vedtekne kommunedelplanar og reguleringsplanar, der det er vedteke andre hovudføremål for området."
+          ],
+          "source_documents": [
+            "d201.pdf"
+          ],
+          "source_pages": [
+            105,
+            60
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d201_014",
+          "description": "Borettslagets vedtekter tillater utleie av boligen under visse betingelser, men krever styrets godkjenning. Andelseier må ha bodd i boligen i minst ett av de siste to år for å leie ut hele boligen i inntil tre år. Dette begrenser fleksibiliteten for kjøper som ønsker å leie ut.",
+          "evidence": [
+            "Andelseieren kan ikke uten godkjenning fra styret overlate bruken av boligen til andre.",
+            "andelseieren selv eller en person som nevnt i borettslagslovens § 5-6 første ledd har bodd i boligen i minst ett av de siste to årene. Andelseier kan i slike tilfeller overlate bruken av hele boligen for opp til tre år"
+          ],
+          "source_documents": [
+            "d201.pdf"
+          ],
+          "source_pages": [
+            30,
+            31
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d201_015",
+          "description": "Borettslaget har lovbestemt panterett i andelen for krav på felleskostnader og andre krav, begrenset til to ganger folketrygdens grunnbeløp. Dersom selger har utestående felleskostnader, kan dette påvirke kjøper. Megler anbefales å innhente opplysninger om eventuelle restanser.",
+          "evidence": [
+            "For krav på dekning av felleskostnader og andre krav fra lagsforholdet har borettslaget en lovbestemt panterett i andelen foran alle andre heftelser.",
+            "Pantekravet er begrenset til en sum som svarer til to ganger folketrygdens grunnbeløp",
+            "Ved oppgjør bes megler ta kontakt med OBOS Innbetalingsservice per tlf. 22 86 56 25 eller e-post restanseforesporsel@obos.no for å få oppgitt eventuelle utestående felleskostnader/andre heftelser iht. boligselskapets legalpant."
+          ],
+          "source_documents": [
+            "d201.pdf"
+          ],
+          "source_pages": [
+            33,
+            38
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d201_017",
+          "description": "Oppvarmet bruksareal er kun 48 m² av totalt 98 m² bruksareal. Dette kan indikere at deler av boligen (f.eks. loftsetasje/kjeller) ikke er godkjent for varig opphold eller ikke er tilstrekkelig isolert, noe som kan begrense den reelle brukbarheten av boligen.",
+          "evidence": [
+            "Bruksareal: 98,0 m²",
+            "Oppvarmet bruksareal: 48,0 m²",
+            "Bygningstype: Enebolig",
+            "Oppvarmet etasje: 2"
+          ],
+          "source_documents": [
+            "d201.pdf"
+          ],
+          "source_pages": [
+            118
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d201_018",
+          "description": "Ferdigattesten fra 2005 er utstedt for 'NYBYGG - BOLIG M/GARASJE' og angir at boligen er i samsvar med vedtak i sak 0012/01. Boligen er nå over 20 år gammel, og det foreligger ingen dokumentasjon på vedlikehold, oppgraderinger eller tilstandsrapport i de fremlagte dokumentene.",
+          "evidence": [
+            "FERDIGATTEST etter plan- og bygningsloven (pbl) av 14. juni 1985 § 99 nr. 1",
+            "Tiltakets art: NYBYGG - BOLIG M/GARASJE",
+            "Dato: 10.01.2005",
+            "Byggeår: 2005"
+          ],
+          "source_documents": [
+            "d201.pdf"
+          ],
+          "source_pages": [
+            116,
+            118
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d201_021",
+          "description": "Borettslagets vedtekter gir styret rett til å pålegge salg av andelen ved vesentlig mislighold, og styret kan kreve fravikelse fra boligen dersom andelseierens oppførsel er til alvorlig plage for øvrige beboere. Dette er en risiko for kjøper dersom nabo- eller styreforhold er konfliktfylte.",
+          "evidence": [
+            "Hvis en andelseier til tross for advarsel vesentlig misligholder sine plikter, kan borettslaget pålegge vedkommende å selge andelen",
+            "Medfører andelseierens eller brukerens oppførsel fare for ødeleggelse eller vesentlig forringelse av eiendommen, eller er andelseierens eller brukerens oppførsel til alvorlig plage eller sjenanse for eiendommenes øvrige andelseiere eller brukere, kan styret kreve fravikelse fra boligen"
+          ],
+          "source_documents": [
+            "d201.pdf"
+          ],
+          "source_pages": [
+            33
+          ],
+          "details": {
+            "confidence": 0.6
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "801751ce-bb8c-4177-9a91-de361df3cebf_risk_001",
+            "description": "Risiko for ugyldig forkjøpsrettsprosess ved feil adressat: Dersom melding om forkjøpsrett sendes til feil e-postadresse i OBOS, begynner ikke fristen å løpe, noe som kan forsinke hele salgsprosessen betydelig.",
+            "evidence": [
+              "Kun dette godkjennes som rett adressat. Dersom melding sendes til annen adresse i OBOS begynner ikke fristen å løpe før meldingen er mottatt av Avdeling Forkjøp.",
+              "Melding til OBOS om å få avklart forkjøpsrett sendes til e-post forkjop@obos.no."
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter tydelig denne risikoen. På side 40 og 41 står det eksplisitt: 'Melding til OBOS om å få avklart forkjøpsrett sendes til e-post forkjop@obos.no. Kun dette godkjennes som rett adressat. Dersom melding sendes til annen adresse i OBOS begynner ikke fristen å løpe før meldingen er mottatt av Avdeling Forkjøp.' Dette gjelder for begge modeller (modell 1 og modell 2). Risikoen for forsinkelse ved feil adressat er dermed reell og dokumentert."
+        },
+        {
+          "risk": {
+            "risk_id": "801751ce-bb8c-4177-9a91-de361df3cebf_risk_004",
+            "description": "Risiko for økte felleskostnader etter avdragsfri periode: Borettslaget har fellesgjeld med avdragsfri periode. Når denne avsluttes, vil felleskostnadene øke, noe som kan påvirke boligens verdi og kjøpers økonomi.",
+            "evidence": [
+              "Estimert endring i felleskostnader pr. md. etter avdragsfri periode forutsetter at avdrag og rentebetingelser pr. dato beholdes uendret.",
+              "Det er viktig å sette av midler i den avdragsfrie perioden, slik at man har midler til å betale avdraget ved forfall."
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Dokumentet inneholder riktignok en generell tekst om avdragsfrihet på side 38: 'Estimert endring i felleskostnader pr. md. etter avdragsfri periode forutsetter at avdrag og rentebetingelser pr. dato beholdes uendret' og 'Det er viktig å sette av midler i den avdragsfrie perioden, slik at man har midler til å betale avdraget ved forfall.' Imidlertid fremgår det av de konkrete lånevilkårene for borettslaget (side 37-38) at lånet (Husbanken, lånenr. 13549837) er et annuitetslån med innfrielsesdato 30.11.2030 og det er ingen indikasjon på at det er en aktiv avdragsfri periode. Teksten om avdragsfrihet ser ut til å være standardtekst i megleropplysningsbrevet som gjelder generelt, ikke spesifikt for dette borettslagets lån. Det er ingen konkret dokumentasjon på at dette borettslaget faktisk har en pågående avdragsfri periode som vil avsluttes og medføre økte felleskostnader."
+        },
+        {
+          "risk": {
+            "risk_id": "801751ce-bb8c-4177-9a91-de361df3cebf_risk_006",
+            "description": "Risiko for feil eller mangelfulle opplysninger fra forretningsfører: Opplysningene i brevet er basert på forretningsførers informasjon på avgittidspunktet, og det kan forekomme avvik mot andre dokumenter. Forretningsfører fraskriver seg erstatningsansvar med mindre det er utvist grov uaktsomhet.",
+            "evidence": [
+              "Opplysninger gitt i dette brev er basert på de opplysninger forretningsfører har på tidspunktet for avgivelsen.",
+              "Selger og megler må kontrollere de tall som framgår av dette brev mot den informasjon han selv sitter inne med, særlig tidligere ligningsoppgaver.",
+              "Forretningsfører aksepterer intet erstatningsansvar for feil i de gitte opplysninger med mindre det er utvist grov uaktsomhet."
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter denne risikoen direkte på side 39: 'Opplysninger gitt i dette brev er basert på de opplysninger forretningsfører har på tidspunktet for avgivelsen. Selger og megler må kontrollere de tall som framgår av dette brev mot den informasjon han selv sitter inne med, særlig tidligere ligningsoppgaver. Dersom det oppdages avvik mellom oppgitte beløp i dette brevet og det som fremgår av andre dokumenter selger har, så må dette meldes skriftlig inn til forretningsfører i god tid før salget. Forretningsfører aksepterer intet erstatningsansvar for feil i de gitte opplysninger med mindre det er utvist grov uaktsomhet.' Alle tre bevisene i risikovurderingen er direkte sitater fra dokumentet."
+        },
+        {
+          "risk": {
+            "risk_id": "801751ce-bb8c-4177-9a91-de361df3cebf_risk_007",
+            "description": "Risiko for at boligen må utlyses på nytt: Dersom det går mer enn 3 måneder fra boligen ble annonsert til salg uten at salg er gjennomført, må boligen utlyses på nytt. Dette kan medføre forsinkelser og ekstra kostnader.",
+            "evidence": [
+              "Boligen må utlyses på nytt dersom det går mer enn 3 mnd fra..."
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter denne risikoen på side 40-41: 'Boligen må utlyses på nytt dersom det går mer enn 3 mnd fra forhåndsvarsel ble mottatt til salgsmelding blir mottatt av OBOS. Nye frister løper. Jf. brl § 4-15. Dersom boligen må utlyses på nytt, må forkjøpsberettigede medlemmer melde seg på nytt. Nytt forhåndsvarsel koster pt kr 1500,-...' Dette gjelder for modell 1 (forhåndsvarsling). Risikoen for forsinkelse og ekstra kostnader ved ny utlysning er dermed dokumentert i teksten."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 0.8888888888888888,
+        "recall": 0.38095238095238093,
+        "f1": 0.5333333333333333,
+        "total_support": 21
+      }
+    },
+    "agentic_rag_P+T+R": {
+      "run_id": "120a2cd3-15d3-4f34-98a0-fd0c4b43c119",
+      "system_type": "agentic_rag_P+T+R",
+      "overall_metrics": {
+        "precision": 0.8,
+        "recall": 0.5714285714285714,
+        "f1": 0.6666666666666666,
+        "total_support": 21
+      },
+      "matched_risks": 12,
+      "unmatched_predicted": 3,
+      "unmatched_ground_truth": 9,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "120a2cd3-15d3-4f34-98a0-fd0c4b43c119_risk_000",
+            "description": "Høy fellesgjeld og betydelige månedlige felleskostnader. Andel fellesgjeld er kr 265 678,53 og totale månedlige felleskostnader er kr 8 230,84, hvorav kapitalkostnader (renter og avdrag) utgjør kr 5 130,85. Lånet har flytende rente på 4,04% med innfrielsesdato 30.11.2030, noe som innebærer risiko for renteøkning og økte kostnader.",
+            "evidence": [
+              "Sum andel fellesgjeld (kun lån) kr 265 678,53,-, pr. dags dato.",
+              "Totale felleskostnader pr. Månedlig intervall: 8 230,84,-",
+              "Lån nr: 13549837; IN lån 1 - Akonto renter 895,34 / Akonto avdrag 4 235,51 / Felleskostnader 3 100,00",
+              "Rentesats: 4,04% / Type rente: Flytende rente / Innfrielsesdato: 30.11.2030",
+              "Styret har vedtatt økning av felleskostnader med 7,6% fra 01.01.2026"
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_001",
+            "description": "Høy andel fellesgjeld med flytende rente og kort innfrielsesdato. Andel fellesgjeld er kr 265 678,53 med flytende rente på 4,04% og innfrielsesdato 30.11.2030. Flytende rente medfører risiko for økte kapitalkostnader ved renteoppgang.",
+            "evidence": [
+              "Restsaldo: 265 678,53",
+              "Rentesats: 4,04%",
+              "Type rente: Flytende rente",
+              "Innfrielsesdato: 30.11.2030",
+              "Kapitalkostnader: 3 990,46"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              37,
+              38
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "120a2cd3-15d3-4f34-98a0-fd0c4b43c119_risk_000",
+            "description": "Høy fellesgjeld og betydelige månedlige felleskostnader. Andel fellesgjeld er kr 265 678,53 og totale månedlige felleskostnader er kr 8 230,84, hvorav kapitalkostnader (renter og avdrag) utgjør kr 5 130,85. Lånet har flytende rente på 4,04% med innfrielsesdato 30.11.2030, noe som innebærer risiko for renteøkning og økte kostnader.",
+            "evidence": [
+              "Sum andel fellesgjeld (kun lån) kr 265 678,53,-, pr. dags dato.",
+              "Totale felleskostnader pr. Månedlig intervall: 8 230,84,-",
+              "Lån nr: 13549837; IN lån 1 - Akonto renter 895,34 / Akonto avdrag 4 235,51 / Felleskostnader 3 100,00",
+              "Rentesats: 4,04% / Type rente: Flytende rente / Innfrielsesdato: 30.11.2030",
+              "Styret har vedtatt økning av felleskostnader med 7,6% fra 01.01.2026"
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_002",
+            "description": "Nylig vedtatt økning av felleskostnader på 7,6% fra 01.01.2026. Totale månedlige felleskostnader er kr 8 230,84, noe som er en betydelig løpende kostnad for kjøper. Ytterligere økning kan ikke utelukkes.",
+            "evidence": [
+              "Styret har vedtatt økning av felleskostnader med 7,6% fra 01.01.2026",
+              "Totale felleskostnader pr. Månedlig intervall: 8 230,84,-"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              37
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "120a2cd3-15d3-4f34-98a0-fd0c4b43c119_risk_000",
+            "description": "Høy fellesgjeld og betydelige månedlige felleskostnader. Andel fellesgjeld er kr 265 678,53 og totale månedlige felleskostnader er kr 8 230,84, hvorav kapitalkostnader (renter og avdrag) utgjør kr 5 130,85. Lånet har flytende rente på 4,04% med innfrielsesdato 30.11.2030, noe som innebærer risiko for renteøkning og økte kostnader.",
+            "evidence": [
+              "Sum andel fellesgjeld (kun lån) kr 265 678,53,-, pr. dags dato.",
+              "Totale felleskostnader pr. Månedlig intervall: 8 230,84,-",
+              "Lån nr: 13549837; IN lån 1 - Akonto renter 895,34 / Akonto avdrag 4 235,51 / Felleskostnader 3 100,00",
+              "Rentesats: 4,04% / Type rente: Flytende rente / Innfrielsesdato: 30.11.2030",
+              "Styret har vedtatt økning av felleskostnader med 7,6% fra 01.01.2026"
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_003",
+            "description": "Svært høye månedlige kapitalkostnader (renter og avdrag på fellesgjeld) på kr 5 130,85 per måned (akonto renter kr 895,34 + akonto avdrag kr 4 235,51), som utgjør over 62% av de totale felleskostnadene. Dette gir begrenset forutsigbarhet ved renteendringer.",
+            "evidence": [
+              "Lån nr: 13549837; IN lån 1 - Akonto renter 895,34",
+              "Lån nr: 13549837; IN lån 1 - Akonto avdrag 4 235,51",
+              "Felleskostnader 3 100,00",
+              "Type rente: Flytende rente"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              38
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "120a2cd3-15d3-4f34-98a0-fd0c4b43c119_risk_001",
+            "description": "Forkjøpsrett kan forsinke eller avbryte kjøpsprosessen. Boligen er tilknyttet OBOS og borettslaget har forkjøpsrett. OBOS har 20 dager (eller 5 hverdager ved forhåndsvarsel) til å gjøre forkjøpsretten gjeldende, noe som kan medføre usikkerhet for kjøper om handelen faktisk gjennomføres.",
+            "evidence": [
+              "Forkjøpsrett: Ja",
+              "OBOS har i henhold til lov om borettslag, §4-15, 20 dager til å gjøre forkjøpsrett gjeldende.",
+              "Aksepten må inneholde forbehold om avklaring av forkjøpsretten.",
+              "Boligen må utlyses på nytt dersom det går mer enn 3 mnd fra..."
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_004",
+            "description": "Forkjøpsrett for OBOS-medlemmer kan forsinke eller avbryte kjøpsprosessen. Kjøper har ikke rett til å ta boligen i bruk før forkjøpsretten er avklart og styregodkjenning foreligger. Avklaringsprosessen kan ta opptil 20 virkedager.",
+            "evidence": [
+              "Forkjøpsrett: Ja",
+              "OBOS har i henhold til lov om borettslag, §4-15, 20 dager til å gjøre forkjøpsrett gjeldende.",
+              "Kjøper har ikke rett til å ta boligen i bruk før søknaden er godkjent, ref. Lov om brl § 4-5.",
+              "Overtakelse bes lagt til etter at eventuell forkjøpsrett er avklart og styregodkjenning foreligger."
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              39,
+              40,
+              41
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "120a2cd3-15d3-4f34-98a0-fd0c4b43c119_risk_002",
+            "description": "Styregodkjenning kreves ved overdragelse. Ny kjøper må godkjennes av borettslagets styre, noe som kan medføre risiko for at kjøpet ikke godkjennes. Dersom styret ikke godkjenner ny andelseier, kan handelen ikke gjennomføres.",
+            "evidence": [
+              "Styregodkjenning: Ja",
+              "Dersom borettslaget ikke finner å kunne godkjenne kjøperen som ny andelseier, må dette formidles til de berørte parter",
+              "Selskapets vedtekter kan inneholde bestemmelser om styregodkjennelse ved overdragelse og/eller bruksoverlating"
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_005",
+            "description": "Styregodkjenning kreves ved kjøp av andelen. Styret kan nekte godkjenning dersom det foreligger saklig grunn. Kjøper kan ikke ta boligen i bruk før godkjenning er gitt, noe som skaper usikkerhet i kjøpsprosessen.",
+            "evidence": [
+              "Styregodkjenning: Ja",
+              "Ved et hvert eierskifte må erververen godkjennes av styret for å få rett til å bruke boligen.",
+              "Styret kan nekte godkjenning når det er saklig grunn til det",
+              "Kjøper har ikke rett til å ta boligen i bruk før søknaden er godkjent"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              29,
+              39
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "120a2cd3-15d3-4f34-98a0-fd0c4b43c119_risk_003",
+            "description": "Krav om OBOS-medlemskap for å erverve boligen. Alle kjøpere må være medlemmer i OBOS, og ved flere eiere må alle betale egen medlemskontingent. Dette kan være en hindring for potensielle kjøpere som ikke er OBOS-medlemmer.",
+            "evidence": [
+              "Det kreves medlemskap i OBOS for å erverve/eie denne boligen.",
+              "Dersom det er flere enn én som skal eie boligen sammen, må alle være medlem i OBOS og betale hver sin medlemskontingent.",
+              "Andelstegning skjer ved signering av kjøpekontrakt for personer som ikke er medlem i OBOS."
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_006",
+            "description": "Obligatorisk OBOS-medlemskap kreves for å eie boligen. Alle eiere må være OBOS-medlemmer og betale medlemskontingent. Dette er en ekstra kostnad og et krav som kan overraske kjøpere som ikke er kjent med borettslagsmodellen.",
+            "evidence": [
+              "Det kreves medlemskap i OBOS for å erverve/eie denne boligen.",
+              "Dersom det er flere enn én som skal eie boligen sammen, må alle være medlem i OBOS og betale hver sin medlemskontingent.",
+              "Innmelding i OBOS kr 500,–"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              39
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "120a2cd3-15d3-4f34-98a0-fd0c4b43c119_risk_004",
+            "description": "Lav energikarakter og høyt energiforbruk. Boligen har beregnet vektet levert energi på 153,67 kWh/m² i normert klima, og kun halvparten av bruksarealet (48 av 98 m²) er oppvarmet. Energiattesten viser ingen detaljering på bygningsform, vegger, vindu, gulv, takkonstruksjon, ytterdører, energibruk eller lekkasjetall, noe som indikerer manglende informasjon og potensielt høye energikostnader.",
+            "evidence": [
+              "Beregnet vektet levert energi i normert klima: 153,67 kWh/m²",
+              "Oppvarmet bruksareal: 48,0 m² av totalt 98,0 m²",
+              "Detaljering: Bygningsform Nei, Vegger Nei, Vindu Nei, Gulv Nei, Takkonstruksjon Nei, Ytterdører Nei, Energibruk Nei, Lekkasjetall Nei",
+              "Oppvarming: Varmepumpe, Ved"
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_008",
+            "description": "Energikarakteren er ikke oppgitt med bokstavkarakter i dokumentet, men beregnet vektet levert energi er 153,67 kWh/m² per år, noe som indikerer en relativt energikrevende bolig. Oppvarmet bruksareal er kun 48 m² av totalt 98 m² bruksareal, noe som kan tyde på at deler av boligen ikke er energieffektivt oppvarmet.",
+            "evidence": [
+              "Beregnet vektet levert energi i normert klima: 153,67 kWh/m²",
+              "Bruksareal: 98,0 m²",
+              "Oppvarmet bruksareal: 48,0 m²",
+              "Oppvarming: Varmepumpe, Ved"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              118,
+              119
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "120a2cd3-15d3-4f34-98a0-fd0c4b43c119_risk_011",
+            "description": "Energiattestens beregninger er basert på opplysninger fra boligeier og standardverdier, ikke faktiske målinger. Dette innebærer usikkerhet om det faktiske energiforbruket og kan avvike betydelig fra reelt forbruk.",
+            "evidence": [
+              "Boligdata i denne attesten er beregnet ut fra opplysninger som er gitt av boligeier. Der opplysninger ikke er oppgitt, brukes typiske standardverdier for den aktuelle bygningstypen.",
+              "Energimerket beregnes på grunnlag av oppgitte opplysninger om boligen. For informasjon som ikke er oppgitt, brukes typiske standardverdier for den aktuelle bygningstypen fra tidsperioden den ble bygd i."
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.72,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_009",
+            "description": "Boligen er bygget i 2005 og har 1,5 etasjer. Energiattesten viser at det ikke er oppgitt informasjon om vegger, vindu, gulv, takkonstruksjon, ytterdører, energibruk eller lekkasjetall, noe som gir begrenset innsikt i boligens tekniske tilstand og energimessige standard.",
+            "evidence": [
+              "Byggeår: 2005",
+              "Vegger: Nei",
+              "Vindu: Nei",
+              "Gulv: Nei",
+              "Takkonstruksjon: Nei",
+              "Ytterdører: Nei",
+              "Energibruk: Nei",
+              "Lekkasjetall: Nei"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              118,
+              119
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "120a2cd3-15d3-4f34-98a0-fd0c4b43c119_risk_005",
+            "description": "Panteheftelser på eiendommen. Det er tinglyst to pantedokumenter på eiendommen: ett til Husbanken på NOK 10 000 000 og ett til Jæren Boligbyggelag AL på NOK 3 125 000. Disse heftelsene representerer en samlet pantebyrde på over 13 millioner kroner.",
+            "evidence": [
+              "2005/1033-1/44 03.02.2005 PANTEDOKUMENT Beløp: NOK 10 000 000 Panthaver: HUSBANKEN",
+              "2005/1365-1/44 15.02.2005 PANTEDOKUMENT Beløp: NOK 3 125 000 Panthaver: JÆREN BOLIGBYGGELAG AL"
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_010",
+            "description": "Panteheftelser på eiendommen (gnr. 26, bnr. 1064): Husbanken har pantedokument på NOK 10 000 000 (tinglyst 03.02.2005) og Jæren Boligbyggelag AL har pantedokument på NOK 3 125 000 (tinglyst 15.02.2005). Disse heftelsene er knyttet til borettslagets eiendom og representerer en risiko dersom borettslaget ikke betjener sine lån.",
+            "evidence": [
+              "2005/1033-1/44 03.02.2005 PANTEDOKUMENT Beløp: NOK 10 000 000 Panthaver: HUSBANKEN",
+              "2005/1365-1/44 15.02.2005 PANTEDOKUMENT Beløp: NOK 3 125 000 Panthaver: JÆREN BOLIGBYGGELAG AL"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              46
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "120a2cd3-15d3-4f34-98a0-fd0c4b43c119_risk_007",
+            "description": "Flomfare og faresonekrav i kommuneplanen. Kommuneplanen for Hå inneholder faresoner for flom (H320) og stormflo, samt ras- og skredfare (H310). Selv om det ikke er bekreftet at eiendommen ligger innenfor disse sonene, er det registrert flomfare i kartutsnittets tegnforklaring, noe som kan indikere nærhet til fareområder.",
+            "evidence": [
+              "Grense for faresoner Flomfare (i tegnforklaring for kommuneplan)",
+              "§ 4.3 Fare for flaum- og stormflo: Det er krav om reguleringsplan i faresonene for flaum (H320).",
+              "§ 4.1 Fare for ras og skred: Det er krav til reguleringsplan i faresonene for ras, skred og kvikkleireskred (H310).",
+              "Sone H320_stormflo ligg under kote 3,0 kan vera utsett for stormflo."
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.65,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_012",
+            "description": "Kommuneplanens arealdel for Hå kommune (vedtatt 2024) inneholder faresoner for ras/skred (H310), flom og stormflo (H320) samt brann- og eksplosjonsfare (H350). Det er ikke avklart i dokumentene om eiendommen ligger innenfor noen av disse faresonene, noe som bør undersøkes nærmere.",
+            "evidence": [
+              "Sone H310_ras1 er basert på NVE sine aktsemdsoner for kvikkleireskred og marin leire.",
+              "Sone H320_flom1 er basert på NVE sine aktsemdssoner.",
+              "Sone H320_stormflo ligg under kote 3,0 kan vera utsett for stormflo.",
+              "Flomfare (tegnforklaring i kommuneplanskart)"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              99,
+              100,
+              110
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "120a2cd3-15d3-4f34-98a0-fd0c4b43c119_risk_008",
+            "description": "Reguleringsbestemmelser begrenser bruk og utbygging. Reguleringsplan for Dalabekk II (Plan 990) setter strenge krav til takform (saltak/valmet tak med tegl- eller betongtakstein, takvinkel 27-40°), BYA maks 40%, og garasje skal ha samme takform som bolighuset. Dette begrenser mulighetene for fremtidige endringer og tilbygg.",
+            "evidence": [
+              "Hus og garasje skal ha saltak eller valmet tak. Taktekkingsmateriale skal være tegl- eller betongtakstein. Takvinkelen skal ikke være mindre enn 27o og kan være inntil 40o",
+              "For tomter som har arealformål til eneboliger skal bebygd areal BYA ikke overstige 40% som også inkluderer garasje.",
+              "Garasjen skal ha samme takform som bolighuset på samme tomt."
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_013",
+            "description": "Reguleringsplanen for Dalabekk II (Plan 990) er opprinnelig fra 1989 med endringer i 2000, 2001 og 2022. Eldre reguleringsplaner kan inneholde utdaterte bestemmelser som kan komme i konflikt med ny kommuneplan vedtatt i 2024, noe som kan skape usikkerhet om fremtidig arealbruk og byggemuligheter.",
+            "evidence": [
+              "Godkjent av kommunestyre i møte 15. juni 1989, sak 78.",
+              "Endring A Vedtak 25. april 2000",
+              "Endring B Vedtak 23. januar 2001",
+              "Reguleringsendring etter forenklet prosess revisjon C. Delegert vedtak 23. august 2022",
+              "Kommuneplanen gjeld føre tidlegare vedtekne kommunedelplanar og reguleringsplanar, der det er vedteke andre hovudføremål for området."
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              105,
+              60
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "120a2cd3-15d3-4f34-98a0-fd0c4b43c119_risk_010",
+            "description": "Borettslagets legalpant kan ha prioritet foran kjøpers interesser. Borettslaget har lovbestemt panterett i andelen for krav på felleskostnader og andre krav fra lagsforholdet, begrenset til to ganger folketrygdens grunnbeløp. Dette innebærer at borettslaget kan ha krav mot andelen som kjøper overtar.",
+            "evidence": [
+              "For krav på dekning av felleskostnader og andre krav fra lagsforholdet har borettslaget en lovbestemt panterett i andelen foran alle andre heftelser.",
+              "Pantekravet er begrenset til en sum som svarer til to ganger folketrygdens grunnbeløp på tidspunktet tvangsdekning besluttes gjennomført.",
+              "Ved oppgjør bes megler ta kontakt med OBOS Innbetalingsservice for å få oppgitt eventuelle utestående felleskostnader/andre heftelser iht. boligselskapets legalpant."
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_015",
+            "description": "Borettslaget har lovbestemt panterett i andelen for krav på felleskostnader og andre krav, begrenset til to ganger folketrygdens grunnbeløp. Dersom selger har utestående felleskostnader, kan dette påvirke kjøper. Megler anbefales å innhente opplysninger om eventuelle restanser.",
+            "evidence": [
+              "For krav på dekning av felleskostnader og andre krav fra lagsforholdet har borettslaget en lovbestemt panterett i andelen foran alle andre heftelser.",
+              "Pantekravet er begrenset til en sum som svarer til to ganger folketrygdens grunnbeløp",
+              "Ved oppgjør bes megler ta kontakt med OBOS Innbetalingsservice per tlf. 22 86 56 25 eller e-post restanseforesporsel@obos.no for å få oppgitt eventuelle utestående felleskostnader/andre heftelser iht. boligselskapets legalpant."
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              33,
+              38
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "120a2cd3-15d3-4f34-98a0-fd0c4b43c119_risk_006",
+          "description": "Ferdigattest er utstedt for Roskhadle 2H, men eiendommen selges som Roskhadle 2A/2H. Det fremgår at eiendommen var tilknyttet gnr 26 bnr 668 ved behandling, og at matrikkelenheten er utskilt fra denne. Dette kan indikere uklarheter knyttet til eiendomsidentitet og historikk.",
+          "evidence": [
+            "Byggestedsadresse: Roskhadle 2H",
+            "Eiendommen var tilknyttet gnr 26 bnr 668 ved behandling.",
+            "Denne matrikkelenhet utskilt fra: KNR: 1119 GNR: 26 BNR: 668",
+            "Adresse: Roskhadle 2A (på kart og vann/avløpsopplysninger)"
+          ],
+          "source_documents": [
+            "d201_d201"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.75,
+          "details": {}
+        },
+        {
+          "risk_id": "120a2cd3-15d3-4f34-98a0-fd0c4b43c119_risk_009",
+          "description": "Manglende eller ufullstendige opplysninger i kart- og eiendomsdokumenter. Flere kart og dokumenter inneholder forbehold om at det kan forekomme feil eller manglende opplysninger, noe som kan medføre usikkerhet om eiendommens faktiske grenser, reguleringsforhold og andre viktige egenskaper.",
+          "evidence": [
+            "Det kan forekomme feil eller manglende opplysninger i informasjonen. (gjentatt i flere kartutsnitt)",
+            "Opplysninger gitt i dette brev er basert på de opplysninger forretningsfører har på tidspunktet for avgivelsen.",
+            "Forretningsfører aksepterer intet erstatningsansvar for feil i de gitte opplysninger med mindre det er utvist grov uaktsomhet."
+          ],
+          "source_documents": [
+            "d201_d201"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.78,
+          "details": {}
+        },
+        {
+          "risk_id": "120a2cd3-15d3-4f34-98a0-fd0c4b43c119_risk_012",
+          "description": "Servitutter og heftelser fra hovedbruket kan gjelde uten å fremgå av grunnboksutskriften. Dokumenter fra den manuelle grunnboken og servitutter tinglyst på avgivereiendommen (gnr 26 bnr 668) før fradelingsdatoen er ikke overført, og kan fortsatt ha rettslig virkning.",
+          "evidence": [
+            "Dokumenter fra den manuelle grunnboken som antas å kun ha historisk betydning, eller som vedrører en matrikkelenhets grenser og areal, er ikke overført til denne matrikkelenheten sin grunnboksutskrift.",
+            "Servitutter tinglyst på hovedbruket/avgivereiendommen før fradelingsdatoen, eller før eventuelle arealoverføringer, er heller ikke overført. Disse finner du på grunnboksutskriften til hovedbruket/avgivereiendommen."
+          ],
+          "source_documents": [
+            "d201_d201"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d201_007",
+          "description": "Betydelige gebyrer ved eierskifte. Eierskiftegebyr er kr 6 725, gebyr for forhåndsvarsel av forkjøpsrett er kr 8 406, og gebyr for å benytte forkjøpsrett er kr 8 406. Dette er kostnader som kan påløpe i tillegg til kjøpesummen.",
+          "evidence": [
+            "Eierskiftegebyr kr 6.725,–",
+            "Gebyr for å forhåndsvarsle forkjøpsrett kr 8.406,–",
+            "Gebyr for å benytte forkjøpsrett Kr 8406,- Kjøper (som benytter forkjøp)"
+          ],
+          "source_documents": [
+            "d201.pdf"
+          ],
+          "source_pages": [
+            39,
+            42
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d201_011",
+          "description": "Borettslagets totale lån hos Husbanken har restsaldo på kr 1 859 735,52 med innfrielsesdato 30.11.2030. Etter innfrielse må borettslaget refinansiere eller nedbetale restgjelden, noe som kan medføre økte felleskostnader for andelseierne.",
+          "evidence": [
+            "Bank: Husbanken",
+            "Restsaldo 1 859 735,52",
+            "Innfrielsesdato: 30.11.2030",
+            "Type rente: Flytende rente"
+          ],
+          "source_documents": [
+            "d201.pdf"
+          ],
+          "source_pages": [
+            37
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d201_014",
+          "description": "Borettslagets vedtekter tillater utleie av boligen under visse betingelser, men krever styrets godkjenning. Andelseier må ha bodd i boligen i minst ett av de siste to år for å leie ut hele boligen i inntil tre år. Dette begrenser fleksibiliteten for kjøper som ønsker å leie ut.",
+          "evidence": [
+            "Andelseieren kan ikke uten godkjenning fra styret overlate bruken av boligen til andre.",
+            "andelseieren selv eller en person som nevnt i borettslagslovens § 5-6 første ledd har bodd i boligen i minst ett av de siste to årene. Andelseier kan i slike tilfeller overlate bruken av hele boligen for opp til tre år"
+          ],
+          "source_documents": [
+            "d201.pdf"
+          ],
+          "source_pages": [
+            30,
+            31
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d201_016",
+          "description": "IN-ordning (individuell nedbetaling av fellesgjeld) medfører at kapitalkostnader endres ved renteendring, og endringen kommer som tillegg eller fratrekk på fakturaen påfølgende måneder. Ved salg kan det påløpe restanse/krav for selger selv om felleskostnadene er betalt ut overtakelsesmåneden.",
+          "evidence": [
+            "Kapitalkostnader endres ved renteendring og endringen kommer da som tillegg evt fratrekk på fakturaen påfølgende måneder.",
+            "Ved salg vil eventuelle krav som skyldes regulering av kapitalkostnader for tidligere periode, følge selger. Det kan derfor påløpe restanse/krav for selger, selv om felleskostnadene betales ut overtagelsesmåneden."
+          ],
+          "source_documents": [
+            "d201.pdf"
+          ],
+          "source_pages": [
+            37
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d201_017",
+          "description": "Oppvarmet bruksareal er kun 48 m² av totalt 98 m² bruksareal. Dette kan indikere at deler av boligen (f.eks. loftsetasje/kjeller) ikke er godkjent for varig opphold eller ikke er tilstrekkelig isolert, noe som kan begrense den reelle brukbarheten av boligen.",
+          "evidence": [
+            "Bruksareal: 98,0 m²",
+            "Oppvarmet bruksareal: 48,0 m²",
+            "Bygningstype: Enebolig",
+            "Oppvarmet etasje: 2"
+          ],
+          "source_documents": [
+            "d201.pdf"
+          ],
+          "source_pages": [
+            118
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d201_018",
+          "description": "Ferdigattesten fra 2005 er utstedt for 'NYBYGG - BOLIG M/GARASJE' og angir at boligen er i samsvar med vedtak i sak 0012/01. Boligen er nå over 20 år gammel, og det foreligger ingen dokumentasjon på vedlikehold, oppgraderinger eller tilstandsrapport i de fremlagte dokumentene.",
+          "evidence": [
+            "FERDIGATTEST etter plan- og bygningsloven (pbl) av 14. juni 1985 § 99 nr. 1",
+            "Tiltakets art: NYBYGG - BOLIG M/GARASJE",
+            "Dato: 10.01.2005",
+            "Byggeår: 2005"
+          ],
+          "source_documents": [
+            "d201.pdf"
+          ],
+          "source_pages": [
+            116,
+            118
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d201_019",
+          "description": "Salgsoppgaven er digital og inneholder lenke til full salgsoppgave som ikke er vedlagt i dokumentene. Viktig informasjon som tilstandsrapport, prisantydning, arealbeskrivelse og selgers egenerklæring kan mangle i det fremlagte materialet, noe som gir et ufullstendig beslutningsgrunnlag.",
+          "evidence": [
+            "For å se hele salgsoppgaven klikk på lenken under.",
+            "Link til salgsoppgave",
+            "DIGITAL SALGSOPPGAVE"
+          ],
+          "source_documents": [
+            "d201.pdf"
+          ],
+          "source_pages": [
+            1,
+            2
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d201_020",
+          "description": "Kommuneplanen for Hå (vedtatt 2024) stiller krav om reguleringsplan for en rekke tiltak, og inneholder rekkefølgekrav som kan begrense utbygging i området. Blant annet er utbygging av areal med påkopling av avløp til Nærbø renseanlegg ikke tillatt før renseanlegget overholder rensekravene.",
+          "evidence": [
+            "Utbygging av areal med påkopling av avlaup til Nærbø reinseanlegg er ikkje tillate før det kan dokumenterast at reinseanlegget overheld reinsekrava.",
+            "Arbeid, tiltak og frådeling etter plan- og bygningslova § 20-1 er ikkje tillate før arealet det vedkjem inngår i ein reguleringsplan."
+          ],
+          "source_documents": [
+            "d201.pdf"
+          ],
+          "source_pages": [
+            61,
+            102
+          ],
+          "details": {
+            "confidence": 0.65
+          }
+        },
+        {
+          "risk_id": "gt_d201_021",
+          "description": "Borettslagets vedtekter gir styret rett til å pålegge salg av andelen ved vesentlig mislighold, og styret kan kreve fravikelse fra boligen dersom andelseierens oppførsel er til alvorlig plage for øvrige beboere. Dette er en risiko for kjøper dersom nabo- eller styreforhold er konfliktfylte.",
+          "evidence": [
+            "Hvis en andelseier til tross for advarsel vesentlig misligholder sine plikter, kan borettslaget pålegge vedkommende å selge andelen",
+            "Medfører andelseierens eller brukerens oppførsel fare for ødeleggelse eller vesentlig forringelse av eiendommen, eller er andelseierens eller brukerens oppførsel til alvorlig plage eller sjenanse for eiendommenes øvrige andelseiere eller brukere, kan styret kreve fravikelse fra boligen"
+          ],
+          "source_documents": [
+            "d201.pdf"
+          ],
+          "source_pages": [
+            33
+          ],
+          "details": {
+            "confidence": 0.6
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "120a2cd3-15d3-4f34-98a0-fd0c4b43c119_risk_006",
+            "description": "Ferdigattest er utstedt for Roskhadle 2H, men eiendommen selges som Roskhadle 2A/2H. Det fremgår at eiendommen var tilknyttet gnr 26 bnr 668 ved behandling, og at matrikkelenheten er utskilt fra denne. Dette kan indikere uklarheter knyttet til eiendomsidentitet og historikk.",
+            "evidence": [
+              "Byggestedsadresse: Roskhadle 2H",
+              "Eiendommen var tilknyttet gnr 26 bnr 668 ved behandling.",
+              "Denne matrikkelenhet utskilt fra: KNR: 1119 GNR: 26 BNR: 668",
+              "Adresse: Roskhadle 2A (på kart og vann/avløpsopplysninger)"
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentteksten bekrefter denne risikoen. Ferdigattesten (side 116) er utstedt for byggestedsadresse 'Roskhadle 2H' på gnr./bnr. 26/1064, og det fremgår eksplisitt at 'Eiendommen var tilknyttet gnr 26 bnr 668 ved behandling.' Grunnboksutskriften (side 46) bekrefter at matrikkelenheten er utskilt fra KNR: 1119 GNR: 26 BNR: 668. Kart- og vann/avløpsdokumenter (side 44, 107, 109, 113) bruker adressen 'Roskhadle 2A' for samme eiendom (gnr. 26, bnr. 1064). Megleropplysningene (side 37) bruker adressen 'Roskhadle 2 H'. Denne diskrepansen mellom adressene 2H og 2A, kombinert med historikken knyttet til avgivereiendommen gnr 26 bnr 668, underbygger risikoen for uklarheter knyttet til eiendomsidentitet og historikk."
+        },
+        {
+          "risk": {
+            "risk_id": "120a2cd3-15d3-4f34-98a0-fd0c4b43c119_risk_009",
+            "description": "Manglende eller ufullstendige opplysninger i kart- og eiendomsdokumenter. Flere kart og dokumenter inneholder forbehold om at det kan forekomme feil eller manglende opplysninger, noe som kan medføre usikkerhet om eiendommens faktiske grenser, reguleringsforhold og andre viktige egenskaper.",
+            "evidence": [
+              "Det kan forekomme feil eller manglende opplysninger i informasjonen. (gjentatt i flere kartutsnitt)",
+              "Opplysninger gitt i dette brev er basert på de opplysninger forretningsfører har på tidspunktet for avgivelsen.",
+              "Forretningsfører aksepterer intet erstatningsansvar for feil i de gitte opplysninger med mindre det er utvist grov uaktsomhet."
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentteksten bekrefter denne risikoen. På kartutsnittene (side 44, 45, 107, 108, 109, 110) fremgår det gjentatte ganger: 'Det kan forekomme feil eller manglende opplysninger i informasjonen.' I megleropplysningene fra OBOS (side 39) fremgår det: 'Opplysninger gitt i dette brev er basert på de opplysninger forretningsfører har på tidspunktet for avgivelsen' og 'Forretningsfører aksepterer intet erstatningsansvar for feil i de gitte opplysninger med mindre det er utvist grov uaktsomhet.' Disse forbeholdene er direkte sitert i risikobeskrivelsen og er dokumentert i teksten."
+        },
+        {
+          "risk": {
+            "risk_id": "120a2cd3-15d3-4f34-98a0-fd0c4b43c119_risk_012",
+            "description": "Servitutter og heftelser fra hovedbruket kan gjelde uten å fremgå av grunnboksutskriften. Dokumenter fra den manuelle grunnboken og servitutter tinglyst på avgivereiendommen (gnr 26 bnr 668) før fradelingsdatoen er ikke overført, og kan fortsatt ha rettslig virkning.",
+            "evidence": [
+              "Dokumenter fra den manuelle grunnboken som antas å kun ha historisk betydning, eller som vedrører en matrikkelenhets grenser og areal, er ikke overført til denne matrikkelenheten sin grunnboksutskrift.",
+              "Servitutter tinglyst på hovedbruket/avgivereiendommen før fradelingsdatoen, eller før eventuelle arealoverføringer, er heller ikke overført. Disse finner du på grunnboksutskriften til hovedbruket/avgivereiendommen."
+            ],
+            "source_documents": [
+              "d201_d201"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentteksten bekrefter denne risikoen direkte. I grunnboksutskriften (side 46) under HEFTELSER fremgår det ordrett: 'Dokumenter fra den manuelle grunnboken som antas å kun ha historisk betydning, eller som vedrører en matrikkelenhets grenser og areal, er ikke overført til denne matrikkelenheten sin grunnboksutskrift. Servitutter tinglyst på hovedbruket/avgivereiendommen før fradelingsdatoen, eller før eventuelle arealoverføringer, er heller ikke overført. Disse finner du på grunnboksutskriften til hovedbruket/avgivereiendommen.' Dette er en ordrett gjengivelse av bevisene oppgitt i risikobeskrivelsen, og risikoen er dermed fullt ut støttet av dokumentet."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.5714285714285714,
+        "f1": 0.7272727272727273,
+        "total_support": 21
+      }
+    },
+    "ground_truth": {
+      "run_id": "e7037955-e93b-490b-8322-459189e086e9_gt",
+      "system_type": "ground_truth",
+      "overall_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "total_support": 21
+      },
+      "matched_risks": 21,
+      "unmatched_predicted": 0,
+      "unmatched_ground_truth": 0,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "gt_d201_001",
+            "description": "Høy andel fellesgjeld med flytende rente og kort innfrielsesdato. Andel fellesgjeld er kr 265 678,53 med flytende rente på 4,04% og innfrielsesdato 30.11.2030. Flytende rente medfører risiko for økte kapitalkostnader ved renteoppgang.",
+            "evidence": [
+              "Restsaldo: 265 678,53",
+              "Rentesats: 4,04%",
+              "Type rente: Flytende rente",
+              "Innfrielsesdato: 30.11.2030",
+              "Kapitalkostnader: 3 990,46"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              37,
+              38
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_001",
+            "description": "Høy andel fellesgjeld med flytende rente og kort innfrielsesdato. Andel fellesgjeld er kr 265 678,53 med flytende rente på 4,04% og innfrielsesdato 30.11.2030. Flytende rente medfører risiko for økte kapitalkostnader ved renteoppgang.",
+            "evidence": [
+              "Restsaldo: 265 678,53",
+              "Rentesats: 4,04%",
+              "Type rente: Flytende rente",
+              "Innfrielsesdato: 30.11.2030",
+              "Kapitalkostnader: 3 990,46"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              37,
+              38
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d201_002",
+            "description": "Nylig vedtatt økning av felleskostnader på 7,6% fra 01.01.2026. Totale månedlige felleskostnader er kr 8 230,84, noe som er en betydelig løpende kostnad for kjøper. Ytterligere økning kan ikke utelukkes.",
+            "evidence": [
+              "Styret har vedtatt økning av felleskostnader med 7,6% fra 01.01.2026",
+              "Totale felleskostnader pr. Månedlig intervall: 8 230,84,-"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              37
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_002",
+            "description": "Nylig vedtatt økning av felleskostnader på 7,6% fra 01.01.2026. Totale månedlige felleskostnader er kr 8 230,84, noe som er en betydelig løpende kostnad for kjøper. Ytterligere økning kan ikke utelukkes.",
+            "evidence": [
+              "Styret har vedtatt økning av felleskostnader med 7,6% fra 01.01.2026",
+              "Totale felleskostnader pr. Månedlig intervall: 8 230,84,-"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              37
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d201_003",
+            "description": "Svært høye månedlige kapitalkostnader (renter og avdrag på fellesgjeld) på kr 5 130,85 per måned (akonto renter kr 895,34 + akonto avdrag kr 4 235,51), som utgjør over 62% av de totale felleskostnadene. Dette gir begrenset forutsigbarhet ved renteendringer.",
+            "evidence": [
+              "Lån nr: 13549837; IN lån 1 - Akonto renter 895,34",
+              "Lån nr: 13549837; IN lån 1 - Akonto avdrag 4 235,51",
+              "Felleskostnader 3 100,00",
+              "Type rente: Flytende rente"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              38
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_003",
+            "description": "Svært høye månedlige kapitalkostnader (renter og avdrag på fellesgjeld) på kr 5 130,85 per måned (akonto renter kr 895,34 + akonto avdrag kr 4 235,51), som utgjør over 62% av de totale felleskostnadene. Dette gir begrenset forutsigbarhet ved renteendringer.",
+            "evidence": [
+              "Lån nr: 13549837; IN lån 1 - Akonto renter 895,34",
+              "Lån nr: 13549837; IN lån 1 - Akonto avdrag 4 235,51",
+              "Felleskostnader 3 100,00",
+              "Type rente: Flytende rente"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              38
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d201_004",
+            "description": "Forkjøpsrett for OBOS-medlemmer kan forsinke eller avbryte kjøpsprosessen. Kjøper har ikke rett til å ta boligen i bruk før forkjøpsretten er avklart og styregodkjenning foreligger. Avklaringsprosessen kan ta opptil 20 virkedager.",
+            "evidence": [
+              "Forkjøpsrett: Ja",
+              "OBOS har i henhold til lov om borettslag, §4-15, 20 dager til å gjøre forkjøpsrett gjeldende.",
+              "Kjøper har ikke rett til å ta boligen i bruk før søknaden er godkjent, ref. Lov om brl § 4-5.",
+              "Overtakelse bes lagt til etter at eventuell forkjøpsrett er avklart og styregodkjenning foreligger."
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              39,
+              40,
+              41
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_004",
+            "description": "Forkjøpsrett for OBOS-medlemmer kan forsinke eller avbryte kjøpsprosessen. Kjøper har ikke rett til å ta boligen i bruk før forkjøpsretten er avklart og styregodkjenning foreligger. Avklaringsprosessen kan ta opptil 20 virkedager.",
+            "evidence": [
+              "Forkjøpsrett: Ja",
+              "OBOS har i henhold til lov om borettslag, §4-15, 20 dager til å gjøre forkjøpsrett gjeldende.",
+              "Kjøper har ikke rett til å ta boligen i bruk før søknaden er godkjent, ref. Lov om brl § 4-5.",
+              "Overtakelse bes lagt til etter at eventuell forkjøpsrett er avklart og styregodkjenning foreligger."
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              39,
+              40,
+              41
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d201_005",
+            "description": "Styregodkjenning kreves ved kjøp av andelen. Styret kan nekte godkjenning dersom det foreligger saklig grunn. Kjøper kan ikke ta boligen i bruk før godkjenning er gitt, noe som skaper usikkerhet i kjøpsprosessen.",
+            "evidence": [
+              "Styregodkjenning: Ja",
+              "Ved et hvert eierskifte må erververen godkjennes av styret for å få rett til å bruke boligen.",
+              "Styret kan nekte godkjenning når det er saklig grunn til det",
+              "Kjøper har ikke rett til å ta boligen i bruk før søknaden er godkjent"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              29,
+              39
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_005",
+            "description": "Styregodkjenning kreves ved kjøp av andelen. Styret kan nekte godkjenning dersom det foreligger saklig grunn. Kjøper kan ikke ta boligen i bruk før godkjenning er gitt, noe som skaper usikkerhet i kjøpsprosessen.",
+            "evidence": [
+              "Styregodkjenning: Ja",
+              "Ved et hvert eierskifte må erververen godkjennes av styret for å få rett til å bruke boligen.",
+              "Styret kan nekte godkjenning når det er saklig grunn til det",
+              "Kjøper har ikke rett til å ta boligen i bruk før søknaden er godkjent"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              29,
+              39
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d201_006",
+            "description": "Obligatorisk OBOS-medlemskap kreves for å eie boligen. Alle eiere må være OBOS-medlemmer og betale medlemskontingent. Dette er en ekstra kostnad og et krav som kan overraske kjøpere som ikke er kjent med borettslagsmodellen.",
+            "evidence": [
+              "Det kreves medlemskap i OBOS for å erverve/eie denne boligen.",
+              "Dersom det er flere enn én som skal eie boligen sammen, må alle være medlem i OBOS og betale hver sin medlemskontingent.",
+              "Innmelding i OBOS kr 500,–"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              39
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_006",
+            "description": "Obligatorisk OBOS-medlemskap kreves for å eie boligen. Alle eiere må være OBOS-medlemmer og betale medlemskontingent. Dette er en ekstra kostnad og et krav som kan overraske kjøpere som ikke er kjent med borettslagsmodellen.",
+            "evidence": [
+              "Det kreves medlemskap i OBOS for å erverve/eie denne boligen.",
+              "Dersom det er flere enn én som skal eie boligen sammen, må alle være medlem i OBOS og betale hver sin medlemskontingent.",
+              "Innmelding i OBOS kr 500,–"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              39
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d201_007",
+            "description": "Betydelige gebyrer ved eierskifte. Eierskiftegebyr er kr 6 725, gebyr for forhåndsvarsel av forkjøpsrett er kr 8 406, og gebyr for å benytte forkjøpsrett er kr 8 406. Dette er kostnader som kan påløpe i tillegg til kjøpesummen.",
+            "evidence": [
+              "Eierskiftegebyr kr 6.725,–",
+              "Gebyr for å forhåndsvarsle forkjøpsrett kr 8.406,–",
+              "Gebyr for å benytte forkjøpsrett Kr 8406,- Kjøper (som benytter forkjøp)"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              39,
+              42
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_007",
+            "description": "Betydelige gebyrer ved eierskifte. Eierskiftegebyr er kr 6 725, gebyr for forhåndsvarsel av forkjøpsrett er kr 8 406, og gebyr for å benytte forkjøpsrett er kr 8 406. Dette er kostnader som kan påløpe i tillegg til kjøpesummen.",
+            "evidence": [
+              "Eierskiftegebyr kr 6.725,–",
+              "Gebyr for å forhåndsvarsle forkjøpsrett kr 8.406,–",
+              "Gebyr for å benytte forkjøpsrett Kr 8406,- Kjøper (som benytter forkjøp)"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              39,
+              42
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d201_008",
+            "description": "Energikarakteren er ikke oppgitt med bokstavkarakter i dokumentet, men beregnet vektet levert energi er 153,67 kWh/m² per år, noe som indikerer en relativt energikrevende bolig. Oppvarmet bruksareal er kun 48 m² av totalt 98 m² bruksareal, noe som kan tyde på at deler av boligen ikke er energieffektivt oppvarmet.",
+            "evidence": [
+              "Beregnet vektet levert energi i normert klima: 153,67 kWh/m²",
+              "Bruksareal: 98,0 m²",
+              "Oppvarmet bruksareal: 48,0 m²",
+              "Oppvarming: Varmepumpe, Ved"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              118,
+              119
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_008",
+            "description": "Energikarakteren er ikke oppgitt med bokstavkarakter i dokumentet, men beregnet vektet levert energi er 153,67 kWh/m² per år, noe som indikerer en relativt energikrevende bolig. Oppvarmet bruksareal er kun 48 m² av totalt 98 m² bruksareal, noe som kan tyde på at deler av boligen ikke er energieffektivt oppvarmet.",
+            "evidence": [
+              "Beregnet vektet levert energi i normert klima: 153,67 kWh/m²",
+              "Bruksareal: 98,0 m²",
+              "Oppvarmet bruksareal: 48,0 m²",
+              "Oppvarming: Varmepumpe, Ved"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              118,
+              119
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d201_009",
+            "description": "Boligen er bygget i 2005 og har 1,5 etasjer. Energiattesten viser at det ikke er oppgitt informasjon om vegger, vindu, gulv, takkonstruksjon, ytterdører, energibruk eller lekkasjetall, noe som gir begrenset innsikt i boligens tekniske tilstand og energimessige standard.",
+            "evidence": [
+              "Byggeår: 2005",
+              "Vegger: Nei",
+              "Vindu: Nei",
+              "Gulv: Nei",
+              "Takkonstruksjon: Nei",
+              "Ytterdører: Nei",
+              "Energibruk: Nei",
+              "Lekkasjetall: Nei"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              118,
+              119
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_009",
+            "description": "Boligen er bygget i 2005 og har 1,5 etasjer. Energiattesten viser at det ikke er oppgitt informasjon om vegger, vindu, gulv, takkonstruksjon, ytterdører, energibruk eller lekkasjetall, noe som gir begrenset innsikt i boligens tekniske tilstand og energimessige standard.",
+            "evidence": [
+              "Byggeår: 2005",
+              "Vegger: Nei",
+              "Vindu: Nei",
+              "Gulv: Nei",
+              "Takkonstruksjon: Nei",
+              "Ytterdører: Nei",
+              "Energibruk: Nei",
+              "Lekkasjetall: Nei"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              118,
+              119
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d201_010",
+            "description": "Panteheftelser på eiendommen (gnr. 26, bnr. 1064): Husbanken har pantedokument på NOK 10 000 000 (tinglyst 03.02.2005) og Jæren Boligbyggelag AL har pantedokument på NOK 3 125 000 (tinglyst 15.02.2005). Disse heftelsene er knyttet til borettslagets eiendom og representerer en risiko dersom borettslaget ikke betjener sine lån.",
+            "evidence": [
+              "2005/1033-1/44 03.02.2005 PANTEDOKUMENT Beløp: NOK 10 000 000 Panthaver: HUSBANKEN",
+              "2005/1365-1/44 15.02.2005 PANTEDOKUMENT Beløp: NOK 3 125 000 Panthaver: JÆREN BOLIGBYGGELAG AL"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              46
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_010",
+            "description": "Panteheftelser på eiendommen (gnr. 26, bnr. 1064): Husbanken har pantedokument på NOK 10 000 000 (tinglyst 03.02.2005) og Jæren Boligbyggelag AL har pantedokument på NOK 3 125 000 (tinglyst 15.02.2005). Disse heftelsene er knyttet til borettslagets eiendom og representerer en risiko dersom borettslaget ikke betjener sine lån.",
+            "evidence": [
+              "2005/1033-1/44 03.02.2005 PANTEDOKUMENT Beløp: NOK 10 000 000 Panthaver: HUSBANKEN",
+              "2005/1365-1/44 15.02.2005 PANTEDOKUMENT Beløp: NOK 3 125 000 Panthaver: JÆREN BOLIGBYGGELAG AL"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              46
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d201_011",
+            "description": "Borettslagets totale lån hos Husbanken har restsaldo på kr 1 859 735,52 med innfrielsesdato 30.11.2030. Etter innfrielse må borettslaget refinansiere eller nedbetale restgjelden, noe som kan medføre økte felleskostnader for andelseierne.",
+            "evidence": [
+              "Bank: Husbanken",
+              "Restsaldo 1 859 735,52",
+              "Innfrielsesdato: 30.11.2030",
+              "Type rente: Flytende rente"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              37
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_011",
+            "description": "Borettslagets totale lån hos Husbanken har restsaldo på kr 1 859 735,52 med innfrielsesdato 30.11.2030. Etter innfrielse må borettslaget refinansiere eller nedbetale restgjelden, noe som kan medføre økte felleskostnader for andelseierne.",
+            "evidence": [
+              "Bank: Husbanken",
+              "Restsaldo 1 859 735,52",
+              "Innfrielsesdato: 30.11.2030",
+              "Type rente: Flytende rente"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              37
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d201_012",
+            "description": "Kommuneplanens arealdel for Hå kommune (vedtatt 2024) inneholder faresoner for ras/skred (H310), flom og stormflo (H320) samt brann- og eksplosjonsfare (H350). Det er ikke avklart i dokumentene om eiendommen ligger innenfor noen av disse faresonene, noe som bør undersøkes nærmere.",
+            "evidence": [
+              "Sone H310_ras1 er basert på NVE sine aktsemdsoner for kvikkleireskred og marin leire.",
+              "Sone H320_flom1 er basert på NVE sine aktsemdssoner.",
+              "Sone H320_stormflo ligg under kote 3,0 kan vera utsett for stormflo.",
+              "Flomfare (tegnforklaring i kommuneplanskart)"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              99,
+              100,
+              110
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_012",
+            "description": "Kommuneplanens arealdel for Hå kommune (vedtatt 2024) inneholder faresoner for ras/skred (H310), flom og stormflo (H320) samt brann- og eksplosjonsfare (H350). Det er ikke avklart i dokumentene om eiendommen ligger innenfor noen av disse faresonene, noe som bør undersøkes nærmere.",
+            "evidence": [
+              "Sone H310_ras1 er basert på NVE sine aktsemdsoner for kvikkleireskred og marin leire.",
+              "Sone H320_flom1 er basert på NVE sine aktsemdssoner.",
+              "Sone H320_stormflo ligg under kote 3,0 kan vera utsett for stormflo.",
+              "Flomfare (tegnforklaring i kommuneplanskart)"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              99,
+              100,
+              110
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d201_013",
+            "description": "Reguleringsplanen for Dalabekk II (Plan 990) er opprinnelig fra 1989 med endringer i 2000, 2001 og 2022. Eldre reguleringsplaner kan inneholde utdaterte bestemmelser som kan komme i konflikt med ny kommuneplan vedtatt i 2024, noe som kan skape usikkerhet om fremtidig arealbruk og byggemuligheter.",
+            "evidence": [
+              "Godkjent av kommunestyre i møte 15. juni 1989, sak 78.",
+              "Endring A Vedtak 25. april 2000",
+              "Endring B Vedtak 23. januar 2001",
+              "Reguleringsendring etter forenklet prosess revisjon C. Delegert vedtak 23. august 2022",
+              "Kommuneplanen gjeld føre tidlegare vedtekne kommunedelplanar og reguleringsplanar, der det er vedteke andre hovudføremål for området."
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              105,
+              60
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_013",
+            "description": "Reguleringsplanen for Dalabekk II (Plan 990) er opprinnelig fra 1989 med endringer i 2000, 2001 og 2022. Eldre reguleringsplaner kan inneholde utdaterte bestemmelser som kan komme i konflikt med ny kommuneplan vedtatt i 2024, noe som kan skape usikkerhet om fremtidig arealbruk og byggemuligheter.",
+            "evidence": [
+              "Godkjent av kommunestyre i møte 15. juni 1989, sak 78.",
+              "Endring A Vedtak 25. april 2000",
+              "Endring B Vedtak 23. januar 2001",
+              "Reguleringsendring etter forenklet prosess revisjon C. Delegert vedtak 23. august 2022",
+              "Kommuneplanen gjeld føre tidlegare vedtekne kommunedelplanar og reguleringsplanar, der det er vedteke andre hovudføremål for området."
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              105,
+              60
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d201_014",
+            "description": "Borettslagets vedtekter tillater utleie av boligen under visse betingelser, men krever styrets godkjenning. Andelseier må ha bodd i boligen i minst ett av de siste to år for å leie ut hele boligen i inntil tre år. Dette begrenser fleksibiliteten for kjøper som ønsker å leie ut.",
+            "evidence": [
+              "Andelseieren kan ikke uten godkjenning fra styret overlate bruken av boligen til andre.",
+              "andelseieren selv eller en person som nevnt i borettslagslovens § 5-6 første ledd har bodd i boligen i minst ett av de siste to årene. Andelseier kan i slike tilfeller overlate bruken av hele boligen for opp til tre år"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              30,
+              31
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_014",
+            "description": "Borettslagets vedtekter tillater utleie av boligen under visse betingelser, men krever styrets godkjenning. Andelseier må ha bodd i boligen i minst ett av de siste to år for å leie ut hele boligen i inntil tre år. Dette begrenser fleksibiliteten for kjøper som ønsker å leie ut.",
+            "evidence": [
+              "Andelseieren kan ikke uten godkjenning fra styret overlate bruken av boligen til andre.",
+              "andelseieren selv eller en person som nevnt i borettslagslovens § 5-6 første ledd har bodd i boligen i minst ett av de siste to årene. Andelseier kan i slike tilfeller overlate bruken av hele boligen for opp til tre år"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              30,
+              31
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d201_015",
+            "description": "Borettslaget har lovbestemt panterett i andelen for krav på felleskostnader og andre krav, begrenset til to ganger folketrygdens grunnbeløp. Dersom selger har utestående felleskostnader, kan dette påvirke kjøper. Megler anbefales å innhente opplysninger om eventuelle restanser.",
+            "evidence": [
+              "For krav på dekning av felleskostnader og andre krav fra lagsforholdet har borettslaget en lovbestemt panterett i andelen foran alle andre heftelser.",
+              "Pantekravet er begrenset til en sum som svarer til to ganger folketrygdens grunnbeløp",
+              "Ved oppgjør bes megler ta kontakt med OBOS Innbetalingsservice per tlf. 22 86 56 25 eller e-post restanseforesporsel@obos.no for å få oppgitt eventuelle utestående felleskostnader/andre heftelser iht. boligselskapets legalpant."
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              33,
+              38
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_015",
+            "description": "Borettslaget har lovbestemt panterett i andelen for krav på felleskostnader og andre krav, begrenset til to ganger folketrygdens grunnbeløp. Dersom selger har utestående felleskostnader, kan dette påvirke kjøper. Megler anbefales å innhente opplysninger om eventuelle restanser.",
+            "evidence": [
+              "For krav på dekning av felleskostnader og andre krav fra lagsforholdet har borettslaget en lovbestemt panterett i andelen foran alle andre heftelser.",
+              "Pantekravet er begrenset til en sum som svarer til to ganger folketrygdens grunnbeløp",
+              "Ved oppgjør bes megler ta kontakt med OBOS Innbetalingsservice per tlf. 22 86 56 25 eller e-post restanseforesporsel@obos.no for å få oppgitt eventuelle utestående felleskostnader/andre heftelser iht. boligselskapets legalpant."
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              33,
+              38
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d201_016",
+            "description": "IN-ordning (individuell nedbetaling av fellesgjeld) medfører at kapitalkostnader endres ved renteendring, og endringen kommer som tillegg eller fratrekk på fakturaen påfølgende måneder. Ved salg kan det påløpe restanse/krav for selger selv om felleskostnadene er betalt ut overtakelsesmåneden.",
+            "evidence": [
+              "Kapitalkostnader endres ved renteendring og endringen kommer da som tillegg evt fratrekk på fakturaen påfølgende måneder.",
+              "Ved salg vil eventuelle krav som skyldes regulering av kapitalkostnader for tidligere periode, følge selger. Det kan derfor påløpe restanse/krav for selger, selv om felleskostnadene betales ut overtagelsesmåneden."
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              37
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_016",
+            "description": "IN-ordning (individuell nedbetaling av fellesgjeld) medfører at kapitalkostnader endres ved renteendring, og endringen kommer som tillegg eller fratrekk på fakturaen påfølgende måneder. Ved salg kan det påløpe restanse/krav for selger selv om felleskostnadene er betalt ut overtakelsesmåneden.",
+            "evidence": [
+              "Kapitalkostnader endres ved renteendring og endringen kommer da som tillegg evt fratrekk på fakturaen påfølgende måneder.",
+              "Ved salg vil eventuelle krav som skyldes regulering av kapitalkostnader for tidligere periode, følge selger. Det kan derfor påløpe restanse/krav for selger, selv om felleskostnadene betales ut overtagelsesmåneden."
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              37
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d201_017",
+            "description": "Oppvarmet bruksareal er kun 48 m² av totalt 98 m² bruksareal. Dette kan indikere at deler av boligen (f.eks. loftsetasje/kjeller) ikke er godkjent for varig opphold eller ikke er tilstrekkelig isolert, noe som kan begrense den reelle brukbarheten av boligen.",
+            "evidence": [
+              "Bruksareal: 98,0 m²",
+              "Oppvarmet bruksareal: 48,0 m²",
+              "Bygningstype: Enebolig",
+              "Oppvarmet etasje: 2"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              118
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_017",
+            "description": "Oppvarmet bruksareal er kun 48 m² av totalt 98 m² bruksareal. Dette kan indikere at deler av boligen (f.eks. loftsetasje/kjeller) ikke er godkjent for varig opphold eller ikke er tilstrekkelig isolert, noe som kan begrense den reelle brukbarheten av boligen.",
+            "evidence": [
+              "Bruksareal: 98,0 m²",
+              "Oppvarmet bruksareal: 48,0 m²",
+              "Bygningstype: Enebolig",
+              "Oppvarmet etasje: 2"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              118
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d201_018",
+            "description": "Ferdigattesten fra 2005 er utstedt for 'NYBYGG - BOLIG M/GARASJE' og angir at boligen er i samsvar med vedtak i sak 0012/01. Boligen er nå over 20 år gammel, og det foreligger ingen dokumentasjon på vedlikehold, oppgraderinger eller tilstandsrapport i de fremlagte dokumentene.",
+            "evidence": [
+              "FERDIGATTEST etter plan- og bygningsloven (pbl) av 14. juni 1985 § 99 nr. 1",
+              "Tiltakets art: NYBYGG - BOLIG M/GARASJE",
+              "Dato: 10.01.2005",
+              "Byggeår: 2005"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              116,
+              118
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_018",
+            "description": "Ferdigattesten fra 2005 er utstedt for 'NYBYGG - BOLIG M/GARASJE' og angir at boligen er i samsvar med vedtak i sak 0012/01. Boligen er nå over 20 år gammel, og det foreligger ingen dokumentasjon på vedlikehold, oppgraderinger eller tilstandsrapport i de fremlagte dokumentene.",
+            "evidence": [
+              "FERDIGATTEST etter plan- og bygningsloven (pbl) av 14. juni 1985 § 99 nr. 1",
+              "Tiltakets art: NYBYGG - BOLIG M/GARASJE",
+              "Dato: 10.01.2005",
+              "Byggeår: 2005"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              116,
+              118
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d201_019",
+            "description": "Salgsoppgaven er digital og inneholder lenke til full salgsoppgave som ikke er vedlagt i dokumentene. Viktig informasjon som tilstandsrapport, prisantydning, arealbeskrivelse og selgers egenerklæring kan mangle i det fremlagte materialet, noe som gir et ufullstendig beslutningsgrunnlag.",
+            "evidence": [
+              "For å se hele salgsoppgaven klikk på lenken under.",
+              "Link til salgsoppgave",
+              "DIGITAL SALGSOPPGAVE"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              1,
+              2
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_019",
+            "description": "Salgsoppgaven er digital og inneholder lenke til full salgsoppgave som ikke er vedlagt i dokumentene. Viktig informasjon som tilstandsrapport, prisantydning, arealbeskrivelse og selgers egenerklæring kan mangle i det fremlagte materialet, noe som gir et ufullstendig beslutningsgrunnlag.",
+            "evidence": [
+              "For å se hele salgsoppgaven klikk på lenken under.",
+              "Link til salgsoppgave",
+              "DIGITAL SALGSOPPGAVE"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              1,
+              2
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d201_020",
+            "description": "Kommuneplanen for Hå (vedtatt 2024) stiller krav om reguleringsplan for en rekke tiltak, og inneholder rekkefølgekrav som kan begrense utbygging i området. Blant annet er utbygging av areal med påkopling av avløp til Nærbø renseanlegg ikke tillatt før renseanlegget overholder rensekravene.",
+            "evidence": [
+              "Utbygging av areal med påkopling av avlaup til Nærbø reinseanlegg er ikkje tillate før det kan dokumenterast at reinseanlegget overheld reinsekrava.",
+              "Arbeid, tiltak og frådeling etter plan- og bygningslova § 20-1 er ikkje tillate før arealet det vedkjem inngår i ein reguleringsplan."
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              61,
+              102
+            ],
+            "confidence": 0.65,
+            "details": {
+              "confidence": 0.65
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_020",
+            "description": "Kommuneplanen for Hå (vedtatt 2024) stiller krav om reguleringsplan for en rekke tiltak, og inneholder rekkefølgekrav som kan begrense utbygging i området. Blant annet er utbygging av areal med påkopling av avløp til Nærbø renseanlegg ikke tillatt før renseanlegget overholder rensekravene.",
+            "evidence": [
+              "Utbygging av areal med påkopling av avlaup til Nærbø reinseanlegg er ikkje tillate før det kan dokumenterast at reinseanlegget overheld reinsekrava.",
+              "Arbeid, tiltak og frådeling etter plan- og bygningslova § 20-1 er ikkje tillate før arealet det vedkjem inngår i ein reguleringsplan."
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              61,
+              102
+            ],
+            "details": {
+              "confidence": 0.65
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d201_021",
+            "description": "Borettslagets vedtekter gir styret rett til å pålegge salg av andelen ved vesentlig mislighold, og styret kan kreve fravikelse fra boligen dersom andelseierens oppførsel er til alvorlig plage for øvrige beboere. Dette er en risiko for kjøper dersom nabo- eller styreforhold er konfliktfylte.",
+            "evidence": [
+              "Hvis en andelseier til tross for advarsel vesentlig misligholder sine plikter, kan borettslaget pålegge vedkommende å selge andelen",
+              "Medfører andelseierens eller brukerens oppførsel fare for ødeleggelse eller vesentlig forringelse av eiendommen, eller er andelseierens eller brukerens oppførsel til alvorlig plage eller sjenanse for eiendommenes øvrige andelseiere eller brukere, kan styret kreve fravikelse fra boligen"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              33
+            ],
+            "confidence": 0.6,
+            "details": {
+              "confidence": 0.6
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d201_021",
+            "description": "Borettslagets vedtekter gir styret rett til å pålegge salg av andelen ved vesentlig mislighold, og styret kan kreve fravikelse fra boligen dersom andelseierens oppførsel er til alvorlig plage for øvrige beboere. Dette er en risiko for kjøper dersom nabo- eller styreforhold er konfliktfylte.",
+            "evidence": [
+              "Hvis en andelseier til tross for advarsel vesentlig misligholder sine plikter, kan borettslaget pålegge vedkommende å selge andelen",
+              "Medfører andelseierens eller brukerens oppførsel fare for ødeleggelse eller vesentlig forringelse av eiendommen, eller er andelseierens eller brukerens oppførsel til alvorlig plage eller sjenanse for eiendommenes øvrige andelseiere eller brukere, kan styret kreve fravikelse fra boligen"
+            ],
+            "source_documents": [
+              "d201.pdf"
+            ],
+            "source_pages": [
+              33
+            ],
+            "details": {
+              "confidence": 0.6
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [],
+      "unmatched_ground_truth_risks": [],
+      "verified_unmatched": [],
+      "adjusted_metrics": null
+    }
+  },
+  "best_system": "ground_truth",
+  "statistical_tests": {
+    "standard_rag_vs_agentic_rag_P+T+R": 1.0,
+    "standard_rag_vs_ground_truth": 1.0,
+    "agentic_rag_P+T+R_vs_ground_truth": 1.0
+  },
+  "record_id": "fb5c92cb-dce5-4b7e-9b6d-9fd74257c16e",
+  "query": "Identifiser risikoer i salgsoppgaven",
+  "document_set_id": "d201",
+  "timestamp": "2026-03-26T09:48:03.707940",
+  "risk_summaries": [
+    {
+      "system_type": "standard_rag",
+      "total_risks": 12,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "agentic_rag_P+T+R",
+      "total_risks": 13,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "ground_truth",
+      "total_risks": 21,
+      "risks_by_category": {}
+    }
+  ],
+  "has_ground_truth": true,
+  "overlapping_risk_count": 12,
+  "unique_to": {
+    "standard_rag": 7,
+    "agentic_rag_P+T+R": 3,
+    "ground_truth": 12
+  },
+  "record_type": "comparison"
+}

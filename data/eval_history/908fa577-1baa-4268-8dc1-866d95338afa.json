@@ -1,0 +1,2353 @@
+{
+  "system_results": {
+    "standard_rag": {
+      "run_id": "c4361a55-4bcc-4b84-8437-09b082a066af",
+      "system_type": "standard_rag",
+      "overall_metrics": {
+        "precision": 0.2,
+        "recall": 0.16666666666666666,
+        "f1": 0.1818181818181818,
+        "total_support": 18
+      },
+      "matched_risks": 3,
+      "unmatched_predicted": 12,
+      "unmatched_ground_truth": 15,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_000",
+            "description": "Selger har ikke tegnet boligselgerforsikring, noe som øker kjøpers risiko ved eventuelle skjulte feil og mangler etter overtakelse.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring.",
+              "Jeg er orientert om mitt mulige ansvar som selger etter avhendingsloven, eventuelt etter kjøpsloven (aksjeboliger), og om forsikringsgiver sitt boligselgerforsikringstilbud."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.98,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_004",
+            "description": "Selger har ikke tegnet boligselgerforsikring. Dette innebærer at kjøper ikke har den ekstra sikkerheten som boligselgerforsikring normalt gir, og eventuelle mangelskrav må rettes direkte mot selger, noe som kan være mer krevende å inndrive.",
+            "evidence": [
+              "Selger har ikke tegnet boligselgerforsikring.",
+              "Boligkjøperforsikring: Kjøper har anledning til å tegne boligkjøperforsikring."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              18,
+              21
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_001",
+            "description": "Elektrisk anlegg er ikke fullstendig kontrollert. Takstmann mangler fagkompetanse til å vurdere elektriske anlegg og installasjoner, og sikringsskap er ikke undersøkt. Det kan foreligge skjulte feil og mangler.",
+            "evidence": [
+              "El-anlegget kan ha feil og mangler som en slik forenklet undersøkelse ikke vil avdekke.",
+              "Sikringsskap med automatsikringer. Sikringsskapet er ikke videre undersøkt da dette krever spesialkompetanse.",
+              "Undertegnede takstmann har ikke fagkompetanse/spesialkompetanse til å utføre kontroll av elektriske anlegg og elektriske installasjoner.",
+              "Vurderingene av det elektriske anlegget og VVS-installasjonene er forenklet, da undertegnede ikke har spesialisert kompetanse på disse områdene."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_007",
+            "description": "Det elektriske anlegget er ikke fullstendig kontrollert av autorisert elektroinstallatør. Tilstandsrapporten påpeker at den forenklede kontrollen ikke kan avdekke alle feil og mangler, og anbefaler at registrert/autorisert elektroinstallatør foretar en fullstendig kontroll.",
+            "evidence": [
+              "Det anbefales på generelt grunnlag at registrert/autorisert elektroinstallatør/kontrollør foretar en kontroll av hele det elektriske anlegget.",
+              "El-anlegget kan ha feil og mangler som en slik forenklet undersøkelse ikke vil avdekke.",
+              "Foreligger det eltilsynsrapport de siste 5 år, og det er ikke foretatt arbeid på anlegget etter denne, utenom retting av eventuelle avvik i eltilsynsrapport (dvs en el-tilsynsrapport uten avvik)? Nei"
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              30,
+              31
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_004",
+            "description": "Det er ikke bekreftet om radonmåling er foretatt. Manglende radonmåling kan innebære helserisiko for fremtidige beboere.",
+            "evidence": [
+              "21 Er det foretatt radonmåling? Nei Ja"
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_013",
+            "description": "Radonmåling er ikke utført. Selv om det ikke er krav om radonmåling når boligen ikke er utleid, kan radonkonsentrasjonen i bygget være ukjent. Eiendommen ligger i et område med marin leire, og radon kan forekomme i grunnen.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              20,
+              24
+            ],
+            "details": {
+              "confidence": 0.72
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_002",
+          "description": "VVS-installasjoner er ikke fullstendig vurdert grunnet manglende spesialistkompetanse hos takstmann, noe som innebærer risiko for skjulte feil.",
+          "evidence": [
+            "Vurderingene av det elektriske anlegget og VVS-installasjonene er forenklet, da undertegnede ikke har spesialisert kompetanse på disse områdene. For grundigere vurderinger bør en kvalifisert spesialist benyttes."
+          ],
+          "source_documents": [
+            "d135_d135"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.95,
+          "details": {}
+        },
+        {
+          "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_003",
+          "description": "Tilstandsrapporten er basert på selgers informasjon, og utførende er ikke ansvarlig for manglende eller feil informasjon fra selger. Dette svekker rapportens pålitelighet.",
+          "evidence": [
+            "Innholdet i salgsoppgaven er basert på selgers informasjon.",
+            "Utførende er ikke ansvarlig for manglende eller feil informasjon fra selger eller deres representant.",
+            "Selger eller deres representant må gå gjennom rapporten og melde fra om feil eller mangler før bruk."
+          ],
+          "source_documents": [
+            "d135_d135"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.93,
+          "details": {}
+        },
+        {
+          "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_005",
+          "description": "Det er ikke avklart om det foreligger manglende brukstillatelse eller ferdigattest for eiendommen, noe som kan medføre juridiske og praktiske komplikasjoner ved overtakelse.",
+          "evidence": [
+            "22 Kjenner du til manglende brukstillatelse eller ferdigattest? Nei Ja"
+          ],
+          "source_documents": [
+            "d135_d135"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_006",
+          "description": "Det er ikke avklart om det foreligger påbud, heftelser, krav eller manglende tillatelser vedrørende eiendommen, noe som kan representere en juridisk og økonomisk risiko for kjøper.",
+          "evidence": [
+            "20 Kjenner du til om det foreligger påbud/heftelser/krav/manglende tillatelser vedrørende eiendommen? Nei Ja"
+          ],
+          "source_documents": [
+            "d135_d135"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_007",
+          "description": "Risiko for skjeggkre og skadedyr (rotter, mus, maur) i sameiet er ikke avklart, noe som kan medføre kostnader og ulemper for kjøper.",
+          "evidence": [
+            "Kjenner du til om det er/har vært sopp/råteskader/insekter/skadedyr i sameiet/laget/selskapet (fellesareal eller i andre boliger) som rotter, mus, maur eller lignende? Nei Ja",
+            "Kjenner du til om det er/har vært skjeggkre i sameiet/laget/selskapet (fellesareal eller i andre boliger)? Nei Ja"
+          ],
+          "source_documents": [
+            "d135_d135"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.75,
+          "details": {}
+        },
+        {
+          "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_008",
+          "description": "Eiendommen selges 'som den er', noe som begrenser selgers ansvar og øker kjøpers risiko for å bære kostnader ved skjulte feil og mangler.",
+          "evidence": [
+            "Ved slike kjøp selges eiendommen «som den er», og selgers ansvar er begrenset til det som følger direkte av avtalen, jf. avhendingsloven § 3-9."
+          ],
+          "source_documents": [
+            "d135_d135"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.92,
+          "details": {}
+        },
+        {
+          "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_009",
+          "description": "Kjøper har en egenandel på inntil kr 10 000 ved eventuelle mangelskrav, noe som innebærer en direkte økonomisk risiko for kjøper.",
+          "evidence": [
+            "kjøper selv dekke kostnader med inntil kr 10 000 (som en egenandel)."
+          ],
+          "source_documents": [
+            "d135_d135"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.9,
+          "details": {}
+        },
+        {
+          "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_010",
+          "description": "Rapporten gjelder kun for ett salg og kan ikke gjenbrukes. Dersom salget ikke gjennomføres innen gyldighetsperioden, må ny rapport innhentes, noe som medfører ekstra kostnader.",
+          "evidence": [
+            "Rapporten gjelder kun for ett salg og kan ikke brukes senere innen gyldighetsperioden."
+          ],
+          "source_documents": [
+            "d135_d135"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.82,
+          "details": {}
+        },
+        {
+          "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_011",
+          "description": "Stikkprøvetakninger i tilstandsrapporten er tilfeldig valgt og kan misse skjulte skader, særlig på våtrom og fuktutsatte rom. Dette øker risikoen for uoppdagede fukt- og råteskader.",
+          "evidence": [
+            "stikkprøvetakninger er tilfeldig valgt og kan innebære kontroll under overflaten med spiss redskap eller lignende.",
+            "våtrom (bad, vaskerom) og andre fuktutsatte rom ikke hensyn til om arealet er lovlig oppført eller om bruken er med målinger av fagkyndig under visning før kjøp."
+          ],
+          "source_documents": [
+            "d135_d135"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_012",
+          "description": "Det er risiko for ulovlige bruksendringer, manglende godkjenning av arealer og brannsikkerhetsmangler, som ikke nødvendigvis er avdekket i rapporten.",
+          "evidence": [
+            "rekkverkshøyder/åpninger, ulovlige bruksendringer, brannceller osv.",
+            "ikke hensyn til om arealet er lovlig oppført eller om bruken er lovlig, bruksendringer, lysforhold eller andre sikkerhetsmangler.",
+            "forhold knyttet til brann, rømming, sikkerhet"
+          ],
+          "source_documents": [
+            "d135_d135"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.85,
+          "details": {}
+        },
+        {
+          "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_013",
+          "description": "Dersom selger har gitt ufullstendige, uriktige eller misvisende opplysninger, kan forsikringsselskapet søke regress eller redusere sitt ansvar, noe som øker kjøpers risiko.",
+          "evidence": [
+            "Jeg bekrefter at opplysningene er gitt etter beste skjønn. Jeg er kjent med at dersom jeg har gitt ufullstendige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis."
+          ],
+          "source_documents": [
+            "d135_d135"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.87,
+          "details": {}
+        },
+        {
+          "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_014",
+          "description": "Total kostnad ved salg til prisantydning er kr 129 965, noe som er en betydelig kostnad for selger og kan påvirke nettoproveny ved salget.",
+          "evidence": [
+            "Total kostnad ved salg til prisantydning: kr 129 965,00. Dette inkluderer både vederlag og stipulerte utlegg."
+          ],
+          "source_documents": [
+            "d135_d135"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.78,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d135_001",
+          "description": "Varslet økning i felleskostnader fra 1. februar: 4% generell økning som følge av at kommunale avgifter i Lillestrøm kommune øker med 22%. I tillegg øker TV/Internett med 100 kr/mnd (fra 469 kr til 569 kr). Samlet vil dette medføre høyere månedlige kostnader for kjøper enn det som fremgår av nøkkelinformasjonen.",
+          "evidence": [
+            "Styret ønsker å informere om at det fra og med 1. februar vil bli en økning i felleskostnadene på 4%, som følge av at kommunale avgifter for Lillestrøm kommune øker betydelig neste år (22%).",
+            "Økningen for TV- og Internett utgjør 100 kr, fra 469 kr til 569 kr. Økningen vil gjelde fra 1.februar.",
+            "Felleskostnader kr 3 920,- pr. mnd"
+          ],
+          "source_documents": [
+            "d135.pdf"
+          ],
+          "source_pages": [
+            16
+          ],
+          "details": {
+            "confidence": 0.97
+          }
+        },
+        {
+          "risk_id": "gt_d135_002",
+          "description": "Eiendommen ligger under marin grense med stor sannsynlighet for marin leire, og innenfor et aktsomhetsområde med potensiell flomfare. Ved fremtidige tiltak eller ombygging kan kommunen kreve geotekniske undersøkelser, noe som kan medføre betydelige kostnader.",
+          "evidence": [
+            "Av temakart fra Lillestrøm kommune fremgår det at eiendommen ligger under marin grense, med stor sannsynlighet for marin leire.",
+            "Ved søknad om tiltak som ny bebyggelse eller tilbygg må det derfor påregnes krav fra kommunen om geotekniske eller grunnundersøkelser.",
+            "Eiendommen ligger også innenfor et aktsomhetsområde med potensiell flomfare."
+          ],
+          "source_documents": [
+            "d135.pdf"
+          ],
+          "source_pages": [
+            19
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d135_003",
+          "description": "Hele kvartalet er under omfattende utvikling med pågående og planlagte rive- og byggearbeider. Bygningene som i dag rommer Kiwi og Rema 1000, samt småhus på motsatt side av Nittedalsgata, er planlagt revet og erstattet med ny blokkbebyggelse. Dette kan medføre støy, støv og ulemper over lengre tid for beboerne.",
+          "evidence": [
+            "Interessenter gjøres oppmerksom på at hele kvartalet er under omfattende utvikling, med pågående og planlagte rive og byggearbeider som kan medføre støy og ulemper knyttet til byggeaktivitet, riving og transport.",
+            "Bygningene som i dag rommer Kiwi og Rema 1000, samt enkelte småhus på motsatt side av Nittedalsgata, er planlagt revet og erstattet med ny blokkbebyggelse.",
+            "Området er i stadig endring, med både nybygging, rehabilitering og riving."
+          ],
+          "source_documents": [
+            "d135.pdf"
+          ],
+          "source_pages": [
+            19,
+            20
+          ],
+          "details": {
+            "confidence": 0.97
+          }
+        },
+        {
+          "risk_id": "gt_d135_005",
+          "description": "Selger har ikke bodd i boligen de siste 12 måneder. Dette kan begrense selgers kjennskap til boligens faktiske tilstand og eventuelle feil eller mangler som kun oppdages ved daglig bruk, noe som øker risikoen for skjulte feil.",
+          "evidence": [
+            "Har du bodd i boligen siste 12 måneder? Nei",
+            "Antall år 2, Antall måneder 6"
+          ],
+          "source_documents": [
+            "d135.pdf"
+          ],
+          "source_pages": [
+            18,
+            23
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d135_006",
+          "description": "Membranens tilstand på badet kan ikke verifiseres uten destruktive inngrep. Membranen har begrenset levetid og naturlig slitasje over tid. Eventuelle skjulte fuktskader kan ikke utelukkes, til tross for at overflatesøk ikke avdekket indikasjoner på fuktskade.",
+          "evidence": [
+            "Membranen kan ikke inspiseres uten å gjøre destruktive inngrep, som å fjerne fliser.",
+            "Membran er et fuktsperrende sjikt som skal hindre vann i å trenge underliggende konstruksjoner. Tilstedeværelse og full tilstand kan ikke vurderes ved visuell inspeksjon i rommet.",
+            "Det er viktig å merke seg at membran er en bygningsdel med naturlig slitasje over tid og en begrenset forventet levetid.",
+            "Det understrekes imidlertid at denne metoden har begrenset evne til å avdekke skjulte fuktskader, og resultatene må derfor ikke tolkes som en garanti mot slike skader."
+          ],
+          "source_documents": [
+            "d135.pdf"
+          ],
+          "source_pages": [
+            29,
+            30
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d135_008",
+          "description": "Boligen medfølger ingen parkeringsplass. Parkering er organisert gjennom næringsseksjon nr. 60 med kun ca. 17 plasser for hele sameiet (61 seksjoner), og utbygger forbeholder seg retten til å selge parkeringsplasser til andre enn seksjonseiere. Dette kan gjøre det vanskelig å skaffe parkering i fremtiden.",
+          "evidence": [
+            "Det medfølger ikke noe parkeringsplass til boligen.",
+            "Parkering for boliger er organisert gjennom næringsseksjon nummer 60 og består av cirka 17 parkeringsplasser, lokalisert i parkeringskjeller U1.",
+            "Utbygger forbeholder seg også retten til å selge eierandel til parkeringsplass til andre enn seksjonseiere, og slike plasser vil da være fritt omsettelige.",
+            "Sameiet har ikke egne gjesteparkeringsplasser."
+          ],
+          "source_documents": [
+            "d135.pdf"
+          ],
+          "source_pages": [
+            19,
+            33
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d135_009",
+          "description": "Varme og varmtvann er ikke inkludert i felleskostnadene og faktureres separat etter måler. Dette er en variabel kostnad som kan bli betydelig, særlig i kalde perioder, og som kjøper må budsjettere for i tillegg til de oppgitte felleskostnadene.",
+          "evidence": [
+            "Varme og varmtvann er ikke inkludert i felleskostnadene og faktureres separat hver måned etter måler på forbruk.",
+            "Andre utgifter: Varme og varmtvann er ikke inkludert i felleskostnadene og faktureres separat hver måned etter måler på forbruk."
+          ],
+          "source_documents": [
+            "d135.pdf"
+          ],
+          "source_pages": [
+            16,
+            17
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d135_010",
+          "description": "Skifte av TV/Internett-leverandør er varslet i Q2/2026, og tilbudet vil sannsynligvis endres til kun internett. Beboere kan miste TV-tilbudet som i dag er inkludert i felleskostnadene, og må eventuelt tegne egne TV-avtaler.",
+          "evidence": [
+            "Det kommer et skifte av leverandør i Q2/26. Sannsynligvis vil da tilbudet endres til kun internett.",
+            "Styret vil sette igang en prosess på nyåret med å få inn tilbud på en ny TV- og Internett avtale, da bindingsavtalen utløper."
+          ],
+          "source_documents": [
+            "d135.pdf"
+          ],
+          "source_pages": [
+            17
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d135_011",
+          "description": "Sameiet er et kombinasjonsbygg med bolig og næring. Utbygger (Kvartal 10 Bolig AS og Solon Eiendom ASA) eier og disponerer fritt over usolgte eierandeler og parkeringsplasser. Dette kan medføre interessekonflikter mellom bolig- og næringsseksjonseiere, og utbyggers innflytelse i sameiet kan påvirke beslutninger.",
+          "evidence": [
+            "Utbygger, Kvartal 10 Bolig AS og Solon Eiendom ASA, vil eie og disponere fritt over eierandeler og parkeringsplasser som ikke er solgt.",
+            "Sameiet er et kombinasjonsbygg med både bolig og næring, hvor disse i stor grad er adskilt i drift og kostnadsfordeling."
+          ],
+          "source_documents": [
+            "d135.pdf"
+          ],
+          "source_pages": [
+            19
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d135_012",
+          "description": "Sameierne er solidarisk ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk (legalpant). Legalpant har prioritet foran tinglyste lån (banklån), og kommunen har legalpant med høyere prioritet enn sameiet. Dette innebærer en risiko for kjøper dersom andre seksjonseiere misligholder sine forpliktelser.",
+          "evidence": [
+            "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.",
+            "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen.",
+            "Legalpant til kommunen har høyere prioritet enn legalpant til sameiet."
+          ],
+          "source_documents": [
+            "d135.pdf"
+          ],
+          "source_pages": [
+            19,
+            20
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d135_014",
+          "description": "Nærliggende områder er omfattet av hensynssone H810_1 som stiller krav til felles planlegging. Eiendommen er regulert til kombinert bebyggelse og anleggsformål, og Lillestrøm sentrum er i kontinuerlig utvikling. Fremtidige reguleringsendringer kan påvirke utsikt, solforhold og bomiljø.",
+          "evidence": [
+            "Nærliggende områder omfattes av hensynssone H810_1, som stiller krav til felles planlegging.",
+            "Lillestrøm sentrum er i kontinuerlig utvikling, og det må derfor påregnes fremtidig byggeaktivitet i området.",
+            "Vi anbefaler alle interessenter og budgivere å sette seg grundig inn i gjeldende reguleringsbestemmelser."
+          ],
+          "source_documents": [
+            "d135.pdf"
+          ],
+          "source_pages": [
+            19
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d135_015",
+          "description": "Egenerklæringen er ikke gjennomgått av takstmannen. Dette betyr at takstmannen ikke har hatt mulighet til å vurdere selgers egne opplysninger opp mot sine observasjoner, noe som svekker grunnlaget for tilstandsrapporten.",
+          "evidence": [
+            "Egenerklæring: Ikke gjennomgått. Nei (vedlagt: Nei)"
+          ],
+          "source_documents": [
+            "d135.pdf"
+          ],
+          "source_pages": [
+            33
+          ],
+          "details": {
+            "confidence": 0.83
+          }
+        },
+        {
+          "risk_id": "gt_d135_016",
+          "description": "Korttidsutleie er begrenset til 90 døgn per år, og eier må ha bodd i boligen i minst 1 år før utleie er tillatt. Seksjoner som leies ut kan ilegges 20% tillegg i felleskostnadene. Dette begrenser fleksibiliteten for kjøper som ønsker å leie ut boligen.",
+          "evidence": [
+            "Korttidsutleie av hele boligseksjonen er ikke tillatt utover 90 døgn per år.",
+            "Eier må selv ha bodd i boligen i minst 1 år før den kan leies ut.",
+            "Sameiet har vedtatt at seksjoner som leies ut kan ilegges et tillegg i felleskostnadene på 20 prosent for å dekke økt slitasje og administrative kostnader."
+          ],
+          "source_documents": [
+            "d135.pdf"
+          ],
+          "source_pages": [
+            20
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d135_017",
+          "description": "Plantegningene som er vedlagt salgsoppgaven stemmer ikke nødvendigvis med faktisk innredning og møblering, og er ikke målbare. Avvik og feil kan forekomme, noe som kan gi et misvisende bilde av boligens faktiske utforming.",
+          "evidence": [
+            "Det gjøres oppmerksom på at vedlagte plantegninger ikke stemmer hva gjelder faktisk innredning og møblering etc. Den er ikke målbar, avvik og feil kan forekomme."
+          ],
+          "source_documents": [
+            "d135.pdf"
+          ],
+          "source_pages": [
+            20
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d135_018",
+          "description": "Boligen var møblert under befaringen, og tunge møbler og inventar ble ikke flyttet. Eventuelle avvik eller skader bak møbler kan ikke ha blitt avdekket i tilstandsrapporten.",
+          "evidence": [
+            "Boligen var møblert under befaringen. Tunge møbler og inventar ble ikke flyttet under befaringen. Derfor kan eventuelle avvik eller skader som skjuler seg bak disse, ikke bli avdekket i rapporten."
+          ],
+          "source_documents": [
+            "d135.pdf"
+          ],
+          "source_pages": [
+            34
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_002",
+            "description": "VVS-installasjoner er ikke fullstendig vurdert grunnet manglende spesialistkompetanse hos takstmann, noe som innebærer risiko for skjulte feil.",
+            "evidence": [
+              "Vurderingene av det elektriske anlegget og VVS-installasjonene er forenklet, da undertegnede ikke har spesialisert kompetanse på disse områdene. For grundigere vurderinger bør en kvalifisert spesialist benyttes."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt i tilstandsrapportens forutsetninger: 'Vurderingene av det elektriske anlegget og VVS-installasjonene er forenklet, da undertegnede ikke har spesialisert kompetanse på disse områdene. For grundigere vurderinger bør en kvalifisert spesialist kontaktes.' Dette underbygger risikoen for skjulte feil i VVS-installasjoner."
+        },
+        {
+          "risk": {
+            "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_003",
+            "description": "Tilstandsrapporten er basert på selgers informasjon, og utførende er ikke ansvarlig for manglende eller feil informasjon fra selger. Dette svekker rapportens pålitelighet.",
+            "evidence": [
+              "Innholdet i salgsoppgaven er basert på selgers informasjon.",
+              "Utførende er ikke ansvarlig for manglende eller feil informasjon fra selger eller deres representant.",
+              "Selger eller deres representant må gå gjennom rapporten og melde fra om feil eller mangler før bruk."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.93,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter alle tre evidenspunkter. I tilstandsrapportens forutsetninger (side 35) står det: 'Utførende er ikke ansvarlig for manglende eller feil informasjon fra selger eller deres representant.' og 'Selger eller deres representant må gå gjennom rapporten og melde fra om feil eller mangler før bruk.' I salgsoppgaven (side 21) bekreftes det at 'Innholdet i salgsoppgaven er basert på selgers informasjon'. Dette svekker rapportens pålitelighet."
+        },
+        {
+          "risk": {
+            "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_005",
+            "description": "Det er ikke avklart om det foreligger manglende brukstillatelse eller ferdigattest for eiendommen, noe som kan medføre juridiske og praktiske komplikasjoner ved overtakelse.",
+            "evidence": [
+              "22 Kjenner du til manglende brukstillatelse eller ferdigattest? Nei Ja"
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Egenerklæringsskjemaet (spørsmål 22) viser at selger har svart 'Nei' på spørsmålet om manglende brukstillatelse eller ferdigattest. I tillegg bekrefter salgsoppgaven at 'Det er utstedt ferdigattest for Nybygg boligblokker... datert 31.10.2023.' Risikoen er dermed ikke reell – dokumentet avklarer at ferdigattest foreligger."
+        },
+        {
+          "risk": {
+            "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_006",
+            "description": "Det er ikke avklart om det foreligger påbud, heftelser, krav eller manglende tillatelser vedrørende eiendommen, noe som kan representere en juridisk og økonomisk risiko for kjøper.",
+            "evidence": [
+              "20 Kjenner du til om det foreligger påbud/heftelser/krav/manglende tillatelser vedrørende eiendommen? Nei Ja"
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Egenerklæringsskjemaet (spørsmål 20) viser at selger har svart 'Nei' på spørsmålet om påbud/heftelser/krav/manglende tillatelser. Dokumentet inneholder ingen informasjon som indikerer at slike forhold faktisk foreligger. Risikoen er ikke underbygget av dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_007",
+            "description": "Risiko for skjeggkre og skadedyr (rotter, mus, maur) i sameiet er ikke avklart, noe som kan medføre kostnader og ulemper for kjøper.",
+            "evidence": [
+              "Kjenner du til om det er/har vært sopp/råteskader/insekter/skadedyr i sameiet/laget/selskapet (fellesareal eller i andre boliger) som rotter, mus, maur eller lignende? Nei Ja",
+              "Kjenner du til om det er/har vært skjeggkre i sameiet/laget/selskapet (fellesareal eller i andre boliger)? Nei Ja"
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Egenerklæringsskjemaet viser at selger har svart 'Nei' på spørsmål 27 (sopp/råteskader/insekter/skadedyr i sameiet) og spørsmål 28 (skjeggkre i sameiet). Det er ingen informasjon i dokumentet som indikerer at slike problemer faktisk eksisterer. Risikoen er ikke underbygget."
+        },
+        {
+          "risk": {
+            "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_008",
+            "description": "Eiendommen selges 'som den er', noe som begrenser selgers ansvar og øker kjøpers risiko for å bære kostnader ved skjulte feil og mangler.",
+            "evidence": [
+              "Ved slike kjøp selges eiendommen «som den er», og selgers ansvar er begrenset til det som følger direkte av avtalen, jf. avhendingsloven § 3-9."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt i salgsoppgaven (side 21): 'Ved slike kjøp selges eiendommen «som den er», og selgers ansvar er begrenset til det som følger direkte av avtalen, jf. avhendingsloven § 3-9.' Dette gjelder ved kjøp fra ikke-forbrukere, og representerer en reell risiko for kjøper."
+        },
+        {
+          "risk": {
+            "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_009",
+            "description": "Kjøper har en egenandel på inntil kr 10 000 ved eventuelle mangelskrav, noe som innebærer en direkte økonomisk risiko for kjøper.",
+            "evidence": [
+              "kjøper selv dekke kostnader med inntil kr 10 000 (som en egenandel)."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt i salgsoppgaven (side 21): 'kjøper selv dekke kostnader med inntil kr 10 000 (som en egenandel).' Dette er en direkte og konkret økonomisk risiko for kjøper ved eventuelle mangelskrav."
+        },
+        {
+          "risk": {
+            "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_010",
+            "description": "Rapporten gjelder kun for ett salg og kan ikke gjenbrukes. Dersom salget ikke gjennomføres innen gyldighetsperioden, må ny rapport innhentes, noe som medfører ekstra kostnader.",
+            "evidence": [
+              "Rapporten gjelder kun for ett salg og kan ikke brukes senere innen gyldighetsperioden."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt i tilstandsrapportens forutsetninger (side 35): 'Rapporten gjelder kun for ett salg og kan ikke brukes senere innen gyldighetsperioden.' Dette er en reell begrensning som kan medføre ekstra kostnader dersom salget ikke gjennomføres."
+        },
+        {
+          "risk": {
+            "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_011",
+            "description": "Stikkprøvetakninger i tilstandsrapporten er tilfeldig valgt og kan misse skjulte skader, særlig på våtrom og fuktutsatte rom. Dette øker risikoen for uoppdagede fukt- og råteskader.",
+            "evidence": [
+              "stikkprøvetakninger er tilfeldig valgt og kan innebære kontroll under overflaten med spiss redskap eller lignende.",
+              "våtrom (bad, vaskerom) og andre fuktutsatte rom ikke hensyn til om arealet er lovlig oppført eller om bruken er med målinger av fagkyndig under visning før kjøp."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter i tilstandsrapportens forutsetninger: 'stikkprøvetakninger er tilfeldig valgt og kan innebære kontroll under overflaten med spiss redskap eller lignende.' Videre fremgår det at våtrom og fuktutsatte rom vurderes mot gjeldende regler, men at det ikke tas hensyn til om arealet er lovlig oppført eller om bruken er lovlig. Dette øker risikoen for uoppdagede skjulte skader."
+        },
+        {
+          "risk": {
+            "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_012",
+            "description": "Det er risiko for ulovlige bruksendringer, manglende godkjenning av arealer og brannsikkerhetsmangler, som ikke nødvendigvis er avdekket i rapporten.",
+            "evidence": [
+              "rekkverkshøyder/åpninger, ulovlige bruksendringer, brannceller osv.",
+              "ikke hensyn til om arealet er lovlig oppført eller om bruken er lovlig, bruksendringer, lysforhold eller andre sikkerhetsmangler.",
+              "forhold knyttet til brann, rømming, sikkerhet"
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter i tilstandsrapportens forutsetninger at bygningssakkyndig vurderer 'rekkverkshøyder/åpninger, ulovlige bruksendringer, brannceller osv.' mot gjeldende regelverk, og at det ikke tas hensyn til om arealet er lovlig oppført eller om bruken er lovlig, bruksendringer, lysforhold eller andre sikkerhetsmangler. Videre nevnes 'forhold knyttet til brann, rømming, sikkerhet'. Dette underbygger risikoen for ulovlige bruksendringer og brannsikkerhetsmangler som ikke nødvendigvis er avdekket."
+        },
+        {
+          "risk": {
+            "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_013",
+            "description": "Dersom selger har gitt ufullstendige, uriktige eller misvisende opplysninger, kan forsikringsselskapet søke regress eller redusere sitt ansvar, noe som øker kjøpers risiko.",
+            "evidence": [
+              "Jeg bekrefter at opplysningene er gitt etter beste skjønn. Jeg er kjent med at dersom jeg har gitt ufullstendige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.87,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt i egenerklæringsskjemaets tilleggskommentar (side 25): 'Jeg bekrefter at opplysningene er gitt etter beste skjønn. Jeg er kjent med at dersom jeg har gitt ufullstendige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis.' Dette er en reell risiko for kjøper."
+        },
+        {
+          "risk": {
+            "risk_id": "c4361a55-4bcc-4b84-8437-09b082a066af_risk_014",
+            "description": "Total kostnad ved salg til prisantydning er kr 129 965, noe som er en betydelig kostnad for selger og kan påvirke nettoproveny ved salget.",
+            "evidence": [
+              "Total kostnad ved salg til prisantydning: kr 129 965,00. Dette inkluderer både vederlag og stipulerte utlegg."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt i salgsoppgaven (side 22): 'Total kostnad ved salg til prisantydning: kr 129 965,00. Dette inkluderer både vederlag og stipulerte utlegg.' Dette er en reell og dokumentert kostnad for selger."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 0.5,
+        "recall": 0.16666666666666666,
+        "f1": 0.25,
+        "total_support": 18
+      }
+    },
+    "agentic_rag_P+T+R": {
+      "run_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f",
+      "system_type": "agentic_rag_P+T+R",
+      "overall_metrics": {
+        "precision": 0.6470588235294118,
+        "recall": 0.6111111111111112,
+        "f1": 0.6285714285714287,
+        "total_support": 18
+      },
+      "matched_risks": 11,
+      "unmatched_predicted": 6,
+      "unmatched_ground_truth": 7,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_003",
+            "description": "Felleskostnadene øker fra 1. februar med 4% som følge av at kommunale avgifter for Lillestrøm kommune øker betydelig (22%). I tillegg varsles økning i TV- og Internett-kostnader på 100 kr/mnd fra samme tidspunkt.",
+            "evidence": [
+              "Styret ønsker å informere om at det fra og med 1. februar vil bli en økning i felleskostnadene på 4%, som følge av at kommunale avgifter for Lillestrøm kommune øker betydelig neste år (22%).",
+              "Økningen for TV- og Internett utgjør 100 kr, fra 469 kr til 569 kr. Økningen vil gjelde fra 1.februar."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_001",
+            "description": "Varslet økning i felleskostnader fra 1. februar: 4% generell økning som følge av at kommunale avgifter i Lillestrøm kommune øker med 22%. I tillegg øker TV/Internett med 100 kr/mnd (fra 469 kr til 569 kr). Samlet vil dette medføre høyere månedlige kostnader for kjøper enn det som fremgår av nøkkelinformasjonen.",
+            "evidence": [
+              "Styret ønsker å informere om at det fra og med 1. februar vil bli en økning i felleskostnadene på 4%, som følge av at kommunale avgifter for Lillestrøm kommune øker betydelig neste år (22%).",
+              "Økningen for TV- og Internett utgjør 100 kr, fra 469 kr til 569 kr. Økningen vil gjelde fra 1.februar.",
+              "Felleskostnader kr 3 920,- pr. mnd"
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_000",
+            "description": "Eiendommen ligger under marin grense med stor sannsynlighet for marin leire, noe som innebærer geoteknisk risiko. Ved søknad om tiltak som ny bebyggelse eller tilbygg må det påregnes krav fra kommunen om geotekniske eller grunnundersøkelser.",
+            "evidence": [
+              "Av temakart fra Lillestrøm kommune fremgår det at eiendommen ligger under marin grense, med stor sannsynlighet for marin leire.",
+              "Ved søknad om tiltak som ny bebyggelse eller tilbygg må det derfor påregnes krav fra kommunen om geotekniske eller grunnundersøkelser."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_002",
+            "description": "Eiendommen ligger under marin grense med stor sannsynlighet for marin leire, og innenfor et aktsomhetsområde med potensiell flomfare. Ved fremtidige tiltak eller ombygging kan kommunen kreve geotekniske undersøkelser, noe som kan medføre betydelige kostnader.",
+            "evidence": [
+              "Av temakart fra Lillestrøm kommune fremgår det at eiendommen ligger under marin grense, med stor sannsynlighet for marin leire.",
+              "Ved søknad om tiltak som ny bebyggelse eller tilbygg må det derfor påregnes krav fra kommunen om geotekniske eller grunnundersøkelser.",
+              "Eiendommen ligger også innenfor et aktsomhetsområde med potensiell flomfare."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_002",
+            "description": "Hele kvartalet er under omfattende utvikling med pågående og planlagte rive- og byggearbeider som kan medføre støy og ulemper for beboerne over lengre tid. Nabobygg (Kiwi og Rema 1000) er planlagt revet og erstattet med ny blokkbebyggelse.",
+            "evidence": [
+              "Interessenter gjøres oppmerksom på at hele kvartalet er under omfattende utvikling, med pågående og planlagte rive og byggearbeider som kan medføre støy og ulemper knyttet til byggeaktivitet, riving og transport.",
+              "Bygningene som i dag rommer Kiwi og Rema 1000, samt enkelte småhus på motsatt side av Nittedalsgata, er planlagt revet og erstattet med ny blokkbebyggelse.",
+              "Lillestrøm sentrum er i kontinuerlig utvikling, og det må derfor påregnes fremtidig byggeaktivitet i området."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_003",
+            "description": "Hele kvartalet er under omfattende utvikling med pågående og planlagte rive- og byggearbeider. Bygningene som i dag rommer Kiwi og Rema 1000, samt småhus på motsatt side av Nittedalsgata, er planlagt revet og erstattet med ny blokkbebyggelse. Dette kan medføre støy, støv og ulemper over lengre tid for beboerne.",
+            "evidence": [
+              "Interessenter gjøres oppmerksom på at hele kvartalet er under omfattende utvikling, med pågående og planlagte rive og byggearbeider som kan medføre støy og ulemper knyttet til byggeaktivitet, riving og transport.",
+              "Bygningene som i dag rommer Kiwi og Rema 1000, samt enkelte småhus på motsatt side av Nittedalsgata, er planlagt revet og erstattet med ny blokkbebyggelse.",
+              "Området er i stadig endring, med både nybygging, rehabilitering og riving."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              19,
+              20
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_008",
+            "description": "Hulltaking og fuktmåling i veggkonstruksjonen på badet er ikke utført fordi våtrommet er et prefabrikkert våtromskabin. Skjulte fuktskader i tilliggende konstruksjoner kan dermed ikke utelukkes.",
+            "evidence": [
+              "Hulltaking og fuktmåling i veggkonstruksjonen er ikke utført da våtrommet er et prefabrikkert våtromskabin. I denne typen konstruksjon skal det ikke foretas hulltaking i henhold til forskrift til avhendingslova.",
+              "Denne metoden har begrenset evne til å avdekke skjulte fuktskader, og resultatene må derfor ikke tolkes som en garanti mot slike skader."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_006",
+            "description": "Membranens tilstand på badet kan ikke verifiseres uten destruktive inngrep. Membranen har begrenset levetid og naturlig slitasje over tid. Eventuelle skjulte fuktskader kan ikke utelukkes, til tross for at overflatesøk ikke avdekket indikasjoner på fuktskade.",
+            "evidence": [
+              "Membranen kan ikke inspiseres uten å gjøre destruktive inngrep, som å fjerne fliser.",
+              "Membran er et fuktsperrende sjikt som skal hindre vann i å trenge underliggende konstruksjoner. Tilstedeværelse og full tilstand kan ikke vurderes ved visuell inspeksjon i rommet.",
+              "Det er viktig å merke seg at membran er en bygningsdel med naturlig slitasje over tid og en begrenset forventet levetid.",
+              "Det understrekes imidlertid at denne metoden har begrenset evne til å avdekke skjulte fuktskader, og resultatene må derfor ikke tolkes som en garanti mot slike skader."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              29,
+              30
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_006",
+            "description": "El-anlegget er kun forenklet kontrollert av bygningssakkyndig uten spesialkompetanse. Det anbefales fullstendig kontroll av autorisert elektroinstallatør, da skjulte feil og mangler ikke kan utelukkes.",
+            "evidence": [
+              "El-anlegget kan ha feil og mangler som en slik forenklet undersøkelse ikke vil avdekke. Vær derfor oppmerksom på denne risikoen, og søk videre veiledning eller få en fullstendig kontroll utført av registrert elektrovirksomhet.",
+              "Undertegnede takstmann har ikke fagkompetanse/spesialkompetanse til å utføre kontroll av elektriske anlegg og elektriske installasjoner.",
+              "Det anbefales på generelt grunnlag at registrert/autorisert elektroinstallatør/kontrollør foretar en kontroll av hele det elektriske anlegget."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_007",
+            "description": "Det elektriske anlegget er ikke fullstendig kontrollert av autorisert elektroinstallatør. Tilstandsrapporten påpeker at den forenklede kontrollen ikke kan avdekke alle feil og mangler, og anbefaler at registrert/autorisert elektroinstallatør foretar en fullstendig kontroll.",
+            "evidence": [
+              "Det anbefales på generelt grunnlag at registrert/autorisert elektroinstallatør/kontrollør foretar en kontroll av hele det elektriske anlegget.",
+              "El-anlegget kan ha feil og mangler som en slik forenklet undersøkelse ikke vil avdekke.",
+              "Foreligger det eltilsynsrapport de siste 5 år, og det er ikke foretatt arbeid på anlegget etter denne, utenom retting av eventuelle avvik i eltilsynsrapport (dvs en el-tilsynsrapport uten avvik)? Nei"
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              30,
+              31
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_009",
+            "description": "Boligen medfølger ingen parkeringsplass. Parkering er organisert gjennom næringsseksjon 60 med kun ca. 17 plasser i parkeringskjeller U1, og det finnes ingen gjesteparkeringsplasser i sameiet.",
+            "evidence": [
+              "Det medfølger ikke noe parkeringsplass til boligen.",
+              "Sameiet har ikke egne gjesteparkeringsplasser.",
+              "Parkering for boliger er organisert gjennom næringsseksjon nummer 60 og består av cirka 17 parkeringsplasser, lokalisert i parkeringskjeller U1."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_008",
+            "description": "Boligen medfølger ingen parkeringsplass. Parkering er organisert gjennom næringsseksjon nr. 60 med kun ca. 17 plasser for hele sameiet (61 seksjoner), og utbygger forbeholder seg retten til å selge parkeringsplasser til andre enn seksjonseiere. Dette kan gjøre det vanskelig å skaffe parkering i fremtiden.",
+            "evidence": [
+              "Det medfølger ikke noe parkeringsplass til boligen.",
+              "Parkering for boliger er organisert gjennom næringsseksjon nummer 60 og består av cirka 17 parkeringsplasser, lokalisert i parkeringskjeller U1.",
+              "Utbygger forbeholder seg også retten til å selge eierandel til parkeringsplass til andre enn seksjonseiere, og slike plasser vil da være fritt omsettelige.",
+              "Sameiet har ikke egne gjesteparkeringsplasser."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              19,
+              33
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_004",
+            "description": "Det er varslet generelle kostnadsøkninger på enkelte drift- og leverandørtjenester, blant annet internett. Bindingsavtalen for TV og internett utløper og ny avtale er ikke inngått, noe som kan medføre ytterligere kostnadsøkninger.",
+            "evidence": [
+              "Det er varslet generelle kostnadsøkninger på enkelte drift og leverandørtjenester, blant annet internett, som følges opp løpende.",
+              "Styret vil sette igang en prosess på nyåret med å få inn tilbud på en ny TV- og Internett avtale, da bindingsavtalen utløper."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_010",
+            "description": "Skifte av TV/Internett-leverandør er varslet i Q2/2026, og tilbudet vil sannsynligvis endres til kun internett. Beboere kan miste TV-tilbudet som i dag er inkludert i felleskostnadene, og må eventuelt tegne egne TV-avtaler.",
+            "evidence": [
+              "Det kommer et skifte av leverandør i Q2/26. Sannsynligvis vil da tilbudet endres til kun internett.",
+              "Styret vil sette igang en prosess på nyåret med å få inn tilbud på en ny TV- og Internett avtale, da bindingsavtalen utløper."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              17
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_011",
+            "description": "Sameiet er et kombinasjonsbygg med både bolig og næring. Dette kan medføre interessekonflikter mellom bolig- og næringsseksjonseiere, og kostnadsfordelingen kan være kompleks.",
+            "evidence": [
+              "Sameiet er et kombinasjonsbygg med både bolig og næring, hvor disse i stor grad er adskilt i drift og kostnadsfordeling.",
+              "Det er egne ordninger for parkeringsplasser i garasjekjeller, og fjernvarme inngår i felleskostnadene med individuell måling."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_011",
+            "description": "Sameiet er et kombinasjonsbygg med bolig og næring. Utbygger (Kvartal 10 Bolig AS og Solon Eiendom ASA) eier og disponerer fritt over usolgte eierandeler og parkeringsplasser. Dette kan medføre interessekonflikter mellom bolig- og næringsseksjonseiere, og utbyggers innflytelse i sameiet kan påvirke beslutninger.",
+            "evidence": [
+              "Utbygger, Kvartal 10 Bolig AS og Solon Eiendom ASA, vil eie og disponere fritt over eierandeler og parkeringsplasser som ikke er solgt.",
+              "Sameiet er et kombinasjonsbygg med både bolig og næring, hvor disse i stor grad er adskilt i drift og kostnadsfordeling."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_012",
+            "description": "Legalpant fra kommunen for kommunale avgifter har høyere prioritet enn legalpant til sameiet, og begge har prioritet foran tinglyste banklån. Dette innebærer en latent økonomisk risiko for kjøper ved mislighold.",
+            "evidence": [
+              "Legalpant til kommunen har høyere prioritet enn legalpant til sameiet.",
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen.",
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_012",
+            "description": "Sameierne er solidarisk ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk (legalpant). Legalpant har prioritet foran tinglyste lån (banklån), og kommunen har legalpant med høyere prioritet enn sameiet. Dette innebærer en risiko for kjøper dersom andre seksjonseiere misligholder sine forpliktelser.",
+            "evidence": [
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.",
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen.",
+              "Legalpant til kommunen har høyere prioritet enn legalpant til sameiet."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              19,
+              20
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_005",
+            "description": "Selger har ikke utført radonmåling. Kjøper har dermed ingen dokumentasjon på radonnivåer i boligen, noe som kan utgjøre en helserisiko.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_013",
+            "description": "Radonmåling er ikke utført. Selv om det ikke er krav om radonmåling når boligen ikke er utleid, kan radonkonsentrasjonen i bygget være ukjent. Eiendommen ligger i et område med marin leire, og radon kan forekomme i grunnen.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              20,
+              24
+            ],
+            "details": {
+              "confidence": 0.72
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_013",
+            "description": "Korttidsutleie (f.eks. Airbnb) er begrenset til maksimalt 90 døgn per år, og langtidsutleie krever at eier selv har bodd i boligen i minst 1 år. Fremleie er ikke tillatt uten styrets godkjenning. Dette begrenser fleksibiliteten for kjøper som ønsker å leie ut.",
+            "evidence": [
+              "Korttidsutleie av hele boligseksjonen er ikke tillatt utover 90 døgn per år.",
+              "Utleie av boligseksjoner skal ha en minimumsperiode på 6 måneder. Eier må selv ha bodd i boligen i minst 1 år før den kan leies ut.",
+              "Fremleie er ikke tillatt uten styrets godkjenning eller pålegg om å avslutte leieforholdet."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_016",
+            "description": "Korttidsutleie er begrenset til 90 døgn per år, og eier må ha bodd i boligen i minst 1 år før utleie er tillatt. Seksjoner som leies ut kan ilegges 20% tillegg i felleskostnadene. Dette begrenser fleksibiliteten for kjøper som ønsker å leie ut boligen.",
+            "evidence": [
+              "Korttidsutleie av hele boligseksjonen er ikke tillatt utover 90 døgn per år.",
+              "Eier må selv ha bodd i boligen i minst 1 år før den kan leies ut.",
+              "Sameiet har vedtatt at seksjoner som leies ut kan ilegges et tillegg i felleskostnadene på 20 prosent for å dekke økt slitasje og administrative kostnader."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_001",
+          "description": "Eiendommen ligger innenfor et aktsomhetsområde med potensiell flomfare, noe som utgjør en naturrisiko for kjøper.",
+          "evidence": [
+            "Eiendommen ligger også innenfor et aktsomhetsområde med potensiell flomfare.",
+            "Nærliggende områder omfattes av hensynssone H810_1, som stiller krav til felles planlegging."
+          ],
+          "source_documents": [
+            "d135_d135"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.95,
+          "details": {}
+        },
+        {
+          "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_007",
+          "description": "Branntekniske forhold er kun forenklet kontrollert. Det kan foreligge feil og mangler knyttet til branntekniske forhold som ikke avdekkes ved en slik forenklet undersøkelse.",
+          "evidence": [
+            "Det kan være feil og mangler om branntekniske forhold som en slik forenklet undersøkelse ikke vil avdekke. Vær derfor oppmerksom på denne risikoen, og søk videre veiledning eller rådgivning.",
+            "Dette kan ikke sammenlignes med en fullstendig kontroll av branntekniske forhold av offentlig myndighet, eller en vurdering av boligens branntekniske forhold eller prosjektering fra en rådgiver med spesialkompetanse."
+          ],
+          "source_documents": [
+            "d135_d135"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.85,
+          "details": {}
+        },
+        {
+          "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_010",
+          "description": "Utbygger (Kvartal 10 Bolig AS og Solon Eiendom ASA) beholder eierskap og disposisjonsrett over usolgte eierandeler og parkeringsplasser i sameiet, noe som kan påvirke sameiets styring og beslutningsprosesser.",
+          "evidence": [
+            "Utbygger, Kvartal 10 Bolig AS og Solon Eiendom ASA, vil eie og disponere fritt over eierandeler og parkeringsplasser som ikke er solgt.",
+            "Utbygger forbeholder seg også retten til å selge eierandel til parkeringsplass til andre enn seksjonseiere, og slike plasser vil da være fritt omsettelige."
+          ],
+          "source_documents": [
+            "d135_d135"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_014",
+          "description": "Seksjoner som leies ut kan ilegges et tillegg i felleskostnadene på 20 prosent, og det kan kreves garanti, depositum eller forsikring tilsvarende 3 måneders leie. Dette øker den løpende kostnaden ved utleie.",
+          "evidence": [
+            "Sameiet har vedtatt at seksjoner som leies ut kan ilegges et tillegg i felleskostnadene på 20 prosent for å dekke økt slitasje og administrative kostnader.",
+            "I tillegg kan det kreves garanti, depositum eller forsikring tilsvarende 3 måneders leie for å dekke eventuelle skader på fellesarealer."
+          ],
+          "source_documents": [
+            "d135_d135"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.9,
+          "details": {}
+        },
+        {
+          "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_015",
+          "description": "Tilstandsrapporten er basert på undersøkelsesnivå 1 (visuell observasjon), og avdekker ikke nødvendigvis alle mulige avvik eller skader. Skjulte konstruksjoner, skjulte installasjoner og flater som ikke er tilgjengelige, er ikke undersøkt.",
+          "evidence": [
+            "Rapporten er basert på undersøkelsesnivå 1, Tilstandsgradene (TG) gjenspeiler undersøkelser utført i henhold til forskrift til avhendingsloven (Tryggere bolighandel). Metoder og omfang følger forskriftens krav, men undersøkelsene avdekker ikke nødvendigvis alle mulige avvik eller skader.",
+            "Befaringen skal begrenses til kun visuelle observasjoner på tilgjengelige flater uten fysiske inngrep.",
+            "Boligen var møblert under befaringen. Tunge møbler og inventar ble ikke flyttet under befaringen. Derfor kan eventuelle avvik eller skader som skjuler seg bak disse, ikke bli avdekket i rapporten."
+          ],
+          "source_documents": [
+            "d135_d135"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.9,
+          "details": {}
+        },
+        {
+          "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_016",
+          "description": "Eiendomsskatt for Lillestrøm kommune øker betydelig (22%) fra neste år, noe som direkte påvirker felleskostnadene og kjøpers løpende utgifter.",
+          "evidence": [
+            "Styret ønsker å informere om at det fra og med 1. februar vil bli en økning i felleskostnadene på 4%, som følge av at kommunale avgifter for Lillestrøm kommune øker betydelig neste år (22%).",
+            "Eiendomsskatt: Estimert Kr 528,- (2026)"
+          ],
+          "source_documents": [
+            "d135_d135"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.92,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d135_004",
+          "description": "Selger har ikke tegnet boligselgerforsikring. Dette innebærer at kjøper ikke har den ekstra sikkerheten som boligselgerforsikring normalt gir, og eventuelle mangelskrav må rettes direkte mot selger, noe som kan være mer krevende å inndrive.",
+          "evidence": [
+            "Selger har ikke tegnet boligselgerforsikring.",
+            "Boligkjøperforsikring: Kjøper har anledning til å tegne boligkjøperforsikring."
+          ],
+          "source_documents": [
+            "d135.pdf"
+          ],
+          "source_pages": [
+            18,
+            21
+          ],
+          "details": {
+            "confidence": 0.93
+          }
+        },
+        {
+          "risk_id": "gt_d135_005",
+          "description": "Selger har ikke bodd i boligen de siste 12 måneder. Dette kan begrense selgers kjennskap til boligens faktiske tilstand og eventuelle feil eller mangler som kun oppdages ved daglig bruk, noe som øker risikoen for skjulte feil.",
+          "evidence": [
+            "Har du bodd i boligen siste 12 måneder? Nei",
+            "Antall år 2, Antall måneder 6"
+          ],
+          "source_documents": [
+            "d135.pdf"
+          ],
+          "source_pages": [
+            18,
+            23
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d135_009",
+          "description": "Varme og varmtvann er ikke inkludert i felleskostnadene og faktureres separat etter måler. Dette er en variabel kostnad som kan bli betydelig, særlig i kalde perioder, og som kjøper må budsjettere for i tillegg til de oppgitte felleskostnadene.",
+          "evidence": [
+            "Varme og varmtvann er ikke inkludert i felleskostnadene og faktureres separat hver måned etter måler på forbruk.",
+            "Andre utgifter: Varme og varmtvann er ikke inkludert i felleskostnadene og faktureres separat hver måned etter måler på forbruk."
+          ],
+          "source_documents": [
+            "d135.pdf"
+          ],
+          "source_pages": [
+            16,
+            17
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d135_014",
+          "description": "Nærliggende områder er omfattet av hensynssone H810_1 som stiller krav til felles planlegging. Eiendommen er regulert til kombinert bebyggelse og anleggsformål, og Lillestrøm sentrum er i kontinuerlig utvikling. Fremtidige reguleringsendringer kan påvirke utsikt, solforhold og bomiljø.",
+          "evidence": [
+            "Nærliggende områder omfattes av hensynssone H810_1, som stiller krav til felles planlegging.",
+            "Lillestrøm sentrum er i kontinuerlig utvikling, og det må derfor påregnes fremtidig byggeaktivitet i området.",
+            "Vi anbefaler alle interessenter og budgivere å sette seg grundig inn i gjeldende reguleringsbestemmelser."
+          ],
+          "source_documents": [
+            "d135.pdf"
+          ],
+          "source_pages": [
+            19
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d135_015",
+          "description": "Egenerklæringen er ikke gjennomgått av takstmannen. Dette betyr at takstmannen ikke har hatt mulighet til å vurdere selgers egne opplysninger opp mot sine observasjoner, noe som svekker grunnlaget for tilstandsrapporten.",
+          "evidence": [
+            "Egenerklæring: Ikke gjennomgått. Nei (vedlagt: Nei)"
+          ],
+          "source_documents": [
+            "d135.pdf"
+          ],
+          "source_pages": [
+            33
+          ],
+          "details": {
+            "confidence": 0.83
+          }
+        },
+        {
+          "risk_id": "gt_d135_017",
+          "description": "Plantegningene som er vedlagt salgsoppgaven stemmer ikke nødvendigvis med faktisk innredning og møblering, og er ikke målbare. Avvik og feil kan forekomme, noe som kan gi et misvisende bilde av boligens faktiske utforming.",
+          "evidence": [
+            "Det gjøres oppmerksom på at vedlagte plantegninger ikke stemmer hva gjelder faktisk innredning og møblering etc. Den er ikke målbar, avvik og feil kan forekomme."
+          ],
+          "source_documents": [
+            "d135.pdf"
+          ],
+          "source_pages": [
+            20
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d135_018",
+          "description": "Boligen var møblert under befaringen, og tunge møbler og inventar ble ikke flyttet. Eventuelle avvik eller skader bak møbler kan ikke ha blitt avdekket i tilstandsrapporten.",
+          "evidence": [
+            "Boligen var møblert under befaringen. Tunge møbler og inventar ble ikke flyttet under befaringen. Derfor kan eventuelle avvik eller skader som skjuler seg bak disse, ikke bli avdekket i rapporten."
+          ],
+          "source_documents": [
+            "d135.pdf"
+          ],
+          "source_pages": [
+            34
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_001",
+            "description": "Eiendommen ligger innenfor et aktsomhetsområde med potensiell flomfare, noe som utgjør en naturrisiko for kjøper.",
+            "evidence": [
+              "Eiendommen ligger også innenfor et aktsomhetsområde med potensiell flomfare.",
+              "Nærliggende områder omfattes av hensynssone H810_1, som stiller krav til felles planlegging."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt at eiendommen ligger innenfor et aktsomhetsområde med potensiell flomfare: 'Eiendommen ligger også innenfor et aktsomhetsområde med potensiell flomfare.' Dokumentet nevner også hensynssone H810_1 som stiller krav til felles planlegging. Begge bevisene er direkte sitert fra dokumentteksten (side 19)."
+        },
+        {
+          "risk": {
+            "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_007",
+            "description": "Branntekniske forhold er kun forenklet kontrollert. Det kan foreligge feil og mangler knyttet til branntekniske forhold som ikke avdekkes ved en slik forenklet undersøkelse.",
+            "evidence": [
+              "Det kan være feil og mangler om branntekniske forhold som en slik forenklet undersøkelse ikke vil avdekke. Vær derfor oppmerksom på denne risikoen, og søk videre veiledning eller rådgivning.",
+              "Dette kan ikke sammenlignes med en fullstendig kontroll av branntekniske forhold av offentlig myndighet, eller en vurdering av boligens branntekniske forhold eller prosjektering fra en rådgiver med spesialkompetanse."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Tilstandsrapporten inneholder en tydelig advarsel om at branntekniske forhold kun er forenklet kontrollert: 'Det kan være feil og mangler om branntekniske forhold som en slik forenklet undersøkelse ikke vil avdekke. Vær derfor oppmerksom på denne risikoen, og søk videre veiledning eller rådgivning.' Det presiseres også at dette ikke kan sammenlignes med en fullstendig kontroll av branntekniske forhold av offentlig myndighet. Begge bevisene er direkte hentet fra tilstandsrapporten (side 31)."
+        },
+        {
+          "risk": {
+            "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_010",
+            "description": "Utbygger (Kvartal 10 Bolig AS og Solon Eiendom ASA) beholder eierskap og disposisjonsrett over usolgte eierandeler og parkeringsplasser i sameiet, noe som kan påvirke sameiets styring og beslutningsprosesser.",
+            "evidence": [
+              "Utbygger, Kvartal 10 Bolig AS og Solon Eiendom ASA, vil eie og disponere fritt over eierandeler og parkeringsplasser som ikke er solgt.",
+              "Utbygger forbeholder seg også retten til å selge eierandel til parkeringsplass til andre enn seksjonseiere, og slike plasser vil da være fritt omsettelige."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt at utbygger (Kvartal 10 Bolig AS og Solon Eiendom ASA) vil eie og disponere fritt over usolgte eierandeler og parkeringsplasser: 'Utbygger, Kvartal 10 Bolig AS og Solon Eiendom ASA, vil eie og disponere fritt over eierandeler og parkeringsplasser som ikke er solgt.' Videre: 'Utbygger forbeholder seg også retten til å selge eierandel til parkeringsplass til andre enn seksjonseiere, og slike plasser vil da være fritt omsettelige.' Begge bevisene er direkte sitert fra dokumentet (side 19)."
+        },
+        {
+          "risk": {
+            "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_014",
+            "description": "Seksjoner som leies ut kan ilegges et tillegg i felleskostnadene på 20 prosent, og det kan kreves garanti, depositum eller forsikring tilsvarende 3 måneders leie. Dette øker den løpende kostnaden ved utleie.",
+            "evidence": [
+              "Sameiet har vedtatt at seksjoner som leies ut kan ilegges et tillegg i felleskostnadene på 20 prosent for å dekke økt slitasje og administrative kostnader.",
+              "I tillegg kan det kreves garanti, depositum eller forsikring tilsvarende 3 måneders leie for å dekke eventuelle skader på fellesarealer."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter begge bevisene direkte: 'Sameiet har vedtatt at seksjoner som leies ut kan ilegges et tillegg i felleskostnadene på 20 prosent for å dekke økt slitasje og administrative kostnader. I tillegg kan det kreves garanti, depositum eller forsikring tilsvarende 3 måneders leie for å dekke eventuelle skader på fellesarealer.' Dette er ordrett gjengitt i dokumentet under avsnittet om 'Økonomiske konsekvenser ved utleie' (side 20)."
+        },
+        {
+          "risk": {
+            "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_015",
+            "description": "Tilstandsrapporten er basert på undersøkelsesnivå 1 (visuell observasjon), og avdekker ikke nødvendigvis alle mulige avvik eller skader. Skjulte konstruksjoner, skjulte installasjoner og flater som ikke er tilgjengelige, er ikke undersøkt.",
+            "evidence": [
+              "Rapporten er basert på undersøkelsesnivå 1, Tilstandsgradene (TG) gjenspeiler undersøkelser utført i henhold til forskrift til avhendingsloven (Tryggere bolighandel). Metoder og omfang følger forskriftens krav, men undersøkelsene avdekker ikke nødvendigvis alle mulige avvik eller skader.",
+              "Befaringen skal begrenses til kun visuelle observasjoner på tilgjengelige flater uten fysiske inngrep.",
+              "Boligen var møblert under befaringen. Tunge møbler og inventar ble ikke flyttet under befaringen. Derfor kan eventuelle avvik eller skader som skjuler seg bak disse, ikke bli avdekket i rapporten."
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Tilstandsrapporten bekrefter alle tre bevisene: (1) 'Rapporten er basert på undersøkelsesnivå 1, Tilstandsgradene (TG) gjenspeiler undersøkelser utført i henhold til forskrift til avhendingsloven (Tryggere bolighandel). Metoder og omfang følger forskriftens krav, men undersøkelsene avdekker ikke nødvendigvis alle mulige avvik eller skader.' (2) 'Befaringen skal begrenses til kun visuelle observasjoner på tilgjengelige flater uten fysiske inngrep.' (3) 'Boligen var møblert under befaringen. Tunge møbler og inventar ble ikke flyttet under befaringen. Derfor kan eventuelle avvik eller skader som skjuler seg bak disse, ikke bli avdekket i rapporten.' Alle tre bevisene er direkte sitert fra forutsetningsdelen av tilstandsrapporten (side 34)."
+        },
+        {
+          "risk": {
+            "risk_id": "c47bd76d-c16a-4fc6-8d4a-822bfdbddf5f_risk_016",
+            "description": "Eiendomsskatt for Lillestrøm kommune øker betydelig (22%) fra neste år, noe som direkte påvirker felleskostnadene og kjøpers løpende utgifter.",
+            "evidence": [
+              "Styret ønsker å informere om at det fra og med 1. februar vil bli en økning i felleskostnadene på 4%, som følge av at kommunale avgifter for Lillestrøm kommune øker betydelig neste år (22%).",
+              "Eiendomsskatt: Estimert Kr 528,- (2026)"
+            ],
+            "source_documents": [
+              "d135_d135"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter begge bevisene: (1) 'Styret ønsker å informere om at det fra og med 1. februar vil bli en økning i felleskostnadene på 4%, som følge av at kommunale avgifter for Lillestrøm kommune øker betydelig neste år (22%).' (2) 'Eiendomsskatt: Estimert Kr 528,- (2026)'. Begge er direkte sitert fra dokumentet (side 16). Risikoen er reell da økte kommunale avgifter direkte påvirker felleskostnadene og kjøpers løpende utgifter."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.6111111111111112,
+        "f1": 0.7586206896551725,
+        "total_support": 18
+      }
+    },
+    "ground_truth": {
+      "run_id": "bb64c2ba-a274-4edc-a73f-dffe2a63c78f_gt",
+      "system_type": "ground_truth",
+      "overall_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "total_support": 18
+      },
+      "matched_risks": 18,
+      "unmatched_predicted": 0,
+      "unmatched_ground_truth": 0,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "gt_d135_001",
+            "description": "Varslet økning i felleskostnader fra 1. februar: 4% generell økning som følge av at kommunale avgifter i Lillestrøm kommune øker med 22%. I tillegg øker TV/Internett med 100 kr/mnd (fra 469 kr til 569 kr). Samlet vil dette medføre høyere månedlige kostnader for kjøper enn det som fremgår av nøkkelinformasjonen.",
+            "evidence": [
+              "Styret ønsker å informere om at det fra og med 1. februar vil bli en økning i felleskostnadene på 4%, som følge av at kommunale avgifter for Lillestrøm kommune øker betydelig neste år (22%).",
+              "Økningen for TV- og Internett utgjør 100 kr, fra 469 kr til 569 kr. Økningen vil gjelde fra 1.februar.",
+              "Felleskostnader kr 3 920,- pr. mnd"
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "confidence": 0.97,
+            "details": {
+              "confidence": 0.97
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_001",
+            "description": "Varslet økning i felleskostnader fra 1. februar: 4% generell økning som følge av at kommunale avgifter i Lillestrøm kommune øker med 22%. I tillegg øker TV/Internett med 100 kr/mnd (fra 469 kr til 569 kr). Samlet vil dette medføre høyere månedlige kostnader for kjøper enn det som fremgår av nøkkelinformasjonen.",
+            "evidence": [
+              "Styret ønsker å informere om at det fra og med 1. februar vil bli en økning i felleskostnadene på 4%, som følge av at kommunale avgifter for Lillestrøm kommune øker betydelig neste år (22%).",
+              "Økningen for TV- og Internett utgjør 100 kr, fra 469 kr til 569 kr. Økningen vil gjelde fra 1.februar.",
+              "Felleskostnader kr 3 920,- pr. mnd"
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d135_002",
+            "description": "Eiendommen ligger under marin grense med stor sannsynlighet for marin leire, og innenfor et aktsomhetsområde med potensiell flomfare. Ved fremtidige tiltak eller ombygging kan kommunen kreve geotekniske undersøkelser, noe som kan medføre betydelige kostnader.",
+            "evidence": [
+              "Av temakart fra Lillestrøm kommune fremgår det at eiendommen ligger under marin grense, med stor sannsynlighet for marin leire.",
+              "Ved søknad om tiltak som ny bebyggelse eller tilbygg må det derfor påregnes krav fra kommunen om geotekniske eller grunnundersøkelser.",
+              "Eiendommen ligger også innenfor et aktsomhetsområde med potensiell flomfare."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_002",
+            "description": "Eiendommen ligger under marin grense med stor sannsynlighet for marin leire, og innenfor et aktsomhetsområde med potensiell flomfare. Ved fremtidige tiltak eller ombygging kan kommunen kreve geotekniske undersøkelser, noe som kan medføre betydelige kostnader.",
+            "evidence": [
+              "Av temakart fra Lillestrøm kommune fremgår det at eiendommen ligger under marin grense, med stor sannsynlighet for marin leire.",
+              "Ved søknad om tiltak som ny bebyggelse eller tilbygg må det derfor påregnes krav fra kommunen om geotekniske eller grunnundersøkelser.",
+              "Eiendommen ligger også innenfor et aktsomhetsområde med potensiell flomfare."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d135_003",
+            "description": "Hele kvartalet er under omfattende utvikling med pågående og planlagte rive- og byggearbeider. Bygningene som i dag rommer Kiwi og Rema 1000, samt småhus på motsatt side av Nittedalsgata, er planlagt revet og erstattet med ny blokkbebyggelse. Dette kan medføre støy, støv og ulemper over lengre tid for beboerne.",
+            "evidence": [
+              "Interessenter gjøres oppmerksom på at hele kvartalet er under omfattende utvikling, med pågående og planlagte rive og byggearbeider som kan medføre støy og ulemper knyttet til byggeaktivitet, riving og transport.",
+              "Bygningene som i dag rommer Kiwi og Rema 1000, samt enkelte småhus på motsatt side av Nittedalsgata, er planlagt revet og erstattet med ny blokkbebyggelse.",
+              "Området er i stadig endring, med både nybygging, rehabilitering og riving."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              19,
+              20
+            ],
+            "confidence": 0.97,
+            "details": {
+              "confidence": 0.97
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_003",
+            "description": "Hele kvartalet er under omfattende utvikling med pågående og planlagte rive- og byggearbeider. Bygningene som i dag rommer Kiwi og Rema 1000, samt småhus på motsatt side av Nittedalsgata, er planlagt revet og erstattet med ny blokkbebyggelse. Dette kan medføre støy, støv og ulemper over lengre tid for beboerne.",
+            "evidence": [
+              "Interessenter gjøres oppmerksom på at hele kvartalet er under omfattende utvikling, med pågående og planlagte rive og byggearbeider som kan medføre støy og ulemper knyttet til byggeaktivitet, riving og transport.",
+              "Bygningene som i dag rommer Kiwi og Rema 1000, samt enkelte småhus på motsatt side av Nittedalsgata, er planlagt revet og erstattet med ny blokkbebyggelse.",
+              "Området er i stadig endring, med både nybygging, rehabilitering og riving."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              19,
+              20
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d135_004",
+            "description": "Selger har ikke tegnet boligselgerforsikring. Dette innebærer at kjøper ikke har den ekstra sikkerheten som boligselgerforsikring normalt gir, og eventuelle mangelskrav må rettes direkte mot selger, noe som kan være mer krevende å inndrive.",
+            "evidence": [
+              "Selger har ikke tegnet boligselgerforsikring.",
+              "Boligkjøperforsikring: Kjøper har anledning til å tegne boligkjøperforsikring."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              18,
+              21
+            ],
+            "confidence": 0.93,
+            "details": {
+              "confidence": 0.93
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_004",
+            "description": "Selger har ikke tegnet boligselgerforsikring. Dette innebærer at kjøper ikke har den ekstra sikkerheten som boligselgerforsikring normalt gir, og eventuelle mangelskrav må rettes direkte mot selger, noe som kan være mer krevende å inndrive.",
+            "evidence": [
+              "Selger har ikke tegnet boligselgerforsikring.",
+              "Boligkjøperforsikring: Kjøper har anledning til å tegne boligkjøperforsikring."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              18,
+              21
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d135_005",
+            "description": "Selger har ikke bodd i boligen de siste 12 måneder. Dette kan begrense selgers kjennskap til boligens faktiske tilstand og eventuelle feil eller mangler som kun oppdages ved daglig bruk, noe som øker risikoen for skjulte feil.",
+            "evidence": [
+              "Har du bodd i boligen siste 12 måneder? Nei",
+              "Antall år 2, Antall måneder 6"
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              18,
+              23
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_005",
+            "description": "Selger har ikke bodd i boligen de siste 12 måneder. Dette kan begrense selgers kjennskap til boligens faktiske tilstand og eventuelle feil eller mangler som kun oppdages ved daglig bruk, noe som øker risikoen for skjulte feil.",
+            "evidence": [
+              "Har du bodd i boligen siste 12 måneder? Nei",
+              "Antall år 2, Antall måneder 6"
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              18,
+              23
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d135_006",
+            "description": "Membranens tilstand på badet kan ikke verifiseres uten destruktive inngrep. Membranen har begrenset levetid og naturlig slitasje over tid. Eventuelle skjulte fuktskader kan ikke utelukkes, til tross for at overflatesøk ikke avdekket indikasjoner på fuktskade.",
+            "evidence": [
+              "Membranen kan ikke inspiseres uten å gjøre destruktive inngrep, som å fjerne fliser.",
+              "Membran er et fuktsperrende sjikt som skal hindre vann i å trenge underliggende konstruksjoner. Tilstedeværelse og full tilstand kan ikke vurderes ved visuell inspeksjon i rommet.",
+              "Det er viktig å merke seg at membran er en bygningsdel med naturlig slitasje over tid og en begrenset forventet levetid.",
+              "Det understrekes imidlertid at denne metoden har begrenset evne til å avdekke skjulte fuktskader, og resultatene må derfor ikke tolkes som en garanti mot slike skader."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              29,
+              30
+            ],
+            "confidence": 0.82,
+            "details": {
+              "confidence": 0.82
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_006",
+            "description": "Membranens tilstand på badet kan ikke verifiseres uten destruktive inngrep. Membranen har begrenset levetid og naturlig slitasje over tid. Eventuelle skjulte fuktskader kan ikke utelukkes, til tross for at overflatesøk ikke avdekket indikasjoner på fuktskade.",
+            "evidence": [
+              "Membranen kan ikke inspiseres uten å gjøre destruktive inngrep, som å fjerne fliser.",
+              "Membran er et fuktsperrende sjikt som skal hindre vann i å trenge underliggende konstruksjoner. Tilstedeværelse og full tilstand kan ikke vurderes ved visuell inspeksjon i rommet.",
+              "Det er viktig å merke seg at membran er en bygningsdel med naturlig slitasje over tid og en begrenset forventet levetid.",
+              "Det understrekes imidlertid at denne metoden har begrenset evne til å avdekke skjulte fuktskader, og resultatene må derfor ikke tolkes som en garanti mot slike skader."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              29,
+              30
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d135_007",
+            "description": "Det elektriske anlegget er ikke fullstendig kontrollert av autorisert elektroinstallatør. Tilstandsrapporten påpeker at den forenklede kontrollen ikke kan avdekke alle feil og mangler, og anbefaler at registrert/autorisert elektroinstallatør foretar en fullstendig kontroll.",
+            "evidence": [
+              "Det anbefales på generelt grunnlag at registrert/autorisert elektroinstallatør/kontrollør foretar en kontroll av hele det elektriske anlegget.",
+              "El-anlegget kan ha feil og mangler som en slik forenklet undersøkelse ikke vil avdekke.",
+              "Foreligger det eltilsynsrapport de siste 5 år, og det er ikke foretatt arbeid på anlegget etter denne, utenom retting av eventuelle avvik i eltilsynsrapport (dvs en el-tilsynsrapport uten avvik)? Nei"
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              30,
+              31
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_007",
+            "description": "Det elektriske anlegget er ikke fullstendig kontrollert av autorisert elektroinstallatør. Tilstandsrapporten påpeker at den forenklede kontrollen ikke kan avdekke alle feil og mangler, og anbefaler at registrert/autorisert elektroinstallatør foretar en fullstendig kontroll.",
+            "evidence": [
+              "Det anbefales på generelt grunnlag at registrert/autorisert elektroinstallatør/kontrollør foretar en kontroll av hele det elektriske anlegget.",
+              "El-anlegget kan ha feil og mangler som en slik forenklet undersøkelse ikke vil avdekke.",
+              "Foreligger det eltilsynsrapport de siste 5 år, og det er ikke foretatt arbeid på anlegget etter denne, utenom retting av eventuelle avvik i eltilsynsrapport (dvs en el-tilsynsrapport uten avvik)? Nei"
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              30,
+              31
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d135_008",
+            "description": "Boligen medfølger ingen parkeringsplass. Parkering er organisert gjennom næringsseksjon nr. 60 med kun ca. 17 plasser for hele sameiet (61 seksjoner), og utbygger forbeholder seg retten til å selge parkeringsplasser til andre enn seksjonseiere. Dette kan gjøre det vanskelig å skaffe parkering i fremtiden.",
+            "evidence": [
+              "Det medfølger ikke noe parkeringsplass til boligen.",
+              "Parkering for boliger er organisert gjennom næringsseksjon nummer 60 og består av cirka 17 parkeringsplasser, lokalisert i parkeringskjeller U1.",
+              "Utbygger forbeholder seg også retten til å selge eierandel til parkeringsplass til andre enn seksjonseiere, og slike plasser vil da være fritt omsettelige.",
+              "Sameiet har ikke egne gjesteparkeringsplasser."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              19,
+              33
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_008",
+            "description": "Boligen medfølger ingen parkeringsplass. Parkering er organisert gjennom næringsseksjon nr. 60 med kun ca. 17 plasser for hele sameiet (61 seksjoner), og utbygger forbeholder seg retten til å selge parkeringsplasser til andre enn seksjonseiere. Dette kan gjøre det vanskelig å skaffe parkering i fremtiden.",
+            "evidence": [
+              "Det medfølger ikke noe parkeringsplass til boligen.",
+              "Parkering for boliger er organisert gjennom næringsseksjon nummer 60 og består av cirka 17 parkeringsplasser, lokalisert i parkeringskjeller U1.",
+              "Utbygger forbeholder seg også retten til å selge eierandel til parkeringsplass til andre enn seksjonseiere, og slike plasser vil da være fritt omsettelige.",
+              "Sameiet har ikke egne gjesteparkeringsplasser."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              19,
+              33
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d135_009",
+            "description": "Varme og varmtvann er ikke inkludert i felleskostnadene og faktureres separat etter måler. Dette er en variabel kostnad som kan bli betydelig, særlig i kalde perioder, og som kjøper må budsjettere for i tillegg til de oppgitte felleskostnadene.",
+            "evidence": [
+              "Varme og varmtvann er ikke inkludert i felleskostnadene og faktureres separat hver måned etter måler på forbruk.",
+              "Andre utgifter: Varme og varmtvann er ikke inkludert i felleskostnadene og faktureres separat hver måned etter måler på forbruk."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              16,
+              17
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_009",
+            "description": "Varme og varmtvann er ikke inkludert i felleskostnadene og faktureres separat etter måler. Dette er en variabel kostnad som kan bli betydelig, særlig i kalde perioder, og som kjøper må budsjettere for i tillegg til de oppgitte felleskostnadene.",
+            "evidence": [
+              "Varme og varmtvann er ikke inkludert i felleskostnadene og faktureres separat hver måned etter måler på forbruk.",
+              "Andre utgifter: Varme og varmtvann er ikke inkludert i felleskostnadene og faktureres separat hver måned etter måler på forbruk."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              16,
+              17
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d135_010",
+            "description": "Skifte av TV/Internett-leverandør er varslet i Q2/2026, og tilbudet vil sannsynligvis endres til kun internett. Beboere kan miste TV-tilbudet som i dag er inkludert i felleskostnadene, og må eventuelt tegne egne TV-avtaler.",
+            "evidence": [
+              "Det kommer et skifte av leverandør i Q2/26. Sannsynligvis vil da tilbudet endres til kun internett.",
+              "Styret vil sette igang en prosess på nyåret med å få inn tilbud på en ny TV- og Internett avtale, da bindingsavtalen utløper."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              17
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_010",
+            "description": "Skifte av TV/Internett-leverandør er varslet i Q2/2026, og tilbudet vil sannsynligvis endres til kun internett. Beboere kan miste TV-tilbudet som i dag er inkludert i felleskostnadene, og må eventuelt tegne egne TV-avtaler.",
+            "evidence": [
+              "Det kommer et skifte av leverandør i Q2/26. Sannsynligvis vil da tilbudet endres til kun internett.",
+              "Styret vil sette igang en prosess på nyåret med å få inn tilbud på en ny TV- og Internett avtale, da bindingsavtalen utløper."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              17
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d135_011",
+            "description": "Sameiet er et kombinasjonsbygg med bolig og næring. Utbygger (Kvartal 10 Bolig AS og Solon Eiendom ASA) eier og disponerer fritt over usolgte eierandeler og parkeringsplasser. Dette kan medføre interessekonflikter mellom bolig- og næringsseksjonseiere, og utbyggers innflytelse i sameiet kan påvirke beslutninger.",
+            "evidence": [
+              "Utbygger, Kvartal 10 Bolig AS og Solon Eiendom ASA, vil eie og disponere fritt over eierandeler og parkeringsplasser som ikke er solgt.",
+              "Sameiet er et kombinasjonsbygg med både bolig og næring, hvor disse i stor grad er adskilt i drift og kostnadsfordeling."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_011",
+            "description": "Sameiet er et kombinasjonsbygg med bolig og næring. Utbygger (Kvartal 10 Bolig AS og Solon Eiendom ASA) eier og disponerer fritt over usolgte eierandeler og parkeringsplasser. Dette kan medføre interessekonflikter mellom bolig- og næringsseksjonseiere, og utbyggers innflytelse i sameiet kan påvirke beslutninger.",
+            "evidence": [
+              "Utbygger, Kvartal 10 Bolig AS og Solon Eiendom ASA, vil eie og disponere fritt over eierandeler og parkeringsplasser som ikke er solgt.",
+              "Sameiet er et kombinasjonsbygg med både bolig og næring, hvor disse i stor grad er adskilt i drift og kostnadsfordeling."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d135_012",
+            "description": "Sameierne er solidarisk ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk (legalpant). Legalpant har prioritet foran tinglyste lån (banklån), og kommunen har legalpant med høyere prioritet enn sameiet. Dette innebærer en risiko for kjøper dersom andre seksjonseiere misligholder sine forpliktelser.",
+            "evidence": [
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.",
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen.",
+              "Legalpant til kommunen har høyere prioritet enn legalpant til sameiet."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              19,
+              20
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_012",
+            "description": "Sameierne er solidarisk ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk (legalpant). Legalpant har prioritet foran tinglyste lån (banklån), og kommunen har legalpant med høyere prioritet enn sameiet. Dette innebærer en risiko for kjøper dersom andre seksjonseiere misligholder sine forpliktelser.",
+            "evidence": [
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.",
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen.",
+              "Legalpant til kommunen har høyere prioritet enn legalpant til sameiet."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              19,
+              20
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d135_013",
+            "description": "Radonmåling er ikke utført. Selv om det ikke er krav om radonmåling når boligen ikke er utleid, kan radonkonsentrasjonen i bygget være ukjent. Eiendommen ligger i et område med marin leire, og radon kan forekomme i grunnen.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              20,
+              24
+            ],
+            "confidence": 0.72,
+            "details": {
+              "confidence": 0.72
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_013",
+            "description": "Radonmåling er ikke utført. Selv om det ikke er krav om radonmåling når boligen ikke er utleid, kan radonkonsentrasjonen i bygget være ukjent. Eiendommen ligger i et område med marin leire, og radon kan forekomme i grunnen.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              20,
+              24
+            ],
+            "details": {
+              "confidence": 0.72
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d135_014",
+            "description": "Nærliggende områder er omfattet av hensynssone H810_1 som stiller krav til felles planlegging. Eiendommen er regulert til kombinert bebyggelse og anleggsformål, og Lillestrøm sentrum er i kontinuerlig utvikling. Fremtidige reguleringsendringer kan påvirke utsikt, solforhold og bomiljø.",
+            "evidence": [
+              "Nærliggende områder omfattes av hensynssone H810_1, som stiller krav til felles planlegging.",
+              "Lillestrøm sentrum er i kontinuerlig utvikling, og det må derfor påregnes fremtidig byggeaktivitet i området.",
+              "Vi anbefaler alle interessenter og budgivere å sette seg grundig inn i gjeldende reguleringsbestemmelser."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_014",
+            "description": "Nærliggende områder er omfattet av hensynssone H810_1 som stiller krav til felles planlegging. Eiendommen er regulert til kombinert bebyggelse og anleggsformål, og Lillestrøm sentrum er i kontinuerlig utvikling. Fremtidige reguleringsendringer kan påvirke utsikt, solforhold og bomiljø.",
+            "evidence": [
+              "Nærliggende områder omfattes av hensynssone H810_1, som stiller krav til felles planlegging.",
+              "Lillestrøm sentrum er i kontinuerlig utvikling, og det må derfor påregnes fremtidig byggeaktivitet i området.",
+              "Vi anbefaler alle interessenter og budgivere å sette seg grundig inn i gjeldende reguleringsbestemmelser."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d135_015",
+            "description": "Egenerklæringen er ikke gjennomgått av takstmannen. Dette betyr at takstmannen ikke har hatt mulighet til å vurdere selgers egne opplysninger opp mot sine observasjoner, noe som svekker grunnlaget for tilstandsrapporten.",
+            "evidence": [
+              "Egenerklæring: Ikke gjennomgått. Nei (vedlagt: Nei)"
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              33
+            ],
+            "confidence": 0.83,
+            "details": {
+              "confidence": 0.83
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_015",
+            "description": "Egenerklæringen er ikke gjennomgått av takstmannen. Dette betyr at takstmannen ikke har hatt mulighet til å vurdere selgers egne opplysninger opp mot sine observasjoner, noe som svekker grunnlaget for tilstandsrapporten.",
+            "evidence": [
+              "Egenerklæring: Ikke gjennomgått. Nei (vedlagt: Nei)"
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              33
+            ],
+            "details": {
+              "confidence": 0.83
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d135_016",
+            "description": "Korttidsutleie er begrenset til 90 døgn per år, og eier må ha bodd i boligen i minst 1 år før utleie er tillatt. Seksjoner som leies ut kan ilegges 20% tillegg i felleskostnadene. Dette begrenser fleksibiliteten for kjøper som ønsker å leie ut boligen.",
+            "evidence": [
+              "Korttidsutleie av hele boligseksjonen er ikke tillatt utover 90 døgn per år.",
+              "Eier må selv ha bodd i boligen i minst 1 år før den kan leies ut.",
+              "Sameiet har vedtatt at seksjoner som leies ut kan ilegges et tillegg i felleskostnadene på 20 prosent for å dekke økt slitasje og administrative kostnader."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_016",
+            "description": "Korttidsutleie er begrenset til 90 døgn per år, og eier må ha bodd i boligen i minst 1 år før utleie er tillatt. Seksjoner som leies ut kan ilegges 20% tillegg i felleskostnadene. Dette begrenser fleksibiliteten for kjøper som ønsker å leie ut boligen.",
+            "evidence": [
+              "Korttidsutleie av hele boligseksjonen er ikke tillatt utover 90 døgn per år.",
+              "Eier må selv ha bodd i boligen i minst 1 år før den kan leies ut.",
+              "Sameiet har vedtatt at seksjoner som leies ut kan ilegges et tillegg i felleskostnadene på 20 prosent for å dekke økt slitasje og administrative kostnader."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d135_017",
+            "description": "Plantegningene som er vedlagt salgsoppgaven stemmer ikke nødvendigvis med faktisk innredning og møblering, og er ikke målbare. Avvik og feil kan forekomme, noe som kan gi et misvisende bilde av boligens faktiske utforming.",
+            "evidence": [
+              "Det gjøres oppmerksom på at vedlagte plantegninger ikke stemmer hva gjelder faktisk innredning og møblering etc. Den er ikke målbar, avvik og feil kan forekomme."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_017",
+            "description": "Plantegningene som er vedlagt salgsoppgaven stemmer ikke nødvendigvis med faktisk innredning og møblering, og er ikke målbare. Avvik og feil kan forekomme, noe som kan gi et misvisende bilde av boligens faktiske utforming.",
+            "evidence": [
+              "Det gjøres oppmerksom på at vedlagte plantegninger ikke stemmer hva gjelder faktisk innredning og møblering etc. Den er ikke målbar, avvik og feil kan forekomme."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d135_018",
+            "description": "Boligen var møblert under befaringen, og tunge møbler og inventar ble ikke flyttet. Eventuelle avvik eller skader bak møbler kan ikke ha blitt avdekket i tilstandsrapporten.",
+            "evidence": [
+              "Boligen var møblert under befaringen. Tunge møbler og inventar ble ikke flyttet under befaringen. Derfor kan eventuelle avvik eller skader som skjuler seg bak disse, ikke bli avdekket i rapporten."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              34
+            ],
+            "confidence": 0.78,
+            "details": {
+              "confidence": 0.78
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d135_018",
+            "description": "Boligen var møblert under befaringen, og tunge møbler og inventar ble ikke flyttet. Eventuelle avvik eller skader bak møbler kan ikke ha blitt avdekket i tilstandsrapporten.",
+            "evidence": [
+              "Boligen var møblert under befaringen. Tunge møbler og inventar ble ikke flyttet under befaringen. Derfor kan eventuelle avvik eller skader som skjuler seg bak disse, ikke bli avdekket i rapporten."
+            ],
+            "source_documents": [
+              "d135.pdf"
+            ],
+            "source_pages": [
+              34
+            ],
+            "details": {
+              "confidence": 0.78
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [],
+      "unmatched_ground_truth_risks": [],
+      "verified_unmatched": [],
+      "adjusted_metrics": null
+    }
+  },
+  "best_system": "ground_truth",
+  "statistical_tests": {
+    "standard_rag_vs_agentic_rag_P+T+R": 1.0,
+    "standard_rag_vs_ground_truth": 1.0,
+    "agentic_rag_P+T+R_vs_ground_truth": 1.0
+  },
+  "record_id": "908fa577-1baa-4268-8dc1-866d95338afa",
+  "query": "Identifiser risikoer i salgsoppgaven",
+  "document_set_id": "d135",
+  "timestamp": "2026-03-25T05:41:54.816646",
+  "risk_summaries": [
+    {
+      "system_type": "standard_rag",
+      "total_risks": 15,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "agentic_rag_P+T+R",
+      "total_risks": 17,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "ground_truth",
+      "total_risks": 18,
+      "risks_by_category": {}
+    }
+  ],
+  "has_ground_truth": true,
+  "overlapping_risk_count": 13,
+  "unique_to": {
+    "standard_rag": 14,
+    "agentic_rag_P+T+R": 4,
+    "ground_truth": 6
+  },
+  "record_type": "comparison"
+}

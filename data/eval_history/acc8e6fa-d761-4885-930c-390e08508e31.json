@@ -1,0 +1,2443 @@
+{
+  "system_results": {
+    "standard_rag": {
+      "run_id": "1bc0512b-4380-401e-a11f-06cc9eb6aa56",
+      "system_type": "standard_rag",
+      "overall_metrics": {
+        "precision": 0.5454545454545454,
+        "recall": 0.2857142857142857,
+        "f1": 0.37499999999999994,
+        "total_support": 21
+      },
+      "matched_risks": 6,
+      "unmatched_predicted": 5,
+      "unmatched_ground_truth": 15,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "1bc0512b-4380-401e-a11f-06cc9eb6aa56_risk_000",
+            "description": "Manglende radonmåling: Selger har ikke utført radonmåling av boligen. Selv om det ikke er lovpålagt når boligen ikke er utleid, utgjør dette en helserisiko for kjøper, da radon er en kjent kreftfremkallende gass.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_016",
+            "description": "Radonmåling er ikke utført. Selv om det ikke er krav om dette når boligen ikke er utleid, kan radonkonsentrasjonen i boligen være ukjent og potensielt helseskadelig.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              49,
+              57
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "1bc0512b-4380-401e-a11f-06cc9eb6aa56_risk_001",
+            "description": "Ukjente feil ved elektriske installasjoner: Tilstandsrapporten påpeker at en forenklet undersøkelse ikke vil avdekke skjulte feil ved el-installasjoner. Det er usikkerhet knyttet til om det foreligger el-tilsynsrapport fra de siste 5 år.",
+            "evidence": [
+              "slik forenklet undersøkelse ikke vil avdekke. Vær derfor oppmerksom på denne risikoen, og søk videre veiledning eller få en fullstendig kontroll utført av registrert elektrovirksomhet.",
+              "Foreligger det el-tilsynsrapport de siste 5 år, og det er..."
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_012",
+            "description": "Store deler av det elektriske anlegget er skiftet ut i perioden 2022–2024, men det foreligger ikke eltilsynsrapport fra de siste 5 år uten avvik. Selv om samsvarserklæring foreligger, er det ikke gjennomført en fullstendig kontroll av det elektriske anlegget av offentlig myndighet.",
+            "evidence": [
+              "Foreligger det eltilsynsrapport de siste 5 år, og det er ikke foretatt arbeid på anlegget etter denne, utenom retting av eventuelle avvik i eltilsynsrapport (dvs en el-tilsynsrapport uten avvik)? Nei",
+              "Gjort en del oppgradering av anlegget, se egenerklæring for hva som er gjort. Arbeidene gjort i perioden 2021-2024.",
+              "Foreligger det kontrollrapport fra offentlig myndighet – Det Lokale Eltilsyn (DLE) eller eventuelt andre tilsvarende kontrollinstanser med avvik som ikke er utbedret eller kontrollen er over 5 år? Nei"
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              43,
+              56,
+              69,
+              70
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "1bc0512b-4380-401e-a11f-06cc9eb6aa56_risk_007",
+            "description": "Avløpsproblemer: Det er dokumentert at det har vært tett avløp i boligen så sent som i 2025, noe som kan indikere underliggende problemer med rørsystemet.",
+            "evidence": [
+              "Kjenner du til feil eller om har vært utført arbeid/kontroll på vann/avløp? Ja, kun av faglært. Staking av tett avløp 2025. Arbeid utført av Tanga rør AS."
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_011",
+            "description": "Staking av tett avløp ble utført i 2025. Dette indikerer at det har vært problemer med avløpssystemet, og det kan ikke utelukkes at problemet kan gjenta seg.",
+            "evidence": [
+              "Kjenner du til feil eller om har vært utført arbeid/kontroll på vann/avløp? Ja, kun av faglært. Staking av tett avløp 2025. Arbeid utført av Tanga rør AS."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              43,
+              56
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "1bc0512b-4380-401e-a11f-06cc9eb6aa56_risk_008",
+            "description": "Risiko for reguleringsendringer: Egenerklæringen stiller spørsmål om kjente reguleringsplaner eller offentlige vedtak som kan endre bruken av eiendommen eller dens omgivelser. Eventuelle fremtidige reguleringsendringer kan påvirke boligens verdi og bruksmuligheter.",
+            "evidence": [
+              "eller vedtatte reguleringsplaner, andre planer, nabovarsel eller offentlige vedtak som kan medføre endringer i bruken av eiendommen eller av dens omgivelser? Nei Ja"
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.6,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_009",
+            "description": "Området er under utvikling med pågående og planlagte reguleringsendringer, inkludert ny barneskole og ungdomsskole på Ensjø, regulering av Grenseveien for syklister og gående, og gjenåpning av Hovinbekken. Dette kan medføre økt trafikk, støy og anleggsarbeid i nærområdet.",
+            "evidence": [
+              "Det gjøres oppmerksom på at området er under utvikling og at endringer og oppføring av nye bygg vil kunne skje.",
+              "Grenseveien mellom Økernveien og Grensesvingen – Saksnr. 202460006: Hovedhensikten med planen er å etablere et eget anlegg for syklende og legge bedre til rette for gående.",
+              "Ensjø skal få ny barneskole og ny ungdomsskole.",
+              "Informasjon om plankunngjøring for Vestre bekkedrag/Hovinbekken: ønsker å omregulere Gladengveien 18 mfl. fra industri til grønnstruktur."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              48,
+              49
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "1bc0512b-4380-401e-a11f-06cc9eb6aa56_risk_009",
+            "description": "Boligselgerforsikringens begrensninger: Forsikringen dekker selgers ansvar begrenset oppad til kr 20 000 000, og trer ikke i kraft ved visse salgsforhold. Kjøper kan dermed risikere at selgers forsikring ikke dekker alle krav ved vesentlige mangler.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har tegnet boligselgerforsikring som dekker selgers ansvar etter avhendingsloven begrenset oppad kr. 20 000 000,‑.",
+              "Forsikringsselskapet kan ved skriftlig samtykke akseptere tegning av forsikring også i ovennevnte tilfeller. Dersom forsikringsselskapet ikke har gitt skriftlig samtykke, kan erstatningen bortfalle."
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_021",
+            "description": "Selger har tegnet boligselgerforsikring begrenset oppad til kr 20 000 000. Kjøper bør være oppmerksom på at forsikringen dekker selgers ansvar etter avhendingsloven, men at det er en egenandel på kr 10 000 for kjøper ved krav om prisavslag eller erstatning.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har tegnet boligselgerforsikring som dekker selgers ansvar etter avhendingsloven begrenset oppad kr. 20 000 000,‑.",
+              "Ved beregning av krav om prisavslag eller erstatning må kjøper selv dekke kostnader med inntil kr 10 000 (som en egenandel)."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              49,
+              50
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "1bc0512b-4380-401e-a11f-06cc9eb6aa56_risk_005",
+            "description": "Risiko for økte felleskostnader eller fellesgjeld i sameiet: Egenerklæringen inneholder spørsmål om kjente forhold som kan medføre økte felleskostnader eller økt fellesgjeld, noe som kan påvirke kjøpers løpende boutgifter negativt.",
+            "evidence": [
+              "felleskostnader/økt fellesgjeld? Nei Ja"
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.65,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_007",
+            "description": "Planlagte store investeringer i sameiet: solcelleanlegg (estimert 2,5–3,0 millioner kroner) og bergvarmeanlegg (estimert 14–16 millioner kroner). Disse prosjektene er foreløpig utsatt, men kan medføre økte felleskostnader eller fellesgjeld i fremtiden.",
+            "evidence": [
+              "Totalkostnaden anslås å være i størrelsesorden 2,5‑3,0 millioner kroner [solcelleanlegg].",
+              "Totalkostnad for boring, installasjon av varmepumper, røranlegg, automasjon, måling og tilpasning til eksisterende systemer, inkludert prosjektledelse, usikkerhet og mva, er anslått til å ligge i området 14‑16 millioner kroner [bergvarmeanlegg].",
+              "Styret foreslår at årsmøtet tar saken til orientering, og gir sin tilslutning til at tiltakene vurderes på nytt når markedsforholdene stabiliserer seg."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              47
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "1bc0512b-4380-401e-a11f-06cc9eb6aa56_risk_002",
+          "description": "Boligen selges 'som den er': Kjøpers reklamasjonsrett begrenses betydelig ettersom boligen selges 'som den er', noe som øker risikoen for at kjøper ikke kan kreve erstatning for skjulte feil og mangler oppdaget etter overtakelse.",
+          "evidence": [
+            "begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger.",
+            "Alt utstyr og installasjoner som medfølger overtas slik de er, uten garanti"
+          ],
+          "source_documents": [
+            "d083_d083"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.95,
+          "details": {}
+        },
+        {
+          "risk_id": "1bc0512b-4380-401e-a11f-06cc9eb6aa56_risk_003",
+          "description": "Manglende brukstillatelse eller ferdigattest: Egenerklæringsskjemaet inneholder spørsmål om manglende brukstillatelse eller ferdigattest, men svaret er ikke tydelig bekreftet som 'Nei', noe som indikerer potensiell usikkerhet rundt lovlig bruk av boligen.",
+          "evidence": [
+            "Kjenner du til manglende brukstillatelse eller ferdigattest? Nei Ja"
+          ],
+          "source_documents": [
+            "d083_d083"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.65,
+          "details": {}
+        },
+        {
+          "risk_id": "1bc0512b-4380-401e-a11f-06cc9eb6aa56_risk_004",
+          "description": "Risiko for sopp, råte, skadedyr og skjeggkre i sameiet: Egenerklæringen stiller spørsmål om kjente tilfeller av sopp, råteskader, insekter, skadedyr og skjeggkre i sameiet. Svarene er ikke entydig bekreftet som negative, noe som representerer en potensiell risiko.",
+          "evidence": [
+            "Kjenner du til om det er/har vært sopp/råteskader/insekter/skadedyr i sameiet/laget/selskapet (fellesareal eller i andre boliger) som rotter, mus, maur eller lignende? Nei Ja",
+            "Kjenner du til om det er/har vært skjeggkre i sameiet/laget/selskapet (fellesareal eller i andre boliger)? Nei Ja"
+          ],
+          "source_documents": [
+            "d083_d083"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.6,
+          "details": {}
+        },
+        {
+          "risk_id": "1bc0512b-4380-401e-a11f-06cc9eb6aa56_risk_006",
+          "description": "Risiko knyttet til skjulte installasjoner og begrensninger i tilstandsrapporten: Tilstandsrapporten dekker ikke skjulte installasjoner, full funksjonstesting av el- og VVS-installasjoner, geologiske forhold, eller bygningens lovlighet (med visse unntak). Dette betyr at kjøper kan stå overfor uforutsette kostnader etter overtakelse.",
+          "evidence": [
+            "skjulte installasjoner • installasjoner utenfor bygningen • full funksjonstesting av el- og VVS-installasjoner • geologiske forhold og bygningens plassering på grunnen • bygningens planløsning • bygningens innredning • løsøre slik som hvitevarer • utendørs svømmebasseng og pumpeanlegg • bygningens estetikk og arkitektur • bygningens lovlighet (bortsett fra bruksendringer, brannceller og forhold som åpenbart kan påvirke helse, miljø og sikkerhet)"
+          ],
+          "source_documents": [
+            "d083_d083"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.9,
+          "details": {}
+        },
+        {
+          "risk_id": "1bc0512b-4380-401e-a11f-06cc9eb6aa56_risk_010",
+          "description": "Påbud, heftelser eller manglende tillatelser: Egenerklæringen stiller spørsmål om kjente påbud, heftelser eller krav mot eiendommen. Dersom slike forhold eksisterer og ikke er tilstrekkelig opplyst, kan kjøper bli stilt overfor uventede juridiske eller økonomiske forpliktelser.",
+          "evidence": [
+            "Kjenner du til om det foreligger påbud/heftelser/krav/manglende tillatelser vedrørende eiendommen? Nei Ja"
+          ],
+          "source_documents": [
+            "d083_d083"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.65,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d083_001",
+          "description": "TG2: Sluk, membran og tettesjikt på begge bad – mer enn halvparten av forventet brukstid er oppbrukt. Badet er nær 20 år gammelt. Eldre membraner kan bli sprø og sprekke opp, noe som kan føre til vannlekkasjer gjennom vegger og gulv og fuktskader.",
+          "evidence": [
+            "Mer enn halvparten av forventet brukstid er passert på membranløsningen.",
+            "Smøremembran på vegg som er over 15 år og banemembran over 20 år blir vurdert til TG2 i rapporten.",
+            "Dette badet er nå snart 20 år gammelt. TG 2 gis med bakgrunn i at mer enn halvparten av forventet brukstid for membran/tettesjikt er oppbrukt.",
+            "Det er viktig å merke seg at levetiden til en membran varierer basert på kvalitet, installasjon og bruk. Eldre membraner kan bli sprø og sprekke opp, noe som fører til at de mister sin vanntettende funksjon. Dette kan resultere i vannlekkasjer gjennom vegger og gulv og fuktskader."
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            46,
+            67,
+            68
+          ],
+          "details": {
+            "confidence": 0.99
+          }
+        },
+        {
+          "risk_id": "gt_d083_002",
+          "description": "TGIU: Tilliggende konstruksjoner våtrom (bad/vaskerom) – hulltaking er ikke foretatt da det ikke er fysisk mulig pga. bygningsmessige hindringer. Det kan foreligge skjulte fuktskader som ikke er avdekket.",
+          "evidence": [
+            "Det er pga bygningsmessige hindringer ikke fysisk mulig å foreta hulltaking i vegg bak våtsone.",
+            "TGIU gitt ut ifra manglende mulighet for hulltaking.",
+            "Bygningsdeler som er merket med TGIU er ikke blitt vurdert av takstmannen."
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            46,
+            66,
+            68
+          ],
+          "details": {
+            "confidence": 0.97
+          }
+        },
+        {
+          "risk_id": "gt_d083_003",
+          "description": "Sprekk i én gulvflis utenfor våtsone på bad gang. Selv om dette er utenfor våtsone, kan det indikere bevegelse i underlaget eller skader som bør undersøkes nærmere.",
+          "evidence": [
+            "Sprekk i én gulvflis utenfor våtsone.",
+            "4) BAD GANG: - Sprekk i én gulvflis utenfor våtsone."
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            44,
+            58
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d083_004",
+          "description": "Komfyrvakt er ikke montert på kjøkkenet. Dette er en sikkerhetsrisiko da komfyrvakt er anbefalt for å forhindre brann ved glemte komfyrer.",
+          "evidence": [
+            "Komfyrvakt ikke montert, da dette ikke var krav ved rehabilitering av kjøkken ifølge utførende elektriker.",
+            "Montert Water-guard, men ikke komfyrvakt."
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            45,
+            58,
+            69
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d083_005",
+          "description": "Sameiet er ikke tilknyttet sikringsordning. Dette innebærer at kjøper ikke har den ekstra beskyttelsen som en sikringsordning gir ved eventuelle mislighold av felleskostnader fra andre seksjonseiere.",
+          "evidence": [
+            "Ikke tilknyttet sikringsordning. Sameiet har legalpant som sikkerhet for betaling av felleskostnader."
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            40
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d083_006",
+          "description": "Sameiet har betydelig fellesgjeld med flytende rente. Restsaldo på to lån er henholdsvis kr 332 545 (innfrielse 30.12.2026) og kr 12 394 892 (innfrielse 30.12.2046) med rentesatser på 6,34% og 6,44%. Renteøkninger vil direkte påvirke felleskostnadene.",
+          "evidence": [
+            "Bank: OBOS-banken AS, Lånenr.: 98207998842, Lånetype: Annuitetslån, Rentesats: 6,34%, Restsaldo 332 545,00, Innfrielsesdato: 30.12.2026, Type rente: Flytende rente",
+            "Bank: OBOS-banken AS, Lånenr.: 98207998850, Lånetype: Annuitetslån, Rentesats: 6,44%, Restsaldo 12 394 892,30, Innfrielsesdato: 30.12.2046, Type rente: Flytende rente",
+            "Andel fellesgjeld: 0,- (for denne seksjonen)"
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            39,
+            40
+          ],
+          "details": {
+            "confidence": 0.92
+          }
+        },
+        {
+          "risk_id": "gt_d083_008",
+          "description": "Boden som er medtatt i BRA-e og totalt BRA ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet, noe som kan redusere boligens faktiske bruksareal.",
+          "evidence": [
+            "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA‑e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet.",
+            "Rom utenfor boenheten kan omdisponeres av borettslaget/sameiet og dette kan påvirke boligens BRA."
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            42,
+            76
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d083_010",
+          "description": "Energimerke E (grønn oppvarmingskarakter) indikerer at boligen er lite energieffektiv. Beregnet spesifikk levert energi er 181,83 kWh/(m²·år), noe som er betydelig høyere enn moderne standard. Dette kan medføre høye energikostnader for kjøper.",
+          "evidence": [
+            "Energikarakter: E",
+            "Energifarge: Grønn",
+            "Beregnet spesifikk levert energi ved normalisert klima 181,83 kWh/(m²·år)",
+            "En bolig bygget etter byggeforskriftene vedtatt i 2010 vil normalt få C."
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            6,
+            48,
+            81,
+            87
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d083_013",
+          "description": "Legalpant: Kommunen har legalpant som sikkerhet for kommunale avgifter og eiendomsskatt, og de øvrige seksjonseierne har legalpant på inntil 2G. Legalpant har prioritet foran tinglyste lån (banklån), noe som kan påvirke kjøpers finansiering.",
+          "evidence": [
+            "Legalpant: Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter og eventuell eiendomsskatt. De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader. Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen."
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            49
+          ],
+          "details": {
+            "confidence": 0.92
+          }
+        },
+        {
+          "risk_id": "gt_d083_014",
+          "description": "Sameiets egenkapital er negativ (kr -9 681 741 per 31.12.2024). Dette skyldes at rehabiliteringskostnader er kostnadsført løpende og finansiert gjennom fellesgjeld. Selv om dette er normalt for eierseksjonssameier, innebærer det at sameiet er avhengig av løpende innbetalinger fra seksjonseierne.",
+          "evidence": [
+            "Annen egenkapital: -9 681 741",
+            "UDEKKET TAP (NEGATIV EGENKAPITAL): Udekket tap betyr at egenkapitalen i selskapet er negativ. Det skyldes at selskapet fra stiftelsen og frem til 31.12. i regnskapsåret, har hatt høyere kostnader enn inntekter. Den manglende likviditeten er finansiert ved låneopptak.",
+            "SUM EGENKAPITAL: -9 681 741"
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            124,
+            125,
+            129
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d083_015",
+          "description": "Individuell innfrielse av fellesgjeld medfører risiko: seksjonseiere som har innfridd sin andel av fellesgjelden, risikerer fortsatt å måtte dekke sin forholdsmessige andel av sameiets betalingsforpliktelser ved mislighold fra andre seksjonseiere.",
+          "evidence": [
+            "Dette betyr at alle nåværende og fremtidige seksjonseiere, også for de seksjoner hvor fellesgjelden er innfridd, risikerer å måtte dekke sin forholdsmessige andel av sameiets betalingsforpliktelser ved mislighold.",
+            "Merk at ved en individuell innfrielse av fellesgjeld vil banken anse innbetalingen som en regulær ekstraordinær nedbetaling av eierseksjonssameiets felleslåns hovedstol."
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            99,
+            125
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d083_017",
+          "description": "Vinduer med 2-lags isolerglass (bortsett fra balkongdør med 3-lags) er fra byggeåret 2008. Disse kan ha redusert isolasjonsevne sammenlignet med moderne standarder, noe som kan bidra til høyere oppvarmingskostnader.",
+          "evidence": [
+            "Vinduer med trerammer og 2-lags isolerglass.",
+            "Vindu på et soverom skiftet i 2021.",
+            "Balkongdør med treramme og 3-lags isolerglass."
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            46,
+            67
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d083_018",
+          "description": "Flatt tak tekket med papp/folie er en del av sameiets vedlikeholdsansvar. Flate tak er generelt mer utsatt for lekkasjer og krever jevnlig vedlikehold. Tilstanden på taket er ikke vurdert i tilstandsrapporten da det er sameiets ansvar.",
+          "evidence": [
+            "Flatt tak tekket med papp/folie.",
+            "Overnevnte bygningsdeler er en del av sameiets/borettslagets vedlikeholdsansvar, og er ikke omfattet av denne rapporten. Det blir ikke satt tilstandsgrad for disse bygningsdelene."
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            45,
+            67
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        },
+        {
+          "risk_id": "gt_d083_019",
+          "description": "Felles avløpsrør av støpejern er lagt skjult i kanaler. Støpejernsrør har begrenset levetid og kan være utsatt for korrosjon og lekkasjer. Tilstanden på disse rørene er ikke fullt ut vurdert.",
+          "evidence": [
+            "Felles avløpsrør av støpejern som er lagt skjult i kanaler."
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            69
+          ],
+          "details": {
+            "confidence": 0.72
+          }
+        },
+        {
+          "risk_id": "gt_d083_020",
+          "description": "Bredbåndsavtalen med GlobalConnect har en varighet på 36 måneder fra 1.1.2024 og utløper dermed 31.12.2026. Etter dette tidspunktet kan vilkårene endres, noe som kan påvirke felleskostnadene.",
+          "evidence": [
+            "Styret har avtale med GlobalConnect for levering av bredbånd. Avtalen har en varighet på 36 måneder, og gjelder fra 1.1.2024."
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            46
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "1bc0512b-4380-401e-a11f-06cc9eb6aa56_risk_002",
+            "description": "Boligen selges 'som den er': Kjøpers reklamasjonsrett begrenses betydelig ettersom boligen selges 'som den er', noe som øker risikoen for at kjøper ikke kan kreve erstatning for skjulte feil og mangler oppdaget etter overtakelse.",
+            "evidence": [
+              "begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger.",
+              "Alt utstyr og installasjoner som medfølger overtas slik de er, uten garanti"
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter at boligen selges 'som den er' for ikke-forbrukerkjøpere. Side 50 inneholder teksten: 'selges ansvar begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger.' Side 43 bekrefter også: 'Alt utstyr og installasjoner som medfølger overtas slik de er, uten garanti'. Dette er en reell risiko som er eksplisitt beskrevet i dokumentet."
+        },
+        {
+          "risk": {
+            "risk_id": "1bc0512b-4380-401e-a11f-06cc9eb6aa56_risk_003",
+            "description": "Manglende brukstillatelse eller ferdigattest: Egenerklæringsskjemaet inneholder spørsmål om manglende brukstillatelse eller ferdigattest, men svaret er ikke tydelig bekreftet som 'Nei', noe som indikerer potensiell usikkerhet rundt lovlig bruk av boligen.",
+            "evidence": [
+              "Kjenner du til manglende brukstillatelse eller ferdigattest? Nei Ja"
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.65,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Egenerklæringsskjemaet (side 57) viser spørsmål 22: 'Kjenner du til manglende brukstillatelse eller ferdigattest? Nei Ja' – og svaret er 'Nei'. I tillegg bekrefter tilstandsrapporten (side 67) og salgsoppgaven (side 41) at 'Det foreligger ferdigattest for oppføring av Bertrand Narvesens vei 1-53' og at 'Det foreligger godkjente og byggemeldte tegninger, som stemmer med dagens bruk.' Det er altså ingen usikkerhet rundt ferdigattest – den foreligger."
+        },
+        {
+          "risk": {
+            "risk_id": "1bc0512b-4380-401e-a11f-06cc9eb6aa56_risk_004",
+            "description": "Risiko for sopp, råte, skadedyr og skjeggkre i sameiet: Egenerklæringen stiller spørsmål om kjente tilfeller av sopp, råteskader, insekter, skadedyr og skjeggkre i sameiet. Svarene er ikke entydig bekreftet som negative, noe som representerer en potensiell risiko.",
+            "evidence": [
+              "Kjenner du til om det er/har vært sopp/råteskader/insekter/skadedyr i sameiet/laget/selskapet (fellesareal eller i andre boliger) som rotter, mus, maur eller lignende? Nei Ja",
+              "Kjenner du til om det er/har vært skjeggkre i sameiet/laget/selskapet (fellesareal eller i andre boliger)? Nei Ja"
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.6,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Egenerklæringsskjemaet (side 57) viser spørsmål 27 og 28 om sopp/råteskader/insekter/skadedyr og skjeggkre i sameiet. Begge er besvart med 'Nei'. Selv om spørsmålene er stilt med 'Nei Ja'-format, er det tydelig fra konteksten at selgerne har svart 'Nei' på begge. Det er ingen indikasjon i dokumentet på at disse forholdene er bekreftet som problematiske."
+        },
+        {
+          "risk": {
+            "risk_id": "1bc0512b-4380-401e-a11f-06cc9eb6aa56_risk_006",
+            "description": "Risiko knyttet til skjulte installasjoner og begrensninger i tilstandsrapporten: Tilstandsrapporten dekker ikke skjulte installasjoner, full funksjonstesting av el- og VVS-installasjoner, geologiske forhold, eller bygningens lovlighet (med visse unntak). Dette betyr at kjøper kan stå overfor uforutsette kostnader etter overtakelse.",
+            "evidence": [
+              "skjulte installasjoner • installasjoner utenfor bygningen • full funksjonstesting av el- og VVS-installasjoner • geologiske forhold og bygningens plassering på grunnen • bygningens planløsning • bygningens innredning • løsøre slik som hvitevarer • utendørs svømmebasseng og pumpeanlegg • bygningens estetikk og arkitektur • bygningens lovlighet (bortsett fra bruksendringer, brannceller og forhold som åpenbart kan påvirke helse, miljø og sikkerhet)"
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Tilstandsrapporten (side 63) inneholder eksplisitt en liste over hva bygningssakkyndige IKKE ser på, inkludert: 'skjulte installasjoner', 'installasjoner utenfor bygningen', 'full funksjonstesting av el- og VVS-installasjoner', 'geologiske forhold og bygningens plassering på grunnen', 'bygningens lovlighet (bortsett fra bruksendringer, brannceller og forhold som åpenbart kan påvirke helse, miljø og sikkerhet)'. Dette er direkte sitert fra dokumentet og representerer en reell risiko for kjøper."
+        },
+        {
+          "risk": {
+            "risk_id": "1bc0512b-4380-401e-a11f-06cc9eb6aa56_risk_010",
+            "description": "Påbud, heftelser eller manglende tillatelser: Egenerklæringen stiller spørsmål om kjente påbud, heftelser eller krav mot eiendommen. Dersom slike forhold eksisterer og ikke er tilstrekkelig opplyst, kan kjøper bli stilt overfor uventede juridiske eller økonomiske forpliktelser.",
+            "evidence": [
+              "Kjenner du til om det foreligger påbud/heftelser/krav/manglende tillatelser vedrørende eiendommen? Nei Ja"
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.65,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Egenerklæringsskjemaet (side 57) viser spørsmål 20: 'Kjenner du til om det foreligger påbud/heftelser/krav/manglende tillatelser vedrørende eiendommen? Nei Ja' – og svaret er 'Nei'. Selgerne har altså bekreftet at de ikke kjenner til slike forhold. Det er ingen informasjon i dokumentet som indikerer at det faktisk foreligger påbud, heftelser eller manglende tillatelser."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 0.6666666666666666,
+        "recall": 0.2857142857142857,
+        "f1": 0.4,
+        "total_support": 21
+      }
+    },
+    "agentic_rag_P+T+R": {
+      "run_id": "51f16413-1609-4e87-9fbd-4578340e384a",
+      "system_type": "agentic_rag_P+T+R",
+      "overall_metrics": {
+        "precision": 0.6666666666666666,
+        "recall": 0.5714285714285714,
+        "f1": 0.6153846153846153,
+        "total_support": 21
+      },
+      "matched_risks": 12,
+      "unmatched_predicted": 6,
+      "unmatched_ground_truth": 9,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_000",
+            "description": "TG2 på membran og tettesjikt på begge bad – behov for utbedring i nær fremtid",
+            "evidence": [
+              "Smøremembran på vegg som er over 15 år og banemembran over 20 år blir vurdert til TG2 i rapporten.",
+              "Dette badet er nå snart 20 år gammelt. TG 2 gis med bakgrunn i at mer enn halvparten av forventet brukstid for membran/tettesjikt er oppbrukt.",
+              "Avvik som kan kreve tiltak: Våtrom > 3. etasje > Bad/vaskerom > Sluk, membran og tettesjikt",
+              "Avvik som kan kreve tiltak: Våtrom > 3. etasje > Bad > Sluk, membran og tettesjikt"
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_001",
+            "description": "TG2: Sluk, membran og tettesjikt på begge bad – mer enn halvparten av forventet brukstid er oppbrukt. Badet er nær 20 år gammelt. Eldre membraner kan bli sprø og sprekke opp, noe som kan føre til vannlekkasjer gjennom vegger og gulv og fuktskader.",
+            "evidence": [
+              "Mer enn halvparten av forventet brukstid er passert på membranløsningen.",
+              "Smøremembran på vegg som er over 15 år og banemembran over 20 år blir vurdert til TG2 i rapporten.",
+              "Dette badet er nå snart 20 år gammelt. TG 2 gis med bakgrunn i at mer enn halvparten av forventet brukstid for membran/tettesjikt er oppbrukt.",
+              "Det er viktig å merke seg at levetiden til en membran varierer basert på kvalitet, installasjon og bruk. Eldre membraner kan bli sprø og sprekke opp, noe som fører til at de mister sin vanntettende funksjon. Dette kan resultere i vannlekkasjer gjennom vegger og gulv og fuktskader."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              46,
+              67,
+              68
+            ],
+            "details": {
+              "confidence": 0.99
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_001",
+            "description": "TGIU (ikke undersøkt) på tilliggende konstruksjoner våtrom – skjulte feil kan ikke utelukkes",
+            "evidence": [
+              "Konstruksjoner som ikke er undersøkt: Våtrom > 3. etasje > Bad/vaskerom > Tilliggende konstruksjoner våtrom",
+              "Det er pga bygningsmessige hindringer ikke fysisk mulig å foreta hulltaking i vegg bak våtsone. TGIU gitt ut ifra manglende mulighet for hulltaking.",
+              "Rapporten er likevel ingen garanti for at det ikke kan finnes skjulte feil, skader og mangler."
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_002",
+            "description": "TGIU: Tilliggende konstruksjoner våtrom (bad/vaskerom) – hulltaking er ikke foretatt da det ikke er fysisk mulig pga. bygningsmessige hindringer. Det kan foreligge skjulte fuktskader som ikke er avdekket.",
+            "evidence": [
+              "Det er pga bygningsmessige hindringer ikke fysisk mulig å foreta hulltaking i vegg bak våtsone.",
+              "TGIU gitt ut ifra manglende mulighet for hulltaking.",
+              "Bygningsdeler som er merket med TGIU er ikke blitt vurdert av takstmannen."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              46,
+              66,
+              68
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_008",
+            "description": "Sameiet er ikke tilknyttet sikringsordning – manglende beskyttelse ved mislighold av felleskostnader",
+            "evidence": [
+              "Ikke tilknyttet sikringsordning. Sameiet har legalpant som sikkerhet for betaling av felleskostnader."
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_005",
+            "description": "Sameiet er ikke tilknyttet sikringsordning. Dette innebærer at kjøper ikke har den ekstra beskyttelsen som en sikringsordning gir ved eventuelle mislighold av felleskostnader fra andre seksjonseiere.",
+            "evidence": [
+              "Ikke tilknyttet sikringsordning. Sameiet har legalpant som sikkerhet for betaling av felleskostnader."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              40
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_005",
+            "description": "Høy fellesgjeld i sameiet med flytende rente – risiko for økte felleskostnader ved renteøkning",
+            "evidence": [
+              "Obos-Banken AS, Flytende rente, annuitetslån. Rentesatsen pr. 31.12.24 var 6,89 %. Løpetiden er 5 år.",
+              "Obos-Banken AS, Flytende rente. Rentesatsen pr. 31.12.24 var 6,99 %. Løpetiden er 25 år.",
+              "SUM PANTE- OG GJELDSBREVLÅN -13 540 184",
+              "Innfrielsesdato: 30.12.2046. Type rente: Flytende rente."
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_006",
+            "description": "Sameiet har betydelig fellesgjeld med flytende rente. Restsaldo på to lån er henholdsvis kr 332 545 (innfrielse 30.12.2026) og kr 12 394 892 (innfrielse 30.12.2046) med rentesatser på 6,34% og 6,44%. Renteøkninger vil direkte påvirke felleskostnadene.",
+            "evidence": [
+              "Bank: OBOS-banken AS, Lånenr.: 98207998842, Lånetype: Annuitetslån, Rentesats: 6,34%, Restsaldo 332 545,00, Innfrielsesdato: 30.12.2026, Type rente: Flytende rente",
+              "Bank: OBOS-banken AS, Lånenr.: 98207998850, Lånetype: Annuitetslån, Rentesats: 6,44%, Restsaldo 12 394 892,30, Innfrielsesdato: 30.12.2046, Type rente: Flytende rente",
+              "Andel fellesgjeld: 0,- (for denne seksjonen)"
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              39,
+              40
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_002",
+            "description": "Planlagt bergvarmeanlegg med estimert kostnad på 14–16 millioner kroner kan medføre betydelig økning i felleskostnader",
+            "evidence": [
+              "Totalkostnad for boring, installasjon av varmepumper, røranlegg, automasjon, måling og tilpasning til eksisterende systemer, inkludert prosjektledelse, usikkerhet og mva, er anslått til å ligge i området 14–16 millioner kroner.",
+              "Bergvarmeanlegget er planlagt å dekke ca. 40–60% av årlig energibehov, mens resterende effekt må dekkes med elektrisitet (dvs. ikke fjernvarme).",
+              "Styret foreslår derfor at årsmøtet tar saken til orientering, og gir sin tilslutning til at tiltakene vurderes på nytt når markedsforholdene stabiliserer seg og forutsetningene viser at nedbetalingstiden kan bli som ønsket (for eksempel innen 9–12 år)."
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.93,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_007",
+            "description": "Planlagte store investeringer i sameiet: solcelleanlegg (estimert 2,5–3,0 millioner kroner) og bergvarmeanlegg (estimert 14–16 millioner kroner). Disse prosjektene er foreløpig utsatt, men kan medføre økte felleskostnader eller fellesgjeld i fremtiden.",
+            "evidence": [
+              "Totalkostnaden anslås å være i størrelsesorden 2,5‑3,0 millioner kroner [solcelleanlegg].",
+              "Totalkostnad for boring, installasjon av varmepumper, røranlegg, automasjon, måling og tilpasning til eksisterende systemer, inkludert prosjektledelse, usikkerhet og mva, er anslått til å ligge i området 14‑16 millioner kroner [bergvarmeanlegg].",
+              "Styret foreslår at årsmøtet tar saken til orientering, og gir sin tilslutning til at tiltakene vurderes på nytt når markedsforholdene stabiliserer seg."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              47
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_009",
+            "description": "Området er under utvikling med pågående reguleringsplaner som kan påvirke omgivelsene og bruken av eiendommen",
+            "evidence": [
+              "Det gjøres oppmerksom på at området er under utvikling og at endringer og oppføring av nye bygg vil kunne skje.",
+              "Grenseveien mellom Økernveien og Grensesvingen – Saksnr. 202460006. Hovedhensikten med planen er å etablere et eget anlegg for syklende og legge bedre til rette for gående.",
+              "Eiendoms- og byfornyelsesetaten i Oslo kommune ønsker å omregulere Gladengveien 18 mfl. fra industri til grønnstruktur. Hensikten med planarbeidet er å legge til rette for gjenåpning av resterende del av hovedløpet for Hovinbekken.",
+              "Bekkeåpningen vil berøre deler av eiendommene Gladengveien 18 og 16. Dagens bruk på eiendommene forutsettes videreført, men driftsmulighetene kan bli påvirket av bekkeåpningen.",
+              "Grenseveien 73, 91 og 95 – Regulering til barneskole, barnehage og park – Saksnr. 202118619"
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_009",
+            "description": "Området er under utvikling med pågående og planlagte reguleringsendringer, inkludert ny barneskole og ungdomsskole på Ensjø, regulering av Grenseveien for syklister og gående, og gjenåpning av Hovinbekken. Dette kan medføre økt trafikk, støy og anleggsarbeid i nærområdet.",
+            "evidence": [
+              "Det gjøres oppmerksom på at området er under utvikling og at endringer og oppføring av nye bygg vil kunne skje.",
+              "Grenseveien mellom Økernveien og Grensesvingen – Saksnr. 202460006: Hovedhensikten med planen er å etablere et eget anlegg for syklende og legge bedre til rette for gående.",
+              "Ensjø skal få ny barneskole og ny ungdomsskole.",
+              "Informasjon om plankunngjøring for Vestre bekkedrag/Hovinbekken: ønsker å omregulere Gladengveien 18 mfl. fra industri til grønnstruktur."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              48,
+              49
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_012",
+            "description": "Energikarakter E – boligen er lite energieffektiv, noe som kan medføre høye energikostnader",
+            "evidence": [
+              "Energikarakter: E",
+              "Energimerket angir boligens energistandard. Boligen er lite energieffektiv. En bolig bygget etter byggeforskriftene vedtatt i 2010 vil normalt få C.",
+              "Leiligheten er oppvarmet med radiatorer via sentral fjernvarme. I tillegg varmekabler på badene."
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_010",
+            "description": "Energimerke E (grønn oppvarmingskarakter) indikerer at boligen er lite energieffektiv. Beregnet spesifikk levert energi er 181,83 kWh/(m²·år), noe som er betydelig høyere enn moderne standard. Dette kan medføre høye energikostnader for kjøper.",
+            "evidence": [
+              "Energikarakter: E",
+              "Energifarge: Grønn",
+              "Beregnet spesifikk levert energi ved normalisert klima 181,83 kWh/(m²·år)",
+              "En bolig bygget etter byggeforskriftene vedtatt i 2010 vil normalt få C."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              6,
+              48,
+              81,
+              87
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_011",
+            "description": "Staking av tett avløp utført i 2025 – indikerer mulig tilbakevendende problem med avløpssystemet",
+            "evidence": [
+              "Kjenner du til feil eller om har vært utført arbeid/kontroll på vann/avløp? Ja, kun av faglært. Staking av tett avløp 2025. Arbeid utført av Tanga rør AS."
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_011",
+            "description": "Staking av tett avløp ble utført i 2025. Dette indikerer at det har vært problemer med avløpssystemet, og det kan ikke utelukkes at problemet kan gjenta seg.",
+            "evidence": [
+              "Kjenner du til feil eller om har vært utført arbeid/kontroll på vann/avløp? Ja, kun av faglært. Staking av tett avløp 2025. Arbeid utført av Tanga rør AS."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              43,
+              56
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_007",
+            "description": "Legalpant – kommunen og sameiet har panterett med prioritet foran tinglyste banklån, noe som kan påvirke kjøpers finansiering",
+            "evidence": [
+              "Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter og eventuell eiendomsskatt.",
+              "De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader.",
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen.",
+              "Legalpant til kommunen har høyere prioritet enn legalpant til sameiet."
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.93,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_013",
+            "description": "Legalpant: Kommunen har legalpant som sikkerhet for kommunale avgifter og eiendomsskatt, og de øvrige seksjonseierne har legalpant på inntil 2G. Legalpant har prioritet foran tinglyste lån (banklån), noe som kan påvirke kjøpers finansiering.",
+            "evidence": [
+              "Legalpant: Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter og eventuell eiendomsskatt. De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader. Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              49
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_004",
+            "description": "Sameiet har negativ egenkapital (udekket tap) – finansiell risiko for kjøper",
+            "evidence": [
+              "UDEKKET TAP (NEGATIV EGENKAPITAL): Udekket tap betyr at...",
+              "SUM ANNEN EGENKAPITAL -9 681 741",
+              "Opptjent egenkapital -17 742 503",
+              "Ved kjøp og salg av bolig er udekket tap (negativ egenkapital) reflektert gjennom fellesgjelden på hver enkelt leilighet."
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_014",
+            "description": "Sameiets egenkapital er negativ (kr -9 681 741 per 31.12.2024). Dette skyldes at rehabiliteringskostnader er kostnadsført løpende og finansiert gjennom fellesgjeld. Selv om dette er normalt for eierseksjonssameier, innebærer det at sameiet er avhengig av løpende innbetalinger fra seksjonseierne.",
+            "evidence": [
+              "Annen egenkapital: -9 681 741",
+              "UDEKKET TAP (NEGATIV EGENKAPITAL): Udekket tap betyr at egenkapitalen i selskapet er negativ. Det skyldes at selskapet fra stiftelsen og frem til 31.12. i regnskapsåret, har hatt høyere kostnader enn inntekter. Den manglende likviditeten er finansiert ved låneopptak.",
+              "SUM EGENKAPITAL: -9 681 741"
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              124,
+              125,
+              129
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_006",
+            "description": "Individuell innfrielse av fellesgjeld fritar ikke seksjonseier fra debitoransvar – kjøper kan måtte dekke andel av sameiets lån selv om fellesgjeld er innfridd",
+            "evidence": [
+              "Dette betyr at alle nåværende og fremtidige seksjonseiere, også for de seksjoner hvor fellesgjelden er innfridd, risikerer å måtte dekke sin forholdsmessige andel av sameiets betalingsforpliktelser ved mislighold.",
+              "Seksjonseiere som har innfridd sin andel av fellesgjelden fortsatt risikerer å måtte dekke sin del av bankens lån dersom sameiet misligholder lånet.",
+              "OBOS Eiendomsforvaltning AS påtar seg intet ansvar for eventuelle konsekvenser for Eierseksjonssameiet, seksjonseierne eller seksjonseiernes rettsetterfølgere, av dette."
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_015",
+            "description": "Individuell innfrielse av fellesgjeld medfører risiko: seksjonseiere som har innfridd sin andel av fellesgjelden, risikerer fortsatt å måtte dekke sin forholdsmessige andel av sameiets betalingsforpliktelser ved mislighold fra andre seksjonseiere.",
+            "evidence": [
+              "Dette betyr at alle nåværende og fremtidige seksjonseiere, også for de seksjoner hvor fellesgjelden er innfridd, risikerer å måtte dekke sin forholdsmessige andel av sameiets betalingsforpliktelser ved mislighold.",
+              "Merk at ved en individuell innfrielse av fellesgjeld vil banken anse innbetalingen som en regulær ekstraordinær nedbetaling av eierseksjonssameiets felleslåns hovedstol."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              99,
+              125
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_010",
+            "description": "Ingen radonmåling er utført – potensiell helserisiko kan ikke utelukkes",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_016",
+            "description": "Radonmåling er ikke utført. Selv om det ikke er krav om dette når boligen ikke er utleid, kan radonkonsentrasjonen i boligen være ukjent og potensielt helseskadelig.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              49,
+              57
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_003",
+          "description": "Planlagt solcelleanlegg med estimert kostnad på 2,5–3,0 millioner kroner kan medføre økte felleskostnader",
+          "evidence": [
+            "Basert på innhentede priser, inkludert teknisk installasjon, integrert fallsikring, elektroarbeider, prosjektledelse, usikkerhet og mva, anslås totalkostnaden å være i størrelsesorden 2,5–3,0 millioner kroner.",
+            "Det ble på årsmøtet 2023 vedtatt å utrede muligheten for å etablere solcelleanlegg på sameiets to hovedtak, med mål om å redusere fellesstrømsforbruket."
+          ],
+          "source_documents": [
+            "d083_d083"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_013",
+          "description": "Konsulenthonorar i sameiet er vesentlig høyere enn budsjettert – indikerer uforutsette kostnader",
+          "evidence": [
+            "Konsulenthonorar 7: Regnskap 2024: -345 522, Regnskap 2023: -292 697, Budsjett 2024: -140 000, Budsjett 2025: -140 000"
+          ],
+          "source_documents": [
+            "d083_d083"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_014",
+          "description": "Skadedyrarbeid/soppkontroll er en løpende kostnad i sameiet – indikerer kjente problemer med skadedyr eller sopp i fellesarealer",
+          "evidence": [
+            "Skadedyrarbeid/soppkontroll -50 785 (i regnskapet for 2024)"
+          ],
+          "source_documents": [
+            "d083_d083"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.72,
+          "details": {}
+        },
+        {
+          "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_015",
+          "description": "Korttidsutleie er begrenset til maksimalt 90 døgn per år – begrenser kjøpers mulighet til utleie",
+          "evidence": [
+            "Korttidsutleie av hele boligseksjonen i mer enn 90 døgn årlig er ikke tillatt. Med korttidsutleie menes utleie i inntil 30 døgn sammenhengende."
+          ],
+          "source_documents": [
+            "d083_d083"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.9,
+          "details": {}
+        },
+        {
+          "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_016",
+          "description": "Parkeringsplassen kan kun selges til eller leies ut til andre seksjonseiere i sameiet – begrenset omsettelighet",
+          "evidence": [
+            "Parkeringsplassene kan bare selges til andre seksjonseiere i sameiet.",
+            "Parkeringsplassene kan kun leies ut til andre seksjonseiere på Tiedemannsjordet."
+          ],
+          "source_documents": [
+            "d083_d083"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_017",
+          "description": "Kjøper er forpliktet til å signere standard kjøpekontrakt utarbeidet av Emera – begrenset avtalefrihet",
+          "evidence": [
+            "Kjøper og selger er forpliktet til å signere den standard kjøpekontrakten utarbeidet av Emera som en del av eiendomshandleren."
+          ],
+          "source_documents": [
+            "d083_d083"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d083_003",
+          "description": "Sprekk i én gulvflis utenfor våtsone på bad gang. Selv om dette er utenfor våtsone, kan det indikere bevegelse i underlaget eller skader som bør undersøkes nærmere.",
+          "evidence": [
+            "Sprekk i én gulvflis utenfor våtsone.",
+            "4) BAD GANG: - Sprekk i én gulvflis utenfor våtsone."
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            44,
+            58
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d083_004",
+          "description": "Komfyrvakt er ikke montert på kjøkkenet. Dette er en sikkerhetsrisiko da komfyrvakt er anbefalt for å forhindre brann ved glemte komfyrer.",
+          "evidence": [
+            "Komfyrvakt ikke montert, da dette ikke var krav ved rehabilitering av kjøkken ifølge utførende elektriker.",
+            "Montert Water-guard, men ikke komfyrvakt."
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            45,
+            58,
+            69
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d083_008",
+          "description": "Boden som er medtatt i BRA-e og totalt BRA ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet, noe som kan redusere boligens faktiske bruksareal.",
+          "evidence": [
+            "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA‑e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet.",
+            "Rom utenfor boenheten kan omdisponeres av borettslaget/sameiet og dette kan påvirke boligens BRA."
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            42,
+            76
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d083_012",
+          "description": "Store deler av det elektriske anlegget er skiftet ut i perioden 2022–2024, men det foreligger ikke eltilsynsrapport fra de siste 5 år uten avvik. Selv om samsvarserklæring foreligger, er det ikke gjennomført en fullstendig kontroll av det elektriske anlegget av offentlig myndighet.",
+          "evidence": [
+            "Foreligger det eltilsynsrapport de siste 5 år, og det er ikke foretatt arbeid på anlegget etter denne, utenom retting av eventuelle avvik i eltilsynsrapport (dvs en el-tilsynsrapport uten avvik)? Nei",
+            "Gjort en del oppgradering av anlegget, se egenerklæring for hva som er gjort. Arbeidene gjort i perioden 2021-2024.",
+            "Foreligger det kontrollrapport fra offentlig myndighet – Det Lokale Eltilsyn (DLE) eller eventuelt andre tilsvarende kontrollinstanser med avvik som ikke er utbedret eller kontrollen er over 5 år? Nei"
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            43,
+            56,
+            69,
+            70
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d083_017",
+          "description": "Vinduer med 2-lags isolerglass (bortsett fra balkongdør med 3-lags) er fra byggeåret 2008. Disse kan ha redusert isolasjonsevne sammenlignet med moderne standarder, noe som kan bidra til høyere oppvarmingskostnader.",
+          "evidence": [
+            "Vinduer med trerammer og 2-lags isolerglass.",
+            "Vindu på et soverom skiftet i 2021.",
+            "Balkongdør med treramme og 3-lags isolerglass."
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            46,
+            67
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d083_018",
+          "description": "Flatt tak tekket med papp/folie er en del av sameiets vedlikeholdsansvar. Flate tak er generelt mer utsatt for lekkasjer og krever jevnlig vedlikehold. Tilstanden på taket er ikke vurdert i tilstandsrapporten da det er sameiets ansvar.",
+          "evidence": [
+            "Flatt tak tekket med papp/folie.",
+            "Overnevnte bygningsdeler er en del av sameiets/borettslagets vedlikeholdsansvar, og er ikke omfattet av denne rapporten. Det blir ikke satt tilstandsgrad for disse bygningsdelene."
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            45,
+            67
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        },
+        {
+          "risk_id": "gt_d083_019",
+          "description": "Felles avløpsrør av støpejern er lagt skjult i kanaler. Støpejernsrør har begrenset levetid og kan være utsatt for korrosjon og lekkasjer. Tilstanden på disse rørene er ikke fullt ut vurdert.",
+          "evidence": [
+            "Felles avløpsrør av støpejern som er lagt skjult i kanaler."
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            69
+          ],
+          "details": {
+            "confidence": 0.72
+          }
+        },
+        {
+          "risk_id": "gt_d083_020",
+          "description": "Bredbåndsavtalen med GlobalConnect har en varighet på 36 måneder fra 1.1.2024 og utløper dermed 31.12.2026. Etter dette tidspunktet kan vilkårene endres, noe som kan påvirke felleskostnadene.",
+          "evidence": [
+            "Styret har avtale med GlobalConnect for levering av bredbånd. Avtalen har en varighet på 36 måneder, og gjelder fra 1.1.2024."
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            46
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d083_021",
+          "description": "Selger har tegnet boligselgerforsikring begrenset oppad til kr 20 000 000. Kjøper bør være oppmerksom på at forsikringen dekker selgers ansvar etter avhendingsloven, men at det er en egenandel på kr 10 000 for kjøper ved krav om prisavslag eller erstatning.",
+          "evidence": [
+            "Boligselgerforsikring: Selger har tegnet boligselgerforsikring som dekker selgers ansvar etter avhendingsloven begrenset oppad kr. 20 000 000,‑.",
+            "Ved beregning av krav om prisavslag eller erstatning må kjøper selv dekke kostnader med inntil kr 10 000 (som en egenandel)."
+          ],
+          "source_documents": [
+            "d083.pdf"
+          ],
+          "source_pages": [
+            49,
+            50
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_003",
+            "description": "Planlagt solcelleanlegg med estimert kostnad på 2,5–3,0 millioner kroner kan medføre økte felleskostnader",
+            "evidence": [
+              "Basert på innhentede priser, inkludert teknisk installasjon, integrert fallsikring, elektroarbeider, prosjektledelse, usikkerhet og mva, anslås totalkostnaden å være i størrelsesorden 2,5–3,0 millioner kroner.",
+              "Det ble på årsmøtet 2023 vedtatt å utrede muligheten for å etablere solcelleanlegg på sameiets to hovedtak, med mål om å redusere fellesstrømsforbruket."
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter tydelig at det ble vedtatt på årsmøtet 2023 å utrede solcelleanlegg, og at totalkostnaden er anslått til 2,5–3,0 millioner kroner inkludert teknisk installasjon, fallsikring, elektroarbeider, prosjektledelse, usikkerhet og mva. Dette kan potensielt medføre økte felleskostnader dersom prosjektet gjennomføres."
+        },
+        {
+          "risk": {
+            "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_013",
+            "description": "Konsulenthonorar i sameiet er vesentlig høyere enn budsjettert – indikerer uforutsette kostnader",
+            "evidence": [
+              "Konsulenthonorar 7: Regnskap 2024: -345 522, Regnskap 2023: -292 697, Budsjett 2024: -140 000, Budsjett 2025: -140 000"
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Regnskapet for 2024 (Note 7 i årsregnskapet) bekrefter at konsulenthonorar var kr 345 522 i 2024 og kr 292 697 i 2023, mens budsjettet for begge år var kr 140 000. Dette er en vesentlig overskridelse som indikerer uforutsette kostnader."
+        },
+        {
+          "risk": {
+            "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_014",
+            "description": "Skadedyrarbeid/soppkontroll er en løpende kostnad i sameiet – indikerer kjente problemer med skadedyr eller sopp i fellesarealer",
+            "evidence": [
+              "Skadedyrarbeid/soppkontroll -50 785 (i regnskapet for 2024)"
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.72,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Regnskapet (Note 11 – Andre driftskostnader) viser en post 'Skadedyrarbeid/soppkontroll' på kr 50 785 for 2024. Dette bekrefter at det er en løpende kostnad i sameiet, noe som kan indikere kjente problemer med skadedyr eller sopp i fellesarealer."
+        },
+        {
+          "risk": {
+            "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_015",
+            "description": "Korttidsutleie er begrenset til maksimalt 90 døgn per år – begrenser kjøpers mulighet til utleie",
+            "evidence": [
+              "Korttidsutleie av hele boligseksjonen i mer enn 90 døgn årlig er ikke tillatt. Med korttidsutleie menes utleie i inntil 30 døgn sammenhengende."
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt i vedtektenes § 2-1 (3) og i salgsoppgavens utleieavsnitt: 'Korttidsutleie av hele boligseksjonen i mer enn 90 døgn årlig er ikke tillatt. Med korttidsutleie menes utleie i inntil 30 døgn sammenhengende.' Dette begrenser kjøpers mulighet til korttidsutleie."
+        },
+        {
+          "risk": {
+            "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_016",
+            "description": "Parkeringsplassen kan kun selges til eller leies ut til andre seksjonseiere i sameiet – begrenset omsettelighet",
+            "evidence": [
+              "Parkeringsplassene kan bare selges til andre seksjonseiere i sameiet.",
+              "Parkeringsplassene kan kun leies ut til andre seksjonseiere på Tiedemannsjordet."
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Vedtektenes § 4-1 bekrefter begge påstandene: 'Parkeringsplassene kan bare selges til andre seksjonseiere i sameiet' og 'Parkeringsplassene kan kun leies ut til andre seksjonseiere på Tiedemannsjordet.' Dette begrenser omsetteligheten av parkeringsplassen."
+        },
+        {
+          "risk": {
+            "risk_id": "51f16413-1609-4e87-9fbd-4578340e384a_risk_017",
+            "description": "Kjøper er forpliktet til å signere standard kjøpekontrakt utarbeidet av Emera – begrenset avtalefrihet",
+            "evidence": [
+              "Kjøper og selger er forpliktet til å signere den standard kjøpekontrakten utarbeidet av Emera som en del av eiendomshandleren."
+            ],
+            "source_documents": [
+              "d083_d083"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt i salgsoppgavens 'Diverse'-avsnitt: 'Kjøper og selger er forpliktet til å signere den standard kjøpekontrakten utarbeidet av Emera som en del av eiendomshandleren.' Dette innebærer begrenset avtalefrihet for kjøper."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.5714285714285714,
+        "f1": 0.7272727272727273,
+        "total_support": 21
+      }
+    },
+    "ground_truth": {
+      "run_id": "730bdaab-3f95-4645-86a4-2cacf7ed4d25_gt",
+      "system_type": "ground_truth",
+      "overall_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "total_support": 21
+      },
+      "matched_risks": 21,
+      "unmatched_predicted": 0,
+      "unmatched_ground_truth": 0,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "gt_d083_001",
+            "description": "TG2: Sluk, membran og tettesjikt på begge bad – mer enn halvparten av forventet brukstid er oppbrukt. Badet er nær 20 år gammelt. Eldre membraner kan bli sprø og sprekke opp, noe som kan føre til vannlekkasjer gjennom vegger og gulv og fuktskader.",
+            "evidence": [
+              "Mer enn halvparten av forventet brukstid er passert på membranløsningen.",
+              "Smøremembran på vegg som er over 15 år og banemembran over 20 år blir vurdert til TG2 i rapporten.",
+              "Dette badet er nå snart 20 år gammelt. TG 2 gis med bakgrunn i at mer enn halvparten av forventet brukstid for membran/tettesjikt er oppbrukt.",
+              "Det er viktig å merke seg at levetiden til en membran varierer basert på kvalitet, installasjon og bruk. Eldre membraner kan bli sprø og sprekke opp, noe som fører til at de mister sin vanntettende funksjon. Dette kan resultere i vannlekkasjer gjennom vegger og gulv og fuktskader."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              46,
+              67,
+              68
+            ],
+            "confidence": 0.99,
+            "details": {
+              "confidence": 0.99
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_001",
+            "description": "TG2: Sluk, membran og tettesjikt på begge bad – mer enn halvparten av forventet brukstid er oppbrukt. Badet er nær 20 år gammelt. Eldre membraner kan bli sprø og sprekke opp, noe som kan føre til vannlekkasjer gjennom vegger og gulv og fuktskader.",
+            "evidence": [
+              "Mer enn halvparten av forventet brukstid er passert på membranløsningen.",
+              "Smøremembran på vegg som er over 15 år og banemembran over 20 år blir vurdert til TG2 i rapporten.",
+              "Dette badet er nå snart 20 år gammelt. TG 2 gis med bakgrunn i at mer enn halvparten av forventet brukstid for membran/tettesjikt er oppbrukt.",
+              "Det er viktig å merke seg at levetiden til en membran varierer basert på kvalitet, installasjon og bruk. Eldre membraner kan bli sprø og sprekke opp, noe som fører til at de mister sin vanntettende funksjon. Dette kan resultere i vannlekkasjer gjennom vegger og gulv og fuktskader."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              46,
+              67,
+              68
+            ],
+            "details": {
+              "confidence": 0.99
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d083_002",
+            "description": "TGIU: Tilliggende konstruksjoner våtrom (bad/vaskerom) – hulltaking er ikke foretatt da det ikke er fysisk mulig pga. bygningsmessige hindringer. Det kan foreligge skjulte fuktskader som ikke er avdekket.",
+            "evidence": [
+              "Det er pga bygningsmessige hindringer ikke fysisk mulig å foreta hulltaking i vegg bak våtsone.",
+              "TGIU gitt ut ifra manglende mulighet for hulltaking.",
+              "Bygningsdeler som er merket med TGIU er ikke blitt vurdert av takstmannen."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              46,
+              66,
+              68
+            ],
+            "confidence": 0.97,
+            "details": {
+              "confidence": 0.97
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_002",
+            "description": "TGIU: Tilliggende konstruksjoner våtrom (bad/vaskerom) – hulltaking er ikke foretatt da det ikke er fysisk mulig pga. bygningsmessige hindringer. Det kan foreligge skjulte fuktskader som ikke er avdekket.",
+            "evidence": [
+              "Det er pga bygningsmessige hindringer ikke fysisk mulig å foreta hulltaking i vegg bak våtsone.",
+              "TGIU gitt ut ifra manglende mulighet for hulltaking.",
+              "Bygningsdeler som er merket med TGIU er ikke blitt vurdert av takstmannen."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              46,
+              66,
+              68
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d083_003",
+            "description": "Sprekk i én gulvflis utenfor våtsone på bad gang. Selv om dette er utenfor våtsone, kan det indikere bevegelse i underlaget eller skader som bør undersøkes nærmere.",
+            "evidence": [
+              "Sprekk i én gulvflis utenfor våtsone.",
+              "4) BAD GANG: - Sprekk i én gulvflis utenfor våtsone."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              44,
+              58
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_003",
+            "description": "Sprekk i én gulvflis utenfor våtsone på bad gang. Selv om dette er utenfor våtsone, kan det indikere bevegelse i underlaget eller skader som bør undersøkes nærmere.",
+            "evidence": [
+              "Sprekk i én gulvflis utenfor våtsone.",
+              "4) BAD GANG: - Sprekk i én gulvflis utenfor våtsone."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              44,
+              58
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d083_004",
+            "description": "Komfyrvakt er ikke montert på kjøkkenet. Dette er en sikkerhetsrisiko da komfyrvakt er anbefalt for å forhindre brann ved glemte komfyrer.",
+            "evidence": [
+              "Komfyrvakt ikke montert, da dette ikke var krav ved rehabilitering av kjøkken ifølge utførende elektriker.",
+              "Montert Water-guard, men ikke komfyrvakt."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              45,
+              58,
+              69
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_004",
+            "description": "Komfyrvakt er ikke montert på kjøkkenet. Dette er en sikkerhetsrisiko da komfyrvakt er anbefalt for å forhindre brann ved glemte komfyrer.",
+            "evidence": [
+              "Komfyrvakt ikke montert, da dette ikke var krav ved rehabilitering av kjøkken ifølge utførende elektriker.",
+              "Montert Water-guard, men ikke komfyrvakt."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              45,
+              58,
+              69
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d083_005",
+            "description": "Sameiet er ikke tilknyttet sikringsordning. Dette innebærer at kjøper ikke har den ekstra beskyttelsen som en sikringsordning gir ved eventuelle mislighold av felleskostnader fra andre seksjonseiere.",
+            "evidence": [
+              "Ikke tilknyttet sikringsordning. Sameiet har legalpant som sikkerhet for betaling av felleskostnader."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              40
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_005",
+            "description": "Sameiet er ikke tilknyttet sikringsordning. Dette innebærer at kjøper ikke har den ekstra beskyttelsen som en sikringsordning gir ved eventuelle mislighold av felleskostnader fra andre seksjonseiere.",
+            "evidence": [
+              "Ikke tilknyttet sikringsordning. Sameiet har legalpant som sikkerhet for betaling av felleskostnader."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              40
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d083_006",
+            "description": "Sameiet har betydelig fellesgjeld med flytende rente. Restsaldo på to lån er henholdsvis kr 332 545 (innfrielse 30.12.2026) og kr 12 394 892 (innfrielse 30.12.2046) med rentesatser på 6,34% og 6,44%. Renteøkninger vil direkte påvirke felleskostnadene.",
+            "evidence": [
+              "Bank: OBOS-banken AS, Lånenr.: 98207998842, Lånetype: Annuitetslån, Rentesats: 6,34%, Restsaldo 332 545,00, Innfrielsesdato: 30.12.2026, Type rente: Flytende rente",
+              "Bank: OBOS-banken AS, Lånenr.: 98207998850, Lånetype: Annuitetslån, Rentesats: 6,44%, Restsaldo 12 394 892,30, Innfrielsesdato: 30.12.2046, Type rente: Flytende rente",
+              "Andel fellesgjeld: 0,- (for denne seksjonen)"
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              39,
+              40
+            ],
+            "confidence": 0.92,
+            "details": {
+              "confidence": 0.92
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_006",
+            "description": "Sameiet har betydelig fellesgjeld med flytende rente. Restsaldo på to lån er henholdsvis kr 332 545 (innfrielse 30.12.2026) og kr 12 394 892 (innfrielse 30.12.2046) med rentesatser på 6,34% og 6,44%. Renteøkninger vil direkte påvirke felleskostnadene.",
+            "evidence": [
+              "Bank: OBOS-banken AS, Lånenr.: 98207998842, Lånetype: Annuitetslån, Rentesats: 6,34%, Restsaldo 332 545,00, Innfrielsesdato: 30.12.2026, Type rente: Flytende rente",
+              "Bank: OBOS-banken AS, Lånenr.: 98207998850, Lånetype: Annuitetslån, Rentesats: 6,44%, Restsaldo 12 394 892,30, Innfrielsesdato: 30.12.2046, Type rente: Flytende rente",
+              "Andel fellesgjeld: 0,- (for denne seksjonen)"
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              39,
+              40
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d083_007",
+            "description": "Planlagte store investeringer i sameiet: solcelleanlegg (estimert 2,5–3,0 millioner kroner) og bergvarmeanlegg (estimert 14–16 millioner kroner). Disse prosjektene er foreløpig utsatt, men kan medføre økte felleskostnader eller fellesgjeld i fremtiden.",
+            "evidence": [
+              "Totalkostnaden anslås å være i størrelsesorden 2,5‑3,0 millioner kroner [solcelleanlegg].",
+              "Totalkostnad for boring, installasjon av varmepumper, røranlegg, automasjon, måling og tilpasning til eksisterende systemer, inkludert prosjektledelse, usikkerhet og mva, er anslått til å ligge i området 14‑16 millioner kroner [bergvarmeanlegg].",
+              "Styret foreslår at årsmøtet tar saken til orientering, og gir sin tilslutning til at tiltakene vurderes på nytt når markedsforholdene stabiliserer seg."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              47
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_007",
+            "description": "Planlagte store investeringer i sameiet: solcelleanlegg (estimert 2,5–3,0 millioner kroner) og bergvarmeanlegg (estimert 14–16 millioner kroner). Disse prosjektene er foreløpig utsatt, men kan medføre økte felleskostnader eller fellesgjeld i fremtiden.",
+            "evidence": [
+              "Totalkostnaden anslås å være i størrelsesorden 2,5‑3,0 millioner kroner [solcelleanlegg].",
+              "Totalkostnad for boring, installasjon av varmepumper, røranlegg, automasjon, måling og tilpasning til eksisterende systemer, inkludert prosjektledelse, usikkerhet og mva, er anslått til å ligge i området 14‑16 millioner kroner [bergvarmeanlegg].",
+              "Styret foreslår at årsmøtet tar saken til orientering, og gir sin tilslutning til at tiltakene vurderes på nytt når markedsforholdene stabiliserer seg."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              47
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d083_008",
+            "description": "Boden som er medtatt i BRA-e og totalt BRA ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet, noe som kan redusere boligens faktiske bruksareal.",
+            "evidence": [
+              "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA‑e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet.",
+              "Rom utenfor boenheten kan omdisponeres av borettslaget/sameiet og dette kan påvirke boligens BRA."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              42,
+              76
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_008",
+            "description": "Boden som er medtatt i BRA-e og totalt BRA ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet, noe som kan redusere boligens faktiske bruksareal.",
+            "evidence": [
+              "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA‑e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet.",
+              "Rom utenfor boenheten kan omdisponeres av borettslaget/sameiet og dette kan påvirke boligens BRA."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              42,
+              76
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d083_009",
+            "description": "Området er under utvikling med pågående og planlagte reguleringsendringer, inkludert ny barneskole og ungdomsskole på Ensjø, regulering av Grenseveien for syklister og gående, og gjenåpning av Hovinbekken. Dette kan medføre økt trafikk, støy og anleggsarbeid i nærområdet.",
+            "evidence": [
+              "Det gjøres oppmerksom på at området er under utvikling og at endringer og oppføring av nye bygg vil kunne skje.",
+              "Grenseveien mellom Økernveien og Grensesvingen – Saksnr. 202460006: Hovedhensikten med planen er å etablere et eget anlegg for syklende og legge bedre til rette for gående.",
+              "Ensjø skal få ny barneskole og ny ungdomsskole.",
+              "Informasjon om plankunngjøring for Vestre bekkedrag/Hovinbekken: ønsker å omregulere Gladengveien 18 mfl. fra industri til grønnstruktur."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              48,
+              49
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_009",
+            "description": "Området er under utvikling med pågående og planlagte reguleringsendringer, inkludert ny barneskole og ungdomsskole på Ensjø, regulering av Grenseveien for syklister og gående, og gjenåpning av Hovinbekken. Dette kan medføre økt trafikk, støy og anleggsarbeid i nærområdet.",
+            "evidence": [
+              "Det gjøres oppmerksom på at området er under utvikling og at endringer og oppføring av nye bygg vil kunne skje.",
+              "Grenseveien mellom Økernveien og Grensesvingen – Saksnr. 202460006: Hovedhensikten med planen er å etablere et eget anlegg for syklende og legge bedre til rette for gående.",
+              "Ensjø skal få ny barneskole og ny ungdomsskole.",
+              "Informasjon om plankunngjøring for Vestre bekkedrag/Hovinbekken: ønsker å omregulere Gladengveien 18 mfl. fra industri til grønnstruktur."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              48,
+              49
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d083_010",
+            "description": "Energimerke E (grønn oppvarmingskarakter) indikerer at boligen er lite energieffektiv. Beregnet spesifikk levert energi er 181,83 kWh/(m²·år), noe som er betydelig høyere enn moderne standard. Dette kan medføre høye energikostnader for kjøper.",
+            "evidence": [
+              "Energikarakter: E",
+              "Energifarge: Grønn",
+              "Beregnet spesifikk levert energi ved normalisert klima 181,83 kWh/(m²·år)",
+              "En bolig bygget etter byggeforskriftene vedtatt i 2010 vil normalt få C."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              6,
+              48,
+              81,
+              87
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_010",
+            "description": "Energimerke E (grønn oppvarmingskarakter) indikerer at boligen er lite energieffektiv. Beregnet spesifikk levert energi er 181,83 kWh/(m²·år), noe som er betydelig høyere enn moderne standard. Dette kan medføre høye energikostnader for kjøper.",
+            "evidence": [
+              "Energikarakter: E",
+              "Energifarge: Grønn",
+              "Beregnet spesifikk levert energi ved normalisert klima 181,83 kWh/(m²·år)",
+              "En bolig bygget etter byggeforskriftene vedtatt i 2010 vil normalt få C."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              6,
+              48,
+              81,
+              87
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d083_011",
+            "description": "Staking av tett avløp ble utført i 2025. Dette indikerer at det har vært problemer med avløpssystemet, og det kan ikke utelukkes at problemet kan gjenta seg.",
+            "evidence": [
+              "Kjenner du til feil eller om har vært utført arbeid/kontroll på vann/avløp? Ja, kun av faglært. Staking av tett avløp 2025. Arbeid utført av Tanga rør AS."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              43,
+              56
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_011",
+            "description": "Staking av tett avløp ble utført i 2025. Dette indikerer at det har vært problemer med avløpssystemet, og det kan ikke utelukkes at problemet kan gjenta seg.",
+            "evidence": [
+              "Kjenner du til feil eller om har vært utført arbeid/kontroll på vann/avløp? Ja, kun av faglært. Staking av tett avløp 2025. Arbeid utført av Tanga rør AS."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              43,
+              56
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d083_012",
+            "description": "Store deler av det elektriske anlegget er skiftet ut i perioden 2022–2024, men det foreligger ikke eltilsynsrapport fra de siste 5 år uten avvik. Selv om samsvarserklæring foreligger, er det ikke gjennomført en fullstendig kontroll av det elektriske anlegget av offentlig myndighet.",
+            "evidence": [
+              "Foreligger det eltilsynsrapport de siste 5 år, og det er ikke foretatt arbeid på anlegget etter denne, utenom retting av eventuelle avvik i eltilsynsrapport (dvs en el-tilsynsrapport uten avvik)? Nei",
+              "Gjort en del oppgradering av anlegget, se egenerklæring for hva som er gjort. Arbeidene gjort i perioden 2021-2024.",
+              "Foreligger det kontrollrapport fra offentlig myndighet – Det Lokale Eltilsyn (DLE) eller eventuelt andre tilsvarende kontrollinstanser med avvik som ikke er utbedret eller kontrollen er over 5 år? Nei"
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              43,
+              56,
+              69,
+              70
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_012",
+            "description": "Store deler av det elektriske anlegget er skiftet ut i perioden 2022–2024, men det foreligger ikke eltilsynsrapport fra de siste 5 år uten avvik. Selv om samsvarserklæring foreligger, er det ikke gjennomført en fullstendig kontroll av det elektriske anlegget av offentlig myndighet.",
+            "evidence": [
+              "Foreligger det eltilsynsrapport de siste 5 år, og det er ikke foretatt arbeid på anlegget etter denne, utenom retting av eventuelle avvik i eltilsynsrapport (dvs en el-tilsynsrapport uten avvik)? Nei",
+              "Gjort en del oppgradering av anlegget, se egenerklæring for hva som er gjort. Arbeidene gjort i perioden 2021-2024.",
+              "Foreligger det kontrollrapport fra offentlig myndighet – Det Lokale Eltilsyn (DLE) eller eventuelt andre tilsvarende kontrollinstanser med avvik som ikke er utbedret eller kontrollen er over 5 år? Nei"
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              43,
+              56,
+              69,
+              70
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d083_013",
+            "description": "Legalpant: Kommunen har legalpant som sikkerhet for kommunale avgifter og eiendomsskatt, og de øvrige seksjonseierne har legalpant på inntil 2G. Legalpant har prioritet foran tinglyste lån (banklån), noe som kan påvirke kjøpers finansiering.",
+            "evidence": [
+              "Legalpant: Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter og eventuell eiendomsskatt. De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader. Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              49
+            ],
+            "confidence": 0.92,
+            "details": {
+              "confidence": 0.92
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_013",
+            "description": "Legalpant: Kommunen har legalpant som sikkerhet for kommunale avgifter og eiendomsskatt, og de øvrige seksjonseierne har legalpant på inntil 2G. Legalpant har prioritet foran tinglyste lån (banklån), noe som kan påvirke kjøpers finansiering.",
+            "evidence": [
+              "Legalpant: Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter og eventuell eiendomsskatt. De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader. Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              49
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d083_014",
+            "description": "Sameiets egenkapital er negativ (kr -9 681 741 per 31.12.2024). Dette skyldes at rehabiliteringskostnader er kostnadsført løpende og finansiert gjennom fellesgjeld. Selv om dette er normalt for eierseksjonssameier, innebærer det at sameiet er avhengig av løpende innbetalinger fra seksjonseierne.",
+            "evidence": [
+              "Annen egenkapital: -9 681 741",
+              "UDEKKET TAP (NEGATIV EGENKAPITAL): Udekket tap betyr at egenkapitalen i selskapet er negativ. Det skyldes at selskapet fra stiftelsen og frem til 31.12. i regnskapsåret, har hatt høyere kostnader enn inntekter. Den manglende likviditeten er finansiert ved låneopptak.",
+              "SUM EGENKAPITAL: -9 681 741"
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              124,
+              125,
+              129
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_014",
+            "description": "Sameiets egenkapital er negativ (kr -9 681 741 per 31.12.2024). Dette skyldes at rehabiliteringskostnader er kostnadsført løpende og finansiert gjennom fellesgjeld. Selv om dette er normalt for eierseksjonssameier, innebærer det at sameiet er avhengig av løpende innbetalinger fra seksjonseierne.",
+            "evidence": [
+              "Annen egenkapital: -9 681 741",
+              "UDEKKET TAP (NEGATIV EGENKAPITAL): Udekket tap betyr at egenkapitalen i selskapet er negativ. Det skyldes at selskapet fra stiftelsen og frem til 31.12. i regnskapsåret, har hatt høyere kostnader enn inntekter. Den manglende likviditeten er finansiert ved låneopptak.",
+              "SUM EGENKAPITAL: -9 681 741"
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              124,
+              125,
+              129
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d083_015",
+            "description": "Individuell innfrielse av fellesgjeld medfører risiko: seksjonseiere som har innfridd sin andel av fellesgjelden, risikerer fortsatt å måtte dekke sin forholdsmessige andel av sameiets betalingsforpliktelser ved mislighold fra andre seksjonseiere.",
+            "evidence": [
+              "Dette betyr at alle nåværende og fremtidige seksjonseiere, også for de seksjoner hvor fellesgjelden er innfridd, risikerer å måtte dekke sin forholdsmessige andel av sameiets betalingsforpliktelser ved mislighold.",
+              "Merk at ved en individuell innfrielse av fellesgjeld vil banken anse innbetalingen som en regulær ekstraordinær nedbetaling av eierseksjonssameiets felleslåns hovedstol."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              99,
+              125
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_015",
+            "description": "Individuell innfrielse av fellesgjeld medfører risiko: seksjonseiere som har innfridd sin andel av fellesgjelden, risikerer fortsatt å måtte dekke sin forholdsmessige andel av sameiets betalingsforpliktelser ved mislighold fra andre seksjonseiere.",
+            "evidence": [
+              "Dette betyr at alle nåværende og fremtidige seksjonseiere, også for de seksjoner hvor fellesgjelden er innfridd, risikerer å måtte dekke sin forholdsmessige andel av sameiets betalingsforpliktelser ved mislighold.",
+              "Merk at ved en individuell innfrielse av fellesgjeld vil banken anse innbetalingen som en regulær ekstraordinær nedbetaling av eierseksjonssameiets felleslåns hovedstol."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              99,
+              125
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d083_016",
+            "description": "Radonmåling er ikke utført. Selv om det ikke er krav om dette når boligen ikke er utleid, kan radonkonsentrasjonen i boligen være ukjent og potensielt helseskadelig.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              49,
+              57
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_016",
+            "description": "Radonmåling er ikke utført. Selv om det ikke er krav om dette når boligen ikke er utleid, kan radonkonsentrasjonen i boligen være ukjent og potensielt helseskadelig.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              49,
+              57
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d083_017",
+            "description": "Vinduer med 2-lags isolerglass (bortsett fra balkongdør med 3-lags) er fra byggeåret 2008. Disse kan ha redusert isolasjonsevne sammenlignet med moderne standarder, noe som kan bidra til høyere oppvarmingskostnader.",
+            "evidence": [
+              "Vinduer med trerammer og 2-lags isolerglass.",
+              "Vindu på et soverom skiftet i 2021.",
+              "Balkongdør med treramme og 3-lags isolerglass."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              46,
+              67
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_017",
+            "description": "Vinduer med 2-lags isolerglass (bortsett fra balkongdør med 3-lags) er fra byggeåret 2008. Disse kan ha redusert isolasjonsevne sammenlignet med moderne standarder, noe som kan bidra til høyere oppvarmingskostnader.",
+            "evidence": [
+              "Vinduer med trerammer og 2-lags isolerglass.",
+              "Vindu på et soverom skiftet i 2021.",
+              "Balkongdør med treramme og 3-lags isolerglass."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              46,
+              67
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d083_018",
+            "description": "Flatt tak tekket med papp/folie er en del av sameiets vedlikeholdsansvar. Flate tak er generelt mer utsatt for lekkasjer og krever jevnlig vedlikehold. Tilstanden på taket er ikke vurdert i tilstandsrapporten da det er sameiets ansvar.",
+            "evidence": [
+              "Flatt tak tekket med papp/folie.",
+              "Overnevnte bygningsdeler er en del av sameiets/borettslagets vedlikeholdsansvar, og er ikke omfattet av denne rapporten. Det blir ikke satt tilstandsgrad for disse bygningsdelene."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              45,
+              67
+            ],
+            "confidence": 0.78,
+            "details": {
+              "confidence": 0.78
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_018",
+            "description": "Flatt tak tekket med papp/folie er en del av sameiets vedlikeholdsansvar. Flate tak er generelt mer utsatt for lekkasjer og krever jevnlig vedlikehold. Tilstanden på taket er ikke vurdert i tilstandsrapporten da det er sameiets ansvar.",
+            "evidence": [
+              "Flatt tak tekket med papp/folie.",
+              "Overnevnte bygningsdeler er en del av sameiets/borettslagets vedlikeholdsansvar, og er ikke omfattet av denne rapporten. Det blir ikke satt tilstandsgrad for disse bygningsdelene."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              45,
+              67
+            ],
+            "details": {
+              "confidence": 0.78
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d083_019",
+            "description": "Felles avløpsrør av støpejern er lagt skjult i kanaler. Støpejernsrør har begrenset levetid og kan være utsatt for korrosjon og lekkasjer. Tilstanden på disse rørene er ikke fullt ut vurdert.",
+            "evidence": [
+              "Felles avløpsrør av støpejern som er lagt skjult i kanaler."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              69
+            ],
+            "confidence": 0.72,
+            "details": {
+              "confidence": 0.72
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_019",
+            "description": "Felles avløpsrør av støpejern er lagt skjult i kanaler. Støpejernsrør har begrenset levetid og kan være utsatt for korrosjon og lekkasjer. Tilstanden på disse rørene er ikke fullt ut vurdert.",
+            "evidence": [
+              "Felles avløpsrør av støpejern som er lagt skjult i kanaler."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              69
+            ],
+            "details": {
+              "confidence": 0.72
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d083_020",
+            "description": "Bredbåndsavtalen med GlobalConnect har en varighet på 36 måneder fra 1.1.2024 og utløper dermed 31.12.2026. Etter dette tidspunktet kan vilkårene endres, noe som kan påvirke felleskostnadene.",
+            "evidence": [
+              "Styret har avtale med GlobalConnect for levering av bredbånd. Avtalen har en varighet på 36 måneder, og gjelder fra 1.1.2024."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              46
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_020",
+            "description": "Bredbåndsavtalen med GlobalConnect har en varighet på 36 måneder fra 1.1.2024 og utløper dermed 31.12.2026. Etter dette tidspunktet kan vilkårene endres, noe som kan påvirke felleskostnadene.",
+            "evidence": [
+              "Styret har avtale med GlobalConnect for levering av bredbånd. Avtalen har en varighet på 36 måneder, og gjelder fra 1.1.2024."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              46
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d083_021",
+            "description": "Selger har tegnet boligselgerforsikring begrenset oppad til kr 20 000 000. Kjøper bør være oppmerksom på at forsikringen dekker selgers ansvar etter avhendingsloven, men at det er en egenandel på kr 10 000 for kjøper ved krav om prisavslag eller erstatning.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har tegnet boligselgerforsikring som dekker selgers ansvar etter avhendingsloven begrenset oppad kr. 20 000 000,‑.",
+              "Ved beregning av krav om prisavslag eller erstatning må kjøper selv dekke kostnader med inntil kr 10 000 (som en egenandel)."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              49,
+              50
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d083_021",
+            "description": "Selger har tegnet boligselgerforsikring begrenset oppad til kr 20 000 000. Kjøper bør være oppmerksom på at forsikringen dekker selgers ansvar etter avhendingsloven, men at det er en egenandel på kr 10 000 for kjøper ved krav om prisavslag eller erstatning.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har tegnet boligselgerforsikring som dekker selgers ansvar etter avhendingsloven begrenset oppad kr. 20 000 000,‑.",
+              "Ved beregning av krav om prisavslag eller erstatning må kjøper selv dekke kostnader med inntil kr 10 000 (som en egenandel)."
+            ],
+            "source_documents": [
+              "d083.pdf"
+            ],
+            "source_pages": [
+              49,
+              50
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [],
+      "unmatched_ground_truth_risks": [],
+      "verified_unmatched": [],
+      "adjusted_metrics": null
+    }
+  },
+  "best_system": "ground_truth",
+  "statistical_tests": {
+    "standard_rag_vs_agentic_rag_P+T+R": 1.0,
+    "standard_rag_vs_ground_truth": 1.0,
+    "agentic_rag_P+T+R_vs_ground_truth": 1.0
+  },
+  "record_id": "acc8e6fa-d761-4885-930c-390e08508e31",
+  "query": "Identifiser risikoer i salgsoppgaven",
+  "document_set_id": "d083",
+  "timestamp": "2026-03-24T21:51:24.755539",
+  "risk_summaries": [
+    {
+      "system_type": "standard_rag",
+      "total_risks": 11,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "agentic_rag_P+T+R",
+      "total_risks": 18,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "ground_truth",
+      "total_risks": 21,
+      "risks_by_category": {}
+    }
+  ],
+  "has_ground_truth": true,
+  "overlapping_risk_count": 15,
+  "unique_to": {
+    "standard_rag": 6,
+    "agentic_rag_P+T+R": 6,
+    "ground_truth": 8
+  },
+  "record_type": "comparison"
+}

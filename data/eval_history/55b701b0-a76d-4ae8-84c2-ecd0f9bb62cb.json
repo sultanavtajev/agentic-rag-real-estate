@@ -1,0 +1,2483 @@
+{
+  "system_results": {
+    "standard_rag": {
+      "run_id": "5854ed10-5516-45c8-ad37-d9b0b26139e4",
+      "system_type": "standard_rag",
+      "overall_metrics": {
+        "precision": 0.3333333333333333,
+        "recall": 0.17391304347826086,
+        "f1": 0.22857142857142854,
+        "total_support": 23
+      },
+      "matched_risks": 4,
+      "unmatched_predicted": 8,
+      "unmatched_ground_truth": 19,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "5854ed10-5516-45c8-ad37-d9b0b26139e4_risk_000",
+            "description": "Manglende radonmåling: Selger har ikke utført radonmåling. Dette innebærer en potensiell helserisiko for kjøper, særlig dersom boligen leies ut helt eller delvis.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_001",
+            "description": "Radon ikke målt – leilighet i 1. etasje nær terreng",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Med tanke på boligens plassering i bygget (nærhet til terrenget) vurderes radon og radonundersøkelser som aktuelt.",
+              "Eier har kun bodd i boligen en begrenset periode og kjenner ikke til om radonmåling er utført på et tidligere tidspunkt. Dagens radonverdier er derfor ikke kjent.",
+              "Boligen er oppført etter at krav om radonsperre og andre forebyggende tiltak ble innført, og var derfor ifølge normal byggeskikk vanlig å etablere på oppføringstidspunktet. Om slike komponenter og løsninger er hensyntatt under oppføring er ikke mulig å påvise, siden de ligger skjult under bygningen."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              33,
+              57
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "5854ed10-5516-45c8-ad37-d9b0b26139e4_risk_006",
+            "description": "Manglende brukstillatelse eller ferdigattest: Egenerklæringen spør om manglende brukstillatelse eller ferdigattest, noe som kan indikere at det kan foreligge ulovlige byggearbeider eller manglende godkjenninger.",
+            "evidence": [
+              "Kjenner du til manglende brukstillatelse eller ferdigattest? Nei"
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_006",
+            "description": "Ferdigattest og øvrig byggedokumentasjon ikke fremlagt på befaringsdagen",
+            "evidence": [
+              "Ferdigattest eller midlertidig brukstillatelse: Ikke fremlagt på befaringsdagen.",
+              "Godkjent fasadetegning: Ikke fremlagt på befaringsdagen.",
+              "Godkjent snittegning: Ikke fremlagt på befaringsdagen.",
+              "Energiattest: Ikke fremlagt på befaringsdagen.",
+              "Dokumentasjon av våtrom (arbeider, utførelse, funksjonstesting og lignende): Ikke fremlagt på befaringsdagen.",
+              "FDV-dokumentasjon (forvaltning, drift og vedlikehold): Ikke fremlagt på befaringsdagen.",
+              "På bakgrunn av at det ikke er fremlagt byggetegninger som viser boligens romklassifisering, har samsvaret mellom faktisk bruk og byggetillatelsen ikke vært mulig å undersøke."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              51,
+              56
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "5854ed10-5516-45c8-ad37-d9b0b26139e4_risk_007",
+            "description": "Risiko for økte felleskostnader eller økt fellesgjeld: Egenerklæringen spør om kjente forhold som kan medføre økte felleskostnader eller økt fellesgjeld i sameiet, noe som kan påvirke kjøpers løpende kostnader.",
+            "evidence": [
+              "Kjenner du til om det foreligger forhold vedr. eiendommen som kan medføre økte felleskostnader/økt fellesgjeld?"
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_007",
+            "description": "Felleskostnader kan øke – forbehold om prisstigning og renteøkning",
+            "evidence": [
+              "På grunn av prisstigning og renteøkning tas det forbehold om at felleskostnader kan øke.",
+              "Budsjett 2025 viser sum driftskostnader på kr 1 302 420 mot regnskap 2024 på kr 1 154 176 – en økning på ca. 13 %.",
+              "Budsjett 2025 viser negativt driftsresultat på kr -23 747."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              27,
+              86
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "5854ed10-5516-45c8-ad37-d9b0b26139e4_risk_003",
+            "description": "Risiko knyttet til elektrisk anlegg: Det er ikke dokumentert at det elektriske anlegget er kontrollert av kvalifisert elektrofaglig person, og det oppfordres til tilleggsundersøkelser.",
+            "evidence": [
+              "Det er behov for kontroll av det elektriske anlegget av en kvalifisert elektrofaglig person.",
+              "Dersom det gis en oppfordring om å gjennomføre slike tilleggsundersøkelser i avsnittet under, er dette en viktig opplysning som en kjøper må ta spesielt hensyn til."
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_018",
+            "description": "Forbehold om at det kan være utført elektriske arbeider uten samsvarserklæring",
+            "evidence": [
+              "Det tas forbehold om at det kan være utført andre arbeider på det elektriske anlegget som ikke har samsvarserklæring."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              30
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "5854ed10-5516-45c8-ad37-d9b0b26139e4_risk_001",
+          "description": "Selger kan prioritere bud fra ikke-forbrukere: Selger har rett til å prioritere bud fra næringsdrivende fremfor forbrukere, selv om forbrukerbudet er høyere. Dette kan svekke forbrukerkjøpers stilling i budrunden.",
+          "evidence": [
+            "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud.",
+            "Når kjøper ikke er forbruker, kan selges ansvar begrenses ettersom boligen selges «som»"
+          ],
+          "source_documents": [
+            "d190_d190"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "5854ed10-5516-45c8-ad37-d9b0b26139e4_risk_002",
+          "description": "Begrenset selgeransvar ved salg til ikke-forbrukere: Dersom kjøper ikke er forbruker, kan selgers ansvar etter avhendingsloven begrenses, noe som reduserer kjøpers rettigheter ved eventuelle feil og mangler.",
+          "evidence": [
+            "Når kjøper ikke er forbruker, kan selges ansvar begrenses ettersom boligen selges «som»"
+          ],
+          "source_documents": [
+            "d190_d190"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.85,
+          "details": {}
+        },
+        {
+          "risk_id": "5854ed10-5516-45c8-ad37-d9b0b26139e4_risk_004",
+          "description": "Risiko for fukt, drenering og utettheter: Egenerklæringen inneholder spørsmål om fuktinnsig, drenering, tilbakeslag av avløpsvann og utettheter i terrasse/garasje/tak/fasade, noe som indikerer at dette er kjente risikoområder for eiendommen.",
+          "evidence": [
+            "Kjenner du til om det er/har vært problemer med drenering, fuktinnsig, øvrig fukt eller fuktmerker i underetasje/kjeller?",
+            "Kjenner du til om det er/har vært utettheter i terrasse/garasje/tak/fasade?",
+            "Kjenner du til om det er/har vært tilbakeslag av avløpsvann i sluk eller lignende?"
+          ],
+          "source_documents": [
+            "d190_d190"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.75,
+          "details": {}
+        },
+        {
+          "risk_id": "5854ed10-5516-45c8-ad37-d9b0b26139e4_risk_005",
+          "description": "Risiko for skjeggkre og skadedyr: Egenerklæringen stiller spørsmål om skjeggkre, sopp, råteskader og skadedyr i sameiet, noe som er en kjent risikofaktor i norske boliger.",
+          "evidence": [
+            "Kjenner du til om det er/har vært sopp/råteskader/insekter/skadedyr i sameiet/laget/selskapet (fellesareal eller i andre boliger) som rotter, mus, maur eller lignende?",
+            "Kjenner du til om det er/har vært skjeggkre i sameiet/laget/selskapet (fellesareal eller i andre boliger)?"
+          ],
+          "source_documents": [
+            "d190_d190"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.72,
+          "details": {}
+        },
+        {
+          "risk_id": "5854ed10-5516-45c8-ad37-d9b0b26139e4_risk_008",
+          "description": "Risiko for at boligselgerforsikringen ikke dekker alle tilfeller: Forsikringen har begrensninger og kan bortfalle dersom forsikringsselskapet ikke har gitt skriftlig samtykke, og gjelder kun siste 12 måneder før overtakelse ved oppgjørsoppdrag.",
+          "evidence": [
+            "Dersom forsikringsselskapet ikke har gitt skriftlig samtykke, kan erstatningen bortfalle.",
+            "Ved oppgjørsoppdrag trer forsikringen i kraft når kontrakten er signert av begge parter, begrenset til siste 12 måneder før overtakelse.",
+            "Boligselgerforsikring dekker selgers ansvar etter avhendingsloven begrenset oppad kr. 20 000 000,-"
+          ],
+          "source_documents": [
+            "d190_d190"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "5854ed10-5516-45c8-ad37-d9b0b26139e4_risk_009",
+          "description": "Risiko knyttet til ufullstendige eller uriktige opplysninger fra selger: Selger bekrefter opplysninger etter beste skjønn, men det er risiko for at opplysninger kan være ufullstendige, uriktige eller misvisende, noe som kan gi forsikringsselskapet rett til regress.",
+          "evidence": [
+            "Jeg bekrefter at opplysningene er gitt etter beste skjønn. Jeg er kjent med at dersom jeg har gitt ufullstendige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis."
+          ],
+          "source_documents": [
+            "d190_d190"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.78,
+          "details": {}
+        },
+        {
+          "risk_id": "5854ed10-5516-45c8-ad37-d9b0b26139e4_risk_010",
+          "description": "Risiko for mislighold fra kjøpers side ved manglende kundetiltak: Dersom kjøper ikke bidrar til at megler får gjennomført kundetiltak (hvitvaskingskontroll), kan dette medføre mislighold og i verste fall heving av avtalen.",
+          "evidence": [
+            "Hvis kjøper ikke bidrar til at megler får gjennomført kundetiltak og dette fører til at avtalen ikke kan gjennomføres eller blir forsinket, er dette et mislighold fra kjøpers side.",
+            "Et vesentlig mislighold kan gi selger rett til å heve avtalen og til å gjennomføre dekningssalg for kjøpers regning."
+          ],
+          "source_documents": [
+            "d190_d190"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.85,
+          "details": {}
+        },
+        {
+          "risk_id": "5854ed10-5516-45c8-ad37-d9b0b26139e4_risk_011",
+          "description": "Risiko knyttet til bad/våtrom: Egenerklæringen spør om det er utført arbeid på bad/våtrom, noe som er et kjent risikoområde for fukt og skjulte feil.",
+          "evidence": [
+            "Kjenner du til om det er/har vært utført arbeid på bad/våtrom? Svar Nei"
+          ],
+          "source_documents": [
+            "d190_d190"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.68,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d190_002",
+          "description": "Terrasse ikke undersøkt i tilstandsrapporten grunnet snøforhold – tilstand ukjent",
+          "evidence": [
+            "Grunnet snøforholdene på befaringsdagen var det ikke mulig å foreta undersøkelser av bygningsdelen. Tilstanden er derfor ukjent. Tilleggsundersøkelser bør påregnes når forholdene ligger til rette.",
+            "TGIU Helhetsvurdering – Terrasse / platting"
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            54
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d190_003",
+          "description": "Lufting av ytterkledning ikke kontrollerbar – risiko for skjulte fuktskader",
+          "evidence": [
+            "TGIU Lufting av ytterkledning: Det er ikke mulig å kontrollere om ytterkledningen har tilstrekkelig lufte- og drensspalte, ettersom det aktuelle inspeksjonsområdet er skjult av andre bygningsdeler.",
+            "Konsekvens av eventuell mangelfull lufting er at konstruksjonens evne til å tørke ut eventuell fuktighet reduseres, noe som kan øke faren for skjulte fuktskader.",
+            "Foreslått tiltak er videre undersøkelser og kartlegging av dagens utførelse og tilstand."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            53
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d190_004",
+          "description": "Prefabrikkert baderomsmodul – tilstand inne i konstruksjonen ukjent, hulltaking ikke utført",
+          "evidence": [
+            "TGIU Kontroll i tilliggende konstruksjon ikke utført: Med bakgrunn i at våtrommet er bygget som en prefabrikkert baderomskabin er det ikke utført hulltaking/fuktmåling i lukkede konstruksjoner. Tilstanden inne i konstruksjonen er ikke kjent.",
+            "Det ble derimot gjennomført et overflatesøk med fuktindikator, uten at det ble påvist indikasjoner som tyder på fuktskader."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            52
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d190_005",
+          "description": "Stakeluke for avløp ikke lokalisert – vedlikeholdsmulighet ukjent",
+          "evidence": [
+            "Stakeluke er ikke lokalisert, og derfor heller ikke undersøkt. Det er ikke kjent om stakeluke er etablert."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            53
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d190_008",
+          "description": "Ingen parkeringsplass medfølger leiligheten",
+          "evidence": [
+            "Det følger ikke parkeringsplass med leiligheten.",
+            "Parkeringstype: Følger ikke parkeringsplass med leiligheten.",
+            "For denne seksjonen følger det ikke ekstern bod eller parkeringsplass."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            28,
+            31,
+            65
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d190_009",
+          "description": "Ingen ekstern bod medfølger leiligheten",
+          "evidence": [
+            "For denne seksjonen følger det ikke ekstern bod eller parkeringsplass."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            31
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d190_010",
+          "description": "Korttidsutleie begrenset til maksimalt 60 døgn per år",
+          "evidence": [
+            "Korttidsutleie av hele boligseksjonen i mer enn 60 døgn i året er ikke tillatt."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            33
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d190_011",
+          "description": "Tinglyst bestemmelse om pliktig medlemskap i velforening – kan ikke slettes uten samtykke fra Godhavn Eiendom AS og Trondheim Kommune",
+          "evidence": [
+            "20.07.2022 – Dokumentnr: 804864 – Bestemmelse om medlemskap i velforening/huseierforening. Kan ikke slettes uten samtykke fra: Godhavn Eiendom AS Org.nr: 960 239 318. Kan ikke slettes uten samtykke fra: Trondheim Kommune Org.nr: 942 110 464.",
+            "Det er pliktig medlemskap i velforeningen og kontingent betales via felleskostnadene."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            32
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d190_012",
+          "description": "Sameiet er ikke med i sikringsordning for felleskostnader",
+          "evidence": [
+            "Boligselskapet er ikke med i sikringsordning."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            64
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d190_013",
+          "description": "Privat stikkledning for vann og avløp – vedlikeholdsansvar påhviler sameiet",
+          "evidence": [
+            "Stikkledningene fra eiendommen og ut til det kommunale nettet er private, og vedlikeholdsansvaret for disse påhviler sameiet.",
+            "Adkomst til eiendommen skjer via privat vei."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            32
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d190_014",
+          "description": "Sameiernes solidaransvar overfor sameiets kreditorer i henhold til sameiebrøk",
+          "evidence": [
+            "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.",
+            "Ved manglende betaling av fellesutgifter har sameiet legal panterett i den enkelte eierseksjon, begrenset til inntil 2 ganger folketrygdens grunnbeløp."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            33
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d190_015",
+          "description": "Eiendommen avsatt til 'Bebyggelse og anlegg – Framtidig' i kommuneplanens arealdel – potensial for fremtidig utbygging i nærområdet",
+          "evidence": [
+            "Eiendommen er i kommuneplanens arealdel avsatt til bebyggelse og anlegg – framtidig og byggesone 3.",
+            "Eiendommen ligger i område som i kommuneplanen/kommunedelplanen er avsatt til Bebyggelse og anlegg – Framtidig, Kommuneplanens arealdel 2022-2034 (27.3.2025)."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            32,
+            87
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d190_016",
+          "description": "Liten leilighet (43 m² BRA) med kun ett soverom – begrenset videresalgsverdi og fleksibilitet",
+          "evidence": [
+            "BRA-i: 43 m², BRA totalt: 43 m²",
+            "Antall soverom: 1",
+            "Soverommet er på 8,5 kvm med plass til dobbeltseng og garderobeløsning med speilskyvedører."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            6,
+            19,
+            29
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d190_017",
+          "description": "Leiligheten ligger i 1. etasje – økt risiko for innbrudd, innsyn og støy fra utearealer",
+          "evidence": [
+            "Leiligheten ligger i 1. etasje og har terrasse med direkte adkomst til felles grøntareal.",
+            "Praktisk beliggenhet på bakkeplan",
+            "Terrasse på 9 m² på bakkeplan med direkte adkomst til felles grøntareal."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            9,
+            29
+          ],
+          "details": {
+            "confidence": 0.65
+          }
+        },
+        {
+          "risk_id": "gt_d190_019",
+          "description": "Selger har kun eid boligen i ca. 2 år og 8 måneder – begrenset kjennskap til boligens historikk",
+          "evidence": [
+            "Når kjøpte du boligen? År 2023",
+            "Hvor lenge har du eid boligen? Antall år 2, Antall måneder 8",
+            "Eier har kun bodd i boligen en begrenset periode og kjenner ikke til om radonmåling er utført på et tidligere tidspunkt."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            39,
+            57
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d190_020",
+          "description": "Realsameiet Reppetoppen Fellesarealer – utbygger (Godhavn Utbygging AS) har vetorett i saker som gjelder ubebygde felt inntil hele feltet er ferdigstilt",
+          "evidence": [
+            "Inntil alle boligsameiene/boligene er ferdig utbygd har utbygger som hjemmelshaver av de aktuelle områdene, vetorett i alle saker som direkte gjelder ubebygde felt/områder.",
+            "Utbygger sitter med råderett/grunnbokshjemmel til realsameiet inntil hele feltet er ferdigstilt."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            84
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d190_021",
+          "description": "Høy dokumentavgift og omkostninger for kjøper",
+          "evidence": [
+            "Dokumentavgift (forutsatt salgssum: 2 590 000,-): kr 64 750,-",
+            "Omkostninger totalt: kr 78 600,-",
+            "Totalpris inkl. omkostninger: kr 2 668 600,-"
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            27
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d190_022",
+          "description": "Energipost for varme, varmt- og kaldtvann avregnes månedlig etter forbruk – variabel kostnad som kan øke",
+          "evidence": [
+            "Sameiet har fellesmåling for varme, varmt- og kaldtvann. Forbruket avregnes månedlig, og kostnadene fordeles etter forbruk.",
+            "Fastbeløp måling og avregning energi: kr 137,-",
+            "Energi, felles: Regnskap 2024 viser kr 56 044 (positiv post, dvs. inntekt/refusjon), mens budsjett 2025 viser kostnad på kr -110 000."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            27,
+            86
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d190_023",
+          "description": "Situasjonsplan fremlagt er datert 2013 – kan avvike fra dagens faktiske forhold",
+          "evidence": [
+            "Fremlagt situasjonsplan datert 2013.",
+            "Det er mottatt tegninger fra kommunen, datert 2020."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            29,
+            51
+          ],
+          "details": {
+            "confidence": 0.65
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "5854ed10-5516-45c8-ad37-d9b0b26139e4_risk_001",
+            "description": "Selger kan prioritere bud fra ikke-forbrukere: Selger har rett til å prioritere bud fra næringsdrivende fremfor forbrukere, selv om forbrukerbudet er høyere. Dette kan svekke forbrukerkjøpers stilling i budrunden.",
+            "evidence": [
+              "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud.",
+              "Når kjøper ikke er forbruker, kan selges ansvar begrenses ettersom boligen selges «som»"
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder følgende tekst på side 34: «På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud. Når kjøper ikke er forbruker, kan selges ansvar begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger.» Dette bekrefter direkte at selger kan prioritere bud fra ikke-forbrukere fremfor høyere forbrukerbud."
+        },
+        {
+          "risk": {
+            "risk_id": "5854ed10-5516-45c8-ad37-d9b0b26139e4_risk_002",
+            "description": "Begrenset selgeransvar ved salg til ikke-forbrukere: Dersom kjøper ikke er forbruker, kan selgers ansvar etter avhendingsloven begrenses, noe som reduserer kjøpers rettigheter ved eventuelle feil og mangler.",
+            "evidence": [
+              "Når kjøper ikke er forbruker, kan selges ansvar begrenses ettersom boligen selges «som»"
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter på side 34-35 at ved kjøp fra ikke-forbrukere selges eiendommen «som den er», og selgers ansvar er begrenset til det som følger direkte av avtalen, jf. avhendingsloven § 3-9. Dette underbygger risikoen for at selgers ansvar begrenses overfor ikke-forbrukerkjøpere."
+        },
+        {
+          "risk": {
+            "risk_id": "5854ed10-5516-45c8-ad37-d9b0b26139e4_risk_004",
+            "description": "Risiko for fukt, drenering og utettheter: Egenerklæringen inneholder spørsmål om fuktinnsig, drenering, tilbakeslag av avløpsvann og utettheter i terrasse/garasje/tak/fasade, noe som indikerer at dette er kjente risikoområder for eiendommen.",
+            "evidence": [
+              "Kjenner du til om det er/har vært problemer med drenering, fuktinnsig, øvrig fukt eller fuktmerker i underetasje/kjeller?",
+              "Kjenner du til om det er/har vært utettheter i terrasse/garasje/tak/fasade?",
+              "Kjenner du til om det er/har vært tilbakeslag av avløpsvann i sluk eller lignende?"
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Egenerklæringsskjemaet (side 40) inneholder spørsmål 3 om tilbakeslag av avløpsvann i sluk, spørsmål 5 om problemer med drenering/fuktinnsig/fukt i underetasje/kjeller, og spørsmål 6 om utettheter i terrasse/garasje/tak/fasade. Disse spørsmålene er til stede i dokumentet og bekrefter at dette er kjente risikoområder som selger er bedt om å ta stilling til. Selger har svart nei på alle, men spørsmålene er stilt og dokumentert."
+        },
+        {
+          "risk": {
+            "risk_id": "5854ed10-5516-45c8-ad37-d9b0b26139e4_risk_005",
+            "description": "Risiko for skjeggkre og skadedyr: Egenerklæringen stiller spørsmål om skjeggkre, sopp, råteskader og skadedyr i sameiet, noe som er en kjent risikofaktor i norske boliger.",
+            "evidence": [
+              "Kjenner du til om det er/har vært sopp/råteskader/insekter/skadedyr i sameiet/laget/selskapet (fellesareal eller i andre boliger) som rotter, mus, maur eller lignende?",
+              "Kjenner du til om det er/har vært skjeggkre i sameiet/laget/selskapet (fellesareal eller i andre boliger)?"
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.72,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Egenerklæringsskjemaet (side 41) inneholder spørsmål 27 om sopp/råteskader/insekter/skadedyr i sameiet/laget/selskapet og spørsmål 28 om skjeggkre i sameiet/laget/selskapet. Disse spørsmålene er dokumentert i egenerklæringen, noe som bekrefter at dette er identifiserte risikoområder. Selger har svart nei, men spørsmålene er stilt og dokumentert i salgsoppgaven."
+        },
+        {
+          "risk": {
+            "risk_id": "5854ed10-5516-45c8-ad37-d9b0b26139e4_risk_008",
+            "description": "Risiko for at boligselgerforsikringen ikke dekker alle tilfeller: Forsikringen har begrensninger og kan bortfalle dersom forsikringsselskapet ikke har gitt skriftlig samtykke, og gjelder kun siste 12 måneder før overtakelse ved oppgjørsoppdrag.",
+            "evidence": [
+              "Dersom forsikringsselskapet ikke har gitt skriftlig samtykke, kan erstatningen bortfalle.",
+              "Ved oppgjørsoppdrag trer forsikringen i kraft når kontrakten er signert av begge parter, begrenset til siste 12 måneder før overtakelse.",
+              "Boligselgerforsikring dekker selgers ansvar etter avhendingsloven begrenset oppad kr. 20 000 000,-"
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet (side 42) inneholder følgende tekst: «Dersom forsikringsselskapet ikke har gitt skriftlig samtykke, kan erstatningen bortfalle» og «Ved oppgjørsoppdrag trer forsikringen i kraft når kontrakten er signert av begge parter, begrenset til siste 12 måneder før overtakelse.» I tillegg fremgår det av side 33 at boligselgerforsikringen er begrenset oppad til kr 20 000 000,-. Alle tre bevisene er direkte støttet av dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "5854ed10-5516-45c8-ad37-d9b0b26139e4_risk_009",
+            "description": "Risiko knyttet til ufullstendige eller uriktige opplysninger fra selger: Selger bekrefter opplysninger etter beste skjønn, men det er risiko for at opplysninger kan være ufullstendige, uriktige eller misvisende, noe som kan gi forsikringsselskapet rett til regress.",
+            "evidence": [
+              "Jeg bekrefter at opplysningene er gitt etter beste skjønn. Jeg er kjent med at dersom jeg har gitt ufullstendige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis."
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet (side 42) inneholder følgende tekst: «Jeg bekrefter at opplysningene er gitt etter beste skjønn. Jeg er kjent med at dersom jeg har gitt ufullstendige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis.» Dette bekrefter direkte risikoen for at ufullstendige eller uriktige opplysninger kan gi forsikringsselskapet rett til regress."
+        },
+        {
+          "risk": {
+            "risk_id": "5854ed10-5516-45c8-ad37-d9b0b26139e4_risk_010",
+            "description": "Risiko for mislighold fra kjøpers side ved manglende kundetiltak: Dersom kjøper ikke bidrar til at megler får gjennomført kundetiltak (hvitvaskingskontroll), kan dette medføre mislighold og i verste fall heving av avtalen.",
+            "evidence": [
+              "Hvis kjøper ikke bidrar til at megler får gjennomført kundetiltak og dette fører til at avtalen ikke kan gjennomføres eller blir forsinket, er dette et mislighold fra kjøpers side.",
+              "Et vesentlig mislighold kan gi selger rett til å heve avtalen og til å gjennomføre dekningssalg for kjøpers regning."
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet (side 36) inneholder følgende tekst: «Hvis kjøper ikke bidrar til at megler får gjennomført kundetiltak og dette fører til at avtalen ikke kan gjennomføres eller blir forsinket, er dette et mislighold fra kjøpers side. Et vesentlig mislighold kan gi selger rett til å heve avtalen og til å gjennomføre dekningssalg for kjøpers regning.» Dette bekrefter direkte risikoen beskrevet."
+        },
+        {
+          "risk": {
+            "risk_id": "5854ed10-5516-45c8-ad37-d9b0b26139e4_risk_011",
+            "description": "Risiko knyttet til bad/våtrom: Egenerklæringen spør om det er utført arbeid på bad/våtrom, noe som er et kjent risikoområde for fukt og skjulte feil.",
+            "evidence": [
+              "Kjenner du til om det er/har vært utført arbeid på bad/våtrom? Svar Nei"
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.68,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Egenerklæringsskjemaet (side 40) inneholder spørsmål 2: «Kjenner du til om det er utført arbeid på bad/våtrom? Svar Nei». Spørsmålet er stilt og besvart i dokumentet, noe som bekrefter at bad/våtrom er et identifisert risikoområde i egenerklæringen. Selger har svart nei, men spørsmålet er dokumentert og kjøper bør merke seg dette som et kjent risikoområde."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.17391304347826086,
+        "f1": 0.29629629629629634,
+        "total_support": 23
+      }
+    },
+    "agentic_rag_P+T+R": {
+      "run_id": "7bb2b922-83ce-4429-822e-4cdc0b0732b2",
+      "system_type": "agentic_rag_P+T+R",
+      "overall_metrics": {
+        "precision": 0.8571428571428571,
+        "recall": 0.5217391304347826,
+        "f1": 0.6486486486486486,
+        "total_support": 23
+      },
+      "matched_risks": 12,
+      "unmatched_predicted": 2,
+      "unmatched_ground_truth": 11,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "7bb2b922-83ce-4429-822e-4cdc0b0732b2_risk_000",
+            "description": "Radon ikke målt – boligen ligger på bakkeplan nær terreng, og tilstandsrapporten vurderer radonundersøkelser som aktuelt. Selger har ikke utført radonmåling, og dagens radonnivåer er ukjente.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Med tanke på boligens plassering i bygget (nærhet til terrenget) vurderes radon og radonundersøkelser som aktuelt.",
+              "Eier har kun bodd i boligen en begrenset periode og kjenner ikke til om radonmåling er utført på et tidligere tidspunkt. Dagens radonverdier er derfor ikke kjent.",
+              "Det anbefales alltid på et generelt grunnlag å kartlegge radonnivåer, i de tilfeller dette ikke er gjort."
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_001",
+            "description": "Radon ikke målt – leilighet i 1. etasje nær terreng",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Med tanke på boligens plassering i bygget (nærhet til terrenget) vurderes radon og radonundersøkelser som aktuelt.",
+              "Eier har kun bodd i boligen en begrenset periode og kjenner ikke til om radonmåling er utført på et tidligere tidspunkt. Dagens radonverdier er derfor ikke kjent.",
+              "Boligen er oppført etter at krav om radonsperre og andre forebyggende tiltak ble innført, og var derfor ifølge normal byggeskikk vanlig å etablere på oppføringstidspunktet. Om slike komponenter og løsninger er hensyntatt under oppføring er ikke mulig å påvise, siden de ligger skjult under bygningen."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              33,
+              57
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7bb2b922-83ce-4429-822e-4cdc0b0732b2_risk_001",
+            "description": "TGIU på terrasse – terrassen kunne ikke undersøkes på befaringsdagen grunnet snøforhold. Tilstanden er ukjent og tilleggsundersøkelser anbefales.",
+            "evidence": [
+              "Grunnet snøforholdene på befaringsdagen var det ikke mulig å foreta undersøkelser av bygningsdelen. Tilstanden er derfor ukjent. Tilleggsundersøkelser bør påregnes når forholdene ligger til rette.",
+              "Utvendige snødekte flater: Ja"
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_002",
+            "description": "Terrasse ikke undersøkt i tilstandsrapporten grunnet snøforhold – tilstand ukjent",
+            "evidence": [
+              "Grunnet snøforholdene på befaringsdagen var det ikke mulig å foreta undersøkelser av bygningsdelen. Tilstanden er derfor ukjent. Tilleggsundersøkelser bør påregnes når forholdene ligger til rette.",
+              "TGIU Helhetsvurdering – Terrasse / platting"
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              54
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7bb2b922-83ce-4429-822e-4cdc0b0732b2_risk_002",
+            "description": "TGIU på lufting av ytterkledning – det er ikke mulig å kontrollere om ytterkledningen har tilstrekkelig lufte- og drensspalte. Mangelfull lufting kan gi skjulte fuktskader.",
+            "evidence": [
+              "TGIU Lufting av ytterkledning: Det er ikke mulig å kontrollere om ytterkledningen har tilstrekkelig lufte- og drensspalte, ettersom det aktuelle inspeksjonsområdet er skjult av andre bygningsdeler.",
+              "Konsekvens av eventuell mangelfull lufting er at konstruksjonens evne til å tørke ut eventuell fuktighet reduseres, noe som kan øke faren for skjulte fuktskader. Foreslått tiltak er videre undersøkelser og kartlegging av dagens utførelse og tilstand."
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_003",
+            "description": "Lufting av ytterkledning ikke kontrollerbar – risiko for skjulte fuktskader",
+            "evidence": [
+              "TGIU Lufting av ytterkledning: Det er ikke mulig å kontrollere om ytterkledningen har tilstrekkelig lufte- og drensspalte, ettersom det aktuelle inspeksjonsområdet er skjult av andre bygningsdeler.",
+              "Konsekvens av eventuell mangelfull lufting er at konstruksjonens evne til å tørke ut eventuell fuktighet reduseres, noe som kan øke faren for skjulte fuktskader.",
+              "Foreslått tiltak er videre undersøkelser og kartlegging av dagens utførelse og tilstand."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              53
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7bb2b922-83ce-4429-822e-4cdc0b0732b2_risk_003",
+            "description": "Manglende dokumentasjon fremlagt på befaring – ferdigattest, fasadetegning, snittegning, energiattest, service-/tilsynsrapporter og FDV-dokumentasjon ble ikke fremlagt. Dette kan påvirke rapportens presisjon og omfang.",
+            "evidence": [
+              "Godkjent fasadetegning: Ikke fremlagt på befaringsdagen.",
+              "Godkjent snittegning: Ikke fremlagt på befaringsdagen.",
+              "Ferdigattest eller midlertidig brukstillatelse: Ikke fremlagt på befaringsdagen.",
+              "Energiattest: Ikke fremlagt på befaringsdagen.",
+              "Eventuelle service- og tilsynsrapporter: Ikke fremlagt på befaringsdagen.",
+              "FDV-dokumentasjon (forvaltning, drift og vedlikehold): Ikke fremlagt på befaringsdagen.",
+              "Manglende, ufullstendig eller foreldet dokumentasjon kan påvirke rapportens presisjon og omfang."
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_006",
+            "description": "Ferdigattest og øvrig byggedokumentasjon ikke fremlagt på befaringsdagen",
+            "evidence": [
+              "Ferdigattest eller midlertidig brukstillatelse: Ikke fremlagt på befaringsdagen.",
+              "Godkjent fasadetegning: Ikke fremlagt på befaringsdagen.",
+              "Godkjent snittegning: Ikke fremlagt på befaringsdagen.",
+              "Energiattest: Ikke fremlagt på befaringsdagen.",
+              "Dokumentasjon av våtrom (arbeider, utførelse, funksjonstesting og lignende): Ikke fremlagt på befaringsdagen.",
+              "FDV-dokumentasjon (forvaltning, drift og vedlikehold): Ikke fremlagt på befaringsdagen.",
+              "På bakgrunn av at det ikke er fremlagt byggetegninger som viser boligens romklassifisering, har samsvaret mellom faktisk bruk og byggetillatelsen ikke vært mulig å undersøke."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              51,
+              56
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7bb2b922-83ce-4429-822e-4cdc0b0732b2_risk_004",
+            "description": "Risiko for økte felleskostnader – salgsoppgaven tar eksplisitt forbehold om at felleskostnader kan øke som følge av prisstigning og renteøkning. Sameiet har også et kontinuerlig vedlikeholdsbehov.",
+            "evidence": [
+              "På grunn av prisstigning og renteøkning tas det forbehold om at felleskostnader kan øke.",
+              "VEDLIKEHOLD: Alle boligselskaper har et kontinuerlig behov for vedlikehold for å sikre byggenes tekniske og økonomiske levetid. Dette medfører at det kan være store og små prosjekter, i planlegging og/eller i utførelse, som kan påvirke økonomien til boligselskapet."
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_007",
+            "description": "Felleskostnader kan øke – forbehold om prisstigning og renteøkning",
+            "evidence": [
+              "På grunn av prisstigning og renteøkning tas det forbehold om at felleskostnader kan øke.",
+              "Budsjett 2025 viser sum driftskostnader på kr 1 302 420 mot regnskap 2024 på kr 1 154 176 – en økning på ca. 13 %.",
+              "Budsjett 2025 viser negativt driftsresultat på kr -23 747."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              27,
+              86
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7bb2b922-83ce-4429-822e-4cdc0b0732b2_risk_005",
+            "description": "Utbygger har vetorett i realsameiet inntil hele feltet er ferdigstilt – kjøper har begrenset innflytelse over beslutninger som gjelder ubebygde felt/områder så lenge utbyggingen pågår.",
+            "evidence": [
+              "Inntil alle boligsameiene/boligene er ferdig utbygd har utbygger som hjemmelshaver av de aktuelle områdene, vetorett i alle saker som direkte gjelder ubebygde felt/områder.",
+              "Interimsstyre: Representanter fra utbygger, Godhavn Utbygging AS innehar styrevervene i oppstarten av realsameiet frem til ferdigstillelse.",
+              "Utbygger sitter med råderett/grunnbokshjemmel til realsameiet inntil hele feltet er ferdigstilt."
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_020",
+            "description": "Realsameiet Reppetoppen Fellesarealer – utbygger (Godhavn Utbygging AS) har vetorett i saker som gjelder ubebygde felt inntil hele feltet er ferdigstilt",
+            "evidence": [
+              "Inntil alle boligsameiene/boligene er ferdig utbygd har utbygger som hjemmelshaver av de aktuelle områdene, vetorett i alle saker som direkte gjelder ubebygde felt/områder.",
+              "Utbygger sitter med råderett/grunnbokshjemmel til realsameiet inntil hele feltet er ferdigstilt."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              84
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7bb2b922-83ce-4429-822e-4cdc0b0732b2_risk_006",
+            "description": "Ingen parkeringsplass medfølger leiligheten – seksjonen har ikke ekstern parkeringsplass, noe som kan være en ulempe og påvirke bruksverdien.",
+            "evidence": [
+              "Parkeringstype: Følger ikke parkeringsplass med leiligheten.",
+              "For denne seksjonen følger det ikke ekstern bod eller parkeringsplass.",
+              "Andeler i Realsameiet Reppetoppen Parkering BT6, som omfatter parkeringskjeller og boder. For denne seksjonen følger det ikke ekstern bod eller parkeringsplass."
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_008",
+            "description": "Ingen parkeringsplass medfølger leiligheten",
+            "evidence": [
+              "Det følger ikke parkeringsplass med leiligheten.",
+              "Parkeringstype: Følger ikke parkeringsplass med leiligheten.",
+              "For denne seksjonen følger det ikke ekstern bod eller parkeringsplass."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              28,
+              31,
+              65
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7bb2b922-83ce-4429-822e-4cdc0b0732b2_risk_007",
+            "description": "Boligselskapet er ikke med i sikringsordning – ved en eventuell konkurs eller mislighold i sameiet er kjøper ikke beskyttet av en sikringsordning.",
+            "evidence": [
+              "Boligselskapet er ikke med i sikringsordning."
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_012",
+            "description": "Sameiet er ikke med i sikringsordning for felleskostnader",
+            "evidence": [
+              "Boligselskapet er ikke med i sikringsordning."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              64
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7bb2b922-83ce-4429-822e-4cdc0b0732b2_risk_008",
+            "description": "Eiendommen er avsatt til 'Bebyggelse og anlegg – Framtidig' i kommuneplanen – dette kan innebære fremtidig utbygging i nærområdet som kan påvirke omgivelsene.",
+            "evidence": [
+              "Eiendommen ligger i område som i kommuneplanen/kommunedelplanen er avsatt til: Bebyggelse og anlegg - Framtidig, Kommuneplanens arealdel 2022-2034 (27.3.2025), 2502.04m2."
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.72,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_015",
+            "description": "Eiendommen avsatt til 'Bebyggelse og anlegg – Framtidig' i kommuneplanens arealdel – potensial for fremtidig utbygging i nærområdet",
+            "evidence": [
+              "Eiendommen er i kommuneplanens arealdel avsatt til bebyggelse og anlegg – framtidig og byggesone 3.",
+              "Eiendommen ligger i område som i kommuneplanen/kommunedelplanen er avsatt til Bebyggelse og anlegg – Framtidig, Kommuneplanens arealdel 2022-2034 (27.3.2025)."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              32,
+              87
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7bb2b922-83ce-4429-822e-4cdc0b0732b2_risk_009",
+            "description": "Samsvarserklæring for elektrisk anlegg ikke bekreftet fremlagt – det tas forbehold om at det kan være utført arbeider på det elektriske anlegget uten samsvarserklæring.",
+            "evidence": [
+              "Det tas forbehold om at det kan være utført andre arbeider på det elektriske anlegget som ikke har samsvarserklæring.",
+              "Samsvarserklæring(er) på elektriske anlegg/arbeider: For vurdering av dokumentasjon og eventuelle tilsynsrapporter tilknyttet elektriske anlegg og komponenter, se rapportens avsnitt «Forenklet vurdering av elektrisk anlegg»."
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_018",
+            "description": "Forbehold om at det kan være utført elektriske arbeider uten samsvarserklæring",
+            "evidence": [
+              "Det tas forbehold om at det kan være utført andre arbeider på det elektriske anlegget som ikke har samsvarserklæring."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              30
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7bb2b922-83ce-4429-822e-4cdc0b0732b2_risk_011",
+            "description": "Tinglyst heftelse om bestemmelse om medlemskap i velforening/huseierforening – heftelsen kan ikke slettes uten samtykke fra Godhavn Eiendom AS og Trondheim Kommune.",
+            "evidence": [
+              "20.07.2022 - Dokumentnr: 804864 - Bestemmelse om medlemskap i velforening/huseierforening",
+              "Kan ikke slettes uten samtykke fra: Godhavn Eiendom AS, Org.nr: 960 239 318",
+              "Kan ikke slettes uten samtykke fra: Trondheim Kommune, Org.nr: 942 110 464"
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_011",
+            "description": "Tinglyst bestemmelse om pliktig medlemskap i velforening – kan ikke slettes uten samtykke fra Godhavn Eiendom AS og Trondheim Kommune",
+            "evidence": [
+              "20.07.2022 – Dokumentnr: 804864 – Bestemmelse om medlemskap i velforening/huseierforening. Kan ikke slettes uten samtykke fra: Godhavn Eiendom AS Org.nr: 960 239 318. Kan ikke slettes uten samtykke fra: Trondheim Kommune Org.nr: 942 110 464.",
+              "Det er pliktig medlemskap i velforeningen og kontingent betales via felleskostnadene."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              32
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "7bb2b922-83ce-4429-822e-4cdc0b0732b2_risk_012",
+            "description": "Selger har kun bodd i boligen i begrenset periode (2 år og 8 måneder) – selger kan ha begrenset kjennskap til boligens historikk og eventuelle skjulte feil.",
+            "evidence": [
+              "Antall år: 2, Antall måneder: 8",
+              "Eier har kun bodd i boligen en begrenset periode og kjenner ikke til om radonmåling er utført på et tidligere tidspunkt."
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_019",
+            "description": "Selger har kun eid boligen i ca. 2 år og 8 måneder – begrenset kjennskap til boligens historikk",
+            "evidence": [
+              "Når kjøpte du boligen? År 2023",
+              "Hvor lenge har du eid boligen? Antall år 2, Antall måneder 8",
+              "Eier har kun bodd i boligen en begrenset periode og kjenner ikke til om radonmåling er utført på et tidligere tidspunkt."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              39,
+              57
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "7bb2b922-83ce-4429-822e-4cdc0b0732b2_risk_010",
+          "description": "Pliktig medlemskap i velforening med ukjent fremtidig kostnadsnivå – kontingent betales via felleskostnadene, og fremtidige kostnader kan variere.",
+          "evidence": [
+            "Velforening: Det er pliktig medlemskap i velforeningen og kontingent betales via felleskostnadene."
+          ],
+          "source_documents": [
+            "d190_d190"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.65,
+          "details": {}
+        },
+        {
+          "risk_id": "7bb2b922-83ce-4429-822e-4cdc0b0732b2_risk_013",
+          "description": "Energimerkets beregningsgrunnlag er basert på oppgitte opplysninger og standardverdier – faktisk energiforbruk kan avvike fra energiattestens beregninger.",
+          "evidence": [
+            "Energimerket beregnes på grunnlag av oppgitte opplysninger om boligen. For informasjon som ikke er oppgitt, brukes typiske standardverdier for den aktuelle bygningstypen fra tidsperioden den ble bygd i.",
+            "Boligdata i denne attesten er beregnet ut fra opplysninger som er gitt av boligeier. Der opplysninger ikke er oppgitt, brukes typiske standardverdier for den aktuelle bygningstypen."
+          ],
+          "source_documents": [
+            "d190_d190"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.65,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d190_004",
+          "description": "Prefabrikkert baderomsmodul – tilstand inne i konstruksjonen ukjent, hulltaking ikke utført",
+          "evidence": [
+            "TGIU Kontroll i tilliggende konstruksjon ikke utført: Med bakgrunn i at våtrommet er bygget som en prefabrikkert baderomskabin er det ikke utført hulltaking/fuktmåling i lukkede konstruksjoner. Tilstanden inne i konstruksjonen er ikke kjent.",
+            "Det ble derimot gjennomført et overflatesøk med fuktindikator, uten at det ble påvist indikasjoner som tyder på fuktskader."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            52
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d190_005",
+          "description": "Stakeluke for avløp ikke lokalisert – vedlikeholdsmulighet ukjent",
+          "evidence": [
+            "Stakeluke er ikke lokalisert, og derfor heller ikke undersøkt. Det er ikke kjent om stakeluke er etablert."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            53
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d190_009",
+          "description": "Ingen ekstern bod medfølger leiligheten",
+          "evidence": [
+            "For denne seksjonen følger det ikke ekstern bod eller parkeringsplass."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            31
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d190_010",
+          "description": "Korttidsutleie begrenset til maksimalt 60 døgn per år",
+          "evidence": [
+            "Korttidsutleie av hele boligseksjonen i mer enn 60 døgn i året er ikke tillatt."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            33
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d190_013",
+          "description": "Privat stikkledning for vann og avløp – vedlikeholdsansvar påhviler sameiet",
+          "evidence": [
+            "Stikkledningene fra eiendommen og ut til det kommunale nettet er private, og vedlikeholdsansvaret for disse påhviler sameiet.",
+            "Adkomst til eiendommen skjer via privat vei."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            32
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d190_014",
+          "description": "Sameiernes solidaransvar overfor sameiets kreditorer i henhold til sameiebrøk",
+          "evidence": [
+            "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.",
+            "Ved manglende betaling av fellesutgifter har sameiet legal panterett i den enkelte eierseksjon, begrenset til inntil 2 ganger folketrygdens grunnbeløp."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            33
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d190_016",
+          "description": "Liten leilighet (43 m² BRA) med kun ett soverom – begrenset videresalgsverdi og fleksibilitet",
+          "evidence": [
+            "BRA-i: 43 m², BRA totalt: 43 m²",
+            "Antall soverom: 1",
+            "Soverommet er på 8,5 kvm med plass til dobbeltseng og garderobeløsning med speilskyvedører."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            6,
+            19,
+            29
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d190_017",
+          "description": "Leiligheten ligger i 1. etasje – økt risiko for innbrudd, innsyn og støy fra utearealer",
+          "evidence": [
+            "Leiligheten ligger i 1. etasje og har terrasse med direkte adkomst til felles grøntareal.",
+            "Praktisk beliggenhet på bakkeplan",
+            "Terrasse på 9 m² på bakkeplan med direkte adkomst til felles grøntareal."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            9,
+            29
+          ],
+          "details": {
+            "confidence": 0.65
+          }
+        },
+        {
+          "risk_id": "gt_d190_021",
+          "description": "Høy dokumentavgift og omkostninger for kjøper",
+          "evidence": [
+            "Dokumentavgift (forutsatt salgssum: 2 590 000,-): kr 64 750,-",
+            "Omkostninger totalt: kr 78 600,-",
+            "Totalpris inkl. omkostninger: kr 2 668 600,-"
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            27
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d190_022",
+          "description": "Energipost for varme, varmt- og kaldtvann avregnes månedlig etter forbruk – variabel kostnad som kan øke",
+          "evidence": [
+            "Sameiet har fellesmåling for varme, varmt- og kaldtvann. Forbruket avregnes månedlig, og kostnadene fordeles etter forbruk.",
+            "Fastbeløp måling og avregning energi: kr 137,-",
+            "Energi, felles: Regnskap 2024 viser kr 56 044 (positiv post, dvs. inntekt/refusjon), mens budsjett 2025 viser kostnad på kr -110 000."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            27,
+            86
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d190_023",
+          "description": "Situasjonsplan fremlagt er datert 2013 – kan avvike fra dagens faktiske forhold",
+          "evidence": [
+            "Fremlagt situasjonsplan datert 2013.",
+            "Det er mottatt tegninger fra kommunen, datert 2020."
+          ],
+          "source_documents": [
+            "d190.pdf"
+          ],
+          "source_pages": [
+            29,
+            51
+          ],
+          "details": {
+            "confidence": 0.65
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "7bb2b922-83ce-4429-822e-4cdc0b0732b2_risk_010",
+            "description": "Pliktig medlemskap i velforening med ukjent fremtidig kostnadsnivå – kontingent betales via felleskostnadene, og fremtidige kostnader kan variere.",
+            "evidence": [
+              "Velforening: Det er pliktig medlemskap i velforeningen og kontingent betales via felleskostnadene."
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.65,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt at det er pliktig medlemskap i velforeningen og at kontingenten betales via felleskostnadene. Dette fremgår av side 27: «Velforening: Det er pliktig medlemskap i velforeningen og kontingent betales via felleskostnadene.» I tillegg er det tinglyst en heftelse om «Bestemmelse om medlemskap i velforening/huseierforening» (side 32). Dokumentet nevner også at felleskostnader kan øke på grunn av prisstigning og renteøkning, noe som underbygger risikoen for ukjent fremtidig kostnadsnivå."
+        },
+        {
+          "risk": {
+            "risk_id": "7bb2b922-83ce-4429-822e-4cdc0b0732b2_risk_013",
+            "description": "Energimerkets beregningsgrunnlag er basert på oppgitte opplysninger og standardverdier – faktisk energiforbruk kan avvike fra energiattestens beregninger.",
+            "evidence": [
+              "Energimerket beregnes på grunnlag av oppgitte opplysninger om boligen. For informasjon som ikke er oppgitt, brukes typiske standardverdier for den aktuelle bygningstypen fra tidsperioden den ble bygd i.",
+              "Boligdata i denne attesten er beregnet ut fra opplysninger som er gitt av boligeier. Der opplysninger ikke er oppgitt, brukes typiske standardverdier for den aktuelle bygningstypen."
+            ],
+            "source_documents": [
+              "d190_d190"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.65,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter begge de oppgitte bevisene direkte. På side 63 (energiattesten) står det: «Energimerket beregnes på grunnlag av oppgitte opplysninger om boligen. For informasjon som ikke er oppgitt, brukes typiske standardverdier for den aktuelle bygningstypen fra tidsperioden den ble bygd i.» Og på side 59 (energiattesten): «Boligdata i denne attesten er beregnet ut fra opplysninger som er gitt av boligeier. Der opplysninger ikke er oppgitt, brukes typiske standardverdier for den aktuelle bygningstypen.» Dette underbygger tydelig at energimerkets beregningsgrunnlag er basert på oppgitte opplysninger og standardverdier, og at faktisk energiforbruk kan avvike."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.5217391304347826,
+        "f1": 0.6857142857142856,
+        "total_support": 23
+      }
+    },
+    "ground_truth": {
+      "run_id": "d94baecc-b90b-4243-9386-552c9ef8ad8a_gt",
+      "system_type": "ground_truth",
+      "overall_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "total_support": 23
+      },
+      "matched_risks": 23,
+      "unmatched_predicted": 0,
+      "unmatched_ground_truth": 0,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_001",
+            "description": "Radon ikke målt – leilighet i 1. etasje nær terreng",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Med tanke på boligens plassering i bygget (nærhet til terrenget) vurderes radon og radonundersøkelser som aktuelt.",
+              "Eier har kun bodd i boligen en begrenset periode og kjenner ikke til om radonmåling er utført på et tidligere tidspunkt. Dagens radonverdier er derfor ikke kjent.",
+              "Boligen er oppført etter at krav om radonsperre og andre forebyggende tiltak ble innført, og var derfor ifølge normal byggeskikk vanlig å etablere på oppføringstidspunktet. Om slike komponenter og løsninger er hensyntatt under oppføring er ikke mulig å påvise, siden de ligger skjult under bygningen."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              33,
+              57
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_001",
+            "description": "Radon ikke målt – leilighet i 1. etasje nær terreng",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Med tanke på boligens plassering i bygget (nærhet til terrenget) vurderes radon og radonundersøkelser som aktuelt.",
+              "Eier har kun bodd i boligen en begrenset periode og kjenner ikke til om radonmåling er utført på et tidligere tidspunkt. Dagens radonverdier er derfor ikke kjent.",
+              "Boligen er oppført etter at krav om radonsperre og andre forebyggende tiltak ble innført, og var derfor ifølge normal byggeskikk vanlig å etablere på oppføringstidspunktet. Om slike komponenter og løsninger er hensyntatt under oppføring er ikke mulig å påvise, siden de ligger skjult under bygningen."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              33,
+              57
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_002",
+            "description": "Terrasse ikke undersøkt i tilstandsrapporten grunnet snøforhold – tilstand ukjent",
+            "evidence": [
+              "Grunnet snøforholdene på befaringsdagen var det ikke mulig å foreta undersøkelser av bygningsdelen. Tilstanden er derfor ukjent. Tilleggsundersøkelser bør påregnes når forholdene ligger til rette.",
+              "TGIU Helhetsvurdering – Terrasse / platting"
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              54
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_002",
+            "description": "Terrasse ikke undersøkt i tilstandsrapporten grunnet snøforhold – tilstand ukjent",
+            "evidence": [
+              "Grunnet snøforholdene på befaringsdagen var det ikke mulig å foreta undersøkelser av bygningsdelen. Tilstanden er derfor ukjent. Tilleggsundersøkelser bør påregnes når forholdene ligger til rette.",
+              "TGIU Helhetsvurdering – Terrasse / platting"
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              54
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_003",
+            "description": "Lufting av ytterkledning ikke kontrollerbar – risiko for skjulte fuktskader",
+            "evidence": [
+              "TGIU Lufting av ytterkledning: Det er ikke mulig å kontrollere om ytterkledningen har tilstrekkelig lufte- og drensspalte, ettersom det aktuelle inspeksjonsområdet er skjult av andre bygningsdeler.",
+              "Konsekvens av eventuell mangelfull lufting er at konstruksjonens evne til å tørke ut eventuell fuktighet reduseres, noe som kan øke faren for skjulte fuktskader.",
+              "Foreslått tiltak er videre undersøkelser og kartlegging av dagens utførelse og tilstand."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              53
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_003",
+            "description": "Lufting av ytterkledning ikke kontrollerbar – risiko for skjulte fuktskader",
+            "evidence": [
+              "TGIU Lufting av ytterkledning: Det er ikke mulig å kontrollere om ytterkledningen har tilstrekkelig lufte- og drensspalte, ettersom det aktuelle inspeksjonsområdet er skjult av andre bygningsdeler.",
+              "Konsekvens av eventuell mangelfull lufting er at konstruksjonens evne til å tørke ut eventuell fuktighet reduseres, noe som kan øke faren for skjulte fuktskader.",
+              "Foreslått tiltak er videre undersøkelser og kartlegging av dagens utførelse og tilstand."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              53
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_004",
+            "description": "Prefabrikkert baderomsmodul – tilstand inne i konstruksjonen ukjent, hulltaking ikke utført",
+            "evidence": [
+              "TGIU Kontroll i tilliggende konstruksjon ikke utført: Med bakgrunn i at våtrommet er bygget som en prefabrikkert baderomskabin er det ikke utført hulltaking/fuktmåling i lukkede konstruksjoner. Tilstanden inne i konstruksjonen er ikke kjent.",
+              "Det ble derimot gjennomført et overflatesøk med fuktindikator, uten at det ble påvist indikasjoner som tyder på fuktskader."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              52
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_004",
+            "description": "Prefabrikkert baderomsmodul – tilstand inne i konstruksjonen ukjent, hulltaking ikke utført",
+            "evidence": [
+              "TGIU Kontroll i tilliggende konstruksjon ikke utført: Med bakgrunn i at våtrommet er bygget som en prefabrikkert baderomskabin er det ikke utført hulltaking/fuktmåling i lukkede konstruksjoner. Tilstanden inne i konstruksjonen er ikke kjent.",
+              "Det ble derimot gjennomført et overflatesøk med fuktindikator, uten at det ble påvist indikasjoner som tyder på fuktskader."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              52
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_005",
+            "description": "Stakeluke for avløp ikke lokalisert – vedlikeholdsmulighet ukjent",
+            "evidence": [
+              "Stakeluke er ikke lokalisert, og derfor heller ikke undersøkt. Det er ikke kjent om stakeluke er etablert."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              53
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_005",
+            "description": "Stakeluke for avløp ikke lokalisert – vedlikeholdsmulighet ukjent",
+            "evidence": [
+              "Stakeluke er ikke lokalisert, og derfor heller ikke undersøkt. Det er ikke kjent om stakeluke er etablert."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              53
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_006",
+            "description": "Ferdigattest og øvrig byggedokumentasjon ikke fremlagt på befaringsdagen",
+            "evidence": [
+              "Ferdigattest eller midlertidig brukstillatelse: Ikke fremlagt på befaringsdagen.",
+              "Godkjent fasadetegning: Ikke fremlagt på befaringsdagen.",
+              "Godkjent snittegning: Ikke fremlagt på befaringsdagen.",
+              "Energiattest: Ikke fremlagt på befaringsdagen.",
+              "Dokumentasjon av våtrom (arbeider, utførelse, funksjonstesting og lignende): Ikke fremlagt på befaringsdagen.",
+              "FDV-dokumentasjon (forvaltning, drift og vedlikehold): Ikke fremlagt på befaringsdagen.",
+              "På bakgrunn av at det ikke er fremlagt byggetegninger som viser boligens romklassifisering, har samsvaret mellom faktisk bruk og byggetillatelsen ikke vært mulig å undersøke."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              51,
+              56
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_006",
+            "description": "Ferdigattest og øvrig byggedokumentasjon ikke fremlagt på befaringsdagen",
+            "evidence": [
+              "Ferdigattest eller midlertidig brukstillatelse: Ikke fremlagt på befaringsdagen.",
+              "Godkjent fasadetegning: Ikke fremlagt på befaringsdagen.",
+              "Godkjent snittegning: Ikke fremlagt på befaringsdagen.",
+              "Energiattest: Ikke fremlagt på befaringsdagen.",
+              "Dokumentasjon av våtrom (arbeider, utførelse, funksjonstesting og lignende): Ikke fremlagt på befaringsdagen.",
+              "FDV-dokumentasjon (forvaltning, drift og vedlikehold): Ikke fremlagt på befaringsdagen.",
+              "På bakgrunn av at det ikke er fremlagt byggetegninger som viser boligens romklassifisering, har samsvaret mellom faktisk bruk og byggetillatelsen ikke vært mulig å undersøke."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              51,
+              56
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_007",
+            "description": "Felleskostnader kan øke – forbehold om prisstigning og renteøkning",
+            "evidence": [
+              "På grunn av prisstigning og renteøkning tas det forbehold om at felleskostnader kan øke.",
+              "Budsjett 2025 viser sum driftskostnader på kr 1 302 420 mot regnskap 2024 på kr 1 154 176 – en økning på ca. 13 %.",
+              "Budsjett 2025 viser negativt driftsresultat på kr -23 747."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              27,
+              86
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_007",
+            "description": "Felleskostnader kan øke – forbehold om prisstigning og renteøkning",
+            "evidence": [
+              "På grunn av prisstigning og renteøkning tas det forbehold om at felleskostnader kan øke.",
+              "Budsjett 2025 viser sum driftskostnader på kr 1 302 420 mot regnskap 2024 på kr 1 154 176 – en økning på ca. 13 %.",
+              "Budsjett 2025 viser negativt driftsresultat på kr -23 747."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              27,
+              86
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_008",
+            "description": "Ingen parkeringsplass medfølger leiligheten",
+            "evidence": [
+              "Det følger ikke parkeringsplass med leiligheten.",
+              "Parkeringstype: Følger ikke parkeringsplass med leiligheten.",
+              "For denne seksjonen følger det ikke ekstern bod eller parkeringsplass."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              28,
+              31,
+              65
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_008",
+            "description": "Ingen parkeringsplass medfølger leiligheten",
+            "evidence": [
+              "Det følger ikke parkeringsplass med leiligheten.",
+              "Parkeringstype: Følger ikke parkeringsplass med leiligheten.",
+              "For denne seksjonen følger det ikke ekstern bod eller parkeringsplass."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              28,
+              31,
+              65
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_009",
+            "description": "Ingen ekstern bod medfølger leiligheten",
+            "evidence": [
+              "For denne seksjonen følger det ikke ekstern bod eller parkeringsplass."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              31
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_009",
+            "description": "Ingen ekstern bod medfølger leiligheten",
+            "evidence": [
+              "For denne seksjonen følger det ikke ekstern bod eller parkeringsplass."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              31
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_010",
+            "description": "Korttidsutleie begrenset til maksimalt 60 døgn per år",
+            "evidence": [
+              "Korttidsutleie av hele boligseksjonen i mer enn 60 døgn i året er ikke tillatt."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              33
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_010",
+            "description": "Korttidsutleie begrenset til maksimalt 60 døgn per år",
+            "evidence": [
+              "Korttidsutleie av hele boligseksjonen i mer enn 60 døgn i året er ikke tillatt."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              33
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_011",
+            "description": "Tinglyst bestemmelse om pliktig medlemskap i velforening – kan ikke slettes uten samtykke fra Godhavn Eiendom AS og Trondheim Kommune",
+            "evidence": [
+              "20.07.2022 – Dokumentnr: 804864 – Bestemmelse om medlemskap i velforening/huseierforening. Kan ikke slettes uten samtykke fra: Godhavn Eiendom AS Org.nr: 960 239 318. Kan ikke slettes uten samtykke fra: Trondheim Kommune Org.nr: 942 110 464.",
+              "Det er pliktig medlemskap i velforeningen og kontingent betales via felleskostnadene."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              32
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_011",
+            "description": "Tinglyst bestemmelse om pliktig medlemskap i velforening – kan ikke slettes uten samtykke fra Godhavn Eiendom AS og Trondheim Kommune",
+            "evidence": [
+              "20.07.2022 – Dokumentnr: 804864 – Bestemmelse om medlemskap i velforening/huseierforening. Kan ikke slettes uten samtykke fra: Godhavn Eiendom AS Org.nr: 960 239 318. Kan ikke slettes uten samtykke fra: Trondheim Kommune Org.nr: 942 110 464.",
+              "Det er pliktig medlemskap i velforeningen og kontingent betales via felleskostnadene."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              32
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_012",
+            "description": "Sameiet er ikke med i sikringsordning for felleskostnader",
+            "evidence": [
+              "Boligselskapet er ikke med i sikringsordning."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              64
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_012",
+            "description": "Sameiet er ikke med i sikringsordning for felleskostnader",
+            "evidence": [
+              "Boligselskapet er ikke med i sikringsordning."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              64
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_013",
+            "description": "Privat stikkledning for vann og avløp – vedlikeholdsansvar påhviler sameiet",
+            "evidence": [
+              "Stikkledningene fra eiendommen og ut til det kommunale nettet er private, og vedlikeholdsansvaret for disse påhviler sameiet.",
+              "Adkomst til eiendommen skjer via privat vei."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              32
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_013",
+            "description": "Privat stikkledning for vann og avløp – vedlikeholdsansvar påhviler sameiet",
+            "evidence": [
+              "Stikkledningene fra eiendommen og ut til det kommunale nettet er private, og vedlikeholdsansvaret for disse påhviler sameiet.",
+              "Adkomst til eiendommen skjer via privat vei."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              32
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_014",
+            "description": "Sameiernes solidaransvar overfor sameiets kreditorer i henhold til sameiebrøk",
+            "evidence": [
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.",
+              "Ved manglende betaling av fellesutgifter har sameiet legal panterett i den enkelte eierseksjon, begrenset til inntil 2 ganger folketrygdens grunnbeløp."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              33
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_014",
+            "description": "Sameiernes solidaransvar overfor sameiets kreditorer i henhold til sameiebrøk",
+            "evidence": [
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.",
+              "Ved manglende betaling av fellesutgifter har sameiet legal panterett i den enkelte eierseksjon, begrenset til inntil 2 ganger folketrygdens grunnbeløp."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              33
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_015",
+            "description": "Eiendommen avsatt til 'Bebyggelse og anlegg – Framtidig' i kommuneplanens arealdel – potensial for fremtidig utbygging i nærområdet",
+            "evidence": [
+              "Eiendommen er i kommuneplanens arealdel avsatt til bebyggelse og anlegg – framtidig og byggesone 3.",
+              "Eiendommen ligger i område som i kommuneplanen/kommunedelplanen er avsatt til Bebyggelse og anlegg – Framtidig, Kommuneplanens arealdel 2022-2034 (27.3.2025)."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              32,
+              87
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_015",
+            "description": "Eiendommen avsatt til 'Bebyggelse og anlegg – Framtidig' i kommuneplanens arealdel – potensial for fremtidig utbygging i nærområdet",
+            "evidence": [
+              "Eiendommen er i kommuneplanens arealdel avsatt til bebyggelse og anlegg – framtidig og byggesone 3.",
+              "Eiendommen ligger i område som i kommuneplanen/kommunedelplanen er avsatt til Bebyggelse og anlegg – Framtidig, Kommuneplanens arealdel 2022-2034 (27.3.2025)."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              32,
+              87
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_016",
+            "description": "Liten leilighet (43 m² BRA) med kun ett soverom – begrenset videresalgsverdi og fleksibilitet",
+            "evidence": [
+              "BRA-i: 43 m², BRA totalt: 43 m²",
+              "Antall soverom: 1",
+              "Soverommet er på 8,5 kvm med plass til dobbeltseng og garderobeløsning med speilskyvedører."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              6,
+              19,
+              29
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_016",
+            "description": "Liten leilighet (43 m² BRA) med kun ett soverom – begrenset videresalgsverdi og fleksibilitet",
+            "evidence": [
+              "BRA-i: 43 m², BRA totalt: 43 m²",
+              "Antall soverom: 1",
+              "Soverommet er på 8,5 kvm med plass til dobbeltseng og garderobeløsning med speilskyvedører."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              6,
+              19,
+              29
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_017",
+            "description": "Leiligheten ligger i 1. etasje – økt risiko for innbrudd, innsyn og støy fra utearealer",
+            "evidence": [
+              "Leiligheten ligger i 1. etasje og har terrasse med direkte adkomst til felles grøntareal.",
+              "Praktisk beliggenhet på bakkeplan",
+              "Terrasse på 9 m² på bakkeplan med direkte adkomst til felles grøntareal."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              9,
+              29
+            ],
+            "confidence": 0.65,
+            "details": {
+              "confidence": 0.65
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_017",
+            "description": "Leiligheten ligger i 1. etasje – økt risiko for innbrudd, innsyn og støy fra utearealer",
+            "evidence": [
+              "Leiligheten ligger i 1. etasje og har terrasse med direkte adkomst til felles grøntareal.",
+              "Praktisk beliggenhet på bakkeplan",
+              "Terrasse på 9 m² på bakkeplan med direkte adkomst til felles grøntareal."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              9,
+              29
+            ],
+            "details": {
+              "confidence": 0.65
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_018",
+            "description": "Forbehold om at det kan være utført elektriske arbeider uten samsvarserklæring",
+            "evidence": [
+              "Det tas forbehold om at det kan være utført andre arbeider på det elektriske anlegget som ikke har samsvarserklæring."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              30
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_018",
+            "description": "Forbehold om at det kan være utført elektriske arbeider uten samsvarserklæring",
+            "evidence": [
+              "Det tas forbehold om at det kan være utført andre arbeider på det elektriske anlegget som ikke har samsvarserklæring."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              30
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_019",
+            "description": "Selger har kun eid boligen i ca. 2 år og 8 måneder – begrenset kjennskap til boligens historikk",
+            "evidence": [
+              "Når kjøpte du boligen? År 2023",
+              "Hvor lenge har du eid boligen? Antall år 2, Antall måneder 8",
+              "Eier har kun bodd i boligen en begrenset periode og kjenner ikke til om radonmåling er utført på et tidligere tidspunkt."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              39,
+              57
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_019",
+            "description": "Selger har kun eid boligen i ca. 2 år og 8 måneder – begrenset kjennskap til boligens historikk",
+            "evidence": [
+              "Når kjøpte du boligen? År 2023",
+              "Hvor lenge har du eid boligen? Antall år 2, Antall måneder 8",
+              "Eier har kun bodd i boligen en begrenset periode og kjenner ikke til om radonmåling er utført på et tidligere tidspunkt."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              39,
+              57
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_020",
+            "description": "Realsameiet Reppetoppen Fellesarealer – utbygger (Godhavn Utbygging AS) har vetorett i saker som gjelder ubebygde felt inntil hele feltet er ferdigstilt",
+            "evidence": [
+              "Inntil alle boligsameiene/boligene er ferdig utbygd har utbygger som hjemmelshaver av de aktuelle områdene, vetorett i alle saker som direkte gjelder ubebygde felt/områder.",
+              "Utbygger sitter med råderett/grunnbokshjemmel til realsameiet inntil hele feltet er ferdigstilt."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              84
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_020",
+            "description": "Realsameiet Reppetoppen Fellesarealer – utbygger (Godhavn Utbygging AS) har vetorett i saker som gjelder ubebygde felt inntil hele feltet er ferdigstilt",
+            "evidence": [
+              "Inntil alle boligsameiene/boligene er ferdig utbygd har utbygger som hjemmelshaver av de aktuelle områdene, vetorett i alle saker som direkte gjelder ubebygde felt/områder.",
+              "Utbygger sitter med råderett/grunnbokshjemmel til realsameiet inntil hele feltet er ferdigstilt."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              84
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_021",
+            "description": "Høy dokumentavgift og omkostninger for kjøper",
+            "evidence": [
+              "Dokumentavgift (forutsatt salgssum: 2 590 000,-): kr 64 750,-",
+              "Omkostninger totalt: kr 78 600,-",
+              "Totalpris inkl. omkostninger: kr 2 668 600,-"
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              27
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_021",
+            "description": "Høy dokumentavgift og omkostninger for kjøper",
+            "evidence": [
+              "Dokumentavgift (forutsatt salgssum: 2 590 000,-): kr 64 750,-",
+              "Omkostninger totalt: kr 78 600,-",
+              "Totalpris inkl. omkostninger: kr 2 668 600,-"
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              27
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_022",
+            "description": "Energipost for varme, varmt- og kaldtvann avregnes månedlig etter forbruk – variabel kostnad som kan øke",
+            "evidence": [
+              "Sameiet har fellesmåling for varme, varmt- og kaldtvann. Forbruket avregnes månedlig, og kostnadene fordeles etter forbruk.",
+              "Fastbeløp måling og avregning energi: kr 137,-",
+              "Energi, felles: Regnskap 2024 viser kr 56 044 (positiv post, dvs. inntekt/refusjon), mens budsjett 2025 viser kostnad på kr -110 000."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              27,
+              86
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_022",
+            "description": "Energipost for varme, varmt- og kaldtvann avregnes månedlig etter forbruk – variabel kostnad som kan øke",
+            "evidence": [
+              "Sameiet har fellesmåling for varme, varmt- og kaldtvann. Forbruket avregnes månedlig, og kostnadene fordeles etter forbruk.",
+              "Fastbeløp måling og avregning energi: kr 137,-",
+              "Energi, felles: Regnskap 2024 viser kr 56 044 (positiv post, dvs. inntekt/refusjon), mens budsjett 2025 viser kostnad på kr -110 000."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              27,
+              86
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d190_023",
+            "description": "Situasjonsplan fremlagt er datert 2013 – kan avvike fra dagens faktiske forhold",
+            "evidence": [
+              "Fremlagt situasjonsplan datert 2013.",
+              "Det er mottatt tegninger fra kommunen, datert 2020."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              29,
+              51
+            ],
+            "confidence": 0.65,
+            "details": {
+              "confidence": 0.65
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d190_023",
+            "description": "Situasjonsplan fremlagt er datert 2013 – kan avvike fra dagens faktiske forhold",
+            "evidence": [
+              "Fremlagt situasjonsplan datert 2013.",
+              "Det er mottatt tegninger fra kommunen, datert 2020."
+            ],
+            "source_documents": [
+              "d190.pdf"
+            ],
+            "source_pages": [
+              29,
+              51
+            ],
+            "details": {
+              "confidence": 0.65
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [],
+      "unmatched_ground_truth_risks": [],
+      "verified_unmatched": [],
+      "adjusted_metrics": null
+    }
+  },
+  "best_system": "ground_truth",
+  "statistical_tests": {
+    "standard_rag_vs_agentic_rag_P+T+R": 1.0,
+    "standard_rag_vs_ground_truth": 1.0,
+    "agentic_rag_P+T+R_vs_ground_truth": 1.0
+  },
+  "record_id": "55b701b0-a76d-4ae8-84c2-ecd0f9bb62cb",
+  "query": "Identifiser risikoer i salgsoppgaven",
+  "document_set_id": "d190",
+  "timestamp": "2026-03-25T23:01:06.551819",
+  "risk_summaries": [
+    {
+      "system_type": "standard_rag",
+      "total_risks": 12,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "agentic_rag_P+T+R",
+      "total_risks": 14,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "ground_truth",
+      "total_risks": 23,
+      "risks_by_category": {}
+    }
+  ],
+  "has_ground_truth": true,
+  "overlapping_risk_count": 10,
+  "unique_to": {
+    "standard_rag": 12,
+    "agentic_rag_P+T+R": 4,
+    "ground_truth": 13
+  },
+  "record_type": "comparison"
+}

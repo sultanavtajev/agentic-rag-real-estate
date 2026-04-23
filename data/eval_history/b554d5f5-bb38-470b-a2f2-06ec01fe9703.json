@@ -1,0 +1,2446 @@
+{
+  "system_results": {
+    "standard_rag": {
+      "run_id": "bfc9c23e-4098-41ed-8d9b-4e20694bb001",
+      "system_type": "standard_rag",
+      "overall_metrics": {
+        "precision": 0.2727272727272727,
+        "recall": 0.14285714285714285,
+        "f1": 0.18749999999999997,
+        "total_support": 21
+      },
+      "matched_risks": 3,
+      "unmatched_predicted": 8,
+      "unmatched_ground_truth": 18,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "bfc9c23e-4098-41ed-8d9b-4e20694bb001_risk_000",
+            "description": "Kjøper kan ikke stille forbehold om finansiering i bud. Dette innebærer en betydelig risiko for kjøper dersom finansiering ikke er på plass ved budgivning, da kjøper er bundet av budet uten mulighet for å trekke seg ved finansieringssvikt.",
+            "evidence": [
+              "OBOS vil ikke akseptere bud med forbehold om finansiering."
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_012",
+            "description": "Selger (OBOS BBL) vil ikke akseptere bud med forbehold om finansiering. Dette innebærer at kjøper må ha finansieringen fullstendig på plass før bud inngis, noe som øker risikoen for kjøper dersom finansieringen ikke er avklart.",
+            "evidence": [
+              "OBOS vil ikke akseptere bud med forbehold om finansiering."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              27
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "bfc9c23e-4098-41ed-8d9b-4e20694bb001_risk_001",
+            "description": "Selger kan prioritere bud fra ikke-forbrukere fremfor forbrukere, selv om forbrukerbudet er høyere. Dette kan medføre at forbrukerkjøpere stiller svakere i budrunden, og at selger bevisst velger lavere bud for å begrense sitt ansvar etter avhendingsloven.",
+            "evidence": [
+              "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud. Når kjøper ikke er forbruker, kan selgers ansvar begrenses ettersom boligen selges «som den er»."
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_013",
+            "description": "Selger kan velge å prioritere bud fra ikke-forbrukere (næringsdrivende) fremfor forbrukerbud, selv om forbrukerbudet er høyere. Dette kan sette ordinære boligkjøpere i en ugunstig posisjon i budrunden.",
+            "evidence": [
+              "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud. Når kjøper ikke er forbruker, kan selges ansvar begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              28
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "bfc9c23e-4098-41ed-8d9b-4e20694bb001_risk_005",
+            "description": "Det er ikke foretatt radonmåling, og det er ubesvarte spørsmål i egenerklæringen knyttet til manglende brukstillatelse eller ferdigattest. Dette kan indikere uavklarte forhold ved eiendommen som kan utgjøre en risiko for kjøper.",
+            "evidence": [
+              "21 Er det foretatt radonmåling? Nei Ja",
+              "22 Kjenner du til manglende brukstillatelse eller ferdigattest? Nei Ja"
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_007",
+            "description": "Radonmåling er ikke utført. Selv om det ikke er krav om dette for boliger som ikke er utleid, kan radonkonsentrasjon i inneluften utgjøre en helserisiko. Takstmann bemerker at radonkontroll bør kontrolleres på generelt grunnlag.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Det er ukjent for undertegnende vdr. grunnforhold og radonkontroll bør kontrolleres på generelt grunnlag."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              27,
+              42
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "bfc9c23e-4098-41ed-8d9b-4e20694bb001_risk_002",
+          "description": "Salgsoppgavens opplysninger om boligens størrelse og utforming er basert på selgers informasjon og fagkyndig vurdering, ikke nødvendigvis uavhengig verifiserte data. Dette innebærer risiko for at opplysningene kan være unøyaktige eller ufullstendige.",
+          "evidence": [
+            "Opplysninger om boligens størrelse og utforming, både innvendig og utvendig, bygger på informasjon hentet fra vedlagte tilstands- og boligsalgsrapport. Innholdet i salgsoppgaven er basert på selgers informasjon, fagkyndig vurdering, samt opplysninger fra offentlige registre som kommunen og Kartverket."
+          ],
+          "source_documents": [
+            "d153_d153"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.85,
+          "details": {}
+        },
+        {
+          "risk_id": "bfc9c23e-4098-41ed-8d9b-4e20694bb001_risk_003",
+          "description": "Boligselgerforsikringen kan bortfalle dersom selger har gitt ufullstendige, uriktige eller misvisende opplysninger i egenerklæringen. Dette er en risiko for kjøper, som da kan stå uten dekning ved eventuelle mangler.",
+          "evidence": [
+            "Jeg bekrefter at opplysningene er gitt etter beste skjønn. Jeg er kjent med at dersom jeg har gitt ufullstendige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis."
+          ],
+          "source_documents": [
+            "d153_d153"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "bfc9c23e-4098-41ed-8d9b-4e20694bb001_risk_004",
+          "description": "Premietilbudet for boligselgerforsikringen er kun bindende i 6 måneder fra oppdragsinngåelse. Dersom salget tar lengre tid, kan premien og forsikringsvilkårene justeres, noe som kan gi selger dårligere eller dyrere forsikringsdekning.",
+          "evidence": [
+            "Premietilbudet som er gitt av megler er bindende for forsikringsgiver i 6 – seks – måneder fra oppdragsinngåelse med megler. Etter dette vil premien og forsikringsvilkårene kunne justeres."
+          ],
+          "source_documents": [
+            "d153_d153"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.82,
+          "details": {}
+        },
+        {
+          "risk_id": "bfc9c23e-4098-41ed-8d9b-4e20694bb001_risk_006",
+          "description": "Tilstandsrapporten dekker ikke alle forhold ved eiendommen. Flere viktige elementer er eksplisitt unntatt fra vurderingen, herunder skjulte installasjoner, geologiske forhold, bygningens lovlighet (med visse unntak) og fellesarealer. Dette innebærer at kjøper ikke har full informasjon om eiendommens tilstand.",
+          "evidence": [
+            "skjulte installasjoner • installasjoner utenfor bygningen • full funksjonstesting av el- og VVS-installasjoner • geologiske forhold og bygningens plassering på grunnen • bygningens planløsning • bygningens innredning • løsøre slik som hvitevarer • utendørs svømmebasseng og pumpeanlegg • bygningens estetikk og arkitektur • bygningens lovlighet (bortsett fra bruksendringer, brannceller og forhold som åpenbart kan påvirke helse, miljø og sikkerhet) • fellesarealer"
+          ],
+          "source_documents": [
+            "d153_d153"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.87,
+          "details": {}
+        },
+        {
+          "risk_id": "bfc9c23e-4098-41ed-8d9b-4e20694bb001_risk_007",
+          "description": "Det er ingen angrerett ved kjøp av fast eiendom. Kjøper er bundet av akseptert bud uten mulighet til å trekke seg, noe som innebærer en betydelig risiko dersom kjøper angrer eller oppdager nye opplysninger etter budaksept.",
+          "evidence": [
+            "Det eksisterer ingen angrerett ved salg/kjøp av fast eiendom."
+          ],
+          "source_documents": [
+            "d153_d153"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.95,
+          "details": {}
+        },
+        {
+          "risk_id": "bfc9c23e-4098-41ed-8d9b-4e20694bb001_risk_008",
+          "description": "Dersom kjøper ikke gjennomfører betalingen fra en norsk bankkonto uten forhåndsavtale, kan dette skape problemer med oppgjøret. Overføringer fra utlandet aksepteres kun unntaksvis, noe som kan være en risiko for utenlandske kjøpere.",
+          "evidence": [
+            "Overføringer fra utlandet aksepteres kun unntaksvis, og kun dersom dette er forhåndsavtalt med megler i forbindelse med aksept av budet."
+          ],
+          "source_documents": [
+            "d153_d153"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.78,
+          "details": {}
+        },
+        {
+          "risk_id": "bfc9c23e-4098-41ed-8d9b-4e20694bb001_risk_009",
+          "description": "Dersom selger ikke bidrar til meglers løpende kundetiltak (hvitvaskingskontroll), kan transaksjonen stanses. Dette kan forsinke eller hindre gjennomføringen av salget, til skade for begge parter.",
+          "evidence": [
+            "Dersom selger ikke bidrar til at megler får gjennomført løpende kundetiltak underveis i oppdraget, må eiendomsmegler stanse gjennomføringen av transaksjonen. Selger vil i et slikt tilfelle ha misligholdt sine forpliktelser, og kjøper vil kunne ha et krav mot selger etter avhendingsloven."
+          ],
+          "source_documents": [
+            "d153_d153"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "bfc9c23e-4098-41ed-8d9b-4e20694bb001_risk_010",
+          "description": "Egenerklæringen inneholder ubesvarte spørsmål om kjente tvister, vedtak om økte felleskostnader/fellesgjeld, sopp/råteskader/skadedyr og skjeggkre i sameiet. Manglende svar på disse spørsmålene gir kjøper begrenset informasjon om potensielle problemer i sameiet.",
+          "evidence": [
+            "26 Kjenner du til vedtak/forslag til vedtak om forhold vedr. eiendommen som kan medføre økte felleskostnader/økt fellesgjeld? Nei Ja",
+            "27 Kjenner du til om det er/har vært sopp/råteskader/insekter/skadedyr i sameiet/laget/selskapet (fellesareal eller i andre boliger) som rotter, mus, maur eller lignende? Nei Ja",
+            "28 Kjenner du til om det er/har vært skjeggkre i sameiet/laget/selskapet (fellesareal eller i andre boliger)? Nei Ja"
+          ],
+          "source_documents": [
+            "d153_d153"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.7,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d153_001",
+          "description": "Svært høy fellesgjeld på kr 1 920 000 per andel, noe som gir en totalpris på over 4 millioner kroner. Fellesgjelden utgjør nesten like mye som prisantydningen (kr 2 090 000), og borettslaget har en samlet restsaldo på hele kr 403 615 000. Dette er en betydelig finansiell risiko for kjøper.",
+          "evidence": [
+            "Fellesgjeld: Kr 1 920 000 pr. 17.02.2026",
+            "Totalpris: 4 020 390,-",
+            "Lån nr: 9820807361; IN lån 1 - Restsaldo 403 615 000,00",
+            "Borettslaget fremstår med en solid økonomi, men har høy samlet fellesgjeld, noe som er normalt for nyere borettslag."
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            6,
+            21,
+            25
+          ],
+          "details": {
+            "confidence": 0.98
+          }
+        },
+        {
+          "risk_id": "gt_d153_002",
+          "description": "Avdragsfrihet på fellesgjelden løper kun til februar 2028, hvoretter felleskostnadene vil øke med estimert kr 1 600 per måned for denne andelen. Kjøper må være forberedt på en vesentlig økning i månedlige kostnader innen kort tid.",
+          "evidence": [
+            "Lånet er avdragsfritt frem til februar 2028.",
+            "Etter at perioden med avdragsfrihet er over, vil felleskostnadene for leiligheten øke. Den estimerte månedlige økningen er på kr 1600 for denne leiligheten (avrundet til nærmeste 50 kroner).",
+            "Det presiseres at den estimerte endringen i felleskostnadene forutsetter at lånets avdrags- og rentebetingelser forblir uendret.",
+            "Styret i borettslaget vil avgjøre om og når felleskostnadene skal økes."
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            21,
+            22
+          ],
+          "details": {
+            "confidence": 0.98
+          }
+        },
+        {
+          "risk_id": "gt_d153_003",
+          "description": "Felleskostnadene er allerede høye (kr 10 570 per måned) og kan øke ytterligere som følge av beslutninger i styret eller generalforsamlingen, renteendringer på fellesgjelden (flytende rente 4,79 %), eller økte driftskostnader. Kjøper har begrenset kontroll over denne kostnadsposten.",
+          "evidence": [
+            "Felleskostnader kr 10 570,- pr. mnd",
+            "Type rente: Flytende rente",
+            "Rentesats: 4,79%",
+            "Kjøperen må være inneforstått med at fellesgjelden i borettslaget og fellesutgiftene kan variere over tid, også at den kan øke som følge av beslutninger i sameiets styre eller generalforsamlinger.",
+            "Vi gjør oppmerksom på at vi kan ha mottatt varsel om renteendring eller nye lån som ikke er iverksatt pr dags dato."
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            21,
+            22
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d153_004",
+          "description": "Boligen er ervervet av selger (OBOS BBL) som del av en Deleie-ordning, og OBOS BBL har ikke bebodd boligen. OBOS BBL kjenner derfor ikke boligen utover tilstandsrapport og salgsoppgave, og kan i begrenset grad supplere og kontrollere opplysningene. Dette øker risikoen for at skjulte feil og mangler ikke er avdekket.",
+          "evidence": [
+            "Boligen er ervervet av selger som del av OBOS sin Deleie-ordning. OBOS BBL har derfor ikke bebodd boligen som er lagt ut for salg og kjenner derfor ikke denne utover beskrivelser i tilstandsrapport og salgsoppgave.",
+            "Av samme grunn kan OBOS BBL i begrenset grad supplere og kontrollere opplysningene i tilstandsrapport og salgsoppgave. Kjøper oppfordres derfor til å gjøre en særlig grundig undersøkelse."
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            27
+          ],
+          "details": {
+            "confidence": 0.92
+          }
+        },
+        {
+          "risk_id": "gt_d153_005",
+          "description": "OBOS BBL har forkjøpsrett på beste prioritet som sameier i Deleie-boligen, gjennom borettslagets vedtekter samt tinglyst forkjøpsrett. Dette innebærer at OBOS kan overta boligen til akseptert budpris innen 20 dager etter budaksept, noe som kan forsinke eller avbryte kjøpsprosessen for andre budgivere.",
+          "evidence": [
+            "OBOS har forkjøpsrett på beste prioritet som sameier i Deleie-boligen, gjennom borettslagets vedtekter, samt tinglyst forkjøpsrett.",
+            "Fristen for å gjøre forkjøpsretten gjeldende er 20 dager etter budaksept.",
+            "OBOS vil ikke akseptere bud med forbehold om finansiering."
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            25,
+            27
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d153_006",
+          "description": "Varmesentral og varmtvannstank er ikke vurdert av takstmann (TGIU) da dette anses som felles ansvarsområde. Tilstanden på disse kritiske tekniske installasjonene er dermed ukjent for kjøper, og eventuelle feil eller behov for utskiftning vil belastes borettslaget og dermed indirekte kjøper gjennom felleskostnader.",
+          "evidence": [
+            "Tekniske installasjoner > Varmesentral - Leiligheten blir oppvarmet med radiatorer via sentralfyr. Tilstandsgrad er ikke vurdert da det vurderes som felles ansvarsområde.",
+            "Tekniske installasjoner > Varmtvannstank - Felles varmtvannsystem. Tilstandsgrad er ikke vurdert da det vurderes som felles ansvarsområde.",
+            "KONSTRUKSJONER SOM IKKE ER UNDERSØKT: Tekniske installasjoner > Varmesentral, Tekniske installasjoner > Varmtvannstank"
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            24,
+            44
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d153_008",
+          "description": "Boligen selges som del av en Deleie-ordning der OBOS BBL eier 30 % og Line Eilertsen eier 70 % av andelen. Dette medfører særlige vilkår om forkjøpsrett og prisregulering, og kjøper må forholde seg til komplekse avtalevilkår knyttet til Deleie-ordningen.",
+          "evidence": [
+            "Eier av adkomstdokumenter: Eilertsen Line 70%, Obos Bbl 30%.",
+            "For andeler som er solgt på OBOS Deleie-vilkår gjelder følgende: Disse andelene eies delvis av OBOS BBL og delvis av en fysisk deleier.",
+            "Ved ethvert eierskifte av en eierandel i en andel med OBOS Deleie-vilkår, har OBOS eller den som OBOS utpeker, forkjøpsrett på beste prioritet."
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            25,
+            51,
+            67
+          ],
+          "details": {
+            "confidence": 0.93
+          }
+        },
+        {
+          "risk_id": "gt_d153_009",
+          "description": "Minimumsbeløpet for innbetaling ved bruk av IN-ordningen (individuell nedbetaling av fellesgjeld) er ikke oppgitt i salgsoppgaven – feltet er angitt som '[X]'. Kjøper mangler dermed viktig informasjon for å vurdere muligheten for å nedbetale sin andel av fellesgjelden.",
+          "evidence": [
+            "Minimumsbeløpet for hver innbetaling er kr. [X],- per gang. For mer detaljert informasjon, vennligst se skriv fra forretningsfører."
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            21
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d153_010",
+          "description": "Borettslaget er involvert i et komplekst sameieforhold med næringsseksjon (parkeringsareal), utomhussameie, avfallssugsameie og garasjesameie. Kostnader og forpliktelser knyttet til disse sameierne kan påvirke felleskostnadene og er ikke fullt ut transparent for kjøper.",
+          "evidence": [
+            "Borettslaget utgjør seksjon 1 i eierseksjonsameie, som i tillegg til borettslagets samleseksjon for 206 boliger, består av seksjon 2 som er en næringsseksjon. Næringsseksjonen utgjør parkeringsarealet i garasjekjeller.",
+            "Borettslaget er også deleier i utomhussameiet på dagens gnr 81 bnr 2701 sammen med boligselskapene...",
+            "Borettslaget utgjør en av i alt __ sameiere i ___________ avfallssug.",
+            "Kostnader sameie: -1 882 261 (2024)"
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            26,
+            61,
+            65
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d153_011",
+          "description": "Det medfølger ikke parkeringsplass med boligen. Kjøper må eventuelt leie garasjeplass ved tilgjengelighet, noe som ikke er garantert. Dette kan være en ulempe, særlig for kjøpere med bil.",
+          "evidence": [
+            "Det medfølger ikke parkeringsplass. Det kan være muligheter for å leie garasjeplass ved tilgjengelighet.",
+            "Borettslaget har flere gjesteplasser i garasjeanlegget."
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            22
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d153_014",
+          "description": "El-anlegget er kun vurdert på det laveste inspeksjonsnivå med visuell kontroll. Det tas særskilt forbehold for underliggende feil og mangler som ikke kan kontrolleres grunnet skjult konstruksjon. Det foreligger heller ikke el-tilsynsrapport fra de siste 5 år.",
+          "evidence": [
+            "Det elektriske vurdert på det laveste inspeksjonsnivå med kun en visuell kontroll der el-kontroll må utføres for faktisk tilstand på anlegget.",
+            "Foreligger det el-tilsynsrapport de siste 5 år... Nei",
+            "Med tanke på fremlagt dokumentasjon og utførte sjekkpunkter er anlegget vurdert til tiltenkt funksjon, men det tas særskilt forbehold for underliggende feil og mangler som ikke kan kontrolleres grunnet skjult i konstruksjonen."
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            47
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d153_015",
+          "description": "Tomten var snødekket på befaringsdagen og er ikke videre vurdert eller beskrevet av takstmann. Eventuelle feil, skader eller ugunstige forhold ved tomten kan dermed ikke utelukkes.",
+          "evidence": [
+            "Snødekket tomt på befaringsdagen og er ikke videre vurdert eller beskrevet."
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            51
+          ],
+          "details": {
+            "confidence": 0.72
+          }
+        },
+        {
+          "risk_id": "gt_d153_016",
+          "description": "Borettslaget hadde i 2024 energi- og fyringskostnader på kr 1 185 042, som er betydelig høyere enn budsjettert (kr 550 000) og høyere enn 2023-nivå (kr 899 382). Dette kan indikere økte energikostnader som kan påvirke fremtidige felleskostnader negativt.",
+          "evidence": [
+            "Energi/fyring: -1 185 042 (Regnskap 2024) vs. -899 382 (Regnskap 2023) vs. -550 000 (Budsjett 2024)",
+            "Budsjett 2025 for energi/fyring: -850 000"
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            61
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d153_017",
+          "description": "Kommunale avgifter er inkludert i felleskostnadene, men borettslaget hadde i 2024 kommunale avgifter på kr 2 393 415, som er vesentlig lavere enn budsjettert for 2024 (kr 3 390 000) og 2025 (kr 3 809 000). En slik økning i kommunale avgifter vil kunne medføre økte felleskostnader.",
+          "evidence": [
+            "Kommunale avgifter: -2 393 415 (Regnskap 2024) vs. -3 390 000 (Budsjett 2024) vs. -3 809 000 (Budsjett 2025)",
+            "Kommunale avgifter: Informasjon: Inkludert i felleskostnadene."
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            21,
+            61
+          ],
+          "details": {
+            "confidence": 0.83
+          }
+        },
+        {
+          "risk_id": "gt_d153_018",
+          "description": "Borettslaget har en sikringsordning med OBOS Factoring for garantert betaling av felleskostnader, men avtalen kan sies opp med 6 måneders varsel. Dersom avtalen opphører, kan manglende innbetaling fra andre andelshavere måtte dekkes av de øvrige andelseierne.",
+          "evidence": [
+            "Avtale om sikring av felleskostnader varer til den blir sagt opp av en av partene. Oppsigelsestiden er seks - 6 - måneder regnet fra oppsigelsesdato.",
+            "Manglende innbetaling av fellesutgiftene som følge av andre andelshaveres mislighold, eller dersom borettslaget sitter på fraflyttede og/eller usolgte andeler, må dekkes av de øvrige andelseierne."
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            22,
+            27
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d153_019",
+          "description": "Vedtektene for borettslaget inneholder flere ufylte felter (blanke streker og manglende navn på garasjesameie, eierseksjonssameie og avfallssug). Dette kan indikere at vedtektene ikke er fullstendig ferdigstilt, noe som kan skape uklarhet om rettigheter og plikter.",
+          "evidence": [
+            "Borettslaget utgjør seksjon 1 i _________ eierseksjonsameie",
+            "Andelseiere med parkeringsplass i ______________ garasjesameie gnr _ bnr _ snr 2",
+            "Borettslaget utgjør en av i alt __ sameiere i ___________ avfallssug.",
+            "Vedtektene kan bli revidert frem til overtakelse av boligene."
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            65,
+            69,
+            70
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d153_020",
+          "description": "Innvendig romhøyde er på opptil 2,50 meter i stuen. Dette er i nedre sjikt av hva som er vanlig i nyere boliger, og kan oppleves som lavt av noen kjøpere.",
+          "evidence": [
+            "Innvendig romhøyde på opptil 2,50 meter i stue."
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            24,
+            50
+          ],
+          "details": {
+            "confidence": 0.65
+          }
+        },
+        {
+          "risk_id": "gt_d153_021",
+          "description": "Borettslaget hadde i 2024 ladekostnader for elbil på kr 19 104, en kostnad som ikke var budsjettert. Ettersom alle parkeringsplasser leveres med ladeuttak, kan denne kostnadsposten øke i takt med økt elbilbruk og belaste felleskostnadene.",
+          "evidence": [
+            "Ladekostnader EL-bil: -19 104 (Regnskap 2024) vs. 0 (Budsjett 2024)",
+            "Samtlige parkeringsplasser i garasjeanlegget leveres med ladeuttak for el-bil/ladbar hybridbil."
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            61,
+            70
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "bfc9c23e-4098-41ed-8d9b-4e20694bb001_risk_002",
+            "description": "Salgsoppgavens opplysninger om boligens størrelse og utforming er basert på selgers informasjon og fagkyndig vurdering, ikke nødvendigvis uavhengig verifiserte data. Dette innebærer risiko for at opplysningene kan være unøyaktige eller ufullstendige.",
+            "evidence": [
+              "Opplysninger om boligens størrelse og utforming, både innvendig og utvendig, bygger på informasjon hentet fra vedlagte tilstands- og boligsalgsrapport. Innholdet i salgsoppgaven er basert på selgers informasjon, fagkyndig vurdering, samt opplysninger fra offentlige registre som kommunen og Kartverket."
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt at opplysninger om boligens størrelse og utforming bygger på informasjon fra tilstands- og boligsalgsrapport, og at innholdet i salgsoppgaven er basert på selgers informasjon, fagkyndig vurdering samt opplysninger fra offentlige registre. Dette underbygger risikoen for at opplysningene ikke er uavhengig verifiserte og kan være unøyaktige."
+        },
+        {
+          "risk": {
+            "risk_id": "bfc9c23e-4098-41ed-8d9b-4e20694bb001_risk_003",
+            "description": "Boligselgerforsikringen kan bortfalle dersom selger har gitt ufullstendige, uriktige eller misvisende opplysninger i egenerklæringen. Dette er en risiko for kjøper, som da kan stå uten dekning ved eventuelle mangler.",
+            "evidence": [
+              "Jeg bekrefter at opplysningene er gitt etter beste skjønn. Jeg er kjent med at dersom jeg har gitt ufullstendige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis."
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Egenerklæringsskjemaet (side 36) inneholder eksplisitt tekst om at forsikringsselskapet kan søke hel eller delvis regress, eller redusere sitt ansvar, dersom selger har gitt ufullstendige, uriktige eller misvisende opplysninger. Dette bekrefter risikoen for at boligselgerforsikringen kan bortfalle for kjøper ved slike tilfeller."
+        },
+        {
+          "risk": {
+            "risk_id": "bfc9c23e-4098-41ed-8d9b-4e20694bb001_risk_004",
+            "description": "Premietilbudet for boligselgerforsikringen er kun bindende i 6 måneder fra oppdragsinngåelse. Dersom salget tar lengre tid, kan premien og forsikringsvilkårene justeres, noe som kan gi selger dårligere eller dyrere forsikringsdekning.",
+            "evidence": [
+              "Premietilbudet som er gitt av megler er bindende for forsikringsgiver i 6 – seks – måneder fra oppdragsinngåelse med megler. Etter dette vil premien og forsikringsvilkårene kunne justeres."
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder ordrett teksten: 'Premietilbudet som er gitt av megler er bindende for forsikringsgiver i 6 – seks – måneder fra oppdragsinngåelse med megler. Etter dette vil premien og forsikringsvilkårene kunne justeres.' Dette bekrefter risikoen direkte."
+        },
+        {
+          "risk": {
+            "risk_id": "bfc9c23e-4098-41ed-8d9b-4e20694bb001_risk_006",
+            "description": "Tilstandsrapporten dekker ikke alle forhold ved eiendommen. Flere viktige elementer er eksplisitt unntatt fra vurderingen, herunder skjulte installasjoner, geologiske forhold, bygningens lovlighet (med visse unntak) og fellesarealer. Dette innebærer at kjøper ikke har full informasjon om eiendommens tilstand.",
+            "evidence": [
+              "skjulte installasjoner • installasjoner utenfor bygningen • full funksjonstesting av el- og VVS-installasjoner • geologiske forhold og bygningens plassering på grunnen • bygningens planløsning • bygningens innredning • løsøre slik som hvitevarer • utendørs svømmebasseng og pumpeanlegg • bygningens estetikk og arkitektur • bygningens lovlighet (bortsett fra bruksendringer, brannceller og forhold som åpenbart kan påvirke helse, miljø og sikkerhet) • fellesarealer"
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.87,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Tilstandsrapporten (side 40) inneholder en eksplisitt liste over forhold som bygningssakkyndige ikke ser på, inkludert skjulte installasjoner, geologiske forhold, bygningens lovlighet (med visse unntak), fellesarealer og en rekke andre elementer. Dette bekrefter at tilstandsrapporten ikke dekker alle forhold ved eiendommen."
+        },
+        {
+          "risk": {
+            "risk_id": "bfc9c23e-4098-41ed-8d9b-4e20694bb001_risk_007",
+            "description": "Det er ingen angrerett ved kjøp av fast eiendom. Kjøper er bundet av akseptert bud uten mulighet til å trekke seg, noe som innebærer en betydelig risiko dersom kjøper angrer eller oppdager nye opplysninger etter budaksept.",
+            "evidence": [
+              "Det eksisterer ingen angrerett ved salg/kjøp av fast eiendom."
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Forbrukerinformasjon om budgivning (side 85) inneholder ordrett setningen: 'Det eksisterer ingen angrerett ved salg/kjøp av fast eiendom.' Dette bekrefter risikoen direkte."
+        },
+        {
+          "risk": {
+            "risk_id": "bfc9c23e-4098-41ed-8d9b-4e20694bb001_risk_008",
+            "description": "Dersom kjøper ikke gjennomfører betalingen fra en norsk bankkonto uten forhåndsavtale, kan dette skape problemer med oppgjøret. Overføringer fra utlandet aksepteres kun unntaksvis, noe som kan være en risiko for utenlandske kjøpere.",
+            "evidence": [
+              "Overføringer fra utlandet aksepteres kun unntaksvis, og kun dersom dette er forhåndsavtalt med megler i forbindelse med aksept av budet."
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet (side 30) inneholder ordrett: 'Overføringer fra utlandet aksepteres kun unntaksvis, og kun dersom dette er forhåndsavtalt med megler i forbindelse med aksept av budet.' Dette bekrefter risikoen for utenlandske kjøpere."
+        },
+        {
+          "risk": {
+            "risk_id": "bfc9c23e-4098-41ed-8d9b-4e20694bb001_risk_009",
+            "description": "Dersom selger ikke bidrar til meglers løpende kundetiltak (hvitvaskingskontroll), kan transaksjonen stanses. Dette kan forsinke eller hindre gjennomføringen av salget, til skade for begge parter.",
+            "evidence": [
+              "Dersom selger ikke bidrar til at megler får gjennomført løpende kundetiltak underveis i oppdraget, må eiendomsmegler stanse gjennomføringen av transaksjonen. Selger vil i et slikt tilfelle ha misligholdt sine forpliktelser, og kjøper vil kunne ha et krav mot selger etter avhendingsloven."
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet (side 30) inneholder ordrett: 'Dersom selger ikke bidrar til at megler får gjennomført løpende kundetiltak underveis i oppdraget, må eiendomsmegler stanse gjennomføringen av transaksjonen. Selger vil i et slikt tilfelle ha misligholdt sine forpliktelser, og kjøper vil kunne ha et krav mot selger etter avhendingsloven.' Dette bekrefter risikoen direkte."
+        },
+        {
+          "risk": {
+            "risk_id": "bfc9c23e-4098-41ed-8d9b-4e20694bb001_risk_010",
+            "description": "Egenerklæringen inneholder ubesvarte spørsmål om kjente tvister, vedtak om økte felleskostnader/fellesgjeld, sopp/råteskader/skadedyr og skjeggkre i sameiet. Manglende svar på disse spørsmålene gir kjøper begrenset informasjon om potensielle problemer i sameiet.",
+            "evidence": [
+              "26 Kjenner du til vedtak/forslag til vedtak om forhold vedr. eiendommen som kan medføre økte felleskostnader/økt fellesgjeld? Nei Ja",
+              "27 Kjenner du til om det er/har vært sopp/råteskader/insekter/skadedyr i sameiet/laget/selskapet (fellesareal eller i andre boliger) som rotter, mus, maur eller lignende? Nei Ja",
+              "28 Kjenner du til om det er/har vært skjeggkre i sameiet/laget/selskapet (fellesareal eller i andre boliger)? Nei Ja"
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Egenerklæringen (side 35) viser at spørsmål 26, 27 og 28 er besvart med avkryssing for 'Nei Ja' uten at det er tydelig markert hvilket alternativ som er valgt i den ekstraherte teksten. Imidlertid er det ingen indikasjon i dokumentet på at spørsmålene er ubesvarte – formatet viser begge alternativer som en del av skjemastrukturen. Det er heller ingen kommentarer eller tilleggsopplysninger som antyder at svarene mangler. Risikoen om 'ubesvarte spørsmål' støttes ikke tilstrekkelig av dokumentteksten, da dette sannsynligvis er et artefakt av PDF-ekstraksjon og ikke faktisk manglende svar."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 0.75,
+        "recall": 0.14285714285714285,
+        "f1": 0.24,
+        "total_support": 21
+      }
+    },
+    "agentic_rag_P+T+R": {
+      "run_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b",
+      "system_type": "agentic_rag_P+T+R",
+      "overall_metrics": {
+        "precision": 0.7777777777777778,
+        "recall": 0.6666666666666666,
+        "f1": 0.717948717948718,
+        "total_support": 21
+      },
+      "matched_risks": 14,
+      "unmatched_predicted": 4,
+      "unmatched_ground_truth": 7,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b_risk_000",
+            "description": "Høy fellesgjeld – andel fellesgjeld er kr 1 920 000, noe som gir en totalpris på kr 4 010 000. Fellesgjelden er avdragsfri frem til februar 2028, og etter avdragsfriheten vil felleskostnadene øke med estimert kr 1 600 per måned for denne leiligheten. Restsaldo på lånet er kr 403 615 000 for hele borettslaget.",
+            "evidence": [
+              "Fellesgjeld: Kr 1 920 000 pr. 17.02.2026",
+              "Lånet er avdragsfritt frem til februar 2028. Etter at perioden med avdragsfrihet er over, vil felleskostnadene for leiligheten øke. Den estimerte månedlige økningen er på kr 1600 for denne leiligheten (avrundet til nærmeste 50 kroner).",
+              "Lån nr: 9820807361; IN lån 1 – Restsaldo 403 615 000,00. Innfrielsesdato: 28.02.2063. Type rente: Flytende rente",
+              "Borettslaget fremstår med en solid økonomi, men har høy samlet fellesgjeld, noe som er normalt for nyere borettslag.",
+              "Kjøperen må være inneforstått med at fellesgjelden i borettslaget og fellesutgiftene kan variere over tid, også at den kan øke som følge av beslutninger i sameiets styre eller generalforsamlinger."
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_001",
+            "description": "Svært høy fellesgjeld på kr 1 920 000 per andel, noe som gir en totalpris på over 4 millioner kroner. Fellesgjelden utgjør nesten like mye som prisantydningen (kr 2 090 000), og borettslaget har en samlet restsaldo på hele kr 403 615 000. Dette er en betydelig finansiell risiko for kjøper.",
+            "evidence": [
+              "Fellesgjeld: Kr 1 920 000 pr. 17.02.2026",
+              "Totalpris: 4 020 390,-",
+              "Lån nr: 9820807361; IN lån 1 - Restsaldo 403 615 000,00",
+              "Borettslaget fremstår med en solid økonomi, men har høy samlet fellesgjeld, noe som er normalt for nyere borettslag."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              6,
+              21,
+              25
+            ],
+            "details": {
+              "confidence": 0.98
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b_risk_000",
+            "description": "Høy fellesgjeld – andel fellesgjeld er kr 1 920 000, noe som gir en totalpris på kr 4 010 000. Fellesgjelden er avdragsfri frem til februar 2028, og etter avdragsfriheten vil felleskostnadene øke med estimert kr 1 600 per måned for denne leiligheten. Restsaldo på lånet er kr 403 615 000 for hele borettslaget.",
+            "evidence": [
+              "Fellesgjeld: Kr 1 920 000 pr. 17.02.2026",
+              "Lånet er avdragsfritt frem til februar 2028. Etter at perioden med avdragsfrihet er over, vil felleskostnadene for leiligheten øke. Den estimerte månedlige økningen er på kr 1600 for denne leiligheten (avrundet til nærmeste 50 kroner).",
+              "Lån nr: 9820807361; IN lån 1 – Restsaldo 403 615 000,00. Innfrielsesdato: 28.02.2063. Type rente: Flytende rente",
+              "Borettslaget fremstår med en solid økonomi, men har høy samlet fellesgjeld, noe som er normalt for nyere borettslag.",
+              "Kjøperen må være inneforstått med at fellesgjelden i borettslaget og fellesutgiftene kan variere over tid, også at den kan øke som følge av beslutninger i sameiets styre eller generalforsamlinger."
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_002",
+            "description": "Avdragsfrihet på fellesgjelden løper kun til februar 2028, hvoretter felleskostnadene vil øke med estimert kr 1 600 per måned for denne andelen. Kjøper må være forberedt på en vesentlig økning i månedlige kostnader innen kort tid.",
+            "evidence": [
+              "Lånet er avdragsfritt frem til februar 2028.",
+              "Etter at perioden med avdragsfrihet er over, vil felleskostnadene for leiligheten øke. Den estimerte månedlige økningen er på kr 1600 for denne leiligheten (avrundet til nærmeste 50 kroner).",
+              "Det presiseres at den estimerte endringen i felleskostnadene forutsetter at lånets avdrags- og rentebetingelser forblir uendret.",
+              "Styret i borettslaget vil avgjøre om og når felleskostnadene skal økes."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              21,
+              22
+            ],
+            "details": {
+              "confidence": 0.98
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b_risk_001",
+            "description": "Flytende rente på fellesgjeld – borettslagets lån har flytende rente (4,79%), noe som innebærer risiko for økte felleskostnader dersom rentenivået stiger. Innfrielsesdato er 28.02.2063, som betyr lang gjenværende løpetid med renteeksponering.",
+            "evidence": [
+              "Rentesats: 4,79%",
+              "Type rente: Flytende rente",
+              "Innfrielsesdato: 28.02.2063",
+              "Det presiseres at den estimerte endringen i felleskostnadene forutsetter at lånets avdrags- og rentebetingelser forblir uendret."
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_003",
+            "description": "Felleskostnadene er allerede høye (kr 10 570 per måned) og kan øke ytterligere som følge av beslutninger i styret eller generalforsamlingen, renteendringer på fellesgjelden (flytende rente 4,79 %), eller økte driftskostnader. Kjøper har begrenset kontroll over denne kostnadsposten.",
+            "evidence": [
+              "Felleskostnader kr 10 570,- pr. mnd",
+              "Type rente: Flytende rente",
+              "Rentesats: 4,79%",
+              "Kjøperen må være inneforstått med at fellesgjelden i borettslaget og fellesutgiftene kan variere over tid, også at den kan øke som følge av beslutninger i sameiets styre eller generalforsamlinger.",
+              "Vi gjør oppmerksom på at vi kan ha mottatt varsel om renteendring eller nye lån som ikke er iverksatt pr dags dato."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              21,
+              22
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b_risk_005",
+            "description": "Begrenset kjennskap til boligen fra selgers side – OBOS BBL har ikke bebodd boligen og kan i begrenset grad verifisere opplysningene i salgsoppgaven. Kjøper oppfordres til særlig grundig undersøkelse, noe som indikerer økt risiko for skjulte feil og mangler.",
+            "evidence": [
+              "OBOS BBL har derfor ikke bebodd boligen som er lagt ut for salg og kjenner derfor ikke denne utover beskrivelser i tilstandsrapport og salgsoppgave.",
+              "Av samme grunn kan OBOS BBL i begrenset grad supplere og kontrollere opplysningene i tilstandsrapport og salgsoppgave. Kjøper oppfordres derfor til å gjøre en særlig grundig undersøkelse.",
+              "OBOS vil ikke akseptere bud med forbehold om finansiering."
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_004",
+            "description": "Boligen er ervervet av selger (OBOS BBL) som del av en Deleie-ordning, og OBOS BBL har ikke bebodd boligen. OBOS BBL kjenner derfor ikke boligen utover tilstandsrapport og salgsoppgave, og kan i begrenset grad supplere og kontrollere opplysningene. Dette øker risikoen for at skjulte feil og mangler ikke er avdekket.",
+            "evidence": [
+              "Boligen er ervervet av selger som del av OBOS sin Deleie-ordning. OBOS BBL har derfor ikke bebodd boligen som er lagt ut for salg og kjenner derfor ikke denne utover beskrivelser i tilstandsrapport og salgsoppgave.",
+              "Av samme grunn kan OBOS BBL i begrenset grad supplere og kontrollere opplysningene i tilstandsrapport og salgsoppgave. Kjøper oppfordres derfor til å gjøre en særlig grundig undersøkelse."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              27
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b_risk_011",
+            "description": "Forkjøpsrett fra OBOS og øvrige andelseiere – ved salg av andelen har andelseierne i borettslaget og dernest OBOS-tilknyttede andelseiere forkjøpsrett. Fristen for å gjøre forkjøpsretten gjeldende er 20 dager etter budaksept. Dette kan forsinke eller hindre gjennomføring av handelen.",
+            "evidence": [
+              "Dersom en andel skifter eier, har andelseierne i borettslaget og dernest de øvrige andelseierne i boligbyggelaget – utpekt av OBOS – forkjøpsrett. Fristen for å gjøre forkjøpsretten gjeldende er 20 dager etter budaksept.",
+              "OBOS har forkjøpsrett på beste prioritet som sameier i Deleie-boligen, gjennom borettslagets vedtekter, samt tinglyst forkjøpsrett."
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_005",
+            "description": "OBOS BBL har forkjøpsrett på beste prioritet som sameier i Deleie-boligen, gjennom borettslagets vedtekter samt tinglyst forkjøpsrett. Dette innebærer at OBOS kan overta boligen til akseptert budpris innen 20 dager etter budaksept, noe som kan forsinke eller avbryte kjøpsprosessen for andre budgivere.",
+            "evidence": [
+              "OBOS har forkjøpsrett på beste prioritet som sameier i Deleie-boligen, gjennom borettslagets vedtekter, samt tinglyst forkjøpsrett.",
+              "Fristen for å gjøre forkjøpsretten gjeldende er 20 dager etter budaksept.",
+              "OBOS vil ikke akseptere bud med forbehold om finansiering."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              25,
+              27
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b_risk_003",
+            "description": "Varmesentral og varmtvannstank ikke undersøkt (TG IU) – disse tekniske installasjonene er ikke undersøkt av takstmann, noe som innebærer usikkerhet om tilstanden og potensielle skjulte feil eller mangler.",
+            "evidence": [
+              "KONSTRUKSJONER SOM IKKE ER UNDERSØKT: Tekniske installasjoner > Varmesentral. Tekniske installasjoner > Varmtvannstank.",
+              "TGIU er ikke blitt undersøkt av takstmann.",
+              "Det kan være avvik/skader som ikke er [oppdaget]."
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_006",
+            "description": "Varmesentral og varmtvannstank er ikke vurdert av takstmann (TGIU) da dette anses som felles ansvarsområde. Tilstanden på disse kritiske tekniske installasjonene er dermed ukjent for kjøper, og eventuelle feil eller behov for utskiftning vil belastes borettslaget og dermed indirekte kjøper gjennom felleskostnader.",
+            "evidence": [
+              "Tekniske installasjoner > Varmesentral - Leiligheten blir oppvarmet med radiatorer via sentralfyr. Tilstandsgrad er ikke vurdert da det vurderes som felles ansvarsområde.",
+              "Tekniske installasjoner > Varmtvannstank - Felles varmtvannsystem. Tilstandsgrad er ikke vurdert da det vurderes som felles ansvarsområde.",
+              "KONSTRUKSJONER SOM IKKE ER UNDERSØKT: Tekniske installasjoner > Varmesentral, Tekniske installasjoner > Varmtvannstank"
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              24,
+              44
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b_risk_004",
+            "description": "Ingen radonmåling utført – selger har ikke utført radonmåling av boligen. Radon kan utgjøre en helserisiko, og manglende måling gir kjøper usikkerhet om radonnivåene i boligen.",
+            "evidence": [
+              "Radonmåling: Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_007",
+            "description": "Radonmåling er ikke utført. Selv om det ikke er krav om dette for boliger som ikke er utleid, kan radonkonsentrasjon i inneluften utgjøre en helserisiko. Takstmann bemerker at radonkontroll bør kontrolleres på generelt grunnlag.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Det er ukjent for undertegnende vdr. grunnforhold og radonkontroll bør kontrolleres på generelt grunnlag."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              27,
+              42
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b_risk_002",
+            "description": "OBOS Deleie-ordning – boligen er ervervet av selger som del av OBOS sin Deleie-ordning, der OBOS BBL eier 30 % av andelen. Dette innebærer at OBOS har forkjøpsrett på beste prioritet ved ethvert eierskifte, og at kjøper ikke fritt kan disponere andelen uten OBOSs samtykke. OBOS BBL har ikke bebodd boligen og kan i begrenset grad supplere og kontrollere opplysningene i tilstandsrapport og salgsoppgave.",
+            "evidence": [
+              "102/HØVLERIET BORETTSLAG 923229833 102 OBOS Eilertsen Line 70%, Obos Bbl Eiendomsforvaltning AS 30%.",
+              "Boligen er ervervet av selger som del av OBOS sin Deleie-ordning. OBOS BBL har derfor ikke bebodd boligen som er lagt ut for salg og kjenner derfor ikke denne utover beskrivelser i tilstandsrapport og salgsoppgave. Av samme grunn kan OBOS BBL i begrenset grad supplere og kontrollere opplysningene i tilstandsrapport og salgsoppgave.",
+              "OBOS har forkjøpsrett på beste prioritet som sameier i Deleie-boligen, gjennom borettslagets vedtekter, samt tinglyst forkjøpsrett.",
+              "Ved ethvert eierskifte av en eierandel i en andel med OBOS Deleie-vilkår, har OBOS eller den som OBOS utpeker, forkjøpsrett på beste prioritet."
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_008",
+            "description": "Boligen selges som del av en Deleie-ordning der OBOS BBL eier 30 % og Line Eilertsen eier 70 % av andelen. Dette medfører særlige vilkår om forkjøpsrett og prisregulering, og kjøper må forholde seg til komplekse avtalevilkår knyttet til Deleie-ordningen.",
+            "evidence": [
+              "Eier av adkomstdokumenter: Eilertsen Line 70%, Obos Bbl 30%.",
+              "For andeler som er solgt på OBOS Deleie-vilkår gjelder følgende: Disse andelene eies delvis av OBOS BBL og delvis av en fysisk deleier.",
+              "Ved ethvert eierskifte av en eierandel i en andel med OBOS Deleie-vilkår, har OBOS eller den som OBOS utpeker, forkjøpsrett på beste prioritet."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              25,
+              51,
+              67
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b_risk_013",
+            "description": "Kompleks sameiestruktur med flere fellesfunksjoner – borettslaget er del av et større prosjekt (Kvartalet i Lillestrøm) med fellesfunksjoner, utomhussameie, garasjesameie og avfallssugsameie. Kostnadene til disse fellesfunksjonene fordeles mellom boligselskapene, og vedtektene kan bli revidert frem til overtakelse. Dette gir usikkerhet om fremtidige kostnader og forpliktelser.",
+            "evidence": [
+              "Borettslaget vil ha en del fellesfunksjoner med de andre boligselskapene som sammen vil utgjøre prosjektet Kvartalet i Lillestrøm. Det legges opp til at kostnadene forbundet med drift- og vedlikehold av disse fellesfunksjonene fordeles mellom eierne etter en brøk basert på antall boliger eller bebygget areal på hvert enkelt delfelt.",
+              "Vedtektene kan bli revidert frem til overtakelse av boligene.",
+              "Borettslaget utgjør en av i alt __ sameiere i ___________ avfallssug.",
+              "Kostnader sameie 15 -1 882 261 -1 911 968 -1 910 000 -1 900 000"
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_010",
+            "description": "Borettslaget er involvert i et komplekst sameieforhold med næringsseksjon (parkeringsareal), utomhussameie, avfallssugsameie og garasjesameie. Kostnader og forpliktelser knyttet til disse sameierne kan påvirke felleskostnadene og er ikke fullt ut transparent for kjøper.",
+            "evidence": [
+              "Borettslaget utgjør seksjon 1 i eierseksjonsameie, som i tillegg til borettslagets samleseksjon for 206 boliger, består av seksjon 2 som er en næringsseksjon. Næringsseksjonen utgjør parkeringsarealet i garasjekjeller.",
+              "Borettslaget er også deleier i utomhussameiet på dagens gnr 81 bnr 2701 sammen med boligselskapene...",
+              "Borettslaget utgjør en av i alt __ sameiere i ___________ avfallssug.",
+              "Kostnader sameie: -1 882 261 (2024)"
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              26,
+              61,
+              65
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b_risk_014",
+            "description": "Ingen parkeringsplass medfølger – det medfølger ikke parkeringsplass med boligen. Kjøper må eventuelt leie garasjeplass ved tilgjengelighet, noe som ikke er garantert.",
+            "evidence": [
+              "Det medfølger ikke parkeringsplass. Det kan være muligheter for å leie garasjeplass ved tilgjengelighet. Borettslaget har flere gjesteplasser i garasjeanlegget."
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_011",
+            "description": "Det medfølger ikke parkeringsplass med boligen. Kjøper må eventuelt leie garasjeplass ved tilgjengelighet, noe som ikke er garantert. Dette kan være en ulempe, særlig for kjøpere med bil.",
+            "evidence": [
+              "Det medfølger ikke parkeringsplass. Det kan være muligheter for å leie garasjeplass ved tilgjengelighet.",
+              "Borettslaget har flere gjesteplasser i garasjeanlegget."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              22
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b_risk_016",
+            "description": "OBOS vil ikke akseptere bud med forbehold om finansiering – dette begrenser kjøpers mulighet til å sikre finansiering før bindende avtale inngås, og øker risikoen for kjøper dersom finansiering ikke er på plass.",
+            "evidence": [
+              "OBOS vil ikke akseptere bud med forbehold om finansiering."
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_012",
+            "description": "Selger (OBOS BBL) vil ikke akseptere bud med forbehold om finansiering. Dette innebærer at kjøper må ha finansieringen fullstendig på plass før bud inngis, noe som øker risikoen for kjøper dersom finansieringen ikke er avklart.",
+            "evidence": [
+              "OBOS vil ikke akseptere bud med forbehold om finansiering."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              27
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b_risk_012",
+            "description": "Tomt ikke vurdert på befaringsdagen – tomten var snødekket på befaringsdagen og er ikke videre vurdert eller beskrevet. Dette innebærer at eventuelle feil eller mangler ved tomten ikke er avdekket.",
+            "evidence": [
+              "Snødekket tomt på befaringsdagen og er ikke videre vurdert eller beskrevet."
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_015",
+            "description": "Tomten var snødekket på befaringsdagen og er ikke videre vurdert eller beskrevet av takstmann. Eventuelle feil, skader eller ugunstige forhold ved tomten kan dermed ikke utelukkes.",
+            "evidence": [
+              "Snødekket tomt på befaringsdagen og er ikke videre vurdert eller beskrevet."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              51
+            ],
+            "details": {
+              "confidence": 0.72
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b_risk_008",
+            "description": "Kommunale avgifter budsjettert til å øke betydelig – kommunale avgifter økte fra kr 2 180 633 i 2023 til kr 2 393 415 i 2024, og er budsjettert til kr 3 809 000 i 2025. Dette representerer en kraftig økning som vil påvirke felleskostnadene fremover.",
+            "evidence": [
+              "Kommunale avgifter 9 -2 393 415 -2 180 633 -3 390 000 -3 809 000"
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.87,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_017",
+            "description": "Kommunale avgifter er inkludert i felleskostnadene, men borettslaget hadde i 2024 kommunale avgifter på kr 2 393 415, som er vesentlig lavere enn budsjettert for 2024 (kr 3 390 000) og 2025 (kr 3 809 000). En slik økning i kommunale avgifter vil kunne medføre økte felleskostnader.",
+            "evidence": [
+              "Kommunale avgifter: -2 393 415 (Regnskap 2024) vs. -3 390 000 (Budsjett 2024) vs. -3 809 000 (Budsjett 2025)",
+              "Kommunale avgifter: Informasjon: Inkludert i felleskostnadene."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              21,
+              61
+            ],
+            "details": {
+              "confidence": 0.83
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b_risk_006",
+            "description": "Felleskostnader kan øke som følge av andre andelshaveres mislighold – dersom andre andelshavere ikke betaler sine felleskostnader, eller borettslaget sitter på fraflyttede/usolgte andeler, må de øvrige andelseierne dekke disse utgiftene.",
+            "evidence": [
+              "Manglende innbetaling av fellesutgiftene som følge av andre andelshaveres mislighold, eller dersom borettslaget sitter på fraflyttede og/eller usolgte andeler, må dekkes av de øvrige andelseierne."
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_018",
+            "description": "Borettslaget har en sikringsordning med OBOS Factoring for garantert betaling av felleskostnader, men avtalen kan sies opp med 6 måneders varsel. Dersom avtalen opphører, kan manglende innbetaling fra andre andelshavere måtte dekkes av de øvrige andelseierne.",
+            "evidence": [
+              "Avtale om sikring av felleskostnader varer til den blir sagt opp av en av partene. Oppsigelsestiden er seks - 6 - måneder regnet fra oppsigelsesdato.",
+              "Manglende innbetaling av fellesutgiftene som følge av andre andelshaveres mislighold, eller dersom borettslaget sitter på fraflyttede og/eller usolgte andeler, må dekkes av de øvrige andelseierne."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              22,
+              27
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b_risk_007",
+          "description": "Høye finanskostnader i borettslaget – finanskostnadene for 2024 var kr 24 237 543, noe som er svært høyt sammenlignet med driftskostnadene på kr 7 827 296. Dette gjenspeiler den høye fellesgjelden og innebærer risiko for økte felleskostnader dersom renten stiger eller driftsforholdene endres.",
+          "evidence": [
+            "Finanskostnader 13 -24 237 543 -20 629 126 -24 984 000 -24 279 000",
+            "SUM DRIFTSKOSTNADER -7 827 296 -6 474 131 -7 701 200 -8 526 000",
+            "RES. FINANSINNT./-KOSTNADER -24 180 006 -20 586 509 -24 984 000 -24 279 000"
+          ],
+          "source_documents": [
+            "d153_d153"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b_risk_009",
+          "description": "Begrenset utleiemulighet – det er begrenset adgang til å leie ut bolig i borettslag. Korttidsutleie er kun tillatt i opptil 30 døgn per år uten styrets samtykke. Utover dette kreves styregodkjenning, noe som begrenser kjøpers fleksibilitet.",
+          "evidence": [
+            "Adgang til utleie: Det er begrenset adgang til å leie ut bolig i borettslag. Med styrets godkjenning og under [visse vilkår].",
+            "Korttidsutleie er tillatt i opptil 30 døgn per år uten samtykke fra styret."
+          ],
+          "source_documents": [
+            "d153_d153"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b_risk_010",
+          "description": "Styregodkjenning av kjøper kreves – kjøper må godkjennes av borettslagets styre. Selv om styret kun kan nekte godkjenning ved saklig grunnlag, innebærer dette en usikkerhet i kjøpsprosessen.",
+          "evidence": [
+            "Styregodkjennelse: Kjøper må godkjennes av borettslagets styre. Styret kan kun nekte godkjenning dersom det foreligger saklig grunnlag, jf. borettslagsloven."
+          ],
+          "source_documents": [
+            "d153_d153"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b_risk_015",
+          "description": "Skjulte feil og mangler kan forekomme – tilstandsrapporten er basert på visuell observasjon (undersøkelsesnivå 1) og gir ingen garanti mot skjulte feil, skader og mangler. Rapporten beskriver kun synlige avvik.",
+          "evidence": [
+            "Rapporten er likevel ingen garanti for at det ikke kan finnes skjulte feil, skader og mangler.",
+            "Rapporten baseres på undersøkelsesnivå 1 med få unntak (våtrom og rom under terreng). I praksis betyr dette at gjennomføringen av befaringen begrenses.",
+            "Det utføres kun visuelle observasjoner på tilgjengelige flater uten fysiske inngrep (f.eks. riving)."
+          ],
+          "source_documents": [
+            "d153_d153"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.9,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d153_009",
+          "description": "Minimumsbeløpet for innbetaling ved bruk av IN-ordningen (individuell nedbetaling av fellesgjeld) er ikke oppgitt i salgsoppgaven – feltet er angitt som '[X]'. Kjøper mangler dermed viktig informasjon for å vurdere muligheten for å nedbetale sin andel av fellesgjelden.",
+          "evidence": [
+            "Minimumsbeløpet for hver innbetaling er kr. [X],- per gang. For mer detaljert informasjon, vennligst se skriv fra forretningsfører."
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            21
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d153_013",
+          "description": "Selger kan velge å prioritere bud fra ikke-forbrukere (næringsdrivende) fremfor forbrukerbud, selv om forbrukerbudet er høyere. Dette kan sette ordinære boligkjøpere i en ugunstig posisjon i budrunden.",
+          "evidence": [
+            "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud. Når kjøper ikke er forbruker, kan selges ansvar begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger."
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            28
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d153_014",
+          "description": "El-anlegget er kun vurdert på det laveste inspeksjonsnivå med visuell kontroll. Det tas særskilt forbehold for underliggende feil og mangler som ikke kan kontrolleres grunnet skjult konstruksjon. Det foreligger heller ikke el-tilsynsrapport fra de siste 5 år.",
+          "evidence": [
+            "Det elektriske vurdert på det laveste inspeksjonsnivå med kun en visuell kontroll der el-kontroll må utføres for faktisk tilstand på anlegget.",
+            "Foreligger det el-tilsynsrapport de siste 5 år... Nei",
+            "Med tanke på fremlagt dokumentasjon og utførte sjekkpunkter er anlegget vurdert til tiltenkt funksjon, men det tas særskilt forbehold for underliggende feil og mangler som ikke kan kontrolleres grunnet skjult i konstruksjonen."
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            47
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d153_016",
+          "description": "Borettslaget hadde i 2024 energi- og fyringskostnader på kr 1 185 042, som er betydelig høyere enn budsjettert (kr 550 000) og høyere enn 2023-nivå (kr 899 382). Dette kan indikere økte energikostnader som kan påvirke fremtidige felleskostnader negativt.",
+          "evidence": [
+            "Energi/fyring: -1 185 042 (Regnskap 2024) vs. -899 382 (Regnskap 2023) vs. -550 000 (Budsjett 2024)",
+            "Budsjett 2025 for energi/fyring: -850 000"
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            61
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d153_019",
+          "description": "Vedtektene for borettslaget inneholder flere ufylte felter (blanke streker og manglende navn på garasjesameie, eierseksjonssameie og avfallssug). Dette kan indikere at vedtektene ikke er fullstendig ferdigstilt, noe som kan skape uklarhet om rettigheter og plikter.",
+          "evidence": [
+            "Borettslaget utgjør seksjon 1 i _________ eierseksjonsameie",
+            "Andelseiere med parkeringsplass i ______________ garasjesameie gnr _ bnr _ snr 2",
+            "Borettslaget utgjør en av i alt __ sameiere i ___________ avfallssug.",
+            "Vedtektene kan bli revidert frem til overtakelse av boligene."
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            65,
+            69,
+            70
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d153_020",
+          "description": "Innvendig romhøyde er på opptil 2,50 meter i stuen. Dette er i nedre sjikt av hva som er vanlig i nyere boliger, og kan oppleves som lavt av noen kjøpere.",
+          "evidence": [
+            "Innvendig romhøyde på opptil 2,50 meter i stue."
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            24,
+            50
+          ],
+          "details": {
+            "confidence": 0.65
+          }
+        },
+        {
+          "risk_id": "gt_d153_021",
+          "description": "Borettslaget hadde i 2024 ladekostnader for elbil på kr 19 104, en kostnad som ikke var budsjettert. Ettersom alle parkeringsplasser leveres med ladeuttak, kan denne kostnadsposten øke i takt med økt elbilbruk og belaste felleskostnadene.",
+          "evidence": [
+            "Ladekostnader EL-bil: -19 104 (Regnskap 2024) vs. 0 (Budsjett 2024)",
+            "Samtlige parkeringsplasser i garasjeanlegget leveres med ladeuttak for el-bil/ladbar hybridbil."
+          ],
+          "source_documents": [
+            "d153.pdf"
+          ],
+          "source_pages": [
+            61,
+            70
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b_risk_007",
+            "description": "Høye finanskostnader i borettslaget – finanskostnadene for 2024 var kr 24 237 543, noe som er svært høyt sammenlignet med driftskostnadene på kr 7 827 296. Dette gjenspeiler den høye fellesgjelden og innebærer risiko for økte felleskostnader dersom renten stiger eller driftsforholdene endres.",
+            "evidence": [
+              "Finanskostnader 13 -24 237 543 -20 629 126 -24 984 000 -24 279 000",
+              "SUM DRIFTSKOSTNADER -7 827 296 -6 474 131 -7 701 200 -8 526 000",
+              "RES. FINANSINNT./-KOSTNADER -24 180 006 -20 586 509 -24 984 000 -24 279 000"
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder årsregnskapet for Høvleriet Borettslag 2024, som tydelig viser finanskostnader på kr 24 237 543 og sum driftskostnader på kr 7 827 296. Finanskostnadene er altså over tre ganger høyere enn driftskostnadene, noe som gjenspeiler den høye fellesgjelden (totalt lån med restsaldo på 403 615 000 kr). Dokumentet bekrefter også at lånet er avdragsfritt frem til februar 2028, og at felleskostnadene vil øke med estimert kr 1 600 per måned for denne leiligheten etter avdragsfrihetsperioden. Risikoen for økte felleskostnader ved renteendringer er reell og underbygges av dokumentet."
+        },
+        {
+          "risk": {
+            "risk_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b_risk_009",
+            "description": "Begrenset utleiemulighet – det er begrenset adgang til å leie ut bolig i borettslag. Korttidsutleie er kun tillatt i opptil 30 døgn per år uten styrets samtykke. Utover dette kreves styregodkjenning, noe som begrenser kjøpers fleksibilitet.",
+            "evidence": [
+              "Adgang til utleie: Det er begrenset adgang til å leie ut bolig i borettslag. Med styrets godkjenning og under [visse vilkår].",
+              "Korttidsutleie er tillatt i opptil 30 døgn per år uten samtykke fra styret."
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt under avsnittet 'Utleie' på side 27: 'Det er begrenset adgang til å leie ut bolig i borettslag. Med styrets godkjenning og under visse vilkår kan boligen leies ut i inntil 3 år, jf. borettslagsloven § 5-3 til § 5-10.' Videre: 'Korttidsutleie er tillatt i opptil 30 døgn per år uten samtykke fra styret.' Dette bekrefter at utleie utover 30 døgn per år krever styregodkjenning, noe som begrenser kjøpers fleksibilitet."
+        },
+        {
+          "risk": {
+            "risk_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b_risk_010",
+            "description": "Styregodkjenning av kjøper kreves – kjøper må godkjennes av borettslagets styre. Selv om styret kun kan nekte godkjenning ved saklig grunnlag, innebærer dette en usikkerhet i kjøpsprosessen.",
+            "evidence": [
+              "Styregodkjennelse: Kjøper må godkjennes av borettslagets styre. Styret kan kun nekte godkjenning dersom det foreligger saklig grunnlag, jf. borettslagsloven."
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter under avsnittet 'Styregodkjennelse' på side 25: 'Kjøper må godkjennes av borettslagets styre. Styret kan kun nekte godkjenning dersom det foreligger saklig grunnlag, jf. borettslagsloven § 4-4.' Dette er også gjentatt i vedtektene (punkt 2-2). Selv om styret kun kan nekte ved saklig grunn, innebærer kravet om godkjenning en reell usikkerhet i kjøpsprosessen."
+        },
+        {
+          "risk": {
+            "risk_id": "35d2fff0-a1b8-449d-9a2c-5ba969ad257b_risk_015",
+            "description": "Skjulte feil og mangler kan forekomme – tilstandsrapporten er basert på visuell observasjon (undersøkelsesnivå 1) og gir ingen garanti mot skjulte feil, skader og mangler. Rapporten beskriver kun synlige avvik.",
+            "evidence": [
+              "Rapporten er likevel ingen garanti for at det ikke kan finnes skjulte feil, skader og mangler.",
+              "Rapporten baseres på undersøkelsesnivå 1 med få unntak (våtrom og rom under terreng). I praksis betyr dette at gjennomføringen av befaringen begrenses.",
+              "Det utføres kun visuelle observasjoner på tilgjengelige flater uten fysiske inngrep (f.eks. riving)."
+            ],
+            "source_documents": [
+              "d153_d153"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Tilstandsrapporten i dokumentet (side 53) bekrefter eksplisitt: 'Rapporten er likevel ingen garanti for at det ikke kan finnes skjulte feil, skader og mangler.' Videre: 'Rapporten baseres på undersøkelsesnivå 1 med få unntak (våtrom og rom under terreng). I praksis betyr dette at gjennomføringen av befaringen begrenses' og 'Det utføres kun visuelle observasjoner på tilgjengelige flater uten fysiske inngrep (f.eks. riving).' Risikoen for skjulte feil og mangler er dermed klart dokumentert og underbygget i rapporten."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "total_support": 21
+      }
+    },
+    "ground_truth": {
+      "run_id": "d13865ad-dfc3-471f-bdd7-b7ffb81dbec5_gt",
+      "system_type": "ground_truth",
+      "overall_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "total_support": 21
+      },
+      "matched_risks": 21,
+      "unmatched_predicted": 0,
+      "unmatched_ground_truth": 0,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "gt_d153_001",
+            "description": "Svært høy fellesgjeld på kr 1 920 000 per andel, noe som gir en totalpris på over 4 millioner kroner. Fellesgjelden utgjør nesten like mye som prisantydningen (kr 2 090 000), og borettslaget har en samlet restsaldo på hele kr 403 615 000. Dette er en betydelig finansiell risiko for kjøper.",
+            "evidence": [
+              "Fellesgjeld: Kr 1 920 000 pr. 17.02.2026",
+              "Totalpris: 4 020 390,-",
+              "Lån nr: 9820807361; IN lån 1 - Restsaldo 403 615 000,00",
+              "Borettslaget fremstår med en solid økonomi, men har høy samlet fellesgjeld, noe som er normalt for nyere borettslag."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              6,
+              21,
+              25
+            ],
+            "confidence": 0.98,
+            "details": {
+              "confidence": 0.98
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_001",
+            "description": "Svært høy fellesgjeld på kr 1 920 000 per andel, noe som gir en totalpris på over 4 millioner kroner. Fellesgjelden utgjør nesten like mye som prisantydningen (kr 2 090 000), og borettslaget har en samlet restsaldo på hele kr 403 615 000. Dette er en betydelig finansiell risiko for kjøper.",
+            "evidence": [
+              "Fellesgjeld: Kr 1 920 000 pr. 17.02.2026",
+              "Totalpris: 4 020 390,-",
+              "Lån nr: 9820807361; IN lån 1 - Restsaldo 403 615 000,00",
+              "Borettslaget fremstår med en solid økonomi, men har høy samlet fellesgjeld, noe som er normalt for nyere borettslag."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              6,
+              21,
+              25
+            ],
+            "details": {
+              "confidence": 0.98
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d153_002",
+            "description": "Avdragsfrihet på fellesgjelden løper kun til februar 2028, hvoretter felleskostnadene vil øke med estimert kr 1 600 per måned for denne andelen. Kjøper må være forberedt på en vesentlig økning i månedlige kostnader innen kort tid.",
+            "evidence": [
+              "Lånet er avdragsfritt frem til februar 2028.",
+              "Etter at perioden med avdragsfrihet er over, vil felleskostnadene for leiligheten øke. Den estimerte månedlige økningen er på kr 1600 for denne leiligheten (avrundet til nærmeste 50 kroner).",
+              "Det presiseres at den estimerte endringen i felleskostnadene forutsetter at lånets avdrags- og rentebetingelser forblir uendret.",
+              "Styret i borettslaget vil avgjøre om og når felleskostnadene skal økes."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              21,
+              22
+            ],
+            "confidence": 0.98,
+            "details": {
+              "confidence": 0.98
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_002",
+            "description": "Avdragsfrihet på fellesgjelden løper kun til februar 2028, hvoretter felleskostnadene vil øke med estimert kr 1 600 per måned for denne andelen. Kjøper må være forberedt på en vesentlig økning i månedlige kostnader innen kort tid.",
+            "evidence": [
+              "Lånet er avdragsfritt frem til februar 2028.",
+              "Etter at perioden med avdragsfrihet er over, vil felleskostnadene for leiligheten øke. Den estimerte månedlige økningen er på kr 1600 for denne leiligheten (avrundet til nærmeste 50 kroner).",
+              "Det presiseres at den estimerte endringen i felleskostnadene forutsetter at lånets avdrags- og rentebetingelser forblir uendret.",
+              "Styret i borettslaget vil avgjøre om og når felleskostnadene skal økes."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              21,
+              22
+            ],
+            "details": {
+              "confidence": 0.98
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d153_003",
+            "description": "Felleskostnadene er allerede høye (kr 10 570 per måned) og kan øke ytterligere som følge av beslutninger i styret eller generalforsamlingen, renteendringer på fellesgjelden (flytende rente 4,79 %), eller økte driftskostnader. Kjøper har begrenset kontroll over denne kostnadsposten.",
+            "evidence": [
+              "Felleskostnader kr 10 570,- pr. mnd",
+              "Type rente: Flytende rente",
+              "Rentesats: 4,79%",
+              "Kjøperen må være inneforstått med at fellesgjelden i borettslaget og fellesutgiftene kan variere over tid, også at den kan øke som følge av beslutninger i sameiets styre eller generalforsamlinger.",
+              "Vi gjør oppmerksom på at vi kan ha mottatt varsel om renteendring eller nye lån som ikke er iverksatt pr dags dato."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              21,
+              22
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_003",
+            "description": "Felleskostnadene er allerede høye (kr 10 570 per måned) og kan øke ytterligere som følge av beslutninger i styret eller generalforsamlingen, renteendringer på fellesgjelden (flytende rente 4,79 %), eller økte driftskostnader. Kjøper har begrenset kontroll over denne kostnadsposten.",
+            "evidence": [
+              "Felleskostnader kr 10 570,- pr. mnd",
+              "Type rente: Flytende rente",
+              "Rentesats: 4,79%",
+              "Kjøperen må være inneforstått med at fellesgjelden i borettslaget og fellesutgiftene kan variere over tid, også at den kan øke som følge av beslutninger i sameiets styre eller generalforsamlinger.",
+              "Vi gjør oppmerksom på at vi kan ha mottatt varsel om renteendring eller nye lån som ikke er iverksatt pr dags dato."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              21,
+              22
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d153_004",
+            "description": "Boligen er ervervet av selger (OBOS BBL) som del av en Deleie-ordning, og OBOS BBL har ikke bebodd boligen. OBOS BBL kjenner derfor ikke boligen utover tilstandsrapport og salgsoppgave, og kan i begrenset grad supplere og kontrollere opplysningene. Dette øker risikoen for at skjulte feil og mangler ikke er avdekket.",
+            "evidence": [
+              "Boligen er ervervet av selger som del av OBOS sin Deleie-ordning. OBOS BBL har derfor ikke bebodd boligen som er lagt ut for salg og kjenner derfor ikke denne utover beskrivelser i tilstandsrapport og salgsoppgave.",
+              "Av samme grunn kan OBOS BBL i begrenset grad supplere og kontrollere opplysningene i tilstandsrapport og salgsoppgave. Kjøper oppfordres derfor til å gjøre en særlig grundig undersøkelse."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              27
+            ],
+            "confidence": 0.92,
+            "details": {
+              "confidence": 0.92
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_004",
+            "description": "Boligen er ervervet av selger (OBOS BBL) som del av en Deleie-ordning, og OBOS BBL har ikke bebodd boligen. OBOS BBL kjenner derfor ikke boligen utover tilstandsrapport og salgsoppgave, og kan i begrenset grad supplere og kontrollere opplysningene. Dette øker risikoen for at skjulte feil og mangler ikke er avdekket.",
+            "evidence": [
+              "Boligen er ervervet av selger som del av OBOS sin Deleie-ordning. OBOS BBL har derfor ikke bebodd boligen som er lagt ut for salg og kjenner derfor ikke denne utover beskrivelser i tilstandsrapport og salgsoppgave.",
+              "Av samme grunn kan OBOS BBL i begrenset grad supplere og kontrollere opplysningene i tilstandsrapport og salgsoppgave. Kjøper oppfordres derfor til å gjøre en særlig grundig undersøkelse."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              27
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d153_005",
+            "description": "OBOS BBL har forkjøpsrett på beste prioritet som sameier i Deleie-boligen, gjennom borettslagets vedtekter samt tinglyst forkjøpsrett. Dette innebærer at OBOS kan overta boligen til akseptert budpris innen 20 dager etter budaksept, noe som kan forsinke eller avbryte kjøpsprosessen for andre budgivere.",
+            "evidence": [
+              "OBOS har forkjøpsrett på beste prioritet som sameier i Deleie-boligen, gjennom borettslagets vedtekter, samt tinglyst forkjøpsrett.",
+              "Fristen for å gjøre forkjøpsretten gjeldende er 20 dager etter budaksept.",
+              "OBOS vil ikke akseptere bud med forbehold om finansiering."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              25,
+              27
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_005",
+            "description": "OBOS BBL har forkjøpsrett på beste prioritet som sameier i Deleie-boligen, gjennom borettslagets vedtekter samt tinglyst forkjøpsrett. Dette innebærer at OBOS kan overta boligen til akseptert budpris innen 20 dager etter budaksept, noe som kan forsinke eller avbryte kjøpsprosessen for andre budgivere.",
+            "evidence": [
+              "OBOS har forkjøpsrett på beste prioritet som sameier i Deleie-boligen, gjennom borettslagets vedtekter, samt tinglyst forkjøpsrett.",
+              "Fristen for å gjøre forkjøpsretten gjeldende er 20 dager etter budaksept.",
+              "OBOS vil ikke akseptere bud med forbehold om finansiering."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              25,
+              27
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d153_006",
+            "description": "Varmesentral og varmtvannstank er ikke vurdert av takstmann (TGIU) da dette anses som felles ansvarsområde. Tilstanden på disse kritiske tekniske installasjonene er dermed ukjent for kjøper, og eventuelle feil eller behov for utskiftning vil belastes borettslaget og dermed indirekte kjøper gjennom felleskostnader.",
+            "evidence": [
+              "Tekniske installasjoner > Varmesentral - Leiligheten blir oppvarmet med radiatorer via sentralfyr. Tilstandsgrad er ikke vurdert da det vurderes som felles ansvarsområde.",
+              "Tekniske installasjoner > Varmtvannstank - Felles varmtvannsystem. Tilstandsgrad er ikke vurdert da det vurderes som felles ansvarsområde.",
+              "KONSTRUKSJONER SOM IKKE ER UNDERSØKT: Tekniske installasjoner > Varmesentral, Tekniske installasjoner > Varmtvannstank"
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              24,
+              44
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_006",
+            "description": "Varmesentral og varmtvannstank er ikke vurdert av takstmann (TGIU) da dette anses som felles ansvarsområde. Tilstanden på disse kritiske tekniske installasjonene er dermed ukjent for kjøper, og eventuelle feil eller behov for utskiftning vil belastes borettslaget og dermed indirekte kjøper gjennom felleskostnader.",
+            "evidence": [
+              "Tekniske installasjoner > Varmesentral - Leiligheten blir oppvarmet med radiatorer via sentralfyr. Tilstandsgrad er ikke vurdert da det vurderes som felles ansvarsområde.",
+              "Tekniske installasjoner > Varmtvannstank - Felles varmtvannsystem. Tilstandsgrad er ikke vurdert da det vurderes som felles ansvarsområde.",
+              "KONSTRUKSJONER SOM IKKE ER UNDERSØKT: Tekniske installasjoner > Varmesentral, Tekniske installasjoner > Varmtvannstank"
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              24,
+              44
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d153_007",
+            "description": "Radonmåling er ikke utført. Selv om det ikke er krav om dette for boliger som ikke er utleid, kan radonkonsentrasjon i inneluften utgjøre en helserisiko. Takstmann bemerker at radonkontroll bør kontrolleres på generelt grunnlag.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Det er ukjent for undertegnende vdr. grunnforhold og radonkontroll bør kontrolleres på generelt grunnlag."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              27,
+              42
+            ],
+            "confidence": 0.82,
+            "details": {
+              "confidence": 0.82
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_007",
+            "description": "Radonmåling er ikke utført. Selv om det ikke er krav om dette for boliger som ikke er utleid, kan radonkonsentrasjon i inneluften utgjøre en helserisiko. Takstmann bemerker at radonkontroll bør kontrolleres på generelt grunnlag.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Det er ukjent for undertegnende vdr. grunnforhold og radonkontroll bør kontrolleres på generelt grunnlag."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              27,
+              42
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d153_008",
+            "description": "Boligen selges som del av en Deleie-ordning der OBOS BBL eier 30 % og Line Eilertsen eier 70 % av andelen. Dette medfører særlige vilkår om forkjøpsrett og prisregulering, og kjøper må forholde seg til komplekse avtalevilkår knyttet til Deleie-ordningen.",
+            "evidence": [
+              "Eier av adkomstdokumenter: Eilertsen Line 70%, Obos Bbl 30%.",
+              "For andeler som er solgt på OBOS Deleie-vilkår gjelder følgende: Disse andelene eies delvis av OBOS BBL og delvis av en fysisk deleier.",
+              "Ved ethvert eierskifte av en eierandel i en andel med OBOS Deleie-vilkår, har OBOS eller den som OBOS utpeker, forkjøpsrett på beste prioritet."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              25,
+              51,
+              67
+            ],
+            "confidence": 0.93,
+            "details": {
+              "confidence": 0.93
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_008",
+            "description": "Boligen selges som del av en Deleie-ordning der OBOS BBL eier 30 % og Line Eilertsen eier 70 % av andelen. Dette medfører særlige vilkår om forkjøpsrett og prisregulering, og kjøper må forholde seg til komplekse avtalevilkår knyttet til Deleie-ordningen.",
+            "evidence": [
+              "Eier av adkomstdokumenter: Eilertsen Line 70%, Obos Bbl 30%.",
+              "For andeler som er solgt på OBOS Deleie-vilkår gjelder følgende: Disse andelene eies delvis av OBOS BBL og delvis av en fysisk deleier.",
+              "Ved ethvert eierskifte av en eierandel i en andel med OBOS Deleie-vilkår, har OBOS eller den som OBOS utpeker, forkjøpsrett på beste prioritet."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              25,
+              51,
+              67
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d153_009",
+            "description": "Minimumsbeløpet for innbetaling ved bruk av IN-ordningen (individuell nedbetaling av fellesgjeld) er ikke oppgitt i salgsoppgaven – feltet er angitt som '[X]'. Kjøper mangler dermed viktig informasjon for å vurdere muligheten for å nedbetale sin andel av fellesgjelden.",
+            "evidence": [
+              "Minimumsbeløpet for hver innbetaling er kr. [X],- per gang. For mer detaljert informasjon, vennligst se skriv fra forretningsfører."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              21
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_009",
+            "description": "Minimumsbeløpet for innbetaling ved bruk av IN-ordningen (individuell nedbetaling av fellesgjeld) er ikke oppgitt i salgsoppgaven – feltet er angitt som '[X]'. Kjøper mangler dermed viktig informasjon for å vurdere muligheten for å nedbetale sin andel av fellesgjelden.",
+            "evidence": [
+              "Minimumsbeløpet for hver innbetaling er kr. [X],- per gang. For mer detaljert informasjon, vennligst se skriv fra forretningsfører."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              21
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d153_010",
+            "description": "Borettslaget er involvert i et komplekst sameieforhold med næringsseksjon (parkeringsareal), utomhussameie, avfallssugsameie og garasjesameie. Kostnader og forpliktelser knyttet til disse sameierne kan påvirke felleskostnadene og er ikke fullt ut transparent for kjøper.",
+            "evidence": [
+              "Borettslaget utgjør seksjon 1 i eierseksjonsameie, som i tillegg til borettslagets samleseksjon for 206 boliger, består av seksjon 2 som er en næringsseksjon. Næringsseksjonen utgjør parkeringsarealet i garasjekjeller.",
+              "Borettslaget er også deleier i utomhussameiet på dagens gnr 81 bnr 2701 sammen med boligselskapene...",
+              "Borettslaget utgjør en av i alt __ sameiere i ___________ avfallssug.",
+              "Kostnader sameie: -1 882 261 (2024)"
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              26,
+              61,
+              65
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_010",
+            "description": "Borettslaget er involvert i et komplekst sameieforhold med næringsseksjon (parkeringsareal), utomhussameie, avfallssugsameie og garasjesameie. Kostnader og forpliktelser knyttet til disse sameierne kan påvirke felleskostnadene og er ikke fullt ut transparent for kjøper.",
+            "evidence": [
+              "Borettslaget utgjør seksjon 1 i eierseksjonsameie, som i tillegg til borettslagets samleseksjon for 206 boliger, består av seksjon 2 som er en næringsseksjon. Næringsseksjonen utgjør parkeringsarealet i garasjekjeller.",
+              "Borettslaget er også deleier i utomhussameiet på dagens gnr 81 bnr 2701 sammen med boligselskapene...",
+              "Borettslaget utgjør en av i alt __ sameiere i ___________ avfallssug.",
+              "Kostnader sameie: -1 882 261 (2024)"
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              26,
+              61,
+              65
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d153_011",
+            "description": "Det medfølger ikke parkeringsplass med boligen. Kjøper må eventuelt leie garasjeplass ved tilgjengelighet, noe som ikke er garantert. Dette kan være en ulempe, særlig for kjøpere med bil.",
+            "evidence": [
+              "Det medfølger ikke parkeringsplass. Det kan være muligheter for å leie garasjeplass ved tilgjengelighet.",
+              "Borettslaget har flere gjesteplasser i garasjeanlegget."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              22
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_011",
+            "description": "Det medfølger ikke parkeringsplass med boligen. Kjøper må eventuelt leie garasjeplass ved tilgjengelighet, noe som ikke er garantert. Dette kan være en ulempe, særlig for kjøpere med bil.",
+            "evidence": [
+              "Det medfølger ikke parkeringsplass. Det kan være muligheter for å leie garasjeplass ved tilgjengelighet.",
+              "Borettslaget har flere gjesteplasser i garasjeanlegget."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              22
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d153_012",
+            "description": "Selger (OBOS BBL) vil ikke akseptere bud med forbehold om finansiering. Dette innebærer at kjøper må ha finansieringen fullstendig på plass før bud inngis, noe som øker risikoen for kjøper dersom finansieringen ikke er avklart.",
+            "evidence": [
+              "OBOS vil ikke akseptere bud med forbehold om finansiering."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              27
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_012",
+            "description": "Selger (OBOS BBL) vil ikke akseptere bud med forbehold om finansiering. Dette innebærer at kjøper må ha finansieringen fullstendig på plass før bud inngis, noe som øker risikoen for kjøper dersom finansieringen ikke er avklart.",
+            "evidence": [
+              "OBOS vil ikke akseptere bud med forbehold om finansiering."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              27
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d153_013",
+            "description": "Selger kan velge å prioritere bud fra ikke-forbrukere (næringsdrivende) fremfor forbrukerbud, selv om forbrukerbudet er høyere. Dette kan sette ordinære boligkjøpere i en ugunstig posisjon i budrunden.",
+            "evidence": [
+              "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud. Når kjøper ikke er forbruker, kan selges ansvar begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              28
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_013",
+            "description": "Selger kan velge å prioritere bud fra ikke-forbrukere (næringsdrivende) fremfor forbrukerbud, selv om forbrukerbudet er høyere. Dette kan sette ordinære boligkjøpere i en ugunstig posisjon i budrunden.",
+            "evidence": [
+              "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud. Når kjøper ikke er forbruker, kan selges ansvar begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              28
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d153_014",
+            "description": "El-anlegget er kun vurdert på det laveste inspeksjonsnivå med visuell kontroll. Det tas særskilt forbehold for underliggende feil og mangler som ikke kan kontrolleres grunnet skjult konstruksjon. Det foreligger heller ikke el-tilsynsrapport fra de siste 5 år.",
+            "evidence": [
+              "Det elektriske vurdert på det laveste inspeksjonsnivå med kun en visuell kontroll der el-kontroll må utføres for faktisk tilstand på anlegget.",
+              "Foreligger det el-tilsynsrapport de siste 5 år... Nei",
+              "Med tanke på fremlagt dokumentasjon og utførte sjekkpunkter er anlegget vurdert til tiltenkt funksjon, men det tas særskilt forbehold for underliggende feil og mangler som ikke kan kontrolleres grunnet skjult i konstruksjonen."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              47
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_014",
+            "description": "El-anlegget er kun vurdert på det laveste inspeksjonsnivå med visuell kontroll. Det tas særskilt forbehold for underliggende feil og mangler som ikke kan kontrolleres grunnet skjult konstruksjon. Det foreligger heller ikke el-tilsynsrapport fra de siste 5 år.",
+            "evidence": [
+              "Det elektriske vurdert på det laveste inspeksjonsnivå med kun en visuell kontroll der el-kontroll må utføres for faktisk tilstand på anlegget.",
+              "Foreligger det el-tilsynsrapport de siste 5 år... Nei",
+              "Med tanke på fremlagt dokumentasjon og utførte sjekkpunkter er anlegget vurdert til tiltenkt funksjon, men det tas særskilt forbehold for underliggende feil og mangler som ikke kan kontrolleres grunnet skjult i konstruksjonen."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              47
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d153_015",
+            "description": "Tomten var snødekket på befaringsdagen og er ikke videre vurdert eller beskrevet av takstmann. Eventuelle feil, skader eller ugunstige forhold ved tomten kan dermed ikke utelukkes.",
+            "evidence": [
+              "Snødekket tomt på befaringsdagen og er ikke videre vurdert eller beskrevet."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              51
+            ],
+            "confidence": 0.72,
+            "details": {
+              "confidence": 0.72
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_015",
+            "description": "Tomten var snødekket på befaringsdagen og er ikke videre vurdert eller beskrevet av takstmann. Eventuelle feil, skader eller ugunstige forhold ved tomten kan dermed ikke utelukkes.",
+            "evidence": [
+              "Snødekket tomt på befaringsdagen og er ikke videre vurdert eller beskrevet."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              51
+            ],
+            "details": {
+              "confidence": 0.72
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d153_016",
+            "description": "Borettslaget hadde i 2024 energi- og fyringskostnader på kr 1 185 042, som er betydelig høyere enn budsjettert (kr 550 000) og høyere enn 2023-nivå (kr 899 382). Dette kan indikere økte energikostnader som kan påvirke fremtidige felleskostnader negativt.",
+            "evidence": [
+              "Energi/fyring: -1 185 042 (Regnskap 2024) vs. -899 382 (Regnskap 2023) vs. -550 000 (Budsjett 2024)",
+              "Budsjett 2025 for energi/fyring: -850 000"
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              61
+            ],
+            "confidence": 0.82,
+            "details": {
+              "confidence": 0.82
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_016",
+            "description": "Borettslaget hadde i 2024 energi- og fyringskostnader på kr 1 185 042, som er betydelig høyere enn budsjettert (kr 550 000) og høyere enn 2023-nivå (kr 899 382). Dette kan indikere økte energikostnader som kan påvirke fremtidige felleskostnader negativt.",
+            "evidence": [
+              "Energi/fyring: -1 185 042 (Regnskap 2024) vs. -899 382 (Regnskap 2023) vs. -550 000 (Budsjett 2024)",
+              "Budsjett 2025 for energi/fyring: -850 000"
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              61
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d153_017",
+            "description": "Kommunale avgifter er inkludert i felleskostnadene, men borettslaget hadde i 2024 kommunale avgifter på kr 2 393 415, som er vesentlig lavere enn budsjettert for 2024 (kr 3 390 000) og 2025 (kr 3 809 000). En slik økning i kommunale avgifter vil kunne medføre økte felleskostnader.",
+            "evidence": [
+              "Kommunale avgifter: -2 393 415 (Regnskap 2024) vs. -3 390 000 (Budsjett 2024) vs. -3 809 000 (Budsjett 2025)",
+              "Kommunale avgifter: Informasjon: Inkludert i felleskostnadene."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              21,
+              61
+            ],
+            "confidence": 0.83,
+            "details": {
+              "confidence": 0.83
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_017",
+            "description": "Kommunale avgifter er inkludert i felleskostnadene, men borettslaget hadde i 2024 kommunale avgifter på kr 2 393 415, som er vesentlig lavere enn budsjettert for 2024 (kr 3 390 000) og 2025 (kr 3 809 000). En slik økning i kommunale avgifter vil kunne medføre økte felleskostnader.",
+            "evidence": [
+              "Kommunale avgifter: -2 393 415 (Regnskap 2024) vs. -3 390 000 (Budsjett 2024) vs. -3 809 000 (Budsjett 2025)",
+              "Kommunale avgifter: Informasjon: Inkludert i felleskostnadene."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              21,
+              61
+            ],
+            "details": {
+              "confidence": 0.83
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d153_018",
+            "description": "Borettslaget har en sikringsordning med OBOS Factoring for garantert betaling av felleskostnader, men avtalen kan sies opp med 6 måneders varsel. Dersom avtalen opphører, kan manglende innbetaling fra andre andelshavere måtte dekkes av de øvrige andelseierne.",
+            "evidence": [
+              "Avtale om sikring av felleskostnader varer til den blir sagt opp av en av partene. Oppsigelsestiden er seks - 6 - måneder regnet fra oppsigelsesdato.",
+              "Manglende innbetaling av fellesutgiftene som følge av andre andelshaveres mislighold, eller dersom borettslaget sitter på fraflyttede og/eller usolgte andeler, må dekkes av de øvrige andelseierne."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              22,
+              27
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_018",
+            "description": "Borettslaget har en sikringsordning med OBOS Factoring for garantert betaling av felleskostnader, men avtalen kan sies opp med 6 måneders varsel. Dersom avtalen opphører, kan manglende innbetaling fra andre andelshavere måtte dekkes av de øvrige andelseierne.",
+            "evidence": [
+              "Avtale om sikring av felleskostnader varer til den blir sagt opp av en av partene. Oppsigelsestiden er seks - 6 - måneder regnet fra oppsigelsesdato.",
+              "Manglende innbetaling av fellesutgiftene som følge av andre andelshaveres mislighold, eller dersom borettslaget sitter på fraflyttede og/eller usolgte andeler, må dekkes av de øvrige andelseierne."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              22,
+              27
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d153_019",
+            "description": "Vedtektene for borettslaget inneholder flere ufylte felter (blanke streker og manglende navn på garasjesameie, eierseksjonssameie og avfallssug). Dette kan indikere at vedtektene ikke er fullstendig ferdigstilt, noe som kan skape uklarhet om rettigheter og plikter.",
+            "evidence": [
+              "Borettslaget utgjør seksjon 1 i _________ eierseksjonsameie",
+              "Andelseiere med parkeringsplass i ______________ garasjesameie gnr _ bnr _ snr 2",
+              "Borettslaget utgjør en av i alt __ sameiere i ___________ avfallssug.",
+              "Vedtektene kan bli revidert frem til overtakelse av boligene."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              65,
+              69,
+              70
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_019",
+            "description": "Vedtektene for borettslaget inneholder flere ufylte felter (blanke streker og manglende navn på garasjesameie, eierseksjonssameie og avfallssug). Dette kan indikere at vedtektene ikke er fullstendig ferdigstilt, noe som kan skape uklarhet om rettigheter og plikter.",
+            "evidence": [
+              "Borettslaget utgjør seksjon 1 i _________ eierseksjonsameie",
+              "Andelseiere med parkeringsplass i ______________ garasjesameie gnr _ bnr _ snr 2",
+              "Borettslaget utgjør en av i alt __ sameiere i ___________ avfallssug.",
+              "Vedtektene kan bli revidert frem til overtakelse av boligene."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              65,
+              69,
+              70
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d153_020",
+            "description": "Innvendig romhøyde er på opptil 2,50 meter i stuen. Dette er i nedre sjikt av hva som er vanlig i nyere boliger, og kan oppleves som lavt av noen kjøpere.",
+            "evidence": [
+              "Innvendig romhøyde på opptil 2,50 meter i stue."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              24,
+              50
+            ],
+            "confidence": 0.65,
+            "details": {
+              "confidence": 0.65
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_020",
+            "description": "Innvendig romhøyde er på opptil 2,50 meter i stuen. Dette er i nedre sjikt av hva som er vanlig i nyere boliger, og kan oppleves som lavt av noen kjøpere.",
+            "evidence": [
+              "Innvendig romhøyde på opptil 2,50 meter i stue."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              24,
+              50
+            ],
+            "details": {
+              "confidence": 0.65
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d153_021",
+            "description": "Borettslaget hadde i 2024 ladekostnader for elbil på kr 19 104, en kostnad som ikke var budsjettert. Ettersom alle parkeringsplasser leveres med ladeuttak, kan denne kostnadsposten øke i takt med økt elbilbruk og belaste felleskostnadene.",
+            "evidence": [
+              "Ladekostnader EL-bil: -19 104 (Regnskap 2024) vs. 0 (Budsjett 2024)",
+              "Samtlige parkeringsplasser i garasjeanlegget leveres med ladeuttak for el-bil/ladbar hybridbil."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              61,
+              70
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d153_021",
+            "description": "Borettslaget hadde i 2024 ladekostnader for elbil på kr 19 104, en kostnad som ikke var budsjettert. Ettersom alle parkeringsplasser leveres med ladeuttak, kan denne kostnadsposten øke i takt med økt elbilbruk og belaste felleskostnadene.",
+            "evidence": [
+              "Ladekostnader EL-bil: -19 104 (Regnskap 2024) vs. 0 (Budsjett 2024)",
+              "Samtlige parkeringsplasser i garasjeanlegget leveres med ladeuttak for el-bil/ladbar hybridbil."
+            ],
+            "source_documents": [
+              "d153.pdf"
+            ],
+            "source_pages": [
+              61,
+              70
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [],
+      "unmatched_ground_truth_risks": [],
+      "verified_unmatched": [],
+      "adjusted_metrics": null
+    }
+  },
+  "best_system": "ground_truth",
+  "statistical_tests": {
+    "standard_rag_vs_agentic_rag_P+T+R": 1.0,
+    "standard_rag_vs_ground_truth": 1.0,
+    "agentic_rag_P+T+R_vs_ground_truth": 1.0
+  },
+  "record_id": "b554d5f5-bb38-470b-a2f2-06ec01fe9703",
+  "query": "Identifiser risikoer i salgsoppgaven",
+  "document_set_id": "d153",
+  "timestamp": "2026-03-25T10:05:18.326135",
+  "risk_summaries": [
+    {
+      "system_type": "standard_rag",
+      "total_risks": 11,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "agentic_rag_P+T+R",
+      "total_risks": 17,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "ground_truth",
+      "total_risks": 21,
+      "risks_by_category": {}
+    }
+  ],
+  "has_ground_truth": true,
+  "overlapping_risk_count": 12,
+  "unique_to": {
+    "standard_rag": 8,
+    "agentic_rag_P+T+R": 7,
+    "ground_truth": 10
+  },
+  "record_type": "comparison"
+}

@@ -1,0 +1,3701 @@
+{
+  "system_results": {
+    "standard_rag": {
+      "run_id": "16d0e2be-75fe-4e39-ac7f-10d4ce361bbe",
+      "system_type": "standard_rag",
+      "overall_metrics": {
+        "precision": 0.6,
+        "recall": 0.16666666666666666,
+        "f1": 0.2608695652173913,
+        "total_support": 36
+      },
+      "matched_risks": 6,
+      "unmatched_predicted": 4,
+      "unmatched_ground_truth": 30,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "16d0e2be-75fe-4e39-ac7f-10d4ce361bbe_risk_000",
+            "description": "Selger har ikke tegnet boligselgerforsikring, noe som øker kjøpers risiko ved eventuelle skjulte feil og mangler etter overtakelse.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring.",
+              "Jeg ønsker ikke boligselgerforsikring, men megler har tilbudt meg å kjøpe slik forsikring."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.98,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_022",
+            "description": "Selger har ikke tegnet boligselgerforsikring: Kjøper har ikke den ekstra beskyttelsen som boligselgerforsikring gir ved eventuelle mangelskrav.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              68
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "16d0e2be-75fe-4e39-ac7f-10d4ce361bbe_risk_001",
+            "description": "Selger har ikke utført radonmåling. Manglende radonmåling kan innebære helserisiko for kjøper, særlig dersom boligen er eller blir utleid.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_021",
+            "description": "Ingen radonmåling utført: Selger har ikke utført radonmåling, noe som innebærer usikkerhet om radonkonsentrasjonen i boligen.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? – Nei"
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              68,
+              76
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "16d0e2be-75fe-4e39-ac7f-10d4ce361bbe_risk_002",
+            "description": "Det elektriske anlegget er ikke faglig vurdert av autorisert elektrovirksomhet. Tilstandsrapporten påpeker at el-anlegget kun er begrenset kontrollert, og anbefaler full kontroll. Dette utgjør en potensiell sikkerhetsrisiko.",
+            "evidence": [
+              "Undertegnede har ikke elektrokompetanse, og det elektriske anlegget er derfor ikke faglig vurdert.",
+              "Det elektriske er veldig begrenset kontrollert i forbindelse med rapporten da dette krever Nemko godkjent kompetanse.",
+              "På generelt grunnlag anbefales det kontroll av el-anlegget av autorisert [elektrovirksomhet].",
+              "og mangler som en slik forenklet undersøkelse ikke vil avdekke. Vær derfor oppmerksom på denne risikoen."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_002",
+            "description": "Elektrisk anlegg uten fullstendig dokumentasjon / samsvarserklæring: Det foreligger ikke samsvarserklæring for hele det elektriske anlegget. Leiligheten har hatt flere eiere og det er ukjent hva som er gjort av tidligere eiere. Takstmann anbefaler utvidet el-kontroll.",
+            "evidence": [
+              "Leiligheten har hatt flere eiere, ukjent hva som er gjort av tidligere eier da det ikke foreligger dokumentasjon/samsvarserklæringer på hele det elektriske anlegget.",
+              "Er alle elektriske arbeider/anlegg i boligen utført av en registrert elektroinstallasjonsvirksomhet? – Ukjent",
+              "Foreta en helhetsvurdering av det elektriske anlegget, dets alder, allmenne tilstand og fare for liv og helse. Bør det elektriske anlegget ha en utvidet el-kontroll? – Ja",
+              "Det er montert spotteskinner i stue. Ellers er alt slik det var ved kjøp. Samsvarserklæring medfulgte leilighet fra 2022.",
+              "Det tas forbehold om at det kan være utført andre arbeider på det elektriske anlegget som ikke har samsvarserklæring."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              60,
+              61,
+              62,
+              75,
+              92
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "16d0e2be-75fe-4e39-ac7f-10d4ce361bbe_risk_003",
+            "description": "Innebygget sisterne på bad mangler tilfredsstillende dreneringsløsning/lekkasjesikring. Lekkasjer kan pågå over lang tid uten å bli oppdaget og føre til omfattende fuktskader.",
+            "evidence": [
+              "Det er ikke påvist tilfredsstillende løsning for å synliggjøre lekkasje fra innebygget sisterne.",
+              "Uten dreneringsløsning/lekkasjesikring kan lekkasjer pågå over lang tid uten å bli oppdaget.",
+              "Dette kan føre til omfattende fuktskader i omkringliggende byggematerialer."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.96,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_004",
+            "description": "Innebygget sisterne uten dreneringsløsning/lekkasjesikring: Lekkasjer kan pågå over lang tid uten å bli oppdaget og føre til omfattende fuktskader.",
+            "evidence": [
+              "Det er ikke påvist tilfredsstillende løsning for å synliggjøre lekkasje fra innebygget sisterne.",
+              "Uten dreneringsløsning/lekkasjesikring kan lekkasjer pågå over lang tid uten å bli oppdaget. Dette kan føre til omfattende fuktskader i omkringliggende byggematerialer."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              63,
+              90
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "16d0e2be-75fe-4e39-ac7f-10d4ce361bbe_risk_004",
+            "description": "Kjøkkenventilatoren har kun omluft/kullfilter og ikke mekanisk avtrekk. Dette tilfredsstiller ikke NS 3600-kravene for TG 0 eller TG 1, og kan medføre dårlig inneklima og fuktproblemer over tid.",
+            "evidence": [
+              "Kjøkkenet har ventilator med omluft (kullfilter).",
+              "NS 3600 krever mekanisk avtrekk for å kunne gi TG 0 eller TG 1.",
+              "Kjøkkenventilator med kullfilter er vanlig i [eldre boliger]."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_026",
+            "description": "Kjøkkenventilator med kullfilter (omluft) – ikke mekanisk avtrekk: NS 3600 krever mekanisk avtrekk for TG 0 eller TG 1. Det er normalt ikke tillatt med forsert avtrekk til felles kanaler i blokk.",
+            "evidence": [
+              "Kjøkkenet har ventilator med omluft (kullfilter). NS 3600 krever mekanisk avtrekk for å kunne gi TG 0 eller TG 1.",
+              "Det er ikke alltid det er godkjent av borettslagene å koble forsert/mekanisk avtrekk til felles kanaler eller ut av bygningen. Det vil i de tilfeller ikke være mulig å oppnå bedre tilstandsgrad."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              63,
+              91
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "16d0e2be-75fe-4e39-ac7f-10d4ce361bbe_risk_005",
+            "description": "Deler av bygget har ikke vært tilgjengelig for inspeksjon (TGIU – tilstandsgrad ikke undersøkt). Disse delene kan ha feil eller mangler som ikke er avdekket i tilstandsrapporten.",
+            "evidence": [
+              "TGIU står for tilstandsgrad ikke undersøkt, f.eks. fordi en del av bygget ikke har vært tilgjengelig for inspeksjon.",
+              "Disse delene kan dermed ha feil eller mangler som ikke er [avdekket]."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_010",
+            "description": "Pipe og ildsted ikke undersøkt (TGIU): Pipe og ildsted er kun begrenset visuelt kontrollert og anbefales undersøkt av brann-/feievesen før bruk.",
+            "evidence": [
+              "Pipe og ildsted | Boligen har mursteinspipe. Ved ovn i stuen. Pipe og ildsted er begrenset, visuelt kontrollert av takstmannen. Dette anbefales gjort av brann-/feievesen før bruk.",
+              "Boligen har mursteinspipe. Det er en vedovn i stuen."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              63,
+              89
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "16d0e2be-75fe-4e39-ac7f-10d4ce361bbe_risk_006",
+          "description": "Selger kan prioritere bud fra ikke-forbrukere fremfor høyere forbrukerbud, og ved salg til ikke-forbruker kan selgers ansvar begrenses ved at boligen selges 'som den er'. Dette kan svekke kjøpers rettigheter etter avhendingsloven.",
+          "evidence": [
+            "Selger kan velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud.",
+            "Når kjøper ikke er forbruker, kan selgers ansvar begrenses ettersom boligen selges «som den er».",
+            "Selger står fritt til å velge hvilket bud som aksepteres, og er ikke forpliktet [til å akseptere høyeste bud]."
+          ],
+          "source_documents": [
+            "d020_d020"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.85,
+          "details": {}
+        },
+        {
+          "risk_id": "16d0e2be-75fe-4e39-ac7f-10d4ce361bbe_risk_007",
+          "description": "Det eksisterer ingen angrerett ved kjøp av fast eiendom. Kjøper er bundet av akseptert bud og kan ikke trekke seg uten vesentlige konsekvenser.",
+          "evidence": [
+            "Det eksisterer ingen angrerett ved salg/kjøp av fast eiendom."
+          ],
+          "source_documents": [
+            "d020_d020"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.92,
+          "details": {}
+        },
+        {
+          "risk_id": "16d0e2be-75fe-4e39-ac7f-10d4ce361bbe_risk_008",
+          "description": "Dersom kjøper ikke bidrar til gjennomføring av hvitvaskingstiltak (kundetiltak), kan avtalen ikke gjennomføres eller bli forsinket, og selger kan ha rett til å heve avtalen og gjennomføre dekningssalg for kjøpers regning.",
+          "evidence": [
+            "Hvis kjøper ikke bidrar til at megler får gjennomført kundetiltak og dette fører til at avtalen ikke kan gjennomføres eller blir forsinket, er dette et mislighold fra kjøpers side.",
+            "Et vesentlig mislighold kan gi selger rett til å heve avtalen og til å gjennomføre dekningssalg for kjøpers regning."
+          ],
+          "source_documents": [
+            "d020_d020"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "16d0e2be-75fe-4e39-ac7f-10d4ce361bbe_risk_009",
+          "description": "Sentralt varmtvannssystem (ikke egen varmtvannstank). Kjøper er avhengig av fellessystemet, og eventuelle feil eller kostnader knyttet til dette er utenfor kjøpers direkte kontroll.",
+          "evidence": [
+            "Varmtvannstank | Sentralt varmtvannsberedning."
+          ],
+          "source_documents": [
+            "d020_d020"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.72,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d020_001",
+          "description": "Ulovlig planløsning / avvik fra godkjente byggetegninger: Kjøkken er flyttet til stue, og rommet der kjøkkenet opprinnelig var, er innredet som soverom. Byggetegningene stemmer ikke med dagens bruk.",
+          "evidence": [
+            "Det foreligger godkjente og byggemeldte tegninger, men de stemmer ikke med dagens bruk.",
+            "Kjøkken er flyttet til stue, og rom der kjøkken opprinnelig var, er innredet som soverom.",
+            "Leilighetens geometri og sjakter er kontrollert mot original byggetegning og avviker noe fra dagens situasjon."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            58,
+            59,
+            86,
+            95
+          ],
+          "details": {
+            "confidence": 0.97
+          }
+        },
+        {
+          "risk_id": "gt_d020_003",
+          "description": "Badets membran/tettesjikt har passert mer enn halvparten av forventet brukstid: Risiko for vannlekkasjer gjennom vegger og gulv og fuktskader. Hulltaking ikke foretatt da det ikke er fysisk mulig.",
+          "evidence": [
+            "Mer enn halvparten av forventet brukstid er passert på membranløsningen.",
+            "Eldre membraner kan bli sprø og sprekke opp, noe som fører til at de mister sin vanntettende funksjon. Dette kan resultere i vannlekkasjer gjennom vegger og gulv og fuktskader.",
+            "Tilliggende konstruksjoner, bad | Hulltaking er ikke foretatt da det ikke er fysisk mulig pga tilliggende konstruksjoner.",
+            "Det er plastsluk og banemembran med ukjent utførelse."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            62,
+            63,
+            90
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d020_005",
+          "description": "Tidligere vannlekkasje fra øvre leilighet med skader på soverom: Historisk fuktskade som er utbedret, men risiko for skjulte restskader kan ikke utelukkes.",
+          "evidence": [
+            "Det ble fra forrige takstrapport for kjøp av leilighet i feb 2025 opplyst følgende: 'Det er opplyst av hjemmelshaver at det tidligere var en vannlekkasje fra øvre leilighet. Det ble påvist mindre skader på soverom (bak kjøkken). Alt utbedret av forsikringsselskap.'",
+            "Deler av originalt gulv i stue var skjært vekk i stue under parkett. Det var også sprukket maling i tak på samme sted, og på gjesterom.",
+            "I mitt eie er tak malt, og gulvet utbedret av snekkerfirma slik at det originale gulvet ble komplett."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            60,
+            75
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d020_006",
+          "description": "Vinduer fra 1983 har nådd/passert minste forventede brukstid: Fare for punktering av isolerglass og behov for utskifting på sikt.",
+          "evidence": [
+            "Vinduer er av eldre dato og har oppnådd minste forventede brukstid. Det er fare for punktering av isolerglass som følge av alder, og påregnelig med utskiftninger på sikt.",
+            "Vinduer med 3-lags isolerglass fra 1983.",
+            "Normal tid før utskifting av trevinduer er 20–60 år, avhengig av kvalitet, vedlikehold og eksponeringsforhold."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            62,
+            88
+          ],
+          "details": {
+            "confidence": 0.93
+          }
+        },
+        {
+          "risk_id": "gt_d020_007",
+          "description": "Skjevt gulv/etasjeskille: Målt høydeforskjell på mellom 15–30 mm gjennom hele stuerommet, noe som gir TG2.",
+          "evidence": [
+            "Det er målt høydeforskjell på mellom 15-30 mm gjennom hele rommet. Tilstandsgrad 2 gis med bakgrunn i standardens krav til godkjente måleavvik.",
+            "Avviket er målt gjennom stuerommet. Det er påregnelig med stedvis retningsavvik i eldre etasjeskillere av betong."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            62,
+            88,
+            89
+          ],
+          "details": {
+            "confidence": 0.92
+          }
+        },
+        {
+          "risk_id": "gt_d020_008",
+          "description": "Mangelfull ventilasjon i ett eller flere rom: Boligen har naturlig ventilasjon og det er påvist mangelfull ventilasjon. Vedtektene advarer mot montering av elektriske vifter i det naturlige luftesystemet.",
+          "evidence": [
+            "Det er påvist mangelfull ventilasjon på ett eller flere rom i boligen.",
+            "Det bør etableres veggventiler/vindusventiler i alle oppholdsrom som ikke har det.",
+            "Styret ber om at det ikke monteres elektriske vifter i gårdens naturlige luftesystem som er en del av gårdens originale konstruksjon fra den gang bygget var nytt."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            63,
+            91,
+            110
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d020_009",
+          "description": "Vannbåren varme har passert mer enn halvparten av forventet brukstid: Risiko for plutselige skader på eldre anlegg.",
+          "evidence": [
+            "Mer enn halvparten av forventet brukstid er passert på anlegg for vannbåren varme.",
+            "Det er ikke behov for utbedringstiltak siden anlegget fungerer i dag, men ut ifra alder kan skader plutselig oppstå på eldre anlegg."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            63,
+            92
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d020_011",
+          "description": "Planarbeid for utbygging i nærområdet (Bakgårdsslottet): Pågående planarbeid for å videreutvikle bakgårdsdelen av kvartalet (Parkveien 27–31 og Uranienborgveien 5) kan påvirke utsikt, bomiljø og eiendomsverdi.",
+          "evidence": [
+            "Det pågår et planarbeid for å videreutvikle bakgårdsdelen av kvartalet som omfatter Parkveien 29 sammen med naboeiendommene kalt Bakgårdsslottet. Prosjektet er i en tidlig fase, og en utbyggingsavtale skal snart ut på høring for videre politisk behandling.",
+            "Saksnummer 202507404: Parkveien 27-31 – Oppføring av boligbygg med næring – Bygg A, B, C og D i felt 1. Status: Under behandling. Rammetillatelse foreligger.",
+            "Tiltaket omfatter oppføring av fire nye bygg, A, B, C og D, med totalt 47 boenheter fra 2. etasje og oppover samt næringsarealer i første etasje.",
+            "Prosjektet kommer for salg våren 2026, og har estimert overtakelse andre halvår 2028. Byggestart er estimert høsten 2026."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            64,
+            66,
+            67,
+            76
+          ],
+          "details": {
+            "confidence": 0.92
+          }
+        },
+        {
+          "risk_id": "gt_d020_012",
+          "description": "Mulig ulovlig stenging av passasje i nærområdet: Pågående byggesak om mulig ulovlig stenging av passasje ved Uranienborgveien 11.",
+          "evidence": [
+            "Saksnummer 202504957: Uranienborgveien 11 – mulig ulovlig stenging av passasje. Status: Under behandling."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            66
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d020_013",
+          "description": "Riving av bygninger i nærområdet (Parkveien 29 og Uranienborgveien 5): Pågående rivingssak kan medføre støy, støv og endret bomiljø i anleggsperioden.",
+          "evidence": [
+            "Saksnummer 202509657: Parkveien 29 og Uranienborgveien 5 – riving av bygninger. Status: Under behandling."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            66
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d020_014",
+          "description": "Bruksendring av loft til bolig og fasadeendring i nærområdet: Kan påvirke bomiljø og nabolagets karakter.",
+          "evidence": [
+            "Saksnummer 202600295: Hegdehaugsveien 28 – bruksendring av loft til bolig, forlengelse av hovedtrapp og fasadeendring. Status: Under behandling."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            66
+          ],
+          "details": {
+            "confidence": 0.72
+          }
+        },
+        {
+          "risk_id": "gt_d020_015",
+          "description": "Sameiet har ikke sikringsordning: Dersom sameiet ikke kan betjene sin gjeld, er det ingen sikringsordning som beskytter den enkelte seksjonseier.",
+          "evidence": [
+            "Sameiet har ikke sikringsordning."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            56
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d020_016",
+          "description": "Flytende rente på fellesgjeld: Fellesgjelden har flytende rente (6,75%), noe som innebærer risiko for økte felleskostnader ved renteøkning.",
+          "evidence": [
+            "Ettersom sameiets lån har flytende rente, kan fellesutgiftene endres ved rentejusteringer.",
+            "Type rente: Flytende rente",
+            "Rentesats: 6,75%",
+            "Rentesatsen pr. 31.12.24 var 7,30 %."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            55,
+            56,
+            145
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d020_017",
+          "description": "Negativ egenkapital i sameiet (udekket tap): Sameiet har en negativ egenkapital på kr -6 605 226 per 31.12.2024, finansiert gjennom låneopptak.",
+          "evidence": [
+            "Udekket tap betyr at egenkapitalen i selskapet er negativ.",
+            "Udekket tap: -6 605 226 (2024), -7 059 312 (2023)",
+            "Den manglende likviditeten er finansiert ved låneopptak."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            141,
+            144
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d020_018",
+          "description": "Mulighet for individuell nedbetaling (IN-lån) er ikke tilgjengelig: Kjøper kan ikke betale ned sin andel av fellesgjelden individuelt.",
+          "evidence": [
+            "Mulighet for individuell nedbetaling på hele eller deler av fellesgjeld (IN-lån): Nei."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            56
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d020_019",
+          "description": "Arbeid på bad/våtrom utført av ufaglært/på dugnad: Baderomsvifte er byttet av faglært, men på dugnad. Tettesjikt/membran/sluk er ikke oppgradert i forbindelse med dette arbeidet.",
+          "evidence": [
+            "Kjenner du til om det er utført arbeid på bad/våtrom? – Ja, kun av ufaglært/egeninnsats/dugnad",
+            "Beskrivelse: Byttet baderomsvifte. Utført av faglært, men på dugnad.",
+            "Ble tettesjikt/membran/sluk oppgradert/fornyet? – Nei",
+            "Er arbeidet byggemeldt? – Nei"
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            60,
+            75
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d020_020",
+          "description": "Inngangsdør byttet av ufaglært/på dugnad: Inngangsdøren er byttet av en faglært på dugnad, uten at dette er byggemeldt.",
+          "evidence": [
+            "Kjenner du til om ufaglærte har utført arbeid som normalt bør utføres av faglærte? – Ja.",
+            "Beskrivelse av arbeidet: Byttet inngangsdør til leilighet. Kvittering på materialer kan fremvises. Jobben er utført av en faglært på dugnad. Døren er godkjent leilighetsdør iht brannstandard. 30/35db."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            60,
+            75
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d020_023",
+          "description": "Eiendommen er registrert på Byantikvarens gule liste (verneverdig kulturmiljø): Begrensninger på bygningsmessige endringer og vedlikehold som kan påvirke fremtidig bruk og kostnader.",
+          "evidence": [
+            "Eiendommen slår ut på Gul liste med 6 treff vedr. lokalitet og 8 treff vedr. enkeltminne.",
+            "Byantikvarens «gule liste» er en oversikt over kulturminner i Oslo som Byantikvaren anser som verneverdige.",
+            "Uranienborgveien 9 C – D – E – 11 B – C – D – E – F – G er et funksjonalistisk bygårdsanlegg i 6 og 7 etasjer, oppført i 1932 etter tegninger av arkitekt Fritz Jordan."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            66
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d020_024",
+          "description": "Parkeringsplass ikke garantert: Megler har ikke avklart tilgjengelig kapasitet for parkering. Bruksretten er personlig og bortfaller ved framleie av seksjonen.",
+          "evidence": [
+            "Megler har ikke avklart tilgjengelig kapasitet ifm. utarbeidelse av denne salgsoppgaven.",
+            "Bruksretten er personlig og bortfaller ved framleie av seksjonen.",
+            "I følge selger er leieprisen pr. mnd. er kr. 507,-."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            57
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d020_025",
+          "description": "Overflater på bad (vegger, himling og gulv) vurdert med TG2 på grunn av alder: Behov for vedlikehold/oppussing i våtsonen.",
+          "evidence": [
+            "Overflatene ser visuelt bra ut, tilstandsgrad settes av hensyn til alder.",
+            "Det bør vurderes tiltak for å begrense den direkte vannpåkjenningen eller foreta oppussing/vedlikehold i våtsonen som følge av alder på fliser og tettesjikt.",
+            "Enkelt tiltak kan være å sette inn et dusjkabinett."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            62,
+            63,
+            89,
+            90
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d020_027",
+          "description": "Bygget fra 1936 – kun ekspedisjonsdokument, ikke ferdigattest for selve bygget: Ekspedisjonsdokumentet gir ingen garanti for at bygget er oppført i samsvar med tillatelsen og gjeldende regelverk.",
+          "evidence": [
+            "Det foreligger ikke ferdigattest, men et ekspedisjonsdokument datert 30.05.1936.",
+            "At ekspedisjonsdokument eksisterer, gir derimot ingen garanti for at bygget er oppført i samsvar med tillatelsen og gjeldende regelverk, eller at det senere er utført arbeid på bygget som ikke er byggemeldt eller godkjent."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            58
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d020_028",
+          "description": "Energikarakter D (Gul) – relativt lavt energimerke: Boligen har høyere energiforbruk enn nyere boliger, noe som kan medføre høyere driftskostnader.",
+          "evidence": [
+            "Energikarakter: D",
+            "Energifarge: Gul",
+            "Beregnet vektet levert energi i normert klima: 191,16 kWh/m²"
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            6,
+            65,
+            100
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d020_029",
+          "description": "Takkonstruksjon ikke besiktiget: Flat takkonstruksjon er antatt tekket med asfalttakbelegg/folie, men er ikke besiktiget av takstmann. Eventuelle skjulte feil kan ikke utelukkes.",
+          "evidence": [
+            "Takkonstruksjonen er en flat takkonstruksjon, antatt tekket med asfalttakbelegg/folie e.l. Taket ble ikke besiktiget."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            61,
+            86
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d020_030",
+          "description": "Bruksendring av Parkveien 29 fra bolig til restaurant med uteservering: Kan medføre økt støy og trafikk i nærområdet.",
+          "evidence": [
+            "Saksnummer 202508201: Parkveien 29 – bruksendring fra bolig til restaurant med uteservering – fredete 'Romansefabrikken'. Status: Under behandling."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            66
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        },
+        {
+          "risk_id": "gt_d020_031",
+          "description": "Ekstern bod på fellesareal – kan omdisponeres av sameiet: Loftsbod og kjellerbod disponeres av leiligheten, men ligger på fellesareal og kan i prinsippet omdisponeres.",
+          "evidence": [
+            "Det gjøres særskilt oppmerksom på at ekstern bod som er medtatt som BRA-e og i totalt BRA ligger på fellesareal, men disponeres av denne leiligheten.",
+            "Rom utenfor boenheten kan omdisponeres av borettslaget/sameiet og dette kan påvirke boligens BRA."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            59,
+            95,
+            98
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d020_032",
+          "description": "Husdyrhold ikke tillatt uten dispensasjon: Kjøper som ønsker å holde husdyr må søke styret om dispensasjon.",
+          "evidence": [
+            "Husdyr: Husdyrhold er i utgangspunktet ikke tillatt, men styret kan gi dispensasjon dersom gode grunner taler for det og dyreholdet ikke er til ulempe for de øvrige beboerne."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            65
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        },
+        {
+          "risk_id": "gt_d020_033",
+          "description": "Korttidsutleie begrenset til 90 døgn per år: Begrensning på korttidsutleie (f.eks. Airbnb) kan påvirke investeringspotensialet.",
+          "evidence": [
+            "Korttidsutleie av hele boligseksjonen i mer enn 90 døgn årlig er ikke tillatt. Med korttidsutleie menes utleie i inntil 30 døgn sammenhengende."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            65,
+            68,
+            109
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d020_034",
+          "description": "Styregodkjenning kreves ved kjøp og utleie: Erverver og leietaker må godkjennes av styret, noe som kan forsinke prosessen.",
+          "evidence": [
+            "Styregodkjennelse: Erverver eller leier av seksjonen skal godkjennes av styret. Godkjenning kan bare nektes der det foreligger saklig grunn."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            65,
+            109
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        },
+        {
+          "risk_id": "gt_d020_035",
+          "description": "Selger har eid boligen i under ett år: Kort eiertid (kjøpt i 2025) kan indikere ukjente problemer med boligen, og gir begrenset kjennskap til eventuelle sesongmessige feil.",
+          "evidence": [
+            "Når kjøpte du boligen? År 2025",
+            "Hvor lenge har du eid boligen? Antall år 1, Antall måneder 0",
+            "Nåværende eier overtok boligen i 2025."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            74,
+            86
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d020_036",
+          "description": "Takhøyde på kun 2,58 m i stuen: Lavere enn moderne standard (2,60 m), noe som kan oppleves som trangt og begrense fremtidig bruk.",
+          "evidence": [
+            "Takhøyde på 2,58m.",
+            "Takhøyden i stuen ble målt til: 2,58 m."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            10,
+            59,
+            86
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "16d0e2be-75fe-4e39-ac7f-10d4ce361bbe_risk_006",
+            "description": "Selger kan prioritere bud fra ikke-forbrukere fremfor høyere forbrukerbud, og ved salg til ikke-forbruker kan selgers ansvar begrenses ved at boligen selges 'som den er'. Dette kan svekke kjøpers rettigheter etter avhendingsloven.",
+            "evidence": [
+              "Selger kan velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud.",
+              "Når kjøper ikke er forbruker, kan selgers ansvar begrenses ettersom boligen selges «som den er».",
+              "Selger står fritt til å velge hvilket bud som aksepteres, og er ikke forpliktet [til å akseptere høyeste bud]."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt denne risikoen under avsnittet 'Budgivning og selgers vurdering' (side 69): 'På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud. Når kjøper ikke er forbruker, kan selges ansvar begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger. Det understrekes at selger står fritt til å velge hvilket bud som aksepteres, og er ikke forpliktet til å velge det høyeste.' Dette samsvarer direkte med alle tre bevisene som er oppgitt."
+        },
+        {
+          "risk": {
+            "risk_id": "16d0e2be-75fe-4e39-ac7f-10d4ce361bbe_risk_007",
+            "description": "Det eksisterer ingen angrerett ved kjøp av fast eiendom. Kjøper er bundet av akseptert bud og kan ikke trekke seg uten vesentlige konsekvenser.",
+            "evidence": [
+              "Det eksisterer ingen angrerett ved salg/kjøp av fast eiendom."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter denne risikoen eksplisitt under 'VIKTIGE AVTALERETTSLIGE FORHOLD' i budskjemaet (side 220): 'Det eksisterer ingen angrerett ved salg/kjøp av fast eiendom.' Dette samsvarer direkte med det oppgitte beviset. Videre fremgår det at budet er bindende for budgiver frem til akseptfristens utløp, og at budet ikke kan kalles tilbake etter at det er formidlet til selger."
+        },
+        {
+          "risk": {
+            "risk_id": "16d0e2be-75fe-4e39-ac7f-10d4ce361bbe_risk_008",
+            "description": "Dersom kjøper ikke bidrar til gjennomføring av hvitvaskingstiltak (kundetiltak), kan avtalen ikke gjennomføres eller bli forsinket, og selger kan ha rett til å heve avtalen og gjennomføre dekningssalg for kjøpers regning.",
+            "evidence": [
+              "Hvis kjøper ikke bidrar til at megler får gjennomført kundetiltak og dette fører til at avtalen ikke kan gjennomføres eller blir forsinket, er dette et mislighold fra kjøpers side.",
+              "Et vesentlig mislighold kan gi selger rett til å heve avtalen og til å gjennomføre dekningssalg for kjøpers regning."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter denne risikoen eksplisitt under avsnittet 'Hvitvasking' (side 71): 'Hvis kjøper ikke bidrar til at megler får gjennomført kundetiltak og dette fører til at avtalen ikke kan gjennomføres eller blir forsinket, er dette et mislighold fra kjøpers side. Et vesentlig mislighold kan gi selger rett til å heve avtalen og til å gjennomføre dekningssalg for kjøpers regning.' Dette samsvarer direkte med begge bevisene som er oppgitt."
+        },
+        {
+          "risk": {
+            "risk_id": "16d0e2be-75fe-4e39-ac7f-10d4ce361bbe_risk_009",
+            "description": "Sentralt varmtvannssystem (ikke egen varmtvannstank). Kjøper er avhengig av fellessystemet, og eventuelle feil eller kostnader knyttet til dette er utenfor kjøpers direkte kontroll.",
+            "evidence": [
+              "Varmtvannstank | Sentralt varmtvannsberedning."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.72,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter denne risikoen. I tilstandsrapporten under 'Tekniske installasjoner > Varmtvannstank' (side 91 og 63) fremgår det: 'Sentralt varmtvannsberedning.' Dette er merket som TGIU (ikke undersøkt). Videre bekreftes det i salgsoppgaven (side 9) at 'Fyring, varmtvann og bredbånd inkl.' er en del av felleskostnadene, og i beskrivelsen av VVS-installasjoner (side 61): 'Varmtvann kommer fra sentralt varmtvannsberedning.' Kjøper er dermed avhengig av fellessystemet og har ikke direkte kontroll over dette."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1": 0.2857142857142857,
+        "total_support": 36
+      }
+    },
+    "agentic_rag_P+T+R": {
+      "run_id": "99548166-d11a-4161-a12a-1ba3314c67d5",
+      "system_type": "agentic_rag_P+T+R",
+      "overall_metrics": {
+        "precision": 0.7083333333333334,
+        "recall": 0.4722222222222222,
+        "f1": 0.5666666666666667,
+        "total_support": 36
+      },
+      "matched_risks": 17,
+      "unmatched_predicted": 7,
+      "unmatched_ground_truth": 19,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_000",
+            "description": "Ulovlig bruksendring: Byggetegninger samsvarer ikke med dagens bruk. Kjøkken er flyttet til stue, og rommet der kjøkkenet opprinnelig var, er innredet som soverom. Dette er en bruksendring som kan kreve søknad og tillatelse fra kommunen.",
+            "evidence": [
+              "Det foreligger godkjente og byggemeldte tegninger, men de stemmer ikke med dagens bruk",
+              "Kjøkken er flyttet til stue, og rom der kjøkken opprinnelig var, er innredet som soverom.",
+              "Leilighetens geometri og sjakter er kontrollert mot original byggetegning og avviker noe fra dagens situasjon."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_001",
+            "description": "Ulovlig planløsning / avvik fra godkjente byggetegninger: Kjøkken er flyttet til stue, og rommet der kjøkkenet opprinnelig var, er innredet som soverom. Byggetegningene stemmer ikke med dagens bruk.",
+            "evidence": [
+              "Det foreligger godkjente og byggemeldte tegninger, men de stemmer ikke med dagens bruk.",
+              "Kjøkken er flyttet til stue, og rom der kjøkken opprinnelig var, er innredet som soverom.",
+              "Leilighetens geometri og sjakter er kontrollert mot original byggetegning og avviker noe fra dagens situasjon."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              58,
+              59,
+              86,
+              95
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_013",
+            "description": "Elektrisk arbeid utført av ufaglært/på dugnad: Det er montert spotteskinner i stue av ufaglært/egeninnsats/dugnad. Det foreligger ikke samsvarserklæring for dette arbeidet, noe som kan innebære sikkerhetsrisiko og forsikringsmessige konsekvenser.",
+            "evidence": [
+              "Er det utført arbeid på el-anlegget eller andre installasjoner? – Ja, kun av ufaglært/egeninnsats/dugnad",
+              "Beskrivelse: Det er montert spotteskinner i stue. Ellers er alt slik det var ved kjøp. Samsvarserklæring medfulgte",
+              "Det tas forbehold om at det kan være utført andre arbeider på det elektriske anlegget som ikke har samsvarserklæring."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_002",
+            "description": "Elektrisk anlegg uten fullstendig dokumentasjon / samsvarserklæring: Det foreligger ikke samsvarserklæring for hele det elektriske anlegget. Leiligheten har hatt flere eiere og det er ukjent hva som er gjort av tidligere eiere. Takstmann anbefaler utvidet el-kontroll.",
+            "evidence": [
+              "Leiligheten har hatt flere eiere, ukjent hva som er gjort av tidligere eier da det ikke foreligger dokumentasjon/samsvarserklæringer på hele det elektriske anlegget.",
+              "Er alle elektriske arbeider/anlegg i boligen utført av en registrert elektroinstallasjonsvirksomhet? – Ukjent",
+              "Foreta en helhetsvurdering av det elektriske anlegget, dets alder, allmenne tilstand og fare for liv og helse. Bør det elektriske anlegget ha en utvidet el-kontroll? – Ja",
+              "Det er montert spotteskinner i stue. Ellers er alt slik det var ved kjøp. Samsvarserklæring medfulgte leilighet fra 2022.",
+              "Det tas forbehold om at det kan være utført andre arbeider på det elektriske anlegget som ikke har samsvarserklæring."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              60,
+              61,
+              62,
+              75,
+              92
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_004",
+            "description": "Tilstandsgrad 2 på bad – sluk, membran og tettesjikt: Mer enn halvparten av forventet brukstid er passert på membranløsningen på badet. Eldre membraner kan bli sprø og sprekke, noe som kan føre til vannlekkasjer og fuktskader.",
+            "evidence": [
+              "Sluk, membran og tettesjikt, bad | Mer enn halvparten av forventet brukstid er passert på membranløsningen.",
+              "Eldre membraner kan bli sprø og sprekke opp, noe som fører til at de mister sin vanntettende funksjon. Dette kan resultere i vannlekkasjer gjennom vegger og gulv og fuktskader.",
+              "Det bør vurderes tiltak for å begrense den direkte vannpåkjenningen eller foreta oppussing/vedlikehold i våtsonen som følge av alder på fliser og tettesjikt. Enkelt tiltak kan være å sette inn et dusjkabinett."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_003",
+            "description": "Badets membran/tettesjikt har passert mer enn halvparten av forventet brukstid: Risiko for vannlekkasjer gjennom vegger og gulv og fuktskader. Hulltaking ikke foretatt da det ikke er fysisk mulig.",
+            "evidence": [
+              "Mer enn halvparten av forventet brukstid er passert på membranløsningen.",
+              "Eldre membraner kan bli sprø og sprekke opp, noe som fører til at de mister sin vanntettende funksjon. Dette kan resultere i vannlekkasjer gjennom vegger og gulv og fuktskader.",
+              "Tilliggende konstruksjoner, bad | Hulltaking er ikke foretatt da det ikke er fysisk mulig pga tilliggende konstruksjoner.",
+              "Det er plastsluk og banemembran med ukjent utførelse."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              62,
+              63,
+              90
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_012",
+            "description": "Sanitærutstyr og innredning bad – manglende lekkasjesikring for innebygget sisterne: Det er ikke påvist tilfredsstillende løsning for å synliggjøre lekkasje fra innebygget sisterne. Uten dreneringsløsning kan lekkasjer pågå over lang tid og føre til omfattende fuktskader.",
+            "evidence": [
+              "Sanitærutstyr og innredning, bad | Det er ikke påvist tilfredsstillende løsning for å synliggjøre lekkasje fra innebygget sisterne. Uten dreneringsløsning/lekkasjesikring kan lekkasjer pågå over lang tid uten å bli oppdaget. Dette kan føre til omfattende fuktskader i omkringliggende byggematerialer."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_004",
+            "description": "Innebygget sisterne uten dreneringsløsning/lekkasjesikring: Lekkasjer kan pågå over lang tid uten å bli oppdaget og føre til omfattende fuktskader.",
+            "evidence": [
+              "Det er ikke påvist tilfredsstillende løsning for å synliggjøre lekkasje fra innebygget sisterne.",
+              "Uten dreneringsløsning/lekkasjesikring kan lekkasjer pågå over lang tid uten å bli oppdaget. Dette kan føre til omfattende fuktskader i omkringliggende byggematerialer."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              63,
+              90
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_003",
+            "description": "Tidligere vannlekkasje fra øvre leilighet med påviste skader: Det er dokumentert en tidligere vannlekkasje fra øvre leilighet med skader på soverom (bak kjøkken). Selv om selger opplyser at skadene er utbedret, er det risiko for skjulte restskader.",
+            "evidence": [
+              "Det er opplyst av hjemmelshaver at det tidligere var en vannlekkasje fra øvre leilighet. Det ble påvist mindre skader på soverom (bak kjøkken). Alt utbedret av forsikringsselskap.",
+              "Deler av orginalt gulv i stue var skjært vekk i stue under parkett. Det var også sprukket maling i tak på samme sted, og på gjesterom."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_005",
+            "description": "Tidligere vannlekkasje fra øvre leilighet med skader på soverom: Historisk fuktskade som er utbedret, men risiko for skjulte restskader kan ikke utelukkes.",
+            "evidence": [
+              "Det ble fra forrige takstrapport for kjøp av leilighet i feb 2025 opplyst følgende: 'Det er opplyst av hjemmelshaver at det tidligere var en vannlekkasje fra øvre leilighet. Det ble påvist mindre skader på soverom (bak kjøkken). Alt utbedret av forsikringsselskap.'",
+              "Deler av originalt gulv i stue var skjært vekk i stue under parkett. Det var også sprukket maling i tak på samme sted, og på gjesterom.",
+              "I mitt eie er tak malt, og gulvet utbedret av snekkerfirma slik at det originale gulvet ble komplett."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              60,
+              75
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_005",
+            "description": "Tilstandsgrad 2 på vinduer: Vinduene fra 1983 har nådd minste forventede brukstid. Det er fare for punktering av isolerglass, og utskiftning må påregnes på sikt.",
+            "evidence": [
+              "Vinduer med 3-lags isolerglass, 1983.",
+              "Vinduer er av eldre dato og har oppnådd minste forventede brukstid. Det er fare for punktering av isolerglass som følge av alder, og påregnelig med utskiftninger på sikt.",
+              "Normal tid før utskifting av trevinduer er 20–60 år, avhengig av kvalitet, vedlikehold og eksponeringsforhold."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_006",
+            "description": "Vinduer fra 1983 har nådd/passert minste forventede brukstid: Fare for punktering av isolerglass og behov for utskifting på sikt.",
+            "evidence": [
+              "Vinduer er av eldre dato og har oppnådd minste forventede brukstid. Det er fare for punktering av isolerglass som følge av alder, og påregnelig med utskiftninger på sikt.",
+              "Vinduer med 3-lags isolerglass fra 1983.",
+              "Normal tid før utskifting av trevinduer er 20–60 år, avhengig av kvalitet, vedlikehold og eksponeringsforhold."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              62,
+              88
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_006",
+            "description": "Tilstandsgrad 2 på etasjeskille/gulv mot grunn: Det er målt høydeforskjell på mellom 15–30 mm gjennom hele stuerommet, noe som indikerer skjevheter i gulvet.",
+            "evidence": [
+              "Etasjeskille/gulv mot grunn | Det er målt høydeforskjell på mellom 15-30 mm gjennom hele rommet. Tilstandsgrad 2 gis med bakgrunn i standardens krav til godkjente måleavvik.",
+              "Avviket er målt gjennom stuerommet. Det er påregnelig med stedvis retningsavvik i eldre etasjeskillere av betong."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_007",
+            "description": "Skjevt gulv/etasjeskille: Målt høydeforskjell på mellom 15–30 mm gjennom hele stuerommet, noe som gir TG2.",
+            "evidence": [
+              "Det er målt høydeforskjell på mellom 15-30 mm gjennom hele rommet. Tilstandsgrad 2 gis med bakgrunn i standardens krav til godkjente måleavvik.",
+              "Avviket er målt gjennom stuerommet. Det er påregnelig med stedvis retningsavvik i eldre etasjeskillere av betong."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              62,
+              88,
+              89
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_007",
+            "description": "Tilstandsgrad 2 på ventilasjon: Det er påvist mangelfull ventilasjon på ett eller flere rom i boligen. Det bør etableres veggventiler/vindusventiler i alle oppholdsrom som ikke har det.",
+            "evidence": [
+              "Ventilasjon | Det er påvist mangelfull ventilasjon på ett eller flere rom i boligen. Det bør etableres veggventiler/vindusventiler i alle oppholdsrom som ikke har det.",
+              "Boligen har naturlig ventilasjon. Det er påvist mangelfull ventilasjon på ett eller flere rom i boligen."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_008",
+            "description": "Mangelfull ventilasjon i ett eller flere rom: Boligen har naturlig ventilasjon og det er påvist mangelfull ventilasjon. Vedtektene advarer mot montering av elektriske vifter i det naturlige luftesystemet.",
+            "evidence": [
+              "Det er påvist mangelfull ventilasjon på ett eller flere rom i boligen.",
+              "Det bør etableres veggventiler/vindusventiler i alle oppholdsrom som ikke har det.",
+              "Styret ber om at det ikke monteres elektriske vifter i gårdens naturlige luftesystem som er en del av gårdens originale konstruksjon fra den gang bygget var nytt."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              63,
+              91,
+              110
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_008",
+            "description": "Tilstandsgrad 2 på vannbåren varme: Mer enn halvparten av forventet brukstid er passert på anlegget for vannbåren varme. Selv om anlegget fungerer i dag, kan skader plutselig oppstå.",
+            "evidence": [
+              "Vannbåren varme | Mer enn halvparten av forventet brukstid er passert på anlegg for vannbåren varme.",
+              "Det er ikke behov for utbedringstiltak siden anlegget fungerer i dag, men ut ifra alder kan skader plutselig oppstå på eldre anlegg."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_009",
+            "description": "Vannbåren varme har passert mer enn halvparten av forventet brukstid: Risiko for plutselige skader på eldre anlegg.",
+            "evidence": [
+              "Mer enn halvparten av forventet brukstid er passert på anlegg for vannbåren varme.",
+              "Det er ikke behov for utbedringstiltak siden anlegget fungerer i dag, men ut ifra alder kan skader plutselig oppstå på eldre anlegg."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              63,
+              92
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_009",
+            "description": "Ikke undersøkt pipe og ildsted (TGIU): Pipe og ildsted er ikke fullstendig undersøkt av takstmannen. Det anbefales kontroll av brann-/feievesen før bruk, noe som innebærer en ukjent risiko.",
+            "evidence": [
+              "Pipe og ildsted | Boligen har mursteinspipe. Ved ovn i stuen. Pipe og ildsted er begrenset, visuelt kontrollert av takstmannen. Dette anbefales gjort av brann-/feievesen før bruk.",
+              "Innvendig > Pipe og ildsted – konstruksjoner som ikke er undersøkt (TGIU)"
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_010",
+            "description": "Pipe og ildsted ikke undersøkt (TGIU): Pipe og ildsted er kun begrenset visuelt kontrollert og anbefales undersøkt av brann-/feievesen før bruk.",
+            "evidence": [
+              "Pipe og ildsted | Boligen har mursteinspipe. Ved ovn i stuen. Pipe og ildsted er begrenset, visuelt kontrollert av takstmannen. Dette anbefales gjort av brann-/feievesen før bruk.",
+              "Boligen har mursteinspipe. Det er en vedovn i stuen."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              63,
+              89
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_001",
+            "description": "Pågående reguleringsplanarbeid (Bakgårdsslottet): Det pågår et planarbeid for å videreutvikle bakgårdsdelen av kvartalet som omfatter Parkveien 29 og naboeiendommene. Prosjektet er i tidlig fase og kan medføre endringer i omgivelsene, støy og anleggsarbeid.",
+            "evidence": [
+              "Det pågår et planarbeid for å videreutvikle bakgårdsdelen av kvartalet som omfatter Parkveien 29 sammen med naboeiendommene – kalt Bakgårdsslottet.",
+              "Prosjektet er i en tidlig fase, og en utbyggingsavtale skal snart ut på høring før videre politisk behandling.",
+              "Jeg har ikke kunnskap til å tyde hvordan prosessen videre vil være, eller hvordan resultatet vil bli. Det må undersøkes nærmere.",
+              "Saksnummer 201900078: Bakgårdsslottet (Parkveien 27, 29, 31 og Uranienborgveien 5). Hegdehaugsveien 28 - Detaljregulering - Utvikling av kvartalet og kulturminneverdier - Lille Uranienborg - S-5183."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_011",
+            "description": "Planarbeid for utbygging i nærområdet (Bakgårdsslottet): Pågående planarbeid for å videreutvikle bakgårdsdelen av kvartalet (Parkveien 27–31 og Uranienborgveien 5) kan påvirke utsikt, bomiljø og eiendomsverdi.",
+            "evidence": [
+              "Det pågår et planarbeid for å videreutvikle bakgårdsdelen av kvartalet som omfatter Parkveien 29 sammen med naboeiendommene kalt Bakgårdsslottet. Prosjektet er i en tidlig fase, og en utbyggingsavtale skal snart ut på høring for videre politisk behandling.",
+              "Saksnummer 202507404: Parkveien 27-31 – Oppføring av boligbygg med næring – Bygg A, B, C og D i felt 1. Status: Under behandling. Rammetillatelse foreligger.",
+              "Tiltaket omfatter oppføring av fire nye bygg, A, B, C og D, med totalt 47 boenheter fra 2. etasje og oppover samt næringsarealer i første etasje.",
+              "Prosjektet kommer for salg våren 2026, og har estimert overtakelse andre halvår 2028. Byggestart er estimert høsten 2026."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              64,
+              66,
+              67,
+              76
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_002",
+            "description": "Mulig ulovlig stenging av passasje: Det er en pågående byggesak (saksnummer 202504957) som omhandler mulig ulovlig stenging av passasje i Uranienborgveien 11. Dette kan få konsekvenser for eiendommen og sameiet.",
+            "evidence": [
+              "Saksnummer 202504957: Uranienborgveien 11 – mulig ulovlig stenging av passasje. Status: Under behandling."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_012",
+            "description": "Mulig ulovlig stenging av passasje i nærområdet: Pågående byggesak om mulig ulovlig stenging av passasje ved Uranienborgveien 11.",
+            "evidence": [
+              "Saksnummer 202504957: Uranienborgveien 11 – mulig ulovlig stenging av passasje. Status: Under behandling."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              66
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_015",
+            "description": "Sameiet har ikke sikringsordning: Sameiet har ingen sikringsordning for felleskostnader, noe som innebærer at kjøper ikke er beskyttet mot tap dersom andre sameiere misligholder sine betalingsforpliktelser.",
+            "evidence": [
+              "Sameiet har ikke sikringsordning."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_015",
+            "description": "Sameiet har ikke sikringsordning: Dersom sameiet ikke kan betjene sin gjeld, er det ingen sikringsordning som beskytter den enkelte seksjonseier.",
+            "evidence": [
+              "Sameiet har ikke sikringsordning."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              56
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_014",
+            "description": "Flytende rente på fellesgjeld – risiko for økte felleskostnader: Sameiets lån har flytende rente (6,75%), og felleskostnadene kan øke ved rentejusteringer. Det er ikke mulighet for individuell nedbetaling (IN-lån).",
+            "evidence": [
+              "Ettersom sameiets lån har flytende rente, kan fellesutgiftene endres ved rentejusteringer. På grunn av prisstigning og renteøkning kan felleskostnadene øke etter at denne salgsoppgaven er utarbeidet.",
+              "Rentesats: 6,75% – Restsaldo 4 984 093,00 – Innfrielsesdato: 30.05.2038 – Type rente: Flytende rente",
+              "Mulighet for individuell nedbetaling på hele eller deler av fellesgjeld (IN-lån): Nei."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_016",
+            "description": "Flytende rente på fellesgjeld: Fellesgjelden har flytende rente (6,75%), noe som innebærer risiko for økte felleskostnader ved renteøkning.",
+            "evidence": [
+              "Ettersom sameiets lån har flytende rente, kan fellesutgiftene endres ved rentejusteringer.",
+              "Type rente: Flytende rente",
+              "Rentesats: 6,75%",
+              "Rentesatsen pr. 31.12.24 var 7,30 %."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              55,
+              56,
+              145
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_019",
+            "description": "Radonmåling ikke utført: Selger har svart nei på spørsmål om det er foretatt radonmåling. Radon kan utgjøre en helserisiko, og manglende måling gir usikkerhet om radonkonsentrasjonen i boligen.",
+            "evidence": [
+              "Er det foretatt radonmåling? Nei Ja – [Nei er besvart]"
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_021",
+            "description": "Ingen radonmåling utført: Selger har ikke utført radonmåling, noe som innebærer usikkerhet om radonkonsentrasjonen i boligen.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? – Nei"
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              68,
+              76
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_018",
+            "description": "Eiendommen på Gul liste (kulturminnevern): Eiendommen slår ut på Byantikvarens Gule liste med 6 treff vedr. lokalitet og 8 treff vedr. enkeltminne. Dette kan begrense muligheten for fremtidige endringer og påkostninger på eiendommen.",
+            "evidence": [
+              "Eiendommen slår ut på Gul liste med 6 treff vedr. lokalitet og 8 treff vedr. enkeltminne.",
+              "Byantikvarens «gule liste» er en oversikt over kulturminner i Oslo som Byantikvaren anser som verneverdige, enten ved formell fredning, regulering til bevaring, eller ved kommunalt [vern].",
+              "Uranienborgveien 9 C – D – E – 11 B – C – D – E – F – G er et funksjonalistisk bygårdsanlegg i 6 og 7 etasjer, oppført i 1932 etter tegninger av arkitekt Fritz [...]"
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_023",
+            "description": "Eiendommen er registrert på Byantikvarens gule liste (verneverdig kulturmiljø): Begrensninger på bygningsmessige endringer og vedlikehold som kan påvirke fremtidig bruk og kostnader.",
+            "evidence": [
+              "Eiendommen slår ut på Gul liste med 6 treff vedr. lokalitet og 8 treff vedr. enkeltminne.",
+              "Byantikvarens «gule liste» er en oversikt over kulturminner i Oslo som Byantikvaren anser som verneverdige.",
+              "Uranienborgveien 9 C – D – E – 11 B – C – D – E – F – G er et funksjonalistisk bygårdsanlegg i 6 og 7 etasjer, oppført i 1932 etter tegninger av arkitekt Fritz Jordan."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              66
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_017",
+            "description": "Energimerke D (Gul) – høyt energiforbruk: Boligen har energimerke D med beregnet levert energi på 191,16 kWh/m² per år, noe som indikerer relativt høyt energiforbruk og potensielt høye energikostnader.",
+            "evidence": [
+              "Energikarakter: D",
+              "Energifarge: Gul",
+              "Beregnet vektet levert energi i normert klima: 191,16 kWh/m²",
+              "Totalt levert pr. år: 24 742 kWh"
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_028",
+            "description": "Energikarakter D (Gul) – relativt lavt energimerke: Boligen har høyere energiforbruk enn nyere boliger, noe som kan medføre høyere driftskostnader.",
+            "evidence": [
+              "Energikarakter: D",
+              "Energifarge: Gul",
+              "Beregnet vektet levert energi i normert klima: 191,16 kWh/m²"
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              6,
+              65,
+              100
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_010",
+          "description": "Ikke undersøkt varmtvannstank (TGIU): Varmtvannstanken er ikke undersøkt av takstmannen, da det er sentralt varmtvannsberedning. Tilstanden er ukjent.",
+          "evidence": [
+            "Tekniske installasjoner > Varmtvannstank – konstruksjoner som ikke er undersøkt (TGIU)",
+            "Varmtvannstank | Sentralt varmtvannsberedning."
+          ],
+          "source_documents": [
+            "d020_d020"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.75,
+          "details": {}
+        },
+        {
+          "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_011",
+          "description": "Ikke undersøkt tilliggende konstruksjoner på bad (TGIU): Hulltaking er ikke foretatt da det ikke er fysisk mulig pga. tilliggende konstruksjoner. Eventuelle skjulte fuktskader bak badets vegger er ukjente.",
+          "evidence": [
+            "Tilliggende konstruksjoner, bad | Hulltaking er ikke foretatt da det ikke er fysisk mulig pga tilliggende konstruksjoner.",
+            "Våtrom > 2. etasje > Bad > Tilliggende konstruksjoner våtrom – konstruksjoner som ikke er undersøkt (TGIU)"
+          ],
+          "source_documents": [
+            "d020_d020"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_016",
+          "description": "Legalpant og solidaransvar: Sameierne er solidarisk ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk. Legalpant har prioritet foran tinglyste lån, noe som kan påvirke kjøpers finansiering.",
+          "evidence": [
+            "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.",
+            "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen.",
+            "Legalpant til kommunen har høyere prioritet enn legalpant til sameiet."
+          ],
+          "source_documents": [
+            "d020_d020"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.82,
+          "details": {}
+        },
+        {
+          "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_020",
+          "description": "Flere pågående plansaker i nærområdet: Det er en rekke pågående regulerings- og byggesaker i nærområdet som kan medføre økt trafikk, støy, anleggsarbeid og endringer i omgivelsene.",
+          "evidence": [
+            "Saksnummer 202218347: St. Olavs gate 32 – Utvikling av kvartal. Detaljregulering. Status: Under behandling.",
+            "Saksnummer 202451198: Frederiks gate 2 – Nationaltheatret på Tullinløkka. Detaljregulering. Status: Under behandling.",
+            "Saksnummer 202507404: Parkveien 27–31 – Oppføring av boligbygg med næring – Bygg A, B, C og D i felt 1. Status: Under behandling. Rammetillatelse foreligger.",
+            "Saksnummer 202600295: Hegdehaugsveien 28 – bruksendring av loft til bolig, forlengelse av hovedtrapp og fasadeendring. Status: Under behandling.",
+            "Saksnummer 202509657: Parkveien 29 og [Romansefabrikken]. Status: Under behandling.",
+            "Saksnummer 202522319: Inkognitogata 2 B – [under behandling]."
+          ],
+          "source_documents": [
+            "d020_d020"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_021",
+          "description": "Bygget fra 1936 – generell aldersrelatert risiko: Bygningen er fra 1936 og er oppført etter byggeforskrifter som gjaldt på oppføringstidspunktet. Dette innebærer risiko for skjulte aldersbetingede skader og behov for fremtidig vedlikehold av fellesarealer.",
+          "evidence": [
+            "Boligblokk bygget i 1936. Bygningen er oppført etter byggeforskrifter som gjaldt på oppføringstidspunktet.",
+            "Byggeår: 1936 – Hentet fra Ambita/Norges Eiendommer.",
+            "Det må også forventes at eiendommer som har vært i [bruk over lang tid] har slitasje og bruk."
+          ],
+          "source_documents": [
+            "d020_d020"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.78,
+          "details": {}
+        },
+        {
+          "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_022",
+          "description": "Dugnad påkrevet: Beboerne i sameiet er forpliktet til å delta på dugnader. Dette innebærer en tids- og kostnadsmessig forpliktelse for kjøper.",
+          "evidence": [
+            "Dugnad må kunne påregnes."
+          ],
+          "source_documents": [
+            "d020_d020"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.7,
+          "details": {}
+        },
+        {
+          "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_023",
+          "description": "Krav om OBOS-medlemskap: Forretningsfører krever OBOS-medlemskap, noe som innebærer en engangssum på 300 kroner for andelskapital samt en årlig kontingent på 200 kroner.",
+          "evidence": [
+            "Innmelding i OBOS kr 500,–: Forretningsfører krever OBOS-medlemskap. Innmelding innebærer en engangssum på 300 kroner for andelskapital, samt en årlig kontingent på 200 kroner."
+          ],
+          "source_documents": [
+            "d020_d020"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.7,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d020_013",
+          "description": "Riving av bygninger i nærområdet (Parkveien 29 og Uranienborgveien 5): Pågående rivingssak kan medføre støy, støv og endret bomiljø i anleggsperioden.",
+          "evidence": [
+            "Saksnummer 202509657: Parkveien 29 og Uranienborgveien 5 – riving av bygninger. Status: Under behandling."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            66
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d020_014",
+          "description": "Bruksendring av loft til bolig og fasadeendring i nærområdet: Kan påvirke bomiljø og nabolagets karakter.",
+          "evidence": [
+            "Saksnummer 202600295: Hegdehaugsveien 28 – bruksendring av loft til bolig, forlengelse av hovedtrapp og fasadeendring. Status: Under behandling."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            66
+          ],
+          "details": {
+            "confidence": 0.72
+          }
+        },
+        {
+          "risk_id": "gt_d020_017",
+          "description": "Negativ egenkapital i sameiet (udekket tap): Sameiet har en negativ egenkapital på kr -6 605 226 per 31.12.2024, finansiert gjennom låneopptak.",
+          "evidence": [
+            "Udekket tap betyr at egenkapitalen i selskapet er negativ.",
+            "Udekket tap: -6 605 226 (2024), -7 059 312 (2023)",
+            "Den manglende likviditeten er finansiert ved låneopptak."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            141,
+            144
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d020_018",
+          "description": "Mulighet for individuell nedbetaling (IN-lån) er ikke tilgjengelig: Kjøper kan ikke betale ned sin andel av fellesgjelden individuelt.",
+          "evidence": [
+            "Mulighet for individuell nedbetaling på hele eller deler av fellesgjeld (IN-lån): Nei."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            56
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d020_019",
+          "description": "Arbeid på bad/våtrom utført av ufaglært/på dugnad: Baderomsvifte er byttet av faglært, men på dugnad. Tettesjikt/membran/sluk er ikke oppgradert i forbindelse med dette arbeidet.",
+          "evidence": [
+            "Kjenner du til om det er utført arbeid på bad/våtrom? – Ja, kun av ufaglært/egeninnsats/dugnad",
+            "Beskrivelse: Byttet baderomsvifte. Utført av faglært, men på dugnad.",
+            "Ble tettesjikt/membran/sluk oppgradert/fornyet? – Nei",
+            "Er arbeidet byggemeldt? – Nei"
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            60,
+            75
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d020_020",
+          "description": "Inngangsdør byttet av ufaglært/på dugnad: Inngangsdøren er byttet av en faglært på dugnad, uten at dette er byggemeldt.",
+          "evidence": [
+            "Kjenner du til om ufaglærte har utført arbeid som normalt bør utføres av faglærte? – Ja.",
+            "Beskrivelse av arbeidet: Byttet inngangsdør til leilighet. Kvittering på materialer kan fremvises. Jobben er utført av en faglært på dugnad. Døren er godkjent leilighetsdør iht brannstandard. 30/35db."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            60,
+            75
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d020_022",
+          "description": "Selger har ikke tegnet boligselgerforsikring: Kjøper har ikke den ekstra beskyttelsen som boligselgerforsikring gir ved eventuelle mangelskrav.",
+          "evidence": [
+            "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            68
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d020_024",
+          "description": "Parkeringsplass ikke garantert: Megler har ikke avklart tilgjengelig kapasitet for parkering. Bruksretten er personlig og bortfaller ved framleie av seksjonen.",
+          "evidence": [
+            "Megler har ikke avklart tilgjengelig kapasitet ifm. utarbeidelse av denne salgsoppgaven.",
+            "Bruksretten er personlig og bortfaller ved framleie av seksjonen.",
+            "I følge selger er leieprisen pr. mnd. er kr. 507,-."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            57
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d020_025",
+          "description": "Overflater på bad (vegger, himling og gulv) vurdert med TG2 på grunn av alder: Behov for vedlikehold/oppussing i våtsonen.",
+          "evidence": [
+            "Overflatene ser visuelt bra ut, tilstandsgrad settes av hensyn til alder.",
+            "Det bør vurderes tiltak for å begrense den direkte vannpåkjenningen eller foreta oppussing/vedlikehold i våtsonen som følge av alder på fliser og tettesjikt.",
+            "Enkelt tiltak kan være å sette inn et dusjkabinett."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            62,
+            63,
+            89,
+            90
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d020_026",
+          "description": "Kjøkkenventilator med kullfilter (omluft) – ikke mekanisk avtrekk: NS 3600 krever mekanisk avtrekk for TG 0 eller TG 1. Det er normalt ikke tillatt med forsert avtrekk til felles kanaler i blokk.",
+          "evidence": [
+            "Kjøkkenet har ventilator med omluft (kullfilter). NS 3600 krever mekanisk avtrekk for å kunne gi TG 0 eller TG 1.",
+            "Det er ikke alltid det er godkjent av borettslagene å koble forsert/mekanisk avtrekk til felles kanaler eller ut av bygningen. Det vil i de tilfeller ikke være mulig å oppnå bedre tilstandsgrad."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            63,
+            91
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d020_027",
+          "description": "Bygget fra 1936 – kun ekspedisjonsdokument, ikke ferdigattest for selve bygget: Ekspedisjonsdokumentet gir ingen garanti for at bygget er oppført i samsvar med tillatelsen og gjeldende regelverk.",
+          "evidence": [
+            "Det foreligger ikke ferdigattest, men et ekspedisjonsdokument datert 30.05.1936.",
+            "At ekspedisjonsdokument eksisterer, gir derimot ingen garanti for at bygget er oppført i samsvar med tillatelsen og gjeldende regelverk, eller at det senere er utført arbeid på bygget som ikke er byggemeldt eller godkjent."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            58
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d020_029",
+          "description": "Takkonstruksjon ikke besiktiget: Flat takkonstruksjon er antatt tekket med asfalttakbelegg/folie, men er ikke besiktiget av takstmann. Eventuelle skjulte feil kan ikke utelukkes.",
+          "evidence": [
+            "Takkonstruksjonen er en flat takkonstruksjon, antatt tekket med asfalttakbelegg/folie e.l. Taket ble ikke besiktiget."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            61,
+            86
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d020_030",
+          "description": "Bruksendring av Parkveien 29 fra bolig til restaurant med uteservering: Kan medføre økt støy og trafikk i nærområdet.",
+          "evidence": [
+            "Saksnummer 202508201: Parkveien 29 – bruksendring fra bolig til restaurant med uteservering – fredete 'Romansefabrikken'. Status: Under behandling."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            66
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        },
+        {
+          "risk_id": "gt_d020_031",
+          "description": "Ekstern bod på fellesareal – kan omdisponeres av sameiet: Loftsbod og kjellerbod disponeres av leiligheten, men ligger på fellesareal og kan i prinsippet omdisponeres.",
+          "evidence": [
+            "Det gjøres særskilt oppmerksom på at ekstern bod som er medtatt som BRA-e og i totalt BRA ligger på fellesareal, men disponeres av denne leiligheten.",
+            "Rom utenfor boenheten kan omdisponeres av borettslaget/sameiet og dette kan påvirke boligens BRA."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            59,
+            95,
+            98
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d020_032",
+          "description": "Husdyrhold ikke tillatt uten dispensasjon: Kjøper som ønsker å holde husdyr må søke styret om dispensasjon.",
+          "evidence": [
+            "Husdyr: Husdyrhold er i utgangspunktet ikke tillatt, men styret kan gi dispensasjon dersom gode grunner taler for det og dyreholdet ikke er til ulempe for de øvrige beboerne."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            65
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        },
+        {
+          "risk_id": "gt_d020_033",
+          "description": "Korttidsutleie begrenset til 90 døgn per år: Begrensning på korttidsutleie (f.eks. Airbnb) kan påvirke investeringspotensialet.",
+          "evidence": [
+            "Korttidsutleie av hele boligseksjonen i mer enn 90 døgn årlig er ikke tillatt. Med korttidsutleie menes utleie i inntil 30 døgn sammenhengende."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            65,
+            68,
+            109
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d020_034",
+          "description": "Styregodkjenning kreves ved kjøp og utleie: Erverver og leietaker må godkjennes av styret, noe som kan forsinke prosessen.",
+          "evidence": [
+            "Styregodkjennelse: Erverver eller leier av seksjonen skal godkjennes av styret. Godkjenning kan bare nektes der det foreligger saklig grunn."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            65,
+            109
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        },
+        {
+          "risk_id": "gt_d020_035",
+          "description": "Selger har eid boligen i under ett år: Kort eiertid (kjøpt i 2025) kan indikere ukjente problemer med boligen, og gir begrenset kjennskap til eventuelle sesongmessige feil.",
+          "evidence": [
+            "Når kjøpte du boligen? År 2025",
+            "Hvor lenge har du eid boligen? Antall år 1, Antall måneder 0",
+            "Nåværende eier overtok boligen i 2025."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            74,
+            86
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d020_036",
+          "description": "Takhøyde på kun 2,58 m i stuen: Lavere enn moderne standard (2,60 m), noe som kan oppleves som trangt og begrense fremtidig bruk.",
+          "evidence": [
+            "Takhøyde på 2,58m.",
+            "Takhøyden i stuen ble målt til: 2,58 m."
+          ],
+          "source_documents": [
+            "d020.pdf"
+          ],
+          "source_pages": [
+            10,
+            59,
+            86
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_010",
+            "description": "Ikke undersøkt varmtvannstank (TGIU): Varmtvannstanken er ikke undersøkt av takstmannen, da det er sentralt varmtvannsberedning. Tilstanden er ukjent.",
+            "evidence": [
+              "Tekniske installasjoner > Varmtvannstank – konstruksjoner som ikke er undersøkt (TGIU)",
+              "Varmtvannstank | Sentralt varmtvannsberedning."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter tydelig at varmtvannstanken ikke er undersøkt. I tilstandsrapporten under 'Tekniske installasjoner > Varmtvannstank' står det: 'Sentralt varmtvannsberedning.' og dette er listet under 'Bygningsdeler som ikke har blitt undersøkt (TGIU)'. Salgsoppgaven bekrefter også: 'Varmtvann kommer fra sentralt varmtvannsberedning.' Risikoen er reell – tilstanden er ukjent fordi takstmannen ikke har undersøkt den."
+        },
+        {
+          "risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_011",
+            "description": "Ikke undersøkt tilliggende konstruksjoner på bad (TGIU): Hulltaking er ikke foretatt da det ikke er fysisk mulig pga. tilliggende konstruksjoner. Eventuelle skjulte fuktskader bak badets vegger er ukjente.",
+            "evidence": [
+              "Tilliggende konstruksjoner, bad | Hulltaking er ikke foretatt da det ikke er fysisk mulig pga tilliggende konstruksjoner.",
+              "Våtrom > 2. etasje > Bad > Tilliggende konstruksjoner våtrom – konstruksjoner som ikke er undersøkt (TGIU)"
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette direkte. I tilstandsrapporten under '2. ETASJE > BAD > Tilliggende konstruksjoner våtrom' står det: 'Hulltaking er ikke foretatt da det ikke er fysisk mulig pga tilliggende konstruksjoner.' Dette er listet under TGIU (ikke undersøkt). Risikoen for skjulte fuktskader bak badets vegger er dermed reell og dokumentert."
+        },
+        {
+          "risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_016",
+            "description": "Legalpant og solidaransvar: Sameierne er solidarisk ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk. Legalpant har prioritet foran tinglyste lån, noe som kan påvirke kjøpers finansiering.",
+            "evidence": [
+              "I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.",
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen.",
+              "Legalpant til kommunen har høyere prioritet enn legalpant til sameiet."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette eksplisitt. I salgsoppgaven under 'Legalpant' og 'Diverse' står det: 'I henhold til eierseksjonsloven § 31 er sameierne ansvarlige overfor sameiets kreditorer i forhold til sin sameiebrøk.' og 'Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen. Legalpant til kommunen har høyere prioritet enn legalpant til sameiet.' Risikoen er reell og godt dokumentert."
+        },
+        {
+          "risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_020",
+            "description": "Flere pågående plansaker i nærområdet: Det er en rekke pågående regulerings- og byggesaker i nærområdet som kan medføre økt trafikk, støy, anleggsarbeid og endringer i omgivelsene.",
+            "evidence": [
+              "Saksnummer 202218347: St. Olavs gate 32 – Utvikling av kvartal. Detaljregulering. Status: Under behandling.",
+              "Saksnummer 202451198: Frederiks gate 2 – Nationaltheatret på Tullinløkka. Detaljregulering. Status: Under behandling.",
+              "Saksnummer 202507404: Parkveien 27–31 – Oppføring av boligbygg med næring – Bygg A, B, C og D i felt 1. Status: Under behandling. Rammetillatelse foreligger.",
+              "Saksnummer 202600295: Hegdehaugsveien 28 – bruksendring av loft til bolig, forlengelse av hovedtrapp og fasadeendring. Status: Under behandling.",
+              "Saksnummer 202509657: Parkveien 29 og [Romansefabrikken]. Status: Under behandling.",
+              "Saksnummer 202522319: Inkognitogata 2 B – [under behandling]."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter at det er en rekke pågående plansaker i nærområdet. Under 'Pågående plansaker i nærområde' og 'Pågående byggesaker i området' listes bl.a.: Saksnummer 202218347 (St. Olavs gate 32 – Utvikling av kvartal, under behandling), 202451198 (Frederiks gate 2 – Nationaltheatret på Tullinløkka, under behandling), 202507404 (Parkveien 27–31 – Oppføring av boligbygg, under behandling, rammetillatelse foreligger), 202600295 (Hegdehaugsveien 28 – bruksendring, under behandling), 202509657 (Parkveien 29 og Uranienborgveien 5 – riving av bygninger, under behandling), 202522319 (Inkognitogata 2 B – utskifting av tak, under behandling). Risikoen er reell."
+        },
+        {
+          "risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_021",
+            "description": "Bygget fra 1936 – generell aldersrelatert risiko: Bygningen er fra 1936 og er oppført etter byggeforskrifter som gjaldt på oppføringstidspunktet. Dette innebærer risiko for skjulte aldersbetingede skader og behov for fremtidig vedlikehold av fellesarealer.",
+            "evidence": [
+              "Boligblokk bygget i 1936. Bygningen er oppført etter byggeforskrifter som gjaldt på oppføringstidspunktet.",
+              "Byggeår: 1936 – Hentet fra Ambita/Norges Eiendommer.",
+              "Det må også forventes at eiendommer som har vært i [bruk over lang tid] har slitasje og bruk."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter at bygningen er fra 1936. I tilstandsrapporten og salgsoppgaven fremgår det: 'Boligblokk bygget i 1936. Bygningen er oppført etter byggeforskrifter som gjaldt på oppføringstidspunktet.' Byggeår 1936 er hentet fra Ambita/Norges Eiendommer. Salgsoppgaven nevner også: 'Det må også forventes at eiendommer som har vært i bruk, vil kunne ha tegn til slitasje og eventuelle skader.' Risikoen for aldersbetingede skader og fremtidig vedlikeholdsbehov er reell og dokumentert."
+        },
+        {
+          "risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_022",
+            "description": "Dugnad påkrevet: Beboerne i sameiet er forpliktet til å delta på dugnader. Dette innebærer en tids- og kostnadsmessig forpliktelse for kjøper.",
+            "evidence": [
+              "Dugnad må kunne påregnes."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette direkte. Under 'Beboernes forpliktelser og dugnader' i salgsoppgaven står det eksplisitt: 'Dugnad må kunne påregnes.' Risikoen er reell og dokumentert."
+        },
+        {
+          "risk": {
+            "risk_id": "99548166-d11a-4161-a12a-1ba3314c67d5_risk_023",
+            "description": "Krav om OBOS-medlemskap: Forretningsfører krever OBOS-medlemskap, noe som innebærer en engangssum på 300 kroner for andelskapital samt en årlig kontingent på 200 kroner.",
+            "evidence": [
+              "Innmelding i OBOS kr 500,–: Forretningsfører krever OBOS-medlemskap. Innmelding innebærer en engangssum på 300 kroner for andelskapital, samt en årlig kontingent på 200 kroner."
+            ],
+            "source_documents": [
+              "d020_d020"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette direkte. Under 'Innmelding i OBOS kr 500,–' i salgsoppgaven står det: 'Forretningsfører krever OBOS-medlemskap. Innmelding innebærer en engangssum på 300 kroner for andelskapital, samt en årlig kontingent på 200 kroner.' Risikoen er reell og godt dokumentert."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.4722222222222222,
+        "f1": 0.6415094339622641,
+        "total_support": 36
+      }
+    },
+    "ground_truth": {
+      "run_id": "1b46f2b6-e806-4ec5-9aa0-55e307b228d0_gt",
+      "system_type": "ground_truth",
+      "overall_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "total_support": 36
+      },
+      "matched_risks": 36,
+      "unmatched_predicted": 0,
+      "unmatched_ground_truth": 0,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_001",
+            "description": "Ulovlig planløsning / avvik fra godkjente byggetegninger: Kjøkken er flyttet til stue, og rommet der kjøkkenet opprinnelig var, er innredet som soverom. Byggetegningene stemmer ikke med dagens bruk.",
+            "evidence": [
+              "Det foreligger godkjente og byggemeldte tegninger, men de stemmer ikke med dagens bruk.",
+              "Kjøkken er flyttet til stue, og rom der kjøkken opprinnelig var, er innredet som soverom.",
+              "Leilighetens geometri og sjakter er kontrollert mot original byggetegning og avviker noe fra dagens situasjon."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              58,
+              59,
+              86,
+              95
+            ],
+            "confidence": 0.97,
+            "details": {
+              "confidence": 0.97
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_001",
+            "description": "Ulovlig planløsning / avvik fra godkjente byggetegninger: Kjøkken er flyttet til stue, og rommet der kjøkkenet opprinnelig var, er innredet som soverom. Byggetegningene stemmer ikke med dagens bruk.",
+            "evidence": [
+              "Det foreligger godkjente og byggemeldte tegninger, men de stemmer ikke med dagens bruk.",
+              "Kjøkken er flyttet til stue, og rom der kjøkken opprinnelig var, er innredet som soverom.",
+              "Leilighetens geometri og sjakter er kontrollert mot original byggetegning og avviker noe fra dagens situasjon."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              58,
+              59,
+              86,
+              95
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_002",
+            "description": "Elektrisk anlegg uten fullstendig dokumentasjon / samsvarserklæring: Det foreligger ikke samsvarserklæring for hele det elektriske anlegget. Leiligheten har hatt flere eiere og det er ukjent hva som er gjort av tidligere eiere. Takstmann anbefaler utvidet el-kontroll.",
+            "evidence": [
+              "Leiligheten har hatt flere eiere, ukjent hva som er gjort av tidligere eier da det ikke foreligger dokumentasjon/samsvarserklæringer på hele det elektriske anlegget.",
+              "Er alle elektriske arbeider/anlegg i boligen utført av en registrert elektroinstallasjonsvirksomhet? – Ukjent",
+              "Foreta en helhetsvurdering av det elektriske anlegget, dets alder, allmenne tilstand og fare for liv og helse. Bør det elektriske anlegget ha en utvidet el-kontroll? – Ja",
+              "Det er montert spotteskinner i stue. Ellers er alt slik det var ved kjøp. Samsvarserklæring medfulgte leilighet fra 2022.",
+              "Det tas forbehold om at det kan være utført andre arbeider på det elektriske anlegget som ikke har samsvarserklæring."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              60,
+              61,
+              62,
+              75,
+              92
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_002",
+            "description": "Elektrisk anlegg uten fullstendig dokumentasjon / samsvarserklæring: Det foreligger ikke samsvarserklæring for hele det elektriske anlegget. Leiligheten har hatt flere eiere og det er ukjent hva som er gjort av tidligere eiere. Takstmann anbefaler utvidet el-kontroll.",
+            "evidence": [
+              "Leiligheten har hatt flere eiere, ukjent hva som er gjort av tidligere eier da det ikke foreligger dokumentasjon/samsvarserklæringer på hele det elektriske anlegget.",
+              "Er alle elektriske arbeider/anlegg i boligen utført av en registrert elektroinstallasjonsvirksomhet? – Ukjent",
+              "Foreta en helhetsvurdering av det elektriske anlegget, dets alder, allmenne tilstand og fare for liv og helse. Bør det elektriske anlegget ha en utvidet el-kontroll? – Ja",
+              "Det er montert spotteskinner i stue. Ellers er alt slik det var ved kjøp. Samsvarserklæring medfulgte leilighet fra 2022.",
+              "Det tas forbehold om at det kan være utført andre arbeider på det elektriske anlegget som ikke har samsvarserklæring."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              60,
+              61,
+              62,
+              75,
+              92
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_003",
+            "description": "Badets membran/tettesjikt har passert mer enn halvparten av forventet brukstid: Risiko for vannlekkasjer gjennom vegger og gulv og fuktskader. Hulltaking ikke foretatt da det ikke er fysisk mulig.",
+            "evidence": [
+              "Mer enn halvparten av forventet brukstid er passert på membranløsningen.",
+              "Eldre membraner kan bli sprø og sprekke opp, noe som fører til at de mister sin vanntettende funksjon. Dette kan resultere i vannlekkasjer gjennom vegger og gulv og fuktskader.",
+              "Tilliggende konstruksjoner, bad | Hulltaking er ikke foretatt da det ikke er fysisk mulig pga tilliggende konstruksjoner.",
+              "Det er plastsluk og banemembran med ukjent utførelse."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              62,
+              63,
+              90
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_003",
+            "description": "Badets membran/tettesjikt har passert mer enn halvparten av forventet brukstid: Risiko for vannlekkasjer gjennom vegger og gulv og fuktskader. Hulltaking ikke foretatt da det ikke er fysisk mulig.",
+            "evidence": [
+              "Mer enn halvparten av forventet brukstid er passert på membranløsningen.",
+              "Eldre membraner kan bli sprø og sprekke opp, noe som fører til at de mister sin vanntettende funksjon. Dette kan resultere i vannlekkasjer gjennom vegger og gulv og fuktskader.",
+              "Tilliggende konstruksjoner, bad | Hulltaking er ikke foretatt da det ikke er fysisk mulig pga tilliggende konstruksjoner.",
+              "Det er plastsluk og banemembran med ukjent utførelse."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              62,
+              63,
+              90
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_004",
+            "description": "Innebygget sisterne uten dreneringsløsning/lekkasjesikring: Lekkasjer kan pågå over lang tid uten å bli oppdaget og føre til omfattende fuktskader.",
+            "evidence": [
+              "Det er ikke påvist tilfredsstillende løsning for å synliggjøre lekkasje fra innebygget sisterne.",
+              "Uten dreneringsløsning/lekkasjesikring kan lekkasjer pågå over lang tid uten å bli oppdaget. Dette kan føre til omfattende fuktskader i omkringliggende byggematerialer."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              63,
+              90
+            ],
+            "confidence": 0.93,
+            "details": {
+              "confidence": 0.93
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_004",
+            "description": "Innebygget sisterne uten dreneringsløsning/lekkasjesikring: Lekkasjer kan pågå over lang tid uten å bli oppdaget og føre til omfattende fuktskader.",
+            "evidence": [
+              "Det er ikke påvist tilfredsstillende løsning for å synliggjøre lekkasje fra innebygget sisterne.",
+              "Uten dreneringsløsning/lekkasjesikring kan lekkasjer pågå over lang tid uten å bli oppdaget. Dette kan føre til omfattende fuktskader i omkringliggende byggematerialer."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              63,
+              90
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_005",
+            "description": "Tidligere vannlekkasje fra øvre leilighet med skader på soverom: Historisk fuktskade som er utbedret, men risiko for skjulte restskader kan ikke utelukkes.",
+            "evidence": [
+              "Det ble fra forrige takstrapport for kjøp av leilighet i feb 2025 opplyst følgende: 'Det er opplyst av hjemmelshaver at det tidligere var en vannlekkasje fra øvre leilighet. Det ble påvist mindre skader på soverom (bak kjøkken). Alt utbedret av forsikringsselskap.'",
+              "Deler av originalt gulv i stue var skjært vekk i stue under parkett. Det var også sprukket maling i tak på samme sted, og på gjesterom.",
+              "I mitt eie er tak malt, og gulvet utbedret av snekkerfirma slik at det originale gulvet ble komplett."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              60,
+              75
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_005",
+            "description": "Tidligere vannlekkasje fra øvre leilighet med skader på soverom: Historisk fuktskade som er utbedret, men risiko for skjulte restskader kan ikke utelukkes.",
+            "evidence": [
+              "Det ble fra forrige takstrapport for kjøp av leilighet i feb 2025 opplyst følgende: 'Det er opplyst av hjemmelshaver at det tidligere var en vannlekkasje fra øvre leilighet. Det ble påvist mindre skader på soverom (bak kjøkken). Alt utbedret av forsikringsselskap.'",
+              "Deler av originalt gulv i stue var skjært vekk i stue under parkett. Det var også sprukket maling i tak på samme sted, og på gjesterom.",
+              "I mitt eie er tak malt, og gulvet utbedret av snekkerfirma slik at det originale gulvet ble komplett."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              60,
+              75
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_006",
+            "description": "Vinduer fra 1983 har nådd/passert minste forventede brukstid: Fare for punktering av isolerglass og behov for utskifting på sikt.",
+            "evidence": [
+              "Vinduer er av eldre dato og har oppnådd minste forventede brukstid. Det er fare for punktering av isolerglass som følge av alder, og påregnelig med utskiftninger på sikt.",
+              "Vinduer med 3-lags isolerglass fra 1983.",
+              "Normal tid før utskifting av trevinduer er 20–60 år, avhengig av kvalitet, vedlikehold og eksponeringsforhold."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              62,
+              88
+            ],
+            "confidence": 0.93,
+            "details": {
+              "confidence": 0.93
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_006",
+            "description": "Vinduer fra 1983 har nådd/passert minste forventede brukstid: Fare for punktering av isolerglass og behov for utskifting på sikt.",
+            "evidence": [
+              "Vinduer er av eldre dato og har oppnådd minste forventede brukstid. Det er fare for punktering av isolerglass som følge av alder, og påregnelig med utskiftninger på sikt.",
+              "Vinduer med 3-lags isolerglass fra 1983.",
+              "Normal tid før utskifting av trevinduer er 20–60 år, avhengig av kvalitet, vedlikehold og eksponeringsforhold."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              62,
+              88
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_007",
+            "description": "Skjevt gulv/etasjeskille: Målt høydeforskjell på mellom 15–30 mm gjennom hele stuerommet, noe som gir TG2.",
+            "evidence": [
+              "Det er målt høydeforskjell på mellom 15-30 mm gjennom hele rommet. Tilstandsgrad 2 gis med bakgrunn i standardens krav til godkjente måleavvik.",
+              "Avviket er målt gjennom stuerommet. Det er påregnelig med stedvis retningsavvik i eldre etasjeskillere av betong."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              62,
+              88,
+              89
+            ],
+            "confidence": 0.92,
+            "details": {
+              "confidence": 0.92
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_007",
+            "description": "Skjevt gulv/etasjeskille: Målt høydeforskjell på mellom 15–30 mm gjennom hele stuerommet, noe som gir TG2.",
+            "evidence": [
+              "Det er målt høydeforskjell på mellom 15-30 mm gjennom hele rommet. Tilstandsgrad 2 gis med bakgrunn i standardens krav til godkjente måleavvik.",
+              "Avviket er målt gjennom stuerommet. Det er påregnelig med stedvis retningsavvik i eldre etasjeskillere av betong."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              62,
+              88,
+              89
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_008",
+            "description": "Mangelfull ventilasjon i ett eller flere rom: Boligen har naturlig ventilasjon og det er påvist mangelfull ventilasjon. Vedtektene advarer mot montering av elektriske vifter i det naturlige luftesystemet.",
+            "evidence": [
+              "Det er påvist mangelfull ventilasjon på ett eller flere rom i boligen.",
+              "Det bør etableres veggventiler/vindusventiler i alle oppholdsrom som ikke har det.",
+              "Styret ber om at det ikke monteres elektriske vifter i gårdens naturlige luftesystem som er en del av gårdens originale konstruksjon fra den gang bygget var nytt."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              63,
+              91,
+              110
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_008",
+            "description": "Mangelfull ventilasjon i ett eller flere rom: Boligen har naturlig ventilasjon og det er påvist mangelfull ventilasjon. Vedtektene advarer mot montering av elektriske vifter i det naturlige luftesystemet.",
+            "evidence": [
+              "Det er påvist mangelfull ventilasjon på ett eller flere rom i boligen.",
+              "Det bør etableres veggventiler/vindusventiler i alle oppholdsrom som ikke har det.",
+              "Styret ber om at det ikke monteres elektriske vifter i gårdens naturlige luftesystem som er en del av gårdens originale konstruksjon fra den gang bygget var nytt."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              63,
+              91,
+              110
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_009",
+            "description": "Vannbåren varme har passert mer enn halvparten av forventet brukstid: Risiko for plutselige skader på eldre anlegg.",
+            "evidence": [
+              "Mer enn halvparten av forventet brukstid er passert på anlegg for vannbåren varme.",
+              "Det er ikke behov for utbedringstiltak siden anlegget fungerer i dag, men ut ifra alder kan skader plutselig oppstå på eldre anlegg."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              63,
+              92
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_009",
+            "description": "Vannbåren varme har passert mer enn halvparten av forventet brukstid: Risiko for plutselige skader på eldre anlegg.",
+            "evidence": [
+              "Mer enn halvparten av forventet brukstid er passert på anlegg for vannbåren varme.",
+              "Det er ikke behov for utbedringstiltak siden anlegget fungerer i dag, men ut ifra alder kan skader plutselig oppstå på eldre anlegg."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              63,
+              92
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_010",
+            "description": "Pipe og ildsted ikke undersøkt (TGIU): Pipe og ildsted er kun begrenset visuelt kontrollert og anbefales undersøkt av brann-/feievesen før bruk.",
+            "evidence": [
+              "Pipe og ildsted | Boligen har mursteinspipe. Ved ovn i stuen. Pipe og ildsted er begrenset, visuelt kontrollert av takstmannen. Dette anbefales gjort av brann-/feievesen før bruk.",
+              "Boligen har mursteinspipe. Det er en vedovn i stuen."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              63,
+              89
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_010",
+            "description": "Pipe og ildsted ikke undersøkt (TGIU): Pipe og ildsted er kun begrenset visuelt kontrollert og anbefales undersøkt av brann-/feievesen før bruk.",
+            "evidence": [
+              "Pipe og ildsted | Boligen har mursteinspipe. Ved ovn i stuen. Pipe og ildsted er begrenset, visuelt kontrollert av takstmannen. Dette anbefales gjort av brann-/feievesen før bruk.",
+              "Boligen har mursteinspipe. Det er en vedovn i stuen."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              63,
+              89
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_011",
+            "description": "Planarbeid for utbygging i nærområdet (Bakgårdsslottet): Pågående planarbeid for å videreutvikle bakgårdsdelen av kvartalet (Parkveien 27–31 og Uranienborgveien 5) kan påvirke utsikt, bomiljø og eiendomsverdi.",
+            "evidence": [
+              "Det pågår et planarbeid for å videreutvikle bakgårdsdelen av kvartalet som omfatter Parkveien 29 sammen med naboeiendommene kalt Bakgårdsslottet. Prosjektet er i en tidlig fase, og en utbyggingsavtale skal snart ut på høring for videre politisk behandling.",
+              "Saksnummer 202507404: Parkveien 27-31 – Oppføring av boligbygg med næring – Bygg A, B, C og D i felt 1. Status: Under behandling. Rammetillatelse foreligger.",
+              "Tiltaket omfatter oppføring av fire nye bygg, A, B, C og D, med totalt 47 boenheter fra 2. etasje og oppover samt næringsarealer i første etasje.",
+              "Prosjektet kommer for salg våren 2026, og har estimert overtakelse andre halvår 2028. Byggestart er estimert høsten 2026."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              64,
+              66,
+              67,
+              76
+            ],
+            "confidence": 0.92,
+            "details": {
+              "confidence": 0.92
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_011",
+            "description": "Planarbeid for utbygging i nærområdet (Bakgårdsslottet): Pågående planarbeid for å videreutvikle bakgårdsdelen av kvartalet (Parkveien 27–31 og Uranienborgveien 5) kan påvirke utsikt, bomiljø og eiendomsverdi.",
+            "evidence": [
+              "Det pågår et planarbeid for å videreutvikle bakgårdsdelen av kvartalet som omfatter Parkveien 29 sammen med naboeiendommene kalt Bakgårdsslottet. Prosjektet er i en tidlig fase, og en utbyggingsavtale skal snart ut på høring for videre politisk behandling.",
+              "Saksnummer 202507404: Parkveien 27-31 – Oppføring av boligbygg med næring – Bygg A, B, C og D i felt 1. Status: Under behandling. Rammetillatelse foreligger.",
+              "Tiltaket omfatter oppføring av fire nye bygg, A, B, C og D, med totalt 47 boenheter fra 2. etasje og oppover samt næringsarealer i første etasje.",
+              "Prosjektet kommer for salg våren 2026, og har estimert overtakelse andre halvår 2028. Byggestart er estimert høsten 2026."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              64,
+              66,
+              67,
+              76
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_012",
+            "description": "Mulig ulovlig stenging av passasje i nærområdet: Pågående byggesak om mulig ulovlig stenging av passasje ved Uranienborgveien 11.",
+            "evidence": [
+              "Saksnummer 202504957: Uranienborgveien 11 – mulig ulovlig stenging av passasje. Status: Under behandling."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              66
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_012",
+            "description": "Mulig ulovlig stenging av passasje i nærområdet: Pågående byggesak om mulig ulovlig stenging av passasje ved Uranienborgveien 11.",
+            "evidence": [
+              "Saksnummer 202504957: Uranienborgveien 11 – mulig ulovlig stenging av passasje. Status: Under behandling."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              66
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_013",
+            "description": "Riving av bygninger i nærområdet (Parkveien 29 og Uranienborgveien 5): Pågående rivingssak kan medføre støy, støv og endret bomiljø i anleggsperioden.",
+            "evidence": [
+              "Saksnummer 202509657: Parkveien 29 og Uranienborgveien 5 – riving av bygninger. Status: Under behandling."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              66
+            ],
+            "confidence": 0.82,
+            "details": {
+              "confidence": 0.82
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_013",
+            "description": "Riving av bygninger i nærområdet (Parkveien 29 og Uranienborgveien 5): Pågående rivingssak kan medføre støy, støv og endret bomiljø i anleggsperioden.",
+            "evidence": [
+              "Saksnummer 202509657: Parkveien 29 og Uranienborgveien 5 – riving av bygninger. Status: Under behandling."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              66
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_014",
+            "description": "Bruksendring av loft til bolig og fasadeendring i nærområdet: Kan påvirke bomiljø og nabolagets karakter.",
+            "evidence": [
+              "Saksnummer 202600295: Hegdehaugsveien 28 – bruksendring av loft til bolig, forlengelse av hovedtrapp og fasadeendring. Status: Under behandling."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              66
+            ],
+            "confidence": 0.72,
+            "details": {
+              "confidence": 0.72
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_014",
+            "description": "Bruksendring av loft til bolig og fasadeendring i nærområdet: Kan påvirke bomiljø og nabolagets karakter.",
+            "evidence": [
+              "Saksnummer 202600295: Hegdehaugsveien 28 – bruksendring av loft til bolig, forlengelse av hovedtrapp og fasadeendring. Status: Under behandling."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              66
+            ],
+            "details": {
+              "confidence": 0.72
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_015",
+            "description": "Sameiet har ikke sikringsordning: Dersom sameiet ikke kan betjene sin gjeld, er det ingen sikringsordning som beskytter den enkelte seksjonseier.",
+            "evidence": [
+              "Sameiet har ikke sikringsordning."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              56
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_015",
+            "description": "Sameiet har ikke sikringsordning: Dersom sameiet ikke kan betjene sin gjeld, er det ingen sikringsordning som beskytter den enkelte seksjonseier.",
+            "evidence": [
+              "Sameiet har ikke sikringsordning."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              56
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_016",
+            "description": "Flytende rente på fellesgjeld: Fellesgjelden har flytende rente (6,75%), noe som innebærer risiko for økte felleskostnader ved renteøkning.",
+            "evidence": [
+              "Ettersom sameiets lån har flytende rente, kan fellesutgiftene endres ved rentejusteringer.",
+              "Type rente: Flytende rente",
+              "Rentesats: 6,75%",
+              "Rentesatsen pr. 31.12.24 var 7,30 %."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              55,
+              56,
+              145
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_016",
+            "description": "Flytende rente på fellesgjeld: Fellesgjelden har flytende rente (6,75%), noe som innebærer risiko for økte felleskostnader ved renteøkning.",
+            "evidence": [
+              "Ettersom sameiets lån har flytende rente, kan fellesutgiftene endres ved rentejusteringer.",
+              "Type rente: Flytende rente",
+              "Rentesats: 6,75%",
+              "Rentesatsen pr. 31.12.24 var 7,30 %."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              55,
+              56,
+              145
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_017",
+            "description": "Negativ egenkapital i sameiet (udekket tap): Sameiet har en negativ egenkapital på kr -6 605 226 per 31.12.2024, finansiert gjennom låneopptak.",
+            "evidence": [
+              "Udekket tap betyr at egenkapitalen i selskapet er negativ.",
+              "Udekket tap: -6 605 226 (2024), -7 059 312 (2023)",
+              "Den manglende likviditeten er finansiert ved låneopptak."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              141,
+              144
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_017",
+            "description": "Negativ egenkapital i sameiet (udekket tap): Sameiet har en negativ egenkapital på kr -6 605 226 per 31.12.2024, finansiert gjennom låneopptak.",
+            "evidence": [
+              "Udekket tap betyr at egenkapitalen i selskapet er negativ.",
+              "Udekket tap: -6 605 226 (2024), -7 059 312 (2023)",
+              "Den manglende likviditeten er finansiert ved låneopptak."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              141,
+              144
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_018",
+            "description": "Mulighet for individuell nedbetaling (IN-lån) er ikke tilgjengelig: Kjøper kan ikke betale ned sin andel av fellesgjelden individuelt.",
+            "evidence": [
+              "Mulighet for individuell nedbetaling på hele eller deler av fellesgjeld (IN-lån): Nei."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              56
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_018",
+            "description": "Mulighet for individuell nedbetaling (IN-lån) er ikke tilgjengelig: Kjøper kan ikke betale ned sin andel av fellesgjelden individuelt.",
+            "evidence": [
+              "Mulighet for individuell nedbetaling på hele eller deler av fellesgjeld (IN-lån): Nei."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              56
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_019",
+            "description": "Arbeid på bad/våtrom utført av ufaglært/på dugnad: Baderomsvifte er byttet av faglært, men på dugnad. Tettesjikt/membran/sluk er ikke oppgradert i forbindelse med dette arbeidet.",
+            "evidence": [
+              "Kjenner du til om det er utført arbeid på bad/våtrom? – Ja, kun av ufaglært/egeninnsats/dugnad",
+              "Beskrivelse: Byttet baderomsvifte. Utført av faglært, men på dugnad.",
+              "Ble tettesjikt/membran/sluk oppgradert/fornyet? – Nei",
+              "Er arbeidet byggemeldt? – Nei"
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              60,
+              75
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_019",
+            "description": "Arbeid på bad/våtrom utført av ufaglært/på dugnad: Baderomsvifte er byttet av faglært, men på dugnad. Tettesjikt/membran/sluk er ikke oppgradert i forbindelse med dette arbeidet.",
+            "evidence": [
+              "Kjenner du til om det er utført arbeid på bad/våtrom? – Ja, kun av ufaglært/egeninnsats/dugnad",
+              "Beskrivelse: Byttet baderomsvifte. Utført av faglært, men på dugnad.",
+              "Ble tettesjikt/membran/sluk oppgradert/fornyet? – Nei",
+              "Er arbeidet byggemeldt? – Nei"
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              60,
+              75
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_020",
+            "description": "Inngangsdør byttet av ufaglært/på dugnad: Inngangsdøren er byttet av en faglært på dugnad, uten at dette er byggemeldt.",
+            "evidence": [
+              "Kjenner du til om ufaglærte har utført arbeid som normalt bør utføres av faglærte? – Ja.",
+              "Beskrivelse av arbeidet: Byttet inngangsdør til leilighet. Kvittering på materialer kan fremvises. Jobben er utført av en faglært på dugnad. Døren er godkjent leilighetsdør iht brannstandard. 30/35db."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              60,
+              75
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_020",
+            "description": "Inngangsdør byttet av ufaglært/på dugnad: Inngangsdøren er byttet av en faglært på dugnad, uten at dette er byggemeldt.",
+            "evidence": [
+              "Kjenner du til om ufaglærte har utført arbeid som normalt bør utføres av faglærte? – Ja.",
+              "Beskrivelse av arbeidet: Byttet inngangsdør til leilighet. Kvittering på materialer kan fremvises. Jobben er utført av en faglært på dugnad. Døren er godkjent leilighetsdør iht brannstandard. 30/35db."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              60,
+              75
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_021",
+            "description": "Ingen radonmåling utført: Selger har ikke utført radonmåling, noe som innebærer usikkerhet om radonkonsentrasjonen i boligen.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? – Nei"
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              68,
+              76
+            ],
+            "confidence": 0.82,
+            "details": {
+              "confidence": 0.82
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_021",
+            "description": "Ingen radonmåling utført: Selger har ikke utført radonmåling, noe som innebærer usikkerhet om radonkonsentrasjonen i boligen.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Er det foretatt radonmåling? – Nei"
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              68,
+              76
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_022",
+            "description": "Selger har ikke tegnet boligselgerforsikring: Kjøper har ikke den ekstra beskyttelsen som boligselgerforsikring gir ved eventuelle mangelskrav.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              68
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_022",
+            "description": "Selger har ikke tegnet boligselgerforsikring: Kjøper har ikke den ekstra beskyttelsen som boligselgerforsikring gir ved eventuelle mangelskrav.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              68
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_023",
+            "description": "Eiendommen er registrert på Byantikvarens gule liste (verneverdig kulturmiljø): Begrensninger på bygningsmessige endringer og vedlikehold som kan påvirke fremtidig bruk og kostnader.",
+            "evidence": [
+              "Eiendommen slår ut på Gul liste med 6 treff vedr. lokalitet og 8 treff vedr. enkeltminne.",
+              "Byantikvarens «gule liste» er en oversikt over kulturminner i Oslo som Byantikvaren anser som verneverdige.",
+              "Uranienborgveien 9 C – D – E – 11 B – C – D – E – F – G er et funksjonalistisk bygårdsanlegg i 6 og 7 etasjer, oppført i 1932 etter tegninger av arkitekt Fritz Jordan."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              66
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_023",
+            "description": "Eiendommen er registrert på Byantikvarens gule liste (verneverdig kulturmiljø): Begrensninger på bygningsmessige endringer og vedlikehold som kan påvirke fremtidig bruk og kostnader.",
+            "evidence": [
+              "Eiendommen slår ut på Gul liste med 6 treff vedr. lokalitet og 8 treff vedr. enkeltminne.",
+              "Byantikvarens «gule liste» er en oversikt over kulturminner i Oslo som Byantikvaren anser som verneverdige.",
+              "Uranienborgveien 9 C – D – E – 11 B – C – D – E – F – G er et funksjonalistisk bygårdsanlegg i 6 og 7 etasjer, oppført i 1932 etter tegninger av arkitekt Fritz Jordan."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              66
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_024",
+            "description": "Parkeringsplass ikke garantert: Megler har ikke avklart tilgjengelig kapasitet for parkering. Bruksretten er personlig og bortfaller ved framleie av seksjonen.",
+            "evidence": [
+              "Megler har ikke avklart tilgjengelig kapasitet ifm. utarbeidelse av denne salgsoppgaven.",
+              "Bruksretten er personlig og bortfaller ved framleie av seksjonen.",
+              "I følge selger er leieprisen pr. mnd. er kr. 507,-."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              57
+            ],
+            "confidence": 0.82,
+            "details": {
+              "confidence": 0.82
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_024",
+            "description": "Parkeringsplass ikke garantert: Megler har ikke avklart tilgjengelig kapasitet for parkering. Bruksretten er personlig og bortfaller ved framleie av seksjonen.",
+            "evidence": [
+              "Megler har ikke avklart tilgjengelig kapasitet ifm. utarbeidelse av denne salgsoppgaven.",
+              "Bruksretten er personlig og bortfaller ved framleie av seksjonen.",
+              "I følge selger er leieprisen pr. mnd. er kr. 507,-."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              57
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_025",
+            "description": "Overflater på bad (vegger, himling og gulv) vurdert med TG2 på grunn av alder: Behov for vedlikehold/oppussing i våtsonen.",
+            "evidence": [
+              "Overflatene ser visuelt bra ut, tilstandsgrad settes av hensyn til alder.",
+              "Det bør vurderes tiltak for å begrense den direkte vannpåkjenningen eller foreta oppussing/vedlikehold i våtsonen som følge av alder på fliser og tettesjikt.",
+              "Enkelt tiltak kan være å sette inn et dusjkabinett."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              62,
+              63,
+              89,
+              90
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_025",
+            "description": "Overflater på bad (vegger, himling og gulv) vurdert med TG2 på grunn av alder: Behov for vedlikehold/oppussing i våtsonen.",
+            "evidence": [
+              "Overflatene ser visuelt bra ut, tilstandsgrad settes av hensyn til alder.",
+              "Det bør vurderes tiltak for å begrense den direkte vannpåkjenningen eller foreta oppussing/vedlikehold i våtsonen som følge av alder på fliser og tettesjikt.",
+              "Enkelt tiltak kan være å sette inn et dusjkabinett."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              62,
+              63,
+              89,
+              90
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_026",
+            "description": "Kjøkkenventilator med kullfilter (omluft) – ikke mekanisk avtrekk: NS 3600 krever mekanisk avtrekk for TG 0 eller TG 1. Det er normalt ikke tillatt med forsert avtrekk til felles kanaler i blokk.",
+            "evidence": [
+              "Kjøkkenet har ventilator med omluft (kullfilter). NS 3600 krever mekanisk avtrekk for å kunne gi TG 0 eller TG 1.",
+              "Det er ikke alltid det er godkjent av borettslagene å koble forsert/mekanisk avtrekk til felles kanaler eller ut av bygningen. Det vil i de tilfeller ikke være mulig å oppnå bedre tilstandsgrad."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              63,
+              91
+            ],
+            "confidence": 0.82,
+            "details": {
+              "confidence": 0.82
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_026",
+            "description": "Kjøkkenventilator med kullfilter (omluft) – ikke mekanisk avtrekk: NS 3600 krever mekanisk avtrekk for TG 0 eller TG 1. Det er normalt ikke tillatt med forsert avtrekk til felles kanaler i blokk.",
+            "evidence": [
+              "Kjøkkenet har ventilator med omluft (kullfilter). NS 3600 krever mekanisk avtrekk for å kunne gi TG 0 eller TG 1.",
+              "Det er ikke alltid det er godkjent av borettslagene å koble forsert/mekanisk avtrekk til felles kanaler eller ut av bygningen. Det vil i de tilfeller ikke være mulig å oppnå bedre tilstandsgrad."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              63,
+              91
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_027",
+            "description": "Bygget fra 1936 – kun ekspedisjonsdokument, ikke ferdigattest for selve bygget: Ekspedisjonsdokumentet gir ingen garanti for at bygget er oppført i samsvar med tillatelsen og gjeldende regelverk.",
+            "evidence": [
+              "Det foreligger ikke ferdigattest, men et ekspedisjonsdokument datert 30.05.1936.",
+              "At ekspedisjonsdokument eksisterer, gir derimot ingen garanti for at bygget er oppført i samsvar med tillatelsen og gjeldende regelverk, eller at det senere er utført arbeid på bygget som ikke er byggemeldt eller godkjent."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              58
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_027",
+            "description": "Bygget fra 1936 – kun ekspedisjonsdokument, ikke ferdigattest for selve bygget: Ekspedisjonsdokumentet gir ingen garanti for at bygget er oppført i samsvar med tillatelsen og gjeldende regelverk.",
+            "evidence": [
+              "Det foreligger ikke ferdigattest, men et ekspedisjonsdokument datert 30.05.1936.",
+              "At ekspedisjonsdokument eksisterer, gir derimot ingen garanti for at bygget er oppført i samsvar med tillatelsen og gjeldende regelverk, eller at det senere er utført arbeid på bygget som ikke er byggemeldt eller godkjent."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              58
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_028",
+            "description": "Energikarakter D (Gul) – relativt lavt energimerke: Boligen har høyere energiforbruk enn nyere boliger, noe som kan medføre høyere driftskostnader.",
+            "evidence": [
+              "Energikarakter: D",
+              "Energifarge: Gul",
+              "Beregnet vektet levert energi i normert klima: 191,16 kWh/m²"
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              6,
+              65,
+              100
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_028",
+            "description": "Energikarakter D (Gul) – relativt lavt energimerke: Boligen har høyere energiforbruk enn nyere boliger, noe som kan medføre høyere driftskostnader.",
+            "evidence": [
+              "Energikarakter: D",
+              "Energifarge: Gul",
+              "Beregnet vektet levert energi i normert klima: 191,16 kWh/m²"
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              6,
+              65,
+              100
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_029",
+            "description": "Takkonstruksjon ikke besiktiget: Flat takkonstruksjon er antatt tekket med asfalttakbelegg/folie, men er ikke besiktiget av takstmann. Eventuelle skjulte feil kan ikke utelukkes.",
+            "evidence": [
+              "Takkonstruksjonen er en flat takkonstruksjon, antatt tekket med asfalttakbelegg/folie e.l. Taket ble ikke besiktiget."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              61,
+              86
+            ],
+            "confidence": 0.82,
+            "details": {
+              "confidence": 0.82
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_029",
+            "description": "Takkonstruksjon ikke besiktiget: Flat takkonstruksjon er antatt tekket med asfalttakbelegg/folie, men er ikke besiktiget av takstmann. Eventuelle skjulte feil kan ikke utelukkes.",
+            "evidence": [
+              "Takkonstruksjonen er en flat takkonstruksjon, antatt tekket med asfalttakbelegg/folie e.l. Taket ble ikke besiktiget."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              61,
+              86
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_030",
+            "description": "Bruksendring av Parkveien 29 fra bolig til restaurant med uteservering: Kan medføre økt støy og trafikk i nærområdet.",
+            "evidence": [
+              "Saksnummer 202508201: Parkveien 29 – bruksendring fra bolig til restaurant med uteservering – fredete 'Romansefabrikken'. Status: Under behandling."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              66
+            ],
+            "confidence": 0.78,
+            "details": {
+              "confidence": 0.78
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_030",
+            "description": "Bruksendring av Parkveien 29 fra bolig til restaurant med uteservering: Kan medføre økt støy og trafikk i nærområdet.",
+            "evidence": [
+              "Saksnummer 202508201: Parkveien 29 – bruksendring fra bolig til restaurant med uteservering – fredete 'Romansefabrikken'. Status: Under behandling."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              66
+            ],
+            "details": {
+              "confidence": 0.78
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_031",
+            "description": "Ekstern bod på fellesareal – kan omdisponeres av sameiet: Loftsbod og kjellerbod disponeres av leiligheten, men ligger på fellesareal og kan i prinsippet omdisponeres.",
+            "evidence": [
+              "Det gjøres særskilt oppmerksom på at ekstern bod som er medtatt som BRA-e og i totalt BRA ligger på fellesareal, men disponeres av denne leiligheten.",
+              "Rom utenfor boenheten kan omdisponeres av borettslaget/sameiet og dette kan påvirke boligens BRA."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              59,
+              95,
+              98
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_031",
+            "description": "Ekstern bod på fellesareal – kan omdisponeres av sameiet: Loftsbod og kjellerbod disponeres av leiligheten, men ligger på fellesareal og kan i prinsippet omdisponeres.",
+            "evidence": [
+              "Det gjøres særskilt oppmerksom på at ekstern bod som er medtatt som BRA-e og i totalt BRA ligger på fellesareal, men disponeres av denne leiligheten.",
+              "Rom utenfor boenheten kan omdisponeres av borettslaget/sameiet og dette kan påvirke boligens BRA."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              59,
+              95,
+              98
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_032",
+            "description": "Husdyrhold ikke tillatt uten dispensasjon: Kjøper som ønsker å holde husdyr må søke styret om dispensasjon.",
+            "evidence": [
+              "Husdyr: Husdyrhold er i utgangspunktet ikke tillatt, men styret kan gi dispensasjon dersom gode grunner taler for det og dyreholdet ikke er til ulempe for de øvrige beboerne."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              65
+            ],
+            "confidence": 0.78,
+            "details": {
+              "confidence": 0.78
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_032",
+            "description": "Husdyrhold ikke tillatt uten dispensasjon: Kjøper som ønsker å holde husdyr må søke styret om dispensasjon.",
+            "evidence": [
+              "Husdyr: Husdyrhold er i utgangspunktet ikke tillatt, men styret kan gi dispensasjon dersom gode grunner taler for det og dyreholdet ikke er til ulempe for de øvrige beboerne."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              65
+            ],
+            "details": {
+              "confidence": 0.78
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_033",
+            "description": "Korttidsutleie begrenset til 90 døgn per år: Begrensning på korttidsutleie (f.eks. Airbnb) kan påvirke investeringspotensialet.",
+            "evidence": [
+              "Korttidsutleie av hele boligseksjonen i mer enn 90 døgn årlig er ikke tillatt. Med korttidsutleie menes utleie i inntil 30 døgn sammenhengende."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              65,
+              68,
+              109
+            ],
+            "confidence": 0.82,
+            "details": {
+              "confidence": 0.82
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_033",
+            "description": "Korttidsutleie begrenset til 90 døgn per år: Begrensning på korttidsutleie (f.eks. Airbnb) kan påvirke investeringspotensialet.",
+            "evidence": [
+              "Korttidsutleie av hele boligseksjonen i mer enn 90 døgn årlig er ikke tillatt. Med korttidsutleie menes utleie i inntil 30 døgn sammenhengende."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              65,
+              68,
+              109
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_034",
+            "description": "Styregodkjenning kreves ved kjøp og utleie: Erverver og leietaker må godkjennes av styret, noe som kan forsinke prosessen.",
+            "evidence": [
+              "Styregodkjennelse: Erverver eller leier av seksjonen skal godkjennes av styret. Godkjenning kan bare nektes der det foreligger saklig grunn."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              65,
+              109
+            ],
+            "confidence": 0.78,
+            "details": {
+              "confidence": 0.78
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_034",
+            "description": "Styregodkjenning kreves ved kjøp og utleie: Erverver og leietaker må godkjennes av styret, noe som kan forsinke prosessen.",
+            "evidence": [
+              "Styregodkjennelse: Erverver eller leier av seksjonen skal godkjennes av styret. Godkjenning kan bare nektes der det foreligger saklig grunn."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              65,
+              109
+            ],
+            "details": {
+              "confidence": 0.78
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_035",
+            "description": "Selger har eid boligen i under ett år: Kort eiertid (kjøpt i 2025) kan indikere ukjente problemer med boligen, og gir begrenset kjennskap til eventuelle sesongmessige feil.",
+            "evidence": [
+              "Når kjøpte du boligen? År 2025",
+              "Hvor lenge har du eid boligen? Antall år 1, Antall måneder 0",
+              "Nåværende eier overtok boligen i 2025."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              74,
+              86
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_035",
+            "description": "Selger har eid boligen i under ett år: Kort eiertid (kjøpt i 2025) kan indikere ukjente problemer med boligen, og gir begrenset kjennskap til eventuelle sesongmessige feil.",
+            "evidence": [
+              "Når kjøpte du boligen? År 2025",
+              "Hvor lenge har du eid boligen? Antall år 1, Antall måneder 0",
+              "Nåværende eier overtok boligen i 2025."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              74,
+              86
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d020_036",
+            "description": "Takhøyde på kun 2,58 m i stuen: Lavere enn moderne standard (2,60 m), noe som kan oppleves som trangt og begrense fremtidig bruk.",
+            "evidence": [
+              "Takhøyde på 2,58m.",
+              "Takhøyden i stuen ble målt til: 2,58 m."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              10,
+              59,
+              86
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d020_036",
+            "description": "Takhøyde på kun 2,58 m i stuen: Lavere enn moderne standard (2,60 m), noe som kan oppleves som trangt og begrense fremtidig bruk.",
+            "evidence": [
+              "Takhøyde på 2,58m.",
+              "Takhøyden i stuen ble målt til: 2,58 m."
+            ],
+            "source_documents": [
+              "d020.pdf"
+            ],
+            "source_pages": [
+              10,
+              59,
+              86
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [],
+      "unmatched_ground_truth_risks": [],
+      "verified_unmatched": [],
+      "adjusted_metrics": null
+    }
+  },
+  "best_system": "ground_truth",
+  "statistical_tests": {
+    "standard_rag_vs_agentic_rag_P+T+R": 1.0,
+    "standard_rag_vs_ground_truth": 1.0,
+    "agentic_rag_P+T+R_vs_ground_truth": 1.0
+  },
+  "record_id": "7361e5e4-e5a3-4d05-a9b2-6bf3529d9e57",
+  "query": "Identifiser risikoer i salgsoppgaven",
+  "document_set_id": "d020",
+  "timestamp": "2026-03-23T21:09:00.165049",
+  "risk_summaries": [
+    {
+      "system_type": "standard_rag",
+      "total_risks": 10,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "agentic_rag_P+T+R",
+      "total_risks": 24,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "ground_truth",
+      "total_risks": 36,
+      "risks_by_category": {}
+    }
+  ],
+  "has_ground_truth": true,
+  "overlapping_risk_count": 21,
+  "unique_to": {
+    "standard_rag": 6,
+    "agentic_rag_P+T+R": 6,
+    "ground_truth": 16
+  },
+  "record_type": "comparison"
+}

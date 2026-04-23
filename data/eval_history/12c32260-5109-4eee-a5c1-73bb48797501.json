@@ -1,0 +1,2531 @@
+{
+  "system_results": {
+    "standard_rag": {
+      "run_id": "b84797ab-6361-4e61-8ba2-f790ffaeba0a",
+      "system_type": "standard_rag",
+      "overall_metrics": {
+        "precision": 0.4,
+        "recall": 0.16,
+        "f1": 0.22857142857142856,
+        "total_support": 25
+      },
+      "matched_risks": 4,
+      "unmatched_predicted": 6,
+      "unmatched_ground_truth": 21,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "b84797ab-6361-4e61-8ba2-f790ffaeba0a_risk_000",
+            "description": "Vannrør har nådd en alder som gir økt risiko for skader eller følgeskader (TG-2). Dette indikerer at rørene er gamle og kan medføre lekkasjer, vannskader og kostbare utbedringer.",
+            "evidence": [
+              "Har vannrør nådd en alder som gir økt risiko for skader eller følgeskader? Ja",
+              "Oppsummering av vannledninger TG-2"
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_009",
+            "description": "Kobberrør til kjøkken er fra byggeåret (1973) og har nådd en alder med økt risiko for lekkasjer (TG2). Anbefalt tiltak er utskifting i forbindelse med fremtidig oppgradering av kjøkken.",
+            "evidence": [
+              "Vannledninger TG 2 pga alder på kobberrør til kjøkken.",
+              "Vannrør av kobber (til kjøkken) er fra byggeåret, og har nådd en alder hvor det vil være økt risiko for lekkasjer (TG 2)",
+              "Vannledninger bør skiftes i forbindelse med fremtidig oppgradering av kjøkken."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              43,
+              59,
+              64,
+              65
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b84797ab-6361-4e61-8ba2-f790ffaeba0a_risk_001",
+            "description": "Garasjeanleggene i borettslaget er fra byggeår og krever vedlikehold. Det er risiko for nedfall av betong, og styret har fått fullmakt til å utrede tiltak. Dette kan medføre betydelige kostnadsøkninger for beboerne.",
+            "evidence": [
+              "Garajseanleggene i borettslaget er fra byggeår og krever vedlikehold. Styret har fått fullmakt til å utrede garasjeanleggene i sone 1 og 2 ytterligere slik at en vet hvilke tiltak som må til for å forhindre nedfall av betong i sone 1"
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_010",
+            "description": "Garasjeanleggene er fra byggeåret og krever vedlikehold. Det er risiko for nedfall av betong i sone 1 og brannfare i sone 2. Ingen konkrete pristilbud er innhentet og ingen låneopptak er vedtatt, men dette kan medføre betydelige fremtidige kostnader for borettslaget.",
+            "evidence": [
+              "Garajseanleggene i borettslaget er fra byggeår og krever vedlikehold. Styret har fått fullmakt til å utrede garasjeanleggene i sone 1 og 2 ytterligere slik at en vet hvilke tiltak som må til for å forhindre nedfall av betong i sone 1 og forhindre at garasjen i sone 2 blir en brannfelle.",
+              "Det er ikke vedtatt låneopptak for dette, og det er videre ikke innhentet noen konkrete pristilbud på dette."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              44
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b84797ab-6361-4e61-8ba2-f790ffaeba0a_risk_002",
+            "description": "Tidligere låneopptak av tidligere styre uten mandat fra generalforsamlingen (maling, tak) vil bli fordelt etter fordelingsnøkkelen og refinansieres. Dette kan medføre økte felleskostnader eller økt fellesgjeld for kjøper.",
+            "evidence": [
+              "Tidligere låneopptak av av tidligere styre, uten mandat fra GF (maling, tak) vil bli fordelt etter fordelingsnøkkelen, og skal refinansieres inn i rammen av lån i Handelsbanken"
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_015",
+            "description": "Tidligere uautoriserte låneopptak av tidligere styre uten mandat fra generalforsamlingen (maling, tak) skal refinansieres inn i Handelsbanken-rammen. Dette indikerer historisk svak styring og kan medføre ytterligere kostnader.",
+            "evidence": [
+              "Tidligere låneopptak av av tidligere styre, uten mandat fra GF (maling, tak) vil bli fordelt etter fordelingsnøkkelen, og skal refinansieres inn i rammen av lån i Handelsbanken."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              44
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b84797ab-6361-4e61-8ba2-f790ffaeba0a_risk_003",
+            "description": "El-anlegget er kun overfladisk kontrollert av bygningssakkyndig, og kan ha feil og mangler som ikke er avdekket. En fullstendig kontroll av registrert elektrovirksomhet er ikke utført.",
+            "evidence": [
+              "El-anlegget kan ha feil og mangler som en slik forenklet undersøkelse ikke vil avdekke. Vær derfor oppmerksom på denne risikoen, og søk videre veiledning",
+              "Dette kan ikke sammenlignes med en kontroll utført av offentlig myndighet (Det lokale eltilsyn) eller registrert elektrovirksomhet"
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_008",
+            "description": "El-anlegget mangler delvis dokumentasjon og det anbefales utvidet el-kontroll. Manglende samsvarserklæring på deler av anlegget utgjør en sikkerhets- og forsikringsrisiko.",
+            "evidence": [
+              "Boligen har et el‑anlegg dels uten dokumentasjon. Det bør gjennomføres en utvidet el‑kontroll av en kvalifisert elektrofaglig person, og nødvendige tiltak vurderes deretter.",
+              "Er det manglende samsvarserklæring på arbeider utført etter 01.01.1999? Ja. Eier har samsvarserklæring på utskifting av hovedssikring i 2018. Ellers ukjent historikk og manglende dokumentasjon på sikringsskap og øvrig anlegg.",
+              "Er det foretatt kontroll av det lokale el-tilsyn eller utført utvidet el-kontroll i løpet av de siste 5 år? Nei"
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              42,
+              43,
+              65
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "b84797ab-6361-4e61-8ba2-f790ffaeba0a_risk_004",
+          "description": "Det er ikke bekreftet at radonmåling er utført. Manglende radonmåling innebærer usikkerhet rundt inneklimaet og potensielt helseskadelige radonverdier.",
+          "evidence": [
+            "21 Er det foretatt radonmåling? Nei Ja"
+          ],
+          "source_documents": [
+            "d110_d110"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.7,
+          "details": {}
+        },
+        {
+          "risk_id": "b84797ab-6361-4e61-8ba2-f790ffaeba0a_risk_005",
+          "description": "Selger har ikke bekreftet at det ikke foreligger påbud, heftelser, krav eller manglende tillatelser vedrørende eiendommen. Dette kan innebære juridiske eller økonomiske forpliktelser for kjøper.",
+          "evidence": [
+            "20 Kjenner du til om det foreligger påbud/heftelser/krav/manglende tillatelser vedrørende eiendommen? Nei Ja"
+          ],
+          "source_documents": [
+            "d110_d110"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.7,
+          "details": {}
+        },
+        {
+          "risk_id": "b84797ab-6361-4e61-8ba2-f790ffaeba0a_risk_006",
+          "description": "Manglende eller ikke fremlagt energiattest fra selger. Dersom energiattest ikke fremlegges, kan kjøper kreve at det lages en for selgers regning, noe som kan forsinke eller komplisere salgsprosessen.",
+          "evidence": [
+            "Dersom eier ikke har lagt frem energiattest, og eier etter skriftlig anmodning fra kjøper ikke har fremlagt energiattest før avtale om salg er inngått, kan kjøper få laget en energiattest ved hjelp av ekspert for selgers regning, innen ett år etter at avtale om salg er inngått."
+          ],
+          "source_documents": [
+            "d110_d110"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.75,
+          "details": {}
+        },
+        {
+          "risk_id": "b84797ab-6361-4e61-8ba2-f790ffaeba0a_risk_007",
+          "description": "Risiko knyttet til selgers ufullstendige eller uriktige opplysninger i egenerklæringen. Forsikringsselskapet kan søke regress eller redusere sitt ansvar dersom opplysningene er misvisende, noe som kan eksponere kjøper for tap.",
+          "evidence": [
+            "dersom jeg har gitt ufullstendige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis"
+          ],
+          "source_documents": [
+            "d110_d110"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "b84797ab-6361-4e61-8ba2-f790ffaeba0a_risk_008",
+          "description": "Betalingsbetingelsene krever at hele oppgjøret betales fra én norsk bankkonto. Overføringer fra utlandet aksepteres kun unntaksvis. Dette kan være en risiko for kjøpere med utenlandsk finansiering.",
+          "evidence": [
+            "Hele oppgjøret må betales samlet fra en norsk bankkonto. Overføringer fra utlandet aksepteres kun unntaksvis, og kun dersom dette er"
+          ],
+          "source_documents": [
+            "d110_d110"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.72,
+          "details": {}
+        },
+        {
+          "risk_id": "b84797ab-6361-4e61-8ba2-f790ffaeba0a_risk_009",
+          "description": "Risiko for at offentlige planer, nabovarsel eller vedtak kan medføre endringer i bruken av eiendommen eller dens omgivelser. Selger er spurt om dette, men svaret er ikke entydig bekreftet som 'Nei'.",
+          "evidence": [
+            "andre planer, nabovarsel eller offentlige vedtak som kan medføre endringer i bruken av eiendommen eller av dens omgivelser? Nei Ja"
+          ],
+          "source_documents": [
+            "d110_d110"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.65,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d110_001",
+          "description": "Svært høy fellesgjeld med risiko for ytterligere økning. Borettslagets samlede fellesgjeld er kr 459 653 075 per 26.01.2026, og andelen av fellesgjeld er kr 947 543. Det er varslet ytterligere låneopptak med ramme på inntil kr 522 146 480 for å dekke overskridelser i fasade- og balkongprosjektet. Endelig kostnad er ikke fastsatt.",
+          "evidence": [
+            "Total fellesgjeld for Toppe Borettslag pr. 26.01.2026 er kr. 459 653 075,‑",
+            "Andel av fellesgjeld: Kr 947 543 pr. 26.01.2026",
+            "generalforsamlingen ga styret fullmakt til låneopptak i handelsbanken med ramme på inntil kr. 522 146 480,‑",
+            "byggekostnadene har overskredet det som var budsjettert",
+            "På grunn av oppgraderinger i borettslaget og nye låneopptak, må ny eier forvente økning i andel fellesgjeld og månedlige fellesutgifter. En slik økning er ikke endelig beregnet og er pt. ikke varslet."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            38,
+            43,
+            44
+          ],
+          "details": {
+            "confidence": 0.99
+          }
+        },
+        {
+          "risk_id": "gt_d110_002",
+          "description": "Avdragsfrie lån utløper 30.12.2027, noe som vil medføre betydelig økning i månedlige felleskostnader. Borettslaget har tre lån som er avdragsfrie frem til 30.12.2027. Andelen av det største avdragsfrie lånet (Svenska Handelsbanken serielån) er alene kr 762 730.",
+          "evidence": [
+            "Borettslaget har tre lån som er avdragsfri frem til 30.12.2027. Når avdrag skal betales på disse, vil månedlige fellesutgifter øke.",
+            "Svenska Handelsbanken AB NUF, serielån. Rentesats: 5,09%, flytende rente. Total saldo: kr 370 000 000,‑. Andel av saldo: kr 762 730,‑. Avdragsfritt til 30.12.2027",
+            "Svenska Handelsbanken AB NUF, annuitetslån. Andel av saldo: kr 79 080,‑. Avdragsfritt til 30.12.2027",
+            "Svenska Handelsbanken AB NUF, serielån. Andel av saldo: kr 18 889,‑. Avdragsfritt til 30.12.2027"
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            38,
+            39
+          ],
+          "details": {
+            "confidence": 0.99
+          }
+        },
+        {
+          "risk_id": "gt_d110_003",
+          "description": "Pågående søksmål mot borettslaget vedrørende fordeling av felleskostnader for nye altaner. Advokat Toralf Wågheim representerer 8 andelseiere som bestrider fordelingsnøkkelen. Dersom søksmålet vinnes av de 8 andelseierne, vil fordelingen av fellesgjelden endres til fordelingsnøkkel basert på boligareal, noe som kan øke kostnadene for denne andelen.",
+          "evidence": [
+            "Styret har mottatt søksmål fra advokat Toralf Wågheim på vegne av 8 andelseiere i borettslaget vedrørende fordelingen av felleskostnadene knyttet til anskaffelsen av nye altaner mv.",
+            "Dersom søksmål blir tatt videre og de 8 andelseierne vinner vil fordelingen av fellesgjelden skje etter fordelingsnøkkelen som tar utgangspunkt i andelenes boligareal.",
+            "Advokat Wågheim gjennomgikk sitt syn på det rettslige utgangspunktet og konkluderte med at hans vurdering var at styrets forslag til vedtak ville innebære et ugyldig vedtak dersom det ble vedtatt."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            42,
+            44,
+            92,
+            93
+          ],
+          "details": {
+            "confidence": 0.97
+          }
+        },
+        {
+          "risk_id": "gt_d110_004",
+          "description": "Pågående rettssak fra tidligere driftssekretær via LO. Det foreligger stevning sendt til tingretten. Kravet utgjør kr 67 505 og gjelder krav om overtidsbetaling og kompensasjon. Dette kan medføre kostnader for borettslaget.",
+          "evidence": [
+            "Tidligere diftssektretær har fremmet krav via LO. Kravet utgjør kr. 67 505 og gjelder krav om overtidsbetaling og kompensasjon for angivelig å ha hatt tilsynsoppgaver med felleslokalet.",
+            "Nytt er at det foreligger stevning i saken som er sendt til tingretten. Det er foreløpig ikke gitt pålegg om tilsvar.",
+            "Styrets oppfatning er at det ikke er grunnlag for kravet. Det kan ikke utelukkes at saken finner en løsning gjennom rettsmekling."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            42,
+            44,
+            94
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d110_005",
+          "description": "Mulig søksmål mot tidligere styreleder Eirik Tonning for grovt underslag. Politiet henla saken, men borettslaget utreder sivilt søksmål. Dette kan medføre ytterligere juridiske kostnader for borettslaget.",
+          "evidence": [
+            "Styret har også blitt gitt fullmakt til å utrede saken videre for mulig søksmål mot tidligere styreleder (Eirik Tonning).",
+            "Anmeldelsen gjaldt grovt underslag. Politiet besluttet 26. september 2025 å henlegge saken på grunn av at «etterforskning ikke vil være en forholdsmessig ressursbruk».",
+            "Uforpliktende ble det skissert en kostnad i størrelsesorden 20-40/50 tusen kroner for en slik vurdering."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            42,
+            93,
+            94
+          ],
+          "details": {
+            "confidence": 0.93
+          }
+        },
+        {
+          "risk_id": "gt_d110_006",
+          "description": "Manglende ferdigattest – kun innflyttingsløyve fra 1972 og midlertidig brukstillatelse for påbygg. Det foreligger en rekke uoppfylte krav fra byggetillatelsen, og ferdigattest vil ikke bli utstedt for byggesaker fra før 1998. I tillegg er det gitt midlertidig brukstillatelse for påbygg datert 13.06.2025 med frist for ferdigstillelse 29.06.2025 – fristen er allerede utløpt.",
+          "evidence": [
+            "Det foreligger innflyttingsløyve for eiendommen, datert 01.12.1972. Innflytningstillatelsen bekrefter at boligen lovlig kan benyttes, men at det fortsatt gjenstår arbeid før ferdigattest kan utstedes.",
+            "Det gjøres oppmerksom på at ferdigattest ikke vil bli utstedt for ufullførte byggesaker/ bygningsmeldinger som er fra før 1998.",
+            "Det foreligger midlertidig brukstillatelse for påbygg bolig, datert 13.06.2025. Det er gitt en frist om at hele tiltaket skal være ferdigstilt innen 29.06.2025.",
+            "For å kunne søke om ferdigattest må følgende tiltak utføres: Noe planering og opprydding. Montering av ventiler i bossrom. Avstanden mellom spiler i rekkverk skal være 12,5cm. Håndlist på vegg mangler. Branntrygge dører A-60 må gjøres selvlukkende."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            40,
+            41
+          ],
+          "details": {
+            "confidence": 0.97
+          }
+        },
+        {
+          "risk_id": "gt_d110_007",
+          "description": "Planløsning avviker fra opprinnelige byggetegninger. Vaskerom er opprinnelig byggemeldt som WC. Selv om bruksendringen ikke er søknadspliktig, kan det skape usikkerhet rundt lovligheten av dagens bruk.",
+          "evidence": [
+            "Dagens planløsning avviker fra de opprinnelige byggetegningene. Vaskerom er opprinnelig byggemeldt som WC. Bruksendring til hoveddel (WC) til hoveddel (vaskerom) er ikke søknadspliktig."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            41
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d110_011",
+          "description": "Flytende renter på alle lån i borettslaget medfører risiko for økte felleskostnader ved renteøkninger. Husbanklånene har 4,14% flytende rente og Handelsbanklånene har 5,09% flytende rente.",
+          "evidence": [
+            "Husbanken, annuitetslån. Rentesats: 4,14%, flytende rente",
+            "Svenska Handelsbanken AB NUF, serielån. Rentesats: 5,09%, flytende rente. Total saldo: kr 370 000 000,‑",
+            "Svenska Handelsbanken AB NUF, annuitetslån. Rentesats: 5,09%, flytende rente"
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            38,
+            39
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d110_012",
+          "description": "Eiendommen er delvis berørt av støy fra veitrafikk over grenseverdier gitt av statlige myndigheter. Berøringsgrad er 14,4% i gul støysone. Dette kan påvirke fremtidige plan- og byggesaker og medføre krav om avbøtende tiltak.",
+          "evidence": [
+            "Eiendommen befinner seg i følgende hensynssoner: Gul støy, veistøy ‑ gul sone. Berøringsgrad 14,4%.",
+            "Hele eller deler av eiendommen antas å være berørt av støy fra veitrafikk over grenseverdier gitt av statlige myndigheter og i kommuneplanens bestemmelser.",
+            "Dette vil kunne få betydning for behandlingen av plan‑ og byggesaker som omfatter den aktuelle eiendommen, blant annet medføre utredningsplikt for tiltakshaver/ forslagsstiller og eventuelt krav om avbøtende tiltak."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            45
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d110_013",
+          "description": "Selger har ikke tegnet boligselgerforsikring. Dette innebærer at kjøper ikke har den ekstra sikkerheten som boligselgerforsikring normalt gir, og eventuelle krav mot selger kan bli vanskeligere å inndrive.",
+          "evidence": [
+            "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            46
+          ],
+          "details": {
+            "confidence": 0.92
+          }
+        },
+        {
+          "risk_id": "gt_d110_014",
+          "description": "Kjøper overtar bindende strømavtale (Norgespris) med bindingstid til 31.12.2026. Kjøper har ikke frihet til å velge egen strømleverandør eller -avtale frem til utløpsdato, og bortfall av eventuell strømstøtte kan medføre økte strømkostnader.",
+          "evidence": [
+            "Nåværende eier har tegnet avtale om Norgespris på strøm, og avtalen har bindingstid til 31.12.2026. Avtalen følger boligen, og må derfor overtas av kjøper.",
+            "Når det er tegnet avtale om Norgespris bortfaller eventuell strømstøtte."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            44
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d110_016",
+          "description": "Klage på advokat Raftevoll – borettslaget er involvert i ytterligere en juridisk sak. Advokatnemnda har meddelt kritikk, og styret fremmer krav til advokatens forsikringsselskap. Dette indikerer et borettslag med mange pågående tvister og juridiske prosesser.",
+          "evidence": [
+            "Klage på advokat Raftevoll. Nytt i denne saken er at Advokatnemnda har fattet vedtak. Advokaten ble meddelt kritikk for sin håndtering av advokatoppdraget. Styret følger opp denne saken gjennom å fremme krav til advokatens forsikringsselskap."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            94
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d110_017",
+          "description": "Begrenset adgang til utleie i borettslag. Utleie krever styregodkjenning og er begrenset til maksimalt 3 år. Korttidsutleie er tillatt i kun 30 døgn per år. Dette begrenser fleksibiliteten for kjøper som ønsker å leie ut boligen.",
+          "evidence": [
+            "Det er begrenset adgang til å leie ut bolig i borettslag. Med styrets godkjenning og under visse vilkår kan boligen leies ut i inntil 3 år, jf. borettslagsloven § 5‑3 til § 5‑10.",
+            "Korttidsutleie er tillatt i opptil 30 døgn per år uten samtykke fra styret."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            46
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d110_018",
+          "description": "Dyrehold er i utgangspunktet ikke tillatt i borettslaget. Kjøper med husdyr må søke om særskilt tillatelse, og det er usikkert om dette vil bli innvilget.",
+          "evidence": [
+            "Husdyr: Det følger av borettslagets vedtekter at dyrehold ikke er tillatt. En andelseier kan, jf. borettslagsloven § 5‑11, likevel holde dyr dersom gode grunner taler for det og dyreholdet ikke er til ulempe for de øvrige brukerne av eiendommen."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            43
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d110_019",
+          "description": "Kjøper må godkjennes av borettslagets styre. Dersom styret nekter godkjenning på saklig grunnlag, kan kjøpet ikke gjennomføres. Dette er en usikkerhetsfaktor i kjøpsprosessen.",
+          "evidence": [
+            "Styregodkjennelse: Kjøper må godkjennes av borettslagets styre. Styret kan kun nekte godkjenning dersom det foreligger saklig grunnlag, jf. borettslagsloven § 4‑4."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            43
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        },
+        {
+          "risk_id": "gt_d110_020",
+          "description": "Forkjøpsrett er forhåndsutlyst. Eksisterende andelseiere i borettslaget kan benytte forkjøpsretten og overta boligen til budpris, noe som kan medføre at kjøper ikke får boligen selv om budet er akseptert.",
+          "evidence": [
+            "Forkjøpsrett: Forkjøpsretten er forhåndsutlyst.",
+            "Forhåndsvarsling forkjøpsrett: 8 406,‑"
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            38,
+            43
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d110_021",
+          "description": "Ventilasjonssystemet (mekanisk avtrekk) tilfredsstiller ikke dagens krav/standard. Dette kan medføre dårlig inneklima og fremtidige kostnader ved oppgradering.",
+          "evidence": [
+            "Leiligheten har ventilasjon fra oppføringstidspunkt som var normalt for boliger fra denne tidsperioden. Denne type ventilasjon tilfredsstiller ikke dagens krav/standard."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            68
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d110_022",
+          "description": "Oppgradering av bad, vaskerom og kjøkken i 2017 mangler dokumentasjon fra håndverker. Dette kan skape usikkerhet om arbeidets kvalitet og lovlighet, og kan vanskeliggjøre fremtidige forsikringskrav.",
+          "evidence": [
+            "2017: Oppgradert bad, vaskerom og kjøkken. Er det fremlagt dokumentasjon fra håndverker? Nei"
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            60
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d110_023",
+          "description": "Energimerking D (gul) indikerer relativt høyt energiforbruk. Beregnet vektet levert energi er 167,15 kWh/m² per år, noe som kan medføre høye strømkostnader for kjøper.",
+          "evidence": [
+            "Energikarakter: D. Energifarge: Gul",
+            "Beregnet vektet levert energi i normert klima. Pr. KVM pr. år: 167,15 kWh/m²",
+            "Beregnet levert energi i lokalt klima. Totalt levert pr. år: 13 496 kWh"
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            44,
+            70
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        },
+        {
+          "risk_id": "gt_d110_024",
+          "description": "Godkjent tiltak i nærheten: Igangsettingstillatelse for tilbygg til stort frittliggende boligbygg på 5 etasjer eller mer (eiendom 183/165). Dette kan påvirke utsikt, solforhold og nabolagskvalitet negativt.",
+          "evidence": [
+            "Eiendom 183/ 165. Tilbygg, stort frittliggende boligbygg på 5.etg el. mer. Igangsettingstillatelse, datert 28.02.2023. Saksnr: 202228129."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            45
+          ],
+          "details": {
+            "confidence": 0.72
+          }
+        },
+        {
+          "risk_id": "gt_d110_025",
+          "description": "Borettslaget er sikret mot tap ved mislighold av felleskostnader gjennom Klare Finans AS, men avtalen kan sies opp av en av partene. Dersom sikringsordningen opphører, kan borettslaget bli eksponert for tap ved mislighold fra andre andelseiere.",
+          "evidence": [
+            "Borettslaget er dekket av Klare Finans AS, www.klarefinans.no. Laget er sikret mot tap som følge av at en andelseier ikke betaler sine felleskostnader, etter gjeldende vilkår. Avtalen om sikring er gyldig til den sies opp av en av partene."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            39
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "b84797ab-6361-4e61-8ba2-f790ffaeba0a_risk_004",
+            "description": "Det er ikke bekreftet at radonmåling er utført. Manglende radonmåling innebærer usikkerhet rundt inneklimaet og potensielt helseskadelige radonverdier.",
+            "evidence": [
+              "21 Er det foretatt radonmåling? Nei Ja"
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "I egenerklæringsskjemaet (side 54) er spørsmål 21 'Er det foretatt radonmåling?' listet med svaralternativene 'Nei' og 'Ja', men ingen avkrysning eller bekreftelse er synlig i den ekstraherte teksten. Dokumentet gir ingen bekreftelse på at radonmåling er utført, noe som underbygger risikoen om manglende radonmåling og usikkerhet rundt inneklimaet."
+        },
+        {
+          "risk": {
+            "risk_id": "b84797ab-6361-4e61-8ba2-f790ffaeba0a_risk_005",
+            "description": "Selger har ikke bekreftet at det ikke foreligger påbud, heftelser, krav eller manglende tillatelser vedrørende eiendommen. Dette kan innebære juridiske eller økonomiske forpliktelser for kjøper.",
+            "evidence": [
+              "20 Kjenner du til om det foreligger påbud/heftelser/krav/manglende tillatelser vedrørende eiendommen? Nei Ja"
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "I egenerklæringsskjemaet (side 54) er spørsmål 20 'Kjenner du til om det foreligger påbud/heftelser/krav/manglende tillatelser vedrørende eiendommen?' listet med 'Nei' og 'Ja'. Basert på dokumentets struktur og at det ikke er noen beskrivelse/tilleggskommentar knyttet til dette spørsmålet (i motsetning til spørsmål 25 om tvister som har en utfyllende beskrivelse), indikerer dette at selger har svart 'Nei'. Risikoen er dermed ikke godt underbygget av dokumentet. Merk at det foreligger innflyttingsløyve uten ferdigattest, men dette er eksplisitt omtalt og kjent for kjøper."
+        },
+        {
+          "risk": {
+            "risk_id": "b84797ab-6361-4e61-8ba2-f790ffaeba0a_risk_006",
+            "description": "Manglende eller ikke fremlagt energiattest fra selger. Dersom energiattest ikke fremlegges, kan kjøper kreve at det lages en for selgers regning, noe som kan forsinke eller komplisere salgsprosessen.",
+            "evidence": [
+              "Dersom eier ikke har lagt frem energiattest, og eier etter skriftlig anmodning fra kjøper ikke har fremlagt energiattest før avtale om salg er inngått, kan kjøper få laget en energiattest ved hjelp av ekspert for selgers regning, innen ett år etter at avtale om salg er inngått."
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Dokumentet inneholder en fullstendig energiattest (side 70-73) med energikarakter D/Gul, datert 03.02.2026. Energiattesten er fremlagt av selger og vedlagt salgsoppgaven. Teksten om at kjøper kan kreve energiattest laget for selgers regning er standardtekst som er inkludert i alle salgsoppgaver, men i dette tilfellet er energiattesten faktisk fremlagt. Risikoen for manglende energiattest er derfor ikke reell."
+        },
+        {
+          "risk": {
+            "risk_id": "b84797ab-6361-4e61-8ba2-f790ffaeba0a_risk_007",
+            "description": "Risiko knyttet til selgers ufullstendige eller uriktige opplysninger i egenerklæringen. Forsikringsselskapet kan søke regress eller redusere sitt ansvar dersom opplysningene er misvisende, noe som kan eksponere kjøper for tap.",
+            "evidence": [
+              "dersom jeg har gitt ufullstendige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis"
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder eksplisitt tekst i egenerklæringsskjemaet (side 55) der selger bekrefter å ha lest og forstått at 'dersom jeg har gitt ufullstendige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis'. Dette bekrefter at risikoen er reell og dokumentert i salgsoppgaven. I tillegg er det opplyst at selger IKKE har tegnet boligselgerforsikring, noe som ytterligere eksponerer kjøper."
+        },
+        {
+          "risk": {
+            "risk_id": "b84797ab-6361-4e61-8ba2-f790ffaeba0a_risk_008",
+            "description": "Betalingsbetingelsene krever at hele oppgjøret betales fra én norsk bankkonto. Overføringer fra utlandet aksepteres kun unntaksvis. Dette kan være en risiko for kjøpere med utenlandsk finansiering.",
+            "evidence": [
+              "Hele oppgjøret må betales samlet fra en norsk bankkonto. Overføringer fra utlandet aksepteres kun unntaksvis, og kun dersom dette er"
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.72,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder eksplisitt under 'Betalingsbetingelser' (side 48): 'Hele oppgjøret må betales samlet fra en norsk bankkonto. Overføringer fra utlandet aksepteres kun unntaksvis, og kun dersom dette er forhåndsavtalt med megler i forbindelse med aksept av budet.' Dette bekrefter direkte risikoen for kjøpere med utenlandsk finansiering."
+        },
+        {
+          "risk": {
+            "risk_id": "b84797ab-6361-4e61-8ba2-f790ffaeba0a_risk_009",
+            "description": "Risiko for at offentlige planer, nabovarsel eller vedtak kan medføre endringer i bruken av eiendommen eller dens omgivelser. Selger er spurt om dette, men svaret er ikke entydig bekreftet som 'Nei'.",
+            "evidence": [
+              "andre planer, nabovarsel eller offentlige vedtak som kan medføre endringer i bruken av eiendommen eller av dens omgivelser? Nei Ja"
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.65,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "I egenerklæringsskjemaet (side 53-54) er spørsmål 19 'Kjenner du til forslag eller vedtatte reguleringsplaner, andre planer, nabovarsel eller offentlige vedtak som kan medføre endringer i bruken av eiendommen eller av dens omgivelser?' listet med 'Nei' og 'Ja', uten noen tilleggskommentar eller beskrivelse. Dette indikerer at selger har svart 'Nei'. Dokumentet omtaler riktignok reguleringsplaner og godkjente tiltak i nærheten under 'Regulerings og arealplaner', men disse er allerede kjent og opplyst i salgsoppgaven. Risikoen er ikke godt underbygget som en uavklart eller ukjent risiko."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 0.5714285714285714,
+        "recall": 0.16,
+        "f1": 0.25,
+        "total_support": 25
+      }
+    },
+    "agentic_rag_P+T+R": {
+      "run_id": "34e85d78-6294-4a20-8f21-0473975f3043",
+      "system_type": "agentic_rag_P+T+R",
+      "overall_metrics": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.7499999999999999,
+        "total_support": 25
+      },
+      "matched_risks": 15,
+      "unmatched_predicted": 0,
+      "unmatched_ground_truth": 10,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "34e85d78-6294-4a20-8f21-0473975f3043_risk_000",
+            "description": "Betydelig økning i fellesgjeld og felleskostnader: Borettslaget har overskredet budsjett for fasade- og balkongprosjektet og må ta opp ytterligere lån. Generalforsamlingen ga styret fullmakt til låneopptak med ramme på inntil kr. 522 146 480. Total fellesgjeld er allerede kr. 459 653 075 per 26.01.2026. Andel fellesgjeld for denne leiligheten er kr. 947 543. Økning i felleskostnader er ikke endelig beregnet og ikke varslet.",
+            "evidence": [
+              "Borettslaget må ta opp ytterligere lån for å betjene utgiftene vedr. fasade og balkongprosjektet inkl varmepumpe, da byggekostnadene har overskredet det som var budsjettert.",
+              "Generalforsamlingen ga styret fullmakt til låneopptak i handelsbanken med ramme på inntil kr. 522 146 480,‑.",
+              "Total fellesgjeld for Toppe Borettslag pr. 26.01.2026 er kr. 459 653 075,‑",
+              "På grunn av oppgraderinger i borettslaget og nye låneopptak, må ny eier forvente økning i andel fellesgjeld og månedlige fellesutgifter. En slik økning er ikke endelig beregnet og er pt. ikke varslet.",
+              "Det har vært gjennomført en økning i felleskostnader i desember 2025, men det må påregnes ytterligere økning etterhvert som oppgraderingene ferdigstilles."
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.98,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_001",
+            "description": "Svært høy fellesgjeld med risiko for ytterligere økning. Borettslagets samlede fellesgjeld er kr 459 653 075 per 26.01.2026, og andelen av fellesgjeld er kr 947 543. Det er varslet ytterligere låneopptak med ramme på inntil kr 522 146 480 for å dekke overskridelser i fasade- og balkongprosjektet. Endelig kostnad er ikke fastsatt.",
+            "evidence": [
+              "Total fellesgjeld for Toppe Borettslag pr. 26.01.2026 er kr. 459 653 075,‑",
+              "Andel av fellesgjeld: Kr 947 543 pr. 26.01.2026",
+              "generalforsamlingen ga styret fullmakt til låneopptak i handelsbanken med ramme på inntil kr. 522 146 480,‑",
+              "byggekostnadene har overskredet det som var budsjettert",
+              "På grunn av oppgraderinger i borettslaget og nye låneopptak, må ny eier forvente økning i andel fellesgjeld og månedlige fellesutgifter. En slik økning er ikke endelig beregnet og er pt. ikke varslet."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              38,
+              43,
+              44
+            ],
+            "details": {
+              "confidence": 0.99
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "34e85d78-6294-4a20-8f21-0473975f3043_risk_001",
+            "description": "Avdragsfrie lån utløper snart: Borettslaget har tre lån som er avdragsfrie frem til 30.12.2027. Når avdrag begynner å løpe, vil månedlige felleskostnader øke ytterligere for alle andelseiere, inkludert kjøper.",
+            "evidence": [
+              "Borettslaget har tre lån som er avdragsfri frem til 30.12.2027. Når avdrag skal betales på disse, vil månedlige fellesutgifter øke.",
+              "Avdragsfritt til 30.12.2027 (nevnt for flere lån i Svenska Handelsbanken AB NUF)"
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_002",
+            "description": "Avdragsfrie lån utløper 30.12.2027, noe som vil medføre betydelig økning i månedlige felleskostnader. Borettslaget har tre lån som er avdragsfrie frem til 30.12.2027. Andelen av det største avdragsfrie lånet (Svenska Handelsbanken serielån) er alene kr 762 730.",
+            "evidence": [
+              "Borettslaget har tre lån som er avdragsfri frem til 30.12.2027. Når avdrag skal betales på disse, vil månedlige fellesutgifter øke.",
+              "Svenska Handelsbanken AB NUF, serielån. Rentesats: 5,09%, flytende rente. Total saldo: kr 370 000 000,‑. Andel av saldo: kr 762 730,‑. Avdragsfritt til 30.12.2027",
+              "Svenska Handelsbanken AB NUF, annuitetslån. Andel av saldo: kr 79 080,‑. Avdragsfritt til 30.12.2027",
+              "Svenska Handelsbanken AB NUF, serielån. Andel av saldo: kr 18 889,‑. Avdragsfritt til 30.12.2027"
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              38,
+              39
+            ],
+            "details": {
+              "confidence": 0.99
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "34e85d78-6294-4a20-8f21-0473975f3043_risk_002",
+            "description": "Pågående rettstvister i borettslaget: Det er en aktiv tvist om fordelingsnøkkelen for kostnader knyttet til nye altaner. 8 andelseiere har varslet søksmål via advokat. Dersom de vinner, vil fordelingen av fellesgjeld skje etter boligareal, noe som kan påvirke denne andelens kostnadsandel.",
+            "evidence": [
+              "Det er en pågående tvist vedrørende uenighet rundt fordelingsnøkkelen for kostnadene knyttet til anskaffelsen av nye altaner mv.",
+              "Styret har mottatt søksmål fra advokat Toralf Wågheim på vegne av 8 andelseiere i borettslaget.",
+              "Dersom søksmål blir tatt videre og de 8 andelseierne vinner vil fordelingen av fellesgjelden skje etter fordelingsnøkkelen som tar utgangspunkt i andelenes boligareal."
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_003",
+            "description": "Pågående søksmål mot borettslaget vedrørende fordeling av felleskostnader for nye altaner. Advokat Toralf Wågheim representerer 8 andelseiere som bestrider fordelingsnøkkelen. Dersom søksmålet vinnes av de 8 andelseierne, vil fordelingen av fellesgjelden endres til fordelingsnøkkel basert på boligareal, noe som kan øke kostnadene for denne andelen.",
+            "evidence": [
+              "Styret har mottatt søksmål fra advokat Toralf Wågheim på vegne av 8 andelseiere i borettslaget vedrørende fordelingen av felleskostnadene knyttet til anskaffelsen av nye altaner mv.",
+              "Dersom søksmål blir tatt videre og de 8 andelseierne vinner vil fordelingen av fellesgjelden skje etter fordelingsnøkkelen som tar utgangspunkt i andelenes boligareal.",
+              "Advokat Wågheim gjennomgikk sitt syn på det rettslige utgangspunktet og konkluderte med at hans vurdering var at styrets forslag til vedtak ville innebære et ugyldig vedtak dersom det ble vedtatt."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              42,
+              44,
+              92,
+              93
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "34e85d78-6294-4a20-8f21-0473975f3043_risk_008",
+            "description": "Krav fra tidligere driftsekretær via LO: Tidligere driftsekretær har fremmet krav på kr. 67 505 via LO, gjeldende krav om overtidsbetaling og kompensasjon. Dette kan medføre økte kostnader for borettslaget og dermed for andelseierne.",
+            "evidence": [
+              "Tidligere diftssektretær har fremmet krav via LO. Kravet utgjør kr. 67 505 og gjelder krav om overtidsbetaling og kompensasjon for angivelig å ha hatt tilsynsoppgaver med felleslokalet.",
+              "Styret har også blitt gitt fullmakt til å utrede saken videre for mulig søksmål mot tidligere styreleder (Eirik Tonning)."
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_004",
+            "description": "Pågående rettssak fra tidligere driftssekretær via LO. Det foreligger stevning sendt til tingretten. Kravet utgjør kr 67 505 og gjelder krav om overtidsbetaling og kompensasjon. Dette kan medføre kostnader for borettslaget.",
+            "evidence": [
+              "Tidligere diftssektretær har fremmet krav via LO. Kravet utgjør kr. 67 505 og gjelder krav om overtidsbetaling og kompensasjon for angivelig å ha hatt tilsynsoppgaver med felleslokalet.",
+              "Nytt er at det foreligger stevning i saken som er sendt til tingretten. Det er foreløpig ikke gitt pålegg om tilsvar.",
+              "Styrets oppfatning er at det ikke er grunnlag for kravet. Det kan ikke utelukkes at saken finner en løsning gjennom rettsmekling."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              42,
+              44,
+              94
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "34e85d78-6294-4a20-8f21-0473975f3043_risk_006",
+            "description": "Manglende ferdigattest for borettslaget: Det foreligger kun midlertidig brukstillatelse for påbygg, og det gjenstår flere tiltak før ferdigattest kan utstedes. Blant annet mangler planering, ventiler i bossrom, korrekt rekkverk og håndlist.",
+            "evidence": [
+              "Det foreligger midlertidig brukstillatelse for påbygg bolig, datert 13.06.2025. Det er gitt en frist om at hele tiltaket skal være ferdigstilt innen 29.06.2025.",
+              "For å kunne søke om ferdigattest må følgende tiltak utføres: Noe planering og opprydding. Montering av ventiler i bossrom. Avstanden mellom spiler i rekkverk skal være 12,5cm. Håndlist på vegg mangler.",
+              "Er det manglende ferdigattest / midlertidig brukstillatelse? Ikke kontrollert"
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_006",
+            "description": "Manglende ferdigattest – kun innflyttingsløyve fra 1972 og midlertidig brukstillatelse for påbygg. Det foreligger en rekke uoppfylte krav fra byggetillatelsen, og ferdigattest vil ikke bli utstedt for byggesaker fra før 1998. I tillegg er det gitt midlertidig brukstillatelse for påbygg datert 13.06.2025 med frist for ferdigstillelse 29.06.2025 – fristen er allerede utløpt.",
+            "evidence": [
+              "Det foreligger innflyttingsløyve for eiendommen, datert 01.12.1972. Innflytningstillatelsen bekrefter at boligen lovlig kan benyttes, men at det fortsatt gjenstår arbeid før ferdigattest kan utstedes.",
+              "Det gjøres oppmerksom på at ferdigattest ikke vil bli utstedt for ufullførte byggesaker/ bygningsmeldinger som er fra før 1998.",
+              "Det foreligger midlertidig brukstillatelse for påbygg bolig, datert 13.06.2025. Det er gitt en frist om at hele tiltaket skal være ferdigstilt innen 29.06.2025.",
+              "For å kunne søke om ferdigattest må følgende tiltak utføres: Noe planering og opprydding. Montering av ventiler i bossrom. Avstanden mellom spiler i rekkverk skal være 12,5cm. Håndlist på vegg mangler. Branntrygge dører A-60 må gjøres selvlukkende."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              40,
+              41
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "34e85d78-6294-4a20-8f21-0473975f3043_risk_004",
+            "description": "El-anlegg mangler delvis dokumentasjon: Boligen har et el-anlegg som dels mangler dokumentasjon. Det anbefales utvidet el-kontroll av kvalifisert elektrofaglig person. Dette representerer en potensiell sikkerhetsrisiko og kan medføre kostnader til utbedring.",
+            "evidence": [
+              "Boligen har et elanlegg dels uten dokumentasjon. Det bør gjennomføres en utvidet el-kontroll av en kvalifisert elektrofaglig person, og nødvendige tiltak vurderes deretter.",
+              "Erklæring på utskifting av hovedssikring i 2018. Ellers ukjent historikk og manglende dokumentasjon på sikringsskap og øvrig anlegg."
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.93,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_008",
+            "description": "El-anlegget mangler delvis dokumentasjon og det anbefales utvidet el-kontroll. Manglende samsvarserklæring på deler av anlegget utgjør en sikkerhets- og forsikringsrisiko.",
+            "evidence": [
+              "Boligen har et el‑anlegg dels uten dokumentasjon. Det bør gjennomføres en utvidet el‑kontroll av en kvalifisert elektrofaglig person, og nødvendige tiltak vurderes deretter.",
+              "Er det manglende samsvarserklæring på arbeider utført etter 01.01.1999? Ja. Eier har samsvarserklæring på utskifting av hovedssikring i 2018. Ellers ukjent historikk og manglende dokumentasjon på sikringsskap og øvrig anlegg.",
+              "Er det foretatt kontroll av det lokale el-tilsyn eller utført utvidet el-kontroll i løpet av de siste 5 år? Nei"
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              42,
+              43,
+              65
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "34e85d78-6294-4a20-8f21-0473975f3043_risk_005",
+            "description": "Vannledninger med TG2 – kobberrør til kjøkken har nådd en alder som gir økt risiko for skader og følgeskader. Dette kan medføre behov for utskifting og kostnader for kjøper.",
+            "evidence": [
+              "Vannledninger TG 2 pga alder på kobberrør til kjøkken.",
+              "Har vannrør nådd en alder som gir økt risiko for skader eller følgeskader? Ja",
+              "Bygningsdeler vurdert med TG2: Vannledninger grunnet alder på kobberrør til kjøkken."
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_009",
+            "description": "Kobberrør til kjøkken er fra byggeåret (1973) og har nådd en alder med økt risiko for lekkasjer (TG2). Anbefalt tiltak er utskifting i forbindelse med fremtidig oppgradering av kjøkken.",
+            "evidence": [
+              "Vannledninger TG 2 pga alder på kobberrør til kjøkken.",
+              "Vannrør av kobber (til kjøkken) er fra byggeåret, og har nådd en alder hvor det vil være økt risiko for lekkasjer (TG 2)",
+              "Vannledninger bør skiftes i forbindelse med fremtidig oppgradering av kjøkken."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              43,
+              59,
+              64,
+              65
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "34e85d78-6294-4a20-8f21-0473975f3043_risk_003",
+            "description": "Garasjeanlegg krever kostbart vedlikehold uten vedtatt finansiering: Garasjeanleggene i borettslaget er fra byggeår og krever vedlikehold. Det er ikke vedtatt låneopptak for dette, og det er ikke innhentet konkrete pristilbud. Tiltak er nødvendig for å forhindre betongfall i sone 1 og brannfare i sone 2.",
+            "evidence": [
+              "Garasjeanleggene i borettslaget er fra byggeår og krever vedlikehold.",
+              "Styret har fått fullmakt til å utrede garasjeanleggene i sone 1 og 2 ytterligere slik at en vet hvilke tiltak som må til for å forhindre nedfall av betong i sone 1 og forhindre at garasjen i sone 2 blir en brannfelle.",
+              "Det er ikke vedtatt låneopptak for dette, og det er videre ikke innhentet noen konkrete pristilbud på dette."
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_010",
+            "description": "Garasjeanleggene er fra byggeåret og krever vedlikehold. Det er risiko for nedfall av betong i sone 1 og brannfare i sone 2. Ingen konkrete pristilbud er innhentet og ingen låneopptak er vedtatt, men dette kan medføre betydelige fremtidige kostnader for borettslaget.",
+            "evidence": [
+              "Garajseanleggene i borettslaget er fra byggeår og krever vedlikehold. Styret har fått fullmakt til å utrede garasjeanleggene i sone 1 og 2 ytterligere slik at en vet hvilke tiltak som må til for å forhindre nedfall av betong i sone 1 og forhindre at garasjen i sone 2 blir en brannfelle.",
+              "Det er ikke vedtatt låneopptak for dette, og det er videre ikke innhentet noen konkrete pristilbud på dette."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              44
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "34e85d78-6294-4a20-8f21-0473975f3043_risk_011",
+            "description": "Høy andel fellesgjeld og flytende renter: Andel fellesgjeld er kr. 947 543 med flytende renter på 4,14–5,09%. Renteendringer kan medføre økte månedlige kostnader for kjøper utover de allerede varslede økte felleskostnadene.",
+            "evidence": [
+              "Kr 947 543 pr. 26.01.2026 (andel fellesgjeld)",
+              "Rentesats: 5,09%, flytende rente (Svenska Handelsbanken AB NUF, serielån)",
+              "Rentesats: 4,14%, flytende rente (Husbanken, annuitetslån)",
+              "Felleskostnader kr 8 031,‑ pr. mnd"
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_011",
+            "description": "Flytende renter på alle lån i borettslaget medfører risiko for økte felleskostnader ved renteøkninger. Husbanklånene har 4,14% flytende rente og Handelsbanklånene har 5,09% flytende rente.",
+            "evidence": [
+              "Husbanken, annuitetslån. Rentesats: 4,14%, flytende rente",
+              "Svenska Handelsbanken AB NUF, serielån. Rentesats: 5,09%, flytende rente. Total saldo: kr 370 000 000,‑",
+              "Svenska Handelsbanken AB NUF, annuitetslån. Rentesats: 5,09%, flytende rente"
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              38,
+              39
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "34e85d78-6294-4a20-8f21-0473975f3043_risk_007",
+            "description": "Støybelastning fra veitrafikk: Eiendommen er delvis berørt av støy fra veitrafikk over grenseverdier fastsatt av statlige myndigheter og kommuneplanens bestemmelser. Eiendommen ligger i gul støysone med berøringsgrad 14,4%.",
+            "evidence": [
+              "Hele eller deler av eiendommen antas å være berørt av støy fra veitrafikk over grenseverdier gitt av statlige myndigheter og i kommuneplanens bestemmelser.",
+              "Eiendommen befinner seg i følgende hensynssoner: Gul støy, veistøy – gul sone. Berøringsgrad 14,4%.",
+              "Dette vil kunne få betydning for behandlingen av plan- og byggesaker som omfatter den aktuelle eiendommen, blant annet medføre utredningsplikt for tiltakshaver/forslagsstiller og eventuelt krav om avbøtende tiltak."
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_012",
+            "description": "Eiendommen er delvis berørt av støy fra veitrafikk over grenseverdier gitt av statlige myndigheter. Berøringsgrad er 14,4% i gul støysone. Dette kan påvirke fremtidige plan- og byggesaker og medføre krav om avbøtende tiltak.",
+            "evidence": [
+              "Eiendommen befinner seg i følgende hensynssoner: Gul støy, veistøy ‑ gul sone. Berøringsgrad 14,4%.",
+              "Hele eller deler av eiendommen antas å være berørt av støy fra veitrafikk over grenseverdier gitt av statlige myndigheter og i kommuneplanens bestemmelser.",
+              "Dette vil kunne få betydning for behandlingen av plan‑ og byggesaker som omfatter den aktuelle eiendommen, blant annet medføre utredningsplikt for tiltakshaver/ forslagsstiller og eventuelt krav om avbøtende tiltak."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              45
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "34e85d78-6294-4a20-8f21-0473975f3043_risk_009",
+            "description": "Selger har ikke tegnet boligselgerforsikring: Selger har valgt ikke å tegne boligselgerforsikring. Dette kan svekke kjøpers mulighet til å få dekket eventuelle krav mot selger ved skjulte feil og mangler.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring.",
+              "Jeg ønsker ikke å kjøpe boligselgerforsikring ihht vilkår."
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_013",
+            "description": "Selger har ikke tegnet boligselgerforsikring. Dette innebærer at kjøper ikke har den ekstra sikkerheten som boligselgerforsikring normalt gir, og eventuelle krav mot selger kan bli vanskeligere å inndrive.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              46
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "34e85d78-6294-4a20-8f21-0473975f3043_risk_010",
+            "description": "Bindende strømavtale (Norgespris) følger boligen: Nåværende eier har tegnet avtale om Norgespris med bindingstid til 31.12.2026. Avtalen følger boligen og må overtas av kjøper, noe som begrenser kjøpers valgfrihet i strømleverandør og medfører at eventuell strømstøtte bortfaller.",
+            "evidence": [
+              "Nåværende eier har tegnet avtale om Norgespris på strøm, og avtalen har bindingstid til 31.12.2026. Avtalen følger boligen, og må derfor overtas av kjøper.",
+              "Når det er tegnet avtale om Norgespris bortfaller eventuell strømstøtte."
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_014",
+            "description": "Kjøper overtar bindende strømavtale (Norgespris) med bindingstid til 31.12.2026. Kjøper har ikke frihet til å velge egen strømleverandør eller -avtale frem til utløpsdato, og bortfall av eventuell strømstøtte kan medføre økte strømkostnader.",
+            "evidence": [
+              "Nåværende eier har tegnet avtale om Norgespris på strøm, og avtalen har bindingstid til 31.12.2026. Avtalen følger boligen, og må derfor overtas av kjøper.",
+              "Når det er tegnet avtale om Norgespris bortfaller eventuell strømstøtte."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              44
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "34e85d78-6294-4a20-8f21-0473975f3043_risk_012",
+            "description": "Begrenset utleieadgang: Det er begrenset adgang til å leie ut bolig i borettslaget. Korttidsutleie er tillatt i kun 30 døgn per år uten styrets samtykke. Dette begrenser kjøpers mulighet til å generere leieinntekter.",
+            "evidence": [
+              "Adgang til utleie: Det er begrenset adgang til å leie ut bolig i borettslag. Med styrets godkjenning og under visse vilkår kan boligen leies ut.",
+              "Korttidsutleie er tillatt i opptil 30 døgn per år uten samtykke fra styret."
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_017",
+            "description": "Begrenset adgang til utleie i borettslag. Utleie krever styregodkjenning og er begrenset til maksimalt 3 år. Korttidsutleie er tillatt i kun 30 døgn per år. Dette begrenser fleksibiliteten for kjøper som ønsker å leie ut boligen.",
+            "evidence": [
+              "Det er begrenset adgang til å leie ut bolig i borettslag. Med styrets godkjenning og under visse vilkår kan boligen leies ut i inntil 3 år, jf. borettslagsloven § 5‑3 til § 5‑10.",
+              "Korttidsutleie er tillatt i opptil 30 døgn per år uten samtykke fra styret."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              46
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "34e85d78-6294-4a20-8f21-0473975f3043_risk_013",
+            "description": "Styregodkjenning av kjøper kreves: Kjøper må godkjennes av borettslagets styre. Selv om styret kun kan nekte ved saklig grunnlag, representerer dette en usikkerhet i kjøpsprosessen.",
+            "evidence": [
+              "Styregodkjennelse: Kjøper må godkjennes av borettslagets styre. Styret kan kun nekte godkjenning dersom det foreligger saklig grunnlag, jf. borettslagsloven § 4‑4."
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_019",
+            "description": "Kjøper må godkjennes av borettslagets styre. Dersom styret nekter godkjenning på saklig grunnlag, kan kjøpet ikke gjennomføres. Dette er en usikkerhetsfaktor i kjøpsprosessen.",
+            "evidence": [
+              "Styregodkjennelse: Kjøper må godkjennes av borettslagets styre. Styret kan kun nekte godkjenning dersom det foreligger saklig grunnlag, jf. borettslagsloven § 4‑4."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              43
+            ],
+            "details": {
+              "confidence": 0.78
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "34e85d78-6294-4a20-8f21-0473975f3043_risk_014",
+            "description": "Energimerke D (gul) – lav energieffektivitet: Boligen har energikarakter D med beregnet levert energi på 162,60 kWh/m² per år. Dette indikerer høyere energikostnader sammenlignet med mer energieffektive boliger, og kan medføre behov for energioppgraderinger.",
+            "evidence": [
+              "Energikarakter: D",
+              "Energifarge: Gul",
+              "Beregnet vektet levert energi i normert klima: 167,15 kWh/m²",
+              "Beregnet levert energi i lokalt klima: 162,60 kWh/m² – Totalt levert pr. år: 13 496 kWh"
+            ],
+            "source_documents": [
+              "d110_d110"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_023",
+            "description": "Energimerking D (gul) indikerer relativt høyt energiforbruk. Beregnet vektet levert energi er 167,15 kWh/m² per år, noe som kan medføre høye strømkostnader for kjøper.",
+            "evidence": [
+              "Energikarakter: D. Energifarge: Gul",
+              "Beregnet vektet levert energi i normert klima. Pr. KVM pr. år: 167,15 kWh/m²",
+              "Beregnet levert energi i lokalt klima. Totalt levert pr. år: 13 496 kWh"
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              44,
+              70
+            ],
+            "details": {
+              "confidence": 0.78
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d110_005",
+          "description": "Mulig søksmål mot tidligere styreleder Eirik Tonning for grovt underslag. Politiet henla saken, men borettslaget utreder sivilt søksmål. Dette kan medføre ytterligere juridiske kostnader for borettslaget.",
+          "evidence": [
+            "Styret har også blitt gitt fullmakt til å utrede saken videre for mulig søksmål mot tidligere styreleder (Eirik Tonning).",
+            "Anmeldelsen gjaldt grovt underslag. Politiet besluttet 26. september 2025 å henlegge saken på grunn av at «etterforskning ikke vil være en forholdsmessig ressursbruk».",
+            "Uforpliktende ble det skissert en kostnad i størrelsesorden 20-40/50 tusen kroner for en slik vurdering."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            42,
+            93,
+            94
+          ],
+          "details": {
+            "confidence": 0.93
+          }
+        },
+        {
+          "risk_id": "gt_d110_007",
+          "description": "Planløsning avviker fra opprinnelige byggetegninger. Vaskerom er opprinnelig byggemeldt som WC. Selv om bruksendringen ikke er søknadspliktig, kan det skape usikkerhet rundt lovligheten av dagens bruk.",
+          "evidence": [
+            "Dagens planløsning avviker fra de opprinnelige byggetegningene. Vaskerom er opprinnelig byggemeldt som WC. Bruksendring til hoveddel (WC) til hoveddel (vaskerom) er ikke søknadspliktig."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            41
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d110_015",
+          "description": "Tidligere uautoriserte låneopptak av tidligere styre uten mandat fra generalforsamlingen (maling, tak) skal refinansieres inn i Handelsbanken-rammen. Dette indikerer historisk svak styring og kan medføre ytterligere kostnader.",
+          "evidence": [
+            "Tidligere låneopptak av av tidligere styre, uten mandat fra GF (maling, tak) vil bli fordelt etter fordelingsnøkkelen, og skal refinansieres inn i rammen av lån i Handelsbanken."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            44
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d110_016",
+          "description": "Klage på advokat Raftevoll – borettslaget er involvert i ytterligere en juridisk sak. Advokatnemnda har meddelt kritikk, og styret fremmer krav til advokatens forsikringsselskap. Dette indikerer et borettslag med mange pågående tvister og juridiske prosesser.",
+          "evidence": [
+            "Klage på advokat Raftevoll. Nytt i denne saken er at Advokatnemnda har fattet vedtak. Advokaten ble meddelt kritikk for sin håndtering av advokatoppdraget. Styret følger opp denne saken gjennom å fremme krav til advokatens forsikringsselskap."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            94
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d110_018",
+          "description": "Dyrehold er i utgangspunktet ikke tillatt i borettslaget. Kjøper med husdyr må søke om særskilt tillatelse, og det er usikkert om dette vil bli innvilget.",
+          "evidence": [
+            "Husdyr: Det følger av borettslagets vedtekter at dyrehold ikke er tillatt. En andelseier kan, jf. borettslagsloven § 5‑11, likevel holde dyr dersom gode grunner taler for det og dyreholdet ikke er til ulempe for de øvrige brukerne av eiendommen."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            43
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d110_020",
+          "description": "Forkjøpsrett er forhåndsutlyst. Eksisterende andelseiere i borettslaget kan benytte forkjøpsretten og overta boligen til budpris, noe som kan medføre at kjøper ikke får boligen selv om budet er akseptert.",
+          "evidence": [
+            "Forkjøpsrett: Forkjøpsretten er forhåndsutlyst.",
+            "Forhåndsvarsling forkjøpsrett: 8 406,‑"
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            38,
+            43
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d110_021",
+          "description": "Ventilasjonssystemet (mekanisk avtrekk) tilfredsstiller ikke dagens krav/standard. Dette kan medføre dårlig inneklima og fremtidige kostnader ved oppgradering.",
+          "evidence": [
+            "Leiligheten har ventilasjon fra oppføringstidspunkt som var normalt for boliger fra denne tidsperioden. Denne type ventilasjon tilfredsstiller ikke dagens krav/standard."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            68
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d110_022",
+          "description": "Oppgradering av bad, vaskerom og kjøkken i 2017 mangler dokumentasjon fra håndverker. Dette kan skape usikkerhet om arbeidets kvalitet og lovlighet, og kan vanskeliggjøre fremtidige forsikringskrav.",
+          "evidence": [
+            "2017: Oppgradert bad, vaskerom og kjøkken. Er det fremlagt dokumentasjon fra håndverker? Nei"
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            60
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d110_024",
+          "description": "Godkjent tiltak i nærheten: Igangsettingstillatelse for tilbygg til stort frittliggende boligbygg på 5 etasjer eller mer (eiendom 183/165). Dette kan påvirke utsikt, solforhold og nabolagskvalitet negativt.",
+          "evidence": [
+            "Eiendom 183/ 165. Tilbygg, stort frittliggende boligbygg på 5.etg el. mer. Igangsettingstillatelse, datert 28.02.2023. Saksnr: 202228129."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            45
+          ],
+          "details": {
+            "confidence": 0.72
+          }
+        },
+        {
+          "risk_id": "gt_d110_025",
+          "description": "Borettslaget er sikret mot tap ved mislighold av felleskostnader gjennom Klare Finans AS, men avtalen kan sies opp av en av partene. Dersom sikringsordningen opphører, kan borettslaget bli eksponert for tap ved mislighold fra andre andelseiere.",
+          "evidence": [
+            "Borettslaget er dekket av Klare Finans AS, www.klarefinans.no. Laget er sikret mot tap som følge av at en andelseier ikke betaler sine felleskostnader, etter gjeldende vilkår. Avtalen om sikring er gyldig til den sies opp av en av partene."
+          ],
+          "source_documents": [
+            "d110.pdf"
+          ],
+          "source_pages": [
+            39
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        }
+      ],
+      "verified_unmatched": [],
+      "adjusted_metrics": null
+    },
+    "ground_truth": {
+      "run_id": "85333c7f-abdb-46e0-9a66-aa6bcd516ae8_gt",
+      "system_type": "ground_truth",
+      "overall_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "total_support": 25
+      },
+      "matched_risks": 25,
+      "unmatched_predicted": 0,
+      "unmatched_ground_truth": 0,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_001",
+            "description": "Svært høy fellesgjeld med risiko for ytterligere økning. Borettslagets samlede fellesgjeld er kr 459 653 075 per 26.01.2026, og andelen av fellesgjeld er kr 947 543. Det er varslet ytterligere låneopptak med ramme på inntil kr 522 146 480 for å dekke overskridelser i fasade- og balkongprosjektet. Endelig kostnad er ikke fastsatt.",
+            "evidence": [
+              "Total fellesgjeld for Toppe Borettslag pr. 26.01.2026 er kr. 459 653 075,‑",
+              "Andel av fellesgjeld: Kr 947 543 pr. 26.01.2026",
+              "generalforsamlingen ga styret fullmakt til låneopptak i handelsbanken med ramme på inntil kr. 522 146 480,‑",
+              "byggekostnadene har overskredet det som var budsjettert",
+              "På grunn av oppgraderinger i borettslaget og nye låneopptak, må ny eier forvente økning i andel fellesgjeld og månedlige fellesutgifter. En slik økning er ikke endelig beregnet og er pt. ikke varslet."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              38,
+              43,
+              44
+            ],
+            "confidence": 0.99,
+            "details": {
+              "confidence": 0.99
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_001",
+            "description": "Svært høy fellesgjeld med risiko for ytterligere økning. Borettslagets samlede fellesgjeld er kr 459 653 075 per 26.01.2026, og andelen av fellesgjeld er kr 947 543. Det er varslet ytterligere låneopptak med ramme på inntil kr 522 146 480 for å dekke overskridelser i fasade- og balkongprosjektet. Endelig kostnad er ikke fastsatt.",
+            "evidence": [
+              "Total fellesgjeld for Toppe Borettslag pr. 26.01.2026 er kr. 459 653 075,‑",
+              "Andel av fellesgjeld: Kr 947 543 pr. 26.01.2026",
+              "generalforsamlingen ga styret fullmakt til låneopptak i handelsbanken med ramme på inntil kr. 522 146 480,‑",
+              "byggekostnadene har overskredet det som var budsjettert",
+              "På grunn av oppgraderinger i borettslaget og nye låneopptak, må ny eier forvente økning i andel fellesgjeld og månedlige fellesutgifter. En slik økning er ikke endelig beregnet og er pt. ikke varslet."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              38,
+              43,
+              44
+            ],
+            "details": {
+              "confidence": 0.99
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_002",
+            "description": "Avdragsfrie lån utløper 30.12.2027, noe som vil medføre betydelig økning i månedlige felleskostnader. Borettslaget har tre lån som er avdragsfrie frem til 30.12.2027. Andelen av det største avdragsfrie lånet (Svenska Handelsbanken serielån) er alene kr 762 730.",
+            "evidence": [
+              "Borettslaget har tre lån som er avdragsfri frem til 30.12.2027. Når avdrag skal betales på disse, vil månedlige fellesutgifter øke.",
+              "Svenska Handelsbanken AB NUF, serielån. Rentesats: 5,09%, flytende rente. Total saldo: kr 370 000 000,‑. Andel av saldo: kr 762 730,‑. Avdragsfritt til 30.12.2027",
+              "Svenska Handelsbanken AB NUF, annuitetslån. Andel av saldo: kr 79 080,‑. Avdragsfritt til 30.12.2027",
+              "Svenska Handelsbanken AB NUF, serielån. Andel av saldo: kr 18 889,‑. Avdragsfritt til 30.12.2027"
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              38,
+              39
+            ],
+            "confidence": 0.99,
+            "details": {
+              "confidence": 0.99
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_002",
+            "description": "Avdragsfrie lån utløper 30.12.2027, noe som vil medføre betydelig økning i månedlige felleskostnader. Borettslaget har tre lån som er avdragsfrie frem til 30.12.2027. Andelen av det største avdragsfrie lånet (Svenska Handelsbanken serielån) er alene kr 762 730.",
+            "evidence": [
+              "Borettslaget har tre lån som er avdragsfri frem til 30.12.2027. Når avdrag skal betales på disse, vil månedlige fellesutgifter øke.",
+              "Svenska Handelsbanken AB NUF, serielån. Rentesats: 5,09%, flytende rente. Total saldo: kr 370 000 000,‑. Andel av saldo: kr 762 730,‑. Avdragsfritt til 30.12.2027",
+              "Svenska Handelsbanken AB NUF, annuitetslån. Andel av saldo: kr 79 080,‑. Avdragsfritt til 30.12.2027",
+              "Svenska Handelsbanken AB NUF, serielån. Andel av saldo: kr 18 889,‑. Avdragsfritt til 30.12.2027"
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              38,
+              39
+            ],
+            "details": {
+              "confidence": 0.99
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_003",
+            "description": "Pågående søksmål mot borettslaget vedrørende fordeling av felleskostnader for nye altaner. Advokat Toralf Wågheim representerer 8 andelseiere som bestrider fordelingsnøkkelen. Dersom søksmålet vinnes av de 8 andelseierne, vil fordelingen av fellesgjelden endres til fordelingsnøkkel basert på boligareal, noe som kan øke kostnadene for denne andelen.",
+            "evidence": [
+              "Styret har mottatt søksmål fra advokat Toralf Wågheim på vegne av 8 andelseiere i borettslaget vedrørende fordelingen av felleskostnadene knyttet til anskaffelsen av nye altaner mv.",
+              "Dersom søksmål blir tatt videre og de 8 andelseierne vinner vil fordelingen av fellesgjelden skje etter fordelingsnøkkelen som tar utgangspunkt i andelenes boligareal.",
+              "Advokat Wågheim gjennomgikk sitt syn på det rettslige utgangspunktet og konkluderte med at hans vurdering var at styrets forslag til vedtak ville innebære et ugyldig vedtak dersom det ble vedtatt."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              42,
+              44,
+              92,
+              93
+            ],
+            "confidence": 0.97,
+            "details": {
+              "confidence": 0.97
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_003",
+            "description": "Pågående søksmål mot borettslaget vedrørende fordeling av felleskostnader for nye altaner. Advokat Toralf Wågheim representerer 8 andelseiere som bestrider fordelingsnøkkelen. Dersom søksmålet vinnes av de 8 andelseierne, vil fordelingen av fellesgjelden endres til fordelingsnøkkel basert på boligareal, noe som kan øke kostnadene for denne andelen.",
+            "evidence": [
+              "Styret har mottatt søksmål fra advokat Toralf Wågheim på vegne av 8 andelseiere i borettslaget vedrørende fordelingen av felleskostnadene knyttet til anskaffelsen av nye altaner mv.",
+              "Dersom søksmål blir tatt videre og de 8 andelseierne vinner vil fordelingen av fellesgjelden skje etter fordelingsnøkkelen som tar utgangspunkt i andelenes boligareal.",
+              "Advokat Wågheim gjennomgikk sitt syn på det rettslige utgangspunktet og konkluderte med at hans vurdering var at styrets forslag til vedtak ville innebære et ugyldig vedtak dersom det ble vedtatt."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              42,
+              44,
+              92,
+              93
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_004",
+            "description": "Pågående rettssak fra tidligere driftssekretær via LO. Det foreligger stevning sendt til tingretten. Kravet utgjør kr 67 505 og gjelder krav om overtidsbetaling og kompensasjon. Dette kan medføre kostnader for borettslaget.",
+            "evidence": [
+              "Tidligere diftssektretær har fremmet krav via LO. Kravet utgjør kr. 67 505 og gjelder krav om overtidsbetaling og kompensasjon for angivelig å ha hatt tilsynsoppgaver med felleslokalet.",
+              "Nytt er at det foreligger stevning i saken som er sendt til tingretten. Det er foreløpig ikke gitt pålegg om tilsvar.",
+              "Styrets oppfatning er at det ikke er grunnlag for kravet. Det kan ikke utelukkes at saken finner en løsning gjennom rettsmekling."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              42,
+              44,
+              94
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_004",
+            "description": "Pågående rettssak fra tidligere driftssekretær via LO. Det foreligger stevning sendt til tingretten. Kravet utgjør kr 67 505 og gjelder krav om overtidsbetaling og kompensasjon. Dette kan medføre kostnader for borettslaget.",
+            "evidence": [
+              "Tidligere diftssektretær har fremmet krav via LO. Kravet utgjør kr. 67 505 og gjelder krav om overtidsbetaling og kompensasjon for angivelig å ha hatt tilsynsoppgaver med felleslokalet.",
+              "Nytt er at det foreligger stevning i saken som er sendt til tingretten. Det er foreløpig ikke gitt pålegg om tilsvar.",
+              "Styrets oppfatning er at det ikke er grunnlag for kravet. Det kan ikke utelukkes at saken finner en løsning gjennom rettsmekling."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              42,
+              44,
+              94
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_005",
+            "description": "Mulig søksmål mot tidligere styreleder Eirik Tonning for grovt underslag. Politiet henla saken, men borettslaget utreder sivilt søksmål. Dette kan medføre ytterligere juridiske kostnader for borettslaget.",
+            "evidence": [
+              "Styret har også blitt gitt fullmakt til å utrede saken videre for mulig søksmål mot tidligere styreleder (Eirik Tonning).",
+              "Anmeldelsen gjaldt grovt underslag. Politiet besluttet 26. september 2025 å henlegge saken på grunn av at «etterforskning ikke vil være en forholdsmessig ressursbruk».",
+              "Uforpliktende ble det skissert en kostnad i størrelsesorden 20-40/50 tusen kroner for en slik vurdering."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              42,
+              93,
+              94
+            ],
+            "confidence": 0.93,
+            "details": {
+              "confidence": 0.93
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_005",
+            "description": "Mulig søksmål mot tidligere styreleder Eirik Tonning for grovt underslag. Politiet henla saken, men borettslaget utreder sivilt søksmål. Dette kan medføre ytterligere juridiske kostnader for borettslaget.",
+            "evidence": [
+              "Styret har også blitt gitt fullmakt til å utrede saken videre for mulig søksmål mot tidligere styreleder (Eirik Tonning).",
+              "Anmeldelsen gjaldt grovt underslag. Politiet besluttet 26. september 2025 å henlegge saken på grunn av at «etterforskning ikke vil være en forholdsmessig ressursbruk».",
+              "Uforpliktende ble det skissert en kostnad i størrelsesorden 20-40/50 tusen kroner for en slik vurdering."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              42,
+              93,
+              94
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_006",
+            "description": "Manglende ferdigattest – kun innflyttingsløyve fra 1972 og midlertidig brukstillatelse for påbygg. Det foreligger en rekke uoppfylte krav fra byggetillatelsen, og ferdigattest vil ikke bli utstedt for byggesaker fra før 1998. I tillegg er det gitt midlertidig brukstillatelse for påbygg datert 13.06.2025 med frist for ferdigstillelse 29.06.2025 – fristen er allerede utløpt.",
+            "evidence": [
+              "Det foreligger innflyttingsløyve for eiendommen, datert 01.12.1972. Innflytningstillatelsen bekrefter at boligen lovlig kan benyttes, men at det fortsatt gjenstår arbeid før ferdigattest kan utstedes.",
+              "Det gjøres oppmerksom på at ferdigattest ikke vil bli utstedt for ufullførte byggesaker/ bygningsmeldinger som er fra før 1998.",
+              "Det foreligger midlertidig brukstillatelse for påbygg bolig, datert 13.06.2025. Det er gitt en frist om at hele tiltaket skal være ferdigstilt innen 29.06.2025.",
+              "For å kunne søke om ferdigattest må følgende tiltak utføres: Noe planering og opprydding. Montering av ventiler i bossrom. Avstanden mellom spiler i rekkverk skal være 12,5cm. Håndlist på vegg mangler. Branntrygge dører A-60 må gjøres selvlukkende."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              40,
+              41
+            ],
+            "confidence": 0.97,
+            "details": {
+              "confidence": 0.97
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_006",
+            "description": "Manglende ferdigattest – kun innflyttingsløyve fra 1972 og midlertidig brukstillatelse for påbygg. Det foreligger en rekke uoppfylte krav fra byggetillatelsen, og ferdigattest vil ikke bli utstedt for byggesaker fra før 1998. I tillegg er det gitt midlertidig brukstillatelse for påbygg datert 13.06.2025 med frist for ferdigstillelse 29.06.2025 – fristen er allerede utløpt.",
+            "evidence": [
+              "Det foreligger innflyttingsløyve for eiendommen, datert 01.12.1972. Innflytningstillatelsen bekrefter at boligen lovlig kan benyttes, men at det fortsatt gjenstår arbeid før ferdigattest kan utstedes.",
+              "Det gjøres oppmerksom på at ferdigattest ikke vil bli utstedt for ufullførte byggesaker/ bygningsmeldinger som er fra før 1998.",
+              "Det foreligger midlertidig brukstillatelse for påbygg bolig, datert 13.06.2025. Det er gitt en frist om at hele tiltaket skal være ferdigstilt innen 29.06.2025.",
+              "For å kunne søke om ferdigattest må følgende tiltak utføres: Noe planering og opprydding. Montering av ventiler i bossrom. Avstanden mellom spiler i rekkverk skal være 12,5cm. Håndlist på vegg mangler. Branntrygge dører A-60 må gjøres selvlukkende."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              40,
+              41
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_007",
+            "description": "Planløsning avviker fra opprinnelige byggetegninger. Vaskerom er opprinnelig byggemeldt som WC. Selv om bruksendringen ikke er søknadspliktig, kan det skape usikkerhet rundt lovligheten av dagens bruk.",
+            "evidence": [
+              "Dagens planløsning avviker fra de opprinnelige byggetegningene. Vaskerom er opprinnelig byggemeldt som WC. Bruksendring til hoveddel (WC) til hoveddel (vaskerom) er ikke søknadspliktig."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              41
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_007",
+            "description": "Planløsning avviker fra opprinnelige byggetegninger. Vaskerom er opprinnelig byggemeldt som WC. Selv om bruksendringen ikke er søknadspliktig, kan det skape usikkerhet rundt lovligheten av dagens bruk.",
+            "evidence": [
+              "Dagens planløsning avviker fra de opprinnelige byggetegningene. Vaskerom er opprinnelig byggemeldt som WC. Bruksendring til hoveddel (WC) til hoveddel (vaskerom) er ikke søknadspliktig."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              41
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_008",
+            "description": "El-anlegget mangler delvis dokumentasjon og det anbefales utvidet el-kontroll. Manglende samsvarserklæring på deler av anlegget utgjør en sikkerhets- og forsikringsrisiko.",
+            "evidence": [
+              "Boligen har et el‑anlegg dels uten dokumentasjon. Det bør gjennomføres en utvidet el‑kontroll av en kvalifisert elektrofaglig person, og nødvendige tiltak vurderes deretter.",
+              "Er det manglende samsvarserklæring på arbeider utført etter 01.01.1999? Ja. Eier har samsvarserklæring på utskifting av hovedssikring i 2018. Ellers ukjent historikk og manglende dokumentasjon på sikringsskap og øvrig anlegg.",
+              "Er det foretatt kontroll av det lokale el-tilsyn eller utført utvidet el-kontroll i løpet av de siste 5 år? Nei"
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              42,
+              43,
+              65
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_008",
+            "description": "El-anlegget mangler delvis dokumentasjon og det anbefales utvidet el-kontroll. Manglende samsvarserklæring på deler av anlegget utgjør en sikkerhets- og forsikringsrisiko.",
+            "evidence": [
+              "Boligen har et el‑anlegg dels uten dokumentasjon. Det bør gjennomføres en utvidet el‑kontroll av en kvalifisert elektrofaglig person, og nødvendige tiltak vurderes deretter.",
+              "Er det manglende samsvarserklæring på arbeider utført etter 01.01.1999? Ja. Eier har samsvarserklæring på utskifting av hovedssikring i 2018. Ellers ukjent historikk og manglende dokumentasjon på sikringsskap og øvrig anlegg.",
+              "Er det foretatt kontroll av det lokale el-tilsyn eller utført utvidet el-kontroll i løpet av de siste 5 år? Nei"
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              42,
+              43,
+              65
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_009",
+            "description": "Kobberrør til kjøkken er fra byggeåret (1973) og har nådd en alder med økt risiko for lekkasjer (TG2). Anbefalt tiltak er utskifting i forbindelse med fremtidig oppgradering av kjøkken.",
+            "evidence": [
+              "Vannledninger TG 2 pga alder på kobberrør til kjøkken.",
+              "Vannrør av kobber (til kjøkken) er fra byggeåret, og har nådd en alder hvor det vil være økt risiko for lekkasjer (TG 2)",
+              "Vannledninger bør skiftes i forbindelse med fremtidig oppgradering av kjøkken."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              43,
+              59,
+              64,
+              65
+            ],
+            "confidence": 0.97,
+            "details": {
+              "confidence": 0.97
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_009",
+            "description": "Kobberrør til kjøkken er fra byggeåret (1973) og har nådd en alder med økt risiko for lekkasjer (TG2). Anbefalt tiltak er utskifting i forbindelse med fremtidig oppgradering av kjøkken.",
+            "evidence": [
+              "Vannledninger TG 2 pga alder på kobberrør til kjøkken.",
+              "Vannrør av kobber (til kjøkken) er fra byggeåret, og har nådd en alder hvor det vil være økt risiko for lekkasjer (TG 2)",
+              "Vannledninger bør skiftes i forbindelse med fremtidig oppgradering av kjøkken."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              43,
+              59,
+              64,
+              65
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_010",
+            "description": "Garasjeanleggene er fra byggeåret og krever vedlikehold. Det er risiko for nedfall av betong i sone 1 og brannfare i sone 2. Ingen konkrete pristilbud er innhentet og ingen låneopptak er vedtatt, men dette kan medføre betydelige fremtidige kostnader for borettslaget.",
+            "evidence": [
+              "Garajseanleggene i borettslaget er fra byggeår og krever vedlikehold. Styret har fått fullmakt til å utrede garasjeanleggene i sone 1 og 2 ytterligere slik at en vet hvilke tiltak som må til for å forhindre nedfall av betong i sone 1 og forhindre at garasjen i sone 2 blir en brannfelle.",
+              "Det er ikke vedtatt låneopptak for dette, og det er videre ikke innhentet noen konkrete pristilbud på dette."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              44
+            ],
+            "confidence": 0.92,
+            "details": {
+              "confidence": 0.92
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_010",
+            "description": "Garasjeanleggene er fra byggeåret og krever vedlikehold. Det er risiko for nedfall av betong i sone 1 og brannfare i sone 2. Ingen konkrete pristilbud er innhentet og ingen låneopptak er vedtatt, men dette kan medføre betydelige fremtidige kostnader for borettslaget.",
+            "evidence": [
+              "Garajseanleggene i borettslaget er fra byggeår og krever vedlikehold. Styret har fått fullmakt til å utrede garasjeanleggene i sone 1 og 2 ytterligere slik at en vet hvilke tiltak som må til for å forhindre nedfall av betong i sone 1 og forhindre at garasjen i sone 2 blir en brannfelle.",
+              "Det er ikke vedtatt låneopptak for dette, og det er videre ikke innhentet noen konkrete pristilbud på dette."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              44
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_011",
+            "description": "Flytende renter på alle lån i borettslaget medfører risiko for økte felleskostnader ved renteøkninger. Husbanklånene har 4,14% flytende rente og Handelsbanklånene har 5,09% flytende rente.",
+            "evidence": [
+              "Husbanken, annuitetslån. Rentesats: 4,14%, flytende rente",
+              "Svenska Handelsbanken AB NUF, serielån. Rentesats: 5,09%, flytende rente. Total saldo: kr 370 000 000,‑",
+              "Svenska Handelsbanken AB NUF, annuitetslån. Rentesats: 5,09%, flytende rente"
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              38,
+              39
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_011",
+            "description": "Flytende renter på alle lån i borettslaget medfører risiko for økte felleskostnader ved renteøkninger. Husbanklånene har 4,14% flytende rente og Handelsbanklånene har 5,09% flytende rente.",
+            "evidence": [
+              "Husbanken, annuitetslån. Rentesats: 4,14%, flytende rente",
+              "Svenska Handelsbanken AB NUF, serielån. Rentesats: 5,09%, flytende rente. Total saldo: kr 370 000 000,‑",
+              "Svenska Handelsbanken AB NUF, annuitetslån. Rentesats: 5,09%, flytende rente"
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              38,
+              39
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_012",
+            "description": "Eiendommen er delvis berørt av støy fra veitrafikk over grenseverdier gitt av statlige myndigheter. Berøringsgrad er 14,4% i gul støysone. Dette kan påvirke fremtidige plan- og byggesaker og medføre krav om avbøtende tiltak.",
+            "evidence": [
+              "Eiendommen befinner seg i følgende hensynssoner: Gul støy, veistøy ‑ gul sone. Berøringsgrad 14,4%.",
+              "Hele eller deler av eiendommen antas å være berørt av støy fra veitrafikk over grenseverdier gitt av statlige myndigheter og i kommuneplanens bestemmelser.",
+              "Dette vil kunne få betydning for behandlingen av plan‑ og byggesaker som omfatter den aktuelle eiendommen, blant annet medføre utredningsplikt for tiltakshaver/ forslagsstiller og eventuelt krav om avbøtende tiltak."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              45
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_012",
+            "description": "Eiendommen er delvis berørt av støy fra veitrafikk over grenseverdier gitt av statlige myndigheter. Berøringsgrad er 14,4% i gul støysone. Dette kan påvirke fremtidige plan- og byggesaker og medføre krav om avbøtende tiltak.",
+            "evidence": [
+              "Eiendommen befinner seg i følgende hensynssoner: Gul støy, veistøy ‑ gul sone. Berøringsgrad 14,4%.",
+              "Hele eller deler av eiendommen antas å være berørt av støy fra veitrafikk over grenseverdier gitt av statlige myndigheter og i kommuneplanens bestemmelser.",
+              "Dette vil kunne få betydning for behandlingen av plan‑ og byggesaker som omfatter den aktuelle eiendommen, blant annet medføre utredningsplikt for tiltakshaver/ forslagsstiller og eventuelt krav om avbøtende tiltak."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              45
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_013",
+            "description": "Selger har ikke tegnet boligselgerforsikring. Dette innebærer at kjøper ikke har den ekstra sikkerheten som boligselgerforsikring normalt gir, og eventuelle krav mot selger kan bli vanskeligere å inndrive.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              46
+            ],
+            "confidence": 0.92,
+            "details": {
+              "confidence": 0.92
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_013",
+            "description": "Selger har ikke tegnet boligselgerforsikring. Dette innebærer at kjøper ikke har den ekstra sikkerheten som boligselgerforsikring normalt gir, og eventuelle krav mot selger kan bli vanskeligere å inndrive.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              46
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_014",
+            "description": "Kjøper overtar bindende strømavtale (Norgespris) med bindingstid til 31.12.2026. Kjøper har ikke frihet til å velge egen strømleverandør eller -avtale frem til utløpsdato, og bortfall av eventuell strømstøtte kan medføre økte strømkostnader.",
+            "evidence": [
+              "Nåværende eier har tegnet avtale om Norgespris på strøm, og avtalen har bindingstid til 31.12.2026. Avtalen følger boligen, og må derfor overtas av kjøper.",
+              "Når det er tegnet avtale om Norgespris bortfaller eventuell strømstøtte."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              44
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_014",
+            "description": "Kjøper overtar bindende strømavtale (Norgespris) med bindingstid til 31.12.2026. Kjøper har ikke frihet til å velge egen strømleverandør eller -avtale frem til utløpsdato, og bortfall av eventuell strømstøtte kan medføre økte strømkostnader.",
+            "evidence": [
+              "Nåværende eier har tegnet avtale om Norgespris på strøm, og avtalen har bindingstid til 31.12.2026. Avtalen følger boligen, og må derfor overtas av kjøper.",
+              "Når det er tegnet avtale om Norgespris bortfaller eventuell strømstøtte."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              44
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_015",
+            "description": "Tidligere uautoriserte låneopptak av tidligere styre uten mandat fra generalforsamlingen (maling, tak) skal refinansieres inn i Handelsbanken-rammen. Dette indikerer historisk svak styring og kan medføre ytterligere kostnader.",
+            "evidence": [
+              "Tidligere låneopptak av av tidligere styre, uten mandat fra GF (maling, tak) vil bli fordelt etter fordelingsnøkkelen, og skal refinansieres inn i rammen av lån i Handelsbanken."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              44
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_015",
+            "description": "Tidligere uautoriserte låneopptak av tidligere styre uten mandat fra generalforsamlingen (maling, tak) skal refinansieres inn i Handelsbanken-rammen. Dette indikerer historisk svak styring og kan medføre ytterligere kostnader.",
+            "evidence": [
+              "Tidligere låneopptak av av tidligere styre, uten mandat fra GF (maling, tak) vil bli fordelt etter fordelingsnøkkelen, og skal refinansieres inn i rammen av lån i Handelsbanken."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              44
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_016",
+            "description": "Klage på advokat Raftevoll – borettslaget er involvert i ytterligere en juridisk sak. Advokatnemnda har meddelt kritikk, og styret fremmer krav til advokatens forsikringsselskap. Dette indikerer et borettslag med mange pågående tvister og juridiske prosesser.",
+            "evidence": [
+              "Klage på advokat Raftevoll. Nytt i denne saken er at Advokatnemnda har fattet vedtak. Advokaten ble meddelt kritikk for sin håndtering av advokatoppdraget. Styret følger opp denne saken gjennom å fremme krav til advokatens forsikringsselskap."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              94
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_016",
+            "description": "Klage på advokat Raftevoll – borettslaget er involvert i ytterligere en juridisk sak. Advokatnemnda har meddelt kritikk, og styret fremmer krav til advokatens forsikringsselskap. Dette indikerer et borettslag med mange pågående tvister og juridiske prosesser.",
+            "evidence": [
+              "Klage på advokat Raftevoll. Nytt i denne saken er at Advokatnemnda har fattet vedtak. Advokaten ble meddelt kritikk for sin håndtering av advokatoppdraget. Styret følger opp denne saken gjennom å fremme krav til advokatens forsikringsselskap."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              94
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_017",
+            "description": "Begrenset adgang til utleie i borettslag. Utleie krever styregodkjenning og er begrenset til maksimalt 3 år. Korttidsutleie er tillatt i kun 30 døgn per år. Dette begrenser fleksibiliteten for kjøper som ønsker å leie ut boligen.",
+            "evidence": [
+              "Det er begrenset adgang til å leie ut bolig i borettslag. Med styrets godkjenning og under visse vilkår kan boligen leies ut i inntil 3 år, jf. borettslagsloven § 5‑3 til § 5‑10.",
+              "Korttidsutleie er tillatt i opptil 30 døgn per år uten samtykke fra styret."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              46
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_017",
+            "description": "Begrenset adgang til utleie i borettslag. Utleie krever styregodkjenning og er begrenset til maksimalt 3 år. Korttidsutleie er tillatt i kun 30 døgn per år. Dette begrenser fleksibiliteten for kjøper som ønsker å leie ut boligen.",
+            "evidence": [
+              "Det er begrenset adgang til å leie ut bolig i borettslag. Med styrets godkjenning og under visse vilkår kan boligen leies ut i inntil 3 år, jf. borettslagsloven § 5‑3 til § 5‑10.",
+              "Korttidsutleie er tillatt i opptil 30 døgn per år uten samtykke fra styret."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              46
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_018",
+            "description": "Dyrehold er i utgangspunktet ikke tillatt i borettslaget. Kjøper med husdyr må søke om særskilt tillatelse, og det er usikkert om dette vil bli innvilget.",
+            "evidence": [
+              "Husdyr: Det følger av borettslagets vedtekter at dyrehold ikke er tillatt. En andelseier kan, jf. borettslagsloven § 5‑11, likevel holde dyr dersom gode grunner taler for det og dyreholdet ikke er til ulempe for de øvrige brukerne av eiendommen."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              43
+            ],
+            "confidence": 0.82,
+            "details": {
+              "confidence": 0.82
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_018",
+            "description": "Dyrehold er i utgangspunktet ikke tillatt i borettslaget. Kjøper med husdyr må søke om særskilt tillatelse, og det er usikkert om dette vil bli innvilget.",
+            "evidence": [
+              "Husdyr: Det følger av borettslagets vedtekter at dyrehold ikke er tillatt. En andelseier kan, jf. borettslagsloven § 5‑11, likevel holde dyr dersom gode grunner taler for det og dyreholdet ikke er til ulempe for de øvrige brukerne av eiendommen."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              43
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_019",
+            "description": "Kjøper må godkjennes av borettslagets styre. Dersom styret nekter godkjenning på saklig grunnlag, kan kjøpet ikke gjennomføres. Dette er en usikkerhetsfaktor i kjøpsprosessen.",
+            "evidence": [
+              "Styregodkjennelse: Kjøper må godkjennes av borettslagets styre. Styret kan kun nekte godkjenning dersom det foreligger saklig grunnlag, jf. borettslagsloven § 4‑4."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              43
+            ],
+            "confidence": 0.78,
+            "details": {
+              "confidence": 0.78
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_019",
+            "description": "Kjøper må godkjennes av borettslagets styre. Dersom styret nekter godkjenning på saklig grunnlag, kan kjøpet ikke gjennomføres. Dette er en usikkerhetsfaktor i kjøpsprosessen.",
+            "evidence": [
+              "Styregodkjennelse: Kjøper må godkjennes av borettslagets styre. Styret kan kun nekte godkjenning dersom det foreligger saklig grunnlag, jf. borettslagsloven § 4‑4."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              43
+            ],
+            "details": {
+              "confidence": 0.78
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_020",
+            "description": "Forkjøpsrett er forhåndsutlyst. Eksisterende andelseiere i borettslaget kan benytte forkjøpsretten og overta boligen til budpris, noe som kan medføre at kjøper ikke får boligen selv om budet er akseptert.",
+            "evidence": [
+              "Forkjøpsrett: Forkjøpsretten er forhåndsutlyst.",
+              "Forhåndsvarsling forkjøpsrett: 8 406,‑"
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              38,
+              43
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_020",
+            "description": "Forkjøpsrett er forhåndsutlyst. Eksisterende andelseiere i borettslaget kan benytte forkjøpsretten og overta boligen til budpris, noe som kan medføre at kjøper ikke får boligen selv om budet er akseptert.",
+            "evidence": [
+              "Forkjøpsrett: Forkjøpsretten er forhåndsutlyst.",
+              "Forhåndsvarsling forkjøpsrett: 8 406,‑"
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              38,
+              43
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_021",
+            "description": "Ventilasjonssystemet (mekanisk avtrekk) tilfredsstiller ikke dagens krav/standard. Dette kan medføre dårlig inneklima og fremtidige kostnader ved oppgradering.",
+            "evidence": [
+              "Leiligheten har ventilasjon fra oppføringstidspunkt som var normalt for boliger fra denne tidsperioden. Denne type ventilasjon tilfredsstiller ikke dagens krav/standard."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              68
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_021",
+            "description": "Ventilasjonssystemet (mekanisk avtrekk) tilfredsstiller ikke dagens krav/standard. Dette kan medføre dårlig inneklima og fremtidige kostnader ved oppgradering.",
+            "evidence": [
+              "Leiligheten har ventilasjon fra oppføringstidspunkt som var normalt for boliger fra denne tidsperioden. Denne type ventilasjon tilfredsstiller ikke dagens krav/standard."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              68
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_022",
+            "description": "Oppgradering av bad, vaskerom og kjøkken i 2017 mangler dokumentasjon fra håndverker. Dette kan skape usikkerhet om arbeidets kvalitet og lovlighet, og kan vanskeliggjøre fremtidige forsikringskrav.",
+            "evidence": [
+              "2017: Oppgradert bad, vaskerom og kjøkken. Er det fremlagt dokumentasjon fra håndverker? Nei"
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              60
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_022",
+            "description": "Oppgradering av bad, vaskerom og kjøkken i 2017 mangler dokumentasjon fra håndverker. Dette kan skape usikkerhet om arbeidets kvalitet og lovlighet, og kan vanskeliggjøre fremtidige forsikringskrav.",
+            "evidence": [
+              "2017: Oppgradert bad, vaskerom og kjøkken. Er det fremlagt dokumentasjon fra håndverker? Nei"
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              60
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_023",
+            "description": "Energimerking D (gul) indikerer relativt høyt energiforbruk. Beregnet vektet levert energi er 167,15 kWh/m² per år, noe som kan medføre høye strømkostnader for kjøper.",
+            "evidence": [
+              "Energikarakter: D. Energifarge: Gul",
+              "Beregnet vektet levert energi i normert klima. Pr. KVM pr. år: 167,15 kWh/m²",
+              "Beregnet levert energi i lokalt klima. Totalt levert pr. år: 13 496 kWh"
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              44,
+              70
+            ],
+            "confidence": 0.78,
+            "details": {
+              "confidence": 0.78
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_023",
+            "description": "Energimerking D (gul) indikerer relativt høyt energiforbruk. Beregnet vektet levert energi er 167,15 kWh/m² per år, noe som kan medføre høye strømkostnader for kjøper.",
+            "evidence": [
+              "Energikarakter: D. Energifarge: Gul",
+              "Beregnet vektet levert energi i normert klima. Pr. KVM pr. år: 167,15 kWh/m²",
+              "Beregnet levert energi i lokalt klima. Totalt levert pr. år: 13 496 kWh"
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              44,
+              70
+            ],
+            "details": {
+              "confidence": 0.78
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_024",
+            "description": "Godkjent tiltak i nærheten: Igangsettingstillatelse for tilbygg til stort frittliggende boligbygg på 5 etasjer eller mer (eiendom 183/165). Dette kan påvirke utsikt, solforhold og nabolagskvalitet negativt.",
+            "evidence": [
+              "Eiendom 183/ 165. Tilbygg, stort frittliggende boligbygg på 5.etg el. mer. Igangsettingstillatelse, datert 28.02.2023. Saksnr: 202228129."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              45
+            ],
+            "confidence": 0.72,
+            "details": {
+              "confidence": 0.72
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_024",
+            "description": "Godkjent tiltak i nærheten: Igangsettingstillatelse for tilbygg til stort frittliggende boligbygg på 5 etasjer eller mer (eiendom 183/165). Dette kan påvirke utsikt, solforhold og nabolagskvalitet negativt.",
+            "evidence": [
+              "Eiendom 183/ 165. Tilbygg, stort frittliggende boligbygg på 5.etg el. mer. Igangsettingstillatelse, datert 28.02.2023. Saksnr: 202228129."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              45
+            ],
+            "details": {
+              "confidence": 0.72
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d110_025",
+            "description": "Borettslaget er sikret mot tap ved mislighold av felleskostnader gjennom Klare Finans AS, men avtalen kan sies opp av en av partene. Dersom sikringsordningen opphører, kan borettslaget bli eksponert for tap ved mislighold fra andre andelseiere.",
+            "evidence": [
+              "Borettslaget er dekket av Klare Finans AS, www.klarefinans.no. Laget er sikret mot tap som følge av at en andelseier ikke betaler sine felleskostnader, etter gjeldende vilkår. Avtalen om sikring er gyldig til den sies opp av en av partene."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              39
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d110_025",
+            "description": "Borettslaget er sikret mot tap ved mislighold av felleskostnader gjennom Klare Finans AS, men avtalen kan sies opp av en av partene. Dersom sikringsordningen opphører, kan borettslaget bli eksponert for tap ved mislighold fra andre andelseiere.",
+            "evidence": [
+              "Borettslaget er dekket av Klare Finans AS, www.klarefinans.no. Laget er sikret mot tap som følge av at en andelseier ikke betaler sine felleskostnader, etter gjeldende vilkår. Avtalen om sikring er gyldig til den sies opp av en av partene."
+            ],
+            "source_documents": [
+              "d110.pdf"
+            ],
+            "source_pages": [
+              39
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [],
+      "unmatched_ground_truth_risks": [],
+      "verified_unmatched": [],
+      "adjusted_metrics": null
+    }
+  },
+  "best_system": "ground_truth",
+  "statistical_tests": {
+    "standard_rag_vs_agentic_rag_P+T+R": 1.0,
+    "standard_rag_vs_ground_truth": 1.0,
+    "agentic_rag_P+T+R_vs_ground_truth": 1.0
+  },
+  "record_id": "12c32260-5109-4eee-a5c1-73bb48797501",
+  "query": "Identifiser risikoer i salgsoppgaven",
+  "document_set_id": "d110",
+  "timestamp": "2026-03-25T01:56:12.028469",
+  "risk_summaries": [
+    {
+      "system_type": "standard_rag",
+      "total_risks": 10,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "agentic_rag_P+T+R",
+      "total_risks": 15,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "ground_truth",
+      "total_risks": 25,
+      "risks_by_category": {}
+    }
+  ],
+  "has_ground_truth": true,
+  "overlapping_risk_count": 18,
+  "unique_to": {
+    "standard_rag": 6,
+    "agentic_rag_P+T+R": 0,
+    "ground_truth": 9
+  },
+  "record_type": "comparison"
+}

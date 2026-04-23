@@ -1,0 +1,2952 @@
+{
+  "system_results": {
+    "standard_rag": {
+      "run_id": "584eabc3-2e5b-43c0-86bb-48cedd024d6c",
+      "system_type": "standard_rag",
+      "overall_metrics": {
+        "precision": 0.5,
+        "recall": 0.18518518518518517,
+        "f1": 0.2702702702702703,
+        "total_support": 27
+      },
+      "matched_risks": 5,
+      "unmatched_predicted": 5,
+      "unmatched_ground_truth": 22,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "584eabc3-2e5b-43c0-86bb-48cedd024d6c_risk_000",
+            "description": "Selger har ikke tegnet boligselgerforsikring, noe som øker risikoen for kjøper ved eventuelle skjulte feil og mangler etter overtakelse. Kjøper har begrenset sikkerhet dersom selger ikke kan dekke krav etter avhendingsloven.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring.",
+              "Jeg ønsker ikke boligselgerforsikring, men megler har tilbudt meg å kjøpe slik forsikring."
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_004",
+            "description": "Selger har ikke tegnet boligselgerforsikring",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              22
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "584eabc3-2e5b-43c0-86bb-48cedd024d6c_risk_001",
+            "description": "Selger har ikke utført radonmåling. Radon er en helseskadelig gass, og manglende måling innebærer en potensiell helserisiko for fremtidige beboere, særlig dersom boligen er helt eller delvis utleid.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid."
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_005",
+            "description": "Ingen radonmåling er utført",
+            "evidence": [
+              "Selger har ikke utført radonmåling",
+              "Det er ikke krav om dette med mindre boligen er helt eller delvis utleid",
+              "Spørsmål 21 i egenerklæring: Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              22,
+              26
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "584eabc3-2e5b-43c0-86bb-48cedd024d6c_risk_003",
+            "description": "Det kan være avvik mellom boligens faktiske bruksareal og det som er godkjent av myndighetene. Dette kan medføre at deler av boligen ikke er lovlig godkjent for beboelse, noe som er en risiko for kjøper.",
+            "evidence": [
+              "Det kan være forskjell mellom boligens faktiske bruk av rom og det som er godkjent av myndighetene."
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_020",
+            "description": "Rommenes godkjente bruk er ikke undersøkt av takstmann",
+            "evidence": [
+              "Rommenes bruk er taksert etter dagens bruk på befaringstidspunktet, om denne bruken er godkjent av kommunen er ikke undersøkt av takstmann",
+              "Tegning oversendt av eier"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              17,
+              31,
+              37
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "584eabc3-2e5b-43c0-86bb-48cedd024d6c_risk_005",
+            "description": "Risiko knyttet til borettslagets økonomi og andre andelshaveres mislighold av fellesutgifter. Dersom andre andelshavere misligholder sine forpliktelser, kan dette påvirke kjøpers økonomi gjennom økte felleskostnader.",
+            "evidence": [
+              "innbetaling av fellesutgiftene som følge av andre andelshaveres mislighold, eller dersom borettslaget sitter på fraflyttede og/eller usolgte andeler, må..."
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_026",
+            "description": "Sikringsordning for felleskostnader kan sies opp med 6 måneders varsel",
+            "evidence": [
+              "Borettslaget har en avtale med OBOS Factoring om garantert betaling av felleskostnader",
+              "Avtale om sikring av felleskostnader varer til den blir sagt opp av en av partene. Oppsigelsestiden er seks – 6 – måneder regnet fra oppsigelsesdato"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "584eabc3-2e5b-43c0-86bb-48cedd024d6c_risk_009",
+            "description": "Det er ikke utført arbeid på bad/våtrom, og selger kjenner ikke til feil tilknyttet våtrommene. Imidlertid er dette basert utelukkende på selgers egenerklæring uten fagkyndig vurdering, noe som innebærer risiko for skjulte fukt- og vannskader.",
+            "evidence": [
+              "1 Kjenner du til om det er/har vært feil tilknyttet våtrommene, f.eks. sprekker, lekkasje, råte, lukt eller soppskader? Nei",
+              "2 Kjenner du til om det er utført arbeid på bad/våtrom? Svar Nei"
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_007",
+            "description": "Baderomskabin kan ikke fuktsøkes – skjulte fuktskader kan ikke utelukkes",
+            "evidence": [
+              "Badet har baderomskabin i betong og det er ikke praktisk mulig å gjennomføre boring av hull for fuktsøk",
+              "En baderomskabin er en forhåndsprodusert del som settes inn i bygget i stedet for at badet bygges på stedet, ofte som et totalt og ferdig bad",
+              "Tilliggende konstruksjoner våtrom: TGIU (ikke undersøkt/utilgjengelig)",
+              "Det er vanskelig å se hvor høyt opp under terskel som membran er ført"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              17,
+              19,
+              31,
+              34,
+              35
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "584eabc3-2e5b-43c0-86bb-48cedd024d6c_risk_002",
+          "description": "Det er ikke bekreftet at det foreligger ferdigattest eller brukstillatelse for eiendommen. Manglende ferdigattest kan indikere ulovlige byggearbeider eller at bygget ikke er godkjent for bruk, noe som kan skape juridiske og praktiske problemer for kjøper.",
+          "evidence": [
+            "22 Kjenner du til manglende brukstillatelse eller ferdigattest? Nei Ja"
+          ],
+          "source_documents": [
+            "d052_d052"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.75,
+          "details": {}
+        },
+        {
+          "risk_id": "584eabc3-2e5b-43c0-86bb-48cedd024d6c_risk_004",
+          "description": "Boligen selges 'som den er' etter avhendingsloven § 3-9, noe som begrenser selgers ansvar for skjulte feil og mangler. Kjøper overtar dermed en større risiko for uoppdagede feil.",
+          "evidence": [
+            "Ved slike kjøp selges eiendommen «som den er», og selgers ansvar er begrenset til det som følger direkte av avtalen, jf. avhendingsloven § 3‑9."
+          ],
+          "source_documents": [
+            "d052_d052"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.9,
+          "details": {}
+        },
+        {
+          "risk_id": "584eabc3-2e5b-43c0-86bb-48cedd024d6c_risk_006",
+          "description": "Revisjonsberetningen påpeker vesentlig usikkerhet knyttet til borettslagets evne til fortsatt drift. Dette kan indikere økonomiske utfordringer i borettslaget som kan påvirke kjøpers investering negativt.",
+          "evidence": [
+            "konkluderer vi på om ledelsens bruk av fortsatt drift-forutsetningen er hensiktsmessig, og, basert på innhentede revisjonsbevis, hvorvidt det foreligger vesentlig usikkerhet knyttet til hendelser eller forhold som kan skape betydelig tvil om borettslagets evne til fortsatt drift."
+          ],
+          "source_documents": [
+            "d052_d052"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.7,
+          "details": {}
+        },
+        {
+          "risk_id": "584eabc3-2e5b-43c0-86bb-48cedd024d6c_risk_007",
+          "description": "Selger kan prioritere bud fra ikke-forbrukere fremfor forbrukere, selv ved lavere bud. Dette kan oppleves som uforutsigbart for forbrukerkjøpere og kan føre til at forbrukere ikke får kjøpt boligen til tross for høyeste bud.",
+          "evidence": [
+            "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke‑forbrukere, selv om budet er lavere enn et forbrukerbud."
+          ],
+          "source_documents": [
+            "d052_d052"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "584eabc3-2e5b-43c0-86bb-48cedd024d6c_risk_008",
+          "description": "Egenerklæringsskjemaet indikerer at det kan foreligge påbud, heftelser, krav eller manglende tillatelser vedrørende eiendommen. Dette kan medføre juridiske og økonomiske forpliktelser for kjøper.",
+          "evidence": [
+            "20 Kjenner du til om det foreligger påbud/heftelser/krav/manglende tillatelser vedrørende eiendommen? Nei Ja"
+          ],
+          "source_documents": [
+            "d052_d052"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.75,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d052_001",
+          "description": "Svært høy fellesgjeld og kraftig økning i felleskostnader fra 2029",
+          "evidence": [
+            "Andel fellesgjeld: Kr 3 360 000 pr. 19.01.2026",
+            "Totalpris inkl. fellesgjeld: Kr 5 199 496",
+            "Borettslagets felleslån har en avdragsfri periode som utløper i oktober 2029",
+            "Det er estimert at felleskostnadene for denne andelen vil øke med ca. kr 2 700,- per måned fra september 2029, forutsatt uendrede rentebetingelser",
+            "A-konto renter fellesgjeld (IN-lån): kr 14 000,- per måned",
+            "A-konto avdrag fellesgjeld (IN-lån): kr 0,-",
+            "Renter på fellesgjeld er flytende og kan endres, noe som vil påvirke størrelsen på felleskostnadene"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            15,
+            16,
+            19
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d052_002",
+          "description": "Flytende rente på fellesgjeld gir risiko for ytterligere kostnadsøkning",
+          "evidence": [
+            "Type Rente: Flytende rente",
+            "Rente: 4,79%",
+            "Renter på fellesgjeld er flytende og kan endres, noe som vil påvirke størrelsen på felleskostnadene",
+            "Rentesatsen pr. 31.12.24 var 5,45 %",
+            "Estimatet forutsetter at avdrags- og rentebetingelsene pr. 31.12 beholdes uendret. Da fremtidige endringer i lånebetingelsene vil kunne medføre endringer i den informasjon som fremkommer av tabellen, må man utvise forsiktighet med å bruke beregningene som grunnlag for økonomisk planlegging eller investeringer"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            16,
+            19,
+            59
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d052_003",
+          "description": "Manglende energimerking av boligen",
+          "evidence": [
+            "Energikarakter: Ikke angitt",
+            "Energifarge: Ikke angitt",
+            "Eiendommen er ikke energimerket",
+            "Det følger av forskrift om energimerking § 5 at dersom eier ikke har lagt frem energiattest, og eier etter skriftlig anmodning fra kjøper ikke har lagt frem energiattest før avtale om salg er inngått, kan kjøper få laget en energiattest ved hjelp av ekspert for selgers regning"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            4,
+            20
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d052_006",
+          "description": "Boden som inngår i BRA-e ligger på sameiets fellesareal og kan omdisponeres",
+          "evidence": [
+            "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA-e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet",
+            "BRA-e: 3 m²",
+            "Rom utenfor boenheten kan omdisponeres av borettslaget/sameiet og dette kan påvirke boligens BRA"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            17,
+            40
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d052_008",
+          "description": "Sprinkleranlegg og varmesentral er ikke besiktiget av takstmann",
+          "evidence": [
+            "Tekniske installasjoner – Andre VVS-installasjoner: Boligsprinkling i alle rom, sentral for sprinkleranlegg er utenfor leiligheten (ikke besiktiget)",
+            "Tekniske installasjoner – Varmesentral: Fjernvarme, varmesentral ikke besiktiget av takstmann",
+            "TGIU – Ikke undersøkt/utilgjengelig: Tekniske installasjoner – Andre VVS-installasjoner / Varmesentral"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            19,
+            32,
+            35
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d052_009",
+          "description": "Hensynssone H190 – Sikringssone jernbane medfører restriksjoner og krav",
+          "evidence": [
+            "H190: Sikringssone jernbane. Sonen er knyttet til nærheten til Gjøvikbanen og medfører restriksjoner og krav til blant annet støy- og vibrasjonsdemping, samt mulige byggegrenser og sikkerhetstiltak ved tiltak på eiendommen"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            20
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d052_010",
+          "description": "Hensynssone H810_1 – Krav om felles planlegging begrenser fremtidig utvikling",
+          "evidence": [
+            "H810_1: Krav om felles planlegging (områderegulering). Sonen innebærer at det stilles krav om en felles områdereguleringsplan ved vesentlige endringer eller utvikling for å sikre en helhetlig og koordinert utvikling av området"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            20
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d052_011",
+          "description": "Pågående og planlagt utvikling i nærområdet kan påvirke bomiljøet",
+          "evidence": [
+            "Detaljregulering for Peter Møllers vei 8-14 (Plan-ID S-5039, saksnr. 201412329), vedtatt 19.06.2019. Planen legger til rette for boligbebyggelse, barnehage og byrom",
+            "Området er stadig under endring/utvikling, bygg settes opp, rehabiliteres og rives ned",
+            "Eiendommen ligger i et utviklingsområde. I kommuneplanen er området definert som 'Ytre by (utviklingsområder)'",
+            "Kommunedelplan for Økernområdet (KDP-15) legger rammer for transformasjon til et mer urbant og attraktivt område"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            20
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d052_012",
+          "description": "Ferdigattest gir ingen garanti for at bygget er oppført i henhold til tillatelse og regelverk",
+          "evidence": [
+            "Det er utstedt ferdigattest for oppføring av boligblokk med barnehage – A1, datert 14.07.2025",
+            "Det er viktig å merke seg at selv om ferdigattest foreligger, gir det ingen garanti for at bygget er oppført i henhold til tillatelsen og gjeldende regelverk, eller at det senere er utført arbeid på bygget som ikke er byggemeldt eller godkjent"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            16
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d052_013",
+          "description": "Begrenset adgang til utleie – borettslag krever styregodkjenning",
+          "evidence": [
+            "Det er begrenset adgang til å leie ut bolig i borettslag",
+            "Med styrets godkjenning og under visse vilkår kan boligen leies ut i inntil 3 år, jf. borettslagsloven § 5-3 til § 5-10",
+            "Korttidsutleie er tillatt i opptil 30 døgn per år uten samtykke fra styret"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            21
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d052_014",
+          "description": "Forkjøpsrett praktiseres og er under prøving – kan forsinke eller hindre kjøp",
+          "evidence": [
+            "Forkjøpsrett: Det praktiseres forkjøpsrett i borettslaget",
+            "Forkjøpsretten er under prøving. Konferer megler ved spørsmål",
+            "Forhåndsvarsling forkjøpsrett: 8 406 kr (omkostning kjøper)"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            15,
+            19
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d052_015",
+          "description": "Styregodkjenning av kjøper kreves – kan nektes ved saklig grunn",
+          "evidence": [
+            "Styregodkjennelse: Kjøper må godkjennes av borettslagets styre",
+            "Styret kan kun nekte godkjenning dersom det foreligger saklig grunnlag, jf. borettslagsloven § 4-4"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            19
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d052_016",
+          "description": "Andelen disponerer ikke egen parkeringsplass",
+          "evidence": [
+            "Andelen disponerer ikke egen parkeringsplass",
+            "Det er mulig å leie gjesteparkeringsplass via borettslaget. Fra tid til annen selges det parkeringsplasser internt i borettslaget"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            13,
+            16
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d052_017",
+          "description": "Borettslaget har solidaransvar for gjeld i Peter Møllers vei 14 garasjesameie og Børsteveien 33-35 Esek",
+          "evidence": [
+            "Selskapet har solidaransvar for den samlede gjelden i 1863 Peter Møllers Vei 14 garasjesameie. Garantiansvaret refererer seg til den samlede gjelden i 1863 Peter Møllers Vei 14 garasjesameie",
+            "Selskapet har solidaransvar for den samlede gjelden i s0439 Børsteveien 33-35 Esek",
+            "Garantiansvar: 1 597 944"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            59,
+            60
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d052_018",
+          "description": "Eiendomsskatt kan påløpe for enkelte leiligheter",
+          "evidence": [
+            "I Oslo kommune er det eiendomsskatt på boliger og fast eiendom som overstiger en fastsatt verdi",
+            "Enkelte leiligheter er ilagt eiendomsskatt. Eiendomsskatt kreves inn via felleskostnader i månedene: mai, juni, september og november"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            15
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d052_019",
+          "description": "Planhetavvik i gulv målt i stue og entré",
+          "evidence": [
+            "Parkett på betongdekke. Målt planhetavvik i stue gjennom hele rommet. Resultat 6 mm og i entré er det målt 2 mm"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            31,
+            33
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d052_021",
+          "description": "Selger har kun eid boligen i ca. 1 år og 3 måneder og har ikke bodd der i 12 måneder",
+          "evidence": [
+            "Når kjøpte du boligen? År 2023",
+            "Hvor lenge har du eid boligen? Antall år 1, Antall måneder 3",
+            "Har du bodd i boligen siste 12 måneder? Nei",
+            "Leilighet kjøpt i 2023 på kontrakt, stod ferdig 01.10.24"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            25
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d052_022",
+          "description": "Hus 6 har ikke direkte adkomst til garasjekjeller",
+          "evidence": [
+            "Hus 6 har ikke direkte adkomst til garasjekjeller. Andelseiere i hus 6 benytter tilgang til garasjeanlegget utvendig via oppgang i hus 7 og deretter via kjeller/underetasje i hus 7"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            70
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d052_023",
+          "description": "Innbrudd har forekommet i borettslaget – sikkerhetstiltak er iverksatt men kameraovervåkning ikke ferdig installert",
+          "evidence": [
+            "Etter et innbrudd ble det montert beslag på alle inngangsdører for å øke sikkerheten",
+            "For fremtiden er det vedtatt å installere kameraovervåkning i garasjen og ved innganger til boder og oppganger"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            19
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d052_024",
+          "description": "Tomteareal oppgitt kan avvike fra nøyaktig oppmålt areal",
+          "evidence": [
+            "Oppgitt tomteareal er hentet fra eiendomsregisteret og kan avvike fra nøyaktig oppmålt areal",
+            "Tomtestørrelse: 2623 m² (salgsoppgave) vs. 878 m² (tilstandsrapport fra Seeiendom.no)"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            16,
+            38
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d052_025",
+          "description": "Mange eldre tinglyste heftelser og bestemmelser på eiendommen",
+          "evidence": [
+            "Tinglyste heftelser fra 1933, 1934, 1936, 1937, 1941, 1945, 1946, 1957, 1958, 1959, 1960, 1963, 1967, 1971, 1975, 1977, 1984, 1996, 2018, 2022, 2023, 2024",
+            "Bestemmelse om veg, kloakkledning, gjerde, vann/kloakkledning, trafostasjon/kiosk, takreklame, bruksendring, vannledning, fri ferdsel for allmennheten, gangrett/rett til sti, bruksrett til uteoppholdsareal",
+            "Flere heftelser kan ikke slettes uten samtykke fra kommunen eller bygningsrådet"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            20,
+            21
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d052_027",
+          "description": "Borettslaget er nytt og har begrenset driftshistorikk – disponible midler er svært lave",
+          "evidence": [
+            "Byggeår: 2024",
+            "Borettslaget er stiftet 31.05.2024",
+            "Disponible midler pr. 31.12: kr 478 489 (for et borettslag med 67 boliger og total gjeld på ca. 396 millioner kroner)",
+            "Årsresultat 2024 på kr 78 383 489 skyldes i hovedsak ekstraordinære innbetalinger på fellesgjeld (IN-ordning)"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            20,
+            56,
+            57
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "584eabc3-2e5b-43c0-86bb-48cedd024d6c_risk_002",
+            "description": "Det er ikke bekreftet at det foreligger ferdigattest eller brukstillatelse for eiendommen. Manglende ferdigattest kan indikere ulovlige byggearbeider eller at bygget ikke er godkjent for bruk, noe som kan skape juridiske og praktiske problemer for kjøper.",
+            "evidence": [
+              "22 Kjenner du til manglende brukstillatelse eller ferdigattest? Nei Ja"
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Dokumentet bekrefter faktisk at det foreligger ferdigattest. Under 'Ferdigattest/brukstillatelse' i salgsoppgaven står det eksplisitt: 'Det er utstedt ferdigattest for oppføring av boligblokk med barnehage - A1, datert 14.07.2025.' Egenerklæringsskjemaets spørsmål 22 ('Kjenner du til manglende brukstillatelse eller ferdigattest?') er besvart med 'Nei', noe som betyr at selger ikke kjenner til manglende ferdigattest. Risikoen er dermed ikke støttet av dokumentet – ferdigattest foreligger."
+        },
+        {
+          "risk": {
+            "risk_id": "584eabc3-2e5b-43c0-86bb-48cedd024d6c_risk_004",
+            "description": "Boligen selges 'som den er' etter avhendingsloven § 3-9, noe som begrenser selgers ansvar for skjulte feil og mangler. Kjøper overtar dermed en større risiko for uoppdagede feil.",
+            "evidence": [
+              "Ved slike kjøp selges eiendommen «som den er», og selgers ansvar er begrenset til det som følger direkte av avtalen, jf. avhendingsloven § 3‑9."
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder eksplisitt teksten: 'Ved slike kjøp selges eiendommen «som den er», og selgers ansvar er begrenset til det som følger direkte av avtalen, jf. avhendingsloven § 3‑9.' Dette gjelder for kjøpere som ikke er forbrukere. Risikoen er reell og direkte støttet av dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "584eabc3-2e5b-43c0-86bb-48cedd024d6c_risk_006",
+            "description": "Revisjonsberetningen påpeker vesentlig usikkerhet knyttet til borettslagets evne til fortsatt drift. Dette kan indikere økonomiske utfordringer i borettslaget som kan påvirke kjøpers investering negativt.",
+            "evidence": [
+              "konkluderer vi på om ledelsens bruk av fortsatt drift-forutsetningen er hensiktsmessig, og, basert på innhentede revisjonsbevis, hvorvidt det foreligger vesentlig usikkerhet knyttet til hendelser eller forhold som kan skape betydelig tvil om borettslagets evne til fortsatt drift."
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Sitatet fra revisjonsberetningen er hentet fra standardteksten som beskriver revisors generelle oppgaver og plikter – det er en standardformulering om hva revisor skal vurdere, ikke en konklusjon om at det faktisk foreligger vesentlig usikkerhet. Revisjonsberetningen fra Ernst & Young konkluderer positivt: årsregnskapet 'gir et rettvisende bilde av borettslagets finansielle stilling per 31. desember 2024'. Det er ingen modifisert konklusjon eller presisering om vesentlig usikkerhet knyttet til fortsatt drift. Borettslaget har dessuten en egenkapital på kr 78 718 489 og et årsresultat på kr 78 383 489. Risikoen er en falsk alarm basert på misforståelse av standardtekst i revisjonsberetningen."
+        },
+        {
+          "risk": {
+            "risk_id": "584eabc3-2e5b-43c0-86bb-48cedd024d6c_risk_007",
+            "description": "Selger kan prioritere bud fra ikke-forbrukere fremfor forbrukere, selv ved lavere bud. Dette kan oppleves som uforutsigbart for forbrukerkjøpere og kan føre til at forbrukere ikke får kjøpt boligen til tross for høyeste bud.",
+            "evidence": [
+              "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke‑forbrukere, selv om budet er lavere enn et forbrukerbud."
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder eksplisitt følgende tekst: 'På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke‑forbrukere, selv om budet er lavere enn et forbrukerbud.' Dette er direkte støtte for risikoen om at forbrukerkjøpere kan bli forbigått til fordel for ikke-forbrukere selv ved høyere bud."
+        },
+        {
+          "risk": {
+            "risk_id": "584eabc3-2e5b-43c0-86bb-48cedd024d6c_risk_008",
+            "description": "Egenerklæringsskjemaet indikerer at det kan foreligge påbud, heftelser, krav eller manglende tillatelser vedrørende eiendommen. Dette kan medføre juridiske og økonomiske forpliktelser for kjøper.",
+            "evidence": [
+              "20 Kjenner du til om det foreligger påbud/heftelser/krav/manglende tillatelser vedrørende eiendommen? Nei Ja"
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Egenerklæringsskjemaets spørsmål 20 ('Kjenner du til om det foreligger påbud/heftelser/krav/manglende tillatelser vedrørende eiendommen?') er besvart med 'Nei' av selger. Det er ingen avkrysning for 'Ja' og ingen tilleggskommentarer som indikerer kjente påbud, heftelser eller manglende tillatelser. Spørsmålet i seg selv er en standardformulering i egenerklæringsskjemaet og indikerer ikke at slike forhold faktisk foreligger. Risikoen er ikke støttet av dokumentet."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 0.625,
+        "recall": 0.18518518518518517,
+        "f1": 0.2857142857142857,
+        "total_support": 27
+      }
+    },
+    "agentic_rag_P+T+R": {
+      "run_id": "3dd83d43-904e-48b1-a739-4ccada064b8a",
+      "system_type": "agentic_rag_P+T+R",
+      "overall_metrics": {
+        "precision": 0.65,
+        "recall": 0.48148148148148145,
+        "f1": 0.553191489361702,
+        "total_support": 27
+      },
+      "matched_risks": 13,
+      "unmatched_predicted": 7,
+      "unmatched_ground_truth": 14,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_000",
+            "description": "Høy fellesgjeld med avdragsfri periode som utløper oktober 2029 – betydelig økning i felleskostnader",
+            "evidence": [
+              "Borettslagets felleslån har en avdragsfri periode som utløper i oktober 2029.",
+              "Det er estimert at felleskostnadene for denne andelen vil øke med ca. kr 2 700,‑ per måned fra september 2029, forutsatt uendrede rentebetingelser.",
+              "Andel fellesgjeld: 3 360 000 per 21.01.2026",
+              "Pantelån 254 120 000 (totalt for borettslaget)",
+              "Restsaldo lån: 220 740 000, innfrielsesdato 30.10.2064"
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.98,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_001",
+            "description": "Svært høy fellesgjeld og kraftig økning i felleskostnader fra 2029",
+            "evidence": [
+              "Andel fellesgjeld: Kr 3 360 000 pr. 19.01.2026",
+              "Totalpris inkl. fellesgjeld: Kr 5 199 496",
+              "Borettslagets felleslån har en avdragsfri periode som utløper i oktober 2029",
+              "Det er estimert at felleskostnadene for denne andelen vil øke med ca. kr 2 700,- per måned fra september 2029, forutsatt uendrede rentebetingelser",
+              "A-konto renter fellesgjeld (IN-lån): kr 14 000,- per måned",
+              "A-konto avdrag fellesgjeld (IN-lån): kr 0,-",
+              "Renter på fellesgjeld er flytende og kan endres, noe som vil påvirke størrelsen på felleskostnadene"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              15,
+              16,
+              19
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_001",
+            "description": "Flytende rente på fellesgjeld gir risiko for ytterligere økning i felleskostnader ved renteoppgang",
+            "evidence": [
+              "Renter på fellesgjeld er flytende og kan endres, noe som vil påvirke størrelsen på felleskostnadene.",
+              "Type Rente: Flytende rente",
+              "Rente: 4,79%",
+              "Rentesatsen pr. 31.12.24 var 5,45 %"
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_002",
+            "description": "Flytende rente på fellesgjeld gir risiko for ytterligere kostnadsøkning",
+            "evidence": [
+              "Type Rente: Flytende rente",
+              "Rente: 4,79%",
+              "Renter på fellesgjeld er flytende og kan endres, noe som vil påvirke størrelsen på felleskostnadene",
+              "Rentesatsen pr. 31.12.24 var 5,45 %",
+              "Estimatet forutsetter at avdrags- og rentebetingelsene pr. 31.12 beholdes uendret. Da fremtidige endringer i lånebetingelsene vil kunne medføre endringer i den informasjon som fremkommer av tabellen, må man utvise forsiktighet med å bruke beregningene som grunnlag for økonomisk planlegging eller investeringer"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              16,
+              19,
+              59
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_011",
+            "description": "Eiendommen er ikke energimerket – manglende energiattest kan medføre plikt til å innhente dette og usikkerhet om energikostnader",
+            "evidence": [
+              "Eiendommen er ikke energimerket. Det følger av forskrift om energimerking § 5 at dersom eier ikke har lagt frem energiattest, og eier etter skriftlig anmodning fra...",
+              "Energikarakter: Ikke angitt",
+              "Energifarge: Ikke angitt"
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_003",
+            "description": "Manglende energimerking av boligen",
+            "evidence": [
+              "Energikarakter: Ikke angitt",
+              "Energifarge: Ikke angitt",
+              "Eiendommen er ikke energimerket",
+              "Det følger av forskrift om energimerking § 5 at dersom eier ikke har lagt frem energiattest, og eier etter skriftlig anmodning fra kjøper ikke har lagt frem energiattest før avtale om salg er inngått, kan kjøper få laget en energiattest ved hjelp av ekspert for selgers regning"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              4,
+              20
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_017",
+            "description": "Radonmåling ikke utført – risiko for forhøyede radonverdier er ikke avklart",
+            "evidence": [
+              "21 Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_005",
+            "description": "Ingen radonmåling er utført",
+            "evidence": [
+              "Selger har ikke utført radonmåling",
+              "Det er ikke krav om dette med mindre boligen er helt eller delvis utleid",
+              "Spørsmål 21 i egenerklæring: Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              22,
+              26
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_006",
+            "description": "Baderomskabin – begrenset mulighet for fuktsøk og inspeksjon av membran og tettesjikt",
+            "evidence": [
+              "Badet har baderomskabin i betong og det er ikke gjennomføre boring av hull for fuktsøk.",
+              "Det er vanskelig å se hvor høyt opp under terskel som membran er ført.",
+              "Baderomskabin, leverandør har dokumentasjon, se FDV mappe. Søremembran og med plastsluk i dusjen."
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_007",
+            "description": "Baderomskabin kan ikke fuktsøkes – skjulte fuktskader kan ikke utelukkes",
+            "evidence": [
+              "Badet har baderomskabin i betong og det er ikke praktisk mulig å gjennomføre boring av hull for fuktsøk",
+              "En baderomskabin er en forhåndsprodusert del som settes inn i bygget i stedet for at badet bygges på stedet, ofte som et totalt og ferdig bad",
+              "Tilliggende konstruksjoner våtrom: TGIU (ikke undersøkt/utilgjengelig)",
+              "Det er vanskelig å se hvor høyt opp under terskel som membran er ført"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              17,
+              19,
+              31,
+              34,
+              35
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_018",
+            "description": "Sprinkleranlegg og fjernvarmesentral ikke besiktiget av takstmann – tilstand og funksjon ukjent",
+            "evidence": [
+              "Boligsprinkling i alle rom, sentral for sprinkleranlegg er utenfor leiligheten (ikke besiktiget).",
+              "Fjernvarme, varmesentral ikke besiktiget av takstmann."
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_008",
+            "description": "Sprinkleranlegg og varmesentral er ikke besiktiget av takstmann",
+            "evidence": [
+              "Tekniske installasjoner – Andre VVS-installasjoner: Boligsprinkling i alle rom, sentral for sprinkleranlegg er utenfor leiligheten (ikke besiktiget)",
+              "Tekniske installasjoner – Varmesentral: Fjernvarme, varmesentral ikke besiktiget av takstmann",
+              "TGIU – Ikke undersøkt/utilgjengelig: Tekniske installasjoner – Andre VVS-installasjoner / Varmesentral"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              19,
+              32,
+              35
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_002",
+            "description": "Hensynssone H190 – Sikringssone jernbane (Gjøvikbanen) medfører restriksjoner på eiendommen",
+            "evidence": [
+              "H190: Sikringssone jernbane. Sonen er knyttet til nærheten til Gjøvikbanen og medfører restriksjoner og krav til blant annet støy‑ og vibrasjonsdemping, samt mulige byggegrenser og sikkerhetstiltak ved tiltak på eiendommen."
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_009",
+            "description": "Hensynssone H190 – Sikringssone jernbane medfører restriksjoner og krav",
+            "evidence": [
+              "H190: Sikringssone jernbane. Sonen er knyttet til nærheten til Gjøvikbanen og medfører restriksjoner og krav til blant annet støy- og vibrasjonsdemping, samt mulige byggegrenser og sikkerhetstiltak ved tiltak på eiendommen"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_003",
+            "description": "Krav om felles planlegging (H810_1 – områderegulering) begrenser fremtidig utvikling og tiltak på eiendommen",
+            "evidence": [
+              "H810_1: Krav om felles planlegging (områderegulering). Sonen innebærer at det stilles krav om en felles planlegging.",
+              "Eiendommen ligger i et utviklingsområde. I kommuneplanen er området definert som 'Ytre by (utviklingsområder)'."
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_010",
+            "description": "Hensynssone H810_1 – Krav om felles planlegging begrenser fremtidig utvikling",
+            "evidence": [
+              "H810_1: Krav om felles planlegging (områderegulering). Sonen innebærer at det stilles krav om en felles områdereguleringsplan ved vesentlige endringer eller utvikling for å sikre en helhetlig og koordinert utvikling av området"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_004",
+            "description": "Pågående og fremtidig utvikling i nærområdet kan medføre støy, anleggsarbeid og endringer i omgivelsene",
+            "evidence": [
+              "Området er stadig under endring/utvikling, bygg settes opp, rehabiliteres og rives ned.",
+              "Vi anbefaler derfor alle budgivere å sette seg inn i gjeldende reguleringsbestemmelser.",
+              "Pågående plansaker i nærområdet: Som et tegn på den pågående utviklingen i området."
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_011",
+            "description": "Pågående og planlagt utvikling i nærområdet kan påvirke bomiljøet",
+            "evidence": [
+              "Detaljregulering for Peter Møllers vei 8-14 (Plan-ID S-5039, saksnr. 201412329), vedtatt 19.06.2019. Planen legger til rette for boligbebyggelse, barnehage og byrom",
+              "Området er stadig under endring/utvikling, bygg settes opp, rehabiliteres og rives ned",
+              "Eiendommen ligger i et utviklingsområde. I kommuneplanen er området definert som 'Ytre by (utviklingsområder)'",
+              "Kommunedelplan for Økernområdet (KDP-15) legger rammer for transformasjon til et mer urbant og attraktivt område"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_009",
+            "description": "Forkjøpsrett og styregodkjenning kan forsinke eller hindre gjennomføring av kjøpet",
+            "evidence": [
+              "Det er forkjøpsrett og styregodkjenning ved kjøp av boligen.",
+              "Kjøper må godkjennes av borettslagets styre. Styret kan kun nekte godkjenning dersom det foreligger saklig grunnlag.",
+              "Forhåndsvarsling forkjøpsrett: kr 8 406"
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_014",
+            "description": "Forkjøpsrett praktiseres og er under prøving – kan forsinke eller hindre kjøp",
+            "evidence": [
+              "Forkjøpsrett: Det praktiseres forkjøpsrett i borettslaget",
+              "Forkjøpsretten er under prøving. Konferer megler ved spørsmål",
+              "Forhåndsvarsling forkjøpsrett: 8 406 kr (omkostning kjøper)"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              15,
+              19
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_013",
+            "description": "Andelen disponerer ikke egen parkeringsplass – parkering kun mulig via leie av gjesteplass etter liste",
+            "evidence": [
+              "Andelen disponerer ikke egen parkeringsplass, det er mulig å leie gjesteparkeringsplass i parkeringskjeller etter liste ved behov."
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_016",
+            "description": "Andelen disponerer ikke egen parkeringsplass",
+            "evidence": [
+              "Andelen disponerer ikke egen parkeringsplass",
+              "Det er mulig å leie gjesteparkeringsplass via borettslaget. Fra tid til annen selges det parkeringsplasser internt i borettslaget"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              13,
+              16
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_019",
+            "description": "Eiendomsskatt – enkelte leiligheter er ilagt eiendomsskatt, noe som kan medføre løpende ekstra kostnader for kjøper",
+            "evidence": [
+              "Enkelte leiligheter er ilagt eiendomsskatt. Eiendomsskatt kreves inn via...",
+              "I Oslo kommune er det eiendomsskatt på boliger og fast eiendom som overstiger en fastsatt verdi."
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_018",
+            "description": "Eiendomsskatt kan påløpe for enkelte leiligheter",
+            "evidence": [
+              "I Oslo kommune er det eiendomsskatt på boliger og fast eiendom som overstiger en fastsatt verdi",
+              "Enkelte leiligheter er ilagt eiendomsskatt. Eiendomsskatt kreves inn via felleskostnader i månedene: mai, juni, september og november"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              15
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_007",
+            "description": "Planhetavvik på gulv i stue (6 mm) – kan indikere setninger eller konstruksjonsmessige forhold",
+            "evidence": [
+              "Målt planhets-avvik i stue gjennom hele rommet. Resultat 6 mm og i entrè er det målt 2 mm.",
+              "Parkett på betongdekke."
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.72,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_019",
+            "description": "Planhetavvik i gulv målt i stue og entré",
+            "evidence": [
+              "Parkett på betongdekke. Målt planhetavvik i stue gjennom hele rommet. Resultat 6 mm og i entré er det målt 2 mm"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              31,
+              33
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_005",
+          "description": "Elektrisk anlegg er ikke kontrollert (el-takst ikke utført) – risiko for skjulte feil og fremtidig funksjonssvikt",
+          "evidence": [
+            "Det er ikke foretatt kontroll av de elektriske installasjonene (el‑takst) selv om bygningssakkyndig kan ha knyttet noen kommentarer til elanlegget ut i fra enkle vurderingskriterier.",
+            "Siden elanlegget ikke er kontrollert er det sannsynlig at det siden kan avdekkes avvik fra dagens forskriftskrav og oppstå funksjonssvikt.",
+            "Kjøper må være forberedt på at det må foretas oppgraderinger på grunn av slitasje, fraværende vedlikehold, arbeider som er utført av ufaglærte."
+          ],
+          "source_documents": [
+            "d052_d052"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.92,
+          "details": {}
+        },
+        {
+          "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_008",
+          "description": "Høydeforskjell på bad (32 mm fra dørterskel til slukrist) – kan indikere avvik fra krav til fall mot sluk",
+          "evidence": [
+            "Støpt gulv med vannbåren varme og 30x30 fliser, og det er målt ca 32 mm høydeforskjell på topp av flis foran dørterskel til topp av slukrist.",
+            "Det er vanskelig å se hvor høyt opp under terskel som membran er ført."
+          ],
+          "source_documents": [
+            "d052_d052"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_010",
+          "description": "Legalpant – borettslaget har legalpant på inntil 2G som sikkerhet for felleskostnader, som prioriteres foran kjøpers eventuelle lån",
+          "evidence": [
+            "Borettslaget har legalpant på inntil 2G som sikkerhet for betaling av felleskostnader. Dette betyr at borettslaget har prioritet over tinglyste lån når det gjelder betaling av felleskostnader, og kan kreve inn pengene før andre kreditorer, selv om de har lån registrert på andelen."
+          ],
+          "source_documents": [
+            "d052_d052"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.93,
+          "details": {}
+        },
+        {
+          "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_012",
+          "description": "Borettslaget er forpliktet til å delta i drift og vedlikehold av utomhussameier, garasjesameie og fjernvarmesentraler – fremtidige ukjente kostnader",
+          "evidence": [
+            "Borettslaget er forpliktet til å delta i drift og vedlikehold av og til å bære sin forholdsmessige del av utgiftene til de utomhussameier/drifts-velforeninger, fjernvarmesentraler som blir opprettet.",
+            "Det kan bli tinglyst gjensidige bruks- og adkomstrett og bestemmelser om kostnadsfordeling til felles utomhusareal mellom boligselskapene."
+          ],
+          "source_documents": [
+            "d052_d052"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.85,
+          "details": {}
+        },
+        {
+          "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_014",
+          "description": "Skjulte feil og mangler kan foreligge – tilstandsrapporten gir ingen garanti mot skjulte avvik",
+          "evidence": [
+            "Rapporten er likevel ingen garanti for at det ikke kan finnes skjulte feil, skader og mangler.",
+            "Det kan være avvik/skader som ikke er avdekket.",
+            "Rapporten begrenser seg til leiligheten, og det som normalt vil omfattes av eiers eget vedlikeholdsansvar."
+          ],
+          "source_documents": [
+            "d052_d052"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_015",
+          "description": "Felles pantedokument (BOR.INNSK) på NOK 142 440 000 tinglyst på eiendommen – heftelse som følger andelen",
+          "evidence": [
+            "2024/ 2077558‑1/ 200 10.10.2024 FELLES PANTEDOK BOR.INNSK Beløp: NOK 142 440 000",
+            "Borettsinnskudd 142 440 000 (pantstillelse)"
+          ],
+          "source_documents": [
+            "d052_d052"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.87,
+          "details": {}
+        },
+        {
+          "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_016",
+          "description": "Utbygger (Peter Møllers vei 8-14 AS) beholder rettigheter til å selge parkeringsplasser og boder til andre enn beboere – risiko for redusert tilgang til fellesfasiliteter",
+          "evidence": [
+            "Peter Møllers vei 8-14 AS eller deres rettsetterfølger beholder eventuelle usolgte bruksretter til ekstra boder i eiendommen.",
+            "Dersom det finnes usolgte parkeringsplasser i prosjektet etter ferdigstillelse av siste byggetrinn, kan Peter Møllers vei 8-14 AS også selge parkeringsplassene til andre enn beboere i prosjektet."
+          ],
+          "source_documents": [
+            "d052_d052"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.78,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d052_004",
+          "description": "Selger har ikke tegnet boligselgerforsikring",
+          "evidence": [
+            "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            22
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d052_006",
+          "description": "Boden som inngår i BRA-e ligger på sameiets fellesareal og kan omdisponeres",
+          "evidence": [
+            "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA-e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet",
+            "BRA-e: 3 m²",
+            "Rom utenfor boenheten kan omdisponeres av borettslaget/sameiet og dette kan påvirke boligens BRA"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            17,
+            40
+          ],
+          "details": {
+            "confidence": 1.0
+          }
+        },
+        {
+          "risk_id": "gt_d052_012",
+          "description": "Ferdigattest gir ingen garanti for at bygget er oppført i henhold til tillatelse og regelverk",
+          "evidence": [
+            "Det er utstedt ferdigattest for oppføring av boligblokk med barnehage – A1, datert 14.07.2025",
+            "Det er viktig å merke seg at selv om ferdigattest foreligger, gir det ingen garanti for at bygget er oppført i henhold til tillatelsen og gjeldende regelverk, eller at det senere er utført arbeid på bygget som ikke er byggemeldt eller godkjent"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            16
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d052_013",
+          "description": "Begrenset adgang til utleie – borettslag krever styregodkjenning",
+          "evidence": [
+            "Det er begrenset adgang til å leie ut bolig i borettslag",
+            "Med styrets godkjenning og under visse vilkår kan boligen leies ut i inntil 3 år, jf. borettslagsloven § 5-3 til § 5-10",
+            "Korttidsutleie er tillatt i opptil 30 døgn per år uten samtykke fra styret"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            21
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d052_015",
+          "description": "Styregodkjenning av kjøper kreves – kan nektes ved saklig grunn",
+          "evidence": [
+            "Styregodkjennelse: Kjøper må godkjennes av borettslagets styre",
+            "Styret kan kun nekte godkjenning dersom det foreligger saklig grunnlag, jf. borettslagsloven § 4-4"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            19
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d052_017",
+          "description": "Borettslaget har solidaransvar for gjeld i Peter Møllers vei 14 garasjesameie og Børsteveien 33-35 Esek",
+          "evidence": [
+            "Selskapet har solidaransvar for den samlede gjelden i 1863 Peter Møllers Vei 14 garasjesameie. Garantiansvaret refererer seg til den samlede gjelden i 1863 Peter Møllers Vei 14 garasjesameie",
+            "Selskapet har solidaransvar for den samlede gjelden i s0439 Børsteveien 33-35 Esek",
+            "Garantiansvar: 1 597 944"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            59,
+            60
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d052_020",
+          "description": "Rommenes godkjente bruk er ikke undersøkt av takstmann",
+          "evidence": [
+            "Rommenes bruk er taksert etter dagens bruk på befaringstidspunktet, om denne bruken er godkjent av kommunen er ikke undersøkt av takstmann",
+            "Tegning oversendt av eier"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            17,
+            31,
+            37
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d052_021",
+          "description": "Selger har kun eid boligen i ca. 1 år og 3 måneder og har ikke bodd der i 12 måneder",
+          "evidence": [
+            "Når kjøpte du boligen? År 2023",
+            "Hvor lenge har du eid boligen? Antall år 1, Antall måneder 3",
+            "Har du bodd i boligen siste 12 måneder? Nei",
+            "Leilighet kjøpt i 2023 på kontrakt, stod ferdig 01.10.24"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            25
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d052_022",
+          "description": "Hus 6 har ikke direkte adkomst til garasjekjeller",
+          "evidence": [
+            "Hus 6 har ikke direkte adkomst til garasjekjeller. Andelseiere i hus 6 benytter tilgang til garasjeanlegget utvendig via oppgang i hus 7 og deretter via kjeller/underetasje i hus 7"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            70
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d052_023",
+          "description": "Innbrudd har forekommet i borettslaget – sikkerhetstiltak er iverksatt men kameraovervåkning ikke ferdig installert",
+          "evidence": [
+            "Etter et innbrudd ble det montert beslag på alle inngangsdører for å øke sikkerheten",
+            "For fremtiden er det vedtatt å installere kameraovervåkning i garasjen og ved innganger til boder og oppganger"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            19
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d052_024",
+          "description": "Tomteareal oppgitt kan avvike fra nøyaktig oppmålt areal",
+          "evidence": [
+            "Oppgitt tomteareal er hentet fra eiendomsregisteret og kan avvike fra nøyaktig oppmålt areal",
+            "Tomtestørrelse: 2623 m² (salgsoppgave) vs. 878 m² (tilstandsrapport fra Seeiendom.no)"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            16,
+            38
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d052_025",
+          "description": "Mange eldre tinglyste heftelser og bestemmelser på eiendommen",
+          "evidence": [
+            "Tinglyste heftelser fra 1933, 1934, 1936, 1937, 1941, 1945, 1946, 1957, 1958, 1959, 1960, 1963, 1967, 1971, 1975, 1977, 1984, 1996, 2018, 2022, 2023, 2024",
+            "Bestemmelse om veg, kloakkledning, gjerde, vann/kloakkledning, trafostasjon/kiosk, takreklame, bruksendring, vannledning, fri ferdsel for allmennheten, gangrett/rett til sti, bruksrett til uteoppholdsareal",
+            "Flere heftelser kan ikke slettes uten samtykke fra kommunen eller bygningsrådet"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            20,
+            21
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d052_026",
+          "description": "Sikringsordning for felleskostnader kan sies opp med 6 måneders varsel",
+          "evidence": [
+            "Borettslaget har en avtale med OBOS Factoring om garantert betaling av felleskostnader",
+            "Avtale om sikring av felleskostnader varer til den blir sagt opp av en av partene. Oppsigelsestiden er seks – 6 – måneder regnet fra oppsigelsesdato"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            16
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d052_027",
+          "description": "Borettslaget er nytt og har begrenset driftshistorikk – disponible midler er svært lave",
+          "evidence": [
+            "Byggeår: 2024",
+            "Borettslaget er stiftet 31.05.2024",
+            "Disponible midler pr. 31.12: kr 478 489 (for et borettslag med 67 boliger og total gjeld på ca. 396 millioner kroner)",
+            "Årsresultat 2024 på kr 78 383 489 skyldes i hovedsak ekstraordinære innbetalinger på fellesgjeld (IN-ordning)"
+          ],
+          "source_documents": [
+            "d052.pdf"
+          ],
+          "source_pages": [
+            20,
+            56,
+            57
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_005",
+            "description": "Elektrisk anlegg er ikke kontrollert (el-takst ikke utført) – risiko for skjulte feil og fremtidig funksjonssvikt",
+            "evidence": [
+              "Det er ikke foretatt kontroll av de elektriske installasjonene (el‑takst) selv om bygningssakkyndig kan ha knyttet noen kommentarer til elanlegget ut i fra enkle vurderingskriterier.",
+              "Siden elanlegget ikke er kontrollert er det sannsynlig at det siden kan avdekkes avvik fra dagens forskriftskrav og oppstå funksjonssvikt.",
+              "Kjøper må være forberedt på at det må foretas oppgraderinger på grunn av slitasje, fraværende vedlikehold, arbeider som er utført av ufaglærte."
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt at el-takst ikke er utført. Fra tilstandsrapporten (side 19/36): 'Det er ikke foretatt kontroll av de elektriske installasjonene (el‑takst) selv om bygningssakkyndig kan ha knyttet noen kommentarer til elanlegget ut i fra enkle vurderingskriterier. Siden elanlegget ikke er kontrollert er det sannsynlig at det siden kan avdekkes avvik fra dagens forskriftskrav og oppstå funksjonssvikt. Videre må kjøper være forberedt på det må foretas oppgraderinger på grunn av slitasje, fraværende vedlikehold, arbeider som er utført av ufaglærte...' Risikoen er direkte støttet av dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_008",
+            "description": "Høydeforskjell på bad (32 mm fra dørterskel til slukrist) – kan indikere avvik fra krav til fall mot sluk",
+            "evidence": [
+              "Støpt gulv med vannbåren varme og 30x30 fliser, og det er målt ca 32 mm høydeforskjell på topp av flis foran dørterskel til topp av slukrist.",
+              "Det er vanskelig å se hvor høyt opp under terskel som membran er ført."
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette funnet direkte i tilstandsrapporten (side 31/34): 'Støpt gulv med vannbåren varme og 30x30 fliser, og det er målt ca 32 mm høydeforskjell på topp av flis foran dørterskel til topp av slukrist. Det er vanskelig å se hvor høyt opp under terskel som membran er ført.' Dette er en konkret observasjon fra takstmannen som kan indikere avvik fra krav til fall mot sluk og membranføring."
+        },
+        {
+          "risk": {
+            "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_010",
+            "description": "Legalpant – borettslaget har legalpant på inntil 2G som sikkerhet for felleskostnader, som prioriteres foran kjøpers eventuelle lån",
+            "evidence": [
+              "Borettslaget har legalpant på inntil 2G som sikkerhet for betaling av felleskostnader. Dette betyr at borettslaget har prioritet over tinglyste lån når det gjelder betaling av felleskostnader, og kan kreve inn pengene før andre kreditorer, selv om de har lån registrert på andelen."
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.93,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter legalpantet eksplisitt under tinglyste heftelser (side 21/40): 'Legalpant: Borettslaget har legalpant på inntil 2G som sikkerhet for betaling av felleskostnader. Dette betyr at borettslaget har prioritet over tinglyste lån når det gjelder betaling av felleskostnader, og kan kreve inn pengene før andre kreditorer, selv om de har lån registrert på andelen.' Risikoen er direkte støttet av dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_012",
+            "description": "Borettslaget er forpliktet til å delta i drift og vedlikehold av utomhussameier, garasjesameie og fjernvarmesentraler – fremtidige ukjente kostnader",
+            "evidence": [
+              "Borettslaget er forpliktet til å delta i drift og vedlikehold av og til å bære sin forholdsmessige del av utgiftene til de utomhussameier/drifts-velforeninger, fjernvarmesentraler som blir opprettet.",
+              "Det kan bli tinglyst gjensidige bruks- og adkomstrett og bestemmelser om kostnadsfordeling til felles utomhusareal mellom boligselskapene."
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette i borettslagets vedtekter (side 73/144-145): 'Borettslaget er forpliktet til å delta i drift og vedlikehold av og til å bære sin forholdsmessige del av utgiftene til de utomhussameier/drifts-velforeninger, fjernvarmesentraler som blir opprettet.' Og videre: 'Det kan bli tinglyst gjensidige bruks- og adkomstrett og bestemmelser om kostnadsfordeling til felles utomhusareal mellom boligselskapene.' Risikoen er direkte støttet av dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_014",
+            "description": "Skjulte feil og mangler kan foreligge – tilstandsrapporten gir ingen garanti mot skjulte avvik",
+            "evidence": [
+              "Rapporten er likevel ingen garanti for at det ikke kan finnes skjulte feil, skader og mangler.",
+              "Det kan være avvik/skader som ikke er avdekket.",
+              "Rapporten begrenser seg til leiligheten, og det som normalt vil omfattes av eiers eget vedlikeholdsansvar."
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette i tilstandsrapportens avgrensninger (side 39/76-77): 'Rapporten er likevel ingen garanti for at det ikke kan finnes skjulte feil, skader og mangler.' Og: 'Det kan være avvik/skader som ikke er avdekket.' Samt: 'Rapporten begrenser seg til leiligheten, og det som normalt vil omfattes av eiers eget vedlikeholdsansvar.' Risikoen er direkte støttet av dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_015",
+            "description": "Felles pantedokument (BOR.INNSK) på NOK 142 440 000 tinglyst på eiendommen – heftelse som følger andelen",
+            "evidence": [
+              "2024/ 2077558‑1/ 200 10.10.2024 FELLES PANTEDOK BOR.INNSK Beløp: NOK 142 440 000",
+              "Borettsinnskudd 142 440 000 (pantstillelse)"
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.87,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette under tinglyste heftelser (side 21/40-41): '2024/ 2077558‑1/ 200 10.10.2024 FELLES PANTEDOK BOR.INNSK Beløp: NOK 142 440 000 Panthaver: Fellesskapet av innskytere, jf. BRL § 2‑11, 1. ledd.' Dette er også bekreftet i årsregnskapet (side 57/113) under langsiktig gjeld: 'Borettsinnskudd 142 440 000'. Risikoen er direkte støttet av dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "3dd83d43-904e-48b1-a739-4ccada064b8a_risk_016",
+            "description": "Utbygger (Peter Møllers vei 8-14 AS) beholder rettigheter til å selge parkeringsplasser og boder til andre enn beboere – risiko for redusert tilgang til fellesfasiliteter",
+            "evidence": [
+              "Peter Møllers vei 8-14 AS eller deres rettsetterfølger beholder eventuelle usolgte bruksretter til ekstra boder i eiendommen.",
+              "Dersom det finnes usolgte parkeringsplasser i prosjektet etter ferdigstillelse av siste byggetrinn, kan Peter Møllers vei 8-14 AS også selge parkeringsplassene til andre enn beboere i prosjektet."
+            ],
+            "source_documents": [
+              "d052_d052"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette i vedtektene for Peter Møllers vei 14 garasjesameie (side 64/126-127) og i borettslagets vedtekter (side 70/138-139): 'Peter Møllers vei 8-14 AS eller deres rettsetterfølger beholder eventuelle usolgte bruksretter til ekstra boder i eiendommen...' og 'Dersom det finnes usolgte parkeringsplasser i prosjektet etter ferdigstillelse av siste byggetrinn, kan Peter Møllers vei 8-14 AS også selge parkeringsplassene til andre enn beboere i prosjektet.' Risikoen er direkte støttet av dokumentteksten."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.48148148148148145,
+        "f1": 0.65,
+        "total_support": 27
+      }
+    },
+    "ground_truth": {
+      "run_id": "af410466-d1f2-4dcc-9f1f-1fd2765d1866_gt",
+      "system_type": "ground_truth",
+      "overall_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "total_support": 27
+      },
+      "matched_risks": 27,
+      "unmatched_predicted": 0,
+      "unmatched_ground_truth": 0,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_001",
+            "description": "Svært høy fellesgjeld og kraftig økning i felleskostnader fra 2029",
+            "evidence": [
+              "Andel fellesgjeld: Kr 3 360 000 pr. 19.01.2026",
+              "Totalpris inkl. fellesgjeld: Kr 5 199 496",
+              "Borettslagets felleslån har en avdragsfri periode som utløper i oktober 2029",
+              "Det er estimert at felleskostnadene for denne andelen vil øke med ca. kr 2 700,- per måned fra september 2029, forutsatt uendrede rentebetingelser",
+              "A-konto renter fellesgjeld (IN-lån): kr 14 000,- per måned",
+              "A-konto avdrag fellesgjeld (IN-lån): kr 0,-",
+              "Renter på fellesgjeld er flytende og kan endres, noe som vil påvirke størrelsen på felleskostnadene"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              15,
+              16,
+              19
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_001",
+            "description": "Svært høy fellesgjeld og kraftig økning i felleskostnader fra 2029",
+            "evidence": [
+              "Andel fellesgjeld: Kr 3 360 000 pr. 19.01.2026",
+              "Totalpris inkl. fellesgjeld: Kr 5 199 496",
+              "Borettslagets felleslån har en avdragsfri periode som utløper i oktober 2029",
+              "Det er estimert at felleskostnadene for denne andelen vil øke med ca. kr 2 700,- per måned fra september 2029, forutsatt uendrede rentebetingelser",
+              "A-konto renter fellesgjeld (IN-lån): kr 14 000,- per måned",
+              "A-konto avdrag fellesgjeld (IN-lån): kr 0,-",
+              "Renter på fellesgjeld er flytende og kan endres, noe som vil påvirke størrelsen på felleskostnadene"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              15,
+              16,
+              19
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_002",
+            "description": "Flytende rente på fellesgjeld gir risiko for ytterligere kostnadsøkning",
+            "evidence": [
+              "Type Rente: Flytende rente",
+              "Rente: 4,79%",
+              "Renter på fellesgjeld er flytende og kan endres, noe som vil påvirke størrelsen på felleskostnadene",
+              "Rentesatsen pr. 31.12.24 var 5,45 %",
+              "Estimatet forutsetter at avdrags- og rentebetingelsene pr. 31.12 beholdes uendret. Da fremtidige endringer i lånebetingelsene vil kunne medføre endringer i den informasjon som fremkommer av tabellen, må man utvise forsiktighet med å bruke beregningene som grunnlag for økonomisk planlegging eller investeringer"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              16,
+              19,
+              59
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_002",
+            "description": "Flytende rente på fellesgjeld gir risiko for ytterligere kostnadsøkning",
+            "evidence": [
+              "Type Rente: Flytende rente",
+              "Rente: 4,79%",
+              "Renter på fellesgjeld er flytende og kan endres, noe som vil påvirke størrelsen på felleskostnadene",
+              "Rentesatsen pr. 31.12.24 var 5,45 %",
+              "Estimatet forutsetter at avdrags- og rentebetingelsene pr. 31.12 beholdes uendret. Da fremtidige endringer i lånebetingelsene vil kunne medføre endringer i den informasjon som fremkommer av tabellen, må man utvise forsiktighet med å bruke beregningene som grunnlag for økonomisk planlegging eller investeringer"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              16,
+              19,
+              59
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_003",
+            "description": "Manglende energimerking av boligen",
+            "evidence": [
+              "Energikarakter: Ikke angitt",
+              "Energifarge: Ikke angitt",
+              "Eiendommen er ikke energimerket",
+              "Det følger av forskrift om energimerking § 5 at dersom eier ikke har lagt frem energiattest, og eier etter skriftlig anmodning fra kjøper ikke har lagt frem energiattest før avtale om salg er inngått, kan kjøper få laget en energiattest ved hjelp av ekspert for selgers regning"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              4,
+              20
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_003",
+            "description": "Manglende energimerking av boligen",
+            "evidence": [
+              "Energikarakter: Ikke angitt",
+              "Energifarge: Ikke angitt",
+              "Eiendommen er ikke energimerket",
+              "Det følger av forskrift om energimerking § 5 at dersom eier ikke har lagt frem energiattest, og eier etter skriftlig anmodning fra kjøper ikke har lagt frem energiattest før avtale om salg er inngått, kan kjøper få laget en energiattest ved hjelp av ekspert for selgers regning"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              4,
+              20
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_004",
+            "description": "Selger har ikke tegnet boligselgerforsikring",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              22
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_004",
+            "description": "Selger har ikke tegnet boligselgerforsikring",
+            "evidence": [
+              "Boligselgerforsikring: Selger har ikke tegnet boligselgerforsikring"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              22
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_005",
+            "description": "Ingen radonmåling er utført",
+            "evidence": [
+              "Selger har ikke utført radonmåling",
+              "Det er ikke krav om dette med mindre boligen er helt eller delvis utleid",
+              "Spørsmål 21 i egenerklæring: Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              22,
+              26
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_005",
+            "description": "Ingen radonmåling er utført",
+            "evidence": [
+              "Selger har ikke utført radonmåling",
+              "Det er ikke krav om dette med mindre boligen er helt eller delvis utleid",
+              "Spørsmål 21 i egenerklæring: Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              22,
+              26
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_006",
+            "description": "Boden som inngår i BRA-e ligger på sameiets fellesareal og kan omdisponeres",
+            "evidence": [
+              "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA-e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet",
+              "BRA-e: 3 m²",
+              "Rom utenfor boenheten kan omdisponeres av borettslaget/sameiet og dette kan påvirke boligens BRA"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              17,
+              40
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_006",
+            "description": "Boden som inngår i BRA-e ligger på sameiets fellesareal og kan omdisponeres",
+            "evidence": [
+              "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA-e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet",
+              "BRA-e: 3 m²",
+              "Rom utenfor boenheten kan omdisponeres av borettslaget/sameiet og dette kan påvirke boligens BRA"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              17,
+              40
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_007",
+            "description": "Baderomskabin kan ikke fuktsøkes – skjulte fuktskader kan ikke utelukkes",
+            "evidence": [
+              "Badet har baderomskabin i betong og det er ikke praktisk mulig å gjennomføre boring av hull for fuktsøk",
+              "En baderomskabin er en forhåndsprodusert del som settes inn i bygget i stedet for at badet bygges på stedet, ofte som et totalt og ferdig bad",
+              "Tilliggende konstruksjoner våtrom: TGIU (ikke undersøkt/utilgjengelig)",
+              "Det er vanskelig å se hvor høyt opp under terskel som membran er ført"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              17,
+              19,
+              31,
+              34,
+              35
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_007",
+            "description": "Baderomskabin kan ikke fuktsøkes – skjulte fuktskader kan ikke utelukkes",
+            "evidence": [
+              "Badet har baderomskabin i betong og det er ikke praktisk mulig å gjennomføre boring av hull for fuktsøk",
+              "En baderomskabin er en forhåndsprodusert del som settes inn i bygget i stedet for at badet bygges på stedet, ofte som et totalt og ferdig bad",
+              "Tilliggende konstruksjoner våtrom: TGIU (ikke undersøkt/utilgjengelig)",
+              "Det er vanskelig å se hvor høyt opp under terskel som membran er ført"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              17,
+              19,
+              31,
+              34,
+              35
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_008",
+            "description": "Sprinkleranlegg og varmesentral er ikke besiktiget av takstmann",
+            "evidence": [
+              "Tekniske installasjoner – Andre VVS-installasjoner: Boligsprinkling i alle rom, sentral for sprinkleranlegg er utenfor leiligheten (ikke besiktiget)",
+              "Tekniske installasjoner – Varmesentral: Fjernvarme, varmesentral ikke besiktiget av takstmann",
+              "TGIU – Ikke undersøkt/utilgjengelig: Tekniske installasjoner – Andre VVS-installasjoner / Varmesentral"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              19,
+              32,
+              35
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_008",
+            "description": "Sprinkleranlegg og varmesentral er ikke besiktiget av takstmann",
+            "evidence": [
+              "Tekniske installasjoner – Andre VVS-installasjoner: Boligsprinkling i alle rom, sentral for sprinkleranlegg er utenfor leiligheten (ikke besiktiget)",
+              "Tekniske installasjoner – Varmesentral: Fjernvarme, varmesentral ikke besiktiget av takstmann",
+              "TGIU – Ikke undersøkt/utilgjengelig: Tekniske installasjoner – Andre VVS-installasjoner / Varmesentral"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              19,
+              32,
+              35
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_009",
+            "description": "Hensynssone H190 – Sikringssone jernbane medfører restriksjoner og krav",
+            "evidence": [
+              "H190: Sikringssone jernbane. Sonen er knyttet til nærheten til Gjøvikbanen og medfører restriksjoner og krav til blant annet støy- og vibrasjonsdemping, samt mulige byggegrenser og sikkerhetstiltak ved tiltak på eiendommen"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_009",
+            "description": "Hensynssone H190 – Sikringssone jernbane medfører restriksjoner og krav",
+            "evidence": [
+              "H190: Sikringssone jernbane. Sonen er knyttet til nærheten til Gjøvikbanen og medfører restriksjoner og krav til blant annet støy- og vibrasjonsdemping, samt mulige byggegrenser og sikkerhetstiltak ved tiltak på eiendommen"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_010",
+            "description": "Hensynssone H810_1 – Krav om felles planlegging begrenser fremtidig utvikling",
+            "evidence": [
+              "H810_1: Krav om felles planlegging (områderegulering). Sonen innebærer at det stilles krav om en felles områdereguleringsplan ved vesentlige endringer eller utvikling for å sikre en helhetlig og koordinert utvikling av området"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_010",
+            "description": "Hensynssone H810_1 – Krav om felles planlegging begrenser fremtidig utvikling",
+            "evidence": [
+              "H810_1: Krav om felles planlegging (områderegulering). Sonen innebærer at det stilles krav om en felles områdereguleringsplan ved vesentlige endringer eller utvikling for å sikre en helhetlig og koordinert utvikling av området"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_011",
+            "description": "Pågående og planlagt utvikling i nærområdet kan påvirke bomiljøet",
+            "evidence": [
+              "Detaljregulering for Peter Møllers vei 8-14 (Plan-ID S-5039, saksnr. 201412329), vedtatt 19.06.2019. Planen legger til rette for boligbebyggelse, barnehage og byrom",
+              "Området er stadig under endring/utvikling, bygg settes opp, rehabiliteres og rives ned",
+              "Eiendommen ligger i et utviklingsområde. I kommuneplanen er området definert som 'Ytre by (utviklingsområder)'",
+              "Kommunedelplan for Økernområdet (KDP-15) legger rammer for transformasjon til et mer urbant og attraktivt område"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_011",
+            "description": "Pågående og planlagt utvikling i nærområdet kan påvirke bomiljøet",
+            "evidence": [
+              "Detaljregulering for Peter Møllers vei 8-14 (Plan-ID S-5039, saksnr. 201412329), vedtatt 19.06.2019. Planen legger til rette for boligbebyggelse, barnehage og byrom",
+              "Området er stadig under endring/utvikling, bygg settes opp, rehabiliteres og rives ned",
+              "Eiendommen ligger i et utviklingsområde. I kommuneplanen er området definert som 'Ytre by (utviklingsområder)'",
+              "Kommunedelplan for Økernområdet (KDP-15) legger rammer for transformasjon til et mer urbant og attraktivt område"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_012",
+            "description": "Ferdigattest gir ingen garanti for at bygget er oppført i henhold til tillatelse og regelverk",
+            "evidence": [
+              "Det er utstedt ferdigattest for oppføring av boligblokk med barnehage – A1, datert 14.07.2025",
+              "Det er viktig å merke seg at selv om ferdigattest foreligger, gir det ingen garanti for at bygget er oppført i henhold til tillatelsen og gjeldende regelverk, eller at det senere er utført arbeid på bygget som ikke er byggemeldt eller godkjent"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_012",
+            "description": "Ferdigattest gir ingen garanti for at bygget er oppført i henhold til tillatelse og regelverk",
+            "evidence": [
+              "Det er utstedt ferdigattest for oppføring av boligblokk med barnehage – A1, datert 14.07.2025",
+              "Det er viktig å merke seg at selv om ferdigattest foreligger, gir det ingen garanti for at bygget er oppført i henhold til tillatelsen og gjeldende regelverk, eller at det senere er utført arbeid på bygget som ikke er byggemeldt eller godkjent"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_013",
+            "description": "Begrenset adgang til utleie – borettslag krever styregodkjenning",
+            "evidence": [
+              "Det er begrenset adgang til å leie ut bolig i borettslag",
+              "Med styrets godkjenning og under visse vilkår kan boligen leies ut i inntil 3 år, jf. borettslagsloven § 5-3 til § 5-10",
+              "Korttidsutleie er tillatt i opptil 30 døgn per år uten samtykke fra styret"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              21
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_013",
+            "description": "Begrenset adgang til utleie – borettslag krever styregodkjenning",
+            "evidence": [
+              "Det er begrenset adgang til å leie ut bolig i borettslag",
+              "Med styrets godkjenning og under visse vilkår kan boligen leies ut i inntil 3 år, jf. borettslagsloven § 5-3 til § 5-10",
+              "Korttidsutleie er tillatt i opptil 30 døgn per år uten samtykke fra styret"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              21
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_014",
+            "description": "Forkjøpsrett praktiseres og er under prøving – kan forsinke eller hindre kjøp",
+            "evidence": [
+              "Forkjøpsrett: Det praktiseres forkjøpsrett i borettslaget",
+              "Forkjøpsretten er under prøving. Konferer megler ved spørsmål",
+              "Forhåndsvarsling forkjøpsrett: 8 406 kr (omkostning kjøper)"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              15,
+              19
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_014",
+            "description": "Forkjøpsrett praktiseres og er under prøving – kan forsinke eller hindre kjøp",
+            "evidence": [
+              "Forkjøpsrett: Det praktiseres forkjøpsrett i borettslaget",
+              "Forkjøpsretten er under prøving. Konferer megler ved spørsmål",
+              "Forhåndsvarsling forkjøpsrett: 8 406 kr (omkostning kjøper)"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              15,
+              19
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_015",
+            "description": "Styregodkjenning av kjøper kreves – kan nektes ved saklig grunn",
+            "evidence": [
+              "Styregodkjennelse: Kjøper må godkjennes av borettslagets styre",
+              "Styret kan kun nekte godkjenning dersom det foreligger saklig grunnlag, jf. borettslagsloven § 4-4"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_015",
+            "description": "Styregodkjenning av kjøper kreves – kan nektes ved saklig grunn",
+            "evidence": [
+              "Styregodkjennelse: Kjøper må godkjennes av borettslagets styre",
+              "Styret kan kun nekte godkjenning dersom det foreligger saklig grunnlag, jf. borettslagsloven § 4-4"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_016",
+            "description": "Andelen disponerer ikke egen parkeringsplass",
+            "evidence": [
+              "Andelen disponerer ikke egen parkeringsplass",
+              "Det er mulig å leie gjesteparkeringsplass via borettslaget. Fra tid til annen selges det parkeringsplasser internt i borettslaget"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              13,
+              16
+            ],
+            "confidence": 1.0,
+            "details": {
+              "confidence": 1.0
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_016",
+            "description": "Andelen disponerer ikke egen parkeringsplass",
+            "evidence": [
+              "Andelen disponerer ikke egen parkeringsplass",
+              "Det er mulig å leie gjesteparkeringsplass via borettslaget. Fra tid til annen selges det parkeringsplasser internt i borettslaget"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              13,
+              16
+            ],
+            "details": {
+              "confidence": 1.0
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_017",
+            "description": "Borettslaget har solidaransvar for gjeld i Peter Møllers vei 14 garasjesameie og Børsteveien 33-35 Esek",
+            "evidence": [
+              "Selskapet har solidaransvar for den samlede gjelden i 1863 Peter Møllers Vei 14 garasjesameie. Garantiansvaret refererer seg til den samlede gjelden i 1863 Peter Møllers Vei 14 garasjesameie",
+              "Selskapet har solidaransvar for den samlede gjelden i s0439 Børsteveien 33-35 Esek",
+              "Garantiansvar: 1 597 944"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              59,
+              60
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_017",
+            "description": "Borettslaget har solidaransvar for gjeld i Peter Møllers vei 14 garasjesameie og Børsteveien 33-35 Esek",
+            "evidence": [
+              "Selskapet har solidaransvar for den samlede gjelden i 1863 Peter Møllers Vei 14 garasjesameie. Garantiansvaret refererer seg til den samlede gjelden i 1863 Peter Møllers Vei 14 garasjesameie",
+              "Selskapet har solidaransvar for den samlede gjelden i s0439 Børsteveien 33-35 Esek",
+              "Garantiansvar: 1 597 944"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              59,
+              60
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_018",
+            "description": "Eiendomsskatt kan påløpe for enkelte leiligheter",
+            "evidence": [
+              "I Oslo kommune er det eiendomsskatt på boliger og fast eiendom som overstiger en fastsatt verdi",
+              "Enkelte leiligheter er ilagt eiendomsskatt. Eiendomsskatt kreves inn via felleskostnader i månedene: mai, juni, september og november"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              15
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_018",
+            "description": "Eiendomsskatt kan påløpe for enkelte leiligheter",
+            "evidence": [
+              "I Oslo kommune er det eiendomsskatt på boliger og fast eiendom som overstiger en fastsatt verdi",
+              "Enkelte leiligheter er ilagt eiendomsskatt. Eiendomsskatt kreves inn via felleskostnader i månedene: mai, juni, september og november"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              15
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_019",
+            "description": "Planhetavvik i gulv målt i stue og entré",
+            "evidence": [
+              "Parkett på betongdekke. Målt planhetavvik i stue gjennom hele rommet. Resultat 6 mm og i entré er det målt 2 mm"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              31,
+              33
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_019",
+            "description": "Planhetavvik i gulv målt i stue og entré",
+            "evidence": [
+              "Parkett på betongdekke. Målt planhetavvik i stue gjennom hele rommet. Resultat 6 mm og i entré er det målt 2 mm"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              31,
+              33
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_020",
+            "description": "Rommenes godkjente bruk er ikke undersøkt av takstmann",
+            "evidence": [
+              "Rommenes bruk er taksert etter dagens bruk på befaringstidspunktet, om denne bruken er godkjent av kommunen er ikke undersøkt av takstmann",
+              "Tegning oversendt av eier"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              17,
+              31,
+              37
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_020",
+            "description": "Rommenes godkjente bruk er ikke undersøkt av takstmann",
+            "evidence": [
+              "Rommenes bruk er taksert etter dagens bruk på befaringstidspunktet, om denne bruken er godkjent av kommunen er ikke undersøkt av takstmann",
+              "Tegning oversendt av eier"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              17,
+              31,
+              37
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_021",
+            "description": "Selger har kun eid boligen i ca. 1 år og 3 måneder og har ikke bodd der i 12 måneder",
+            "evidence": [
+              "Når kjøpte du boligen? År 2023",
+              "Hvor lenge har du eid boligen? Antall år 1, Antall måneder 3",
+              "Har du bodd i boligen siste 12 måneder? Nei",
+              "Leilighet kjøpt i 2023 på kontrakt, stod ferdig 01.10.24"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              25
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_021",
+            "description": "Selger har kun eid boligen i ca. 1 år og 3 måneder og har ikke bodd der i 12 måneder",
+            "evidence": [
+              "Når kjøpte du boligen? År 2023",
+              "Hvor lenge har du eid boligen? Antall år 1, Antall måneder 3",
+              "Har du bodd i boligen siste 12 måneder? Nei",
+              "Leilighet kjøpt i 2023 på kontrakt, stod ferdig 01.10.24"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              25
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_022",
+            "description": "Hus 6 har ikke direkte adkomst til garasjekjeller",
+            "evidence": [
+              "Hus 6 har ikke direkte adkomst til garasjekjeller. Andelseiere i hus 6 benytter tilgang til garasjeanlegget utvendig via oppgang i hus 7 og deretter via kjeller/underetasje i hus 7"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              70
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_022",
+            "description": "Hus 6 har ikke direkte adkomst til garasjekjeller",
+            "evidence": [
+              "Hus 6 har ikke direkte adkomst til garasjekjeller. Andelseiere i hus 6 benytter tilgang til garasjeanlegget utvendig via oppgang i hus 7 og deretter via kjeller/underetasje i hus 7"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              70
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_023",
+            "description": "Innbrudd har forekommet i borettslaget – sikkerhetstiltak er iverksatt men kameraovervåkning ikke ferdig installert",
+            "evidence": [
+              "Etter et innbrudd ble det montert beslag på alle inngangsdører for å øke sikkerheten",
+              "For fremtiden er det vedtatt å installere kameraovervåkning i garasjen og ved innganger til boder og oppganger"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_023",
+            "description": "Innbrudd har forekommet i borettslaget – sikkerhetstiltak er iverksatt men kameraovervåkning ikke ferdig installert",
+            "evidence": [
+              "Etter et innbrudd ble det montert beslag på alle inngangsdører for å øke sikkerheten",
+              "For fremtiden er det vedtatt å installere kameraovervåkning i garasjen og ved innganger til boder og oppganger"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_024",
+            "description": "Tomteareal oppgitt kan avvike fra nøyaktig oppmålt areal",
+            "evidence": [
+              "Oppgitt tomteareal er hentet fra eiendomsregisteret og kan avvike fra nøyaktig oppmålt areal",
+              "Tomtestørrelse: 2623 m² (salgsoppgave) vs. 878 m² (tilstandsrapport fra Seeiendom.no)"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              16,
+              38
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_024",
+            "description": "Tomteareal oppgitt kan avvike fra nøyaktig oppmålt areal",
+            "evidence": [
+              "Oppgitt tomteareal er hentet fra eiendomsregisteret og kan avvike fra nøyaktig oppmålt areal",
+              "Tomtestørrelse: 2623 m² (salgsoppgave) vs. 878 m² (tilstandsrapport fra Seeiendom.no)"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              16,
+              38
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_025",
+            "description": "Mange eldre tinglyste heftelser og bestemmelser på eiendommen",
+            "evidence": [
+              "Tinglyste heftelser fra 1933, 1934, 1936, 1937, 1941, 1945, 1946, 1957, 1958, 1959, 1960, 1963, 1967, 1971, 1975, 1977, 1984, 1996, 2018, 2022, 2023, 2024",
+              "Bestemmelse om veg, kloakkledning, gjerde, vann/kloakkledning, trafostasjon/kiosk, takreklame, bruksendring, vannledning, fri ferdsel for allmennheten, gangrett/rett til sti, bruksrett til uteoppholdsareal",
+              "Flere heftelser kan ikke slettes uten samtykke fra kommunen eller bygningsrådet"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              20,
+              21
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_025",
+            "description": "Mange eldre tinglyste heftelser og bestemmelser på eiendommen",
+            "evidence": [
+              "Tinglyste heftelser fra 1933, 1934, 1936, 1937, 1941, 1945, 1946, 1957, 1958, 1959, 1960, 1963, 1967, 1971, 1975, 1977, 1984, 1996, 2018, 2022, 2023, 2024",
+              "Bestemmelse om veg, kloakkledning, gjerde, vann/kloakkledning, trafostasjon/kiosk, takreklame, bruksendring, vannledning, fri ferdsel for allmennheten, gangrett/rett til sti, bruksrett til uteoppholdsareal",
+              "Flere heftelser kan ikke slettes uten samtykke fra kommunen eller bygningsrådet"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              20,
+              21
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_026",
+            "description": "Sikringsordning for felleskostnader kan sies opp med 6 måneders varsel",
+            "evidence": [
+              "Borettslaget har en avtale med OBOS Factoring om garantert betaling av felleskostnader",
+              "Avtale om sikring av felleskostnader varer til den blir sagt opp av en av partene. Oppsigelsestiden er seks – 6 – måneder regnet fra oppsigelsesdato"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_026",
+            "description": "Sikringsordning for felleskostnader kan sies opp med 6 måneders varsel",
+            "evidence": [
+              "Borettslaget har en avtale med OBOS Factoring om garantert betaling av felleskostnader",
+              "Avtale om sikring av felleskostnader varer til den blir sagt opp av en av partene. Oppsigelsestiden er seks – 6 – måneder regnet fra oppsigelsesdato"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              16
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d052_027",
+            "description": "Borettslaget er nytt og har begrenset driftshistorikk – disponible midler er svært lave",
+            "evidence": [
+              "Byggeår: 2024",
+              "Borettslaget er stiftet 31.05.2024",
+              "Disponible midler pr. 31.12: kr 478 489 (for et borettslag med 67 boliger og total gjeld på ca. 396 millioner kroner)",
+              "Årsresultat 2024 på kr 78 383 489 skyldes i hovedsak ekstraordinære innbetalinger på fellesgjeld (IN-ordning)"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              20,
+              56,
+              57
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d052_027",
+            "description": "Borettslaget er nytt og har begrenset driftshistorikk – disponible midler er svært lave",
+            "evidence": [
+              "Byggeår: 2024",
+              "Borettslaget er stiftet 31.05.2024",
+              "Disponible midler pr. 31.12: kr 478 489 (for et borettslag med 67 boliger og total gjeld på ca. 396 millioner kroner)",
+              "Årsresultat 2024 på kr 78 383 489 skyldes i hovedsak ekstraordinære innbetalinger på fellesgjeld (IN-ordning)"
+            ],
+            "source_documents": [
+              "d052.pdf"
+            ],
+            "source_pages": [
+              20,
+              56,
+              57
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [],
+      "unmatched_ground_truth_risks": [],
+      "verified_unmatched": [],
+      "adjusted_metrics": null
+    }
+  },
+  "best_system": "ground_truth",
+  "statistical_tests": {
+    "standard_rag_vs_agentic_rag_P+T+R": 1.0,
+    "standard_rag_vs_ground_truth": 1.0,
+    "agentic_rag_P+T+R_vs_ground_truth": 1.0
+  },
+  "record_id": "20967b95-535c-4437-9050-b430f90c6a83",
+  "query": "Identifiser risikoer i salgsoppgaven",
+  "document_set_id": "d052",
+  "timestamp": "2026-03-24T13:35:22.187075",
+  "risk_summaries": [
+    {
+      "system_type": "standard_rag",
+      "total_risks": 10,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "agentic_rag_P+T+R",
+      "total_risks": 20,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "ground_truth",
+      "total_risks": 27,
+      "risks_by_category": {}
+    }
+  ],
+  "has_ground_truth": true,
+  "overlapping_risk_count": 12,
+  "unique_to": {
+    "standard_rag": 9,
+    "agentic_rag_P+T+R": 9,
+    "ground_truth": 15
+  },
+  "record_type": "comparison"
+}

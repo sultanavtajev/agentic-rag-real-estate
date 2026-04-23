@@ -1,0 +1,2466 @@
+{
+  "system_results": {
+    "standard_rag": {
+      "run_id": "2a154603-fd2e-47e2-9826-bc376fb481f3",
+      "system_type": "standard_rag",
+      "overall_metrics": {
+        "precision": 0.2,
+        "recall": 0.1,
+        "f1": 0.13333333333333333,
+        "total_support": 20
+      },
+      "matched_risks": 2,
+      "unmatched_predicted": 8,
+      "unmatched_ground_truth": 18,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "2a154603-fd2e-47e2-9826-bc376fb481f3_risk_000",
+            "description": "Ingen radonmålinger er utført i boligen. Radon er en usynlig og luktfri radioaktiv gass som kan utgjøre en helserisiko for beboere, særlig ved langvarig eksponering.",
+            "evidence": [
+              "Det er ikke foretatt radonmålinger, og bygget er heller ikke utført",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_002",
+            "description": "Radonmålinger er ikke utført, og bygget er ikke utført med radonsperre (TG2). Leiligheten ligger i 3. etasje, men er under tre etasjer over bakkenivå. Området har usikker aktsomhetsgrad ifølge NGU sitt kart. Det anbefales å gjennomføre radonmålinger.",
+            "evidence": [
+              "Det er ikke foretatt radonmålinger, og bygget er heller ikke utført med radonsperre.",
+              "Leiligheter som ligger mindre enn tre etasjer over bakkenivå og anbefales radonmålinger.",
+              "I henhold til NGU sitt kart over Radon aktsomhet ligger dette området med usikker aktsomhetsgrad.",
+              "Konsekvens/tiltak: Det bør gjennomføres radonmålinger.",
+              "Selger har ikke utført radonmåling."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              15,
+              22,
+              28
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "2a154603-fd2e-47e2-9826-bc376fb481f3_risk_006",
+            "description": "Korttidsutleie er begrenset til 60 døgn per år i henhold til sameiets vedtekter, noe som er lavere enn lovens maksimum på 90 døgn. Dette begrenser kjøpers mulighet til å leie ut boligen korttid og kan påvirke inntjeningspotensialet.",
+            "evidence": [
+              "Korttidsutleie er tillatt i opptil 90 døgn per år, jf. eierseksjonsloven § 24.",
+              "I sameiets vedtekter er grensen satt til 60. Korttidsutleie refererer til utleie i inntil 30 døgn sammenhengende."
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_017",
+            "description": "Korttidsutleie er begrenset til 60 døgn per år i sameiets vedtekter (lavere enn lovens maksimum på 90 døgn). Dette begrenser kjøpers mulighet til å leie ut boligen på korttidsbasis (f.eks. Airbnb).",
+            "evidence": [
+              "Korttidsutleie er tillatt i opptil 90 døgn per år, jf. eierseksjonsloven § 24. Denne grensen kan justeres i vedtektene, men må settes mellom 60 og 120 døgn. I sameiets vedtekter er grensen satt til 60.",
+              "Korttidsutleie av hele boligseksjonen i mer enn 60 døgn årlig er ikke tillatt."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              18,
+              57
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "2a154603-fd2e-47e2-9826-bc376fb481f3_risk_001",
+          "description": "El-anlegget er kun forenklet undersøkt, og det kan foreligge feil og mangler som ikke er avdekket. Kjøper oppfordres til å få fullstendig kontroll utført av registrert elektrovirksomhet.",
+          "evidence": [
+            "Tilstandsgraden er vurdert ut fra den forenklede og begrensede kontrollen. Det kan være feil og mangler om branntekniske forhold som en slik forenklet undersøkelse ikke vil avdekke.",
+            "El-anlegget kan ha feil og mangler som en slik forenklet undersøkelse ikke vil avdekke. Vær derfor oppmerksom på denne risikoen, og søk videre veiledning eller få en fullstendig kontroll utført av registrert elektrovirksomhet."
+          ],
+          "source_documents": [
+            "d031_d031"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.95,
+          "details": {}
+        },
+        {
+          "risk_id": "2a154603-fd2e-47e2-9826-bc376fb481f3_risk_002",
+          "description": "Branntekniske forhold er ikke fullstendig vurdert. Den bygningssakkyndige har verken kompetanse til å gi veiledning om branntekniske forhold eller lov til å foreta en slik kontroll, noe som innebærer en potensiell sikkerhetsrisiko.",
+          "evidence": [
+            "Det kan være feil og mangler om branntekniske forhold som en slik forenklet undersøkelse ikke vil avdekke. Vær derfor oppmerksom på denne risikoen, og søk videre veiledning eller rådgivning.",
+            "En bygningssakkyndig har verken kompetanse til å gi slik veiledning eller lov til å foreta en slik kontroll."
+          ],
+          "source_documents": [
+            "d031_d031"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.93,
+          "details": {}
+        },
+        {
+          "risk_id": "2a154603-fd2e-47e2-9826-bc376fb481f3_risk_003",
+          "description": "Vannrør i fellesanlegget er lagt skjult i kanaler (kobber), og det er usikkerhet knyttet til tilstanden på skjulte konstruksjoner. Alder på rørene (fra 2004) kan indikere økt risiko for lekkasje og vannskader.",
+          "evidence": [
+            "Felles hoved vanntilfør selsrør i kobber lagt skjult i kanaler.",
+            "Vanninstallasjoner i leiligheten montert med 'rør i rør' system (PEX).",
+            "Årstall: 2004",
+            "For skjulte konstruksjoner vil alder i seg selv være et symptom som kan gi TG2."
+          ],
+          "source_documents": [
+            "d031_d031"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.82,
+          "details": {}
+        },
+        {
+          "risk_id": "2a154603-fd2e-47e2-9826-bc376fb481f3_risk_004",
+          "description": "Boligselgerforsikringen er begrenset oppad til kr 14 000 000. Dersom boligens verdi eller eventuelle krav overstiger dette beløpet, kan kjøper stå uten full dekning.",
+          "evidence": [
+            "Selger har tegnet boligselgerforsikring som dekker selgers ansvar etter avhendingsloven begrenset oppad kr. 14 000 000,-."
+          ],
+          "source_documents": [
+            "d031_d031"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.78,
+          "details": {}
+        },
+        {
+          "risk_id": "2a154603-fd2e-47e2-9826-bc376fb481f3_risk_005",
+          "description": "Salgsoppgaven inneholder opplysninger basert på selgers egenerklæring og forenklet fagkyndig vurdering. Det er risiko for at opplysningene kan være ufullstendige, uriktige eller misvisende, noe som kan påvirke kjøpers beslutningsgrunnlag.",
+          "evidence": [
+            "Innholdet i salgsoppgaven er basert på selgers informasjon, fagkyndig vurdering, samt opplysninger fra offentlige registre som kommunen og Kartverket.",
+            "ndige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis."
+          ],
+          "source_documents": [
+            "d031_d031"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "2a154603-fd2e-47e2-9826-bc376fb481f3_risk_007",
+          "description": "Utleie av boligen krever styregodkjennelse av leietaker. Kjøper bærer risikoen for at ønsket leietaker ikke blir godkjent, noe som kan hindre planlagt utleie.",
+          "evidence": [
+            "I samsvar med sameiets vedtekter kreves det styregodkjennelse av leietaker ved utleie av boligen. Kjøper bærer risikoen for at ønsket leietaker blir godkjent, og godkjenning kan kun nektes dersom det foreligger saklig grunn."
+          ],
+          "source_documents": [
+            "d031_d031"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.85,
+          "details": {}
+        },
+        {
+          "risk_id": "2a154603-fd2e-47e2-9826-bc376fb481f3_risk_008",
+          "description": "Det er hull og merker i boligen som kjøper aksepterer ved kjøp. Dette kan indikere tidligere skader eller slitasje som ikke er fullt ut utbedret.",
+          "evidence": [
+            "Kjøper aksepterer at det kan forekomme hull og merker"
+          ],
+          "source_documents": [
+            "d031_d031"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.72,
+          "details": {}
+        },
+        {
+          "risk_id": "2a154603-fd2e-47e2-9826-bc376fb481f3_risk_009",
+          "description": "Selger kan velge å prioritere bud fra ikke-forbrukere fremfor forbrukere, selv om budet er lavere. Når kjøper ikke er forbruker, kan selgers ansvar begrenses ettersom boligen selges 'som den er', noe som svekker kjøpers rettigheter.",
+          "evidence": [
+            "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud. Når kjøper ikke er forbruker, kan selgers ansvar begrenses ettersom boligen selges 'som den er'."
+          ],
+          "source_documents": [
+            "d031_d031"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d031_001",
+          "description": "Membraner på bad har passert mer enn halvparten av forventet brukstid (TG2). Badet er ca. 20 år gammelt (fra byggeår 2004). Smøremembran på vegg over 15 år og banemembran over 20 år er vurdert til TG2. Det er vanskelig å si nøyaktig når utskifting er nødvendig, men risiko for lekkasje er til stede.",
+          "evidence": [
+            "Mer enn halvparten av forventet brukstid er passert på membranløsningen.",
+            "Smøremembran på vegg som er over 15 år og banemembran over 20 år blir vurdert til TG2 i rapporten.",
+            "Dette badet er nå ca 20 år gammelt.",
+            "TG 2 gis med bakgrunn i at mer enn halvparten av forventet brukstid for membran/tettesjikt er oppbrukt.",
+            "Konsekvens/tiltak: Overvåk tilstanden jevnlig. For å få tilstandsgrad 0 eller 1 må tettesjiktet skiftes ut, men tidspunktet for når dette er nødvendig er vanskelig å si noe om."
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            15,
+            28
+          ],
+          "details": {
+            "confidence": 0.98
+          }
+        },
+        {
+          "risk_id": "gt_d031_003",
+          "description": "Hulltaking bak våtsone er ikke mulig å gjennomføre på grunn av bygningsmessige hindringer (TGIU). Garderobeskap med ryggplate på motsatt side av dusjsone hindrer forsvarlig plombering. Det kan dermed foreligge skjulte fuktskader som ikke er avdekket.",
+          "evidence": [
+            "Hulltaking er ikke foretatt da det ikke er fysisk mulig pga tilliggende konstruksjoner.",
+            "Takstmannen har derfor kontrollert med fuktindikator i våtsoner uten at det er registrert fukt i området.",
+            "Rom motsatt side av dusjsone har montert garderobeskap med ryggplate som gjør at hullet ikke kan plomberes forsvarlig.",
+            "Det er pga bygningsmessige hindringer ikke fysisk mulig å foreta hulltaking i vegg bak våtsone.",
+            "TGIU gitt ut ifra manglende mulighet for hulltaking."
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            15,
+            16,
+            29
+          ],
+          "details": {
+            "confidence": 0.92
+          }
+        },
+        {
+          "risk_id": "gt_d031_004",
+          "description": "Sameiet har hatt og har pågående problemer med vannlekkasjer fra fordelerskapene (uten drenering til sluk) og luftepotter. Gjensidige varslet sameiet om mulig bortfall av forsikringsdekning på vannskader grunnet kjent skadeårsak. Sameiet ble pålagt å utbedre skadeårsaken for å beholde forsikringsdekning.",
+          "evidence": [
+            "Sameiet mottatt varsel fra Gjensidige om at sameiet sto i ferd med å miste sentrale forsikringsdekning pga. hyppige vannlekkasjer fra fordelerskapene (uten drenering til sluk).",
+            "Sameietforsikring dekker ikke skader fra kjent skadeårsak, og derfor ble sameiet pålagt å utbedre skadeårsaken for å beholde forsikringsdekning på vannskader.",
+            "Styret har måtte organisere hastearbeid på VVS-anlegget for å unngå ytterligere vannskader som bytte av luftepotter, og utbedring av fall på avløpledningen som ga tilbakeslag av kloakk inn i leilighet.",
+            "Bytteavluftepotter: Sameiet har hatt problemer med vannlekkasjer fra luftepotter, så alle luftepottene på radiatorsystemene er nå byttet ut.",
+            "Rørlegger meldte underveis at flere smått begynte vannlekkasjer var avverget."
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            43,
+            44,
+            45,
+            46
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d031_005",
+          "description": "Parkeringsgarasjen har store problemer med overvann (salt- og klorinnholdig) som skader betong og armeringsjern. OPAK er engasjert for å kartlegge skadeomfanget. En kostbar betongrehabiliteringsprosess er forventet i fremtiden. Skadeutviklingen overvåkes, men en total rehabilitering er uunngåelig.",
+          "evidence": [
+            "Sameiet store problemer med overvann som ikke ledes bort.",
+            "Overvannet stammer fra snø og is som setter seg under biler. Når biler parkeres i oppvarmet areal, smelter denne snø/isen og ansamler seg på laveste punkt i garasjen.",
+            "Salt- og klorinnholdig vann som deretter trenger inn i betong skaper et aggressivt miljø for betong og armeringsjern.",
+            "For å kartlegge omfanget på skadeutviklingen har styret engasjert OPAK som rådgivende ingeniører, og disse har foretatt kloridprøver samt støpt inn målere som er koblet direkte på armeringsjernetikjelleren.",
+            "På et tidspunkt så vil det komme en kostbar betongrehabiliteringi parkeringsgarasjen.",
+            "Garasje. I løpet av 2024 har styret gjennomført en rekke rehabiliteringstiltak i garasjen... stanset begynnende skadeutvikling i betongens armeringsjern, noe som ville blitt svært kostbart om forholdene hadde fått utvikle seg noen år til."
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            44,
+            66,
+            67
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d031_006",
+          "description": "Felleskostnadene er varslet å kunne øke etter utarbeidelse av salgsoppgaven, grunnet prisstigning og renteøkning. Sameiet hadde et underskudd på kr 662 915 i 2023, og felleskostnadene ble økt med 9,9% fra 2024. Fremtidige kostnadsøkninger kan ikke utelukkes.",
+          "evidence": [
+            "På grunn av prisstigning og renteøkning er det påregnelig at felleskostnadene økes etter utarbeidelse av denne salgsoppgaven.",
+            "Årets resultat vises i resultatregnskapet som et underskudd og foreslås ført mot egenkapital. (2023: -662 915 kr)",
+            "Budsjettet er basert på økning av felleskostnadene fra 2024: felleskostnader økes med 9,9% og garasjeplass økes til kr 300 pr mnd pr plass fra 01.01.2024.",
+            "Driftskostnadene for drift og vedlikehold er høyere enn budsjettert og skyldes i hovedsak at sameiets forsikringsleverandør Gjensidige varslet styret om mulig bortfall av forsikringsdekning på vannskader."
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            13,
+            45,
+            46
+          ],
+          "details": {
+            "confidence": 0.93
+          }
+        },
+        {
+          "risk_id": "gt_d031_007",
+          "description": "Boden som er medtatt i BRA-e og totalt BRA ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet, noe som kan medføre at kjøper mister tilgang til boden.",
+          "evidence": [
+            "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA-e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen.",
+            "Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet.",
+            "Rom utenfor boenheten kan omdisponeres av borettslaget/sameiet og dette kan påvirke boligens BRA."
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            14,
+            32
+          ],
+          "details": {
+            "confidence": 0.97
+          }
+        },
+        {
+          "risk_id": "gt_d031_008",
+          "description": "Det er tinglyst en heftelse (21.08.2025, Dokumentnr: 978878) som innebærer at registerenheten ikke kan disponeres over uten samtykke fra rettighetshaver Emera No2 AS. Dette er meglerfirmaet som selger boligen, og heftelsen er svært nylig tinglyst. Dette kan representere en interessekonflikt og begrensning på disposisjonsretten.",
+          "evidence": [
+            "21.08.2025 – Dokumentnr: 978878 – Registerenheten kan ikke disponeres over uten samtykke fra rettighetshaver",
+            "Rettighetshaver: Emera No2 AS",
+            "Org.nr: 934 963 407",
+            "Elektronisk innsendt"
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            17
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d031_009",
+          "description": "Sameiet har hatt og har pågående problemer med lyd- og luktlekkasjer mellom seksjoner. Noen leiligheter i Eiriks gate 18 påvirkes av tilbakeslag fra uventilert luft som kommer fra naboen, knyttet til konstruksjonen av det mekaniske ventilasjonsanlegget i nr. 18.",
+          "evidence": [
+            "Utbedring av lyd- og luktlekkasjer: Sameiet er nå ferdig med å utbedre lyd- og luktlekkasjer.",
+            "Alle leiligheter styret er kjent med som er berørt av dette sprekk dannelser/lydlekkasjer skal nå være utbedret.",
+            "Merk at noen leiligheter i Eiriks gate 18 påvirkes av tilbakeslag fra uventilert luft som kommer naboen. Dette er en annen problemstilling som styret jobber med og knytter seg til konstruksjonen av det mekaniske ventilasjonsanlegget i nr. 18."
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            44
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d031_010",
+          "description": "Sameiet har hatt tilbakeslag av kloakk inn i leilighet grunnet feil fall på avløpsrør. Styret har fått utbedret fall på rør som frakter kloakk, men historikken viser at VVS-anlegget har hatt alvorlige konstruksjonsfeil.",
+          "evidence": [
+            "Utbedring av fall på avløpsrør: Styret har også fått fall utbedret på rør som frakter kloakk, for å unngå tilbakeslag av dette inn i seksjoner.",
+            "Styret har måtte organisere hastearbeid på VVS-anlegget for å unngå ytterligere vannskader som bytte av luftepotter, og utbedring av fall på avløpledningen som ga tilbakeslag av kloakk inn i leilighet.",
+            "Bakgrunnen for at VVS-anleggene ble konstruert på en måte som ga opphav til dette problemet er at i 2004 (når bygget ble ført opp) var det ikke krav i tekniske forskrifter at fordelerskapene til radiator måtte ha drenering til sluk."
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            44,
+            45
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d031_011",
+          "description": "Sameiet har hatt gjentatte innbrudd i garasjen. Nye sikkerhetsdører er installert, men det er en historikk med sikkerhetsutfordringer i bygget. I tillegg har uvedkommende oppholdt seg på sameiets arealer for å bruke rusmidler.",
+          "evidence": [
+            "I tillegg har sameiet vært utsatt for en rekke innbrudd i året som var, og de nye sikkerhetsdørene er svært motstandsdyktige mot innbrudd.",
+            "Uvedkommende på sameiets arealer. Det har i perioden vært meldt inn en rekke tilfeller hvor uvedkommende har oppholdt seg på sameiets arealer for å bruke rusmidler, særlig når det har vært kaldt ute.",
+            "Styret oppfordrer derfor alle til å sørge for at dører går i lås bak seg, og ikke slippe inn uvedkommende."
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            67
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d031_012",
+          "description": "Garasjedørene ble tette etter installasjon av nye sikkerhetsdører, noe som skapte problemer med at dørene ikke gikk i lås over en periode. Styret beklager ulempene, men sier alt skal være i orden nå. Dette indikerer nylig gjennomførte tiltak med oppstartsproblemer.",
+          "evidence": [
+            "Disse tiltakene gjorde at det ble helt tett i garasjen, og det skapte en problemer med at dørene ikke gikk i lås.",
+            "Dette har tatt tid å utbedre, men alt skal være i orden pr. nå.",
+            "Styret beklager de ulempene det har medført at dørene ikke gikk i lås."
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            66,
+            67
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d031_013",
+          "description": "Sameiet er involvert i en rettslig prosess med en seksjonseier om betaling av egenandel ved vannlekkasje. Selv om tvistesummen er beskjeden (ca. 13 000 kr), indikerer dette at det kan oppstå konflikter mellom seksjonseiere og sameiet om vedlikeholdsansvar og egenandeler.",
+          "evidence": [
+            "Rettslige prosesser. Styret håndterer en rettsprosess med en seksjonseier som bestrider plikt til å betale egenandelen ved en vannlekkasje, til tross for at vedkommende har vedlikeholdsansvar for forholdene som forårsaket skaden.",
+            "Styret har innhentet juridisk bistand fra OBOS Advokatene på dette punktet.",
+            "Selv om tvistesummen er relativt beskjeden (ca. 13 000 kr), anser styret det som prinsipielt viktig å sikre likebehandling av alle beboere.",
+            "Foruten dette gjennomfører styret tvangssalg av leilighet for å kreve inn ubetalte felleskostnader."
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            67
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d031_014",
+          "description": "Energimerket er D (grønn), som er under gjennomsnittet for nyere boliger. En bolig bygget etter byggeforskriftene vedtatt i 2010 vil normalt få C. Dette kan indikere høyere energikostnader enn for tilsvarende nyere boliger.",
+          "evidence": [
+            "Energikarakter: D",
+            "Energifarge: Grønn",
+            "En bolig bygget etter byggeforskriftene vedtatt i 2010 vil normalt få C.",
+            "D betyr at boligen er lite energieffektiv."
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            16,
+            33
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d031_015",
+          "description": "Selger har kun eid boligen i ca. 2 år og 8 måneder (kjøpt i 2022). Kort eiertid kan indikere at selger ønsker å selge raskt, og kjøper bør undersøke om det er spesielle grunner til salget.",
+          "evidence": [
+            "Når kjøpte du boligen? År 2022",
+            "Hvor lenge har du eid boligen? Antall år 2, Antall måneder 8"
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            21
+          ],
+          "details": {
+            "confidence": 0.6
+          }
+        },
+        {
+          "risk_id": "gt_d031_016",
+          "description": "Det er samlet noe vann i garasjen når biler med snø kjører inn om vinteren. Selger kjenner ikke til problemer med drenering utover dette, men sameiet har dokumenterte problemer med overvann i garasjen som skader betong og armeringsjern.",
+          "evidence": [
+            "Det samler seg noe vann i garasjen når biler med snø kjører inn om vinteren, men jeg kjenner ikke til at det har vært problemer med drenering eller fukt utover dette.",
+            "Sameiet store problemer med overvann som ikke ledes bort.",
+            "Sameietsvaktmester bruker mye tid hver vinter på manuell fjerning av dette overvannet."
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            15,
+            22,
+            44
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d031_018",
+          "description": "Sameiet byttet forretningsfører fra OBOS Eiendomsforvaltning AS til Solibo AS i 2024. Bytte av forretningsfører kan medføre overgangsutfordringer og usikkerhet rundt forvaltningskvalitet i en periode.",
+          "evidence": [
+            "Sameiet har sagt opp forretningsføreravtalen fra 30.06.2024. Ny forretningsfører er Solibo AS.",
+            "Styret har valgt å si opp avtalen sameiet har med OBOS Eiendomsforvaltning AS (OEF). Bakgrunnen for dette er at styret har vært misfornøyd med OEF fra et kostnads og serviceaspekt.",
+            "Forretningsførerhonorar: 2023: 183 818 kr, 2024: 159 150 kr (fordelt mellom OBOS og Solibo)"
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            42,
+            43
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d031_019",
+          "description": "Sameiet har hatt et betydelig driftsunderskudd i 2023 (kr -662 915) som følge av ekstraordinære vedlikeholdskostnader. Selv om 2024 viste overskudd (kr 561 943), indikerer historikken at sameiet kan ha behov for ytterligere kostbare vedlikeholdstiltak fremover, særlig knyttet til garasjerehabiliteringen.",
+          "evidence": [
+            "ÅRSRESULTAT 2023: -662 915",
+            "Driftskostnadene for drift og vedlikehold er høyere enn budsjettert.",
+            "Årets resultat 2024: 561 943",
+            "Vedlikehold 2023: 2 774 599 kr (mot budsjettert 1 875 000 kr)",
+            "På et tidspunkt så vil det komme en kostbar betongrehabiliteringi parkeringsgarasjen."
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            45,
+            47,
+            68
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d031_020",
+          "description": "Takhøyden i deler av leiligheten er kun 2,20 m (nedsenket himling), noe som er under standard takhøyde på 2,45 m. Dette kan oppleves som lavt og kan påvirke bokomforten.",
+          "evidence": [
+            "Takhøyde 2.45m, rom med nedsenket himling 2,20m."
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            14,
+            30
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "2a154603-fd2e-47e2-9826-bc376fb481f3_risk_001",
+            "description": "El-anlegget er kun forenklet undersøkt, og det kan foreligge feil og mangler som ikke er avdekket. Kjøper oppfordres til å få fullstendig kontroll utført av registrert elektrovirksomhet.",
+            "evidence": [
+              "Tilstandsgraden er vurdert ut fra den forenklede og begrensede kontrollen. Det kan være feil og mangler om branntekniske forhold som en slik forenklet undersøkelse ikke vil avdekke.",
+              "El-anlegget kan ha feil og mangler som en slik forenklet undersøkelse ikke vil avdekke. Vær derfor oppmerksom på denne risikoen, og søk videre veiledning eller få en fullstendig kontroll utført av registrert elektrovirksomhet."
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder eksplisitte utsagn i tilstandsrapporten om at el-anlegget kun er forenklet undersøkt: 'Dette er en forenklet kontroll begrenset til de spørsmål og undersøkelser som forskrift til avhendingslova (tryggere bolighandel) § 2-18 inneholder.' og 'El-anlegget kan ha feil og mangler som en slik forenklet undersøkelse ikke vil avdekke. Vær derfor oppmerksom på denne risikoen, og søk videre veiledning eller få en fullstendig kontroll utført av registrert elektrovirksomhet.' Risikoen er klart støttet av dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "2a154603-fd2e-47e2-9826-bc376fb481f3_risk_002",
+            "description": "Branntekniske forhold er ikke fullstendig vurdert. Den bygningssakkyndige har verken kompetanse til å gi veiledning om branntekniske forhold eller lov til å foreta en slik kontroll, noe som innebærer en potensiell sikkerhetsrisiko.",
+            "evidence": [
+              "Det kan være feil og mangler om branntekniske forhold som en slik forenklet undersøkelse ikke vil avdekke. Vær derfor oppmerksom på denne risikoen, og søk videre veiledning eller rådgivning.",
+              "En bygningssakkyndig har verken kompetanse til å gi slik veiledning eller lov til å foreta en slik kontroll."
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.93,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder eksplisitte utsagn i tilstandsrapporten om at branntekniske forhold ikke er fullstendig vurdert: 'Dette er en forenklet kontroll begrenset til de spørsmål som fremkommer under. [...] Dette kan ikke sammenlignes med en fullstendig kontroll av branntekniske forhold av offentlig myndighet, eller en vurdering av boligens branntekniske forhold eller prosjektering fra en rådgiver med spesialkompetanse. En bygningssakkyndig har verken kompetanse til å gi slik veiledning eller lov til å foreta en slik kontroll.' og 'Det kan være feil og mangler om branntekniske forhold som en slik forenklet undersøkelse ikke vil avdekke.' Risikoen er klart støttet av dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "2a154603-fd2e-47e2-9826-bc376fb481f3_risk_003",
+            "description": "Vannrør i fellesanlegget er lagt skjult i kanaler (kobber), og det er usikkerhet knyttet til tilstanden på skjulte konstruksjoner. Alder på rørene (fra 2004) kan indikere økt risiko for lekkasje og vannskader.",
+            "evidence": [
+              "Felles hoved vanntilfør selsrør i kobber lagt skjult i kanaler.",
+              "Vanninstallasjoner i leiligheten montert med 'rør i rør' system (PEX).",
+              "Årstall: 2004",
+              "For skjulte konstruksjoner vil alder i seg selv være et symptom som kan gi TG2."
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter alle elementer i denne risikoen: 'Felles hoved vanntilfør selsrør i kobber lagt skjult i kanaler.' og 'Vanninstallasjoner i leiligheten montert med 'rør i rør' system (PEX).' og 'Årstall: 2004'. Tilstandsrapporten nevner også at 'For skjulte konstruksjoner vil alder i seg selv være et symptom som kan gi TG2.' Kobberrørene i fellesanlegget er fra 2004 og lagt skjult, noe som underbygger risikoen for lekkasje og vannskader. Årsrapporten for sameiet bekrefter dessuten at det har vært problemer med vannlekkasjer i bygget."
+        },
+        {
+          "risk": {
+            "risk_id": "2a154603-fd2e-47e2-9826-bc376fb481f3_risk_004",
+            "description": "Boligselgerforsikringen er begrenset oppad til kr 14 000 000. Dersom boligens verdi eller eventuelle krav overstiger dette beløpet, kan kjøper stå uten full dekning.",
+            "evidence": [
+              "Selger har tegnet boligselgerforsikring som dekker selgers ansvar etter avhendingsloven begrenset oppad kr. 14 000 000,-."
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder eksplisitt: 'Selger har tegnet boligselgerforsikring som dekker selgers ansvar etter avhendingsloven begrenset oppad kr. 14 000 000,-.' Risikoen om at forsikringen er begrenset oppad til kr 14 000 000 er direkte støttet av dokumentteksten. Prisantydningen er kr 5 350 000, så for denne boligen er taket ikke umiddelbart relevant, men begrensningen eksisterer og er dokumentert."
+        },
+        {
+          "risk": {
+            "risk_id": "2a154603-fd2e-47e2-9826-bc376fb481f3_risk_005",
+            "description": "Salgsoppgaven inneholder opplysninger basert på selgers egenerklæring og forenklet fagkyndig vurdering. Det er risiko for at opplysningene kan være ufullstendige, uriktige eller misvisende, noe som kan påvirke kjøpers beslutningsgrunnlag.",
+            "evidence": [
+              "Innholdet i salgsoppgaven er basert på selgers informasjon, fagkyndig vurdering, samt opplysninger fra offentlige registre som kommunen og Kartverket.",
+              "ndige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis."
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter at salgsoppgaven er basert på selgers informasjon og fagkyndig vurdering: 'Innholdet i salgsoppgaven er basert på selgers informasjon, fagkyndig vurdering, samt opplysninger fra offentlige registre som kommunen og Kartverket.' Egenerklæringen inneholder også: 'Jeg bekrefter at opplysningene er gitt etter beste skjønn. Jeg er kjent med at dersom jeg har gitt ufullstendige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis.' Dette underbygger risikoen for at opplysningene kan være ufullstendige eller misvisende."
+        },
+        {
+          "risk": {
+            "risk_id": "2a154603-fd2e-47e2-9826-bc376fb481f3_risk_007",
+            "description": "Utleie av boligen krever styregodkjennelse av leietaker. Kjøper bærer risikoen for at ønsket leietaker ikke blir godkjent, noe som kan hindre planlagt utleie.",
+            "evidence": [
+              "I samsvar med sameiets vedtekter kreves det styregodkjennelse av leietaker ved utleie av boligen. Kjøper bærer risikoen for at ønsket leietaker blir godkjent, og godkjenning kan kun nektes dersom det foreligger saklig grunn."
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder eksplisitt: 'I samsvar med sameiets vedtekter kreves det styregodkjennelse av leietaker ved utleie av boligen. Kjøper bærer risikoen for at ønsket leietaker blir godkjent, og godkjenning kan kun nektes dersom det foreligger saklig grunn.' Risikoen er direkte og ordrett støttet av dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "2a154603-fd2e-47e2-9826-bc376fb481f3_risk_008",
+            "description": "Det er hull og merker i boligen som kjøper aksepterer ved kjøp. Dette kan indikere tidligere skader eller slitasje som ikke er fullt ut utbedret.",
+            "evidence": [
+              "Kjøper aksepterer at det kan forekomme hull og merker"
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.72,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder eksplisitt: 'Kjøper aksepterer at det kan forekomme hull og merker etter montering av inventar og utstyr som ikke er en del av overdragelsen.' Risikoen er direkte støttet av dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "2a154603-fd2e-47e2-9826-bc376fb481f3_risk_009",
+            "description": "Selger kan velge å prioritere bud fra ikke-forbrukere fremfor forbrukere, selv om budet er lavere. Når kjøper ikke er forbruker, kan selgers ansvar begrenses ettersom boligen selges 'som den er', noe som svekker kjøpers rettigheter.",
+            "evidence": [
+              "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud. Når kjøper ikke er forbruker, kan selgers ansvar begrenses ettersom boligen selges 'som den er'."
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder eksplisitt: 'På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud. Når kjøper ikke er forbruker, kan selges ansvar begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger.' Risikoen er direkte og ordrett støttet av dokumentteksten."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182,
+        "total_support": 20
+      }
+    },
+    "agentic_rag_P+T+R": {
+      "run_id": "f6f84eca-f80a-434b-8f0a-435a29e01a37",
+      "system_type": "agentic_rag_P+T+R",
+      "overall_metrics": {
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "f1": 0.5714285714285715,
+        "total_support": 20
+      },
+      "matched_risks": 10,
+      "unmatched_predicted": 5,
+      "unmatched_ground_truth": 10,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "f6f84eca-f80a-434b-8f0a-435a29e01a37_risk_000",
+            "description": "Membraner på bad har passert mer enn halvparten av forventet brukstid (TG2). Badet er ca. 20 år gammelt (fra byggeår 2004), og smøremembran på vegg er over 15 år og banemembran over 20 år. Dette innebærer risiko for lekkasje og fuktskader.",
+            "evidence": [
+              "Mer enn halvparten av forventet brukstid er passert på membranløsningen.",
+              "Smøremembran på vegg som er over 15 år og banemembran over 20 år blir vurdert til TG2 i rapporten.",
+              "Dette badet er nå ca 20 år gammelt.",
+              "TG 2 gis med bakgrunn i at mer enn halvparten av forventet brukstid for membran/tettesjikt er oppbrukt.",
+              "Overvåk tilstanden jevnlig. For å få tilstandsgrad 0 eller 1 må tettesjiktet skiftes ut, men tidspunktet for når dette er nødvendig er vanskelig å si noe om."
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_001",
+            "description": "Membraner på bad har passert mer enn halvparten av forventet brukstid (TG2). Badet er ca. 20 år gammelt (fra byggeår 2004). Smøremembran på vegg over 15 år og banemembran over 20 år er vurdert til TG2. Det er vanskelig å si nøyaktig når utskifting er nødvendig, men risiko for lekkasje er til stede.",
+            "evidence": [
+              "Mer enn halvparten av forventet brukstid er passert på membranløsningen.",
+              "Smøremembran på vegg som er over 15 år og banemembran over 20 år blir vurdert til TG2 i rapporten.",
+              "Dette badet er nå ca 20 år gammelt.",
+              "TG 2 gis med bakgrunn i at mer enn halvparten av forventet brukstid for membran/tettesjikt er oppbrukt.",
+              "Konsekvens/tiltak: Overvåk tilstanden jevnlig. For å få tilstandsgrad 0 eller 1 må tettesjiktet skiftes ut, men tidspunktet for når dette er nødvendig er vanskelig å si noe om."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              15,
+              28
+            ],
+            "details": {
+              "confidence": 0.98
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "f6f84eca-f80a-434b-8f0a-435a29e01a37_risk_001",
+            "description": "Ingen radonmålinger er utført, og bygget er ikke utført med radonsperre. Eiendommen ligger i et område med usikker aktsomhetsgrad for radon. Dette utgjør en potensiell helserisiko for beboerne.",
+            "evidence": [
+              "Det er ikke foretatt radonmålinger, og bygget er heller ikke utført med radonsperre.",
+              "Det bør gjennomføres radonmålinger.",
+              "I henhold til NGU sitt kart over Radon aktsomhet ligger dette området med usikker aktsomhetsgrad.",
+              "Selger har ikke utført radonmåling.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_002",
+            "description": "Radonmålinger er ikke utført, og bygget er ikke utført med radonsperre (TG2). Leiligheten ligger i 3. etasje, men er under tre etasjer over bakkenivå. Området har usikker aktsomhetsgrad ifølge NGU sitt kart. Det anbefales å gjennomføre radonmålinger.",
+            "evidence": [
+              "Det er ikke foretatt radonmålinger, og bygget er heller ikke utført med radonsperre.",
+              "Leiligheter som ligger mindre enn tre etasjer over bakkenivå og anbefales radonmålinger.",
+              "I henhold til NGU sitt kart over Radon aktsomhet ligger dette området med usikker aktsomhetsgrad.",
+              "Konsekvens/tiltak: Det bør gjennomføres radonmålinger.",
+              "Selger har ikke utført radonmåling."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              15,
+              22,
+              28
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "f6f84eca-f80a-434b-8f0a-435a29e01a37_risk_004",
+            "description": "Hulltaking i vegg bak våtsone på badet er ikke utført da det ikke er fysisk mulig på grunn av bygningsmessige hindringer. Dette betyr at skjulte fuktskader bak våtsonen ikke kan utelukkes, og tilstanden er merket TGIU (ikke undersøkt).",
+            "evidence": [
+              "Det er pga bygningsmessige hindringer ikke fysisk mulig å foreta hulltaking i vegg bak våtsone.",
+              "TGIU gitt ut ifra manglende mulighet for hulltaking.",
+              "Rom motsatt side av dusjsone har montert garderobeskap med ryggplate som gjør at hullet ikke kan plomberes forsvarlig.",
+              "Takstmannen har derfor kontrollert med fuktindikator i våtsoner uten at det er registrert fukt i området."
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_003",
+            "description": "Hulltaking bak våtsone er ikke mulig å gjennomføre på grunn av bygningsmessige hindringer (TGIU). Garderobeskap med ryggplate på motsatt side av dusjsone hindrer forsvarlig plombering. Det kan dermed foreligge skjulte fuktskader som ikke er avdekket.",
+            "evidence": [
+              "Hulltaking er ikke foretatt da det ikke er fysisk mulig pga tilliggende konstruksjoner.",
+              "Takstmannen har derfor kontrollert med fuktindikator i våtsoner uten at det er registrert fukt i området.",
+              "Rom motsatt side av dusjsone har montert garderobeskap med ryggplate som gjør at hullet ikke kan plomberes forsvarlig.",
+              "Det er pga bygningsmessige hindringer ikke fysisk mulig å foreta hulltaking i vegg bak våtsone.",
+              "TGIU gitt ut ifra manglende mulighet for hulltaking."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              15,
+              16,
+              29
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "f6f84eca-f80a-434b-8f0a-435a29e01a37_risk_009",
+            "description": "Sameiet har hatt problemer med VVS-anlegget, inkludert hastearbeid for å unngå vannskader, bytte av luftepotter og utbedring av fall på avløpsledning som ga tilbakeslag av kloakk inn i leilighet. Dette indikerer risiko for fremtidige VVS-relaterte skader og kostnader.",
+            "evidence": [
+              "Styret måtte organisere hastearbeid på VVS-anlegget for å unngå ytterligere vannskader som bytte av luftepotter, og utbedring av fall på avløpledningen som ga tilbakeslag av kloakk inn i leilighet.",
+              "Drift/vedlikehold VVS -611 816 (2023-regnskap)",
+              "Alle fordelerskaputendreneringtilslukharfåttsmøremembran, før det settes inn en fuktalarm som piper ved vann."
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_004",
+            "description": "Sameiet har hatt og har pågående problemer med vannlekkasjer fra fordelerskapene (uten drenering til sluk) og luftepotter. Gjensidige varslet sameiet om mulig bortfall av forsikringsdekning på vannskader grunnet kjent skadeårsak. Sameiet ble pålagt å utbedre skadeårsaken for å beholde forsikringsdekning.",
+            "evidence": [
+              "Sameiet mottatt varsel fra Gjensidige om at sameiet sto i ferd med å miste sentrale forsikringsdekning pga. hyppige vannlekkasjer fra fordelerskapene (uten drenering til sluk).",
+              "Sameietforsikring dekker ikke skader fra kjent skadeårsak, og derfor ble sameiet pålagt å utbedre skadeårsaken for å beholde forsikringsdekning på vannskader.",
+              "Styret har måtte organisere hastearbeid på VVS-anlegget for å unngå ytterligere vannskader som bytte av luftepotter, og utbedring av fall på avløpledningen som ga tilbakeslag av kloakk inn i leilighet.",
+              "Bytteavluftepotter: Sameiet har hatt problemer med vannlekkasjer fra luftepotter, så alle luftepottene på radiatorsystemene er nå byttet ut.",
+              "Rørlegger meldte underveis at flere smått begynte vannlekkasjer var avverget."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              43,
+              44,
+              45,
+              46
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "f6f84eca-f80a-434b-8f0a-435a29e01a37_risk_002",
+            "description": "Parkeringsgarasjen har pågående skadeutvikling i betong og armeringsjern som følge av salt- og klorholdig overvann. Det er risiko for kostbar betongrehabiliteringog fremtidige økte felleskostnader.",
+            "evidence": [
+              "Sameiet store problemer med overvann som ikke ledes bort.",
+              "Overvannet stammer fra snø og is som setter seg under biler. Salt- og klorinnholdig vann som deretter trenger inn i betong skaper et aggressivt miljø for betong og armeringsjern.",
+              "Kostbar betongrehabiliteringen i parkeringsgarasjen. Skadeutviklingen i garasjen kan tilnærmes på ulike måter: foreta en omfattende rehabilitering nå med anleggelse av katodisk beskyttelse og herdeplast med oppbrett og utjevning av betong, eller utsette en totalrehabilitering av betongen i 10-15 år.",
+              "Pr. nå så har ikke skadeutviklingen kommet til et stadie hvor den ene eller andre løsningen fremstår som aktuell, men styret overvåker og følger opp skadeutviklingen.",
+              "Stanset begynnende skadeutvikling i betongens armeringsjern, noe som ville blitt svært kostbart om forholdene hadde fått utvikle seg noen år til."
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_005",
+            "description": "Parkeringsgarasjen har store problemer med overvann (salt- og klorinnholdig) som skader betong og armeringsjern. OPAK er engasjert for å kartlegge skadeomfanget. En kostbar betongrehabiliteringsprosess er forventet i fremtiden. Skadeutviklingen overvåkes, men en total rehabilitering er uunngåelig.",
+            "evidence": [
+              "Sameiet store problemer med overvann som ikke ledes bort.",
+              "Overvannet stammer fra snø og is som setter seg under biler. Når biler parkeres i oppvarmet areal, smelter denne snø/isen og ansamler seg på laveste punkt i garasjen.",
+              "Salt- og klorinnholdig vann som deretter trenger inn i betong skaper et aggressivt miljø for betong og armeringsjern.",
+              "For å kartlegge omfanget på skadeutviklingen har styret engasjert OPAK som rådgivende ingeniører, og disse har foretatt kloridprøver samt støpt inn målere som er koblet direkte på armeringsjernetikjelleren.",
+              "På et tidspunkt så vil det komme en kostbar betongrehabiliteringi parkeringsgarasjen.",
+              "Garasje. I løpet av 2024 har styret gjennomført en rekke rehabiliteringstiltak i garasjen... stanset begynnende skadeutvikling i betongens armeringsjern, noe som ville blitt svært kostbart om forholdene hadde fått utvikle seg noen år til."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              44,
+              66,
+              67
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "f6f84eca-f80a-434b-8f0a-435a29e01a37_risk_003",
+            "description": "Sameiet hadde et underskudd på kr 662 915 i 2023, mot et budsjettert overskudd på kr 136 000. Dette skyldes blant annet uforutsette vedlikeholdskostnader. Det er risiko for økte felleskostnader fremover.",
+            "evidence": [
+              "ÅRSRESULTAT -662 915 574 199 136 000 99 500",
+              "Fra opptjent egenkapital -662 915 0",
+              "Driftsutgifter for konsulenthonorar er høyere enn budsjettert. Dette skyldes at sameiet har benyttet OPAK i forbindelse med utarbeidelse av notat til forrige årsmøte om skadeomfang på betong og armeringsjern i parkeringsgarasjen.",
+              "Nødvendig vedlikehold ikke kan utsettes bare fordi dette ikke ligger inne i budsjettet.",
+              "Innkrevde felleskostnader budsjett 2024: 5 489 000 (opp fra 5 031 000 i 2023-budsjett)"
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_006",
+            "description": "Felleskostnadene er varslet å kunne øke etter utarbeidelse av salgsoppgaven, grunnet prisstigning og renteøkning. Sameiet hadde et underskudd på kr 662 915 i 2023, og felleskostnadene ble økt med 9,9% fra 2024. Fremtidige kostnadsøkninger kan ikke utelukkes.",
+            "evidence": [
+              "På grunn av prisstigning og renteøkning er det påregnelig at felleskostnadene økes etter utarbeidelse av denne salgsoppgaven.",
+              "Årets resultat vises i resultatregnskapet som et underskudd og foreslås ført mot egenkapital. (2023: -662 915 kr)",
+              "Budsjettet er basert på økning av felleskostnadene fra 2024: felleskostnader økes med 9,9% og garasjeplass økes til kr 300 pr mnd pr plass fra 01.01.2024.",
+              "Driftskostnadene for drift og vedlikehold er høyere enn budsjettert og skyldes i hovedsak at sameiets forsikringsleverandør Gjensidige varslet styret om mulig bortfall av forsikringsdekning på vannskader."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              13,
+              45,
+              46
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "f6f84eca-f80a-434b-8f0a-435a29e01a37_risk_010",
+            "description": "Sameiet har hatt problemer med lyd- og luktlekkasjer mellom seksjoner, og noen leiligheter i Eiriks gate 18 påvirkes av tilbakeslag fra uventilert luft fra naboen. Dette kan indikere bygningstekniske svakheter som kan påvirke beboernes komfort.",
+            "evidence": [
+              "Utbedring av lyd- og luktlekkasjer: Sameiet er nå ferdig med å utbedre lyd- og luktlekkasjer.",
+              "Alle leiligheter styret er kjent med som er berørt av dette sprekk dannelser/lydlekkasjer skal nå være utbedret.",
+              "Merk at noen leiligheter i Eiriks gate 18 påvirkes av tilbakeslag fra uventilert luft som kommer naboen. Dette er en annen problemstilling som styret jobber med."
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_009",
+            "description": "Sameiet har hatt og har pågående problemer med lyd- og luktlekkasjer mellom seksjoner. Noen leiligheter i Eiriks gate 18 påvirkes av tilbakeslag fra uventilert luft som kommer fra naboen, knyttet til konstruksjonen av det mekaniske ventilasjonsanlegget i nr. 18.",
+            "evidence": [
+              "Utbedring av lyd- og luktlekkasjer: Sameiet er nå ferdig med å utbedre lyd- og luktlekkasjer.",
+              "Alle leiligheter styret er kjent med som er berørt av dette sprekk dannelser/lydlekkasjer skal nå være utbedret.",
+              "Merk at noen leiligheter i Eiriks gate 18 påvirkes av tilbakeslag fra uventilert luft som kommer naboen. Dette er en annen problemstilling som styret jobber med og knytter seg til konstruksjonen av det mekaniske ventilasjonsanlegget i nr. 18."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              44
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "f6f84eca-f80a-434b-8f0a-435a29e01a37_risk_007",
+            "description": "Energikarakter D indikerer at boligen er relativt lite energieffektiv. Kombinert med forventninger om vedvarende høye energipriser kan dette medføre høye løpende oppvarmingskostnader for kjøper.",
+            "evidence": [
+              "Energikarakter: D",
+              "Vi forventer at energiprisene vil holde seg høye også i 2024, men antar at strømstøtten videreføres.",
+              "Oppvarming kr 731,– pr. md.",
+              "Fjernvarme 1 141 689 (sameiets energikostnader 2023)"
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_014",
+            "description": "Energimerket er D (grønn), som er under gjennomsnittet for nyere boliger. En bolig bygget etter byggeforskriftene vedtatt i 2010 vil normalt få C. Dette kan indikere høyere energikostnader enn for tilsvarende nyere boliger.",
+            "evidence": [
+              "Energikarakter: D",
+              "Energifarge: Grønn",
+              "En bolig bygget etter byggeforskriftene vedtatt i 2010 vil normalt få C.",
+              "D betyr at boligen er lite energieffektiv."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              16,
+              33
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "f6f84eca-f80a-434b-8f0a-435a29e01a37_risk_005",
+            "description": "Overvannsproblemer i garasjen er et kjent og vedvarende problem. Vann samler seg i garasjen om vinteren, og permanente løsninger for overvannshåndtering er vurdert som ikke regningssvarende på nåværende tidspunkt.",
+            "evidence": [
+              "Det samler seg noe vann i garasjen når biler med snø kjører inn om vinteren, men jeg kjenner ikke til at det har vært problemer med drenering eller fukt utover dette.",
+              "Sameiet store problemer med overvann som ikke ledes bort. Sameiets vaktmester bruker mye tid hver vinter på manuell fjerning av dette overvannet.",
+              "Styret har også fått gjennomført en grundig utredning av permanente løsninger for overvannshåndtering. Dette viste seg ikke regningssvarende på nåværende tidspunkt, men vil bli vurdert utført på et senere tidspunkt som en sentral del av et større rehabiliteringsprosjekt for garasjen."
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_016",
+            "description": "Det er samlet noe vann i garasjen når biler med snø kjører inn om vinteren. Selger kjenner ikke til problemer med drenering utover dette, men sameiet har dokumenterte problemer med overvann i garasjen som skader betong og armeringsjern.",
+            "evidence": [
+              "Det samler seg noe vann i garasjen når biler med snø kjører inn om vinteren, men jeg kjenner ikke til at det har vært problemer med drenering eller fukt utover dette.",
+              "Sameiet store problemer med overvann som ikke ledes bort.",
+              "Sameietsvaktmester bruker mye tid hver vinter på manuell fjerning av dette overvannet."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              15,
+              22,
+              44
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "f6f84eca-f80a-434b-8f0a-435a29e01a37_risk_013",
+            "description": "Korttidsutleie av hele boligseksjonen er begrenset til maksimalt 60 døgn per år. Dette begrenser kjøpers mulighet til å leie ut boligen på korttidsmarkedet (f.eks. Airbnb).",
+            "evidence": [
+              "Korttidsutleie av hele boligseksjonen i mer enn 60 døgn årlig er ikke tillatt."
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.93,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_017",
+            "description": "Korttidsutleie er begrenset til 60 døgn per år i sameiets vedtekter (lavere enn lovens maksimum på 90 døgn). Dette begrenser kjøpers mulighet til å leie ut boligen på korttidsbasis (f.eks. Airbnb).",
+            "evidence": [
+              "Korttidsutleie er tillatt i opptil 90 døgn per år, jf. eierseksjonsloven § 24. Denne grensen kan justeres i vedtektene, men må settes mellom 60 og 120 døgn. I sameiets vedtekter er grensen satt til 60.",
+              "Korttidsutleie av hele boligseksjonen i mer enn 60 døgn årlig er ikke tillatt."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              18,
+              57
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "f6f84eca-f80a-434b-8f0a-435a29e01a37_risk_006",
+          "description": "El-anlegget er fra byggeår 2004 og det er ikke dokumentert el-tilsyn de siste 5 år. Takstmannen anbefaler at el-anlegg som ikke har hatt kontroll siste 5 år kontrolleres av autorisert elektriker.",
+          "evidence": [
+            "Foreligger det eltilsynsrapport de siste 5 år, og det er ikke foretatt arbeid på anlegget etter denne, utenom retting av eventuelle avvik i eltilsynsrapport (dvs en el-tilsynsrapport uten avvik)? Ja",
+            "Takstmannen har ikke autorisasjon for total taksering av el-anlegg. Det anbefales derfor på generelt grunnlag at el-anlegg som ikke har hatt kontroll siste 5 år kontrolleres av autorisert elektriker eller E-verket.",
+            "Årstall: 2004",
+            "Er det elektriske anlegget utført eller er det foretatt tilleggsarbeider på det elektriske anlegget etter 1.1.1999? Ja – Skiftet en kabel, skiftet dimmerbrytere og montert lamper."
+          ],
+          "source_documents": [
+            "d031_d031"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.78,
+          "details": {}
+        },
+        {
+          "risk_id": "f6f84eca-f80a-434b-8f0a-435a29e01a37_risk_008",
+          "description": "Ferdigattest er datert 16.10.2008, men opplysninger om ferdigattest/midlertidig brukstillatelse må innhentes fra bygningsmyndighetene. Det er usikkerhet knyttet til om alle forhold er godkjent.",
+          "evidence": [
+            "Ferdigattest/ brukstillatelse datert: 16.10.2008.",
+            "Opplysninger om ferdigattest/ midlertidig brukstillatelse etc.: Må innhentes fra bygningsmyndighetene.",
+            "Selv om ferdigattest foreligger, gir det ingen garanti for at utført i samsvar med tillatelsen og øvrige krav etter plan- og bygningslovgivningen.",
+            "Kjenner du til manglende brukstillatelse eller ferdigattest? Nei"
+          ],
+          "source_documents": [
+            "d031_d031"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.72,
+          "details": {}
+        },
+        {
+          "risk_id": "f6f84eca-f80a-434b-8f0a-435a29e01a37_risk_011",
+          "description": "Legalpant og sameiets panterett utgjør en prioritert heftelse på eiendommen. Kommunen har legalpant for kommunale avgifter og eiendomsskatt, og sameiet har legalpant på inntil 2G for krav knyttet til sameieforholdet. Disse heftelsene har prioritet foran tinglyste lån.",
+          "evidence": [
+            "Legalpant til kommunen har høyere prioritet enn tinglyste lån, for eksempel banklån på seksjonen.",
+            "De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader.",
+            "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån.",
+            "Sameiet legal panterett i den enkelte eierseksjon, begrenset til inntil 2 ganger folketrygdens grunnbeløp."
+          ],
+          "source_documents": [
+            "d031_d031"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "f6f84eca-f80a-434b-8f0a-435a29e01a37_risk_012",
+          "description": "Forsikringspremien for sameiet har økt som følge av indeksjustering og individuell prisjustering basert på skadehistorikk. Økt skadehistorikk kan medføre ytterligere premieøkninger og høyere felleskostnader.",
+          "evidence": [
+            "Premieendringen er en følge av indeksjustering på bygninger på 6,8 % fra 1. januar, samt forsikringsselskapets individuelle prisjustering basert på skadehistorikken i Sameiet Borghaven.",
+            "Forsikring 528 847 (2023) mot budsjettert 600 000 (2024) og 650 040 (2025-budsjett)"
+          ],
+          "source_documents": [
+            "d031_d031"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.78,
+          "details": {}
+        },
+        {
+          "risk_id": "f6f84eca-f80a-434b-8f0a-435a29e01a37_risk_014",
+          "description": "Renovasjonskostnader øker med 13 %, vann- og avløp med 23,4 %, mens feiegebyret reduseres med 40 %. Samlet sett vil kommunale avgifter øke, noe som kan bidra til økte felleskostnader.",
+          "evidence": [
+            "En økning på 13 % for renovasjon, 23,4 % for vann- og avløp og feiegebyret reduseres med 40%.",
+            "Eiendomsskatten følger egne satser."
+          ],
+          "source_documents": [
+            "d031_d031"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.82,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d031_007",
+          "description": "Boden som er medtatt i BRA-e og totalt BRA ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet, noe som kan medføre at kjøper mister tilgang til boden.",
+          "evidence": [
+            "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA-e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen.",
+            "Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet.",
+            "Rom utenfor boenheten kan omdisponeres av borettslaget/sameiet og dette kan påvirke boligens BRA."
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            14,
+            32
+          ],
+          "details": {
+            "confidence": 0.97
+          }
+        },
+        {
+          "risk_id": "gt_d031_008",
+          "description": "Det er tinglyst en heftelse (21.08.2025, Dokumentnr: 978878) som innebærer at registerenheten ikke kan disponeres over uten samtykke fra rettighetshaver Emera No2 AS. Dette er meglerfirmaet som selger boligen, og heftelsen er svært nylig tinglyst. Dette kan representere en interessekonflikt og begrensning på disposisjonsretten.",
+          "evidence": [
+            "21.08.2025 – Dokumentnr: 978878 – Registerenheten kan ikke disponeres over uten samtykke fra rettighetshaver",
+            "Rettighetshaver: Emera No2 AS",
+            "Org.nr: 934 963 407",
+            "Elektronisk innsendt"
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            17
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d031_010",
+          "description": "Sameiet har hatt tilbakeslag av kloakk inn i leilighet grunnet feil fall på avløpsrør. Styret har fått utbedret fall på rør som frakter kloakk, men historikken viser at VVS-anlegget har hatt alvorlige konstruksjonsfeil.",
+          "evidence": [
+            "Utbedring av fall på avløpsrør: Styret har også fått fall utbedret på rør som frakter kloakk, for å unngå tilbakeslag av dette inn i seksjoner.",
+            "Styret har måtte organisere hastearbeid på VVS-anlegget for å unngå ytterligere vannskader som bytte av luftepotter, og utbedring av fall på avløpledningen som ga tilbakeslag av kloakk inn i leilighet.",
+            "Bakgrunnen for at VVS-anleggene ble konstruert på en måte som ga opphav til dette problemet er at i 2004 (når bygget ble ført opp) var det ikke krav i tekniske forskrifter at fordelerskapene til radiator måtte ha drenering til sluk."
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            44,
+            45
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d031_011",
+          "description": "Sameiet har hatt gjentatte innbrudd i garasjen. Nye sikkerhetsdører er installert, men det er en historikk med sikkerhetsutfordringer i bygget. I tillegg har uvedkommende oppholdt seg på sameiets arealer for å bruke rusmidler.",
+          "evidence": [
+            "I tillegg har sameiet vært utsatt for en rekke innbrudd i året som var, og de nye sikkerhetsdørene er svært motstandsdyktige mot innbrudd.",
+            "Uvedkommende på sameiets arealer. Det har i perioden vært meldt inn en rekke tilfeller hvor uvedkommende har oppholdt seg på sameiets arealer for å bruke rusmidler, særlig når det har vært kaldt ute.",
+            "Styret oppfordrer derfor alle til å sørge for at dører går i lås bak seg, og ikke slippe inn uvedkommende."
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            67
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d031_012",
+          "description": "Garasjedørene ble tette etter installasjon av nye sikkerhetsdører, noe som skapte problemer med at dørene ikke gikk i lås over en periode. Styret beklager ulempene, men sier alt skal være i orden nå. Dette indikerer nylig gjennomførte tiltak med oppstartsproblemer.",
+          "evidence": [
+            "Disse tiltakene gjorde at det ble helt tett i garasjen, og det skapte en problemer med at dørene ikke gikk i lås.",
+            "Dette har tatt tid å utbedre, men alt skal være i orden pr. nå.",
+            "Styret beklager de ulempene det har medført at dørene ikke gikk i lås."
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            66,
+            67
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d031_013",
+          "description": "Sameiet er involvert i en rettslig prosess med en seksjonseier om betaling av egenandel ved vannlekkasje. Selv om tvistesummen er beskjeden (ca. 13 000 kr), indikerer dette at det kan oppstå konflikter mellom seksjonseiere og sameiet om vedlikeholdsansvar og egenandeler.",
+          "evidence": [
+            "Rettslige prosesser. Styret håndterer en rettsprosess med en seksjonseier som bestrider plikt til å betale egenandelen ved en vannlekkasje, til tross for at vedkommende har vedlikeholdsansvar for forholdene som forårsaket skaden.",
+            "Styret har innhentet juridisk bistand fra OBOS Advokatene på dette punktet.",
+            "Selv om tvistesummen er relativt beskjeden (ca. 13 000 kr), anser styret det som prinsipielt viktig å sikre likebehandling av alle beboere.",
+            "Foruten dette gjennomfører styret tvangssalg av leilighet for å kreve inn ubetalte felleskostnader."
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            67
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d031_015",
+          "description": "Selger har kun eid boligen i ca. 2 år og 8 måneder (kjøpt i 2022). Kort eiertid kan indikere at selger ønsker å selge raskt, og kjøper bør undersøke om det er spesielle grunner til salget.",
+          "evidence": [
+            "Når kjøpte du boligen? År 2022",
+            "Hvor lenge har du eid boligen? Antall år 2, Antall måneder 8"
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            21
+          ],
+          "details": {
+            "confidence": 0.6
+          }
+        },
+        {
+          "risk_id": "gt_d031_018",
+          "description": "Sameiet byttet forretningsfører fra OBOS Eiendomsforvaltning AS til Solibo AS i 2024. Bytte av forretningsfører kan medføre overgangsutfordringer og usikkerhet rundt forvaltningskvalitet i en periode.",
+          "evidence": [
+            "Sameiet har sagt opp forretningsføreravtalen fra 30.06.2024. Ny forretningsfører er Solibo AS.",
+            "Styret har valgt å si opp avtalen sameiet har med OBOS Eiendomsforvaltning AS (OEF). Bakgrunnen for dette er at styret har vært misfornøyd med OEF fra et kostnads og serviceaspekt.",
+            "Forretningsførerhonorar: 2023: 183 818 kr, 2024: 159 150 kr (fordelt mellom OBOS og Solibo)"
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            42,
+            43
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d031_019",
+          "description": "Sameiet har hatt et betydelig driftsunderskudd i 2023 (kr -662 915) som følge av ekstraordinære vedlikeholdskostnader. Selv om 2024 viste overskudd (kr 561 943), indikerer historikken at sameiet kan ha behov for ytterligere kostbare vedlikeholdstiltak fremover, særlig knyttet til garasjerehabiliteringen.",
+          "evidence": [
+            "ÅRSRESULTAT 2023: -662 915",
+            "Driftskostnadene for drift og vedlikehold er høyere enn budsjettert.",
+            "Årets resultat 2024: 561 943",
+            "Vedlikehold 2023: 2 774 599 kr (mot budsjettert 1 875 000 kr)",
+            "På et tidspunkt så vil det komme en kostbar betongrehabiliteringi parkeringsgarasjen."
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            45,
+            47,
+            68
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d031_020",
+          "description": "Takhøyden i deler av leiligheten er kun 2,20 m (nedsenket himling), noe som er under standard takhøyde på 2,45 m. Dette kan oppleves som lavt og kan påvirke bokomforten.",
+          "evidence": [
+            "Takhøyde 2.45m, rom med nedsenket himling 2,20m."
+          ],
+          "source_documents": [
+            "d031.pdf"
+          ],
+          "source_pages": [
+            14,
+            30
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "f6f84eca-f80a-434b-8f0a-435a29e01a37_risk_006",
+            "description": "El-anlegget er fra byggeår 2004 og det er ikke dokumentert el-tilsyn de siste 5 år. Takstmannen anbefaler at el-anlegg som ikke har hatt kontroll siste 5 år kontrolleres av autorisert elektriker.",
+            "evidence": [
+              "Foreligger det eltilsynsrapport de siste 5 år, og det er ikke foretatt arbeid på anlegget etter denne, utenom retting av eventuelle avvik i eltilsynsrapport (dvs en el-tilsynsrapport uten avvik)? Ja",
+              "Takstmannen har ikke autorisasjon for total taksering av el-anlegg. Det anbefales derfor på generelt grunnlag at el-anlegg som ikke har hatt kontroll siste 5 år kontrolleres av autorisert elektriker eller E-verket.",
+              "Årstall: 2004",
+              "Er det elektriske anlegget utført eller er det foretatt tilleggsarbeider på det elektriske anlegget etter 1.1.1999? Ja – Skiftet en kabel, skiftet dimmerbrytere og montert lamper."
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Risikobeskrivelsen hevder at det IKKE er dokumentert el-tilsyn de siste 5 år, men dokumentet viser det motsatte. I tilstandsrapporten under elektrisk anlegg svares det 'Ja' på spørsmålet 'Foreligger det eltilsynsrapport de siste 5 år, og det er ikke foretatt arbeid på anlegget etter denne...'. Dette betyr at det faktisk foreligger en eltilsynsrapport fra de siste 5 år. Takstmannens generelle anbefaling om el-kontroll gjelder kun for anlegg som IKKE har hatt kontroll siste 5 år, og er ikke relevant her. Risikobeskrivelsen er dermed feil – el-tilsyn er dokumentert."
+        },
+        {
+          "risk": {
+            "risk_id": "f6f84eca-f80a-434b-8f0a-435a29e01a37_risk_008",
+            "description": "Ferdigattest er datert 16.10.2008, men opplysninger om ferdigattest/midlertidig brukstillatelse må innhentes fra bygningsmyndighetene. Det er usikkerhet knyttet til om alle forhold er godkjent.",
+            "evidence": [
+              "Ferdigattest/ brukstillatelse datert: 16.10.2008.",
+              "Opplysninger om ferdigattest/ midlertidig brukstillatelse etc.: Må innhentes fra bygningsmyndighetene.",
+              "Selv om ferdigattest foreligger, gir det ingen garanti for at utført i samsvar med tillatelsen og øvrige krav etter plan- og bygningslovgivningen.",
+              "Kjenner du til manglende brukstillatelse eller ferdigattest? Nei"
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.72,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter risikoen. Ferdigattest er datert 16.10.2008, og megleropplysningene fra Solibo AS angir eksplisitt at 'Opplysninger om ferdigattest/midlertidig brukstillatelse etc.: Må innhentes fra bygningsmyndighetene.' Tilstandsrapporten bekrefter også at 'selv om ferdigattest foreligger, gir det ingen garanti for at bygget er oppført i henhold til tillatelsen og gjeldende regelverk, eller at det senere er utført arbeid på bygget som ikke er byggemeldt eller godkjent.' Selger svarer 'Nei' på om det mangler ferdigattest, men usikkerheten rundt fullstendig dokumentasjon fra bygningsmyndighetene er reell og støttes av dokumentet."
+        },
+        {
+          "risk": {
+            "risk_id": "f6f84eca-f80a-434b-8f0a-435a29e01a37_risk_011",
+            "description": "Legalpant og sameiets panterett utgjør en prioritert heftelse på eiendommen. Kommunen har legalpant for kommunale avgifter og eiendomsskatt, og sameiet har legalpant på inntil 2G for krav knyttet til sameieforholdet. Disse heftelsene har prioritet foran tinglyste lån.",
+            "evidence": [
+              "Legalpant til kommunen har høyere prioritet enn tinglyste lån, for eksempel banklån på seksjonen.",
+              "De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader.",
+              "Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån.",
+              "Sameiet legal panterett i den enkelte eierseksjon, begrenset til inntil 2 ganger folketrygdens grunnbeløp."
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter risikoen fullt ut. Salgsoppgaven inneholder følgende tekst: 'Kommunen har legalpant som sikkerhet for betaling av kommunale avgifter og eventuell eiendomsskatt. De øvrige seksjonseierne i sameiet har legalpant på inntil 2G som sikkerhet for krav knyttet til sameieforholdet, som felleskostnader. Legalpant er pant som ikke vises i grunnboksutskriften, og har prioritet foran tinglyste lån, for eksempel banklån på seksjonen. Legalpant til kommunen har høyere prioritet enn legalpant til sameiet.' Vedtektene bekrefter også sameiets legalpanterett. Alle elementer i risikobeskrivelsen er direkte støttet av dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "f6f84eca-f80a-434b-8f0a-435a29e01a37_risk_012",
+            "description": "Forsikringspremien for sameiet har økt som følge av indeksjustering og individuell prisjustering basert på skadehistorikk. Økt skadehistorikk kan medføre ytterligere premieøkninger og høyere felleskostnader.",
+            "evidence": [
+              "Premieendringen er en følge av indeksjustering på bygninger på 6,8 % fra 1. januar, samt forsikringsselskapets individuelle prisjustering basert på skadehistorikken i Sameiet Borghaven.",
+              "Forsikring 528 847 (2023) mot budsjettert 600 000 (2024) og 650 040 (2025-budsjett)"
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter risikoen. I kommentarene til budsjettet for 2024 i årsrapporten for 2023 står det eksplisitt: 'Premieendringen er en følge av indeksjustering på bygninger på 6,8 % fra 1. januar, samt forsikringsselskapets individuelle prisjustering basert på skadehistorikken i Sameiet Borghaven.' Regnskapet viser forsikringskostnader på 520 483 kr (2023), budsjettert 600 000 kr (2024) og 650 040 kr (2025-budsjett), noe som bekrefter en stigende trend. Sameiet har hatt hyppige vannlekkasjer og skader, noe som underbygger risikoen for ytterligere premieøkninger."
+        },
+        {
+          "risk": {
+            "risk_id": "f6f84eca-f80a-434b-8f0a-435a29e01a37_risk_014",
+            "description": "Renovasjonskostnader øker med 13 %, vann- og avløp med 23,4 %, mens feiegebyret reduseres med 40 %. Samlet sett vil kommunale avgifter øke, noe som kan bidra til økte felleskostnader.",
+            "evidence": [
+              "En økning på 13 % for renovasjon, 23,4 % for vann- og avløp og feiegebyret reduseres med 40%.",
+              "Eiendomsskatten følger egne satser."
+            ],
+            "source_documents": [
+              "d031_d031"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter risikoen direkte. I kommentarene til budsjettet for 2024 i årsrapporten for 2023 står det: 'Oslo Kommune har i sitt budsjettforslag for 2024 lagt til grunn en økning på 13 % for renovasjon, 23,4 % for vann- og avløp og feiegebyret reduseres med 40%. Eiendomsskatten følger egne satser.' Regnskapet viser at kommunale avgifter økte fra 744 621 kr (2022) til 888 388 kr (2023) og er budsjettert til 1 031 000 kr (2024) og 1 209 960 kr (2025), noe som bekrefter at økte kommunale avgifter bidrar til økte felleskostnader."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 0.9090909090909091,
+        "recall": 0.5,
+        "f1": 0.6451612903225806,
+        "total_support": 20
+      }
+    },
+    "ground_truth": {
+      "run_id": "fd3cc3b8-bba1-401e-bc0b-cd0528c39a5b_gt",
+      "system_type": "ground_truth",
+      "overall_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "total_support": 20
+      },
+      "matched_risks": 20,
+      "unmatched_predicted": 0,
+      "unmatched_ground_truth": 0,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "gt_d031_001",
+            "description": "Membraner på bad har passert mer enn halvparten av forventet brukstid (TG2). Badet er ca. 20 år gammelt (fra byggeår 2004). Smøremembran på vegg over 15 år og banemembran over 20 år er vurdert til TG2. Det er vanskelig å si nøyaktig når utskifting er nødvendig, men risiko for lekkasje er til stede.",
+            "evidence": [
+              "Mer enn halvparten av forventet brukstid er passert på membranløsningen.",
+              "Smøremembran på vegg som er over 15 år og banemembran over 20 år blir vurdert til TG2 i rapporten.",
+              "Dette badet er nå ca 20 år gammelt.",
+              "TG 2 gis med bakgrunn i at mer enn halvparten av forventet brukstid for membran/tettesjikt er oppbrukt.",
+              "Konsekvens/tiltak: Overvåk tilstanden jevnlig. For å få tilstandsgrad 0 eller 1 må tettesjiktet skiftes ut, men tidspunktet for når dette er nødvendig er vanskelig å si noe om."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              15,
+              28
+            ],
+            "confidence": 0.98,
+            "details": {
+              "confidence": 0.98
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_001",
+            "description": "Membraner på bad har passert mer enn halvparten av forventet brukstid (TG2). Badet er ca. 20 år gammelt (fra byggeår 2004). Smøremembran på vegg over 15 år og banemembran over 20 år er vurdert til TG2. Det er vanskelig å si nøyaktig når utskifting er nødvendig, men risiko for lekkasje er til stede.",
+            "evidence": [
+              "Mer enn halvparten av forventet brukstid er passert på membranløsningen.",
+              "Smøremembran på vegg som er over 15 år og banemembran over 20 år blir vurdert til TG2 i rapporten.",
+              "Dette badet er nå ca 20 år gammelt.",
+              "TG 2 gis med bakgrunn i at mer enn halvparten av forventet brukstid for membran/tettesjikt er oppbrukt.",
+              "Konsekvens/tiltak: Overvåk tilstanden jevnlig. For å få tilstandsgrad 0 eller 1 må tettesjiktet skiftes ut, men tidspunktet for når dette er nødvendig er vanskelig å si noe om."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              15,
+              28
+            ],
+            "details": {
+              "confidence": 0.98
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d031_002",
+            "description": "Radonmålinger er ikke utført, og bygget er ikke utført med radonsperre (TG2). Leiligheten ligger i 3. etasje, men er under tre etasjer over bakkenivå. Området har usikker aktsomhetsgrad ifølge NGU sitt kart. Det anbefales å gjennomføre radonmålinger.",
+            "evidence": [
+              "Det er ikke foretatt radonmålinger, og bygget er heller ikke utført med radonsperre.",
+              "Leiligheter som ligger mindre enn tre etasjer over bakkenivå og anbefales radonmålinger.",
+              "I henhold til NGU sitt kart over Radon aktsomhet ligger dette området med usikker aktsomhetsgrad.",
+              "Konsekvens/tiltak: Det bør gjennomføres radonmålinger.",
+              "Selger har ikke utført radonmåling."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              15,
+              22,
+              28
+            ],
+            "confidence": 0.97,
+            "details": {
+              "confidence": 0.97
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_002",
+            "description": "Radonmålinger er ikke utført, og bygget er ikke utført med radonsperre (TG2). Leiligheten ligger i 3. etasje, men er under tre etasjer over bakkenivå. Området har usikker aktsomhetsgrad ifølge NGU sitt kart. Det anbefales å gjennomføre radonmålinger.",
+            "evidence": [
+              "Det er ikke foretatt radonmålinger, og bygget er heller ikke utført med radonsperre.",
+              "Leiligheter som ligger mindre enn tre etasjer over bakkenivå og anbefales radonmålinger.",
+              "I henhold til NGU sitt kart over Radon aktsomhet ligger dette området med usikker aktsomhetsgrad.",
+              "Konsekvens/tiltak: Det bør gjennomføres radonmålinger.",
+              "Selger har ikke utført radonmåling."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              15,
+              22,
+              28
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d031_003",
+            "description": "Hulltaking bak våtsone er ikke mulig å gjennomføre på grunn av bygningsmessige hindringer (TGIU). Garderobeskap med ryggplate på motsatt side av dusjsone hindrer forsvarlig plombering. Det kan dermed foreligge skjulte fuktskader som ikke er avdekket.",
+            "evidence": [
+              "Hulltaking er ikke foretatt da det ikke er fysisk mulig pga tilliggende konstruksjoner.",
+              "Takstmannen har derfor kontrollert med fuktindikator i våtsoner uten at det er registrert fukt i området.",
+              "Rom motsatt side av dusjsone har montert garderobeskap med ryggplate som gjør at hullet ikke kan plomberes forsvarlig.",
+              "Det er pga bygningsmessige hindringer ikke fysisk mulig å foreta hulltaking i vegg bak våtsone.",
+              "TGIU gitt ut ifra manglende mulighet for hulltaking."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              15,
+              16,
+              29
+            ],
+            "confidence": 0.92,
+            "details": {
+              "confidence": 0.92
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_003",
+            "description": "Hulltaking bak våtsone er ikke mulig å gjennomføre på grunn av bygningsmessige hindringer (TGIU). Garderobeskap med ryggplate på motsatt side av dusjsone hindrer forsvarlig plombering. Det kan dermed foreligge skjulte fuktskader som ikke er avdekket.",
+            "evidence": [
+              "Hulltaking er ikke foretatt da det ikke er fysisk mulig pga tilliggende konstruksjoner.",
+              "Takstmannen har derfor kontrollert med fuktindikator i våtsoner uten at det er registrert fukt i området.",
+              "Rom motsatt side av dusjsone har montert garderobeskap med ryggplate som gjør at hullet ikke kan plomberes forsvarlig.",
+              "Det er pga bygningsmessige hindringer ikke fysisk mulig å foreta hulltaking i vegg bak våtsone.",
+              "TGIU gitt ut ifra manglende mulighet for hulltaking."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              15,
+              16,
+              29
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d031_004",
+            "description": "Sameiet har hatt og har pågående problemer med vannlekkasjer fra fordelerskapene (uten drenering til sluk) og luftepotter. Gjensidige varslet sameiet om mulig bortfall av forsikringsdekning på vannskader grunnet kjent skadeårsak. Sameiet ble pålagt å utbedre skadeårsaken for å beholde forsikringsdekning.",
+            "evidence": [
+              "Sameiet mottatt varsel fra Gjensidige om at sameiet sto i ferd med å miste sentrale forsikringsdekning pga. hyppige vannlekkasjer fra fordelerskapene (uten drenering til sluk).",
+              "Sameietforsikring dekker ikke skader fra kjent skadeårsak, og derfor ble sameiet pålagt å utbedre skadeårsaken for å beholde forsikringsdekning på vannskader.",
+              "Styret har måtte organisere hastearbeid på VVS-anlegget for å unngå ytterligere vannskader som bytte av luftepotter, og utbedring av fall på avløpledningen som ga tilbakeslag av kloakk inn i leilighet.",
+              "Bytteavluftepotter: Sameiet har hatt problemer med vannlekkasjer fra luftepotter, så alle luftepottene på radiatorsystemene er nå byttet ut.",
+              "Rørlegger meldte underveis at flere smått begynte vannlekkasjer var avverget."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              43,
+              44,
+              45,
+              46
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_004",
+            "description": "Sameiet har hatt og har pågående problemer med vannlekkasjer fra fordelerskapene (uten drenering til sluk) og luftepotter. Gjensidige varslet sameiet om mulig bortfall av forsikringsdekning på vannskader grunnet kjent skadeårsak. Sameiet ble pålagt å utbedre skadeårsaken for å beholde forsikringsdekning.",
+            "evidence": [
+              "Sameiet mottatt varsel fra Gjensidige om at sameiet sto i ferd med å miste sentrale forsikringsdekning pga. hyppige vannlekkasjer fra fordelerskapene (uten drenering til sluk).",
+              "Sameietforsikring dekker ikke skader fra kjent skadeårsak, og derfor ble sameiet pålagt å utbedre skadeårsaken for å beholde forsikringsdekning på vannskader.",
+              "Styret har måtte organisere hastearbeid på VVS-anlegget for å unngå ytterligere vannskader som bytte av luftepotter, og utbedring av fall på avløpledningen som ga tilbakeslag av kloakk inn i leilighet.",
+              "Bytteavluftepotter: Sameiet har hatt problemer med vannlekkasjer fra luftepotter, så alle luftepottene på radiatorsystemene er nå byttet ut.",
+              "Rørlegger meldte underveis at flere smått begynte vannlekkasjer var avverget."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              43,
+              44,
+              45,
+              46
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d031_005",
+            "description": "Parkeringsgarasjen har store problemer med overvann (salt- og klorinnholdig) som skader betong og armeringsjern. OPAK er engasjert for å kartlegge skadeomfanget. En kostbar betongrehabiliteringsprosess er forventet i fremtiden. Skadeutviklingen overvåkes, men en total rehabilitering er uunngåelig.",
+            "evidence": [
+              "Sameiet store problemer med overvann som ikke ledes bort.",
+              "Overvannet stammer fra snø og is som setter seg under biler. Når biler parkeres i oppvarmet areal, smelter denne snø/isen og ansamler seg på laveste punkt i garasjen.",
+              "Salt- og klorinnholdig vann som deretter trenger inn i betong skaper et aggressivt miljø for betong og armeringsjern.",
+              "For å kartlegge omfanget på skadeutviklingen har styret engasjert OPAK som rådgivende ingeniører, og disse har foretatt kloridprøver samt støpt inn målere som er koblet direkte på armeringsjernetikjelleren.",
+              "På et tidspunkt så vil det komme en kostbar betongrehabiliteringi parkeringsgarasjen.",
+              "Garasje. I løpet av 2024 har styret gjennomført en rekke rehabiliteringstiltak i garasjen... stanset begynnende skadeutvikling i betongens armeringsjern, noe som ville blitt svært kostbart om forholdene hadde fått utvikle seg noen år til."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              44,
+              66,
+              67
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_005",
+            "description": "Parkeringsgarasjen har store problemer med overvann (salt- og klorinnholdig) som skader betong og armeringsjern. OPAK er engasjert for å kartlegge skadeomfanget. En kostbar betongrehabiliteringsprosess er forventet i fremtiden. Skadeutviklingen overvåkes, men en total rehabilitering er uunngåelig.",
+            "evidence": [
+              "Sameiet store problemer med overvann som ikke ledes bort.",
+              "Overvannet stammer fra snø og is som setter seg under biler. Når biler parkeres i oppvarmet areal, smelter denne snø/isen og ansamler seg på laveste punkt i garasjen.",
+              "Salt- og klorinnholdig vann som deretter trenger inn i betong skaper et aggressivt miljø for betong og armeringsjern.",
+              "For å kartlegge omfanget på skadeutviklingen har styret engasjert OPAK som rådgivende ingeniører, og disse har foretatt kloridprøver samt støpt inn målere som er koblet direkte på armeringsjernetikjelleren.",
+              "På et tidspunkt så vil det komme en kostbar betongrehabiliteringi parkeringsgarasjen.",
+              "Garasje. I løpet av 2024 har styret gjennomført en rekke rehabiliteringstiltak i garasjen... stanset begynnende skadeutvikling i betongens armeringsjern, noe som ville blitt svært kostbart om forholdene hadde fått utvikle seg noen år til."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              44,
+              66,
+              67
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d031_006",
+            "description": "Felleskostnadene er varslet å kunne øke etter utarbeidelse av salgsoppgaven, grunnet prisstigning og renteøkning. Sameiet hadde et underskudd på kr 662 915 i 2023, og felleskostnadene ble økt med 9,9% fra 2024. Fremtidige kostnadsøkninger kan ikke utelukkes.",
+            "evidence": [
+              "På grunn av prisstigning og renteøkning er det påregnelig at felleskostnadene økes etter utarbeidelse av denne salgsoppgaven.",
+              "Årets resultat vises i resultatregnskapet som et underskudd og foreslås ført mot egenkapital. (2023: -662 915 kr)",
+              "Budsjettet er basert på økning av felleskostnadene fra 2024: felleskostnader økes med 9,9% og garasjeplass økes til kr 300 pr mnd pr plass fra 01.01.2024.",
+              "Driftskostnadene for drift og vedlikehold er høyere enn budsjettert og skyldes i hovedsak at sameiets forsikringsleverandør Gjensidige varslet styret om mulig bortfall av forsikringsdekning på vannskader."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              13,
+              45,
+              46
+            ],
+            "confidence": 0.93,
+            "details": {
+              "confidence": 0.93
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_006",
+            "description": "Felleskostnadene er varslet å kunne øke etter utarbeidelse av salgsoppgaven, grunnet prisstigning og renteøkning. Sameiet hadde et underskudd på kr 662 915 i 2023, og felleskostnadene ble økt med 9,9% fra 2024. Fremtidige kostnadsøkninger kan ikke utelukkes.",
+            "evidence": [
+              "På grunn av prisstigning og renteøkning er det påregnelig at felleskostnadene økes etter utarbeidelse av denne salgsoppgaven.",
+              "Årets resultat vises i resultatregnskapet som et underskudd og foreslås ført mot egenkapital. (2023: -662 915 kr)",
+              "Budsjettet er basert på økning av felleskostnadene fra 2024: felleskostnader økes med 9,9% og garasjeplass økes til kr 300 pr mnd pr plass fra 01.01.2024.",
+              "Driftskostnadene for drift og vedlikehold er høyere enn budsjettert og skyldes i hovedsak at sameiets forsikringsleverandør Gjensidige varslet styret om mulig bortfall av forsikringsdekning på vannskader."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              13,
+              45,
+              46
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d031_007",
+            "description": "Boden som er medtatt i BRA-e og totalt BRA ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet, noe som kan medføre at kjøper mister tilgang til boden.",
+            "evidence": [
+              "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA-e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen.",
+              "Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet.",
+              "Rom utenfor boenheten kan omdisponeres av borettslaget/sameiet og dette kan påvirke boligens BRA."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              14,
+              32
+            ],
+            "confidence": 0.97,
+            "details": {
+              "confidence": 0.97
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_007",
+            "description": "Boden som er medtatt i BRA-e og totalt BRA ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet, noe som kan medføre at kjøper mister tilgang til boden.",
+            "evidence": [
+              "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA-e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen.",
+              "Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet.",
+              "Rom utenfor boenheten kan omdisponeres av borettslaget/sameiet og dette kan påvirke boligens BRA."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              14,
+              32
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d031_008",
+            "description": "Det er tinglyst en heftelse (21.08.2025, Dokumentnr: 978878) som innebærer at registerenheten ikke kan disponeres over uten samtykke fra rettighetshaver Emera No2 AS. Dette er meglerfirmaet som selger boligen, og heftelsen er svært nylig tinglyst. Dette kan representere en interessekonflikt og begrensning på disposisjonsretten.",
+            "evidence": [
+              "21.08.2025 – Dokumentnr: 978878 – Registerenheten kan ikke disponeres over uten samtykke fra rettighetshaver",
+              "Rettighetshaver: Emera No2 AS",
+              "Org.nr: 934 963 407",
+              "Elektronisk innsendt"
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              17
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_008",
+            "description": "Det er tinglyst en heftelse (21.08.2025, Dokumentnr: 978878) som innebærer at registerenheten ikke kan disponeres over uten samtykke fra rettighetshaver Emera No2 AS. Dette er meglerfirmaet som selger boligen, og heftelsen er svært nylig tinglyst. Dette kan representere en interessekonflikt og begrensning på disposisjonsretten.",
+            "evidence": [
+              "21.08.2025 – Dokumentnr: 978878 – Registerenheten kan ikke disponeres over uten samtykke fra rettighetshaver",
+              "Rettighetshaver: Emera No2 AS",
+              "Org.nr: 934 963 407",
+              "Elektronisk innsendt"
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              17
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d031_009",
+            "description": "Sameiet har hatt og har pågående problemer med lyd- og luktlekkasjer mellom seksjoner. Noen leiligheter i Eiriks gate 18 påvirkes av tilbakeslag fra uventilert luft som kommer fra naboen, knyttet til konstruksjonen av det mekaniske ventilasjonsanlegget i nr. 18.",
+            "evidence": [
+              "Utbedring av lyd- og luktlekkasjer: Sameiet er nå ferdig med å utbedre lyd- og luktlekkasjer.",
+              "Alle leiligheter styret er kjent med som er berørt av dette sprekk dannelser/lydlekkasjer skal nå være utbedret.",
+              "Merk at noen leiligheter i Eiriks gate 18 påvirkes av tilbakeslag fra uventilert luft som kommer naboen. Dette er en annen problemstilling som styret jobber med og knytter seg til konstruksjonen av det mekaniske ventilasjonsanlegget i nr. 18."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              44
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_009",
+            "description": "Sameiet har hatt og har pågående problemer med lyd- og luktlekkasjer mellom seksjoner. Noen leiligheter i Eiriks gate 18 påvirkes av tilbakeslag fra uventilert luft som kommer fra naboen, knyttet til konstruksjonen av det mekaniske ventilasjonsanlegget i nr. 18.",
+            "evidence": [
+              "Utbedring av lyd- og luktlekkasjer: Sameiet er nå ferdig med å utbedre lyd- og luktlekkasjer.",
+              "Alle leiligheter styret er kjent med som er berørt av dette sprekk dannelser/lydlekkasjer skal nå være utbedret.",
+              "Merk at noen leiligheter i Eiriks gate 18 påvirkes av tilbakeslag fra uventilert luft som kommer naboen. Dette er en annen problemstilling som styret jobber med og knytter seg til konstruksjonen av det mekaniske ventilasjonsanlegget i nr. 18."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              44
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d031_010",
+            "description": "Sameiet har hatt tilbakeslag av kloakk inn i leilighet grunnet feil fall på avløpsrør. Styret har fått utbedret fall på rør som frakter kloakk, men historikken viser at VVS-anlegget har hatt alvorlige konstruksjonsfeil.",
+            "evidence": [
+              "Utbedring av fall på avløpsrør: Styret har også fått fall utbedret på rør som frakter kloakk, for å unngå tilbakeslag av dette inn i seksjoner.",
+              "Styret har måtte organisere hastearbeid på VVS-anlegget for å unngå ytterligere vannskader som bytte av luftepotter, og utbedring av fall på avløpledningen som ga tilbakeslag av kloakk inn i leilighet.",
+              "Bakgrunnen for at VVS-anleggene ble konstruert på en måte som ga opphav til dette problemet er at i 2004 (når bygget ble ført opp) var det ikke krav i tekniske forskrifter at fordelerskapene til radiator måtte ha drenering til sluk."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              44,
+              45
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_010",
+            "description": "Sameiet har hatt tilbakeslag av kloakk inn i leilighet grunnet feil fall på avløpsrør. Styret har fått utbedret fall på rør som frakter kloakk, men historikken viser at VVS-anlegget har hatt alvorlige konstruksjonsfeil.",
+            "evidence": [
+              "Utbedring av fall på avløpsrør: Styret har også fått fall utbedret på rør som frakter kloakk, for å unngå tilbakeslag av dette inn i seksjoner.",
+              "Styret har måtte organisere hastearbeid på VVS-anlegget for å unngå ytterligere vannskader som bytte av luftepotter, og utbedring av fall på avløpledningen som ga tilbakeslag av kloakk inn i leilighet.",
+              "Bakgrunnen for at VVS-anleggene ble konstruert på en måte som ga opphav til dette problemet er at i 2004 (når bygget ble ført opp) var det ikke krav i tekniske forskrifter at fordelerskapene til radiator måtte ha drenering til sluk."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              44,
+              45
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d031_011",
+            "description": "Sameiet har hatt gjentatte innbrudd i garasjen. Nye sikkerhetsdører er installert, men det er en historikk med sikkerhetsutfordringer i bygget. I tillegg har uvedkommende oppholdt seg på sameiets arealer for å bruke rusmidler.",
+            "evidence": [
+              "I tillegg har sameiet vært utsatt for en rekke innbrudd i året som var, og de nye sikkerhetsdørene er svært motstandsdyktige mot innbrudd.",
+              "Uvedkommende på sameiets arealer. Det har i perioden vært meldt inn en rekke tilfeller hvor uvedkommende har oppholdt seg på sameiets arealer for å bruke rusmidler, særlig når det har vært kaldt ute.",
+              "Styret oppfordrer derfor alle til å sørge for at dører går i lås bak seg, og ikke slippe inn uvedkommende."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              67
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_011",
+            "description": "Sameiet har hatt gjentatte innbrudd i garasjen. Nye sikkerhetsdører er installert, men det er en historikk med sikkerhetsutfordringer i bygget. I tillegg har uvedkommende oppholdt seg på sameiets arealer for å bruke rusmidler.",
+            "evidence": [
+              "I tillegg har sameiet vært utsatt for en rekke innbrudd i året som var, og de nye sikkerhetsdørene er svært motstandsdyktige mot innbrudd.",
+              "Uvedkommende på sameiets arealer. Det har i perioden vært meldt inn en rekke tilfeller hvor uvedkommende har oppholdt seg på sameiets arealer for å bruke rusmidler, særlig når det har vært kaldt ute.",
+              "Styret oppfordrer derfor alle til å sørge for at dører går i lås bak seg, og ikke slippe inn uvedkommende."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              67
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d031_012",
+            "description": "Garasjedørene ble tette etter installasjon av nye sikkerhetsdører, noe som skapte problemer med at dørene ikke gikk i lås over en periode. Styret beklager ulempene, men sier alt skal være i orden nå. Dette indikerer nylig gjennomførte tiltak med oppstartsproblemer.",
+            "evidence": [
+              "Disse tiltakene gjorde at det ble helt tett i garasjen, og det skapte en problemer med at dørene ikke gikk i lås.",
+              "Dette har tatt tid å utbedre, men alt skal være i orden pr. nå.",
+              "Styret beklager de ulempene det har medført at dørene ikke gikk i lås."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              66,
+              67
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_012",
+            "description": "Garasjedørene ble tette etter installasjon av nye sikkerhetsdører, noe som skapte problemer med at dørene ikke gikk i lås over en periode. Styret beklager ulempene, men sier alt skal være i orden nå. Dette indikerer nylig gjennomførte tiltak med oppstartsproblemer.",
+            "evidence": [
+              "Disse tiltakene gjorde at det ble helt tett i garasjen, og det skapte en problemer med at dørene ikke gikk i lås.",
+              "Dette har tatt tid å utbedre, men alt skal være i orden pr. nå.",
+              "Styret beklager de ulempene det har medført at dørene ikke gikk i lås."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              66,
+              67
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d031_013",
+            "description": "Sameiet er involvert i en rettslig prosess med en seksjonseier om betaling av egenandel ved vannlekkasje. Selv om tvistesummen er beskjeden (ca. 13 000 kr), indikerer dette at det kan oppstå konflikter mellom seksjonseiere og sameiet om vedlikeholdsansvar og egenandeler.",
+            "evidence": [
+              "Rettslige prosesser. Styret håndterer en rettsprosess med en seksjonseier som bestrider plikt til å betale egenandelen ved en vannlekkasje, til tross for at vedkommende har vedlikeholdsansvar for forholdene som forårsaket skaden.",
+              "Styret har innhentet juridisk bistand fra OBOS Advokatene på dette punktet.",
+              "Selv om tvistesummen er relativt beskjeden (ca. 13 000 kr), anser styret det som prinsipielt viktig å sikre likebehandling av alle beboere.",
+              "Foruten dette gjennomfører styret tvangssalg av leilighet for å kreve inn ubetalte felleskostnader."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              67
+            ],
+            "confidence": 0.82,
+            "details": {
+              "confidence": 0.82
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_013",
+            "description": "Sameiet er involvert i en rettslig prosess med en seksjonseier om betaling av egenandel ved vannlekkasje. Selv om tvistesummen er beskjeden (ca. 13 000 kr), indikerer dette at det kan oppstå konflikter mellom seksjonseiere og sameiet om vedlikeholdsansvar og egenandeler.",
+            "evidence": [
+              "Rettslige prosesser. Styret håndterer en rettsprosess med en seksjonseier som bestrider plikt til å betale egenandelen ved en vannlekkasje, til tross for at vedkommende har vedlikeholdsansvar for forholdene som forårsaket skaden.",
+              "Styret har innhentet juridisk bistand fra OBOS Advokatene på dette punktet.",
+              "Selv om tvistesummen er relativt beskjeden (ca. 13 000 kr), anser styret det som prinsipielt viktig å sikre likebehandling av alle beboere.",
+              "Foruten dette gjennomfører styret tvangssalg av leilighet for å kreve inn ubetalte felleskostnader."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              67
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d031_014",
+            "description": "Energimerket er D (grønn), som er under gjennomsnittet for nyere boliger. En bolig bygget etter byggeforskriftene vedtatt i 2010 vil normalt få C. Dette kan indikere høyere energikostnader enn for tilsvarende nyere boliger.",
+            "evidence": [
+              "Energikarakter: D",
+              "Energifarge: Grønn",
+              "En bolig bygget etter byggeforskriftene vedtatt i 2010 vil normalt få C.",
+              "D betyr at boligen er lite energieffektiv."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              16,
+              33
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_014",
+            "description": "Energimerket er D (grønn), som er under gjennomsnittet for nyere boliger. En bolig bygget etter byggeforskriftene vedtatt i 2010 vil normalt få C. Dette kan indikere høyere energikostnader enn for tilsvarende nyere boliger.",
+            "evidence": [
+              "Energikarakter: D",
+              "Energifarge: Grønn",
+              "En bolig bygget etter byggeforskriftene vedtatt i 2010 vil normalt få C.",
+              "D betyr at boligen er lite energieffektiv."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              16,
+              33
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d031_015",
+            "description": "Selger har kun eid boligen i ca. 2 år og 8 måneder (kjøpt i 2022). Kort eiertid kan indikere at selger ønsker å selge raskt, og kjøper bør undersøke om det er spesielle grunner til salget.",
+            "evidence": [
+              "Når kjøpte du boligen? År 2022",
+              "Hvor lenge har du eid boligen? Antall år 2, Antall måneder 8"
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              21
+            ],
+            "confidence": 0.6,
+            "details": {
+              "confidence": 0.6
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_015",
+            "description": "Selger har kun eid boligen i ca. 2 år og 8 måneder (kjøpt i 2022). Kort eiertid kan indikere at selger ønsker å selge raskt, og kjøper bør undersøke om det er spesielle grunner til salget.",
+            "evidence": [
+              "Når kjøpte du boligen? År 2022",
+              "Hvor lenge har du eid boligen? Antall år 2, Antall måneder 8"
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              21
+            ],
+            "details": {
+              "confidence": 0.6
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d031_016",
+            "description": "Det er samlet noe vann i garasjen når biler med snø kjører inn om vinteren. Selger kjenner ikke til problemer med drenering utover dette, men sameiet har dokumenterte problemer med overvann i garasjen som skader betong og armeringsjern.",
+            "evidence": [
+              "Det samler seg noe vann i garasjen når biler med snø kjører inn om vinteren, men jeg kjenner ikke til at det har vært problemer med drenering eller fukt utover dette.",
+              "Sameiet store problemer med overvann som ikke ledes bort.",
+              "Sameietsvaktmester bruker mye tid hver vinter på manuell fjerning av dette overvannet."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              15,
+              22,
+              44
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_016",
+            "description": "Det er samlet noe vann i garasjen når biler med snø kjører inn om vinteren. Selger kjenner ikke til problemer med drenering utover dette, men sameiet har dokumenterte problemer med overvann i garasjen som skader betong og armeringsjern.",
+            "evidence": [
+              "Det samler seg noe vann i garasjen når biler med snø kjører inn om vinteren, men jeg kjenner ikke til at det har vært problemer med drenering eller fukt utover dette.",
+              "Sameiet store problemer med overvann som ikke ledes bort.",
+              "Sameietsvaktmester bruker mye tid hver vinter på manuell fjerning av dette overvannet."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              15,
+              22,
+              44
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d031_017",
+            "description": "Korttidsutleie er begrenset til 60 døgn per år i sameiets vedtekter (lavere enn lovens maksimum på 90 døgn). Dette begrenser kjøpers mulighet til å leie ut boligen på korttidsbasis (f.eks. Airbnb).",
+            "evidence": [
+              "Korttidsutleie er tillatt i opptil 90 døgn per år, jf. eierseksjonsloven § 24. Denne grensen kan justeres i vedtektene, men må settes mellom 60 og 120 døgn. I sameiets vedtekter er grensen satt til 60.",
+              "Korttidsutleie av hele boligseksjonen i mer enn 60 døgn årlig er ikke tillatt."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              18,
+              57
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_017",
+            "description": "Korttidsutleie er begrenset til 60 døgn per år i sameiets vedtekter (lavere enn lovens maksimum på 90 døgn). Dette begrenser kjøpers mulighet til å leie ut boligen på korttidsbasis (f.eks. Airbnb).",
+            "evidence": [
+              "Korttidsutleie er tillatt i opptil 90 døgn per år, jf. eierseksjonsloven § 24. Denne grensen kan justeres i vedtektene, men må settes mellom 60 og 120 døgn. I sameiets vedtekter er grensen satt til 60.",
+              "Korttidsutleie av hele boligseksjonen i mer enn 60 døgn årlig er ikke tillatt."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              18,
+              57
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d031_018",
+            "description": "Sameiet byttet forretningsfører fra OBOS Eiendomsforvaltning AS til Solibo AS i 2024. Bytte av forretningsfører kan medføre overgangsutfordringer og usikkerhet rundt forvaltningskvalitet i en periode.",
+            "evidence": [
+              "Sameiet har sagt opp forretningsføreravtalen fra 30.06.2024. Ny forretningsfører er Solibo AS.",
+              "Styret har valgt å si opp avtalen sameiet har med OBOS Eiendomsforvaltning AS (OEF). Bakgrunnen for dette er at styret har vært misfornøyd med OEF fra et kostnads og serviceaspekt.",
+              "Forretningsførerhonorar: 2023: 183 818 kr, 2024: 159 150 kr (fordelt mellom OBOS og Solibo)"
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              42,
+              43
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_018",
+            "description": "Sameiet byttet forretningsfører fra OBOS Eiendomsforvaltning AS til Solibo AS i 2024. Bytte av forretningsfører kan medføre overgangsutfordringer og usikkerhet rundt forvaltningskvalitet i en periode.",
+            "evidence": [
+              "Sameiet har sagt opp forretningsføreravtalen fra 30.06.2024. Ny forretningsfører er Solibo AS.",
+              "Styret har valgt å si opp avtalen sameiet har med OBOS Eiendomsforvaltning AS (OEF). Bakgrunnen for dette er at styret har vært misfornøyd med OEF fra et kostnads og serviceaspekt.",
+              "Forretningsførerhonorar: 2023: 183 818 kr, 2024: 159 150 kr (fordelt mellom OBOS og Solibo)"
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              42,
+              43
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d031_019",
+            "description": "Sameiet har hatt et betydelig driftsunderskudd i 2023 (kr -662 915) som følge av ekstraordinære vedlikeholdskostnader. Selv om 2024 viste overskudd (kr 561 943), indikerer historikken at sameiet kan ha behov for ytterligere kostbare vedlikeholdstiltak fremover, særlig knyttet til garasjerehabiliteringen.",
+            "evidence": [
+              "ÅRSRESULTAT 2023: -662 915",
+              "Driftskostnadene for drift og vedlikehold er høyere enn budsjettert.",
+              "Årets resultat 2024: 561 943",
+              "Vedlikehold 2023: 2 774 599 kr (mot budsjettert 1 875 000 kr)",
+              "På et tidspunkt så vil det komme en kostbar betongrehabiliteringi parkeringsgarasjen."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              45,
+              47,
+              68
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_019",
+            "description": "Sameiet har hatt et betydelig driftsunderskudd i 2023 (kr -662 915) som følge av ekstraordinære vedlikeholdskostnader. Selv om 2024 viste overskudd (kr 561 943), indikerer historikken at sameiet kan ha behov for ytterligere kostbare vedlikeholdstiltak fremover, særlig knyttet til garasjerehabiliteringen.",
+            "evidence": [
+              "ÅRSRESULTAT 2023: -662 915",
+              "Driftskostnadene for drift og vedlikehold er høyere enn budsjettert.",
+              "Årets resultat 2024: 561 943",
+              "Vedlikehold 2023: 2 774 599 kr (mot budsjettert 1 875 000 kr)",
+              "På et tidspunkt så vil det komme en kostbar betongrehabiliteringi parkeringsgarasjen."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              45,
+              47,
+              68
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d031_020",
+            "description": "Takhøyden i deler av leiligheten er kun 2,20 m (nedsenket himling), noe som er under standard takhøyde på 2,45 m. Dette kan oppleves som lavt og kan påvirke bokomforten.",
+            "evidence": [
+              "Takhøyde 2.45m, rom med nedsenket himling 2,20m."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              14,
+              30
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d031_020",
+            "description": "Takhøyden i deler av leiligheten er kun 2,20 m (nedsenket himling), noe som er under standard takhøyde på 2,45 m. Dette kan oppleves som lavt og kan påvirke bokomforten.",
+            "evidence": [
+              "Takhøyde 2.45m, rom med nedsenket himling 2,20m."
+            ],
+            "source_documents": [
+              "d031.pdf"
+            ],
+            "source_pages": [
+              14,
+              30
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [],
+      "unmatched_ground_truth_risks": [],
+      "verified_unmatched": [],
+      "adjusted_metrics": null
+    }
+  },
+  "best_system": "ground_truth",
+  "statistical_tests": {
+    "standard_rag_vs_agentic_rag_P+T+R": 1.0,
+    "standard_rag_vs_ground_truth": 1.0,
+    "agentic_rag_P+T+R_vs_ground_truth": 1.0
+  },
+  "record_id": "52468e9f-af26-4625-a1c4-6a839e524e10",
+  "query": "Identifiser risikoer i salgsoppgaven",
+  "document_set_id": "d031",
+  "timestamp": "2026-03-23T22:51:01.684823",
+  "risk_summaries": [
+    {
+      "system_type": "standard_rag",
+      "total_risks": 10,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "agentic_rag_P+T+R",
+      "total_risks": 15,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "ground_truth",
+      "total_risks": 20,
+      "risks_by_category": {}
+    }
+  ],
+  "has_ground_truth": true,
+  "overlapping_risk_count": 10,
+  "unique_to": {
+    "standard_rag": 8,
+    "agentic_rag_P+T+R": 6,
+    "ground_truth": 11
+  },
+  "record_type": "comparison"
+}

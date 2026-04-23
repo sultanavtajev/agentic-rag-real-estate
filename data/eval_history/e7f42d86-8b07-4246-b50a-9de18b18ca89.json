@@ -1,0 +1,2927 @@
+{
+  "system_results": {
+    "standard_rag": {
+      "run_id": "096b09c0-eac6-4fe4-9fae-d8869d8fa558",
+      "system_type": "standard_rag",
+      "overall_metrics": {
+        "precision": 0.46153846153846156,
+        "recall": 0.24,
+        "f1": 0.3157894736842105,
+        "total_support": 25
+      },
+      "matched_risks": 6,
+      "unmatched_predicted": 7,
+      "unmatched_ground_truth": 19,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "096b09c0-eac6-4fe4-9fae-d8869d8fa558_risk_000",
+            "description": "Ingen radonmåling er utført av selger. Radon er en usynlig og luktfri gass som kan utgjøre en helserisiko, og kjøper har ingen garanti for at radonverdiene er innenfor akseptable grenser.",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om radonmåling."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_016",
+            "description": "Ingen radonmåling utført av selger – potensiell helserisiko ikke avklart",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Boligen ligger minimum tre etasjer over bakkenivå og radonmålinger er ikke relevant. (tilstandsrapport)"
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              31,
+              40
+            ],
+            "details": {
+              "confidence": 0.65
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "096b09c0-eac6-4fe4-9fae-d8869d8fa558_risk_011",
+            "description": "Risiko for økte felleskostnader eller økt fellesgjeld i sameiet. Selger er spurt om kjennskap til vedtak eller forslag til vedtak som kan medføre økte kostnader, men svaret er ikke eksplisitt bekreftet som negativt i den tilgjengelige konteksten.",
+            "evidence": [
+              "Kjenner du til vedtak/forslag til vedtak om forhold vedr. eiendommen som kan medføre økte felleskostnader/økt fellesgjeld? Nei Ja"
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.65,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_020",
+            "description": "Høye felleskostnader med risiko for ytterligere økning – budsjett 2025 viser vesentlig høyere kostnader enn regnskap 2024",
+            "evidence": [
+              "Felleskostnader kr 7 449,‑ pr. mnd",
+              "Budsjett 2025 SUM DRIFTSKOSTNADER: -3 749 000 mot regnskap 2024: -1 033 284",
+              "Budsjett 2025 kommunale avgifter: -980 000 mot regnskap 2024: -165 744",
+              "TV-anlegg/bredbånd budsjett 2025: -437 000 (ikke kostnadsført i 2024 grunnet manglende faktura)",
+              "Det gjøres oppmerksom på at sameiet kan motta fakturaer som gjelder kostnader i regnskapsåret 2024 i løpet av 2025."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              19,
+              71,
+              77
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "096b09c0-eac6-4fe4-9fae-d8869d8fa558_risk_008",
+            "description": "Risiko knyttet til fukt og skader i risikoutsatte konstruksjoner, herunder tilstøtende vegger, uforede kjellervegger og oppforede kjellergulv. Dersom det ikke foreligger dokumentasjon på faglig god utførelse, kan det være skjulte fuktskader.",
+            "evidence": [
+              "Fukt i risikoutsatte konstruksjoner, primært i tilstøtende vegger, uforede kjellervegger og eventuelt i oppforede kjellergulv.",
+              "Foreligger dokumentasjon på faglig god utførelse."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_004",
+            "description": "Tilliggende konstruksjoner til begge våtrom er ikke undersøkt (TGIU) – potensielle skjulte fuktskader",
+            "evidence": [
+              "Våtrom > 7. Etasje > Bad v/entré > Tilliggende konstruksjoner våtrom – TGIU (ikke undersøkt)",
+              "Våtrom > 7. Etasje > Bad v/sov > Tilliggende konstruksjoner våtrom – TGIU (ikke undersøkt)",
+              "Det er ikke utført hulltaking i tilstøtende rom da baderommet er av typen prefabrikkert våtromskabin. Det søkes ikke etter fukt i våtromskabiner da det ikke gir pålitelige søk grunnet rommets oppbygning."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              22,
+              39,
+              41,
+              42,
+              43
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "096b09c0-eac6-4fe4-9fae-d8869d8fa558_risk_006",
+            "description": "Boligen selges med boligselgerforsikring begrenset oppad til kr 14 000 000. Dersom mangler overstiger dette beløpet, vil kjøper ikke være dekket utover forsikringsgrensen.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har tegnet boligselgerforsikring som dekker selgers ansvar etter avhendingsloven begrenset oppad kr. 14 000 000,-."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_019",
+            "description": "Boligselgerforsikring begrenset oppad til kr 14 000 000 – lavere enn prisantydning på kr 16 800 000",
+            "evidence": [
+              "Selger har tegnet boligselgerforsikring som dekker selgers ansvar etter avhendingsloven begrenset oppad kr. 14 000 000,‑.",
+              "Prisantydning: Kr 16 800 000"
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              31,
+              4
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "096b09c0-eac6-4fe4-9fae-d8869d8fa558_risk_007",
+            "description": "Selger kan velge å prioritere bud fra ikke-forbrukere fremfor forbrukere, og selgers ansvar kan begrenses ved salg til næringsdrivende ettersom boligen da selges «som den er». Dette kan svekke kjøpers rettigheter etter avhendingsloven.",
+            "evidence": [
+              "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud.",
+              "Når kjøper ikke er forbruker, kan selgers ansvar begrenses ettersom boligen selges «som den er»."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_025",
+            "description": "Selger kan prioritere bud fra ikke-forbrukere fremfor forbrukere, noe som kan gi kjøper svakere rettsvern",
+            "evidence": [
+              "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud. Når kjøper ikke er forbruker, kan selgers ansvar begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              31
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "096b09c0-eac6-4fe4-9fae-d8869d8fa558_risk_003",
+            "description": "Elektrisk anlegg er ikke fullstendig vurdert av takstmann, da dette krever spesialkompetanse. Kjøper kan ikke stole på at det elektriske anlegget er i forskriftsmessig stand uten en fullstendig kontroll av registrert elektrovirksomhet.",
+            "evidence": [
+              "Takstmannen beskriver anlegget, men vurderer det ikke da dette krever spesialkompetanse.",
+              "Søk videre veiledning eller få en fullstendig kontroll utført av registrert elektrovirksomhet."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_009",
+            "description": "Arbeid på el-anlegget utført av ufaglært/egeninnsats – risiko for mangler ved elektrisk anlegg",
+            "evidence": [
+              "Kjenner du til om det er/har vært utført arbeid på el-anlegget eller andre installasjoner? Svar: Ja, av faglært og ufaglært/egeninnsats/dugnad. Beskrivelse: Spotter, dimmere. Skrudd opp lamper. Arbeid utført av Flyt elektro."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              22,
+              34
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "096b09c0-eac6-4fe4-9fae-d8869d8fa558_risk_001",
+          "description": "TG2 og TG3-avvik er identifisert i tilstandsrapporten. Disse tilstandsgradene indikerer avvik fra normal tilstand og kan innebære behov for utbedringer og kostnader for kjøper.",
+          "evidence": [
+            "TG2 og TG3 bør gjennomgås nøye, ettersom disse indikerer avvik."
+          ],
+          "source_documents": [
+            "d009_d009"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.95,
+          "details": {}
+        },
+        {
+          "risk_id": "096b09c0-eac6-4fe4-9fae-d8869d8fa558_risk_002",
+          "description": "Alarmanlegg og øvrig utstyr er kun visuelt inspisert av takstmann og ikke fysisk testet. Dette betyr at faktisk funksjonalitet er ukjent, og feil kan foreligge uten at det er avdekket.",
+          "evidence": [
+            "Alarmanlegg og øvrig utstyr er ikke fysisk testet av takstmann, kun visuelt inspisert."
+          ],
+          "source_documents": [
+            "d009_d009"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.9,
+          "details": {}
+        },
+        {
+          "risk_id": "096b09c0-eac6-4fe4-9fae-d8869d8fa558_risk_004",
+          "description": "Brannteknisk kontroll er forenklet og begrenset. Kontrollen kan ikke sammenlignes med en fullstendig kontroll av branntekniske forhold av offentlig myndighet, noe som innebærer en risiko for at branntekniske avvik ikke er avdekket.",
+          "evidence": [
+            "Dette er en forenklet kontroll begrenset til de spørsmål som fremkommer under.",
+            "Dette kan ikke sammenlignes med en fullstendig kontroll av branntekniske forhold av offentlig myndighet."
+          ],
+          "source_documents": [
+            "d009_d009"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "096b09c0-eac6-4fe4-9fae-d8869d8fa558_risk_005",
+          "description": "Mulig risiko for rom som ikke er godkjent i henhold til teknisk forskrift (P-ROM vs. S-ROM). Rommet kan være i strid med teknisk forskrift og mangle godkjennelse i kommunen.",
+          "evidence": [
+            "Dette betyr at rommet både kan være i strid med teknisk forskrift og mangle godkjennelse i kommunen for den aktuelle bruken.",
+            "Befaringstidspunktet har betydning for om rommet defineres som P-ROM eller S-ROM."
+          ],
+          "source_documents": [
+            "d009_d009"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.82,
+          "details": {}
+        },
+        {
+          "risk_id": "096b09c0-eac6-4fe4-9fae-d8869d8fa558_risk_009",
+          "description": "Flatt tak tekket med sveiset banebelegg (takpapp/PVC) kan være en risikofaktor. Flate tak er generelt mer utsatt for lekkasjer og vannskader enn skrå tak, og tilstanden bør undersøkes nøye.",
+          "evidence": [
+            "Flatt tak tekket med sveiset banebelegg (takpapp/PVC)."
+          ],
+          "source_documents": [
+            "d009_d009"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.72,
+          "details": {}
+        },
+        {
+          "risk_id": "096b09c0-eac6-4fe4-9fae-d8869d8fa558_risk_010",
+          "description": "Risiko for at selger har gitt ufullstendige, uriktige eller misvisende opplysninger i egenerklæringsskjemaet. Forsikringsselskapet kan søke regress eller redusere sitt ansvar dersom dette avdekkes.",
+          "evidence": [
+            "Jeg bekrefter at opplysningene er gitt etter beste skjønn. Jeg er kjent med at dersom jeg har gitt ufullstendige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis."
+          ],
+          "source_documents": [
+            "d009_d009"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.78,
+          "details": {}
+        },
+        {
+          "risk_id": "096b09c0-eac6-4fe4-9fae-d8869d8fa558_risk_012",
+          "description": "Risiko for skjeggkre og skadedyr i sameiet. Selger er spurt om kjennskap til sopp/råteskader, insekter, skadedyr og skjeggkre i fellesareal eller andre boliger, men det er ikke bekreftet at dette er fraværende.",
+          "evidence": [
+            "Kjenner du til om det er/har vært sopp/råteskader/insekter/skadedyr i sameiet/laget/selskapet (fellesareal eller i andre boliger) som rotter, mus, maur eller lignende? Nei Ja",
+            "Kjenner du til om det er/har vært skjeggkre i sameiet/laget/selskapet (fellesareal eller i andre boliger)? Nei Ja"
+          ],
+          "source_documents": [
+            "d009_d009"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.6,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d009_001",
+          "description": "Manglende ferdigattest – kun midlertidig brukstillatelse foreligger",
+          "evidence": [
+            "Det foreligger midlertidig brukstillatelse for eiendommen, datert 07.06.2024.",
+            "Ferdigattest er ikke søkt om innenfor fristen. Søknad om utsatt frist 03.07.2025 på bakgrunn av ¨Vi klarer ikke å søke ferdigattest, da vi ikke klarer å oppfylle vilkårene – da Oslo kommunen ved EBY har avvist overtakelse av fortau grunnet OBOS ikke har utført korrekt eiendomsoverdragelse.¨",
+            "Det gjøres oppmerksom på at ferdigattest ikke vil bli utstedt for ufullførte byggesaker/bygningsmeldinger som er fra før 1998.",
+            "Vilkår for ferdigattest ikke oppfylt: Lamper for belysning av gang/sykkelvei 2 monteres i forbindelse med utførelse av sykkelveien – Ferdigstilles senest 28.06.2024. Pergola på privat takterrasse – Ferdigstilles senest 10.06.2024."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            20
+          ],
+          "details": {
+            "confidence": 0.98
+          }
+        },
+        {
+          "risk_id": "gt_d009_002",
+          "description": "Forventet økning i felleskostnader – eksplisitt varslet i salgsoppgaven",
+          "evidence": [
+            "På grunn av prisstigning og renteøkning er det forventet at felleskostnadene vil øke etter at denne salgsoppgaven er utarbeidet.",
+            "Styret vedtok at felleskostnadene økte med 5% fra og med august 2025. Økningen baserer seg på den generelle prisutviklingen i økonomien og at alle inngåtte avtaler blir prisjustert i disse dager.",
+            "Felleskostnader kr 7 449,‑ pr. mnd"
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            19,
+            23
+          ],
+          "details": {
+            "confidence": 0.97
+          }
+        },
+        {
+          "risk_id": "gt_d009_003",
+          "description": "Boden som inngår i BRA-e ligger på sameiets fellesareal og kan omdisponeres av sameiet",
+          "evidence": [
+            "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA-e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            21
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d009_005",
+          "description": "Pågående og planlagte byggearbeider i nærområdet – støy, anleggsvirksomhet og trafikkforstyrrelser frem til 2030",
+          "evidence": [
+            "Sinsenveien 56 B med flere – Omlegging av Sinsenveien med tilhørende tiltak – Kjøreveg 5 og 7 – Nye Aker sykehus. Status: Igangsettingstillatelse gitt.",
+            "Permanent vei skal stå ferdig i 2030, men Sinsenveien skal kunne brukes som adkomstvei til boliger, eiendommer og anleggsområde gjennom byggeprosessen. Det skal derfor etableres en midlertidig vei som blir stående i perioden mellom 2026 og 2030.",
+            "Sinsenveien 49 D-E-F – Oppføring av boligblokk – Hus B – Lille Løren Park. Status: Igangsettingstillatelse gitt.",
+            "Lille Løren park – Etablering av offentlig park. Status: Endret tillatelse gitt.",
+            "Lørenveien 36 – Innglassing av balkonger. Status: Mottatt søknad om brukstillatelse.",
+            "Sinsenveien 35-37 – Innglassing av balkonger. Status: Tillatelse gitt."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            23,
+            24
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d009_006",
+          "description": "Eiendommen er registrert på byantikvarens gule liste – begrensninger på fremtidige ombygginger",
+          "evidence": [
+            "Verneklasse/SEFRAK: Eiendommen er registrert på byantikvarens gule liste, noe som betyr at eiendommen er ansett som bevaringsverdig, enten helt eller delvis. Dette kan påvirke mulighetene for fremtidige ombygginger eller restaureringer av eiendommen. Byantikvaren skal gi en rådgivende uttalelse i byggesaker som berører eiendommen."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            23
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d009_007",
+          "description": "Garasjeplass er en separat anleggseiendom med egne kostnader og komplekse overdragelsesregler",
+          "evidence": [
+            "Garasjeanlegg: Egen anleggseiendom, s. 1149 Lille Løren Park Garasjesameie, gnr 83 bnr 544.",
+            "P-plassen må dersom den ikke selges eller overføres sammen med salg av bolig, selges eller overføres med realkobling til seksjon i S 1001. Lille Løren Park 1 Sameie, eller Lille Løren Park 2 Sameie, eller Lille Løren Park 3 Sameie. tinglyses med ideell andel 1/162.",
+            "Felleskostnader for garasjen er kr 600,‑ pr kvartal.",
+            "Det er foreløpig ikke gjesteparkering i garasjen.",
+            "Det tilfaller forretningsfører ett administrasjonsgebyr pr plass iht gjeldende prisliste."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            20,
+            19
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d009_008",
+          "description": "Løs ledningslist registrert på el-anlegget – indikasjon på ufullstendig utførelse",
+          "evidence": [
+            "Det er registrert løs ledningslist på det ene soverommet.",
+            "Anlegget er fra byggeår, og eier opplyser at det ikke er utført EL-arbeider siden da."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            45
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d009_010",
+          "description": "Ingen formuesverdi funnet – usikkerhet rundt skattemessig verdsettelse",
+          "evidence": [
+            "Info om formuesverdi: Ingen formuesverdi funnet.",
+            "Skatteetaten beregner en boligverdi (beregnet markedsverdi for bolig) basert på SSBs statistiske opplysninger om omsatte boliger."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            19
+          ],
+          "details": {
+            "confidence": 0.75
+          }
+        },
+        {
+          "risk_id": "gt_d009_011",
+          "description": "Utbyggingsprosjektet Lille Løren Park er ikke ferdigstilt – sameiet er forpliktet til å medvirke til utbyggers arbeider og avgi fellesarealer midlertidig",
+          "evidence": [
+            "Inntil utbyggingsprosjektet 'Lille Løren Park' er ferdig utbygget, er sameiet og seksjonseierne forpliktet til å yte nødvendig medvirkning til at utbygger, evt den utbygger utpeker, kan gjennomføre en helhetlig utbygging.",
+            "Sameiet er herunder forpliktet til å la utbygger/selger vederlagsfritt benytte deler av sameiets utvendige fellesarealer midlertidig for adkomst, plassering lagring av utstyr/rigg med mer som er nødvendig i anleggsperioden.",
+            "Denne vedtektsbestemmelsen kan ikke endres uten samtykke fra utbygger eller utbyggers rettsetterfølger."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            59,
+            60
+          ],
+          "details": {
+            "confidence": 0.92
+          }
+        },
+        {
+          "risk_id": "gt_d009_012",
+          "description": "Store utfordringer med heisene siden innflytting – gjentatte feil og reklamasjoner",
+          "evidence": [
+            "Det har vært store utfordringer med heisene siden innflytting i juni, spesielt heisen i 45C.",
+            "Styret fikk da beskjed om at det var masse feil med heisene tross alle Schindler [reklamasjoner].",
+            "Honorar, Heiskonsulenten AS -19 556 (konsulenthonorar i regnskapet)"
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            73,
+            77
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d009_013",
+          "description": "Innbrudd i boder registrert – sikkerhetsproblem i garasje/boder",
+          "evidence": [
+            "Styret fikk inn totalt 4 tilfeller hvor det hadde blitt innbrudd i bod og hvor hengelås var [brutt].",
+            "Det ble vurdert flere tiltak for å forhindre/forebygge fremtidige innbrudd."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            75
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d009_014",
+          "description": "Trafikkfarlige forhold ved gangvei foran inngang til Sinsenveien 45C – nesten-ulykker rapportert",
+          "evidence": [
+            "Det var mye kjøring i forbindelse med innflytting, og Velforeningen hadde forståelse for dette. Likevel vitnet de til flere nesten-ulykker hvor små barn nesten blir truffet av ryggene flyttebiler osv.",
+            "Etter at veien mellom LLP1 og LLP2 har blitt åpnet, så har biltrafikken flyttet seg fra [gangveien], men dette fikk vi beskjed om ikke var nødvendig [å sette opp bom]."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            74
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        },
+        {
+          "risk_id": "gt_d009_015",
+          "description": "Korttidsutleie begrenset til 60 døgn per år i henhold til sameiets vedtekter – strengere enn lovens standard",
+          "evidence": [
+            "I sameiets vedtekter er grensen satt til 60. Med korttidsutleie menes utleie i en sammenhengende periode på opptil 30 døgn.",
+            "Korttidsutleie av hele boligseksjonen i mer enn 60 døgn årlig er ikke tillatt."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            30,
+            53
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d009_017",
+          "description": "Fremtidige reguleringsplaner åpner for variert bebyggelse og anlegg i nærområdet – usikkerhet om omgivelsene",
+          "evidence": [
+            "Bebyggelse og anlegg (fremtidig): Området er avsatt til fremtidig bebyggelse og anlegg. Det kan være boligbebyggelse, fritidsbebyggelse, sentrumsformål, kjøpesenter, forretninger, bebyggelse for offentlig eller privat tjenesteyting, fritids- og turistformål, råstoffutvinning, næringsbebyggelse, idrettsanlegg, andre typer anlegg, uteoppholdsarealer og grav- og urnelunder."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            23
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d009_018",
+          "description": "Selger har kun eid boligen i ca. 1 år – begrenset kjennskap til eventuelle skjulte feil og mangler",
+          "evidence": [
+            "Når kjøpte du boligen? År 2024. Hvor lenge har du eid boligen? Antall år 1, Antall måneder 0.",
+            "Har du bodd i boligen siste 12 måneder? Ja."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            34
+          ],
+          "details": {
+            "confidence": 0.72
+          }
+        },
+        {
+          "risk_id": "gt_d009_021",
+          "description": "Eiendomsskatt ilagt sameiet i 2024 – kr 88 244 – til tross for at selger opplyser om ingen eiendomsskatt",
+          "evidence": [
+            "Boligen har ifølge selger ikke blitt ilagt eiendomsskatt for inneværende år.",
+            "Eiendomsskatt (note 7 i regnskapet): -88 244"
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            19,
+            77
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d009_022",
+          "description": "Mange tinglyste heftelser og rettigheter på eiendommen – kompleks heftelsessituasjon",
+          "evidence": [
+            "Tinglyste heftelser og rettigheter: På eiendommen er det tinglyst følgende heftelser og rettigheter som følger eiendommens matrikkel ved overskjøting til ny hjemmelshaver.",
+            "Heftelser inkluderer bestemmelser om vannledning (1904), veg (1916), vann/kloakkledning (1921), adkomstrett (2019), erklæringer/avtaler (2023, 2024), bestemmelse om teknisk infrastruktur, renovasjon, sykkelparkering, bruksrett og adkomstrett for drift og vedlikehold av anlegg/ledninger/kabler.",
+            "Rettigheter hefter i svært mange seksjoner (Bnr:545 Snr:1-100, Bnr:546 Snr:1-166, Bnr:544)."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d009_023",
+          "description": "Takterrasse og balkong er utvendige konstruksjoner eksponert for vær – løpende vedlikeholdsbehov og slitasje over tid",
+          "evidence": [
+            "Som en utvendig konstruksjon eksponert for sol, regn, snø og temperatursvingninger, må det påregnes værrelatert slitasje over tid.",
+            "Takterrassen er målt til ca 104 m². Malt/beiset tregulv mot dekke.",
+            "Terrassen har samme solide utførelse som balkongen, med malt/beiset tregulv."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            40
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        },
+        {
+          "risk_id": "gt_d009_024",
+          "description": "Kjøkkenventilatorfilteret kan skape brannfare dersom det ikke rengjøres/skiftes regelmessig",
+          "evidence": [
+            "Eventuelle filter i kjøkkenventilatoren bør rengjøres/skiftes regelmessig for å unngå at fett fester seg og skaper brannfare."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            22,
+            44
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "096b09c0-eac6-4fe4-9fae-d8869d8fa558_risk_001",
+            "description": "TG2 og TG3-avvik er identifisert i tilstandsrapporten. Disse tilstandsgradene indikerer avvik fra normal tilstand og kan innebære behov for utbedringer og kostnader for kjøper.",
+            "evidence": [
+              "TG2 og TG3 bør gjennomgås nøye, ettersom disse indikerer avvik."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt at TG2 og TG3 bør gjennomgås nøye. Fra salgsoppgaven: 'Det er viktig å merke seg at forhold som er vurdert med TG2 og TG3 bør gjennomgås nøye, ettersom disse indikerer avvik fra normal slitasje eller høy alder, og kan medføre behov for utbedring.' Tilstandsrapporten viser også en fordeling av tilstandsgrader, og det er identifisert TGIU (ikke undersøkt) for tilliggende konstruksjoner på begge våtrom. Risikoen er reell og støttes av dokumentet."
+        },
+        {
+          "risk": {
+            "risk_id": "096b09c0-eac6-4fe4-9fae-d8869d8fa558_risk_002",
+            "description": "Alarmanlegg og øvrig utstyr er kun visuelt inspisert av takstmann og ikke fysisk testet. Dette betyr at faktisk funksjonalitet er ukjent, og feil kan foreligge uten at det er avdekket.",
+            "evidence": [
+              "Alarmanlegg og øvrig utstyr er ikke fysisk testet av takstmann, kun visuelt inspisert."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Tilstandsrapporten inneholder eksplisitt følgende setning under branntekniske forhold: 'Alarmanlegg og øvrig utstyr er ikke fysisk testet av takstmann, kun visuelt inspisert.' Dette bekrefter direkte at funksjonaliteten til alarmanlegget og øvrig utstyr er ukjent, og at feil kan foreligge uten å være avdekket."
+        },
+        {
+          "risk": {
+            "risk_id": "096b09c0-eac6-4fe4-9fae-d8869d8fa558_risk_004",
+            "description": "Brannteknisk kontroll er forenklet og begrenset. Kontrollen kan ikke sammenlignes med en fullstendig kontroll av branntekniske forhold av offentlig myndighet, noe som innebærer en risiko for at branntekniske avvik ikke er avdekket.",
+            "evidence": [
+              "Dette er en forenklet kontroll begrenset til de spørsmål som fremkommer under.",
+              "Dette kan ikke sammenlignes med en fullstendig kontroll av branntekniske forhold av offentlig myndighet."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Tilstandsrapporten inneholder eksplisitt følgende tekst under elektrisk anlegg og branntekniske forhold: 'Dette er en forenklet kontroll begrenset til de spørsmål og undersøkelser som forskrift til avhendingslova (tryggere bolighandel) § 2-18 inneholder. Dette kan ikke sammenlignes med en kontroll utført av offentlig myndighet (Det lokale eltilsyn) eller registrert elektrovirksomhet.' Tilsvarende formulering finnes for branntekniske forhold: 'Dette er en forenklet kontroll begrenset til de spørsmål som fremkommer under. [...] Dette kan ikke sammenlignes med en fullstendig kontroll av branntekniske forhold av offentlig myndighet.' Risikoen er reell og støttes av dokumentet."
+        },
+        {
+          "risk": {
+            "risk_id": "096b09c0-eac6-4fe4-9fae-d8869d8fa558_risk_005",
+            "description": "Mulig risiko for rom som ikke er godkjent i henhold til teknisk forskrift (P-ROM vs. S-ROM). Rommet kan være i strid med teknisk forskrift og mangle godkjennelse i kommunen.",
+            "evidence": [
+              "Dette betyr at rommet både kan være i strid med teknisk forskrift og mangle godkjennelse i kommunen for den aktuelle bruken.",
+              "Befaringstidspunktet har betydning for om rommet defineres som P-ROM eller S-ROM."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Tilstandsrapporten inneholder eksplisitt følgende tekst under arealbeskrivelsen: 'Det er bruken av rommet på befaringstidspunktet som avgjør rommets navn og definisjon i arealoppstilingen. Dette betyr at rommet både kan være i strid med Teknisk forskrift (TEK) og mangle godkjennelse i kommunen for den aktuelle bruken, uten at dette vil få betydning for takstmannens valg av romdefinisjonen.' Videre bekreftes dette i avgrensningsdelen: 'Bruken av et rom på befaringstidspunktet har betydning for om rommet defineres som P-ROM eller S-ROM. Dette betyr at rommet både kan være i strid med teknisk forskrift og mangle godkjennelse i kommunen for den aktuelle bruken.' Risikoen er reell og støttes av dokumentet."
+        },
+        {
+          "risk": {
+            "risk_id": "096b09c0-eac6-4fe4-9fae-d8869d8fa558_risk_009",
+            "description": "Flatt tak tekket med sveiset banebelegg (takpapp/PVC) kan være en risikofaktor. Flate tak er generelt mer utsatt for lekkasjer og vannskader enn skrå tak, og tilstanden bør undersøkes nøye.",
+            "evidence": [
+              "Flatt tak tekket med sveiset banebelegg (takpapp/PVC)."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.72,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt at bygningen har flatt tak. Fra tilstandsrapporten og salgsoppgaven: 'Flatt tak tekket med sveiset banebelegg (takpapp/pvc-membran).' Dette er nevnt både i salgsoppgavens beskrivelse av bygget og i tilstandsrapporten. Flate tak er generelt mer utsatt for lekkasjer enn skrå tak, og dette er en reell risikofaktor som støttes av dokumentet."
+        },
+        {
+          "risk": {
+            "risk_id": "096b09c0-eac6-4fe4-9fae-d8869d8fa558_risk_010",
+            "description": "Risiko for at selger har gitt ufullstendige, uriktige eller misvisende opplysninger i egenerklæringsskjemaet. Forsikringsselskapet kan søke regress eller redusere sitt ansvar dersom dette avdekkes.",
+            "evidence": [
+              "Jeg bekrefter at opplysningene er gitt etter beste skjønn. Jeg er kjent med at dersom jeg har gitt ufullstendige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Egenerklæringsskjemaet inneholder eksplisitt følgende tekst signert av selger: 'Jeg bekrefter at opplysningene er gitt etter beste skjønn. Jeg er kjent med at dersom jeg har gitt ufullstendige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis, jfr. vilkår for boligselgerforsikring punkt 7.1 og forsikringsavtaleloven kapittel 4.' Dette bekrefter at risikoen for ufullstendige eller uriktige opplysninger er anerkjent i dokumentet, og at konsekvensene er beskrevet."
+        },
+        {
+          "risk": {
+            "risk_id": "096b09c0-eac6-4fe4-9fae-d8869d8fa558_risk_012",
+            "description": "Risiko for skjeggkre og skadedyr i sameiet. Selger er spurt om kjennskap til sopp/råteskader, insekter, skadedyr og skjeggkre i fellesareal eller andre boliger, men det er ikke bekreftet at dette er fraværende.",
+            "evidence": [
+              "Kjenner du til om det er/har vært sopp/råteskader/insekter/skadedyr i sameiet/laget/selskapet (fellesareal eller i andre boliger) som rotter, mus, maur eller lignende? Nei Ja",
+              "Kjenner du til om det er/har vært skjeggkre i sameiet/laget/selskapet (fellesareal eller i andre boliger)? Nei Ja"
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.6,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Egenerklæringsskjemaet inneholder spørsmål 27 og 28 som direkte omhandler skjeggkre og skadedyr i sameiet/fellesareal eller andre boliger: 'Kjenner du til om det er/har vært sopp/råteskader/insekter/skadedyr i sameiet/laget/selskapet (fellesareal eller i andre boliger) som rotter, mus, maur eller lignende? Nei Ja' og 'Kjenner du til om det er/har vært skjeggkre i sameiet/laget/selskapet (fellesareal eller i andre boliger)? Nei Ja'. Svarene er ikke tydelig avkrysset i den ekstraherte teksten (kun 'Nei Ja' vises), noe som betyr at det ikke er bekreftet at dette er fraværende. Risikoen er reell i den forstand at dokumentet reiser spørsmålet uten å gi et entydig svar, og at dette er et relevant forhold for kjøper å undersøke."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.24,
+        "f1": 0.3870967741935484,
+        "total_support": 25
+      }
+    },
+    "agentic_rag_P+T+R": {
+      "run_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee",
+      "system_type": "agentic_rag_P+T+R",
+      "overall_metrics": {
+        "precision": 0.55,
+        "recall": 0.44,
+        "f1": 0.48888888888888893,
+        "total_support": 25
+      },
+      "matched_risks": 11,
+      "unmatched_predicted": 9,
+      "unmatched_ground_truth": 14,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_000",
+            "description": "Midlertidig brukstillatelse – ferdigattest ikke utstedt og kan ikke søkes",
+            "evidence": [
+              "Det foreligger midlertidig brukstillatelse for eiendommen, men at det fortsatt gjenstår arbeid før ferdigattest kan utstedes.",
+              "Ferdigattest er ikke søkt om innenfor fristen. Søknad om utsatt frist 03.07.2025 på bakgrunn av ¨Vi klarer ikke å søke ferdigattest, da vi ikke klarer å oppfylle vilkårene – da Oslo kommunen ved EBY har avvist overtakelse av fortau grunnet OBOS ikke har utført korrekt eiendomsoverdragelse.¨",
+              "Det gjøres oppmerksom på at ferdigattest ikke vil bli utstedt for ufullførte byggesaker/bygningsmeldinger som er fra før 1998.",
+              "Ferdigattest/brukstillatelse datert: 07.06.2024."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.97,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_001",
+            "description": "Manglende ferdigattest – kun midlertidig brukstillatelse foreligger",
+            "evidence": [
+              "Det foreligger midlertidig brukstillatelse for eiendommen, datert 07.06.2024.",
+              "Ferdigattest er ikke søkt om innenfor fristen. Søknad om utsatt frist 03.07.2025 på bakgrunn av ¨Vi klarer ikke å søke ferdigattest, da vi ikke klarer å oppfylle vilkårene – da Oslo kommunen ved EBY har avvist overtakelse av fortau grunnet OBOS ikke har utført korrekt eiendomsoverdragelse.¨",
+              "Det gjøres oppmerksom på at ferdigattest ikke vil bli utstedt for ufullførte byggesaker/bygningsmeldinger som er fra før 1998.",
+              "Vilkår for ferdigattest ikke oppfylt: Lamper for belysning av gang/sykkelvei 2 monteres i forbindelse med utførelse av sykkelveien – Ferdigstilles senest 28.06.2024. Pergola på privat takterrasse – Ferdigstilles senest 10.06.2024."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.98
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_001",
+            "description": "Forventet økning i felleskostnader – salgsoppgaven varsler eksplisitt om kommende kostnadsøkninger",
+            "evidence": [
+              "På grunn av prisstigning og renteøkning er det forventet at felleskostnadene vil øke etter at denne salgsoppgaven er utarbeidet.",
+              "De totale felleskostnadene er pr. tid på kr. XXXXX,- pr. måned (kr. XXXX,- pr. år).",
+              "Budsjettet er basert på estimerte tall.",
+              "Styret vedtok at felleskostnadene økte med 5% fra og med august 2025.",
+              "I tillegg kommer felleskostnader for garasjen kr 600,- pr kvartal."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_002",
+            "description": "Forventet økning i felleskostnader – eksplisitt varslet i salgsoppgaven",
+            "evidence": [
+              "På grunn av prisstigning og renteøkning er det forventet at felleskostnadene vil øke etter at denne salgsoppgaven er utarbeidet.",
+              "Styret vedtok at felleskostnadene økte med 5% fra og med august 2025. Økningen baserer seg på den generelle prisutviklingen i økonomien og at alle inngåtte avtaler blir prisjustert i disse dager.",
+              "Felleskostnader kr 7 449,‑ pr. mnd"
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              19,
+              23
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_003",
+            "description": "Pågående utbygging i nærområdet – støy, anleggsarbeid og usikkerhet om fremtidig bomiljø",
+            "evidence": [
+              "Utbyggingsprosjektet 'Lille Løren Park' er planlagt gjennomført ved utbygging i flere byggetrinn, med en planlagt bebyggelse på ca 450 boliger.",
+              "Inntil utbyggingsprosjektet 'Lille Løren Park' er ferdig utbygget, er sameiet og seksjonseierne forpliktet til å yte nødvendig medvirkning til at utbygger, evt den utbygger utpeker.",
+              "Området er avsatt til fremtidig bebyggelse og anlegg.",
+              "Det er foreløpig ikke gjesteparkering i garasjen."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.93,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_005",
+            "description": "Pågående og planlagte byggearbeider i nærområdet – støy, anleggsvirksomhet og trafikkforstyrrelser frem til 2030",
+            "evidence": [
+              "Sinsenveien 56 B med flere – Omlegging av Sinsenveien med tilhørende tiltak – Kjøreveg 5 og 7 – Nye Aker sykehus. Status: Igangsettingstillatelse gitt.",
+              "Permanent vei skal stå ferdig i 2030, men Sinsenveien skal kunne brukes som adkomstvei til boliger, eiendommer og anleggsområde gjennom byggeprosessen. Det skal derfor etableres en midlertidig vei som blir stående i perioden mellom 2026 og 2030.",
+              "Sinsenveien 49 D-E-F – Oppføring av boligblokk – Hus B – Lille Løren Park. Status: Igangsettingstillatelse gitt.",
+              "Lille Løren park – Etablering av offentlig park. Status: Endret tillatelse gitt.",
+              "Lørenveien 36 – Innglassing av balkonger. Status: Mottatt søknad om brukstillatelse.",
+              "Sinsenveien 35-37 – Innglassing av balkonger. Status: Tillatelse gitt."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              23,
+              24
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_006",
+            "description": "Eiendommen registrert på byantikvarens gule liste – begrensninger på fremtidige ombygginger og restaureringer",
+            "evidence": [
+              "Verneklasse/SEFRAK: Eiendommen er registrert på byantikvarens gule liste, noe som betyr at eiendommen er ansett som bevaringsverdig, enten helt eller delvis.",
+              "Dette kan påvirke mulighetene for fremtidige ombygginger eller restaureringer av eiendommen.",
+              "Byantikvaren skal gi en rådgivende uttalelse i byggesaker som berører eiendommen."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_006",
+            "description": "Eiendommen er registrert på byantikvarens gule liste – begrensninger på fremtidige ombygginger",
+            "evidence": [
+              "Verneklasse/SEFRAK: Eiendommen er registrert på byantikvarens gule liste, noe som betyr at eiendommen er ansett som bevaringsverdig, enten helt eller delvis. Dette kan påvirke mulighetene for fremtidige ombygginger eller restaureringer av eiendommen. Byantikvaren skal gi en rådgivende uttalelse i byggesaker som berører eiendommen."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              23
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_015",
+            "description": "Udokumenterte endringer av elektrisk anlegg kan foreligge",
+            "evidence": [
+              "Det tas forbehold om at det kan foreligge udokumenterte utvidelser eller endringer av elektrisk anlegg som ikke er dokumentert eller informert om.",
+              "Er det ifølge eier utført håndverkstjenester på boligen siste 5 år? Ja – Spotter, dimmere. Skrudd opp lamper. Arbeid utført av Flyt elektro."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_009",
+            "description": "Arbeid på el-anlegget utført av ufaglært/egeninnsats – risiko for mangler ved elektrisk anlegg",
+            "evidence": [
+              "Kjenner du til om det er/har vært utført arbeid på el-anlegget eller andre installasjoner? Svar: Ja, av faglært og ufaglært/egeninnsats/dugnad. Beskrivelse: Spotter, dimmere. Skrudd opp lamper. Arbeid utført av Flyt elektro."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              22,
+              34
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_016",
+            "description": "Ingen formuesverdi funnet for eiendommen – kan gi usikkerhet rundt skattemessig verdsettelse",
+            "evidence": [
+              "Info om formuesverdi: Ingen formuesverdi funnet."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_010",
+            "description": "Ingen formuesverdi funnet – usikkerhet rundt skattemessig verdsettelse",
+            "evidence": [
+              "Info om formuesverdi: Ingen formuesverdi funnet.",
+              "Skatteetaten beregner en boligverdi (beregnet markedsverdi for bolig) basert på SSBs statistiske opplysninger om omsatte boliger."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_013",
+            "description": "Utbyggers rettigheter i byggetiden – sameiet og seksjonseierne er forpliktet til å medvirke til utbyggers arbeider, inkl. anleggsmaskiner og inngrep på eiendommen",
+            "evidence": [
+              "Inntil utbyggingsprosjektet 'Lille Løren Park' er ferdig utbygget, er sameiet og seksjonseierne forpliktet til å yte nødvendig medvirkning til at utbygger, evt den utbygger utpeker.",
+              "Denne retten omfatter etablering av adkomst over og under bakken, etablering av grøntanlegg, sammenføyning og tilknytning av bygningsmassen og anleggelse av kulverter.",
+              "I forbindelse med utføringen av disse arbeidene har utbygger rett til å ha stående anleggsmaskiner, utstyr, brakker m.v., gjerder og skilt på eiendommene.",
+              "Denne vedtektsbestemmelsen kan ikke endres uten samtykke fra utbygger eller utbyggers rettsetterfølger."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_011",
+            "description": "Utbyggingsprosjektet Lille Løren Park er ikke ferdigstilt – sameiet er forpliktet til å medvirke til utbyggers arbeider og avgi fellesarealer midlertidig",
+            "evidence": [
+              "Inntil utbyggingsprosjektet 'Lille Løren Park' er ferdig utbygget, er sameiet og seksjonseierne forpliktet til å yte nødvendig medvirkning til at utbygger, evt den utbygger utpeker, kan gjennomføre en helhetlig utbygging.",
+              "Sameiet er herunder forpliktet til å la utbygger/selger vederlagsfritt benytte deler av sameiets utvendige fellesarealer midlertidig for adkomst, plassering lagring av utstyr/rigg med mer som er nødvendig i anleggsperioden.",
+              "Denne vedtektsbestemmelsen kan ikke endres uten samtykke fra utbygger eller utbyggers rettsetterfølger."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              59,
+              60
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_017",
+            "description": "Korttidsutleie begrenset til maksimalt 60 døgn per år – begrensning for kjøpere som ønsker utleie via f.eks. Airbnb",
+            "evidence": [
+              "Korttidsutleie av hele boligseksjonen i mer enn 60 døgn årlig er ikke tillatt. Med korttidsutleie menes utleie i inntil 30 døgn sammenhengende."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_015",
+            "description": "Korttidsutleie begrenset til 60 døgn per år i henhold til sameiets vedtekter – strengere enn lovens standard",
+            "evidence": [
+              "I sameiets vedtekter er grensen satt til 60. Med korttidsutleie menes utleie i en sammenhengende periode på opptil 30 døgn.",
+              "Korttidsutleie av hele boligseksjonen i mer enn 60 døgn årlig er ikke tillatt."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              30,
+              53
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_010",
+            "description": "Radonmåling ikke utført",
+            "evidence": [
+              "Selger har ikke utført radonmåling.",
+              "Er det foretatt radonmåling? Nei"
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_016",
+            "description": "Ingen radonmåling utført av selger – potensiell helserisiko ikke avklart",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Boligen ligger minimum tre etasjer over bakkenivå og radonmålinger er ikke relevant. (tilstandsrapport)"
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              31,
+              40
+            ],
+            "details": {
+              "confidence": 0.65
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_011",
+            "description": "Boligselgerforsikring begrenset til kr 14 000 000 – prisantydning er kr 16 800 000, noe som kan gi underdekning",
+            "evidence": [
+              "Boligselgerforsikring: Selger har tegnet boligselgerforsikring som dekker selgers ansvar etter avhendingsloven begrenset oppad kr. 14 000 000,-.",
+              "Prisantydning: Kr 16 800 000."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_019",
+            "description": "Boligselgerforsikring begrenset oppad til kr 14 000 000 – lavere enn prisantydning på kr 16 800 000",
+            "evidence": [
+              "Selger har tegnet boligselgerforsikring som dekker selgers ansvar etter avhendingsloven begrenset oppad kr. 14 000 000,‑.",
+              "Prisantydning: Kr 16 800 000"
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              31,
+              4
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_012",
+            "description": "Mange tinglyste heftelser og rettigheter på eiendommen – kompleks heftelsesstruktur med rettigheter som hefter i en rekke seksjoner",
+            "evidence": [
+              "Tinglyste heftelser og rettigheter: På eiendommen er det tinglyst følgende heftelser og rettigheter som følger eiendommens matrikkel ved overskjøting til ny hjemmelshaver.",
+              "Kan ikke slettes uten samtykke fra: Oslo Kommune. Org.nr: 958 935 420.",
+              "Bestemmelse om vann/kloakk, medlemskap i velforening/huseierforening, bestemmelse om teknisk infrastruktur, reparasjon og vedlikehold, bestemmelse om renovasjon, adkomstrett for drift og vedlikehold av anlegg/ledninger/kabler.",
+              "Rettighet hefter i: Knr:0301 Gnr:83 Bnr:545 [en rekke seksjoner] og Knr:0301 Gnr:83 Bnr:546 [en rekke seksjoner].",
+              "17.03.1916 – Dokumentnr: 900831 – Bestemmelse om veg. Overført fra: Knr:0301 Gnr:83 Bnr:15."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_022",
+            "description": "Mange tinglyste heftelser og rettigheter på eiendommen – kompleks heftelsessituasjon",
+            "evidence": [
+              "Tinglyste heftelser og rettigheter: På eiendommen er det tinglyst følgende heftelser og rettigheter som følger eiendommens matrikkel ved overskjøting til ny hjemmelshaver.",
+              "Heftelser inkluderer bestemmelser om vannledning (1904), veg (1916), vann/kloakkledning (1921), adkomstrett (2019), erklæringer/avtaler (2023, 2024), bestemmelse om teknisk infrastruktur, renovasjon, sykkelparkering, bruksrett og adkomstrett for drift og vedlikehold av anlegg/ledninger/kabler.",
+              "Rettigheter hefter i svært mange seksjoner (Bnr:545 Snr:1-100, Bnr:546 Snr:1-166, Bnr:544)."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_002",
+          "description": "Manglende/ufullstendig informasjon om felleskostnader i salgsoppgaven – beløp er ikke fylt inn",
+          "evidence": [
+            "De totale felleskostnadene er pr. tid på kr. XXXXX,- pr. måned (kr. XXXX,- pr. år).",
+            "Sameiets navn er Lille Løren Park 1 Sameie. Sameiet er opprettet ved tinglysing av vedtak om seksjonering fra kommunen, tinglyst XX.XX.XXXX"
+          ],
+          "source_documents": [
+            "d009_d009"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.92,
+          "details": {}
+        },
+        {
+          "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_004",
+          "description": "Plikt til medlemskap i fremtidige utomhussameier/velforeninger/fjernvarmesentraler med ukjente kostnader",
+          "evidence": [
+            "Lille Løren Park 1 Sameie (Hus D og E) har rett og plikt til å være medlem/eier av evt. utomhussameier/drifts-velforening, fjernvarmesentraler som blir opprettet innenfor utbyggingsprosjektet Lille Løren Park.",
+            "Sameiet er forpliktet til å delta i drift og vedlikehold av og til å bære sin forholdsmessige del av utgiftene til de utomhus sameier/drifts-velforeninger, fjernvarmesentraler som blir opprettet.",
+            "Utbygger vil fastsette nærmere bestemmelser om rettigheter, forpliktelser og kostnadsfordeling for de utomhussameier/drifts-velforening, fjernvarmesentraler som blir opprettet.",
+            "Det tas forbehold om endring i organisering, oppdeling av eiendommen i en eller flere."
+          ],
+          "source_documents": [
+            "d009_d009"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.92,
+          "details": {}
+        },
+        {
+          "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_005",
+          "description": "Felleslokale (Hus D og E) ikke endelig detaljprosjektert – usikkerhet om etablering, utforming, funksjon og kostnader",
+          "evidence": [
+            "Felleslokalet er ikke endelig detaljprosjektert og det tas forbehold om etablering, utforming og funksjon.",
+            "Lille Løren Park 1 Sameie (Hus D og E) er forpliktet til å delta i drift og vedlikehold av og til å bære sin forholdsmessige del av utgiftene knyttet til drift/vedlikehold av lokalet og kostnader til eventuell avtale med [leverandør/tjenesteyter] av servicekonsept som kan bli etablert.",
+            "Utbygger [Selvaag Bolig] forbeholder seg retten til å inngå avtale på vegne av sameiet med [leverandør/tjenesteyter] om etablering og drift av servicekonsept for Felleslokalet.",
+            "Felleslokalet vil kunne bestå av [Ikke endelig fastsatt]"
+          ],
+          "source_documents": [
+            "d009_d009"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.9,
+          "details": {}
+        },
+        {
+          "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_007",
+          "description": "Pågående byggesak – innglassing av balkonger på nabobygg (Lørenveien 36) kan påvirke utsikt og lysforhold",
+          "evidence": [
+            "Lørenveien 36 – Innglassing av balkonger. Saksnummer 201712340. Status: Mottatt søknad om brukstillatelse.",
+            "Søknaden omfatter innglassing av de eksisterende balkongene på fasade ut mot Lørenveien, til sammen 20 [balkonger].",
+            "Byantikvaren skal gi en rådgivende uttalelse i byggesaker som berører eiendommen."
+          ],
+          "source_documents": [
+            "d009_d009"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.78,
+          "details": {}
+        },
+        {
+          "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_008",
+          "description": "Ingen geotekniske undersøkelser utført – usikkerhet om grunnforhold og drenering",
+          "evidence": [
+            "Det er ikke foretatt noen geotekniske undersøkelser og det er dermed begrensede muligheter for nøyaktig [vurdering av grunnforhold].",
+            "Grunnmur i betong og støpt såle, antatt fundamentert på fast grunn (fjell) eller faste komprimerte masser.",
+            "Grunnforhold og drenering: Det er ikke foretatt noen geotekniske undersøkelser."
+          ],
+          "source_documents": [
+            "d009_d009"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.85,
+          "details": {}
+        },
+        {
+          "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_009",
+          "description": "Tilstandsrapport kun på nivå 1 (visuell befaring) – skjulte feil og mangler kan ikke utelukkes",
+          "evidence": [
+            "Det gjøres oppmerksom på at dette er en tilstandsrapport på nivå 1, dvs kun en visuell befaring, uten åpning av konstruksjoner.",
+            "Rapporten er likevel ingen garanti for at det ikke kan finnes skjulte feil, skader og mangler.",
+            "Det kan være avvik/skader som ikke er avdekket.",
+            "Tilliggende konstruksjoner våtrom: Det er ikke utført hulltaking i tilstøtende rom da baderommet er av typen prefabrikkert våtromskabin."
+          ],
+          "source_documents": [
+            "d009_d009"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_014",
+          "description": "Bygget oppfyller ikke nødvendigvis alle dagens krav til tetthet, ventilasjon og varmeisolering",
+          "evidence": [
+            "Bygningen stod ferdig i 2024 og er oppført etter byggetidens byggeforskrifter. Den tilfredsstiller ikke nødvendigvis alle de krav som dagens byggeforskrifter stiller til bl.a. tetthet, ventilasjon og varmeisolering.",
+            "Merk at dagens krav til isolering og tetthet mv er strengere enn da bygget ble oppført."
+          ],
+          "source_documents": [
+            "d009_d009"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_018",
+          "description": "Sameiet har legal panterett i seksjonen begrenset til 2 ganger folketrygdens grunnbeløp – risiko for kjøper ved mislighold fra tidligere eier",
+          "evidence": [
+            "De andre seksjonseierne har lovbestemt panterett i seksjonen for krav mot seksjonseieren som følger av sameieforholdet, jf. eierseksjonslovens § 31. Pantekravet kan ikke overstige et beløp som for hver bruksenhet svarer til to ganger folketrygdens grunnbeløp.",
+            "Sameiet har legal panterett i den enkelte eierseksjon, begrenset til inntil 2 ganger folketrygdens grunnbeløp."
+          ],
+          "source_documents": [
+            "d009_d009"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_019",
+          "description": "Energikarakter C – boligen er ikke blant de mest energieffektive, noe som kan gi høyere energikostnader",
+          "evidence": [
+            "Energikarakter: C",
+            "Energifarge: Grønn",
+            "A betyr at boligen er energieffektiv, mens G betyr at boligen er lite energieffektiv. En bolig bygget etter byggeforskriftene vedtatt i 2010 vil normalt få C."
+          ],
+          "source_documents": [
+            "d009_d009"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.72,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d009_003",
+          "description": "Boden som inngår i BRA-e ligger på sameiets fellesareal og kan omdisponeres av sameiet",
+          "evidence": [
+            "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA-e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            21
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d009_004",
+          "description": "Tilliggende konstruksjoner til begge våtrom er ikke undersøkt (TGIU) – potensielle skjulte fuktskader",
+          "evidence": [
+            "Våtrom > 7. Etasje > Bad v/entré > Tilliggende konstruksjoner våtrom – TGIU (ikke undersøkt)",
+            "Våtrom > 7. Etasje > Bad v/sov > Tilliggende konstruksjoner våtrom – TGIU (ikke undersøkt)",
+            "Det er ikke utført hulltaking i tilstøtende rom da baderommet er av typen prefabrikkert våtromskabin. Det søkes ikke etter fukt i våtromskabiner da det ikke gir pålitelige søk grunnet rommets oppbygning."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            22,
+            39,
+            41,
+            42,
+            43
+          ],
+          "details": {
+            "confidence": 0.92
+          }
+        },
+        {
+          "risk_id": "gt_d009_007",
+          "description": "Garasjeplass er en separat anleggseiendom med egne kostnader og komplekse overdragelsesregler",
+          "evidence": [
+            "Garasjeanlegg: Egen anleggseiendom, s. 1149 Lille Løren Park Garasjesameie, gnr 83 bnr 544.",
+            "P-plassen må dersom den ikke selges eller overføres sammen med salg av bolig, selges eller overføres med realkobling til seksjon i S 1001. Lille Løren Park 1 Sameie, eller Lille Løren Park 2 Sameie, eller Lille Løren Park 3 Sameie. tinglyses med ideell andel 1/162.",
+            "Felleskostnader for garasjen er kr 600,‑ pr kvartal.",
+            "Det er foreløpig ikke gjesteparkering i garasjen.",
+            "Det tilfaller forretningsfører ett administrasjonsgebyr pr plass iht gjeldende prisliste."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            20,
+            19
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d009_008",
+          "description": "Løs ledningslist registrert på el-anlegget – indikasjon på ufullstendig utførelse",
+          "evidence": [
+            "Det er registrert løs ledningslist på det ene soverommet.",
+            "Anlegget er fra byggeår, og eier opplyser at det ikke er utført EL-arbeider siden da."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            45
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d009_012",
+          "description": "Store utfordringer med heisene siden innflytting – gjentatte feil og reklamasjoner",
+          "evidence": [
+            "Det har vært store utfordringer med heisene siden innflytting i juni, spesielt heisen i 45C.",
+            "Styret fikk da beskjed om at det var masse feil med heisene tross alle Schindler [reklamasjoner].",
+            "Honorar, Heiskonsulenten AS -19 556 (konsulenthonorar i regnskapet)"
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            73,
+            77
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d009_013",
+          "description": "Innbrudd i boder registrert – sikkerhetsproblem i garasje/boder",
+          "evidence": [
+            "Styret fikk inn totalt 4 tilfeller hvor det hadde blitt innbrudd i bod og hvor hengelås var [brutt].",
+            "Det ble vurdert flere tiltak for å forhindre/forebygge fremtidige innbrudd."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            75
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d009_014",
+          "description": "Trafikkfarlige forhold ved gangvei foran inngang til Sinsenveien 45C – nesten-ulykker rapportert",
+          "evidence": [
+            "Det var mye kjøring i forbindelse med innflytting, og Velforeningen hadde forståelse for dette. Likevel vitnet de til flere nesten-ulykker hvor små barn nesten blir truffet av ryggene flyttebiler osv.",
+            "Etter at veien mellom LLP1 og LLP2 har blitt åpnet, så har biltrafikken flyttet seg fra [gangveien], men dette fikk vi beskjed om ikke var nødvendig [å sette opp bom]."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            74
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        },
+        {
+          "risk_id": "gt_d009_017",
+          "description": "Fremtidige reguleringsplaner åpner for variert bebyggelse og anlegg i nærområdet – usikkerhet om omgivelsene",
+          "evidence": [
+            "Bebyggelse og anlegg (fremtidig): Området er avsatt til fremtidig bebyggelse og anlegg. Det kan være boligbebyggelse, fritidsbebyggelse, sentrumsformål, kjøpesenter, forretninger, bebyggelse for offentlig eller privat tjenesteyting, fritids- og turistformål, råstoffutvinning, næringsbebyggelse, idrettsanlegg, andre typer anlegg, uteoppholdsarealer og grav- og urnelunder."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            23
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d009_018",
+          "description": "Selger har kun eid boligen i ca. 1 år – begrenset kjennskap til eventuelle skjulte feil og mangler",
+          "evidence": [
+            "Når kjøpte du boligen? År 2024. Hvor lenge har du eid boligen? Antall år 1, Antall måneder 0.",
+            "Har du bodd i boligen siste 12 måneder? Ja."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            34
+          ],
+          "details": {
+            "confidence": 0.72
+          }
+        },
+        {
+          "risk_id": "gt_d009_020",
+          "description": "Høye felleskostnader med risiko for ytterligere økning – budsjett 2025 viser vesentlig høyere kostnader enn regnskap 2024",
+          "evidence": [
+            "Felleskostnader kr 7 449,‑ pr. mnd",
+            "Budsjett 2025 SUM DRIFTSKOSTNADER: -3 749 000 mot regnskap 2024: -1 033 284",
+            "Budsjett 2025 kommunale avgifter: -980 000 mot regnskap 2024: -165 744",
+            "TV-anlegg/bredbånd budsjett 2025: -437 000 (ikke kostnadsført i 2024 grunnet manglende faktura)",
+            "Det gjøres oppmerksom på at sameiet kan motta fakturaer som gjelder kostnader i regnskapsåret 2024 i løpet av 2025."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            19,
+            71,
+            77
+          ],
+          "details": {
+            "confidence": 0.93
+          }
+        },
+        {
+          "risk_id": "gt_d009_021",
+          "description": "Eiendomsskatt ilagt sameiet i 2024 – kr 88 244 – til tross for at selger opplyser om ingen eiendomsskatt",
+          "evidence": [
+            "Boligen har ifølge selger ikke blitt ilagt eiendomsskatt for inneværende år.",
+            "Eiendomsskatt (note 7 i regnskapet): -88 244"
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            19,
+            77
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d009_023",
+          "description": "Takterrasse og balkong er utvendige konstruksjoner eksponert for vær – løpende vedlikeholdsbehov og slitasje over tid",
+          "evidence": [
+            "Som en utvendig konstruksjon eksponert for sol, regn, snø og temperatursvingninger, må det påregnes værrelatert slitasje over tid.",
+            "Takterrassen er målt til ca 104 m². Malt/beiset tregulv mot dekke.",
+            "Terrassen har samme solide utførelse som balkongen, med malt/beiset tregulv."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            40
+          ],
+          "details": {
+            "confidence": 0.78
+          }
+        },
+        {
+          "risk_id": "gt_d009_024",
+          "description": "Kjøkkenventilatorfilteret kan skape brannfare dersom det ikke rengjøres/skiftes regelmessig",
+          "evidence": [
+            "Eventuelle filter i kjøkkenventilatoren bør rengjøres/skiftes regelmessig for å unngå at fett fester seg og skaper brannfare."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            22,
+            44
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        },
+        {
+          "risk_id": "gt_d009_025",
+          "description": "Selger kan prioritere bud fra ikke-forbrukere fremfor forbrukere, noe som kan gi kjøper svakere rettsvern",
+          "evidence": [
+            "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud. Når kjøper ikke er forbruker, kan selgers ansvar begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger."
+          ],
+          "source_documents": [
+            "d009.pdf"
+          ],
+          "source_pages": [
+            31
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_002",
+            "description": "Manglende/ufullstendig informasjon om felleskostnader i salgsoppgaven – beløp er ikke fylt inn",
+            "evidence": [
+              "De totale felleskostnadene er pr. tid på kr. XXXXX,- pr. måned (kr. XXXX,- pr. år).",
+              "Sameiets navn er Lille Løren Park 1 Sameie. Sameiet er opprettet ved tinglysing av vedtak om seksjonering fra kommunen, tinglyst XX.XX.XXXX"
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette tydelig. I tilstandsrapporten (side 48/95) under 'Tinglyste/andre forhold' står det eksplisitt: 'De totale felleskostnadene er pr. tid på kr. XXXXX,- pr. måned (kr. XXXX,- pr. år).' Beløpene er altså ikke fylt inn med faktiske tall. Merk at selve salgsoppgaven (side 19/37) oppgir felleskostnader på kr 7 449,- pr. mnd, men i tilstandsrapporten er beløpene ufullstendige. Vedtektene nevner også at sameiet er opprettet ved tinglysing 'tinglyst XX.XX.XXXX', som er et annet eksempel på manglende informasjon. Risikoen er reell da tilstandsrapporten inneholder ufylte plassholdere for felleskostnader."
+        },
+        {
+          "risk": {
+            "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_004",
+            "description": "Plikt til medlemskap i fremtidige utomhussameier/velforeninger/fjernvarmesentraler med ukjente kostnader",
+            "evidence": [
+              "Lille Løren Park 1 Sameie (Hus D og E) har rett og plikt til å være medlem/eier av evt. utomhussameier/drifts-velforening, fjernvarmesentraler som blir opprettet innenfor utbyggingsprosjektet Lille Løren Park.",
+              "Sameiet er forpliktet til å delta i drift og vedlikehold av og til å bære sin forholdsmessige del av utgiftene til de utomhus sameier/drifts-velforeninger, fjernvarmesentraler som blir opprettet.",
+              "Utbygger vil fastsette nærmere bestemmelser om rettigheter, forpliktelser og kostnadsfordeling for de utomhussameier/drifts-velforening, fjernvarmesentraler som blir opprettet.",
+              "Det tas forbehold om endring i organisering, oppdeling av eiendommen i en eller flere."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette fullt ut. I vedtektenes punkt 11-4 (side 59/117) står det ordrett: 'Lille Løren Park 1 Sameie (Hus D og E) har rett og plikt til å være medlem/eier av evt. utomhussameier/drifts-velforening, fjernvarmesentraler som blir opprettet innenfor utbyggingsprosjektet Lille Løren Park.' Videre: 'Sameiet er forpliktet til å delta i drift og vedlikehold av og til å bære sin forholdsmessige del av utgiftene til de utomhus sameier/drifts-velforeninger, fjernvarmesentraler som blir opprettet.' Og: 'Utbygger vil fastsette nærmere bestemmelser om rettigheter, forpliktelser og kostnadsfordeling.' Kostnadene er dermed ukjente og fastsettes av utbygger i fremtiden."
+        },
+        {
+          "risk": {
+            "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_005",
+            "description": "Felleslokale (Hus D og E) ikke endelig detaljprosjektert – usikkerhet om etablering, utforming, funksjon og kostnader",
+            "evidence": [
+              "Felleslokalet er ikke endelig detaljprosjektert og det tas forbehold om etablering, utforming og funksjon.",
+              "Lille Løren Park 1 Sameie (Hus D og E) er forpliktet til å delta i drift og vedlikehold av og til å bære sin forholdsmessige del av utgiftene knyttet til drift/vedlikehold av lokalet og kostnader til eventuell avtale med [leverandør/tjenesteyter] av servicekonsept som kan bli etablert.",
+              "Utbygger [Selvaag Bolig] forbeholder seg retten til å inngå avtale på vegne av sameiet med [leverandør/tjenesteyter] om etablering og drift av servicekonsept for Felleslokalet.",
+              "Felleslokalet vil kunne bestå av [Ikke endelig fastsatt]"
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette. I vedtektenes punkt 11-6 (side 60/118-119) står det: 'Felleslokalet er ikke endelig detaljprosjektert og det tas forbehold om etablering, utforming og funksjon.' Videre: 'Felleslokalet vil kunne bestå av [Ikke endelig fastsatt]' og '[Lille Løren Park Sameie 1 – Hus D og E] er forpliktet til å delta i drift og vedlikehold av og til å bære sin forholdsmessige del av utgiftene knyttet til drift/vedlikehold av lokalet.' Utbygger (Selvaag Bolig) forbeholder seg også retten til å inngå avtale på vegne av sameiet med leverandør/tjenesteyter. Risikoen er reell og godt dokumentert."
+        },
+        {
+          "risk": {
+            "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_007",
+            "description": "Pågående byggesak – innglassing av balkonger på nabobygg (Lørenveien 36) kan påvirke utsikt og lysforhold",
+            "evidence": [
+              "Lørenveien 36 – Innglassing av balkonger. Saksnummer 201712340. Status: Mottatt søknad om brukstillatelse.",
+              "Søknaden omfatter innglassing av de eksisterende balkongene på fasade ut mot Lørenveien, til sammen 20 [balkonger].",
+              "Byantikvaren skal gi en rådgivende uttalelse i byggesaker som berører eiendommen."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette. Under 'Pågående byggesaker' (side 23/45) står det: 'Lørenveien 36 – Innglassing av balkonger. Saksnummer 201712340. Status: Mottatt søknad om brukstillatelse. Søknaden omfatter innglassing av de eksisterende balkongene på fasade ut mot Lørenveien, til sammen 20 stykker. På de øverste balkongene skal det også oppføres glasstak i tillegg til glassvegger.' Eiendommen er også registrert på byantikvarens gule liste, og 'Byantikvaren skal gi en rådgivende uttalelse i byggesaker som berører eiendommen.' Innglassing av balkonger på nabobygg kan potensielt påvirke utsikt og lysforhold for den aktuelle boligen."
+        },
+        {
+          "risk": {
+            "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_008",
+            "description": "Ingen geotekniske undersøkelser utført – usikkerhet om grunnforhold og drenering",
+            "evidence": [
+              "Det er ikke foretatt noen geotekniske undersøkelser og det er dermed begrensede muligheter for nøyaktig [vurdering av grunnforhold].",
+              "Grunnmur i betong og støpt såle, antatt fundamentert på fast grunn (fjell) eller faste komprimerte masser.",
+              "Grunnforhold og drenering: Det er ikke foretatt noen geotekniske undersøkelser."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette. I tilstandsrapporten (side 40/79) under beskrivelse av bygningen og grunnforhold står det: 'Grunnforhold og drenering: Det er ikke foretatt noen geotekniske undersøkelser og det er dermed begrensede muligheter for nøyaktig kunnskap om byggegrunn og stabilitet.' Videre: 'Grunnmur i betong og støpt såle, antatt fundamentert på fast grunn (fjell) eller faste komprimerte masser.' Ordet 'antatt' understreker usikkerheten. Risikoen er reell og direkte støttet av dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_009",
+            "description": "Tilstandsrapport kun på nivå 1 (visuell befaring) – skjulte feil og mangler kan ikke utelukkes",
+            "evidence": [
+              "Det gjøres oppmerksom på at dette er en tilstandsrapport på nivå 1, dvs kun en visuell befaring, uten åpning av konstruksjoner.",
+              "Rapporten er likevel ingen garanti for at det ikke kan finnes skjulte feil, skader og mangler.",
+              "Det kan være avvik/skader som ikke er avdekket.",
+              "Tilliggende konstruksjoner våtrom: Det er ikke utført hulltaking i tilstøtende rom da baderommet er av typen prefabrikkert våtromskabin."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette. I tilstandsrapportens sammendrag (side 39/77) står det: 'Det gjøres oppmerksom på at dette er en tilstandsrapport på nivå 1, dvs kun en visuell befaring, uten åpning av konstruksjoner.' Videre i avgrensningene (side 49/96): 'Rapporten er likevel ingen garanti for at det ikke kan finnes skjulte feil, skader og mangler.' Under våtrom er det også notert TGIU (ikke undersøkt) for tilliggende konstruksjoner på begge bad, med begrunnelsen: 'Det er ikke utført hulltaking i tilstøtende rom da baderommet er av typen prefabrikkert våtromskabin.' Risikoen er reell og godt dokumentert."
+        },
+        {
+          "risk": {
+            "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_014",
+            "description": "Bygget oppfyller ikke nødvendigvis alle dagens krav til tetthet, ventilasjon og varmeisolering",
+            "evidence": [
+              "Bygningen stod ferdig i 2024 og er oppført etter byggetidens byggeforskrifter. Den tilfredsstiller ikke nødvendigvis alle de krav som dagens byggeforskrifter stiller til bl.a. tetthet, ventilasjon og varmeisolering.",
+              "Merk at dagens krav til isolering og tetthet mv er strengere enn da bygget ble oppført."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette. I tilstandsrapporten (side 40/79) under beskrivelse av bygningen står det: 'Bygningen stod ferdig i 2024 og er oppført etter byggetidens byggeforskrifter. Den tilfredsstiller ikke nødvendigvis alle de krav som dagens byggeforskrifter stiller til bl.a. tetthet, ventilasjon og varmeisolering.' I rapportsammendraget (side 39/77) bekreftes dette også: 'Merk at dagens krav til isolering og tetthet mv er strengere enn da bygget ble oppført.' Dette er en standardformulering i tilstandsrapporter, men den er eksplisitt til stede i dokumentet og utgjør en reell risiko for kjøper."
+        },
+        {
+          "risk": {
+            "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_018",
+            "description": "Sameiet har legal panterett i seksjonen begrenset til 2 ganger folketrygdens grunnbeløp – risiko for kjøper ved mislighold fra tidligere eier",
+            "evidence": [
+              "De andre seksjonseierne har lovbestemt panterett i seksjonen for krav mot seksjonseieren som følger av sameieforholdet, jf. eierseksjonslovens § 31. Pantekravet kan ikke overstige et beløp som for hver bruksenhet svarer til to ganger folketrygdens grunnbeløp.",
+              "Sameiet har legal panterett i den enkelte eierseksjon, begrenset til inntil 2 ganger folketrygdens grunnbeløp."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette. I vedtektenes punkt 6-3 (side 56/110) står det: 'De andre seksjonseierne har lovbestemt panterett i seksjonen for krav mot seksjonseieren som følger av sameieforholdet, jf. eierseksjonslovens § 31. Pantekravet kan ikke overstige et beløp som for hver bruksenhet svarer til to ganger folketrygdens grunnbeløp på det tidspunktet tvangsdekning besluttes gjennomført.' Dette bekreftes også i salgsoppgaven (side 31/61): 'sameiet legal panterett i den enkelte eierseksjon, begrenset til inntil 2 ganger folketrygdens grunnbeløp.' Risikoen er reell – en ny kjøper kan overta en seksjon med heftelse for tidligere eiers misligholdte felleskostnader."
+        },
+        {
+          "risk": {
+            "risk_id": "a8591dcc-1355-4917-bd48-c4ac25a474ee_risk_019",
+            "description": "Energikarakter C – boligen er ikke blant de mest energieffektive, noe som kan gi høyere energikostnader",
+            "evidence": [
+              "Energikarakter: C",
+              "Energifarge: Grønn",
+              "A betyr at boligen er energieffektiv, mens G betyr at boligen er lite energieffektiv. En bolig bygget etter byggeforskriftene vedtatt i 2010 vil normalt få C."
+            ],
+            "source_documents": [
+              "d009_d009"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.72,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette. I nøkkelinformasjonen (side 4/7) er energimerking oppgitt som 'C – Grønn'. I energiattesten (side 80/159) bekreftes: 'Energikarakter: C' og 'Energifarge: Grønn'. Det fremgår også av energiattesten: 'A betyr at boligen er energieffektiv, mens G betyr at boligen er lite energieffektiv. En bolig bygget etter byggeforskriftene vedtatt i 2010 vil normalt få C.' Energikarakter C er midt på skalaen og indikerer at boligen ikke er blant de mest energieffektive, noe som kan gi høyere energikostnader enn boliger med karakter A eller B."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.44,
+        "f1": 0.6111111111111112,
+        "total_support": 25
+      }
+    },
+    "ground_truth": {
+      "run_id": "dd11ee29-a178-4cc8-aeef-766357b77282_gt",
+      "system_type": "ground_truth",
+      "overall_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "total_support": 25
+      },
+      "matched_risks": 25,
+      "unmatched_predicted": 0,
+      "unmatched_ground_truth": 0,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_001",
+            "description": "Manglende ferdigattest – kun midlertidig brukstillatelse foreligger",
+            "evidence": [
+              "Det foreligger midlertidig brukstillatelse for eiendommen, datert 07.06.2024.",
+              "Ferdigattest er ikke søkt om innenfor fristen. Søknad om utsatt frist 03.07.2025 på bakgrunn av ¨Vi klarer ikke å søke ferdigattest, da vi ikke klarer å oppfylle vilkårene – da Oslo kommunen ved EBY har avvist overtakelse av fortau grunnet OBOS ikke har utført korrekt eiendomsoverdragelse.¨",
+              "Det gjøres oppmerksom på at ferdigattest ikke vil bli utstedt for ufullførte byggesaker/bygningsmeldinger som er fra før 1998.",
+              "Vilkår for ferdigattest ikke oppfylt: Lamper for belysning av gang/sykkelvei 2 monteres i forbindelse med utførelse av sykkelveien – Ferdigstilles senest 28.06.2024. Pergola på privat takterrasse – Ferdigstilles senest 10.06.2024."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "confidence": 0.98,
+            "details": {
+              "confidence": 0.98
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_001",
+            "description": "Manglende ferdigattest – kun midlertidig brukstillatelse foreligger",
+            "evidence": [
+              "Det foreligger midlertidig brukstillatelse for eiendommen, datert 07.06.2024.",
+              "Ferdigattest er ikke søkt om innenfor fristen. Søknad om utsatt frist 03.07.2025 på bakgrunn av ¨Vi klarer ikke å søke ferdigattest, da vi ikke klarer å oppfylle vilkårene – da Oslo kommunen ved EBY har avvist overtakelse av fortau grunnet OBOS ikke har utført korrekt eiendomsoverdragelse.¨",
+              "Det gjøres oppmerksom på at ferdigattest ikke vil bli utstedt for ufullførte byggesaker/bygningsmeldinger som er fra før 1998.",
+              "Vilkår for ferdigattest ikke oppfylt: Lamper for belysning av gang/sykkelvei 2 monteres i forbindelse med utførelse av sykkelveien – Ferdigstilles senest 28.06.2024. Pergola på privat takterrasse – Ferdigstilles senest 10.06.2024."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              20
+            ],
+            "details": {
+              "confidence": 0.98
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_002",
+            "description": "Forventet økning i felleskostnader – eksplisitt varslet i salgsoppgaven",
+            "evidence": [
+              "På grunn av prisstigning og renteøkning er det forventet at felleskostnadene vil øke etter at denne salgsoppgaven er utarbeidet.",
+              "Styret vedtok at felleskostnadene økte med 5% fra og med august 2025. Økningen baserer seg på den generelle prisutviklingen i økonomien og at alle inngåtte avtaler blir prisjustert i disse dager.",
+              "Felleskostnader kr 7 449,‑ pr. mnd"
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              19,
+              23
+            ],
+            "confidence": 0.97,
+            "details": {
+              "confidence": 0.97
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_002",
+            "description": "Forventet økning i felleskostnader – eksplisitt varslet i salgsoppgaven",
+            "evidence": [
+              "På grunn av prisstigning og renteøkning er det forventet at felleskostnadene vil øke etter at denne salgsoppgaven er utarbeidet.",
+              "Styret vedtok at felleskostnadene økte med 5% fra og med august 2025. Økningen baserer seg på den generelle prisutviklingen i økonomien og at alle inngåtte avtaler blir prisjustert i disse dager.",
+              "Felleskostnader kr 7 449,‑ pr. mnd"
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              19,
+              23
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_003",
+            "description": "Boden som inngår i BRA-e ligger på sameiets fellesareal og kan omdisponeres av sameiet",
+            "evidence": [
+              "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA-e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              21
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_003",
+            "description": "Boden som inngår i BRA-e ligger på sameiets fellesareal og kan omdisponeres av sameiet",
+            "evidence": [
+              "Det gjøres særskilt oppmerksom på at boden som er medtatt i BRA-e og totalt BRA, ligger på sameiets fellesareal, men disponeres av denne seksjonen. Sameiet kan på et senere tidspunkt omdisponere bruken av dette arealet."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              21
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_004",
+            "description": "Tilliggende konstruksjoner til begge våtrom er ikke undersøkt (TGIU) – potensielle skjulte fuktskader",
+            "evidence": [
+              "Våtrom > 7. Etasje > Bad v/entré > Tilliggende konstruksjoner våtrom – TGIU (ikke undersøkt)",
+              "Våtrom > 7. Etasje > Bad v/sov > Tilliggende konstruksjoner våtrom – TGIU (ikke undersøkt)",
+              "Det er ikke utført hulltaking i tilstøtende rom da baderommet er av typen prefabrikkert våtromskabin. Det søkes ikke etter fukt i våtromskabiner da det ikke gir pålitelige søk grunnet rommets oppbygning."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              22,
+              39,
+              41,
+              42,
+              43
+            ],
+            "confidence": 0.92,
+            "details": {
+              "confidence": 0.92
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_004",
+            "description": "Tilliggende konstruksjoner til begge våtrom er ikke undersøkt (TGIU) – potensielle skjulte fuktskader",
+            "evidence": [
+              "Våtrom > 7. Etasje > Bad v/entré > Tilliggende konstruksjoner våtrom – TGIU (ikke undersøkt)",
+              "Våtrom > 7. Etasje > Bad v/sov > Tilliggende konstruksjoner våtrom – TGIU (ikke undersøkt)",
+              "Det er ikke utført hulltaking i tilstøtende rom da baderommet er av typen prefabrikkert våtromskabin. Det søkes ikke etter fukt i våtromskabiner da det ikke gir pålitelige søk grunnet rommets oppbygning."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              22,
+              39,
+              41,
+              42,
+              43
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_005",
+            "description": "Pågående og planlagte byggearbeider i nærområdet – støy, anleggsvirksomhet og trafikkforstyrrelser frem til 2030",
+            "evidence": [
+              "Sinsenveien 56 B med flere – Omlegging av Sinsenveien med tilhørende tiltak – Kjøreveg 5 og 7 – Nye Aker sykehus. Status: Igangsettingstillatelse gitt.",
+              "Permanent vei skal stå ferdig i 2030, men Sinsenveien skal kunne brukes som adkomstvei til boliger, eiendommer og anleggsområde gjennom byggeprosessen. Det skal derfor etableres en midlertidig vei som blir stående i perioden mellom 2026 og 2030.",
+              "Sinsenveien 49 D-E-F – Oppføring av boligblokk – Hus B – Lille Løren Park. Status: Igangsettingstillatelse gitt.",
+              "Lille Løren park – Etablering av offentlig park. Status: Endret tillatelse gitt.",
+              "Lørenveien 36 – Innglassing av balkonger. Status: Mottatt søknad om brukstillatelse.",
+              "Sinsenveien 35-37 – Innglassing av balkonger. Status: Tillatelse gitt."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              23,
+              24
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_005",
+            "description": "Pågående og planlagte byggearbeider i nærområdet – støy, anleggsvirksomhet og trafikkforstyrrelser frem til 2030",
+            "evidence": [
+              "Sinsenveien 56 B med flere – Omlegging av Sinsenveien med tilhørende tiltak – Kjøreveg 5 og 7 – Nye Aker sykehus. Status: Igangsettingstillatelse gitt.",
+              "Permanent vei skal stå ferdig i 2030, men Sinsenveien skal kunne brukes som adkomstvei til boliger, eiendommer og anleggsområde gjennom byggeprosessen. Det skal derfor etableres en midlertidig vei som blir stående i perioden mellom 2026 og 2030.",
+              "Sinsenveien 49 D-E-F – Oppføring av boligblokk – Hus B – Lille Løren Park. Status: Igangsettingstillatelse gitt.",
+              "Lille Løren park – Etablering av offentlig park. Status: Endret tillatelse gitt.",
+              "Lørenveien 36 – Innglassing av balkonger. Status: Mottatt søknad om brukstillatelse.",
+              "Sinsenveien 35-37 – Innglassing av balkonger. Status: Tillatelse gitt."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              23,
+              24
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_006",
+            "description": "Eiendommen er registrert på byantikvarens gule liste – begrensninger på fremtidige ombygginger",
+            "evidence": [
+              "Verneklasse/SEFRAK: Eiendommen er registrert på byantikvarens gule liste, noe som betyr at eiendommen er ansett som bevaringsverdig, enten helt eller delvis. Dette kan påvirke mulighetene for fremtidige ombygginger eller restaureringer av eiendommen. Byantikvaren skal gi en rådgivende uttalelse i byggesaker som berører eiendommen."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              23
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_006",
+            "description": "Eiendommen er registrert på byantikvarens gule liste – begrensninger på fremtidige ombygginger",
+            "evidence": [
+              "Verneklasse/SEFRAK: Eiendommen er registrert på byantikvarens gule liste, noe som betyr at eiendommen er ansett som bevaringsverdig, enten helt eller delvis. Dette kan påvirke mulighetene for fremtidige ombygginger eller restaureringer av eiendommen. Byantikvaren skal gi en rådgivende uttalelse i byggesaker som berører eiendommen."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              23
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_007",
+            "description": "Garasjeplass er en separat anleggseiendom med egne kostnader og komplekse overdragelsesregler",
+            "evidence": [
+              "Garasjeanlegg: Egen anleggseiendom, s. 1149 Lille Løren Park Garasjesameie, gnr 83 bnr 544.",
+              "P-plassen må dersom den ikke selges eller overføres sammen med salg av bolig, selges eller overføres med realkobling til seksjon i S 1001. Lille Løren Park 1 Sameie, eller Lille Løren Park 2 Sameie, eller Lille Løren Park 3 Sameie. tinglyses med ideell andel 1/162.",
+              "Felleskostnader for garasjen er kr 600,‑ pr kvartal.",
+              "Det er foreløpig ikke gjesteparkering i garasjen.",
+              "Det tilfaller forretningsfører ett administrasjonsgebyr pr plass iht gjeldende prisliste."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              20,
+              19
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_007",
+            "description": "Garasjeplass er en separat anleggseiendom med egne kostnader og komplekse overdragelsesregler",
+            "evidence": [
+              "Garasjeanlegg: Egen anleggseiendom, s. 1149 Lille Løren Park Garasjesameie, gnr 83 bnr 544.",
+              "P-plassen må dersom den ikke selges eller overføres sammen med salg av bolig, selges eller overføres med realkobling til seksjon i S 1001. Lille Løren Park 1 Sameie, eller Lille Løren Park 2 Sameie, eller Lille Løren Park 3 Sameie. tinglyses med ideell andel 1/162.",
+              "Felleskostnader for garasjen er kr 600,‑ pr kvartal.",
+              "Det er foreløpig ikke gjesteparkering i garasjen.",
+              "Det tilfaller forretningsfører ett administrasjonsgebyr pr plass iht gjeldende prisliste."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              20,
+              19
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_008",
+            "description": "Løs ledningslist registrert på el-anlegget – indikasjon på ufullstendig utførelse",
+            "evidence": [
+              "Det er registrert løs ledningslist på det ene soverommet.",
+              "Anlegget er fra byggeår, og eier opplyser at det ikke er utført EL-arbeider siden da."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              45
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_008",
+            "description": "Løs ledningslist registrert på el-anlegget – indikasjon på ufullstendig utførelse",
+            "evidence": [
+              "Det er registrert løs ledningslist på det ene soverommet.",
+              "Anlegget er fra byggeår, og eier opplyser at det ikke er utført EL-arbeider siden da."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              45
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_009",
+            "description": "Arbeid på el-anlegget utført av ufaglært/egeninnsats – risiko for mangler ved elektrisk anlegg",
+            "evidence": [
+              "Kjenner du til om det er/har vært utført arbeid på el-anlegget eller andre installasjoner? Svar: Ja, av faglært og ufaglært/egeninnsats/dugnad. Beskrivelse: Spotter, dimmere. Skrudd opp lamper. Arbeid utført av Flyt elektro."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              22,
+              34
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_009",
+            "description": "Arbeid på el-anlegget utført av ufaglært/egeninnsats – risiko for mangler ved elektrisk anlegg",
+            "evidence": [
+              "Kjenner du til om det er/har vært utført arbeid på el-anlegget eller andre installasjoner? Svar: Ja, av faglært og ufaglært/egeninnsats/dugnad. Beskrivelse: Spotter, dimmere. Skrudd opp lamper. Arbeid utført av Flyt elektro."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              22,
+              34
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_010",
+            "description": "Ingen formuesverdi funnet – usikkerhet rundt skattemessig verdsettelse",
+            "evidence": [
+              "Info om formuesverdi: Ingen formuesverdi funnet.",
+              "Skatteetaten beregner en boligverdi (beregnet markedsverdi for bolig) basert på SSBs statistiske opplysninger om omsatte boliger."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "confidence": 0.75,
+            "details": {
+              "confidence": 0.75
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_010",
+            "description": "Ingen formuesverdi funnet – usikkerhet rundt skattemessig verdsettelse",
+            "evidence": [
+              "Info om formuesverdi: Ingen formuesverdi funnet.",
+              "Skatteetaten beregner en boligverdi (beregnet markedsverdi for bolig) basert på SSBs statistiske opplysninger om omsatte boliger."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              19
+            ],
+            "details": {
+              "confidence": 0.75
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_011",
+            "description": "Utbyggingsprosjektet Lille Løren Park er ikke ferdigstilt – sameiet er forpliktet til å medvirke til utbyggers arbeider og avgi fellesarealer midlertidig",
+            "evidence": [
+              "Inntil utbyggingsprosjektet 'Lille Løren Park' er ferdig utbygget, er sameiet og seksjonseierne forpliktet til å yte nødvendig medvirkning til at utbygger, evt den utbygger utpeker, kan gjennomføre en helhetlig utbygging.",
+              "Sameiet er herunder forpliktet til å la utbygger/selger vederlagsfritt benytte deler av sameiets utvendige fellesarealer midlertidig for adkomst, plassering lagring av utstyr/rigg med mer som er nødvendig i anleggsperioden.",
+              "Denne vedtektsbestemmelsen kan ikke endres uten samtykke fra utbygger eller utbyggers rettsetterfølger."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              59,
+              60
+            ],
+            "confidence": 0.92,
+            "details": {
+              "confidence": 0.92
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_011",
+            "description": "Utbyggingsprosjektet Lille Løren Park er ikke ferdigstilt – sameiet er forpliktet til å medvirke til utbyggers arbeider og avgi fellesarealer midlertidig",
+            "evidence": [
+              "Inntil utbyggingsprosjektet 'Lille Løren Park' er ferdig utbygget, er sameiet og seksjonseierne forpliktet til å yte nødvendig medvirkning til at utbygger, evt den utbygger utpeker, kan gjennomføre en helhetlig utbygging.",
+              "Sameiet er herunder forpliktet til å la utbygger/selger vederlagsfritt benytte deler av sameiets utvendige fellesarealer midlertidig for adkomst, plassering lagring av utstyr/rigg med mer som er nødvendig i anleggsperioden.",
+              "Denne vedtektsbestemmelsen kan ikke endres uten samtykke fra utbygger eller utbyggers rettsetterfølger."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              59,
+              60
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_012",
+            "description": "Store utfordringer med heisene siden innflytting – gjentatte feil og reklamasjoner",
+            "evidence": [
+              "Det har vært store utfordringer med heisene siden innflytting i juni, spesielt heisen i 45C.",
+              "Styret fikk da beskjed om at det var masse feil med heisene tross alle Schindler [reklamasjoner].",
+              "Honorar, Heiskonsulenten AS -19 556 (konsulenthonorar i regnskapet)"
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              73,
+              77
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_012",
+            "description": "Store utfordringer med heisene siden innflytting – gjentatte feil og reklamasjoner",
+            "evidence": [
+              "Det har vært store utfordringer med heisene siden innflytting i juni, spesielt heisen i 45C.",
+              "Styret fikk da beskjed om at det var masse feil med heisene tross alle Schindler [reklamasjoner].",
+              "Honorar, Heiskonsulenten AS -19 556 (konsulenthonorar i regnskapet)"
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              73,
+              77
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_013",
+            "description": "Innbrudd i boder registrert – sikkerhetsproblem i garasje/boder",
+            "evidence": [
+              "Styret fikk inn totalt 4 tilfeller hvor det hadde blitt innbrudd i bod og hvor hengelås var [brutt].",
+              "Det ble vurdert flere tiltak for å forhindre/forebygge fremtidige innbrudd."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              75
+            ],
+            "confidence": 0.82,
+            "details": {
+              "confidence": 0.82
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_013",
+            "description": "Innbrudd i boder registrert – sikkerhetsproblem i garasje/boder",
+            "evidence": [
+              "Styret fikk inn totalt 4 tilfeller hvor det hadde blitt innbrudd i bod og hvor hengelås var [brutt].",
+              "Det ble vurdert flere tiltak for å forhindre/forebygge fremtidige innbrudd."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              75
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_014",
+            "description": "Trafikkfarlige forhold ved gangvei foran inngang til Sinsenveien 45C – nesten-ulykker rapportert",
+            "evidence": [
+              "Det var mye kjøring i forbindelse med innflytting, og Velforeningen hadde forståelse for dette. Likevel vitnet de til flere nesten-ulykker hvor små barn nesten blir truffet av ryggene flyttebiler osv.",
+              "Etter at veien mellom LLP1 og LLP2 har blitt åpnet, så har biltrafikken flyttet seg fra [gangveien], men dette fikk vi beskjed om ikke var nødvendig [å sette opp bom]."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              74
+            ],
+            "confidence": 0.78,
+            "details": {
+              "confidence": 0.78
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_014",
+            "description": "Trafikkfarlige forhold ved gangvei foran inngang til Sinsenveien 45C – nesten-ulykker rapportert",
+            "evidence": [
+              "Det var mye kjøring i forbindelse med innflytting, og Velforeningen hadde forståelse for dette. Likevel vitnet de til flere nesten-ulykker hvor små barn nesten blir truffet av ryggene flyttebiler osv.",
+              "Etter at veien mellom LLP1 og LLP2 har blitt åpnet, så har biltrafikken flyttet seg fra [gangveien], men dette fikk vi beskjed om ikke var nødvendig [å sette opp bom]."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              74
+            ],
+            "details": {
+              "confidence": 0.78
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_015",
+            "description": "Korttidsutleie begrenset til 60 døgn per år i henhold til sameiets vedtekter – strengere enn lovens standard",
+            "evidence": [
+              "I sameiets vedtekter er grensen satt til 60. Med korttidsutleie menes utleie i en sammenhengende periode på opptil 30 døgn.",
+              "Korttidsutleie av hele boligseksjonen i mer enn 60 døgn årlig er ikke tillatt."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              30,
+              53
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_015",
+            "description": "Korttidsutleie begrenset til 60 døgn per år i henhold til sameiets vedtekter – strengere enn lovens standard",
+            "evidence": [
+              "I sameiets vedtekter er grensen satt til 60. Med korttidsutleie menes utleie i en sammenhengende periode på opptil 30 døgn.",
+              "Korttidsutleie av hele boligseksjonen i mer enn 60 døgn årlig er ikke tillatt."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              30,
+              53
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_016",
+            "description": "Ingen radonmåling utført av selger – potensiell helserisiko ikke avklart",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Boligen ligger minimum tre etasjer over bakkenivå og radonmålinger er ikke relevant. (tilstandsrapport)"
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              31,
+              40
+            ],
+            "confidence": 0.65,
+            "details": {
+              "confidence": 0.65
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_016",
+            "description": "Ingen radonmåling utført av selger – potensiell helserisiko ikke avklart",
+            "evidence": [
+              "Selger har ikke utført radonmåling. Det er ikke krav om dette med mindre boligen er helt eller delvis utleid.",
+              "Boligen ligger minimum tre etasjer over bakkenivå og radonmålinger er ikke relevant. (tilstandsrapport)"
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              31,
+              40
+            ],
+            "details": {
+              "confidence": 0.65
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_017",
+            "description": "Fremtidige reguleringsplaner åpner for variert bebyggelse og anlegg i nærområdet – usikkerhet om omgivelsene",
+            "evidence": [
+              "Bebyggelse og anlegg (fremtidig): Området er avsatt til fremtidig bebyggelse og anlegg. Det kan være boligbebyggelse, fritidsbebyggelse, sentrumsformål, kjøpesenter, forretninger, bebyggelse for offentlig eller privat tjenesteyting, fritids- og turistformål, råstoffutvinning, næringsbebyggelse, idrettsanlegg, andre typer anlegg, uteoppholdsarealer og grav- og urnelunder."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              23
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_017",
+            "description": "Fremtidige reguleringsplaner åpner for variert bebyggelse og anlegg i nærområdet – usikkerhet om omgivelsene",
+            "evidence": [
+              "Bebyggelse og anlegg (fremtidig): Området er avsatt til fremtidig bebyggelse og anlegg. Det kan være boligbebyggelse, fritidsbebyggelse, sentrumsformål, kjøpesenter, forretninger, bebyggelse for offentlig eller privat tjenesteyting, fritids- og turistformål, råstoffutvinning, næringsbebyggelse, idrettsanlegg, andre typer anlegg, uteoppholdsarealer og grav- og urnelunder."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              23
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_018",
+            "description": "Selger har kun eid boligen i ca. 1 år – begrenset kjennskap til eventuelle skjulte feil og mangler",
+            "evidence": [
+              "Når kjøpte du boligen? År 2024. Hvor lenge har du eid boligen? Antall år 1, Antall måneder 0.",
+              "Har du bodd i boligen siste 12 måneder? Ja."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              34
+            ],
+            "confidence": 0.72,
+            "details": {
+              "confidence": 0.72
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_018",
+            "description": "Selger har kun eid boligen i ca. 1 år – begrenset kjennskap til eventuelle skjulte feil og mangler",
+            "evidence": [
+              "Når kjøpte du boligen? År 2024. Hvor lenge har du eid boligen? Antall år 1, Antall måneder 0.",
+              "Har du bodd i boligen siste 12 måneder? Ja."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              34
+            ],
+            "details": {
+              "confidence": 0.72
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_019",
+            "description": "Boligselgerforsikring begrenset oppad til kr 14 000 000 – lavere enn prisantydning på kr 16 800 000",
+            "evidence": [
+              "Selger har tegnet boligselgerforsikring som dekker selgers ansvar etter avhendingsloven begrenset oppad kr. 14 000 000,‑.",
+              "Prisantydning: Kr 16 800 000"
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              31,
+              4
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_019",
+            "description": "Boligselgerforsikring begrenset oppad til kr 14 000 000 – lavere enn prisantydning på kr 16 800 000",
+            "evidence": [
+              "Selger har tegnet boligselgerforsikring som dekker selgers ansvar etter avhendingsloven begrenset oppad kr. 14 000 000,‑.",
+              "Prisantydning: Kr 16 800 000"
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              31,
+              4
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_020",
+            "description": "Høye felleskostnader med risiko for ytterligere økning – budsjett 2025 viser vesentlig høyere kostnader enn regnskap 2024",
+            "evidence": [
+              "Felleskostnader kr 7 449,‑ pr. mnd",
+              "Budsjett 2025 SUM DRIFTSKOSTNADER: -3 749 000 mot regnskap 2024: -1 033 284",
+              "Budsjett 2025 kommunale avgifter: -980 000 mot regnskap 2024: -165 744",
+              "TV-anlegg/bredbånd budsjett 2025: -437 000 (ikke kostnadsført i 2024 grunnet manglende faktura)",
+              "Det gjøres oppmerksom på at sameiet kan motta fakturaer som gjelder kostnader i regnskapsåret 2024 i løpet av 2025."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              19,
+              71,
+              77
+            ],
+            "confidence": 0.93,
+            "details": {
+              "confidence": 0.93
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_020",
+            "description": "Høye felleskostnader med risiko for ytterligere økning – budsjett 2025 viser vesentlig høyere kostnader enn regnskap 2024",
+            "evidence": [
+              "Felleskostnader kr 7 449,‑ pr. mnd",
+              "Budsjett 2025 SUM DRIFTSKOSTNADER: -3 749 000 mot regnskap 2024: -1 033 284",
+              "Budsjett 2025 kommunale avgifter: -980 000 mot regnskap 2024: -165 744",
+              "TV-anlegg/bredbånd budsjett 2025: -437 000 (ikke kostnadsført i 2024 grunnet manglende faktura)",
+              "Det gjøres oppmerksom på at sameiet kan motta fakturaer som gjelder kostnader i regnskapsåret 2024 i løpet av 2025."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              19,
+              71,
+              77
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_021",
+            "description": "Eiendomsskatt ilagt sameiet i 2024 – kr 88 244 – til tross for at selger opplyser om ingen eiendomsskatt",
+            "evidence": [
+              "Boligen har ifølge selger ikke blitt ilagt eiendomsskatt for inneværende år.",
+              "Eiendomsskatt (note 7 i regnskapet): -88 244"
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              19,
+              77
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_021",
+            "description": "Eiendomsskatt ilagt sameiet i 2024 – kr 88 244 – til tross for at selger opplyser om ingen eiendomsskatt",
+            "evidence": [
+              "Boligen har ifølge selger ikke blitt ilagt eiendomsskatt for inneværende år.",
+              "Eiendomsskatt (note 7 i regnskapet): -88 244"
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              19,
+              77
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_022",
+            "description": "Mange tinglyste heftelser og rettigheter på eiendommen – kompleks heftelsessituasjon",
+            "evidence": [
+              "Tinglyste heftelser og rettigheter: På eiendommen er det tinglyst følgende heftelser og rettigheter som følger eiendommens matrikkel ved overskjøting til ny hjemmelshaver.",
+              "Heftelser inkluderer bestemmelser om vannledning (1904), veg (1916), vann/kloakkledning (1921), adkomstrett (2019), erklæringer/avtaler (2023, 2024), bestemmelse om teknisk infrastruktur, renovasjon, sykkelparkering, bruksrett og adkomstrett for drift og vedlikehold av anlegg/ledninger/kabler.",
+              "Rettigheter hefter i svært mange seksjoner (Bnr:545 Snr:1-100, Bnr:546 Snr:1-166, Bnr:544)."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_022",
+            "description": "Mange tinglyste heftelser og rettigheter på eiendommen – kompleks heftelsessituasjon",
+            "evidence": [
+              "Tinglyste heftelser og rettigheter: På eiendommen er det tinglyst følgende heftelser og rettigheter som følger eiendommens matrikkel ved overskjøting til ny hjemmelshaver.",
+              "Heftelser inkluderer bestemmelser om vannledning (1904), veg (1916), vann/kloakkledning (1921), adkomstrett (2019), erklæringer/avtaler (2023, 2024), bestemmelse om teknisk infrastruktur, renovasjon, sykkelparkering, bruksrett og adkomstrett for drift og vedlikehold av anlegg/ledninger/kabler.",
+              "Rettigheter hefter i svært mange seksjoner (Bnr:545 Snr:1-100, Bnr:546 Snr:1-166, Bnr:544)."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_023",
+            "description": "Takterrasse og balkong er utvendige konstruksjoner eksponert for vær – løpende vedlikeholdsbehov og slitasje over tid",
+            "evidence": [
+              "Som en utvendig konstruksjon eksponert for sol, regn, snø og temperatursvingninger, må det påregnes værrelatert slitasje over tid.",
+              "Takterrassen er målt til ca 104 m². Malt/beiset tregulv mot dekke.",
+              "Terrassen har samme solide utførelse som balkongen, med malt/beiset tregulv."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              40
+            ],
+            "confidence": 0.78,
+            "details": {
+              "confidence": 0.78
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_023",
+            "description": "Takterrasse og balkong er utvendige konstruksjoner eksponert for vær – løpende vedlikeholdsbehov og slitasje over tid",
+            "evidence": [
+              "Som en utvendig konstruksjon eksponert for sol, regn, snø og temperatursvingninger, må det påregnes værrelatert slitasje over tid.",
+              "Takterrassen er målt til ca 104 m². Malt/beiset tregulv mot dekke.",
+              "Terrassen har samme solide utførelse som balkongen, med malt/beiset tregulv."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              40
+            ],
+            "details": {
+              "confidence": 0.78
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_024",
+            "description": "Kjøkkenventilatorfilteret kan skape brannfare dersom det ikke rengjøres/skiftes regelmessig",
+            "evidence": [
+              "Eventuelle filter i kjøkkenventilatoren bør rengjøres/skiftes regelmessig for å unngå at fett fester seg og skaper brannfare."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              22,
+              44
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_024",
+            "description": "Kjøkkenventilatorfilteret kan skape brannfare dersom det ikke rengjøres/skiftes regelmessig",
+            "evidence": [
+              "Eventuelle filter i kjøkkenventilatoren bør rengjøres/skiftes regelmessig for å unngå at fett fester seg og skaper brannfare."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              22,
+              44
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d009_025",
+            "description": "Selger kan prioritere bud fra ikke-forbrukere fremfor forbrukere, noe som kan gi kjøper svakere rettsvern",
+            "evidence": [
+              "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud. Når kjøper ikke er forbruker, kan selgers ansvar begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              31
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d009_025",
+            "description": "Selger kan prioritere bud fra ikke-forbrukere fremfor forbrukere, noe som kan gi kjøper svakere rettsvern",
+            "evidence": [
+              "På grunn av ulike ansvarsforhold kan selger velge å prioritere bud fra ikke-forbrukere, selv om budet er lavere enn et forbrukerbud. Når kjøper ikke er forbruker, kan selgers ansvar begrenses ettersom boligen selges «som den er», noe som kan være av verdi for selger."
+            ],
+            "source_documents": [
+              "d009.pdf"
+            ],
+            "source_pages": [
+              31
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [],
+      "unmatched_ground_truth_risks": [],
+      "verified_unmatched": [],
+      "adjusted_metrics": null
+    }
+  },
+  "best_system": "ground_truth",
+  "statistical_tests": {
+    "standard_rag_vs_agentic_rag_P+T+R": 1.0,
+    "standard_rag_vs_ground_truth": 1.0,
+    "agentic_rag_P+T+R_vs_ground_truth": 1.0
+  },
+  "record_id": "e7f42d86-8b07-4246-b50a-9de18b18ca89",
+  "query": "Identifiser risikoer i salgsoppgaven",
+  "document_set_id": "d009",
+  "timestamp": "2026-03-23T12:35:51.899740",
+  "risk_summaries": [
+    {
+      "system_type": "standard_rag",
+      "total_risks": 13,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "agentic_rag_P+T+R",
+      "total_risks": 20,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "ground_truth",
+      "total_risks": 25,
+      "risks_by_category": {}
+    }
+  ],
+  "has_ground_truth": true,
+  "overlapping_risk_count": 11,
+  "unique_to": {
+    "standard_rag": 10,
+    "agentic_rag_P+T+R": 11,
+    "ground_truth": 15
+  },
+  "record_type": "comparison"
+}

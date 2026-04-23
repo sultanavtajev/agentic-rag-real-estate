@@ -1,0 +1,3236 @@
+{
+  "system_results": {
+    "standard_rag": {
+      "run_id": "9c4631dd-7454-4bfc-bc47-4dd5efb7aa9a",
+      "system_type": "standard_rag",
+      "overall_metrics": {
+        "precision": 0.36363636363636365,
+        "recall": 0.13793103448275862,
+        "f1": 0.2,
+        "total_support": 29
+      },
+      "matched_risks": 4,
+      "unmatched_predicted": 7,
+      "unmatched_ground_truth": 25,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "9c4631dd-7454-4bfc-bc47-4dd5efb7aa9a_risk_002",
+            "description": "Svertesopp i dusjsonen: Selger bekrefter i egenerklæringen at det er svertesopp i dusjsonen. Dette kan indikere fuktproblemer eller manglende vedlikehold av våtrom, og kan utvikle seg til mer alvorlige skader.",
+            "evidence": [
+              "Kjenner du til om det er/har vært feil tilknyttet våtrommene, f.eks. sprekker, lekkasje, råte, lukt eller soppskader? Ja",
+              "Beskrivelse noe svertesopp i dusjsonen"
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.92,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_002",
+            "description": "Svertesopp på badet – registrert i silikonfuger i dusjsonen",
+            "evidence": [
+              "Registrert svertesopp i silikonfuger i overgang gulv/vegg i dusjhjørne og fuger på gulv, dusjhjørne. (TG2)",
+              "Selger bekrefter i egenerklæring: 'noe svertesopp i dusjsonen'",
+              "Vask/rens av silikonfuger anbefalt som tiltak."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              64,
+              66,
+              77,
+              94
+            ],
+            "details": {
+              "confidence": 0.98
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "9c4631dd-7454-4bfc-bc47-4dd5efb7aa9a_risk_001",
+            "description": "Ventilator har passert halvparten av forventet teknisk levetid: Ventilatoren fungerer i dag, men mer enn halvparten av forventet levetid er passert. Dette innebærer risiko for snarlig havari og behov for utskifting, samt at tidspunkt for siste service og rengjøring av kanaler er ukjent.",
+            "evidence": [
+              "Ventilatoren fungerer i dag, men mer enn halvparten av forventet eldre teknisk levetid er passert.",
+              "Det er ikke kjent når kanaler sist ble rengjort og når det eventuelt sist ble utført service på anlegget.",
+              "Naturlig aldring av ventilator."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_006",
+            "description": "Kjøkkenventilator har passert mer enn halvparten av forventet teknisk levetid – risiko for funksjonssvikt",
+            "evidence": [
+              "Ventilatoren fungerer i dag, men mer enn halvparten av forventet teknisk levetid er passert. (TG2)",
+              "Årsak: Naturlig aldring av ventilator. Økt risiko for funksjonssvikt over tid. Redusert effektivitet og svakere avtrekk kan oppstå.",
+              "Normal levetid for kjøkkenventilator er 15-20 år."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              66,
+              95
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "9c4631dd-7454-4bfc-bc47-4dd5efb7aa9a_risk_004",
+            "description": "Pågående byutvikling i Nydalen: Selger bekrefter at Nydalen er under utvikling. Dette kan medføre støy, støv og anleggsarbeid i nærområdet over tid, noe som kan påvirke bokvaliteten og eventuelt eiendomsverdien i byggeperioden.",
+            "evidence": [
+              "Ja, Nydalen er under utvikling. Se eventuelt prospekt for nærmere detaljer"
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_020",
+            "description": "Mange pågående byggesaker og reguleringsplaner i nærområdet – risiko for støy, anleggsarbeid og endrede omgivelser",
+            "evidence": [
+              "Nydalen er under utvikling. Se eventuelt prospekt for nærmere detaljer.",
+              "Saksnummer 202508077: Nydalsveien 20 A-C – 22 A-C – Oppføring av to boligblokker – Spikerverket bygg C-D. Status: Under behandling.",
+              "Saksnummer 202507975: Nydalsveien 18 A-B – oppføring av næringsbygg – Bygg E – Spikerverket. Status: Under behandling.",
+              "Saksnummer 202507973: Nydalsveien 24 – oppføring av næringsbygg – Bygg B – Spikerverket. Status: Under behandling.",
+              "Byggearbeider må derfor påregnes."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              64,
+              69,
+              79
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "9c4631dd-7454-4bfc-bc47-4dd5efb7aa9a_risk_000",
+            "description": "Elektrisk anlegg uten samsvarserklæring: Det er utført elektrisk arbeid i boligen som mangler samsvarserklæring. Dette innebærer at arbeidet ikke er dokumentert som forskriftsmessig utført, noe som kan medføre forsikringsrisiko og fremtidige utbedringskostnader.",
+            "evidence": [
+              "Det tas forbehold om at det kan være utført andre arbeider på det elektriske anlegget som ikke har samsvarserklæring.",
+              "varserklæring for det elektriske arbeidet i boligen."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_019",
+            "description": "Kondens i sikringsskap i 2024 – alle sikringer byttet, men underliggende årsak er uklar",
+            "evidence": [
+              "Vært noe kondens i sikringsskap i 2024. Byttet alle sikringer i 2024. Ingen kondens etter dette.",
+              "Arbeid utført av Elektrikkergruppen AS. Foreligger samsvarserklæring.",
+              "Det tas forbehold om at det kan være utført andre arbeider på det elektriske anlegget som ikke har samsvarserklæring."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              64,
+              78
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "9c4631dd-7454-4bfc-bc47-4dd5efb7aa9a_risk_003",
+          "description": "Eldre bygning med utdatert byggeskikk og forskrifter: Boligen er oppført i en periode med annen byggeskikk og andre forskrifter enn dagens krav. Dette innebærer risiko for at konstruksjoner og installasjoner ikke tilfredsstiller gjeldende krav, og at utbedringer kan bli kostbare.",
+          "evidence": [
+            "Ved salg av eiendommen er det viktig at kjøper er klar over at eldre bygninger er oppført i en periode med annen byggeskikk og andre forskrifter/regler enn de som gjelder i dag, de krav som gjelder i dag er normalt strengere."
+          ],
+          "source_documents": [
+            "d029_d029"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.88,
+          "details": {}
+        },
+        {
+          "risk_id": "9c4631dd-7454-4bfc-bc47-4dd5efb7aa9a_risk_005",
+          "description": "Manglende radonmåling: Det er ikke bekreftet at det er foretatt radonmåling i boligen. Radon er en usynlig og luktfri gass som kan utgjøre en helserisiko ved forhøyede konsentrasjoner innendørs.",
+          "evidence": [
+            "Er det foretatt radonmåling? Nei Ja"
+          ],
+          "source_documents": [
+            "d029_d029"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.7,
+          "details": {}
+        },
+        {
+          "risk_id": "9c4631dd-7454-4bfc-bc47-4dd5efb7aa9a_risk_006",
+          "description": "Kjøpers ansvar for å sette seg inn i dokumentasjonen: Kjøper anses som kjent med alle opplysninger som fremgår tydelig av salgsdokumentene, uavhengig av om disse er lest. Dette innebærer en risiko for kjøper dersom viktige opplysninger om feil og mangler overses i dokumentgjennomgangen.",
+          "evidence": [
+            "Kjøper anses for å være kjent med forhold som er tydelig beskrevet i salgsdokumentene, slike forhold kan ikke senere gjøres gjeldende som en mangel ved boligen. Dette gjelder uavhengig av om dokumentene er lest."
+          ],
+          "source_documents": [
+            "d029_d029"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.85,
+          "details": {}
+        },
+        {
+          "risk_id": "9c4631dd-7454-4bfc-bc47-4dd5efb7aa9a_risk_007",
+          "description": "Risiko ved kort akseptfrist i budrunden: Bud med svært korte akseptfrister kan hindre forsvarlig avvikling av budrunden, og megler vil fraråde slike bud. Kjøper risikerer å tape budet eller havne i en situasjon der viktige vurderinger ikke rekker å bli gjort.",
+          "evidence": [
+            "Akseptfrist bør derfor være på minimum 30 minutter, og budforhøyelser bør skje senest 10 minutter før fristens utløp.",
+            "Dersom bud inngis med en frist som åpenbart er for kort til at megleren kan avvikle budrunden på en forsvarlig måte, vil megler fraråde budet."
+          ],
+          "source_documents": [
+            "d029_d029"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.75,
+          "details": {}
+        },
+        {
+          "risk_id": "9c4631dd-7454-4bfc-bc47-4dd5efb7aa9a_risk_008",
+          "description": "Risiko for heving og dekningssalg ved kjøpers mislighold: Dersom kjøper ikke gjennomfører betalingen eller oppfyller sine forpliktelser, kan selger heve avtalen og gjennomføre dekningssalg for kjøpers regning. Dette er en vesentlig finansiell risiko for kjøper.",
+          "evidence": [
+            "Dersom kjøper ikke bidrar til at avtalen gjennomføres eller blir forsinket, er dette et mislighold fra kjøpers side. Et vesentlig mislighold kan gi selger rett til å heve avtalen og til å gjennomføre dekningssalg for kjøpers regning."
+          ],
+          "source_documents": [
+            "d029_d029"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.82,
+          "details": {}
+        },
+        {
+          "risk_id": "9c4631dd-7454-4bfc-bc47-4dd5efb7aa9a_risk_009",
+          "description": "Betalingsbetingelser – kun norsk bankkonto akseptert: Hele oppgjøret må betales samlet fra én norsk bankkonto, og overføringer fra utlandet er ikke akseptert. Dette kan være en risiko for kjøpere med utenlandsk bankforbindelse eller sammensatt finansiering.",
+          "evidence": [
+            "Hele oppgjøret må betales samlet fra en norsk bankkonto. Overføringer fra utlandet"
+          ],
+          "source_documents": [
+            "d029_d029"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.78,
+          "details": {}
+        },
+        {
+          "risk_id": "9c4631dd-7454-4bfc-bc47-4dd5efb7aa9a_risk_010",
+          "description": "Selgers boligselgerforsikring dekker ikke alle situasjoner: Forsikringen er begrenset oppad til kr 20 000 000, og forsikringsselskapet kan søke regress eller redusere sitt ansvar dersom selger har gitt ufullstendige, uriktige eller misvisende opplysninger. Dette kan svekke kjøpers reelle rettsvern.",
+          "evidence": [
+            "Boligselgerforsikring: Selger har tegnet boligselgerforsikring som dekker selgers ansvar etter avhendingsloven begrenset oppad kr. 20 000 000,-.",
+            "dersom jeg har gitt ufullstendige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis."
+          ],
+          "source_documents": [
+            "d029_d029"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d029_001",
+          "description": "Manglende ferdigattest – kun midlertidig brukstillatelse fra 2007",
+          "evidence": [
+            "Det foreligger midlertidig brukstillatelse for eiendommen fra 2007.",
+            "Anmodning om ferdigattest er sendt, og besvart av Oslo kommune 2010: 'Vi vil derfor fremdeles kreve at Nydalen Alle` og Nydalsveien skal være overtatt av kommunen før ferdigattest blir utstedt.'",
+            "Det har skjedd lite i saken siden 2010. Saken er p.d.d. ikke henlagt.",
+            "Mangler kontrollerklæring fra foretakene EDB Nils Nilsen AS og Håkanes Maskin AS."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            61,
+            62
+          ],
+          "details": {
+            "confidence": 0.99
+          }
+        },
+        {
+          "risk_id": "gt_d029_003",
+          "description": "Membran/tettesjikt på bad har passert mer enn halvparten av forventet brukstid – risiko for vannlekkasje",
+          "evidence": [
+            "Mer enn halvparten av forventet brukstid er passert på membranløsningen. (TG2)",
+            "Eldre membraner kan bli sprø og sprekke opp, noe som fører til at de mister sin vanntettende funksjon. Dette kan resultere i vannlekkasjer gjennom vegger og gulv og fuktskader.",
+            "Hulltaking er ikke utført da våtrommet er en prefabrikkert kabin/modul – tilliggende konstruksjoner er TGIU (ikke undersøkt)."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            66,
+            94
+          ],
+          "details": {
+            "confidence": 0.97
+          }
+        },
+        {
+          "risk_id": "gt_d029_004",
+          "description": "Tilliggende konstruksjoner bak våtsone ikke undersøkt (TGIU) – skjulte feil kan foreligge",
+          "evidence": [
+            "Hulltaking er ikke utført da våtrommet er en prefabrikkert kabin/modul. Det er pga bygningsmessige hindringer ikke fysisk mulig å foreta hulltaking i vegg bak våtsone. TGIU gitt ut ifra manglende mulighet for hulltaking.",
+            "Disse delene kan dermed ha feil eller mangler som ikke er avdekket."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            66,
+            95
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d029_005",
+          "description": "Innebygget sisterne uten tilfredsstillende lekkasjesikring – risiko for skjult vannlekkasje",
+          "evidence": [
+            "Det er ikke påvist tilfredsstillende løsning for å synliggjøre lekkasje fra innebygget sisterne. (TG2)",
+            "Noe påbegynnende svelling på dekksiden til servantinnredningen.",
+            "Ved implementering av innebygget sisterne var det ikke krav om lekkasjesikring, konstruksjonen bør jevnlig observeres."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            66,
+            94
+          ],
+          "details": {
+            "confidence": 0.93
+          }
+        },
+        {
+          "risk_id": "gt_d029_007",
+          "description": "Rekkverkshøyde på balkong er for lav i forhold til dagens krav – HMS-avvik",
+          "evidence": [
+            "Rekkverket på balkong eller terrasse er for lavt i forhold til dagens krav.",
+            "Rekkverk = 1,14 m.",
+            "Det er ikke krav om utbedring av rekkverkshøyde opp til dagens forskriftskrav, men forholdet er flagget som HMS-avvik."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            66,
+            92,
+            97
+          ],
+          "details": {
+            "confidence": 0.97
+          }
+        },
+        {
+          "risk_id": "gt_d029_008",
+          "description": "Pågående ulovlighetssaker på eiendommen (Nydalen allé 17) – mulig ulovlig bruksendring til massasjestudio og legekontor",
+          "evidence": [
+            "Saksnummer 202504888: Nydalen allé 17 – ulovlig bruksendring til massasjestudio. Status: Under behandling.",
+            "Saksnummer 202506424: Nydalen allé 17 – mulig ulovlig bruksendring av lokale til legekontor. Status: Under behandling.",
+            "Saksnummer 202512650: Nydalen allé 17 – bruksendring av lokale fra butikk til legekontor. Status: Under behandling."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            69
+          ],
+          "details": {
+            "confidence": 0.98
+          }
+        },
+        {
+          "risk_id": "gt_d029_009",
+          "description": "Svak fall utenfor dusjsonen på badet – økt risiko for vannansamling",
+          "evidence": [
+            "Noe svak fall utenfor dusjsonen. (TG2)",
+            "Dette kan potensielt øke risikoen for vannansamling i enkelte områder av badet."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            66,
+            94
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d029_010",
+          "description": "Stedvise merker og glipper på parkett i stue og kjøkken – vedlikehold og oppgradering må påregnes",
+          "evidence": [
+            "Stedvis merker / glipper på parkett i stue og kjøkken. (TG2)",
+            "Generelt vedlikehold og oppgradering må påregnes."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            66,
+            93
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d029_011",
+          "description": "Isolerglassvinduer og balkongdør fra 2006 nærmer seg forventet levetid – risiko for kondensering og utskifting",
+          "evidence": [
+            "Leiligheten har malte trevinduer med 2-lags isolerglass fra 2006.",
+            "Normal tid før utskifting av isolerglass er 15-20 år.",
+            "Normal tid før utskifting av vindusrammer i tre er 20-60 år."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            65,
+            89,
+            93
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d029_012",
+          "description": "Sameiet hadde negativt årsresultat i 2024 (NOK -248 203) og redusert egenkapital – økonomirisiko",
+          "evidence": [
+            "Årsresultat endte på NOK -248 203.",
+            "Hovedgrunnen til underskuddet skyldes økte kostnader til Solsiden Utomhus for alle sameiene fra januar 2024 fordelt på de respektive andelene på 19,53% av Solsiden Utomhussameie som ikke var inkludert i budsjettet.",
+            "Sparekonto har blitt redusert med NOK 250 000 i løpet av året for å dekke løpende kostnader.",
+            "Opptjent egenkapital per årsslutt var NOK 1 022 129."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            68,
+            136,
+            142
+          ],
+          "details": {
+            "confidence": 0.93
+          }
+        },
+        {
+          "risk_id": "gt_d029_013",
+          "description": "Ingen vedlikeholdsplan for sameiet – fremtidige kostnader og felleskostnadsøkninger er uforutsigbare",
+          "evidence": [
+            "Svar fra styre 11.03.2026: 'Det foreligger ingen vedlikeholdsplan for øyeblikket, men det kommer til å bli utarbeidet i løpet av de neste årene.'",
+            "'Det er gjort mye småting gjennom årene, men noen totaloversikt finnes ikke.'"
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            67
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d029_014",
+          "description": "Bindende strømavtale (Norgespris) med bindingstid til 31.12.2026 følger boligen og må overtas av kjøper",
+          "evidence": [
+            "Nåværende eier har tegnet avtale om Norgespris på strøm, og avtalen har bindingstid til 31.12.2026. Avtalen følger boligen, og må derfor overtas av kjøper.",
+            "Norgespris er en ny, statlig ordning, som gir en forutsigbar og fast strømpris på 50 øre per kWh med mva. Når det er tegnet avtale om Norgespris bortfaller eventuell strømstøtte."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            68
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d029_015",
+          "description": "Boligen har vært utleid – selger har ikke oversikt over strømforbruk, og slitasje kan være høyere enn normalt",
+          "evidence": [
+            "Selger har ikke oversikt over det årlige strømforbruket da boligen har vært leid ut.",
+            "Leiligheten har vært benyttet til utleie. (fra tilstandsrapporten)"
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            68,
+            93
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d029_016",
+          "description": "Kjøkkenet leveres uten kjøleskap – kjøper må selv anskaffe dette",
+          "evidence": [
+            "Hvitevarer medfølger. Leiligheten overleveres uten kjøleskap."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            63
+          ],
+          "details": {
+            "confidence": 0.99
+          }
+        },
+        {
+          "risk_id": "gt_d029_017",
+          "description": "Kursene i rørskapet er ikke merket – vanskelig å identifisere vannkretser ved feil",
+          "evidence": [
+            "Merknad: Kursene i rørskapet er ikke merket."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            90,
+            95
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d029_018",
+          "description": "Ventilasjonskanalenes rengjøringshistorikk er ukjent – risiko for dårlig inneklima",
+          "evidence": [
+            "Det er ikke kjent når kanaler sist ble rengjort og når det eventuelt sist ble utført service på anlegget."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            90,
+            95
+          ],
+          "details": {
+            "confidence": 0.82
+          }
+        },
+        {
+          "risk_id": "gt_d029_021",
+          "description": "Bod i kjeller er ikke seksjonert som tilleggsdel – kan omdisponeres av sameiet",
+          "evidence": [
+            "Rom som ligger utenfor boenheten, men som er opplyst å tilhøre enheten, er oppmålt og inkludert i bruksarealet (BRA). Rom utenfor boenheten (som ikke er seksjonert) kan omdisponeres av borettslaget eller sameiet og dette kan påvirke boligens BRA.",
+            "Det er ikke fremvist dokumentasjon på at rommet tilhører boenheten."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            62,
+            99
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d029_022",
+          "description": "Sameiet eier ikke egne garasjeplasser – parkering kun via leie med ansiennitetsliste, ingen garanti for plass",
+          "evidence": [
+            "Sameiet eier ikke egne garasjeplasser, men har tinglyst rett til leie av 44 plasser i Nydalen P-hus Solsiden parkeringsanlegg. Leie av plass fordeles etter ansiennitet i henhold til en liste som føres av styret."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            61,
+            108
+          ],
+          "details": {
+            "confidence": 0.93
+          }
+        },
+        {
+          "risk_id": "gt_d029_023",
+          "description": "Tinglyst heftelse – eiendommen kan ikke disponeres over uten samtykke fra Emera No1 AS (meglerforetaket)",
+          "evidence": [
+            "11.03.2026 – Dokumentnr: 280504 – Registerenheten kan ikke disponeres over uten samtykke fra rettighetshaver. Rettighetshaver: Emera No1 AS, Org.nr: 934 963 385."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            70
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d029_024",
+          "description": "Tinglyst plikt til å varsle kommunen ved bygge- og gravearbeid på grunn av forurensede masser",
+          "evidence": [
+            "24.08.2006 – Dokumentnr: 398000 – Erklæring/avtale. Gjelder plikt til å varsle Kommunen ved evt. bygge- og gravearbeid på grunn av forurensede masser. Kan ikke slettes uten samtykke fra Oslo Kommune."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            70
+          ],
+          "details": {
+            "confidence": 0.9
+          }
+        },
+        {
+          "risk_id": "gt_d029_025",
+          "description": "Liten leilighet (26 m² BRA-i) uten soverom – begrenset videresalgsmarked og finansieringsutfordringer",
+          "evidence": [
+            "BRA-i: 26 m²",
+            "Antall soverom: 0",
+            "Planløsningen er åpen og binder soveplass, stue og kjøkken sammen."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            6,
+            62,
+            63
+          ],
+          "details": {
+            "confidence": 0.8
+          }
+        },
+        {
+          "risk_id": "gt_d029_026",
+          "description": "Luftebalkong er svært liten (ca. 0,7 m²) – begrenset praktisk bruksverdi",
+          "evidence": [
+            "Luftebalkong på ca. 0,7 m² med utgang fra kjøkken.",
+            "TBA: 1 m²"
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            62,
+            65,
+            89
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d029_027",
+          "description": "Solsiden Utomhussameie hadde stort underskudd i 2023 (NOK -739 843) og økte kostnader i 2024 – risiko for fremtidige felleskostnadsøkninger",
+          "evidence": [
+            "Solsiden Utomhus Sameie: Årsresultat 2023: -739 843. Årsresultat 2024: +123 240.",
+            "Energi/fyring 2024: NOK -4 513 777 (mot budsjett NOK -4 400 000).",
+            "Budsjett 2025 for Solsiden Utomhus viser økte kostnader på NOK 13 276 020 mot inntekter på NOK 13 120 000 – budsjettert underskudd på NOK -156 020."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            128,
+            136
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d029_028",
+          "description": "Waterguard (automatisk stenging av vanntilførsel) og komfyrvakt mangler – anbefalt av takstmann",
+          "evidence": [
+            "Det anbefales at det ettermonteres en waterguard (automatisk stenging av vanntilførsel ved vannlekkasje) for å unngå vannskader ved en evt. lekkasje.",
+            "Det anbefales å ettermontere komfyrvakt."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            89,
+            95
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d029_029",
+          "description": "Eiendomsskatt kan bli ilagt i fremtiden – boligen er per i dag ikke ilagt eiendomsskatt, men Oslo kommune har ordning for boliger over fastsatt verdi",
+          "evidence": [
+            "Boligen har ikke blitt ilagt eiendomsskatt for inneværende år.",
+            "I Oslo kommune er det eiendomsskatt på boliger og fast eiendom som overstiger en fastsatt verdi."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            59
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "9c4631dd-7454-4bfc-bc47-4dd5efb7aa9a_risk_003",
+            "description": "Eldre bygning med utdatert byggeskikk og forskrifter: Boligen er oppført i en periode med annen byggeskikk og andre forskrifter enn dagens krav. Dette innebærer risiko for at konstruksjoner og installasjoner ikke tilfredsstiller gjeldende krav, og at utbedringer kan bli kostbare.",
+            "evidence": [
+              "Ved salg av eiendommen er det viktig at kjøper er klar over at eldre bygninger er oppført i en periode med annen byggeskikk og andre forskrifter/regler enn de som gjelder i dag, de krav som gjelder i dag er normalt strengere."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Dokumentet nevner riktignok setningen om eldre bygninger og annen byggeskikk, men dette er hentet fra tilstandsrapporten under avsnittet om tekniske installasjoner/ventilasjon som en generell merknad. Boligen er imidlertid oppført i 2007 – et relativt moderne bygg – og tilstandsrapporten bekrefter at 'Bygningen er oppført i henhold til normal byggeskikk på oppføringstidspunktet.' Det er ingen TG3-avvik, og bygget er ikke gammelt nok til at risikoen for utdatert byggeskikk er reell. Sitatet brukes som en standardformulering i rapporten, ikke som en spesifikk advarsel om dette bygget."
+        },
+        {
+          "risk": {
+            "risk_id": "9c4631dd-7454-4bfc-bc47-4dd5efb7aa9a_risk_005",
+            "description": "Manglende radonmåling: Det er ikke bekreftet at det er foretatt radonmåling i boligen. Radon er en usynlig og luktfri gass som kan utgjøre en helserisiko ved forhøyede konsentrasjoner innendørs.",
+            "evidence": [
+              "Er det foretatt radonmåling? Nei Ja"
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "is_real_risk": false,
+          "reasoning": "Egenerklæringsskjemaet viser at spørsmål 21 'Er det foretatt radonmåling?' er besvart med 'Nei'. Imidlertid opplyser salgsoppgaven eksplisitt at 'Leiligheten ligger i 7. etasje. I leiligheter som ligger i tredje etasje eller høyere, er det som hovedregel ikke nødvendig å måle radonverdier.' Dokumentet gir dermed en klar begrunnelse for hvorfor radonmåling ikke er foretatt, og risikoen er ikke reell for denne boligen."
+        },
+        {
+          "risk": {
+            "risk_id": "9c4631dd-7454-4bfc-bc47-4dd5efb7aa9a_risk_006",
+            "description": "Kjøpers ansvar for å sette seg inn i dokumentasjonen: Kjøper anses som kjent med alle opplysninger som fremgår tydelig av salgsdokumentene, uavhengig av om disse er lest. Dette innebærer en risiko for kjøper dersom viktige opplysninger om feil og mangler overses i dokumentgjennomgangen.",
+            "evidence": [
+              "Kjøper anses for å være kjent med forhold som er tydelig beskrevet i salgsdokumentene, slike forhold kan ikke senere gjøres gjeldende som en mangel ved boligen. Dette gjelder uavhengig av om dokumentene er lest."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder eksplisitt følgende tekst: 'Kjøper anses for å være kjent med forhold som er tydelig beskrevet i salgsdokumentene, slike forhold kan ikke senere gjøres gjeldende som en mangel ved boligen. Dette gjelder uavhengig av om dokumentene er lest.' Dette bekrefter direkte risikoen som er beskrevet."
+        },
+        {
+          "risk": {
+            "risk_id": "9c4631dd-7454-4bfc-bc47-4dd5efb7aa9a_risk_007",
+            "description": "Risiko ved kort akseptfrist i budrunden: Bud med svært korte akseptfrister kan hindre forsvarlig avvikling av budrunden, og megler vil fraråde slike bud. Kjøper risikerer å tape budet eller havne i en situasjon der viktige vurderinger ikke rekker å bli gjort.",
+            "evidence": [
+              "Akseptfrist bør derfor være på minimum 30 minutter, og budforhøyelser bør skje senest 10 minutter før fristens utløp.",
+              "Dersom bud inngis med en frist som åpenbart er for kort til at megleren kan avvikle budrunden på en forsvarlig måte, vil megler fraråde budet."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder begge de siterte tekstene: 'Akseptfrist bør derfor være på minimum 30 minutter, og budforhøyelser bør skje senest 10 minutter før fristens utløp' og 'Dersom bud inngis med en frist som åpenbart er for kort til at megleren kan avvikle budrunden på en forsvarlig måte, vil megler fraråde budet.' Risikoen er direkte støttet av dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "9c4631dd-7454-4bfc-bc47-4dd5efb7aa9a_risk_008",
+            "description": "Risiko for heving og dekningssalg ved kjøpers mislighold: Dersom kjøper ikke gjennomfører betalingen eller oppfyller sine forpliktelser, kan selger heve avtalen og gjennomføre dekningssalg for kjøpers regning. Dette er en vesentlig finansiell risiko for kjøper.",
+            "evidence": [
+              "Dersom kjøper ikke bidrar til at avtalen gjennomføres eller blir forsinket, er dette et mislighold fra kjøpers side. Et vesentlig mislighold kan gi selger rett til å heve avtalen og til å gjennomføre dekningssalg for kjøpers regning."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder følgende tekst under avsnittet om hvitvasking: 'Hvis kjøper ikke bidrar til at megler får gjennomført kundetiltak og dette fører til at avtalen ikke kan gjennomføres eller blir forsinket, er dette et mislighold fra kjøpers side. Et vesentlig mislighold kan gi selger rett til å heve avtalen og til å gjennomføre dekningssalg for kjøpers regning.' Dette bekrefter risikoen direkte."
+        },
+        {
+          "risk": {
+            "risk_id": "9c4631dd-7454-4bfc-bc47-4dd5efb7aa9a_risk_009",
+            "description": "Betalingsbetingelser – kun norsk bankkonto akseptert: Hele oppgjøret må betales samlet fra én norsk bankkonto, og overføringer fra utlandet er ikke akseptert. Dette kan være en risiko for kjøpere med utenlandsk bankforbindelse eller sammensatt finansiering.",
+            "evidence": [
+              "Hele oppgjøret må betales samlet fra en norsk bankkonto. Overføringer fra utlandet"
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder følgende tekst: 'Hele oppgjøret må betales samlet fra en norsk bankkonto. Overføringer fra utlandet aksepteres kun unntaksvis, og kun dersom dette er forhåndsavtalt med megler i forbindelse med aksept av budet.' Dette bekrefter risikoen, selv om dokumentet åpner for unntak ved forhåndsavtale. Risikoen er reell for kjøpere med utenlandsk bankforbindelse."
+        },
+        {
+          "risk": {
+            "risk_id": "9c4631dd-7454-4bfc-bc47-4dd5efb7aa9a_risk_010",
+            "description": "Selgers boligselgerforsikring dekker ikke alle situasjoner: Forsikringen er begrenset oppad til kr 20 000 000, og forsikringsselskapet kan søke regress eller redusere sitt ansvar dersom selger har gitt ufullstendige, uriktige eller misvisende opplysninger. Dette kan svekke kjøpers reelle rettsvern.",
+            "evidence": [
+              "Boligselgerforsikring: Selger har tegnet boligselgerforsikring som dekker selgers ansvar etter avhendingsloven begrenset oppad kr. 20 000 000,-.",
+              "dersom jeg har gitt ufullstendige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet inneholder begge de siterte tekstene: 'Boligselgerforsikring: Selger har tegnet boligselgerforsikring som dekker selgers ansvar etter avhendingsloven begrenset oppad kr. 20 000 000,-' og fra egenerklæringsskjemaet: 'dersom jeg har gitt ufullstendige, uriktige eller misvisende opplysninger om eiendommen, vil forsikringsselskapet kunne søke hel eller delvis regress for sine utbetalinger eller redusere sitt ansvar helt eller delvis.' Begge forholdene er bekreftet i dokumentet."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 0.6666666666666666,
+        "recall": 0.13793103448275862,
+        "f1": 0.2285714285714286,
+        "total_support": 29
+      }
+    },
+    "agentic_rag_P+T+R": {
+      "run_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5",
+      "system_type": "agentic_rag_P+T+R",
+      "overall_metrics": {
+        "precision": 0.68,
+        "recall": 0.5862068965517241,
+        "f1": 0.6296296296296295,
+        "total_support": 29
+      },
+      "matched_risks": 17,
+      "unmatched_predicted": 8,
+      "unmatched_ground_truth": 12,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_000",
+            "description": "Svertesopp på bad: Det er registrert svertesopp i silikonfuger i overgang gulv/vegg i dusjhjørne og fuger på gulv. Dette indikerer fuktproblemer og kan medføre behov for utbedring.",
+            "evidence": [
+              "Registrert svertesopp i silikonfuger i overgang gulv/vegg i dusjhjørne og fuger på gulv, dusjhjørne.",
+              "Ja, noe svertesopp i dusjsonen.",
+              "Vask/rens av silikonfuger."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_002",
+            "description": "Svertesopp på badet – registrert i silikonfuger i dusjsonen",
+            "evidence": [
+              "Registrert svertesopp i silikonfuger i overgang gulv/vegg i dusjhjørne og fuger på gulv, dusjhjørne. (TG2)",
+              "Selger bekrefter i egenerklæring: 'noe svertesopp i dusjsonen'",
+              "Vask/rens av silikonfuger anbefalt som tiltak."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              64,
+              66,
+              77,
+              94
+            ],
+            "details": {
+              "confidence": 0.98
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_001",
+            "description": "Membran på bad har passert mer enn halvparten av forventet brukstid: Tettesjiktet/membranen på badet er gammelt og kan medføre risiko for vannlekkasje og fuktskader i fremtiden.",
+            "evidence": [
+              "Mer enn halvparten av forventet brukstid er passert på membranløsningen. Overvåk tilstanden jevnlig.",
+              "For å få tilstandsgrad 0 eller 1 må tettesjiktet skiftes ut, men tidspunktet for når dette er nødvendig er vanskelig å si noe om.",
+              "Det er viktig å merke seg at levetiden til en membran varierer basert på kvalitet, installasjon og bruk. Eldre membraner kan bli sprø og sprekke opp, noe som fører til at de mister sin vanntettende funksjon. Dette kan resultere i vannlekkasjer gjennom vegger og gulv og fuktskader."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_003",
+            "description": "Membran/tettesjikt på bad har passert mer enn halvparten av forventet brukstid – risiko for vannlekkasje",
+            "evidence": [
+              "Mer enn halvparten av forventet brukstid er passert på membranløsningen. (TG2)",
+              "Eldre membraner kan bli sprø og sprekke opp, noe som fører til at de mister sin vanntettende funksjon. Dette kan resultere i vannlekkasjer gjennom vegger og gulv og fuktskader.",
+              "Hulltaking er ikke utført da våtrommet er en prefabrikkert kabin/modul – tilliggende konstruksjoner er TGIU (ikke undersøkt)."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              66,
+              94
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_002",
+            "description": "Tilliggende konstruksjoner på bad er ikke undersøkt (TGIU): Hulltaking er ikke utført da våtrommet er en prefabrikkert kabin/modul, og det er bygningsmessige hindringer som gjør hulltaking fysisk umulig. Skjulte feil eller mangler kan dermed ikke utelukkes.",
+            "evidence": [
+              "Hulltaking er ikke utført da våtrommet er en prefabrikkert kabin/modul. Det er pga bygningsmessige hindringer ikke fysisk mulig å foreta hulltaking i vegg bak våtsone. TGIU gitt ut ifra manglende mulighet for hulltaking.",
+              "Disse delene kan dermed ha feil eller mangler som ikke er avdekket."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_004",
+            "description": "Tilliggende konstruksjoner bak våtsone ikke undersøkt (TGIU) – skjulte feil kan foreligge",
+            "evidence": [
+              "Hulltaking er ikke utført da våtrommet er en prefabrikkert kabin/modul. Det er pga bygningsmessige hindringer ikke fysisk mulig å foreta hulltaking i vegg bak våtsone. TGIU gitt ut ifra manglende mulighet for hulltaking.",
+              "Disse delene kan dermed ha feil eller mangler som ikke er avdekket."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              66,
+              95
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_003",
+            "description": "Rekkverket på luftebalkongen er for lavt i forhold til dagens krav: Rekkverkshøyden er 1,14 m, noe som er under dagens forskriftskrav. Dette utgjør en HMS-risiko.",
+            "evidence": [
+              "Rekkverket på balkong eller terrasse er for lavt i forhold til dagens krav.",
+              "Rekkverk = 1,14 m.",
+              "Det er ikke krav om utbedring av rekkverkshøyde opp til dagens forskriftskrav."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.95,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_007",
+            "description": "Rekkverkshøyde på balkong er for lav i forhold til dagens krav – HMS-avvik",
+            "evidence": [
+              "Rekkverket på balkong eller terrasse er for lavt i forhold til dagens krav.",
+              "Rekkverk = 1,14 m.",
+              "Det er ikke krav om utbedring av rekkverkshøyde opp til dagens forskriftskrav, men forholdet er flagget som HMS-avvik."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              66,
+              92,
+              97
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_004",
+            "description": "Kjøkkenventilator har passert mer enn halvparten av forventet teknisk levetid (TG2): Ventilatoren fungerer i dag, men naturlig aldring medfører økt risiko for funksjonssvikt og redusert avtrekkseffektivitet over tid.",
+            "evidence": [
+              "Ventilatoren fungerer i dag, men mer enn halvparten av forventet teknisk levetid er passert.",
+              "Årsak: Naturlig aldring av ventilator.",
+              "Konsekvens: Økt risiko for funksjonssvikt over tid. Redusert effektivitet og svakere avtrekk kan oppstå. Ved fremtidig kjøkkenrenovering må det påregnes utskifting av ventilator."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_006",
+            "description": "Kjøkkenventilator har passert mer enn halvparten av forventet teknisk levetid – risiko for funksjonssvikt",
+            "evidence": [
+              "Ventilatoren fungerer i dag, men mer enn halvparten av forventet teknisk levetid er passert. (TG2)",
+              "Årsak: Naturlig aldring av ventilator. Økt risiko for funksjonssvikt over tid. Redusert effektivitet og svakere avtrekk kan oppstå.",
+              "Normal levetid for kjøkkenventilator er 15-20 år."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              66,
+              95
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_005",
+            "description": "Stedvise merker og glipper på parkett i stue og kjøkken (TG2): Overflater har avvik fra normal slitasje, og generelt vedlikehold og oppgradering må påregnes.",
+            "evidence": [
+              "Stedvis merker / glipper på parkett i stue og kjøkken. Generelt vedlikehold og oppgradering må påregnes."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_010",
+            "description": "Stedvise merker og glipper på parkett i stue og kjøkken – vedlikehold og oppgradering må påregnes",
+            "evidence": [
+              "Stedvis merker / glipper på parkett i stue og kjøkken. (TG2)",
+              "Generelt vedlikehold og oppgradering må påregnes."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              66,
+              93
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_006",
+            "description": "Innebygget sisterne mangler tilfredsstillende løsning for å synliggjøre lekkasje: Det er ikke påvist tilfredsstillende løsning for å synliggjøre lekkasje fra innebygget sisterne, og noe påbegynnende svelling er registrert på dekksiden til servantinnredningen.",
+            "evidence": [
+              "Det er ikke påvist tilfredsstillende løsning for å synliggjøre lekkasje fra innebygget sisterne.",
+              "Noe påbegynnende svelling på dekksiden til servantinnredningen.",
+              "Ved implementering av innebygget sisterne var det ikke krav om lekkasjesikring, konstruksjonen bør jevnlig observeres."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_005",
+            "description": "Innebygget sisterne uten tilfredsstillende lekkasjesikring – risiko for skjult vannlekkasje",
+            "evidence": [
+              "Det er ikke påvist tilfredsstillende løsning for å synliggjøre lekkasje fra innebygget sisterne. (TG2)",
+              "Noe påbegynnende svelling på dekksiden til servantinnredningen.",
+              "Ved implementering av innebygget sisterne var det ikke krav om lekkasjesikring, konstruksjonen bør jevnlig observeres."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              66,
+              94
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_007",
+            "description": "Noe svak fall utenfor dusjsonen på badet: Gulvet har noe svak fall utenfor nedsenket dusjhjørne, noe som kan øke risikoen for vannansamling i enkelte områder av badet.",
+            "evidence": [
+              "Noe svak fall utenfor dusjsonen.",
+              "Til tross for avviket på fall utenfor nedsenket dusjhjørne, vil gulvet fortsatt kunne lede vann mot sluket, men med redusert effektivitet. Dette kan potensielt øke risikoen for vannansamling i enkelte områder av badet."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_009",
+            "description": "Svak fall utenfor dusjsonen på badet – økt risiko for vannansamling",
+            "evidence": [
+              "Noe svak fall utenfor dusjsonen. (TG2)",
+              "Dette kan potensielt øke risikoen for vannansamling i enkelte områder av badet."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              66,
+              94
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_008",
+            "description": "Manglende vedlikeholdsplan for sameiet: Sameiet har ingen vedlikeholdsplan per dags dato, noe som gir usikkerhet rundt fremtidige vedlikeholdskostnader og potensielle felleskostnadsøkninger.",
+            "evidence": [
+              "Det foreligger ingen vedlikeholdsplan for øyeblikket, men det kommer til å bli utarbeidet i løpet av de neste årene. Det er gjort mye småting gjennom årene, men noen totaloversikt finnes ikke."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_013",
+            "description": "Ingen vedlikeholdsplan for sameiet – fremtidige kostnader og felleskostnadsøkninger er uforutsigbare",
+            "evidence": [
+              "Svar fra styre 11.03.2026: 'Det foreligger ingen vedlikeholdsplan for øyeblikket, men det kommer til å bli utarbeidet i løpet av de neste årene.'",
+              "'Det er gjort mye småting gjennom årene, men noen totaloversikt finnes ikke.'"
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              67
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_010",
+            "description": "Negativt årsresultat i sameiet: Årsresultatet for sameiet endte på NOK -248 203, noe som kan indikere at felleskostnadene ikke er tilstrekkelige til å dekke løpende utgifter.",
+            "evidence": [
+              "Årsresultat endte på NOK -248 203.",
+              "Styret anser dermed en reduksjon i opptjent egenkapital tilsvarende underskuddet som uproblematisk."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_012",
+            "description": "Sameiet hadde negativt årsresultat i 2024 (NOK -248 203) og redusert egenkapital – økonomirisiko",
+            "evidence": [
+              "Årsresultat endte på NOK -248 203.",
+              "Hovedgrunnen til underskuddet skyldes økte kostnader til Solsiden Utomhus for alle sameiene fra januar 2024 fordelt på de respektive andelene på 19,53% av Solsiden Utomhussameie som ikke var inkludert i budsjettet.",
+              "Sparekonto har blitt redusert med NOK 250 000 i løpet av året for å dekke løpende kostnader.",
+              "Opptjent egenkapital per årsslutt var NOK 1 022 129."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              68,
+              136,
+              142
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_011",
+            "description": "Pågående byggesaker og utvikling i nærområdet (Nydalen): Det er flere pågående plansaker og byggesaker i nærområdet som kan medføre endringer i omgivelsene, støy, anleggsarbeid og endret nabolag.",
+            "evidence": [
+              "Ja, Nydalen er under utvikling. Se eventuelt prospekt for nærmere detaljer.",
+              "Saksnummer 202508077: Nydalsveien 20 A-C – 22 A-C – Oppføring av to boligblokker – Spikerverket bygg C-D. Status: Under behandling.",
+              "Saksnummer 201816207: Detaljregulering for Vitaminveien. Planforslag til politisk behandling – Opparbeidelse av gate. Status: Under behandling.",
+              "Nydalen har i mange år vært i sterk vekst og gjennomgår en kontinuerlig transformasjon."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.88,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_020",
+            "description": "Mange pågående byggesaker og reguleringsplaner i nærområdet – risiko for støy, anleggsarbeid og endrede omgivelser",
+            "evidence": [
+              "Nydalen er under utvikling. Se eventuelt prospekt for nærmere detaljer.",
+              "Saksnummer 202508077: Nydalsveien 20 A-C – 22 A-C – Oppføring av to boligblokker – Spikerverket bygg C-D. Status: Under behandling.",
+              "Saksnummer 202507975: Nydalsveien 18 A-B – oppføring av næringsbygg – Bygg E – Spikerverket. Status: Under behandling.",
+              "Saksnummer 202507973: Nydalsveien 24 – oppføring av næringsbygg – Bygg B – Spikerverket. Status: Under behandling.",
+              "Byggearbeider må derfor påregnes."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              64,
+              69,
+              79
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_012",
+            "description": "Pågående byggesaker på eiendommens adresse: Det er registrert pågående byggesaker direkte knyttet til Nydalen allé 17, herunder mulig ulovlig bruksendring av lokale til legekontor og bruksendring fra butikk til legekontor.",
+            "evidence": [
+              "Saksnummer 202506424: Nydalen allé 17 – mulig ulovlig bruksendring av lokale til legekontor. Status: Under behandling.",
+              "Saksnummer 202512650: Nydalen allé 17 – bruksendring av lokale fra butikk til legekontor. Status: Under behandling."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.9,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_008",
+            "description": "Pågående ulovlighetssaker på eiendommen (Nydalen allé 17) – mulig ulovlig bruksendring til massasjestudio og legekontor",
+            "evidence": [
+              "Saksnummer 202504888: Nydalen allé 17 – ulovlig bruksendring til massasjestudio. Status: Under behandling.",
+              "Saksnummer 202506424: Nydalen allé 17 – mulig ulovlig bruksendring av lokale til legekontor. Status: Under behandling.",
+              "Saksnummer 202512650: Nydalen allé 17 – bruksendring av lokale fra butikk til legekontor. Status: Under behandling."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              69
+            ],
+            "details": {
+              "confidence": 0.98
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_013",
+            "description": "Tinglyst erklæring om forurensede masser: Det er tinglyst en erklæring/avtale om plikt til å varsle kommunen ved bygge- og gravearbeid på grunn av forurensede masser. Denne kan ikke slettes uten samtykke fra Oslo Kommune.",
+            "evidence": [
+              "24.08.2006 – Dokumentnr: 398000 – Erklæring/avtale. Gjelder plikt til å varsle Kommunen ved evt. bygge- og gravearbeid på grunn av forurensede masser. Kan ikke slettes uten samtykke fra Oslo Kommune."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_024",
+            "description": "Tinglyst plikt til å varsle kommunen ved bygge- og gravearbeid på grunn av forurensede masser",
+            "evidence": [
+              "24.08.2006 – Dokumentnr: 398000 – Erklæring/avtale. Gjelder plikt til å varsle Kommunen ved evt. bygge- og gravearbeid på grunn av forurensede masser. Kan ikke slettes uten samtykke fra Oslo Kommune."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              70
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_014",
+            "description": "Kjellerbod er ikke seksjonert og kan omdisponeres av sameiet: Boden på ca. 5 m² i kjelleren er ikke seksjonert som en del av boenheten, og kan i prinsippet omdisponeres av sameiet, noe som kan påvirke boligens BRA og bruksverdi.",
+            "evidence": [
+              "Rom som ligger utenfor boenheten, men som er opplyst å tilhøre enheten, er oppmålt og inkludert i bruksarealet (BRA). Det er ikke fremvist dokumentasjon på at rommet tilhører boenheten. Rom utenfor boenheten (som ikke er seksjonert) kan omdisponeres av borettslaget eller sameiet og dette kan påvirke boligens BRA."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.85,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_021",
+            "description": "Bod i kjeller er ikke seksjonert som tilleggsdel – kan omdisponeres av sameiet",
+            "evidence": [
+              "Rom som ligger utenfor boenheten, men som er opplyst å tilhøre enheten, er oppmålt og inkludert i bruksarealet (BRA). Rom utenfor boenheten (som ikke er seksjonert) kan omdisponeres av borettslaget eller sameiet og dette kan påvirke boligens BRA.",
+              "Det er ikke fremvist dokumentasjon på at rommet tilhører boenheten."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              62,
+              99
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_015",
+            "description": "Ventilasjonskanalene er ikke rengjort på ukjent tidspunkt: Det er ikke kjent når kanalene sist ble rengjort eller når det sist ble utført service på anlegget, noe som kan påvirke inneklima og ventilasjonseffektivitet.",
+            "evidence": [
+              "Det er ikke kjent når kanaler sist ble rengjort og når det eventuelt sist ble utført service på anlegget."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_018",
+            "description": "Ventilasjonskanalenes rengjøringshistorikk er ukjent – risiko for dårlig inneklima",
+            "evidence": [
+              "Det er ikke kjent når kanaler sist ble rengjort og når det eventuelt sist ble utført service på anlegget."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              90,
+              95
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_017",
+            "description": "Kondens i sikringsskap i 2024: Det har vært kondens i sikringsskapet i 2024, noe som kan indikere fuktproblemer i det elektriske anlegget. Alle sikringer ble byttet i 2024.",
+            "evidence": [
+              "Vært noe kondens i sikringsskap i 2024. Byttet alle sikringer i 2024. Ingen kondens etter dette. Arbeid utført av Elektrikkergruppen AS."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_019",
+            "description": "Kondens i sikringsskap i 2024 – alle sikringer byttet, men underliggende årsak er uklar",
+            "evidence": [
+              "Vært noe kondens i sikringsskap i 2024. Byttet alle sikringer i 2024. Ingen kondens etter dette.",
+              "Arbeid utført av Elektrikkergruppen AS. Foreligger samsvarserklæring.",
+              "Det tas forbehold om at det kan være utført andre arbeider på det elektriske anlegget som ikke har samsvarserklæring."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              64,
+              78
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_022",
+            "description": "Liten leilighet med begrenset areal (26 kvm internt): Leiligheten er svært arealeffektiv med kun 26 kvm internt bruksareal, noe som kan begrense bruksmuligheter og videresalgsverdi for visse kjøpergrupper.",
+            "evidence": [
+              "BRA-i: 26 m² Entré/gang, bad, åpen stue- og kjøkkenløsning.",
+              "BRA totalt: 31 m²"
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_025",
+            "description": "Liten leilighet (26 m² BRA-i) uten soverom – begrenset videresalgsmarked og finansieringsutfordringer",
+            "evidence": [
+              "BRA-i: 26 m²",
+              "Antall soverom: 0",
+              "Planløsningen er åpen og binder soveplass, stue og kjøkken sammen."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              6,
+              62,
+              63
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [
+        {
+          "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_009",
+          "description": "Sameiet har ikke sikringsordning for fellesgjeld: Boligselskapet har ikke en sikringsordning for fellesgjeld, noe som innebærer at kjøper ikke er beskyttet mot eventuelle fremtidige krav knyttet til fellesgjeld.",
+          "evidence": [
+            "Boligselskapet har ikke en sikringsordning for fellesgjeld."
+          ],
+          "source_documents": [
+            "d029_d029"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_016",
+          "description": "Elektrisk anlegg fra 2007 uten eltilsynsrapport de siste 5 år: Det foreligger ikke eltilsynsrapport fra de siste 5 år, og det er ikke foretatt tilleggsarbeider på anlegget etter 1.1.1999. Selv om ingen tydelige avvik ble funnet, anbefales utvidet el-kontroll på generelt grunnlag.",
+          "evidence": [
+            "Foreligger det eltilsynsrapport de siste 5 år, og det er ikke foretatt arbeid på anlegget etter denne, utenom retting av eventuelle avvik i eltilsynsrapport (dvs en el-tilsynsrapport uten avvik)? – Nei",
+            "Anlegg fra byggeåret 2007.",
+            "For å avdekke anleggets fulle tilstand, anbefales det på generelt grunnlag å hyre en kvalifisert fagperson for en utvidet el-kontroll."
+          ],
+          "source_documents": [
+            "d029_d029"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.8,
+          "details": {}
+        },
+        {
+          "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_018",
+          "description": "Lekkasje i sameiet (NA21) og spyling av avløpsrør: Det har vært lekkasje i NA21 og det er utført spyling av avløpsrør i NA17 og NA21, noe som indikerer at det har vært problemer med rørsystemet i bygget.",
+          "evidence": [
+            "Utbedring etter lekkasje i NA21 + spyling av avløpsrør i NA17 og NA21."
+          ],
+          "source_documents": [
+            "d029_d029"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.78,
+          "details": {}
+        },
+        {
+          "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_019",
+          "description": "Radonmåling ikke utført: Det er ikke foretatt radonmåling i boligen. Leiligheten ligger i 7. etasje, og det er som hovedregel ikke nødvendig å måle radonverdier i tredje etasje eller høyere, men dette er likevel en opplysning kjøper bør være klar over.",
+          "evidence": [
+            "Er det foretatt radonmåling? – Nei",
+            "Leiligheten ligger i 7. etasje. I leiligheter som ligger i tredje etasje eller høyere, er det som hovedregel ikke nødvendig å måle radonverdier."
+          ],
+          "source_documents": [
+            "d029_d029"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.6,
+          "details": {}
+        },
+        {
+          "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_020",
+          "description": "Solidaransvar for gjeld i Solsiden Utomhussameie: Sameiet har solidaransvar for den samlede gjelden i Solsiden Utomhussameie, som utgjør kr 240 129. Dette er en forpliktelse som følger med kjøpet.",
+          "evidence": [
+            "Sameiet har solidaransvar for den samlede gjelden i Solsiden Utomhussameie og garantiansvaret refererer seg til den samlede gjelden i Solsiden Utomhussameie og utgjør kr 240 129,-."
+          ],
+          "source_documents": [
+            "d029_d029"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.82,
+          "details": {}
+        },
+        {
+          "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_021",
+          "description": "Stikkledninger for vann og avløp er private og vedlikeholdsansvaret påhviler sameiet: Stikkledningene fra eiendommen og ut til det kommunale nettet er private, noe som innebærer at sameiet er ansvarlig for vedlikehold og eventuelle utbedringer av disse.",
+          "evidence": [
+            "Stikkledningene fra eiendommen og ut til det kommunale nettet er private, og vedlikeholdsansvaret for disse påhviler sameiet."
+          ],
+          "source_documents": [
+            "d029_d029"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.78,
+          "details": {}
+        },
+        {
+          "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_023",
+          "description": "Energimerke C og fjernvarme faktureres a-konto med avregning mot faktisk forbruk: Energimerke C indikerer middels energieffektivitet. Fjernvarme faktureres a-konto og avregnes mot faktisk forbruk, noe som kan medføre uforutsette kostnader ved høyt forbruk.",
+          "evidence": [
+            "Energikarakter: C",
+            "*Fjernvarme faktureres a-konto og avregnes mot faktisk forbruk."
+          ],
+          "source_documents": [
+            "d029_d029"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.7,
+          "details": {}
+        },
+        {
+          "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_024",
+          "description": "Krav om OBOS-medlemskap for å erverve boligen: For å kunne erverve og eie boligen kreves det medlemskap i OBOS, noe som innebærer en ekstra kostnad og et krav som ikke alle kjøpere er klar over.",
+          "evidence": [
+            "For å kunne erverve og eie boligen kreves det medlemskap i OBOS. Dersom flere skal eie sammen, må alle være medlemmer. Innmelding innebærer en engangssum på 300 kroner for andelskapital, samt en årlig kontingent på 200 kroner."
+          ],
+          "source_documents": [
+            "d029_d029"
+          ],
+          "source_pages": [
+            1
+          ],
+          "confidence": 0.75,
+          "details": {}
+        }
+      ],
+      "unmatched_ground_truth_risks": [
+        {
+          "risk_id": "gt_d029_001",
+          "description": "Manglende ferdigattest – kun midlertidig brukstillatelse fra 2007",
+          "evidence": [
+            "Det foreligger midlertidig brukstillatelse for eiendommen fra 2007.",
+            "Anmodning om ferdigattest er sendt, og besvart av Oslo kommune 2010: 'Vi vil derfor fremdeles kreve at Nydalen Alle` og Nydalsveien skal være overtatt av kommunen før ferdigattest blir utstedt.'",
+            "Det har skjedd lite i saken siden 2010. Saken er p.d.d. ikke henlagt.",
+            "Mangler kontrollerklæring fra foretakene EDB Nils Nilsen AS og Håkanes Maskin AS."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            61,
+            62
+          ],
+          "details": {
+            "confidence": 0.99
+          }
+        },
+        {
+          "risk_id": "gt_d029_011",
+          "description": "Isolerglassvinduer og balkongdør fra 2006 nærmer seg forventet levetid – risiko for kondensering og utskifting",
+          "evidence": [
+            "Leiligheten har malte trevinduer med 2-lags isolerglass fra 2006.",
+            "Normal tid før utskifting av isolerglass er 15-20 år.",
+            "Normal tid før utskifting av vindusrammer i tre er 20-60 år."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            65,
+            89,
+            93
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d029_014",
+          "description": "Bindende strømavtale (Norgespris) med bindingstid til 31.12.2026 følger boligen og må overtas av kjøper",
+          "evidence": [
+            "Nåværende eier har tegnet avtale om Norgespris på strøm, og avtalen har bindingstid til 31.12.2026. Avtalen følger boligen, og må derfor overtas av kjøper.",
+            "Norgespris er en ny, statlig ordning, som gir en forutsigbar og fast strømpris på 50 øre per kWh med mva. Når det er tegnet avtale om Norgespris bortfaller eventuell strømstøtte."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            68
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d029_015",
+          "description": "Boligen har vært utleid – selger har ikke oversikt over strømforbruk, og slitasje kan være høyere enn normalt",
+          "evidence": [
+            "Selger har ikke oversikt over det årlige strømforbruket da boligen har vært leid ut.",
+            "Leiligheten har vært benyttet til utleie. (fra tilstandsrapporten)"
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            68,
+            93
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d029_016",
+          "description": "Kjøkkenet leveres uten kjøleskap – kjøper må selv anskaffe dette",
+          "evidence": [
+            "Hvitevarer medfølger. Leiligheten overleveres uten kjøleskap."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            63
+          ],
+          "details": {
+            "confidence": 0.99
+          }
+        },
+        {
+          "risk_id": "gt_d029_017",
+          "description": "Kursene i rørskapet er ikke merket – vanskelig å identifisere vannkretser ved feil",
+          "evidence": [
+            "Merknad: Kursene i rørskapet er ikke merket."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            90,
+            95
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d029_022",
+          "description": "Sameiet eier ikke egne garasjeplasser – parkering kun via leie med ansiennitetsliste, ingen garanti for plass",
+          "evidence": [
+            "Sameiet eier ikke egne garasjeplasser, men har tinglyst rett til leie av 44 plasser i Nydalen P-hus Solsiden parkeringsanlegg. Leie av plass fordeles etter ansiennitet i henhold til en liste som føres av styret."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            61,
+            108
+          ],
+          "details": {
+            "confidence": 0.93
+          }
+        },
+        {
+          "risk_id": "gt_d029_023",
+          "description": "Tinglyst heftelse – eiendommen kan ikke disponeres over uten samtykke fra Emera No1 AS (meglerforetaket)",
+          "evidence": [
+            "11.03.2026 – Dokumentnr: 280504 – Registerenheten kan ikke disponeres over uten samtykke fra rettighetshaver. Rettighetshaver: Emera No1 AS, Org.nr: 934 963 385."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            70
+          ],
+          "details": {
+            "confidence": 0.95
+          }
+        },
+        {
+          "risk_id": "gt_d029_026",
+          "description": "Luftebalkong er svært liten (ca. 0,7 m²) – begrenset praktisk bruksverdi",
+          "evidence": [
+            "Luftebalkong på ca. 0,7 m² med utgang fra kjøkken.",
+            "TBA: 1 m²"
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            62,
+            65,
+            89
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d029_027",
+          "description": "Solsiden Utomhussameie hadde stort underskudd i 2023 (NOK -739 843) og økte kostnader i 2024 – risiko for fremtidige felleskostnadsøkninger",
+          "evidence": [
+            "Solsiden Utomhus Sameie: Årsresultat 2023: -739 843. Årsresultat 2024: +123 240.",
+            "Energi/fyring 2024: NOK -4 513 777 (mot budsjett NOK -4 400 000).",
+            "Budsjett 2025 for Solsiden Utomhus viser økte kostnader på NOK 13 276 020 mot inntekter på NOK 13 120 000 – budsjettert underskudd på NOK -156 020."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            128,
+            136
+          ],
+          "details": {
+            "confidence": 0.88
+          }
+        },
+        {
+          "risk_id": "gt_d029_028",
+          "description": "Waterguard (automatisk stenging av vanntilførsel) og komfyrvakt mangler – anbefalt av takstmann",
+          "evidence": [
+            "Det anbefales at det ettermonteres en waterguard (automatisk stenging av vanntilførsel ved vannlekkasje) for å unngå vannskader ved en evt. lekkasje.",
+            "Det anbefales å ettermontere komfyrvakt."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            89,
+            95
+          ],
+          "details": {
+            "confidence": 0.85
+          }
+        },
+        {
+          "risk_id": "gt_d029_029",
+          "description": "Eiendomsskatt kan bli ilagt i fremtiden – boligen er per i dag ikke ilagt eiendomsskatt, men Oslo kommune har ordning for boliger over fastsatt verdi",
+          "evidence": [
+            "Boligen har ikke blitt ilagt eiendomsskatt for inneværende år.",
+            "I Oslo kommune er det eiendomsskatt på boliger og fast eiendom som overstiger en fastsatt verdi."
+          ],
+          "source_documents": [
+            "d029.pdf"
+          ],
+          "source_pages": [
+            59
+          ],
+          "details": {
+            "confidence": 0.7
+          }
+        }
+      ],
+      "verified_unmatched": [
+        {
+          "risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_009",
+            "description": "Sameiet har ikke sikringsordning for fellesgjeld: Boligselskapet har ikke en sikringsordning for fellesgjeld, noe som innebærer at kjøper ikke er beskyttet mot eventuelle fremtidige krav knyttet til fellesgjeld.",
+            "evidence": [
+              "Boligselskapet har ikke en sikringsordning for fellesgjeld."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter eksplisitt på side 59: 'Boligselskapet har ikke en sikringsordning for fellesgjeld.' Dette er direkte støtte for risikoen. Det fremgår også at sameierne har panterett i seksjonen begrenset til folketrygdens grunnbeløp, men ingen sikringsordning for fellesgjeld eksisterer."
+        },
+        {
+          "risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_016",
+            "description": "Elektrisk anlegg fra 2007 uten eltilsynsrapport de siste 5 år: Det foreligger ikke eltilsynsrapport fra de siste 5 år, og det er ikke foretatt tilleggsarbeider på anlegget etter 1.1.1999. Selv om ingen tydelige avvik ble funnet, anbefales utvidet el-kontroll på generelt grunnlag.",
+            "evidence": [
+              "Foreligger det eltilsynsrapport de siste 5 år, og det er ikke foretatt arbeid på anlegget etter denne, utenom retting av eventuelle avvik i eltilsynsrapport (dvs en el-tilsynsrapport uten avvik)? – Nei",
+              "Anlegg fra byggeåret 2007.",
+              "For å avdekke anleggets fulle tilstand, anbefales det på generelt grunnlag å hyre en kvalifisert fagperson for en utvidet el-kontroll."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.8,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Tilstandsrapporten (side 65-66 og 96) bekrefter alle tre bevisene: (1) Det foreligger ikke eltilsynsrapport de siste 5 år og det er ikke foretatt arbeid på anlegget etter denne – svar: Nei. (2) Anlegget er fra byggeåret 2007. (3) Det anbefales på generelt grunnlag å hyre en kvalifisert fagperson for en utvidet el-kontroll. Risikoen er godt dokumentert i dokumentteksten."
+        },
+        {
+          "risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_018",
+            "description": "Lekkasje i sameiet (NA21) og spyling av avløpsrør: Det har vært lekkasje i NA21 og det er utført spyling av avløpsrør i NA17 og NA21, noe som indikerer at det har vært problemer med rørsystemet i bygget.",
+            "evidence": [
+              "Utbedring etter lekkasje i NA21 + spyling av avløpsrør i NA17 og NA21."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter på side 67 under vedlikehold og tiltak: 'Utbedring etter lekkasje i NA21 + spyling av avløpsrør i NA17 og NA21.' Dette er direkte bevis for at det har vært lekkasje i NA21 og at avløpsrør er spylt i begge bygg, noe som indikerer problemer med rørsystemet."
+        },
+        {
+          "risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_019",
+            "description": "Radonmåling ikke utført: Det er ikke foretatt radonmåling i boligen. Leiligheten ligger i 7. etasje, og det er som hovedregel ikke nødvendig å måle radonverdier i tredje etasje eller høyere, men dette er likevel en opplysning kjøper bør være klar over.",
+            "evidence": [
+              "Er det foretatt radonmåling? – Nei",
+              "Leiligheten ligger i 7. etasje. I leiligheter som ligger i tredje etasje eller høyere, er det som hovedregel ikke nødvendig å måle radonverdier."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.6,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter begge bevisene: Egenerklæringsskjemaet (side 79) viser at spørsmål 21 'Er det foretatt radonmåling?' er besvart med Nei. Videre fremgår det av salgsoppgaven (side 70) at 'Leiligheten ligger i 7. etasje. I leiligheter som ligger i tredje etasje eller høyere, er det som hovedregel ikke nødvendig å måle radonverdier.' Risikoen er reell men med den modererende opplysning at det ikke er nødvendig for leiligheter i 3. etasje eller høyere."
+        },
+        {
+          "risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_020",
+            "description": "Solidaransvar for gjeld i Solsiden Utomhussameie: Sameiet har solidaransvar for den samlede gjelden i Solsiden Utomhussameie, som utgjør kr 240 129. Dette er en forpliktelse som følger med kjøpet.",
+            "evidence": [
+              "Sameiet har solidaransvar for den samlede gjelden i Solsiden Utomhussameie og garantiansvaret refererer seg til den samlede gjelden i Solsiden Utomhussameie og utgjør kr 240 129,-."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.82,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette eksplisitt i note 13 til årsregnskapet for Solsiden 3 og 5 Eierseksjonssameie (side 141): 'Selskapet har solidaransvar for den samlede gjelden i Solsiden Utomhussameie og garantiansvaret refererer seg til den samlede gjelden i Solsiden Utomhussameie og utgjør kr 240 129,-.' Dette er også bekreftet i balansen (side 137) under garantiansvar."
+        },
+        {
+          "risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_021",
+            "description": "Stikkledninger for vann og avløp er private og vedlikeholdsansvaret påhviler sameiet: Stikkledningene fra eiendommen og ut til det kommunale nettet er private, noe som innebærer at sameiet er ansvarlig for vedlikehold og eventuelle utbedringer av disse.",
+            "evidence": [
+              "Stikkledningene fra eiendommen og ut til det kommunale nettet er private, og vedlikeholdsansvaret for disse påhviler sameiet."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.78,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette på side 70: 'Stikkledningene fra eiendommen og ut til det kommunale nettet er private, og vedlikeholdsansvaret for disse påhviler sameiet.' Dette er også bekreftet i tilstandsrapporten (side 100) under tilknytning vann og avløp."
+        },
+        {
+          "risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_023",
+            "description": "Energimerke C og fjernvarme faktureres a-konto med avregning mot faktisk forbruk: Energimerke C indikerer middels energieffektivitet. Fjernvarme faktureres a-konto og avregnes mot faktisk forbruk, noe som kan medføre uforutsette kostnader ved høyt forbruk.",
+            "evidence": [
+              "Energikarakter: C",
+              "*Fjernvarme faktureres a-konto og avregnes mot faktisk forbruk."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.7,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter begge bevisene: Energikarakter C fremgår av nøkkelinformasjonen (side 6) og side 68. Fjernvarme faktureres a-konto og avregnes mot faktisk forbruk fremgår av side 59: '*Fjernvarme faktureres a-konto og avregnes mot faktisk forbruk.' Dette innebærer at endelig kostnad kan avvike fra a-konto beløpet."
+        },
+        {
+          "risk": {
+            "risk_id": "b4e03fac-48d3-4ef8-b95f-da00cd6a0cc5_risk_024",
+            "description": "Krav om OBOS-medlemskap for å erverve boligen: For å kunne erverve og eie boligen kreves det medlemskap i OBOS, noe som innebærer en ekstra kostnad og et krav som ikke alle kjøpere er klar over.",
+            "evidence": [
+              "For å kunne erverve og eie boligen kreves det medlemskap i OBOS. Dersom flere skal eie sammen, må alle være medlemmer. Innmelding innebærer en engangssum på 300 kroner for andelskapital, samt en årlig kontingent på 200 kroner."
+            ],
+            "source_documents": [
+              "d029_d029"
+            ],
+            "source_pages": [
+              1
+            ],
+            "confidence": 0.75,
+            "details": {}
+          },
+          "is_real_risk": true,
+          "reasoning": "Dokumentet bekrefter dette eksplisitt på side 67: 'For å kunne erverve og eie boligen kreves det medlemskap i OBOS. Dersom flere skal eie sammen, må alle være medlemmer. Innmelding innebærer en engangssum på 300 kroner for andelskapital, samt en årlig kontingent på 200 kroner.' Dette er et klart krav som følger med kjøpet."
+        }
+      ],
+      "adjusted_metrics": {
+        "precision": 1.0,
+        "recall": 0.5862068965517241,
+        "f1": 0.7391304347826086,
+        "total_support": 29
+      }
+    },
+    "ground_truth": {
+      "run_id": "e4fa997b-03dd-459c-8361-71114d596555_gt",
+      "system_type": "ground_truth",
+      "overall_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "total_support": 29
+      },
+      "matched_risks": 29,
+      "unmatched_predicted": 0,
+      "unmatched_ground_truth": 0,
+      "matched_pair_details": [
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_001",
+            "description": "Manglende ferdigattest – kun midlertidig brukstillatelse fra 2007",
+            "evidence": [
+              "Det foreligger midlertidig brukstillatelse for eiendommen fra 2007.",
+              "Anmodning om ferdigattest er sendt, og besvart av Oslo kommune 2010: 'Vi vil derfor fremdeles kreve at Nydalen Alle` og Nydalsveien skal være overtatt av kommunen før ferdigattest blir utstedt.'",
+              "Det har skjedd lite i saken siden 2010. Saken er p.d.d. ikke henlagt.",
+              "Mangler kontrollerklæring fra foretakene EDB Nils Nilsen AS og Håkanes Maskin AS."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              61,
+              62
+            ],
+            "confidence": 0.99,
+            "details": {
+              "confidence": 0.99
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_001",
+            "description": "Manglende ferdigattest – kun midlertidig brukstillatelse fra 2007",
+            "evidence": [
+              "Det foreligger midlertidig brukstillatelse for eiendommen fra 2007.",
+              "Anmodning om ferdigattest er sendt, og besvart av Oslo kommune 2010: 'Vi vil derfor fremdeles kreve at Nydalen Alle` og Nydalsveien skal være overtatt av kommunen før ferdigattest blir utstedt.'",
+              "Det har skjedd lite i saken siden 2010. Saken er p.d.d. ikke henlagt.",
+              "Mangler kontrollerklæring fra foretakene EDB Nils Nilsen AS og Håkanes Maskin AS."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              61,
+              62
+            ],
+            "details": {
+              "confidence": 0.99
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_002",
+            "description": "Svertesopp på badet – registrert i silikonfuger i dusjsonen",
+            "evidence": [
+              "Registrert svertesopp i silikonfuger i overgang gulv/vegg i dusjhjørne og fuger på gulv, dusjhjørne. (TG2)",
+              "Selger bekrefter i egenerklæring: 'noe svertesopp i dusjsonen'",
+              "Vask/rens av silikonfuger anbefalt som tiltak."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              64,
+              66,
+              77,
+              94
+            ],
+            "confidence": 0.98,
+            "details": {
+              "confidence": 0.98
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_002",
+            "description": "Svertesopp på badet – registrert i silikonfuger i dusjsonen",
+            "evidence": [
+              "Registrert svertesopp i silikonfuger i overgang gulv/vegg i dusjhjørne og fuger på gulv, dusjhjørne. (TG2)",
+              "Selger bekrefter i egenerklæring: 'noe svertesopp i dusjsonen'",
+              "Vask/rens av silikonfuger anbefalt som tiltak."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              64,
+              66,
+              77,
+              94
+            ],
+            "details": {
+              "confidence": 0.98
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_003",
+            "description": "Membran/tettesjikt på bad har passert mer enn halvparten av forventet brukstid – risiko for vannlekkasje",
+            "evidence": [
+              "Mer enn halvparten av forventet brukstid er passert på membranløsningen. (TG2)",
+              "Eldre membraner kan bli sprø og sprekke opp, noe som fører til at de mister sin vanntettende funksjon. Dette kan resultere i vannlekkasjer gjennom vegger og gulv og fuktskader.",
+              "Hulltaking er ikke utført da våtrommet er en prefabrikkert kabin/modul – tilliggende konstruksjoner er TGIU (ikke undersøkt)."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              66,
+              94
+            ],
+            "confidence": 0.97,
+            "details": {
+              "confidence": 0.97
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_003",
+            "description": "Membran/tettesjikt på bad har passert mer enn halvparten av forventet brukstid – risiko for vannlekkasje",
+            "evidence": [
+              "Mer enn halvparten av forventet brukstid er passert på membranløsningen. (TG2)",
+              "Eldre membraner kan bli sprø og sprekke opp, noe som fører til at de mister sin vanntettende funksjon. Dette kan resultere i vannlekkasjer gjennom vegger og gulv og fuktskader.",
+              "Hulltaking er ikke utført da våtrommet er en prefabrikkert kabin/modul – tilliggende konstruksjoner er TGIU (ikke undersøkt)."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              66,
+              94
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_004",
+            "description": "Tilliggende konstruksjoner bak våtsone ikke undersøkt (TGIU) – skjulte feil kan foreligge",
+            "evidence": [
+              "Hulltaking er ikke utført da våtrommet er en prefabrikkert kabin/modul. Det er pga bygningsmessige hindringer ikke fysisk mulig å foreta hulltaking i vegg bak våtsone. TGIU gitt ut ifra manglende mulighet for hulltaking.",
+              "Disse delene kan dermed ha feil eller mangler som ikke er avdekket."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              66,
+              95
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_004",
+            "description": "Tilliggende konstruksjoner bak våtsone ikke undersøkt (TGIU) – skjulte feil kan foreligge",
+            "evidence": [
+              "Hulltaking er ikke utført da våtrommet er en prefabrikkert kabin/modul. Det er pga bygningsmessige hindringer ikke fysisk mulig å foreta hulltaking i vegg bak våtsone. TGIU gitt ut ifra manglende mulighet for hulltaking.",
+              "Disse delene kan dermed ha feil eller mangler som ikke er avdekket."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              66,
+              95
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_005",
+            "description": "Innebygget sisterne uten tilfredsstillende lekkasjesikring – risiko for skjult vannlekkasje",
+            "evidence": [
+              "Det er ikke påvist tilfredsstillende løsning for å synliggjøre lekkasje fra innebygget sisterne. (TG2)",
+              "Noe påbegynnende svelling på dekksiden til servantinnredningen.",
+              "Ved implementering av innebygget sisterne var det ikke krav om lekkasjesikring, konstruksjonen bør jevnlig observeres."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              66,
+              94
+            ],
+            "confidence": 0.93,
+            "details": {
+              "confidence": 0.93
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_005",
+            "description": "Innebygget sisterne uten tilfredsstillende lekkasjesikring – risiko for skjult vannlekkasje",
+            "evidence": [
+              "Det er ikke påvist tilfredsstillende løsning for å synliggjøre lekkasje fra innebygget sisterne. (TG2)",
+              "Noe påbegynnende svelling på dekksiden til servantinnredningen.",
+              "Ved implementering av innebygget sisterne var det ikke krav om lekkasjesikring, konstruksjonen bør jevnlig observeres."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              66,
+              94
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_006",
+            "description": "Kjøkkenventilator har passert mer enn halvparten av forventet teknisk levetid – risiko for funksjonssvikt",
+            "evidence": [
+              "Ventilatoren fungerer i dag, men mer enn halvparten av forventet teknisk levetid er passert. (TG2)",
+              "Årsak: Naturlig aldring av ventilator. Økt risiko for funksjonssvikt over tid. Redusert effektivitet og svakere avtrekk kan oppstå.",
+              "Normal levetid for kjøkkenventilator er 15-20 år."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              66,
+              95
+            ],
+            "confidence": 0.92,
+            "details": {
+              "confidence": 0.92
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_006",
+            "description": "Kjøkkenventilator har passert mer enn halvparten av forventet teknisk levetid – risiko for funksjonssvikt",
+            "evidence": [
+              "Ventilatoren fungerer i dag, men mer enn halvparten av forventet teknisk levetid er passert. (TG2)",
+              "Årsak: Naturlig aldring av ventilator. Økt risiko for funksjonssvikt over tid. Redusert effektivitet og svakere avtrekk kan oppstå.",
+              "Normal levetid for kjøkkenventilator er 15-20 år."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              66,
+              95
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_007",
+            "description": "Rekkverkshøyde på balkong er for lav i forhold til dagens krav – HMS-avvik",
+            "evidence": [
+              "Rekkverket på balkong eller terrasse er for lavt i forhold til dagens krav.",
+              "Rekkverk = 1,14 m.",
+              "Det er ikke krav om utbedring av rekkverkshøyde opp til dagens forskriftskrav, men forholdet er flagget som HMS-avvik."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              66,
+              92,
+              97
+            ],
+            "confidence": 0.97,
+            "details": {
+              "confidence": 0.97
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_007",
+            "description": "Rekkverkshøyde på balkong er for lav i forhold til dagens krav – HMS-avvik",
+            "evidence": [
+              "Rekkverket på balkong eller terrasse er for lavt i forhold til dagens krav.",
+              "Rekkverk = 1,14 m.",
+              "Det er ikke krav om utbedring av rekkverkshøyde opp til dagens forskriftskrav, men forholdet er flagget som HMS-avvik."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              66,
+              92,
+              97
+            ],
+            "details": {
+              "confidence": 0.97
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_008",
+            "description": "Pågående ulovlighetssaker på eiendommen (Nydalen allé 17) – mulig ulovlig bruksendring til massasjestudio og legekontor",
+            "evidence": [
+              "Saksnummer 202504888: Nydalen allé 17 – ulovlig bruksendring til massasjestudio. Status: Under behandling.",
+              "Saksnummer 202506424: Nydalen allé 17 – mulig ulovlig bruksendring av lokale til legekontor. Status: Under behandling.",
+              "Saksnummer 202512650: Nydalen allé 17 – bruksendring av lokale fra butikk til legekontor. Status: Under behandling."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              69
+            ],
+            "confidence": 0.98,
+            "details": {
+              "confidence": 0.98
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_008",
+            "description": "Pågående ulovlighetssaker på eiendommen (Nydalen allé 17) – mulig ulovlig bruksendring til massasjestudio og legekontor",
+            "evidence": [
+              "Saksnummer 202504888: Nydalen allé 17 – ulovlig bruksendring til massasjestudio. Status: Under behandling.",
+              "Saksnummer 202506424: Nydalen allé 17 – mulig ulovlig bruksendring av lokale til legekontor. Status: Under behandling.",
+              "Saksnummer 202512650: Nydalen allé 17 – bruksendring av lokale fra butikk til legekontor. Status: Under behandling."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              69
+            ],
+            "details": {
+              "confidence": 0.98
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_009",
+            "description": "Svak fall utenfor dusjsonen på badet – økt risiko for vannansamling",
+            "evidence": [
+              "Noe svak fall utenfor dusjsonen. (TG2)",
+              "Dette kan potensielt øke risikoen for vannansamling i enkelte områder av badet."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              66,
+              94
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_009",
+            "description": "Svak fall utenfor dusjsonen på badet – økt risiko for vannansamling",
+            "evidence": [
+              "Noe svak fall utenfor dusjsonen. (TG2)",
+              "Dette kan potensielt øke risikoen for vannansamling i enkelte områder av badet."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              66,
+              94
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_010",
+            "description": "Stedvise merker og glipper på parkett i stue og kjøkken – vedlikehold og oppgradering må påregnes",
+            "evidence": [
+              "Stedvis merker / glipper på parkett i stue og kjøkken. (TG2)",
+              "Generelt vedlikehold og oppgradering må påregnes."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              66,
+              93
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_010",
+            "description": "Stedvise merker og glipper på parkett i stue og kjøkken – vedlikehold og oppgradering må påregnes",
+            "evidence": [
+              "Stedvis merker / glipper på parkett i stue og kjøkken. (TG2)",
+              "Generelt vedlikehold og oppgradering må påregnes."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              66,
+              93
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_011",
+            "description": "Isolerglassvinduer og balkongdør fra 2006 nærmer seg forventet levetid – risiko for kondensering og utskifting",
+            "evidence": [
+              "Leiligheten har malte trevinduer med 2-lags isolerglass fra 2006.",
+              "Normal tid før utskifting av isolerglass er 15-20 år.",
+              "Normal tid før utskifting av vindusrammer i tre er 20-60 år."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              65,
+              89,
+              93
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_011",
+            "description": "Isolerglassvinduer og balkongdør fra 2006 nærmer seg forventet levetid – risiko for kondensering og utskifting",
+            "evidence": [
+              "Leiligheten har malte trevinduer med 2-lags isolerglass fra 2006.",
+              "Normal tid før utskifting av isolerglass er 15-20 år.",
+              "Normal tid før utskifting av vindusrammer i tre er 20-60 år."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              65,
+              89,
+              93
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_012",
+            "description": "Sameiet hadde negativt årsresultat i 2024 (NOK -248 203) og redusert egenkapital – økonomirisiko",
+            "evidence": [
+              "Årsresultat endte på NOK -248 203.",
+              "Hovedgrunnen til underskuddet skyldes økte kostnader til Solsiden Utomhus for alle sameiene fra januar 2024 fordelt på de respektive andelene på 19,53% av Solsiden Utomhussameie som ikke var inkludert i budsjettet.",
+              "Sparekonto har blitt redusert med NOK 250 000 i løpet av året for å dekke løpende kostnader.",
+              "Opptjent egenkapital per årsslutt var NOK 1 022 129."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              68,
+              136,
+              142
+            ],
+            "confidence": 0.93,
+            "details": {
+              "confidence": 0.93
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_012",
+            "description": "Sameiet hadde negativt årsresultat i 2024 (NOK -248 203) og redusert egenkapital – økonomirisiko",
+            "evidence": [
+              "Årsresultat endte på NOK -248 203.",
+              "Hovedgrunnen til underskuddet skyldes økte kostnader til Solsiden Utomhus for alle sameiene fra januar 2024 fordelt på de respektive andelene på 19,53% av Solsiden Utomhussameie som ikke var inkludert i budsjettet.",
+              "Sparekonto har blitt redusert med NOK 250 000 i løpet av året for å dekke løpende kostnader.",
+              "Opptjent egenkapital per årsslutt var NOK 1 022 129."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              68,
+              136,
+              142
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_013",
+            "description": "Ingen vedlikeholdsplan for sameiet – fremtidige kostnader og felleskostnadsøkninger er uforutsigbare",
+            "evidence": [
+              "Svar fra styre 11.03.2026: 'Det foreligger ingen vedlikeholdsplan for øyeblikket, men det kommer til å bli utarbeidet i løpet av de neste årene.'",
+              "'Det er gjort mye småting gjennom årene, men noen totaloversikt finnes ikke.'"
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              67
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_013",
+            "description": "Ingen vedlikeholdsplan for sameiet – fremtidige kostnader og felleskostnadsøkninger er uforutsigbare",
+            "evidence": [
+              "Svar fra styre 11.03.2026: 'Det foreligger ingen vedlikeholdsplan for øyeblikket, men det kommer til å bli utarbeidet i løpet av de neste årene.'",
+              "'Det er gjort mye småting gjennom årene, men noen totaloversikt finnes ikke.'"
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              67
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_014",
+            "description": "Bindende strømavtale (Norgespris) med bindingstid til 31.12.2026 følger boligen og må overtas av kjøper",
+            "evidence": [
+              "Nåværende eier har tegnet avtale om Norgespris på strøm, og avtalen har bindingstid til 31.12.2026. Avtalen følger boligen, og må derfor overtas av kjøper.",
+              "Norgespris er en ny, statlig ordning, som gir en forutsigbar og fast strømpris på 50 øre per kWh med mva. Når det er tegnet avtale om Norgespris bortfaller eventuell strømstøtte."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              68
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_014",
+            "description": "Bindende strømavtale (Norgespris) med bindingstid til 31.12.2026 følger boligen og må overtas av kjøper",
+            "evidence": [
+              "Nåværende eier har tegnet avtale om Norgespris på strøm, og avtalen har bindingstid til 31.12.2026. Avtalen følger boligen, og må derfor overtas av kjøper.",
+              "Norgespris er en ny, statlig ordning, som gir en forutsigbar og fast strømpris på 50 øre per kWh med mva. Når det er tegnet avtale om Norgespris bortfaller eventuell strømstøtte."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              68
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_015",
+            "description": "Boligen har vært utleid – selger har ikke oversikt over strømforbruk, og slitasje kan være høyere enn normalt",
+            "evidence": [
+              "Selger har ikke oversikt over det årlige strømforbruket da boligen har vært leid ut.",
+              "Leiligheten har vært benyttet til utleie. (fra tilstandsrapporten)"
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              68,
+              93
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_015",
+            "description": "Boligen har vært utleid – selger har ikke oversikt over strømforbruk, og slitasje kan være høyere enn normalt",
+            "evidence": [
+              "Selger har ikke oversikt over det årlige strømforbruket da boligen har vært leid ut.",
+              "Leiligheten har vært benyttet til utleie. (fra tilstandsrapporten)"
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              68,
+              93
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_016",
+            "description": "Kjøkkenet leveres uten kjøleskap – kjøper må selv anskaffe dette",
+            "evidence": [
+              "Hvitevarer medfølger. Leiligheten overleveres uten kjøleskap."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              63
+            ],
+            "confidence": 0.99,
+            "details": {
+              "confidence": 0.99
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_016",
+            "description": "Kjøkkenet leveres uten kjøleskap – kjøper må selv anskaffe dette",
+            "evidence": [
+              "Hvitevarer medfølger. Leiligheten overleveres uten kjøleskap."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              63
+            ],
+            "details": {
+              "confidence": 0.99
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_017",
+            "description": "Kursene i rørskapet er ikke merket – vanskelig å identifisere vannkretser ved feil",
+            "evidence": [
+              "Merknad: Kursene i rørskapet er ikke merket."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              90,
+              95
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_017",
+            "description": "Kursene i rørskapet er ikke merket – vanskelig å identifisere vannkretser ved feil",
+            "evidence": [
+              "Merknad: Kursene i rørskapet er ikke merket."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              90,
+              95
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_018",
+            "description": "Ventilasjonskanalenes rengjøringshistorikk er ukjent – risiko for dårlig inneklima",
+            "evidence": [
+              "Det er ikke kjent når kanaler sist ble rengjort og når det eventuelt sist ble utført service på anlegget."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              90,
+              95
+            ],
+            "confidence": 0.82,
+            "details": {
+              "confidence": 0.82
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_018",
+            "description": "Ventilasjonskanalenes rengjøringshistorikk er ukjent – risiko for dårlig inneklima",
+            "evidence": [
+              "Det er ikke kjent når kanaler sist ble rengjort og når det eventuelt sist ble utført service på anlegget."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              90,
+              95
+            ],
+            "details": {
+              "confidence": 0.82
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_019",
+            "description": "Kondens i sikringsskap i 2024 – alle sikringer byttet, men underliggende årsak er uklar",
+            "evidence": [
+              "Vært noe kondens i sikringsskap i 2024. Byttet alle sikringer i 2024. Ingen kondens etter dette.",
+              "Arbeid utført av Elektrikkergruppen AS. Foreligger samsvarserklæring.",
+              "Det tas forbehold om at det kan være utført andre arbeider på det elektriske anlegget som ikke har samsvarserklæring."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              64,
+              78
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_019",
+            "description": "Kondens i sikringsskap i 2024 – alle sikringer byttet, men underliggende årsak er uklar",
+            "evidence": [
+              "Vært noe kondens i sikringsskap i 2024. Byttet alle sikringer i 2024. Ingen kondens etter dette.",
+              "Arbeid utført av Elektrikkergruppen AS. Foreligger samsvarserklæring.",
+              "Det tas forbehold om at det kan være utført andre arbeider på det elektriske anlegget som ikke har samsvarserklæring."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              64,
+              78
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_020",
+            "description": "Mange pågående byggesaker og reguleringsplaner i nærområdet – risiko for støy, anleggsarbeid og endrede omgivelser",
+            "evidence": [
+              "Nydalen er under utvikling. Se eventuelt prospekt for nærmere detaljer.",
+              "Saksnummer 202508077: Nydalsveien 20 A-C – 22 A-C – Oppføring av to boligblokker – Spikerverket bygg C-D. Status: Under behandling.",
+              "Saksnummer 202507975: Nydalsveien 18 A-B – oppføring av næringsbygg – Bygg E – Spikerverket. Status: Under behandling.",
+              "Saksnummer 202507973: Nydalsveien 24 – oppføring av næringsbygg – Bygg B – Spikerverket. Status: Under behandling.",
+              "Byggearbeider må derfor påregnes."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              64,
+              69,
+              79
+            ],
+            "confidence": 0.92,
+            "details": {
+              "confidence": 0.92
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_020",
+            "description": "Mange pågående byggesaker og reguleringsplaner i nærområdet – risiko for støy, anleggsarbeid og endrede omgivelser",
+            "evidence": [
+              "Nydalen er under utvikling. Se eventuelt prospekt for nærmere detaljer.",
+              "Saksnummer 202508077: Nydalsveien 20 A-C – 22 A-C – Oppføring av to boligblokker – Spikerverket bygg C-D. Status: Under behandling.",
+              "Saksnummer 202507975: Nydalsveien 18 A-B – oppføring av næringsbygg – Bygg E – Spikerverket. Status: Under behandling.",
+              "Saksnummer 202507973: Nydalsveien 24 – oppføring av næringsbygg – Bygg B – Spikerverket. Status: Under behandling.",
+              "Byggearbeider må derfor påregnes."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              64,
+              69,
+              79
+            ],
+            "details": {
+              "confidence": 0.92
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_021",
+            "description": "Bod i kjeller er ikke seksjonert som tilleggsdel – kan omdisponeres av sameiet",
+            "evidence": [
+              "Rom som ligger utenfor boenheten, men som er opplyst å tilhøre enheten, er oppmålt og inkludert i bruksarealet (BRA). Rom utenfor boenheten (som ikke er seksjonert) kan omdisponeres av borettslaget eller sameiet og dette kan påvirke boligens BRA.",
+              "Det er ikke fremvist dokumentasjon på at rommet tilhører boenheten."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              62,
+              99
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_021",
+            "description": "Bod i kjeller er ikke seksjonert som tilleggsdel – kan omdisponeres av sameiet",
+            "evidence": [
+              "Rom som ligger utenfor boenheten, men som er opplyst å tilhøre enheten, er oppmålt og inkludert i bruksarealet (BRA). Rom utenfor boenheten (som ikke er seksjonert) kan omdisponeres av borettslaget eller sameiet og dette kan påvirke boligens BRA.",
+              "Det er ikke fremvist dokumentasjon på at rommet tilhører boenheten."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              62,
+              99
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_022",
+            "description": "Sameiet eier ikke egne garasjeplasser – parkering kun via leie med ansiennitetsliste, ingen garanti for plass",
+            "evidence": [
+              "Sameiet eier ikke egne garasjeplasser, men har tinglyst rett til leie av 44 plasser i Nydalen P-hus Solsiden parkeringsanlegg. Leie av plass fordeles etter ansiennitet i henhold til en liste som føres av styret."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              61,
+              108
+            ],
+            "confidence": 0.93,
+            "details": {
+              "confidence": 0.93
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_022",
+            "description": "Sameiet eier ikke egne garasjeplasser – parkering kun via leie med ansiennitetsliste, ingen garanti for plass",
+            "evidence": [
+              "Sameiet eier ikke egne garasjeplasser, men har tinglyst rett til leie av 44 plasser i Nydalen P-hus Solsiden parkeringsanlegg. Leie av plass fordeles etter ansiennitet i henhold til en liste som føres av styret."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              61,
+              108
+            ],
+            "details": {
+              "confidence": 0.93
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_023",
+            "description": "Tinglyst heftelse – eiendommen kan ikke disponeres over uten samtykke fra Emera No1 AS (meglerforetaket)",
+            "evidence": [
+              "11.03.2026 – Dokumentnr: 280504 – Registerenheten kan ikke disponeres over uten samtykke fra rettighetshaver. Rettighetshaver: Emera No1 AS, Org.nr: 934 963 385."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              70
+            ],
+            "confidence": 0.95,
+            "details": {
+              "confidence": 0.95
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_023",
+            "description": "Tinglyst heftelse – eiendommen kan ikke disponeres over uten samtykke fra Emera No1 AS (meglerforetaket)",
+            "evidence": [
+              "11.03.2026 – Dokumentnr: 280504 – Registerenheten kan ikke disponeres over uten samtykke fra rettighetshaver. Rettighetshaver: Emera No1 AS, Org.nr: 934 963 385."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              70
+            ],
+            "details": {
+              "confidence": 0.95
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_024",
+            "description": "Tinglyst plikt til å varsle kommunen ved bygge- og gravearbeid på grunn av forurensede masser",
+            "evidence": [
+              "24.08.2006 – Dokumentnr: 398000 – Erklæring/avtale. Gjelder plikt til å varsle Kommunen ved evt. bygge- og gravearbeid på grunn av forurensede masser. Kan ikke slettes uten samtykke fra Oslo Kommune."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              70
+            ],
+            "confidence": 0.9,
+            "details": {
+              "confidence": 0.9
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_024",
+            "description": "Tinglyst plikt til å varsle kommunen ved bygge- og gravearbeid på grunn av forurensede masser",
+            "evidence": [
+              "24.08.2006 – Dokumentnr: 398000 – Erklæring/avtale. Gjelder plikt til å varsle Kommunen ved evt. bygge- og gravearbeid på grunn av forurensede masser. Kan ikke slettes uten samtykke fra Oslo Kommune."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              70
+            ],
+            "details": {
+              "confidence": 0.9
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_025",
+            "description": "Liten leilighet (26 m² BRA-i) uten soverom – begrenset videresalgsmarked og finansieringsutfordringer",
+            "evidence": [
+              "BRA-i: 26 m²",
+              "Antall soverom: 0",
+              "Planløsningen er åpen og binder soveplass, stue og kjøkken sammen."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              6,
+              62,
+              63
+            ],
+            "confidence": 0.8,
+            "details": {
+              "confidence": 0.8
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_025",
+            "description": "Liten leilighet (26 m² BRA-i) uten soverom – begrenset videresalgsmarked og finansieringsutfordringer",
+            "evidence": [
+              "BRA-i: 26 m²",
+              "Antall soverom: 0",
+              "Planløsningen er åpen og binder soveplass, stue og kjøkken sammen."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              6,
+              62,
+              63
+            ],
+            "details": {
+              "confidence": 0.8
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_026",
+            "description": "Luftebalkong er svært liten (ca. 0,7 m²) – begrenset praktisk bruksverdi",
+            "evidence": [
+              "Luftebalkong på ca. 0,7 m² med utgang fra kjøkken.",
+              "TBA: 1 m²"
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              62,
+              65,
+              89
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_026",
+            "description": "Luftebalkong er svært liten (ca. 0,7 m²) – begrenset praktisk bruksverdi",
+            "evidence": [
+              "Luftebalkong på ca. 0,7 m² med utgang fra kjøkken.",
+              "TBA: 1 m²"
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              62,
+              65,
+              89
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_027",
+            "description": "Solsiden Utomhussameie hadde stort underskudd i 2023 (NOK -739 843) og økte kostnader i 2024 – risiko for fremtidige felleskostnadsøkninger",
+            "evidence": [
+              "Solsiden Utomhus Sameie: Årsresultat 2023: -739 843. Årsresultat 2024: +123 240.",
+              "Energi/fyring 2024: NOK -4 513 777 (mot budsjett NOK -4 400 000).",
+              "Budsjett 2025 for Solsiden Utomhus viser økte kostnader på NOK 13 276 020 mot inntekter på NOK 13 120 000 – budsjettert underskudd på NOK -156 020."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              128,
+              136
+            ],
+            "confidence": 0.88,
+            "details": {
+              "confidence": 0.88
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_027",
+            "description": "Solsiden Utomhussameie hadde stort underskudd i 2023 (NOK -739 843) og økte kostnader i 2024 – risiko for fremtidige felleskostnadsøkninger",
+            "evidence": [
+              "Solsiden Utomhus Sameie: Årsresultat 2023: -739 843. Årsresultat 2024: +123 240.",
+              "Energi/fyring 2024: NOK -4 513 777 (mot budsjett NOK -4 400 000).",
+              "Budsjett 2025 for Solsiden Utomhus viser økte kostnader på NOK 13 276 020 mot inntekter på NOK 13 120 000 – budsjettert underskudd på NOK -156 020."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              128,
+              136
+            ],
+            "details": {
+              "confidence": 0.88
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_028",
+            "description": "Waterguard (automatisk stenging av vanntilførsel) og komfyrvakt mangler – anbefalt av takstmann",
+            "evidence": [
+              "Det anbefales at det ettermonteres en waterguard (automatisk stenging av vanntilførsel ved vannlekkasje) for å unngå vannskader ved en evt. lekkasje.",
+              "Det anbefales å ettermontere komfyrvakt."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              89,
+              95
+            ],
+            "confidence": 0.85,
+            "details": {
+              "confidence": 0.85
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_028",
+            "description": "Waterguard (automatisk stenging av vanntilførsel) og komfyrvakt mangler – anbefalt av takstmann",
+            "evidence": [
+              "Det anbefales at det ettermonteres en waterguard (automatisk stenging av vanntilførsel ved vannlekkasje) for å unngå vannskader ved en evt. lekkasje.",
+              "Det anbefales å ettermontere komfyrvakt."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              89,
+              95
+            ],
+            "details": {
+              "confidence": 0.85
+            }
+          }
+        },
+        {
+          "system_risk": {
+            "risk_id": "gt_d029_029",
+            "description": "Eiendomsskatt kan bli ilagt i fremtiden – boligen er per i dag ikke ilagt eiendomsskatt, men Oslo kommune har ordning for boliger over fastsatt verdi",
+            "evidence": [
+              "Boligen har ikke blitt ilagt eiendomsskatt for inneværende år.",
+              "I Oslo kommune er det eiendomsskatt på boliger og fast eiendom som overstiger en fastsatt verdi."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              59
+            ],
+            "confidence": 0.7,
+            "details": {
+              "confidence": 0.7
+            }
+          },
+          "ground_truth_risk": {
+            "risk_id": "gt_d029_029",
+            "description": "Eiendomsskatt kan bli ilagt i fremtiden – boligen er per i dag ikke ilagt eiendomsskatt, men Oslo kommune har ordning for boliger over fastsatt verdi",
+            "evidence": [
+              "Boligen har ikke blitt ilagt eiendomsskatt for inneværende år.",
+              "I Oslo kommune er det eiendomsskatt på boliger og fast eiendom som overstiger en fastsatt verdi."
+            ],
+            "source_documents": [
+              "d029.pdf"
+            ],
+            "source_pages": [
+              59
+            ],
+            "details": {
+              "confidence": 0.7
+            }
+          }
+        }
+      ],
+      "unmatched_predicted_risks": [],
+      "unmatched_ground_truth_risks": [],
+      "verified_unmatched": [],
+      "adjusted_metrics": null
+    }
+  },
+  "best_system": "ground_truth",
+  "statistical_tests": {
+    "standard_rag_vs_agentic_rag_P+T+R": 1.0,
+    "standard_rag_vs_ground_truth": 1.0,
+    "agentic_rag_P+T+R_vs_ground_truth": 1.0
+  },
+  "record_id": "c604bc01-5f4d-4e71-bc07-f34cf96e1b11",
+  "query": "Identifiser risikoer i salgsoppgaven",
+  "document_set_id": "d029",
+  "timestamp": "2026-03-23T22:33:41.766005",
+  "risk_summaries": [
+    {
+      "system_type": "standard_rag",
+      "total_risks": 11,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "agentic_rag_P+T+R",
+      "total_risks": 25,
+      "risks_by_category": {}
+    },
+    {
+      "system_type": "ground_truth",
+      "total_risks": 29,
+      "risks_by_category": {}
+    }
+  ],
+  "has_ground_truth": true,
+  "overlapping_risk_count": 18,
+  "unique_to": {
+    "standard_rag": 8,
+    "agentic_rag_P+T+R": 9,
+    "ground_truth": 12
+  },
+  "record_type": "comparison"
+}
