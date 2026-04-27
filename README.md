@@ -92,7 +92,7 @@ experiments/    # Experiment results
 
 The `data/` directory in this repository contains a minimal scaffold only. Large generated artefacts and source documents are excluded due to GitHub file size limits and privacy considerations:
 
-- `data/raw/` — sales prospectuses (salgsoppgaver) retrieved from finn.no, approximately 2.3 GB across 409 documents. Excluded due to size and GDPR considerations (the documents contain personal information such as addresses, party names, and financial details).
+- `data/raw/` — sales prospectuses (salgsoppgaver) retrieved from finn.no, approximately 2.3 GB across 204 document sets (each set typically contains a main prospectus, condition report, and supporting documents). Excluded due to size and GDPR considerations (the documents contain personal information such as addresses, party names, and financial details).
 - `data/processed/` — chunked and pre-processed documents (~125 MB).
 - `data/chroma_db/` — vector embeddings (~1.2 GB), including a single SQLite file that exceeds GitHub's 100 MB per-file limit.
 - `data/results/` — analysis output for 204 document sets (~14 MB).
