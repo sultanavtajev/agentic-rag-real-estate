@@ -88,6 +88,17 @@ data/           # Documents and ChromaDB
 experiments/    # Experiment results
 ```
 
+## Data availability
+
+The `data/` directory in this repository contains a minimal scaffold only. Large generated artefacts and source documents are excluded due to GitHub file size limits and privacy considerations:
+
+- `data/raw/` — sales prospectuses (salgsoppgaver) retrieved from finn.no, approximately 2.3 GB across 409 documents. Excluded due to size and GDPR considerations (the documents contain personal information such as addresses, party names, and financial details).
+- `data/processed/` — chunked and pre-processed documents (~125 MB).
+- `data/chroma_db/` — vector embeddings (~1.2 GB), including a single SQLite file that exceeds GitHub's 100 MB per-file limit.
+- `data/results/` — analysis output for 204 document sets (~14 MB).
+
+To reproduce the experiments, place your own Norwegian real estate documents in `data/raw/<doc_id>/<doc_id>.pdf` and run the pipeline via `python -m scripts.start`. The system will process, embed, and analyse the documents end-to-end.
+
 ## CLI scripts
 
 ```bash
